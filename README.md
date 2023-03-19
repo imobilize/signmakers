@@ -1,7 +1,38 @@
 # Outsourced Sales
-Outsourced sales is the website of [outsourcedsales.com](https://outsourcedsales.com)
+Outsourced sales is the website of [outsourcedselling.com](https://outsourcedselling.com)
 
-**Install to VS Code with:**  
+
+### Built With
+
+Major frameworks/libraries used to bootstrap project.
+
+* [Hugo](https://gohugo.io)
+* [Tailwind.css](https://tailwindcss.com)
+* [Glightbox.js](https://github.com/biati-digital/glightbox/blob/master/README.md)
+
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+You will first need to install the tools used to build the project namely
+* Hugo - the static site generator
+* NPM - the tool used to manage node module dependencies
+
+### Prerequisites
+
+To install Hugo and NPM, on a mac you can use brew
+* npm
+  ```sh
+  brew install node
+  ```
+* Hugo 
+  ```sh
+  brew install hugo
+  ```
+
+**Clone Repository and open in VSCode**  
 `git clone git@github.com:imobilize/outsourcedselling`
 
 ##### Install with NPM 
