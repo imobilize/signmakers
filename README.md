@@ -1,4 +1,4 @@
-# Outsourced Sales
+# Outsourced Selling
 Outsourced sales is the website of [outsourcedselling.com](https://outsourcedselling.com)
 
 

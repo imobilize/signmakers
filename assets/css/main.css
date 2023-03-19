@@ -1,3 +1,5 @@
+@import "./glightbox.css";
+
 /* assets */ 
 @tailwind base;
 @tailwind components;
@@ -26,4 +28,3 @@ EmojiSymbols;
 }
 
 /* Custom CSS end */
-@import "./glightbox.css"
