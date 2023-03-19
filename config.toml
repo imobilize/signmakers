@@ -4,6 +4,7 @@ title = "Outsourced Sales"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 
+relativeURLs = true
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
@@ -57,4 +58,4 @@ privacyEnhanced = true
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.104.0"
+    min = "0.111.3"
