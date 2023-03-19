@@ -1,0 +1,94 @@
+{{ $heroOne := resources.GetMatch "images/outsourced-sales-hero.jpg" }}
+
+<section data-section-id="2" data-share="" data-category="headers-white-pattern" data-component-id="6114cd58_02_awz"
+    class="relative bg-white overflow-hidden"
+    style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;"
+    data-config-id="auto-img-4">
+
+    <div class="py-20 md:py-28">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap xl:items-center -mx-4">
+                <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
+                    <h1 class="mb-6 text-5xl md:text-6xl lg:text-8xl leading-tight font-bold tracking-tight"
+                        data-config-id="auto-txt-14-2">Your sales outsourced</h1>
+                    <p class="mb-8 text-lg md:text-2xl lg:text-4xl text-gray-900 font-medium" data-config-id="auto-txt-15-2">
+                        At Outsourced Sales we take care of your selling leaving you to focus on the important stuff.
+                    </p>
+
+                    <div class="flex flex-wrap -m-2.5 mb-20">
+                        <div class="w-full md:w-auto p-2.5">
+                            <div class="block">
+                                <button
+                                    class="py-4 px-6 w-full text-white font-semibold border border-indigo-700 rounded-xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200"
+                                    type="button" data-config-id="auto-txt-14-1">
+                                    
+                                    <div class="flex flex-wrap justify-center items-center -m-1">
+                                        <div class="w-auto p-1">
+                                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" data-config-id="auto-svg-4-1">
+                                                <path
+                                                    d="M2.75 3.75C2.75 2.92157 3.42157 2.25 4.25 2.25H6.70943C7.03225 2.25 7.31886 2.45657 7.42094 2.76283L8.5443 6.13291C8.66233 6.48699 8.50203 6.87398 8.1682 7.0409L6.47525 7.88737C7.30194 9.72091 8.77909 11.1981 10.6126 12.0247L11.4591 10.3318C11.626 9.99796 12.013 9.83767 12.3671 9.9557L15.7372 11.0791C16.0434 11.1811 16.25 11.4677 16.25 11.7906V14.25C16.25 15.0784 15.5784 15.75 14.75 15.75H14C7.7868 15.75 2.75 10.7132 2.75 4.5V3.75Z"
+                                                    stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="w-auto p-1">
+                                            <span data-config-id="auto-txt-15-1">Book Your Free Consultation</span>
+                                        </div>
+                                    </div>
+                        
+                                
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-auto p-2.5">
+                            <div class="block">
+                                <button
+                                    class="py-4 px-9 w-full font-semibold border border-gray-300 hover:border-gray-400 rounded-xl focus:ring focus:ring-gray-50 bg-transparent hover:bg-gray-100 transition ease-in-out duration-200"
+                                    type="button">
+                                    <div class="flex flex-wrap justify-center items-center -m-1">
+                            
+                                        <div class="w-auto p-1">
+                                            <span data-config-id="auto-txt-15-1">Watch Video</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-full md:w-1/2 px-4">
+                    <div class="relative mx-auto md:mr-0 max-w-max">
+                        {{ $circleimage := resources.Get "images/circle3-yellow.svg" }}
+                        {{ $dotsimage := resources.Get "images/dots3-blue.svg" }}
+
+                        <img class="absolute z-10 -left-14 -top-12 w-28 md:w-auto" src="{{ $circleimage.RelPermalink }}"
+                            alt="" data-config-id="auto-img-5-2">
+                        <img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto" src="{{ $dotsimage.RelPermalink }}"
+                            alt="" data-config-id="auto-img-6-2">
+                        <svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer text-green-500 hover:text-green-600"
+                            width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            data-config-id="auto-svg-3-2">
+                            <circle cx="32" cy="32" r="32" fill="currentColor"></circle>
+                            <path class="text-white"
+                                d="M40.5 31.13L26.5 23.05C26.348 22.9622 26.1755 22.916 26 22.916C25.8245 22.916 25.652 22.9622 25.5 23.05C25.3474 23.1381 25.2208 23.265 25.133 23.4177C25.0452 23.5705 24.9993 23.7438 25 23.92V40.08C24.9993 40.2562 25.0452 40.4295 25.133 40.5822C25.2208 40.735 25.3474 40.8619 25.5 40.95C25.652 41.0378 25.8245 41.084 26 41.084C26.1755 41.084 26.348 41.0378 26.5 40.95L40.5 32.87C40.6539 32.7828 40.7819 32.6563 40.871 32.5035C40.96 32.3506 41.007 32.1769 41.007 32C41.007 31.8231 40.96 31.6494 40.871 31.4965C40.7819 31.3437 40.6539 31.2172 40.5 31.13ZM27 38.35V25.65L38 32L27 38.35Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <div class="relative overflow-hidden rounded-7xl">
+                            <img src="{{ $heroOne.RelPermalink }}" data-config-id="auto-img-3-2">
+                            <video
+                                class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 min-h-full min-w-full max-w-none"
+                                poster="{{ $heroOne.RelPermalink }}" muted=""
+                                data-config-id="poster">
+                                <source src="https://static.shuffle.dev/files/video-placeholder.mp4" type="video/mp4"
+                                    data-config-id="video">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
