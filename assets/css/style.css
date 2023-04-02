@@ -6026,6 +6026,11 @@ EmojiSymbols;
     line-height: 1.75rem;
   }
 
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .sm\:leading-6 {
     line-height: 1.5rem;
   }
@@ -6539,6 +6544,11 @@ EmojiSymbols;
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -6599,6 +6609,10 @@ EmojiSymbols;
     padding-top: 10rem;
   }
 
+  .xl\:pt-20 {
+    padding-top: 5rem;
+  }
+
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -6617,5 +6631,15 @@ EmojiSymbols;
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
