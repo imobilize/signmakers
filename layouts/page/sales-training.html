@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+
+<head>
+    {{ partial "head.html" . }}
+    <style>
+        @font-face {
+            font-display: block;
+            font-family: Roboto;
+            src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: fallback;
+            font-family: Roboto;
+            font-weight: 600;
+            src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: fallback;
+            font-family: Roboto;
+            font-weight: 700;
+            src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+        }
+
+        #sib-container input:-ms-input-placeholder {
+            text-align: left;
+            font-family: helvetica, sans-serif;
+            color:#c0ccda
+        }
+
+        #sib-container input::placeholder {
+            text-align: left;
+            font-family: helvetica, sans-serif;
+            color:#c0ccda
+        }
+
+        #sib-container textarea::placeholder {
+            text-align: left;
+            font-family: helvetica, sans-serif;
+            color: #c0ccda
+        }
+        </style>
+        <link rel=stylesheet href=https://sibforms.com/forms/end-form/build/sib-styles.css>
+        <style>
+        .hero-area-content h1 {
+            font-family:Merriweather, Helvetica, sans-serif !important
+        }
+
+        .subheading {
+            text-align: center;
+            color: #daba8e;
+            font-family:lato, sans-serif !important
+        }
+
+        .signup-box {
+            outline: none;
+            padding: 30px;
+            border-color: #daba8e;
+            margin-top: 0;
+            background-color: #fff;
+            max-width:100%
+        }
+
+        .button-container {
+            margin-top: 30px;
+            outline: none;
+            cursor: pointer;
+            margin-right: auto;
+            margin-left:auto
+        }
+
+        .firstcharacter {
+            float: left;
+            font-size: 75px;
+            line-height: 60px;
+            padding-top: 4px;
+            padding-right: 8px;
+            padding-left:3px
+        }
+
+
+        .attention-header span {
+            background-color:#ff0
+        }
+
+        .elDividerInner[data-style=dotted] {
+            border-top-style: dotted !important
+        }
+
+        .elDividerInner[data-align=center][data-width-border="10"] {
+            margin-right: 45%;
+            margin-left:45%
+        }
+
+        .btn-primary {
+            box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .2);
+            border: 1px solid rgba(0, 0, 0, .2);
+            border-bottom: 3px solid rgba(0, 0, 0, .2)
+        }
+
+
+/*============================================================================================ */
+/* Landing Pages
+============================================================================================ */
+.disclaimer-box {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 100%;
+    outline: none;
+    background-color: rgba(250, 250, 250, 0.45);
+	border-color: rgba(136, 136, 136, 0.42);
+	border-width: 3px;
+	border-style: dashed;
+	text-align: left;
+}
+
+.standout-box {
+	background-color: #f39f86;
+	background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+	padding-top: 35px;
+	padding-bottom: 10px;
+	margin: 20px auto 0px;
+	outline: none;
+	width: 90%;
+	max-width: 100%; border-color: rgba(255, 255, 255, 0.57);
+	box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5);
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+.separator {
+    width: 60px;
+    height: 5px;
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    background: #ff4500;
+    margin-bottom: 40px;
+}
+
+/* Coming Soon Page  */
+.simpleslide100 {
+    display: block;
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+
+.bg-img1 {
+	background-image: url("/img/landing-page/coming-soon-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.simpleslide100-item {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.overlay1 {
+    position: relative;
+    z-index: 1;
+}
+
+.size1 {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.l1-txt2 {
+    font-family: Playlist Script;
+    font-size: 180px;
+    color: #fff;
+    line-height: 1.1;
+}
+/* End of landing pages */
+
+        </style>
+</head>
+
+<body class="bg-zinc-100 dark:bg-gray-800">
+        <div class="relative isolate overflow-hidden bg-gray-900 py-14">
+            <div class=row>
+                <div class=col-12>
+                    <div class="attention-header text-xl text-center">
+                        <span>
+                            <i>
+                                <b> Attention: Entrepreneurs, Business Owners and Big Thinkers! </b>
+                            </i>
+                        </span>
+                    </div>
+                </div>
+                <div class="w-full text-center py-10">
+                    <h2 class="text-4xl text-white">Give Me 15 Mins And I'll Reveal...</h2>
+                </div>
+            </div>
+
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+                    <div class="max-w-xl lg:max-w-lg">
+                        <h2 class="text-3xl tracking-tight text-white sm:text-4xl">How you can make more sales without
+                            the hassle of marketing or training a sales team</h2>
+                        <p class="mt-4 text-lg leading-8 text-gray-300">Nostrud amet eu ullamco nisi aute in ad minim
+                            nostrud adipisicing velit quis. Duis tempor incididunt dolore.</p>
+
+                        <div class="signup-box mt-5 shadow">
+                            <div data-de-type=headline data-de-editing=false data-title=headline data-ce=true
+                                data-trigger=none data-animate=fade data-delay=500
+                                style=cursor:pointer;outline:none;margin-top:0 aria-disabled=false>
+                                <div style=text-align:center;font-size:22px data-bold=inherit contenteditable=false>
+                                    <b>Enter Your Name And Email Address To Watch The Free
+                                        On-Demand Training Now…&nbsp;</b>
+                                </div>
+                            </div>
+                            <div class="text-center mt-3" data-de-type=img data-de-editing=false data-title=image
+                                data-ce=false data-trigger=none data-animate=fade data-delay=500 aria-disabled=false
+                                data-hide-on=desktop>
+                                <button type=button
+                                    class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline btn-xl bg-blue-600 text-white hover:bg-blue-600"
+                                    data-toggle=modal data-target=#signup-modal>WATCH THE TRAINING</button>
+                            </div>
+                            <div class="de elHeadlineWrapper ui-droppable de-editable" id=headline-89897-109
+                                data-de-type=headline data-de-editing=false data-title=Paragraph data-ce=true
+                                data-trigger=none data-animate=fade data-delay=500
+                                style=margin-top:15px;outline:none;cursor:pointer aria-disabled=false>
+                                <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 mfs_12"
+                                    data-bold=inherit style=text-align:center;font-size:14px;color:rgba(47,47,47,.86)
+                                    data-gramm=false contenteditable=false>
+                                    THIS IS A 100% FREE ON-DEMAND TRAINING,
+                                    <div>NO CREDIT CARD REQUIRED.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ with resources.Get "images/landing/more-sales.jpg" }}
+                    {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                    {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                    {{ $large := (.Resize "900x webp q80").RelPermalink }}
+                    {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+                        <img src="{{$featuredimage}}" class="max-w-sm rounded-lg shadow-2xl" />
+                    </div>
+                    {{end}}
+                </div>
+
+            </div>
+            <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+                <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+        </div>
+
+
+
+        <section class="bg-white dark:bg-gray-900">
+            <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
+                <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
+                    <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">In This Free Training You Will Learn
+                    </h2>
+            
+                </div>
+                <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+                    <!-- Pricing Card -->
+                    <div
+                        class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                        <h3 class="mb-4 text-2xl font-semibold">Training Point #1</h3>
+                        <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Why traditional marketing is dead and how you will break the bank trying to do it. </p>
+            
+                    </div>
+                    <!-- Pricing Card -->
+                    <div
+                        class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                        <h3 class="mb-4 text-2xl font-semibold">Training Point #2</h3>
+                        <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">A simple sales process that will actually get you more customers.</p>
+        
+                     
+                    </div>
+                    <!-- Pricing Card -->
+                    <div
+                        class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                        <h3 class="mb-4 text-2xl font-semibold">Training Point #3</h3>
+                        <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">How to increase your return on investment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+</body>
+
+</html>
