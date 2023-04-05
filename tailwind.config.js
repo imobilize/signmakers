@@ -5,6 +5,13 @@ module.exports = {
   content: ['./layouts/**/*.html', './content/**/*.md'],
   darkMode: 'class',
   theme: {
+
+    // fontFamily: {
+    //   'sans': ['ui-sans-serif', 'system-ui'],
+    //   'serif': ['ui-serif', 'Georgia'],
+    //   'mono': ['ui-monospace', 'SFMono-Regular'],
+    // },
+
     extend: {
       colors: {
         primary: 'colors.indigo',
