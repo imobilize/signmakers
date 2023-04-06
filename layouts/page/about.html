@@ -2,336 +2,64 @@
 
 <main>
 
-    <section>
-
-        <div class="pt-20 md:pt-28">
-            <div class="container px-4 mx-auto max-w-screen-xl">
-                <div class="flex flex-wrap xl:items-center -mx-4">
-                    <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
-                        <h1 class="mb-6 text-3xl md:text-4xl lg:text-6xl leading-tight font-bold tracking-tight"
-                            data-config-id="auto-txt-14-2">About Outsourced Sales</h1>
-                        <p class="pr-0 mb-8 text-base text-gray-600 sm:text-lg xl:text-xl lg:pr-20">Outsourced Sales is
+    {{ $bgimage := (resources.Get "images/bg2.png").RelPermalink }}
+    <section
+        class="relative table w-full pb-0 lg:pb-0 bg-slate-800 bg-[url('{{ $bgimage }}')] bg-center bg-no-repeat bg-cover"
+        style="background-image: url('{{$bgimage}}');">
+        <div class="container px-4 mx-auto max-w-screen-xl">
+            <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+                <div class="lg:col-span-7">
+                    <div class="md:me-6 md:mb-20">
+                        <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold  mb-5 text-white">About Outsourced Sales
+                        </h1>
+                        <p class="pr-0 my-8 text-base text-gray-200 sm:text-xl xl:text-2xl lg:pr-20">Outsourced Sales is
                             a sales and marketing agency that works with small to medium size businesses to grow their
                             sales. We offer a way to outsource your sales and marketing function so that you can
                             concentrate on delivery of your products and services. </p>
+                        <div class="mt-20">
+                            <div class="flex flex-wrap -m-2.5 mb-20">
 
-                        <div class="flex flex-wrap -m-2.5 mb-20">
+                                <div class="w-full md:w-auto p-2.5">
+                                    <div class="block">
+                                        <a href="https://vimeo.com/160332281" class="glightbox-hero">
 
-                            <div class="w-full md:w-auto p-2.5">
-                                <div class="block">
-                                    <a href="https://vimeo.com/160332281" class="glightbox-hero">
+                                            <button
+                                                class="py-4 px-9 w-full text-white font-semibold border border-gray-300 hover:border-gray-400 rounded-xl focus:ring focus:ring-gray-50 bg-amber-600 hover:bg-amber-500 transition ease-in-out duration-200"
+                                                type="button">
+                                                <div class="flex flex-wrap justify-center items-center -m-1">
 
-                                        <button
-                                            class="py-4 px-9 w-full font-semibold border border-gray-300 hover:border-gray-400 rounded-xl focus:ring focus:ring-gray-50 bg-transparent hover:bg-gray-100 transition ease-in-out duration-200"
-                                            type="button">
-                                            <div class="flex flex-wrap justify-center items-center -m-1">
+                                                    <div class="w-auto p-1">
 
-                                                <div class="w-auto p-1">
-
-                                                    <span data-config-id="auto-txt-15-1">Watch Intro Video</span>
+                                                        <span data-config-id="auto-txt-15-1">Watch Intro Video</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </button>
-                                    </a>
+                                            </button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <div class="w-full md:w-1/2 px-4">
-                        <div class="relative mx-auto md:mr-0 max-w-max">
-                            {{ $circleimage := resources.Get "images/circle3-yellow.svg" }}
-                            {{ $dotsimage := resources.Get "images/dots3-blue.svg" }}
+                </div><!--end col-->
 
-                            <img class="absolute z-10 -left-14 -top-12 w-28 md:w-auto"
-                                src="{{ $circleimage.RelPermalink }}" alt="" data-config-id="auto-img-5-2">
-                            <img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto float"
-                                src="{{ $dotsimage.RelPermalink }}" alt="" data-config-id="auto-img-6-2">
-                            <a href="https://vimeo.com/160332281" class="glightbox-hero">
-
-                                <svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer text-indigo-500 hover:text-indigo-600"
-                                    width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" data-config-id="auto-svg-3-2">
-                                    <circle cx="32" cy="32" r="32" fill="currentColor"></circle>
-                                    <path class="text-white"
-                                        d="M40.5 31.13L26.5 23.05C26.348 22.9622 26.1755 22.916 26 22.916C25.8245 22.916 25.652 22.9622 25.5 23.05C25.3474 23.1381 25.2208 23.265 25.133 23.4177C25.0452 23.5705 24.9993 23.7438 25 23.92V40.08C24.9993 40.2562 25.0452 40.4295 25.133 40.5822C25.2208 40.735 25.3474 40.8619 25.5 40.95C25.652 41.0378 25.8245 41.084 26 41.084C26.1755 41.084 26.348 41.0378 26.5 40.95L40.5 32.87C40.6539 32.7828 40.7819 32.6563 40.871 32.5035C40.96 32.3506 41.007 32.1769 41.007 32C41.007 31.8231 40.96 31.6494 40.871 31.4965C40.7819 31.3437 40.6539 31.2172 40.5 31.13ZM27 38.35V25.65L38 32L27 38.35Z"
-                                        fill="currentColor"></path>
-                                </svg>
-                            </a>
-                            <div class="relative overflow-hidden rounded-7xl">
-                                {{ $heroOne := resources.GetMatch "images/outsourced-sales-hero.jpg" }}
-
-                                <a href="https://vimeo.com/160332281" class="glightbox-hero">
-                                    <img src="{{ $heroOne.RelPermalink }}" data-config-id="auto-img-3-2">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <div class="lg:col-span-5 mt-8 md:mt-0">
+                    {{ with resources.Get "images/sales-man.png" }}
+                    {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                    {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                    {{ $large := (.Resize "900x webp q80").RelPermalink }}
+                    {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+                    <img src="{{ $featuredimage }}" srcset="" alt="">
+                    {{end}}
+                </div><!--end col-->
+            </div><!--end grid-->
+        </div><!--end container-->
     </section>
 
+    {{ with .Site.Data.hero }}{{ partial "dashboard.html" . }}{{ end }}
 
-    <section class="bg-white">
-        <div class="text-xl text-gray-800 container mt-24 px-6 py-20 mx-auto">
-
-
-            <div class="flex flex-col md:flex-row gap-8">
-
-                <div class="basis-full md:basis-1/3">
-                    {{ $salespipeline := resources.Get "images/sales-pipeline.jpg"}}
-                    <img class="w-full object-cover " src="{{ $salespipeline.RelPermalink }}">
-                    <p class="mb-12 text-center">
-                        A typical sales pipeline
-                    </p>
-                </div>
-
-                <div class="basis-full md:basis-2/3">
-                    <div class="flex justify-center">
-                        <div class="max-w-[700px]">
-                            <h2 class="text-center text-4xl font-bold mb-6">Why outsource your sales?</h2>
-                            <p class="mb-3">
-                                In order to make sales, a typical company has to generate leads, nurture those leads to
-                                convert
-                                them
-                                into potential customers and then convert them into sales.
-                            </p>
-                            <p class="mb-12">
-                                This process often involves:
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 xl:gap-x-12">
-                        <div class="mb-12">
-                            <div class="flex">
-                                <div class="shrink-0 mt-1">
-                                    <svg class="w-4 h-4 text-green-600" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 512 512">
-                                        <path fill="currentColor"
-                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="grow ml-4">
-                                    <p class="font-bold mb-1">Relentless marketing efforts</p>
-                                    <p class="text-gray-500">Marketing may include social media, emails, blogging and
-                                        advertising to generate leads</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-12">
-                            <div class="flex">
-                                <div class="shrink-0 mt-1">
-                                    <svg class="w-4 h-4 text-green-600" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 512 512">
-                                        <path fill="currentColor"
-                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="grow ml-4">
-                                    <p class="font-bold mb-1">Tracking and measuring</p>
-                                    <p class="text-gray-500">What gets measured gets improved. That's why you need to
-                                        track
-                                        every part of your marketing and sales pipeline to optimise marketing spend and
-                                        increase
-                                        conversions.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-12">
-                            <div class="flex">
-                                <div class="shrink-0 mt-1">
-                                    <svg class="w-4 h-4 text-green-600" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 512 512">
-                                        <path fill="currentColor"
-                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="grow ml-4">
-                                    <p class="font-bold mb-1">Building relationships</p>
-                                    <p class="text-gray-500">You neeed to spend time with potential customers to improve
-                                        their understanding of your product or services</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-12">
-                            <div class="flex">
-                                <div class="shrink-0 mt-1">
-                                    <svg class="w-4 h-4 text-green-600" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 512 512">
-                                        <path fill="currentColor"
-                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="grow ml-4">
-                                    <p class="font-bold mb-1">Price negotiation</p>
-                                    <p class="text-gray-500">You will need to work with prospects to enhance their
-                                        appreciation of your product or service so that you can charge more</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-12">
-                            <div class="flex">
-                                <div class="shrink-0 mt-1">
-                                    <svg class="w-4 h-4 text-green-600" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 512 512">
-                                        <path fill="currentColor"
-                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="grow ml-4">
-                                    <p class="font-bold mb-1">Managing customer expectations</p>
-                                    <p class="text-gray-500">Prospects want to trust that you can deliver. You will need
-                                        to keep them updated to ensure they stay happy throughout the sales process</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="flex justify-center">
-                        <div class="max-w-[700px]">
-                            <p class="mb-12">
-                                We have found that small-medium sized businesses simply can’t compete in the marketplace if they are expected to know and do everything involved in the sales cycle. 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-        <!-- ========================= hero-section start ========================= -->
-        <section class="pb-20 relative bg-white">
-            <div class="container">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-[90px] items-center">
-                    <div class="relative space-y-4 md:space-y-0">
-                        <div>
-                            {{ with resources.Get "images/help.jpg" }}
-                            {{ $small := (.Resize "550x webp q100").RelPermalink }}
-                            {{ $medium := (.Resize "900x webp q100").RelPermalink }}
-                            {{ $large := (.Resize "1500x webp q100").RelPermalink }}
-                            {{ $together := (.Resize "1500x webp q100").RelPermalink }}
-                            <img src="{{ $together}}" class="mx-auto" alt="">
-                            {{ end }}
-                        </div>
-                        <div class="top-[120px] -left-20 md:absolute">
-                            <div class="flex gap-[17px] items-center pt-[25px] pr-[30px] pb-[21px] pl-[26px] bg-white dark:bg-semilight shadow-[25px_0px_65px_rgba(54,32,152,0.11)] rounded-lg">
-                                <h3 class="text-[50px] text-[#1cbe59]"><span class="dizme_tm_counter stop" data-from="0" data-to="18" data-speed="2000">18</span></h3>
-                                <span class="name text-lg font-secondary leading-[1.3] font-medium">
-                                    Years of<br>
-                                    Success
-                                </span>
-                            </div>
-                        </div>
-                        <div class="bottom-[70px] -right-[30px] md:absolute">
-                            <div class="flex gap-[17px] items-center pt-[25px] pr-[30px] pb-[21px] pl-[26px] bg-white dark:bg-semilight shadow-[25px_0px_65px_rgba(54,32,152,0.11)] rounded-lg">
-                                <h3 class="text-[50px] text-[#6e50f0] dark:text-[#f0c45c]"><span class="dizme_tm_counter stop" data-from="0" data-to="9" data-speed="2000">9</span>K</h3>
-                                <span class="name text-lg font-secondary leading-[1.3] font-medium">
-                                    Total<br>
-                                    Projects
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center md:text-left">
-                        <div class="mb-[25px]">
-                            <h3 class="text-7xl leading-[1.25] wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">That's where Outsourced Sales comes in</h3>
-                        </div>
-                        <p class="mb-8 font-light lg:text-xl">
-                            We manage the whole process for you. Quite simply we put your sales on autopilot taking away the hassle and worry about how to sell. 
-                        </p>
-                        <p class="mb-8 font-light lg:text-xl">
-                            By leveraging our knowledge and expertise around marketing and sales, you end up with a done for you service that improves your return on investment for your marketing and sales spend.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="left-10 top-5 absolute hidden lg:block wow fadeInLeft" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;"><img src="assets/img/brushes/about/1.png" alt=""></div>
-            <div class="-bottom-[50px] right-0 absolute hidden lg:block wow fadeInRight" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;"><img src="assets/img/brushes/about/2.png" alt=""></div>
-        </section>
-        <!-- ========================= hero-section end ========================= -->
-    
-
-
-    <div class="relative items-center justify-center w-full overflow-x-hidden lg:pb-40 xl:pb-64 text-gray-800">
-        <div class="container flex flex-col items-center justify-between h-full max-w-6xl px-8 mx-auto lg:flex-row xl:px-0">
-            <div class="z-30 flex flex-col items-center w-full max-w-xl text-center lg:items-start lg:w-1/2 lg:text-left">
-                
-                <div class="text-gray-500 sm:text-lg dark:text-gray-400 mt-20">
-                    <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">That’s where Outsourced Sales come in</h2>
-                    <p class="mb-8 font-light lg:text-xl">We manage the whole process for you. Quite simply we put your sales on autopilot taking away the hassle and worry about how to sell. By leveraging our knowledge and expertise around marketing and sales, you end up with a done for you service that improves your return on investment for your marketing and sales spend.</p>
-                    <!-- List -->
-                    <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
-                        <li class="flex space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Continuous
-                                integration and deployment</span>
-                        </li>
-                        <li class="flex space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Development
-                                workflow</span>
-                        </li>
-                        <li class="flex space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Knowledge
-                                management</span>
-                        </li>
-                    </ul>
-                    <p class="mb-8 font-light lg:text-xl">Deliver great service experiences fast - without the
-                        complexity of traditional ITSM solutions.</p>
-                </div>
-                
-            </div>
-            <div class="relative flex flex-col items-end justify-center w-full lg:w-1/2 ms:pl-10">
-                <div class="container relative left-0 w-full max-w-4xl lg:absolute xl:max-w-6xl lg:w-screen">
-                    {{ with resources.Get "images/outsourced-sales.jpg" }}
-                    {{ $small := (.Resize "550x webp q100").RelPermalink }}
-                    {{ $medium := (.Resize "900x webp q100").RelPermalink }}
-                    {{ $large := (.Resize "1500x webp q100").RelPermalink }}
-                    {{ $outsourceimage := (.Resize "1500x webp q100").RelPermalink }}
-                    <img srcset="
-                    {{- with $small -}}, {{.}} 768w{{- end -}}
-                    {{- with $medium -}}, {{.}} 1024w{{- end -}}
-                    {{- with $large -}}, {{.}} 1374w{{- end -}}" src="{{ $outsourceimage }}" class="w-full h-auto  ml-0  xl:mt-40 lg:mb-0 lg:ml-5">
-                    {{ end }}
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- ========================= hero-section start ========================= -->
-    <section class="md:pt-[112px] pt-16 relative" id="about">
+    <section class="md:pt-[112px] pt-16 relative">
         <div class="container">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-[90px] items-center">
                 <div class="relative space-y-4 md:space-y-0">
@@ -345,8 +73,10 @@
                         {{ end }}
                     </div>
                     <div class="top-[120px] -left-20 md:absolute">
-                        <div class="flex gap-[17px] items-center pt-[25px] pr-[30px] pb-[21px] pl-[26px] bg-white dark:bg-semilight shadow-[25px_0px_65px_rgba(54,32,152,0.11)] rounded-lg">
-                            <h3 class="text-[50px] text-[#1cbe59]"><span class="dizme_tm_counter stop" data-from="0" data-to="18" data-speed="2000">18</span></h3>
+                        <div
+                            class="flex gap-[17px] items-center pt-[25px] pr-[30px] pb-[21px] pl-[26px] bg-white dark:bg-semilight shadow-[25px_0px_65px_rgba(54,32,152,0.11)] rounded-lg">
+                            <h3 class="text-[50px] text-[#1cbe59]"><span class="dizme_tm_counter stop" data-from="0"
+                                    data-to="18" data-speed="2000">18</span></h3>
                             <span class="name text-lg font-secondary leading-[1.3] font-medium">
                                 Years of<br>
                                 Success
@@ -354,8 +84,11 @@
                         </div>
                     </div>
                     <div class="bottom-[70px] -right-[30px] md:absolute">
-                        <div class="flex gap-[17px] items-center pt-[25px] pr-[30px] pb-[21px] pl-[26px] bg-white dark:bg-semilight shadow-[25px_0px_65px_rgba(54,32,152,0.11)] rounded-lg">
-                            <h3 class="text-[50px] text-[#6e50f0] dark:text-[#f0c45c]"><span class="dizme_tm_counter stop" data-from="0" data-to="9" data-speed="2000">9</span>K</h3>
+                        <div
+                            class="flex gap-[17px] items-center pt-[25px] pr-[30px] pb-[21px] pl-[26px] bg-white dark:bg-semilight shadow-[25px_0px_65px_rgba(54,32,152,0.11)] rounded-lg">
+                            <h3 class="text-[50px] text-[#6e50f0] dark:text-[#f0c45c]"><span
+                                    class="dizme_tm_counter stop" data-from="0" data-to="9" data-speed="2000">9</span>K
+                            </h3>
                             <span class="name text-lg font-secondary leading-[1.3] font-medium">
                                 Total<br>
                                 Projects
@@ -365,21 +98,90 @@
                 </div>
                 <div class="text-center md:text-left">
                     <div class="mb-[25px] lg:max-w-[440px]">
-                        <p class="text-custom text-xl md:text-2xl font-medium font-secondary wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">I'm a Designer</p>
-                        <h3 class="md:text-[48px] text-[35px] leading-[1.25] mt-1.5 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">I Can Design Anything You Want</h3>
+                        <p class="text-custom text-xl md:text-2xl font-medium font-secondary wow fadeInUp"
+                            data-wow-duration="1s"
+                            style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">I'm a
+                            Designer</p>
+                        <h3 class="md:text-[48px] text-[35px] leading-[1.25] mt-1.5 wow fadeInUp" data-wow-duration="1s"
+                            style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">I Can Design
+                            Anything You Want</h3>
                     </div>
-                    <p class="text-muted dark:text-darkmuted lg:max-w-[485px] leading-[30px] mb-[47px] wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
-                        Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project
+                    <p class="text-muted dark:text-darkmuted lg:max-w-[485px] leading-[30px] mb-[47px] wow fadeInUp"
+                        data-wow-duration="1s"
+                        style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                        Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. With 20 years
+                        experience as a professional web developer, I have acquired the skills and knowledge necessary
+                        to make your project
                         a success. I enjoy every step of the design process, from discussion and collaboration.
                     </p>
-    
+
                 </div>
             </div>
         </div>
-        <div class="left-10 top-5 absolute hidden lg:block wow fadeInLeft" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;"><img src="assets/img/brushes/about/1.png" alt=""></div>
-        <div class="-bottom-[50px] right-0 absolute hidden lg:block wow fadeInRight" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;"><img src="assets/img/brushes/about/2.png" alt=""></div>
+        <div class="left-10 top-5 absolute hidden lg:block wow fadeInLeft" data-wow-duration="1s"
+            style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;"><img
+                src="assets/img/brushes/about/1.png" alt=""></div>
+        <div class="-bottom-[50px] right-0 absolute hidden lg:block wow fadeInRight" data-wow-duration="1s"
+            style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;"><img
+                src="assets/img/brushes/about/2.png" alt=""></div>
     </section>
     <!-- ========================= hero-section end ========================= -->
 
+
+    <section class="py-20 max-w-6xl mx-auto">
+        <div class="container">
+            <div class="flex flex-wrap items-center justify-between max-w-2xl lg:max-w-full mb-12">
+                <div class="w-full lg:w-1/2 mb-4 lg:mb-0">
+                    <h2
+                        class="text-3xl md:text-4xl font-bold font-heading wow animate__animatedanimated animate__fadeInDown">
+                        <span>We are </span><span class="text-blue-500">awesome team </span><br><span>for your business
+                            dream</span></h2>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <p class="text-blueGray-400 leading-loose wow animate__animatedanimated animate__fadeIn">Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis. Quisque vitae
+                        nulla malesuada, auctor arcu vitae, luctus nisi. Sed elementum vitae ligula id imperdiet.</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 -mb-6 text-center">
+                <div class="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn"
+                    data-wow-delay=".3s">
+                    <div class="p-12 bg-white shadow rounded">
+                        <div
+                            class="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
+                            1</div><img class="h-36 mx-auto my-4" src="/assets/imgs/illustrations/eating.svg"
+                            alt="Monst">
+                        <h3 class="mb-2 font-bold font-heading text-xl">Project Initialization</h3>
+                        <p class="text-sm text-blueGray-400 leading-relaxed">Project initiation ensures that you lay a
+                            strong foundation for a new project in your company our team.</p>
+                    </div>
+                </div>
+                <div class="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn"
+                    data-wow-delay=".5s">
+                    <div class="p-12 bg-white shadow rounded">
+                        <div
+                            class="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
+                            2</div><img class="h-36 mx-auto my-4" src="/assets/imgs/illustrations/space.svg"
+                            alt="Monst">
+                        <h3 class="mb-2 font-bold font-heading text-xl">Project planning</h3>
+                        <p class="text-sm text-blueGray-400 leading-relaxed">A project plan is essential to keep
+                            everything related to the project organized, methodical, and on track.</p>
+                    </div>
+                </div>
+                <div class="hover-up-5 w-full lg:w-1/3 px-3 mb-6">
+                    <div class="p-12 bg-white shadow rounded wow animate__animated animate__fadeIn"
+                        data-wow-delay=".7s">
+                        <div
+                            class="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
+                            3</div><img class="h-36 mx-auto my-4" src="/assets/imgs/illustrations/tasks.svg"
+                            alt="Monst">
+                        <h3 class="mb-2 font-bold font-heading text-xl">Project organization</h3>
+                        <p class="text-sm text-blueGray-400 leading-relaxed">Moving forward you will be able to keep
+                            yourself and your team on track, and address challenges early.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 {{ end }}
