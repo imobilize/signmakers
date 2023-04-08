@@ -24,14 +24,13 @@
                     {{ $missionimage := resources.Get "images/sales-person.jpg" }}
                     {{ with $missionimage }}
                     {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
-                    <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
+                    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
                         class="absolute inset-0 object-cover w-full h-full" alt="TailBliss - Our Mission"
                         loading="lazy" />
                     {{ end }}>
                     {{ end }}
-                    <div class="absolute inset-0 bg-indigo-300 mix-blend-multiply"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-indigo-600 opacity-80">
-                    </div>
+                    <!-- <div class="absolute inset-x-0 end-0 h-1/2 bg-sky-300 mix-blend-multiply"></div>
+                    <div class="absolute inset-x-0 end-0 h-1/2  bg-gradient-to-t from-sky-600 to-sky-800 opacity-80"></div> -->
                     <div class="relative px-8">
                         <div>
                             <img class="h-12" src="images/tailbliss-white.svg" alt="Workcation">
@@ -43,16 +42,13 @@
                                     <path
                                         d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                                 </svg>
-                                <p class="relative">Tincidunt integer commodo, cursus etiam
-                                    aliquam neque, et. Consectetur pretium in volutpat, diam.
-                                    Montes, magna cursus nulla feugiat dignissim id lobortis
-                                    amet.
+                                <p class="relative">Engineers create great products by focusing on innovation. Everything else can be outsourced
                                 </p>
                             </div>
 
                             <footer class="mt-4">
                                 <p class="text-base font-semibold text-gray-200">
-                                    John Doe, CEO at TailBliss
+                                    Andre Barrett, Founder of Outsourced Sales
                                 </p>
                             </footer>
                         </blockquote>
@@ -83,89 +79,14 @@
                         Through multiple iterations, we found the best approach to get maximum sales results for the
                         least amount of resources spent.
                     </p>
-                    <p class="text-lg leading-7">We now want to deliver the same optimised sales process to your
-                        business.
+                    <p class="text-lg leading-7">We now deliver the same optimised sales process to your
+                        business. Partner with us and we will put your sales on autopilot!
                     </p>
 
                 </div>
             </div>
         </div>
 
-    </div>
-
-    <div class="container mx-auto">
-        <div class="flex flex-wrap items-center">
-            {{ $starimage := (resources.Get "images/star.svg").Content | safeHTML }}
-
-            <div class="w-full px-4">
-                <div class="flex flex-wrap">
-                    <div class="w-full md:w-4/12 px-4">
-                        <div class="relative flex flex-col mt-4">
-                            <div class="px-4 py-5 flex-auto">
-                                <div
-                                    class="text-lg text-gray-900 dark:text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                                    {{ $starimage }}
-                                </div>
-                                <p class="mb-4 text-lg text-gray-900 dark:text-white font-bold">Grow your business without having
-                                    to know about the latest marketing and sales tactics.</p>
-                            </div>
-                        </div>
-                        <div class="relative flex flex-col min-w-0">
-                            <div class="px-4 py-5 flex-auto">
-                                <div
-                                    class="text-slate-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                                    {{ $starimage }}
-
-                                </div>
-                                <p class="mb-4 text-lg text-gray-900 dark:text-white font-bold">Sleep soundly knowing that without
-                                    lifting a finger your products and services will be sold.</p>
-
-                            </div>
-                        </div>
-
-    
-                    </div>
-                    <div class="w-full md:w-4/12 px-4">
-                        <div class="relative flex flex-col min-w-0 mt-4">
-                            <div class="px-4 py-5 flex-auto">
-                                <div
-                                    class="text-slate-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                                    {{ $starimage }}
-
-                                </div>
-                                <p class="mb-4 text-lg text-gray-900 dark:text-white font-bold">Remove the hassle of training
-                                    sales staff or managing extra people.</p>
-                            </div>
-                        </div>
-                        <div class="relative flex flex-col min-w-0">
-                            <div class="px-4 py-5 flex-auto">
-                                <div
-                                    class="text-slate-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                                    {{ $starimage }}
-
-                                </div>
-                                <p class="mb-4 text-lg text-gray-900 dark:text-white font-bold">Get paid what you deserve without
-                                    having to haggle on price or discount to compete.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-4/12 px-4">
-                        <div class="relative flex flex-col min-w-0 mt-4">
-                            <div class="px-4 py-5 flex-auto">
-                                <div
-                                    class="text-slate-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                                    {{ $starimage }}
-
-                                </div>
-                                <p class="mb-4 text-lg text-gray-900 dark:text-white font-bold">Focus on the work that you enjoy
-                                    the most so that you can deliver the greatest amount of value.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </div>
 
 </div>
@@ -176,13 +97,10 @@
       <div>
         <div class="max-w-2xl">
           <p class="text-2xl font-medium tracking-tight text-black sm:text-4xl">
-            I am a slightly longer heading that the others and I am align to the
-            left
+            We have grown the sales of other manufacturing and engineering companies including our own.
           </p>
           <p class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600">
-            We all make mistakes, have struggles, and even regret things in our
-            past. But you are not your mistakes, you are not your struggles, and
-            you are here NOW with the power to shape your day and your future
+            We know how difficult it is to grow sales when you have very little time. With Outsourced Sales, your sales growth becomes independent of the time you have. Now you can spend time doing whatever you want.
           </p>
         </div>
       </div>
@@ -191,15 +109,8 @@
           <div class="mx-auto lg:max-w-7xl">
             <ul role="list" class="grid grid-cols-2 gap-4 list-none md:grid-cols-3 lg:gap-12">
               <li>
-                <div>
                   <p class="mt-5 text-lg font-medium leading-6 text-black">
-                    Developer experience
-                  </p>
-                </div>
-                <div class="mt-2 text-base text-gray-500">
-                  Plus, our platform is constantly evolving to meet the changing
-                  needs.
-                </div>
+                    Sleep soundly knowing that without lifting a finger your products and services will be sold.                  </p>
               </li>
               <li>
                   <p class="mt-5 text-lg font-medium leading-6 text-black">
@@ -212,15 +123,9 @@
                 </p>
               </li>
               <li>
-                <div>
                   <p class="mt-5 text-lg font-medium leading-6 text-black">
-                    Customer support
-                  </p>
-                </div>
-                <div class="mt-2 text-base text-gray-500">
-                  Plus, our platform is constantly evolving to meet the changing
-                  needs.
-                </div>
+                    Grow your business without having to know about the latest marketing and sales tactics.
+                </p>
               </li>
   
               <li>
@@ -228,17 +133,6 @@
                     Focus on the work that you enjoy the most so that you can deliver the greatest amount of value. 
                   </p>
     
-              </li>
-              <li>
-                <div>
-                  <p class="mt-5 text-lg font-medium leading-6 text-black">
-                    Customer support
-                  </p>
-                </div>
-                <div class="mt-2 text-base text-gray-500">
-                  Plus, our platform is constantly evolving to meet the changing
-                  needs.
-                </div>
               </li>
             </ul>
           </div>

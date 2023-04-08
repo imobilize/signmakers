@@ -7,7 +7,7 @@
                     class="transition-opacity h-9 w-9 group-hover:opacity-50 group-focus:opacity-70"
                     alt="{{ .Site.Title }} Logo" />
                 <div
-                    class="mt-1 ml-3 text-xl font-black text-gray-100 uppercase transition-colors group-hover:text-gray-400/60">
+                    class="mt-1 ml-3 text-xl font-black text-gray-100 transition-colors group-hover:text-amber-500">
                     {{ .Site.Title }}</div>
             </a>
             <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open"
@@ -24,19 +24,19 @@
         </div>
         <nav :class="{'flex': open, 'hidden': !open}"
             class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-amber-600 focus:bg-amber-700 focus:outline-none focus:shadow-outline"
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-amber-600 focus:bg-amber-500 focus:outline-none focus:shadow-outline"
             href="/">Home</a>
 
-            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-amber-600 focus:bg-amber-700 focus:outline-none focus:shadow-outline"
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-amber-600 focus:bg-amber-500 focus:outline-none focus:shadow-outline"
                 href="/about/">About</a>
 
-            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-amber-600 focus:bg-amber-700 focus:outline-none focus:shadow-outline"
+            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-amber-600 focus:bg-amber-500 focus:outline-none focus:shadow-outline"
                 href="/contact">
                 Contact
             </a>
 
             <button
-                class="px-5 text-white font-semibold border border-amber-700 rounded-lg focus:ring focus:ring-amber-300 bg-amber-600 hover:bg-amber-700 transition ease-in-out duration-200"
+                class="px-5 text-white font-semibold border border-amber-500 rounded-lg focus:ring focus:ring-amber-300 bg-amber-600 hover:bg-amber-500 transition ease-in-out duration-200"
                 type="button" data-config-id="auto-txt-10-1">Book Free Consultation</button>
 
         </nav>
