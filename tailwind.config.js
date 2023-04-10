@@ -6,11 +6,12 @@ module.exports = {
   darkMode: 'class',
   theme: {
 
-    // fontFamily: {
-    //   'sans': ['ui-sans-serif', 'system-ui'],
-    //   'serif': ['ui-serif', 'Georgia'],
-    //   'mono': ['ui-monospace', 'SFMono-Regular'],
-    // },
+    fontFamily: {
+      // 'sans': ['ui-sans-serif', 'Poppins'],
+      // 'serif': ['ui-serif', 'Poppins'],
+      // 'mono': ['ui-monospace', 'Poppins'],
+      'poppins': ['"Poppins"', 'cursive']
+    },
 
     extend: {
       colors: {
