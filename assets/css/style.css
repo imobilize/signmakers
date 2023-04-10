@@ -6725,6 +6725,10 @@ EmojiSymbols;
     margin-top: 1.5rem;
   }
 
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .lg\:block {
     display: block;
   }
