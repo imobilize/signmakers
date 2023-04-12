@@ -13,20 +13,66 @@ paginate = 9
 darkmode_js = ["assets/js/darkmode.js"]
 enableInlineShortcodes = true
 
+[outputs]
+home = ["HTML", "AMP", "RSS", "JSON"]
+
+
+[permalinks]
+    blogs = "/:title"
+    categories = "/:title"
+    tags = "/:title"
+
 [params]
-author = "iMobilize Ltd"
+author = "Outsourced Sales"
 authorimage = "../assets/images/global/author.webp"
 github = "https://github.com/imobilize"
 facebook = "https://facebook.com/outsourcedsales"
 og_image = "/images/tailbliss-cover.png"
-sitename = "Outsourced Selling"
+sitename = "Outsourced Sales"
 twitter = "@outsourcedsales"
 description = "Outsourced sales is an agency which handles your sales pipeline for you"
+logo = ""
+home = "Home"
+# Google Analitycs
+googleAnalitycsID = "" # Your ID
 
 [markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+
 
 [taxonomies]
 category = "Categories"
@@ -54,6 +100,38 @@ simple = false
 [privacy.youtube]
 disable = false
 privacyEnhanced = true
+
+[menu]
+    
+  [[menu.main]]
+  name = "About"
+  URL = "book"
+  weight = 1
+
+  [[menu.main]]
+  name = "Reviews"
+  URL = "reviews"
+  weight = 2
+
+  [[menu.main]]
+  name = "Chapters"
+  URL = "chapters"
+  weight = 3
+  
+  [[menu.main]]
+  name = "Author"
+  URL = "author"
+  weight = 4
+  
+  [[menu.main]]
+  name = "Blog"
+  URL = "blog"
+  weight = 5
+  
+  [[menu.main]]
+  name = "Free Resources"
+  URL = "resources"
+  weight = 6
 
 [module]
   [module.hugoVersion]

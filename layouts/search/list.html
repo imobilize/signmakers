@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+<header class="masthead-sm bg-white text-center">
+  <h1 class="mt-4 mb-4">{{ .Title }}</h1>
+</header>
+
+<section class="py-2">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2>Search results for
+          <span class="text-primary">
+            <script>
+              var str=(window.location.search).substr(3);var result=str.replace("+"," ");document.write(result);</script>
+          </span>
+        </h2>
+        <div class="block shadow p-3">
+          <div id="search-results"></div>
+          <script id="search-result-template" type="text/x-js-template">
+            <div class="py-4 border-bottom" id="summary-${key}">
+              <h4><a href="${link}">${title}</a></h4>
+              <p>${snippet}</p>
+              ${ isset tags }<p>Tags: ${tags}</p>${ end }
+              ${ isset categories }<p>Categories: ${categories}</p>${ end }
+            </div>
+        </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

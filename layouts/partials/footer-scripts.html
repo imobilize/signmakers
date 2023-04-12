@@ -5,11 +5,23 @@
 {{ $darkmode := resources.Get "js/darkmode.js" | js.Build }}
 <script src="{{ $darkmode.RelPermalink }}"></script>
 
+{{ $jquery := resources.Get "js/jquery.min.js" }}
+<script src="{{ $jquery.RelPermalink }}"></script>
+
 {{ $jarallax := resources.Get "js/jarallax.js" | js.Build }}
 <script src="{{ $jarallax.RelPermalink }}"></script>
 
 {{ $lightbox := resources.Get "js/glightbox.js" | js.Build }}
 <script src="{{ $lightbox.RelPermalink }}"></script>
+
+{{ $fuse := resources.Get "js/fuse.min.js" }}
+<script src="{{ $fuse.RelPermalink }}"></script>
+
+{{ $search := resources.Get "js/search.js" }}
+<script src="{{ $search.RelPermalink }}"></script>
+
+{{ $mark := resources.Get "js/mark.js" }}
+<script src="{{ $mark.RelPermalink }}"></script>
 
 <script>
     var lightBoxHero = GLightbox({

@@ -12,7 +12,9 @@ module.exports = {
       // 'mono': ['ui-monospace', 'Poppins'],
       'poppins': ['"Poppins"', 'cursive']
     },
-
+    container: {
+      padding: '2rem',
+    },
     extend: {
       colors: {
         primary: 'colors.indigo',

@@ -1,0 +1,172 @@
+{{define "main"}}
+
+
+<section class="relative md:pb-24 md:pt-20 pb-16 pt-12">
+ 
+    <div class="container mx-auto">
+        <nav class="flex px-6 mb-6" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                {{ range $index, $item := .Ancestors.Reverse }}
+                {{ with $item }}
+                <li class="inline-flex items-center">
+                    <a href="{{ .RelPermalink}}"
+                        class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-amber-600 dark:text-gray-400 dark:hover:text-white">
+                        {{ if lt $index 1}}
+                        <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                            </path>
+                        </svg>
+                        {{ else }}
+                        <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        {{ end }}
+                        {{ .Title }}
+                    </a>
+                </li>
+                {{ end }}
+                {{- end }}
+                <li aria-current="page">
+                    <div class="flex items-center">
+                        <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">{{ .Title
+                            }}</span>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+        <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+            <div class="lg:col-span-8 md:col-span-6">
+                <div class="px-6 border-r">
+
+                    {{ with .Params.featured_image }}
+                    {{ with resources.Get . }}
+                    {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                    {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                    {{ $large := (.Resize "900x webp q80").RelPermalink }}
+                    {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+                    <img src="{{ $featuredimage }}" srcset="
+                  {{- with $small -}}, {{.}} 400w{{- end -}}
+                  {{- with $medium -}}, {{.}} 550w{{- end -}}
+                  {{- with $large -}}, {{.}} 768w{{- end -}}
+                  {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
+                        class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
+                        width="100%" alt="{{ .Params.title }}" />
+                    {{ end }}
+                    {{ end }}
+
+                    <div class="text-center mt-12">
+                        <span
+                            class="bg-indigo-600 inline-block text-white text-xs font-semibold px-2.5 py-0.5 rounded-full h-5">{{.Params.categories}}</span>
+                        <h1 class="my-3 text-[26px] font-semibold">{{ .Title }}</h1>
+
+                        <ul class="list-none mt-6">
+                            <li class="inline-block font-semibold text-slate-400 mx-4"> <span
+                                    class="text-slate-900 dark:text-white block">Client :</span> <span
+                                    class="block">Calvin Carlo</span></li>
+                            <li class="inline-block font-semibold text-slate-400 mx-4"> <span
+                                    class="text-slate-900 dark:text-white block">Date :</span> <span class="block">23th
+                                    May, 2022</span></li>
+                            <li class="inline-block font-semibold text-slate-400 mx-4"> <span
+                                    class="text-slate-900 dark:text-white block">Time :</span> <span class="block">8 Min
+                                    Read</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-6">
+                        {{.Content}}
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="lg:col-span-4 md:col-span-6">
+                <div class="sticky top-20">
+                    <h5
+                        class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center">
+                        Author</h5>
+                    <div class="text-center mt-8">
+                        {{ if .Params.author_image }}
+                        {{ with resources.Get (.Params.author_image)}}
+                        <img src="{{ .RelPermalink }}" class="h-24 w-24 mx-auto rounded-full shadow mb-4"
+                            alt="{{.Params.author}}">
+                        {{ end }}
+                        {{ end }}
+                        <a href=""
+                            class="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">{{.Params.author}}</a>
+                        <p class="text-slate-400">Content Writer</p>
+                    </div>
+
+                    <h5
+                        class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center mt-8">
+                        Related posts</h5>
+
+                    {{ $related := .Site.RegularPages.Related . | first 4 }}
+                    {{ range $index, $item := $related }}
+                    {{ with $item }}
+                    <div class="flex items-center mt-5">
+                        {{ $postimage := resources.Get (.Params.featured_image) }}
+
+                        <img src="{{ $postimage.RelPermalink }}" class="h-16 rounded-md shadow dark:shadow-gray-800"
+                            alt="{{ .Title }}">
+
+                        <div class="mx-3">
+                            <a href="{{ .RelPermalink }}" class="font-semibold hover:text-indigo-600">{{ .Title }}</a>
+                            <p class="text-sm text-slate-400">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</p>
+                        </div>
+                    </div>
+                    {{ if lt $index ( len $related )}}
+                    <hr class="mt-5" />
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+
+                    <h5
+                        class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center mt-8">
+                        Tagscloud</h5>
+                    <ul class="list-none text-center mt-8">
+
+                        {{ range $taxonomyname, $taxonomy := .Site.Taxonomies.tags }}
+                        {{ $tagURL := printf "tags/%s" $taxonomyname | relURL }}
+                        <li class="inline-block m-2"><a href="{{ $tagURL }}"
+                                class="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow dark:shadow-gray-800 transition-all duration-500 ease-in-out">{{
+                                $taxonomyname }}</a></li>
+                        {{ end }}
+                    </ul>
+
+
+                    <div class="card">
+                        <h5 class="card-header">Search</h5>
+                        <div class="card-body">
+                            <form action="{{ `search` | relURL }}" class="h-100">
+                                <div class="input-group">
+
+                                    <input type="search" name="s" class="form-control" placeholder="Search for...">
+
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-secondary" type="submit">Go!</button>
+                                    </span>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+</section>
+
+
+{{ partial "subscribe-form.html" . }}
+{{end}}
