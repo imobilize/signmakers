@@ -1,8 +1,8 @@
-summaryInclude=60;
+var summaryInclude = 180;
 var fuseOptions = {
-  shouldSort: true,
-  includeMatches: true,
-  threshold: 0.0,
+    shouldSort: true,
+    includeMatches: true,
+    threshold: 0.0,
   tokenize:true,
   location: 0,
   distance: 100,
@@ -16,17 +16,15 @@ var fuseOptions = {
   ]
 };
 
-
-var searchQuery = param("s");
+var searchQuery = param("q");
 if(searchQuery){
   $("#search-query").val(searchQuery);
   executeSearch(searchQuery);
 }
 
 
-
 function executeSearch(searchQuery){
-  $.getJSON( indexURL, function( data ) {
+  $.getJSON( '/index.json', function( data ) {
     var pages = data;
     var fuse = new Fuse(pages, fuseOptions);
     var result = fuse.search(searchQuery);

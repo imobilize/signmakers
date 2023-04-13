@@ -17,11 +17,11 @@
 {{ $fuse := resources.Get "js/fuse.min.js" }}
 <script src="{{ $fuse.RelPermalink }}"></script>
 
-{{ $search := resources.Get "js/search.js" }}
-<script src="{{ $search.RelPermalink }}"></script>
-
 {{ $mark := resources.Get "js/mark.js" }}
 <script src="{{ $mark.RelPermalink }}"></script>
+
+{{ $search := resources.Get "js/search.js" }}
+<script src="{{ $search.RelPermalink }}"></script>
 
 <script>
     var lightBoxHero = GLightbox({
