@@ -133,7 +133,7 @@
 
                     <h5
                         class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center mt-8">
-                        Tagscloud</h5>
+                        Tags</h5>
                     <ul class="list-none text-center mt-8">
 
                         {{ range $taxonomyname, $taxonomy := .Site.Taxonomies.tags }}
@@ -144,23 +144,39 @@
                         {{ end }}
                     </ul>
 
+                    <h5
+                    class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center mt-8">
+                    Search</h5>
 
-                    <div class="card">
-                        <h5 class="card-header">Search</h5>
-                        <div class="card-body">
-                            <form action="{{ `search` | relURL }}" class="h-100">
-                                <div class="input-group">
-
-                                    <input type="search" name="s" class="form-control" placeholder="Search for...">
-
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-secondary" type="submit">Go!</button>
-                                    </span>
-                                </div>
-                            </form>
-
+                    <div class="mt-8">
+                        <form action="{{ `search` | relURL }}" class="flex flex-row space-y-3 lg:space-y-0 lg:flex-row">
+                          <input
+                            type="search"
+                            class="w-full m-0 -mr-0.5 block px-4 py-2 text-gray-700 bg-white border rounded-l-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-amber-400 dark:focus:border-amber-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-amber-300" placeholder="Search for..."
+                            placeholder="Search"
+                            aria-label="Search"
+                            aria-describedby="button-addon1" />
+                      
+                          <!--Search button-->
+                          <button
+                            class="relative z-[2] flex items-center rounded-r bg-amber-600 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-amber-600 hover:shadow-lg focus:bg-amber-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-500 active:shadow-lg"
+                            type="submit"
+                            id="button-addon1"
+                            data-te-ripple-init
+                            data-te-ripple-color="light">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              class="h-5 w-5">
+                              <path
+                                fill-rule="evenodd"
+                                d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                clip-rule="evenodd" />
+                            </svg>
+                          </button>
                         </div>
-                    </div>
+                      </div>
                 </div>
             </div>
         </div><!--end grid-->
