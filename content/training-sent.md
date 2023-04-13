@@ -10,6 +10,6 @@ description: Training sent
 
 Now check your email for instructions on how to access the training.
 
-If you don't see a message from us in the next 15 minutes, check your "Spam" folder. And if you still need assistance, contact us at admin@outsourcedsales.com.
+If you don't see a message from us in the next 15 minutes, check your "Spam" folder. And if you still need assistance, contact us at support@outsourcedsales.com.
 
 
