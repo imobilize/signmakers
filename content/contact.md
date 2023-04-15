@@ -12,11 +12,6 @@ description: Contact us
   <div class="max-w-screen-md px-4 mx-auto">
       <p class="font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">Looking for a solution that will allow your business to grow, within your budget; and able to provide the dedication and results your business deserves?</p>
 
-
-
-
-<!-- Begin Sendinblue Form -->
-<!-- START - We recommend to place the below code in head tag of your website html  -->
 <style>
   @font-face {
     font-display: block;
@@ -57,9 +52,7 @@ description: Contact us
   }
 </style>
 <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-<!--  END - We recommend to place the above code in head tag of your website html -->
 
-<!-- START - We recommend to place the below code where you want the form in your website html  -->
 <div class="sib-form" style="text-align: center;
          background-color: #EFF2F7;                                 ">
   <div id="sib-form-container" class="sib-form-container">
@@ -965,35 +958,6 @@ description: Contact us
     </div>
   </div>
 </div>
-<!-- END - We recommend to place the below code where you want the form in your website html  -->
 
-<!-- START - We recommend to place the below code in footer or bottom of your website html  -->
-<script>
-  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-  window.LOCALE = 'en';
-  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-
-  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
-
-  window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-
-
-
-
-  window.translation = {
-    common: {
-      selectedList: '{quantity} list selected',
-      selectedLists: '{quantity} lists selected'
-    }
-  };
-
-  var AUTOHIDE = Boolean(0);
-</script>
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-
-<script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
-
-<!-- END - We recommend to place the above code in footer or bottom of your website html  -->
-<!-- End Sendinblue Form -->
   </div>
 </section>
