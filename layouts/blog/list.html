@@ -30,6 +30,10 @@
         <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
             <div
                 class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
+                {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+                {{ end }}
+                
                 {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                 {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
                 <a href="{{ .RelPermalink }}" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">{{$name}}</a>
