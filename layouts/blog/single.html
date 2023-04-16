@@ -64,7 +64,6 @@
                         width="100%" alt="{{ .Params.title }}" />
                     {{ end }}
                     {{ end }}
-
                     <div class="text-center mt-12">
                         <span
                             class="bg-indigo-600 inline-block text-white text-xs font-semibold px-2.5 py-0.5 rounded-full h-5">{{.Params.categories}}</span>
@@ -83,9 +82,9 @@
                         </ul>
                     </div>
 
-                    <div class="mt-6">
+                    <article class="prose dark:prose-invert lg:prose-xl mt-6">
                         {{.Content}}
-                    </div>
+                    </article>
                 </div>
 
             </div>
@@ -96,12 +95,11 @@
                         class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center">
                         Author</h5>
                     <div class="text-center mt-8">
-                        {{ if .Params.author_image }}
                         {{ with resources.Get (.Params.author_image)}}
                         <img src="{{ .RelPermalink }}" class="h-24 w-24 mx-auto rounded-full shadow mb-4"
                             alt="{{.Params.author}}">
                         {{ end }}
-                        {{ end }}
+             
                         <a href=""
                             class="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">{{.Params.author}}</a>
                         <p class="text-slate-400">Content Writer</p>
@@ -115,11 +113,12 @@
                     {{ range $index, $item := $related }}
                     {{ with $item }}
                     <div class="flex items-center mt-5">
+                        {{ if resources.Get (.Params.featured_image) }}
                         {{ $postimage := resources.Get (.Params.featured_image) }}
 
                         <img src="{{ $postimage.RelPermalink }}" class="h-16 rounded-md shadow dark:shadow-gray-800"
                             alt="{{ .Title }}">
-
+                        {{ end }}
                         <div class="mx-3">
                             <a href="{{ .RelPermalink }}" class="font-semibold hover:text-indigo-600">{{ .Title }}</a>
                             <p class="text-sm text-slate-400">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</p>
@@ -191,6 +190,6 @@
     </div><!--end container-->
 </section>
 
-
 {{ partial "subscribe-form.html" . }}
+
 {{end}}

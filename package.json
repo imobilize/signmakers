@@ -1,8 +1,10 @@
 {
-  "name": "TailBliss",
+  "name": "Outsourced Sales",
   "version": "0.1.1",
   "description": "Hugo + Alpine.js + TailwindCSS",
   "main": "index.js",
+  "repository": "https://github.com/imobilize/outsourcedsales",
+  "author": "Andre Barrett",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
     "alpinejs": "^3.12.0",
@@ -19,29 +21,6 @@
     "build": "hugo --minify",
     "test": "hugo"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nusserstudios/tailbliss.git"
-  },
-  "keywords": [
-    "hugo",
-    "tailwind",
-    "tailwindcss",
-    "alpinejs",
-    "minimal",
-    "responsive",
-    "light mode",
-    "dark mode",
-    "hugo blog",
-    "categories",
-    "tags"
-  ],
-  "author": "NusserStudios",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/nusserstudios/tailbliss/issues"
-  },
-  "homepage": "https://github.com/nusserstudios/tailbliss",
   "dependencies": {
     "glightbox": "^3.2.0"
   }
