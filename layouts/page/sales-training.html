@@ -242,12 +242,12 @@
     <div class="fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-black bg-opacity-50"
         x-show="showModal">
         <!-- Modal inner -->
-        <div class="max-w-3xl h-2/3 px-6 py-4 mx-auto text-left bg-gray-100 rounded shadow-lg"
+        <div class="max-w-3xl h-2/3 px-6 py-4 mx-auto text-left rounded shadow-lg"
             x-transition:enter="motion-safe:ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
             x-transition:enter-end="opacity-100 scale-100">
             <!-- Title / Close-->
-            <div class="flex items-center justify-between">
-                <h3 class="mr-3 text-black text-3xl max-w-none mt-3">Complete This Simple Step...</h3>
+            <div class="flex items-center justify-between bg-gray-100 px-3">
+                <h3 class="mr-3 text-black text-3xl max-w-none my-3">Complete This Simple Step...</h3>
 
                 <button type="button" class="z-50 cursor-pointer" @click="showModal = false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -260,8 +260,8 @@
 
 
 <!-- START - We recommend to place the below code where you want the form in your website html  -->
-<div class="sib-form" style="text-align: center;
-         background-color: transparent;                                 ">
+<div class="sib-form" style="text-align: center; padding: 0px;
+         background-color: transparent;">
   <div id="sib-form-container" class="sib-form-container">
     <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
       <div class="sib-form-message-panel__text sib-form-message-panel__text--center">

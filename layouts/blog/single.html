@@ -1,7 +1,7 @@
 {{define "main"}}
 
 
-<section class="relative md:pb-24 md:pt-20 pb-16 pt-12">
+<section class="relative md:pb-24 md:pt-12 pb-16 pt-6">
  
     <div class="lg:container mx-auto">
         <nav class="flex px-6 mb-6" aria-label="Breadcrumb">
@@ -134,7 +134,7 @@
                     <h5
                         class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center mt-8">
                         Tags</h5>
-                    <ul class="list-none text-center mt-8">
+                    <!-- <ul class="list-none text-center mt-8">
 
                         {{ range $taxonomyname, $taxonomy := .Site.Taxonomies.tags }}
                         {{ $tagURL := printf "tags/%s" $taxonomyname | relURL }}
@@ -142,8 +142,16 @@
                                 class="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow dark:shadow-gray-800 transition-all duration-500 ease-in-out">{{
                                 $taxonomyname }}</a></li>
                         {{ end }}
-                    </ul>
+                    </ul> -->
+                    <ul class="list-none text-center mt-8">
 
+                        {{ range $taxonomyname := .Params.tags }}
+                        {{ $tagURL := printf "tags/%s" $taxonomyname | relURL }}
+                        <li class="inline-block m-2"><a href="{{ $tagURL }}"
+                                class="px-3 py-1 text-slate-600 hover:text-white dark:hover:text-white text-sm hover:bg-amber-600 dark:hover:bg-amber-500 rounded-md shadow dark:shadow-gray-800 transition-all duration-500 ease-in-out">{{
+                                $taxonomyname }}</a></li>
+                        {{ end }}
+                    </ul>
                     <h5
                     class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center mt-8">
                     Search</h5>

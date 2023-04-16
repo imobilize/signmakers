@@ -9,7 +9,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus
 author: TailBliss
 authorimage: ../assets/images/global/author.webp
 categories: News
-tags: news
+tags: ["news"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero. <!--more--> Vestibulum vel convallis felis. Ut finibus lorem vestibulum lobortis rhoncus. Sed mi tellus, volutpat aliquam enim sed, efficitur cursus lacus. Nunc congue, justo luctus vehicula finibus, tortor justo consectetur ligula, at lobortis nisl ipsum eu mauris. Fusce finibus mi in enim mollis dapibus. In non leo et mi pharetra vehicula vel ut felis. Nam eros metus, tristique a tellus vitae, aliquet posuere turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque non molestie orci, id scelerisque odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse pharetra rhoncus massa, eu sagittis purus consectetur eget.

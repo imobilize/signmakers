@@ -10,7 +10,7 @@ description: Contact us
 
 <section class="lg:pb-24">
   <div class="max-w-screen-md px-4 mx-auto">
-      <p class="font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">Looking for a solution that will allow your business to grow, within your budget; and able to provide the dedication and results your business deserves?</p>
+      <p class="font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Looking for a solution that will allow your business to grow, within your budget; and able to provide the dedication and results your business deserves?</p>
 
 <style>
   @font-face {

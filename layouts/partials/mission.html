@@ -25,7 +25,7 @@
                     {{ with $missionimage }}
                     {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
                     <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
-                        class="object-cover w-full h-full" alt="TailBliss - Our Mission"
+                        class="object-cover w-full h-full" alt="Our Mission - Outsource Sales"
                         loading="lazy" />
                     {{ end }}
                     {{ end }}
@@ -38,7 +38,7 @@
             <!-- Content area -->
             <div class="md:pt-12 sm:pt-6 lg:pt-20">
                 <h2 class="text-3xl font-medium text-black sm:text-4xl">
-                    Our mission</h2>
+                    Our Mission</h2>
                 <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
                     <p class="text-lg leading-7">Our mission is to free manufacturing and engineering companies of the
                         headache of having to market and sell their products and services. By providing an outsourced
@@ -81,7 +81,7 @@
           <p class="text-2xl font-medium tracking-tight text-black sm:text-4xl">
             We have grown the sales of other manufacturing and engineering companies including our own.
           </p>
-          <p class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600">
+          <p class="max-w-2xl mt-4 text-lg tracking-tight">
             We know how difficult it is to grow sales when you have very little time. With Outsourced Sales, your sales growth becomes independent of the time you have. Now you can spend time doing whatever you want.
           </p>
         </div>
@@ -90,28 +90,58 @@
         <div class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
           <div class="mx-auto lg:max-w-7xl">
             <ul role="list" class="grid grid-cols-2 gap-4 list-none md:grid-cols-3 lg:gap-12">
-              <li>
-                  <p class="mt-5 text-lg font-medium leading-6 text-black">
+              <li class="flex flex-row">
+                <svg class="w-5 h-5 text-green-600 shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                </path>
+                </svg>
+                  <p class="text-lg ml-2 font-medium leading-6 text-black">
                     Sleep soundly knowing that without lifting a finger your products and services will be sold.                  </p>
               </li>
-              <li>
-                  <p class="mt-5 text-lg font-medium leading-6 text-black">
+              <li class="flex flex-row">
+                <svg class="w-5 h-5 text-green-600 shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                </path>
+                </svg>
+                  <p class="ml-2 text-lg font-medium leading-6 text-black">
                     Remove the hassle of training sales staff or managing extra people.
-                  </p>     
+                  </p>
               </li>
-              <li>
-                  <p class="mt-5 text-lg font-medium leading-6 text-black">
+              <li class="flex flex-row">
+                <svg class="w-5 h-5 text-green-600 shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                </path>
+                </svg>
+                  <p class="ml-2 text-lg font-medium leading-6 text-black">
                     Get paid what you deserve without having to haggle on price or discount to compete.
                 </p>
               </li>
-              <li>
-                  <p class="mt-5 text-lg font-medium leading-6 text-black">
+              <li class="flex flex-row">
+                <svg class="w-5 h-5 text-green-600 shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                </path>
+                </svg>
+                  <p class="ml-2 text-lg font-medium leading-6 text-black">
                     Grow your business without having to know about the latest marketing and sales tactics.
                 </p>
               </li>
   
-              <li>
-                  <p class="mt-5 text-lg font-medium leading-6 text-black">
+              <li class="flex flex-row">
+                <svg class="w-5 h-5 text-green-600 shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                </path>
+                </svg>
+                  <p class="ml-2 text-lg font-medium leading-6 text-black">
                     Focus on the work that you enjoy the most so that you can deliver the greatest amount of value. 
                   </p>
     
