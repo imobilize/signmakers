@@ -12,7 +12,7 @@
             {{ range ( first 2 ( where .Paginator.Pages "Type" "blog" ) ) }}
 
             <div class="bg-white md:flex items-center rounded-2xl overflow-hidden">
-                {{ with .Params.featured_image }}
+                {{ with .Params.featuredImage }}
                 {{ with resources.Get . }}
                 {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
                 <img src="{{ $postimage }}" class="max-h-[350px] md:max-w-[220px] md:h-full md:object-cover" alt="">

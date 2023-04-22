@@ -1,12 +1,12 @@
 ---
 title: "Using BANT to increase sales"
-date: 2023-02-23T11:10:36+08:00
+date: 2023-01-10T11:10:36+08:00
 draft: false
 language: en
-featured_image: "images/bant-featured-image.jpg"
+featuredImage: "images/bant-featured.jpg"
 description: One widely recognized framework that has proven successful for many sales organizations is known as the BANT criteria.
 author: Andre Barrett
-author_image: "../assets/images/global/andre-author.jpg"
+authorImage: "../global-images/andre-author.jpg"
 categories: Sales
 tags: ["Sales Strategies", "Sales Pipeline", "Sales Training"]
 ---

@@ -18,7 +18,7 @@ home = ["HTML", "AMP", "RSS", "JSON"]
 
 
 [permalinks]
-    blogs = "/:title"
+    blog = "/:title"
     categories = "/:title"
     tags = "/:title"
 
