@@ -49,8 +49,7 @@
             <div class="lg:col-span-8 md:col-span-6">
                 <div class="px-6 border-r">
 
-                    {{ with .Params.featured_image }}
-                    {{ with resources.Get . }}
+                    {{ with .Resources.GetMatch .Params.featured_image }}
                     {{ $small := (.Resize "400x webp q80").RelPermalink }}
                     {{ $medium := (.Resize "550x webp q80").RelPermalink }}
                     {{ $large := (.Resize "900x webp q80").RelPermalink }}
@@ -63,7 +62,7 @@
                         class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
                         width="100%" alt="{{ .Params.title }}" />
                     {{ end }}
-                    {{ end }}
+
                     <div class="text-center mt-12">
                         <span
                             class="bg-indigo-600 inline-block text-white text-xs font-semibold px-2.5 py-0.5 rounded-full h-5">{{.Params.categories}}</span>

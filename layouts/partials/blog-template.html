@@ -7,14 +7,16 @@
         <article class="flex flex-col shadow my-4">
             <!-- Article Image -->
             <a href="{{.Permalink}}" class="hover:opacity-75">
-                {{ with .Params.featured_image }}
-                {{ with resources.Get . }}
+                {{ with .Resources.GetMatch .Params.featured_image }}
                 {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
                 <img src="{{ $postimage }}" class="object-fill overflow-hidden" width="100%" height=""
                      loading="lazy" alt="{{ .Title }}" />
+                {{ else }}
+                {{ $im := (.Resources.Get .Params.featured_image) }}
 
+                {{ $im }}
                 {{ end }}
-                {{ end }}
+
             </a>
             <div class="bg-white flex flex-col justify-start p-6">
                 {{ range $elem_index, $elem_val := (.GetTerms "categories") }}
