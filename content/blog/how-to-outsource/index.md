@@ -6,7 +6,7 @@ language: en
 featuredImage: "images/outsourced-featured.jpg"
 description: Running a small to medium-sized (SME) business is no small feat. To run a successful business, you must juggle multiple functions. Here is how you can outsource some of that work and take the load off
 author: Deborah Mokhosi-Madalane
-authorImage: "../global-images/debbie-author.jpg"
+authorImage: "images/global/debbie-author.jpg"
 categories: Productivity
 tags: ["Productivity", "Sales Pipeline", "Outsourcing"]
 ---

@@ -6,7 +6,7 @@ language: en
 featuredImage: "images/branding-featured.jpg"
 description: Creating a strong brand can make your company stand out from the crowd. In this competitive market, learn how to sell more by having a great brand
 author: Andre Barrett
-authorImage: "../global-images/andre-author.jpg"
+authorImage: "images/global/andre-author.jpg"
 categories: Marketing
 tags: ["Branding", "Marketing", "Branding Book"]
 keywords: "Brand, Branding, Branding Book, Marketing, Branding For Profit, Book On Branding"

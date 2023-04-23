@@ -6,7 +6,7 @@ language: en
 featuredImage: "images/boost-sales-featured.jpg"
 description: One of the significant challenges for a small to medium sized businesses is boosting your sales when you have limited resources to invest in marketing and advertising
 author: Deborah Mokhosi-Madalane
-authorImage: "../global-images/debbie-author.jpg"
+authorImage: "images/global/debbie-author.jpg"
 categories: Sales
 tags: ["Sales Strategies", "Marketing"]
 ---

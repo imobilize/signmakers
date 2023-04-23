@@ -1,5 +1,5 @@
 # Outsourced Selling
-Outsourced sales is the website of [outsourcedselling.com](https://outsourcedselling.com)
+Outsourced sales is the website of [outsourcedsales.com](https://outsourcedsales.com)
 
 
 ### Built With

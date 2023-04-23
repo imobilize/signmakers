@@ -6,7 +6,7 @@ language: en
 featuredImage: "images/bant-featured.jpg"
 description: One widely recognized framework that has proven successful for many sales organizations is known as the BANT criteria.
 author: Andre Barrett
-authorImage: "../global-images/andre-author.jpg"
+authorImage: "images/global/andre-author.jpg"
 categories: Sales
 tags: ["Sales Strategies", "Sales Pipeline", "Sales Training"]
 ---
