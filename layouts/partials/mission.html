@@ -63,8 +63,11 @@
                     {{ $small := (.Resize "400x webp q100").RelPermalink }}
                     {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                     {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
-                    <img src="{{ $logoimage }}" srcset="" alt="" class="pt-12">
+                    <img src="{{ $logoimage }}" srcset="" alt="" class="py-12">
                     {{end}}
+                    <a href="./sales-training" class="block px-5 py-3 text-xl text-center font-medium text-white bg-amber-600 border border-amber-500 rounded-md shadow hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+                      Watch Free Sales Training
+                  </a>
                 </div>
             </div>
         </div>

@@ -5,5 +5,5 @@ draft: false
 language: en
 description: How to maximise your sales and boost profits
 type: page
-layout: sales-training
+layout: sales-training-signup
 ---
