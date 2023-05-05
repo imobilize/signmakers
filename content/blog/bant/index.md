@@ -30,6 +30,10 @@ Have you allocated funds for this product/service in your budget?
 How much are you willing to invest in this solution?
 By asking these questions, you can gather valuable insights into your prospect's financial situation and whether they have the budget to move forward with the purchase. If the prospect does not have the budget, it may not be a viable opportunity for your sales team to pursue at this time.
 
+<center>
+<img alt="Red Light" style="border-radius: 8px;" src="images/feasibility.jpg" />
+</center>
+
 #### Authority
 Identifying Decision Makers and Influencers
 The second component of IBM's BANT criteria is Authority. It refers to the key decision makers and influencers within an organization who have the authority to make purchasing decisions. Identifying the right individuals who hold the decision-making power is critical to ensure that you are engaging with the right people and not wasting time on individuals who lack the authority to move the sales process forward.
@@ -38,6 +42,10 @@ Who are the key stakeholders involved in the decision-making process?
 Who has the final authority to make purchasing decisions?
 Who are the influencers who can sway the decision-making process?
 By asking these questions, you can gain insights into the decision-making dynamics within the organization and identify the key players who can impact the outcome of the sale. Engaging with these decision makers and influencers will increase your chances of success and enable you to tailor your sales approach accordingly.
+
+<center>
+    <img alt="Red Light" style="border-radius: 8px;" src="images/decision.jpg" />
+</center>
 
 #### Need
 Understanding the Pain Points and Requirements of the Prospect
@@ -48,9 +56,17 @@ What are your priorities and goals for this project/initiative?
 How do you see our product/service addressing your pain points/requirements?
 By asking these questions, you can uncover the prospect's needs and tailor your sales pitch accordingly. It allows you to position your product or service as a solution that addresses their pain points and meets their requirements, increasing the likelihood of a successful sale.
 
+<!-- <center>
+<img alt="Red Light" styles="border-radius: 25px;" src="images/needs.jpg" />
+</center> -->
+
 #### Timeline
 The fourth and final component of IBM's BANT framework is Timeline. It involves understanding the prospect's timeline or urgency to make a purchase decision. This step is important in determining if the sales cycle aligns with the prospect's buying timeline and if there is a sense of urgency to move forward.
 Sales teams need to ask questions about the prospect's timeline for making a purchase decision, any specific deadlines, or time constraints they may have. Understanding the prospect's timeline is crucial in prioritizing opportunities, planning follow-up activities, and setting realistic expectations. It also helps sales teams identify if the prospect is actively looking for a solution or if the opportunity may be a long-term prospect.
+
+<center>
+    <img alt="Red Light" style=" border-radius: 8px; width: 60%;" src="images/time.jpg" />
+</center>
 
 ### The benefits of using BANT
 Implementing IBM's BANT opportunity identification criteria can provide numerous benefits to sales teams. Some of the key advantages include:
@@ -66,6 +82,10 @@ Better Customer Alignment: BANT helps sales teams align their offerings with the
 #### Higher Closing Rates
 Another significant benefit of using IBM's BANT framework is the potential for higher closing rates. By thoroughly evaluating leads based on Budget, Authority, Need, and Timeline, sales teams can focus their efforts on opportunities that are more likely to convert into closed deals. This targeted approach can result in higher conversion rates, shorter sales cycles, and increased revenue generation for the organization.
 
+<center>
+    <img alt="Red Light" style="border-radius: 8px;" src="images/graphs.jpg" />
+</center>
+
 ### How to implement BANT in your company
 Best Practices for Implementing IBM's BANT Opportunity Identification Criteria
 To effectively implement IBM's BANT opportunity identification criteria, sales teams can follow these best practices:
@@ -78,6 +98,10 @@ To accurately evaluate leads based on BANT, sales teams need to ask probing ques
 
 #### Actively Listen and Take Notes
 Active listening is a critical skill in the sales process, especially when implementing BANT. Sales teams should actively listen to prospects' responses to the probing questions and take detailed notes. This can help sales teams keep track of the information gathered, identify patterns or trends, and make informed decisions about the viability of an opportunity based on the BANT criteria.
+
+<center>
+    <img alt="Red Light" style="border-radius: 8px;" src="images/needs.jpg" />
+</center>
 
 #### Collaborate with Marketing and other Teams
 BANT is not just a sales tool but can also be a collaborative effort involving other teams, such as marketing, customer success, or product development. Collaborating with other teams can provide valuable insights and information that can help sales teams evaluate leads more effectively.

@@ -20,7 +20,10 @@ As a Small to Medium-sized Enterprise in the engineering and manufacturing indus
 One of the most important things you can do is to focus your efforts on your target market. Identify your ideal customer and tailor your marketing messages and sales strategies to them.  
 
 Do research to understand their needs, pain points and preferences. This insight will help with how you tailor your sales strategy to meet their needs. This will help you save time, money, and effort, and increase your chances of success.
-According to a customer engagement by Salesforce, “70% of consumers feel more loyal to businesses that understand their needs and preferences, highlighting the importance of understanding your client and providing personalized experiences”.  
+According to a customer engagement survey by Salesforce, <strong> <em>“70% of consumers feel more loyal to businesses that understand their needs and preferences, highlighting the importance of understanding your client and providing personalized experiences”. </strong></em>
+
+![Know your Client Better](images/know-your-client.jpg "Know your Client Better" )
+
 
 So, develop a customer-centric approach that focuses on delivering value to them. This means putting their needs first and creating products, services and marketing messages that resonate with them. By taking the time to get to know your customers, you can build stronger relationships, increase loyalty, and drive sales. In today's competitive market, businesses that prioritize understanding their clients are more likely to succeed and grow.
 
@@ -28,17 +31,54 @@ So, develop a customer-centric approach that focuses on delivering value to them
 
 In today's digital age, having a robust online presence is crucial to your business's success. The first step is to create a user-friendly website that showcases your products and services. Your website should have a responsive design that works well on both desktop and mobile devices.
 
+![Socials icons](images/iphone-socials.png "Socials icons" )
+
 In addition to your website, you should also invest in social media marketing. Remember, not all social media platforms are suitable for you and your business so, do research. It is important to choose the platforms that are most relevant to your target audience and focus on building a following. You can use social media to share industry news, and product updates, and engage with your audience.
+
+
  
 ### 3. Use Digital Marketing
 
 Digital marketing is a powerful tool for reaching your target audience and driving sales. You can use various digital marketing strategies, such as search engine optimization (SEO), pay-per-click (PPC) advertising, and email marketing.
 SEO involves optimizing your website for search engines like Google. This way, when potential customers search for keywords related to your business, your website appears at the top of the search results. 
 
+<center><img alt="Emotions created by brands" style="width: 60%; align-self: center; border-radius:8px;" src="images/digital-marketing.jpg" />
+</center>
+
+
 If you’re looking for a crash course on how to optimise your company’s website, watch this video by Ahrefs, who breaks everything down for you! 
-https://www.youtube.com/watch?v=DvwS7cV9GmQ
+
+<div 
+    style="position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    ">
+    <iframe src="https://www.youtube.com/embed/DvwS7cV9GmQ" style="position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        border-radius: 8px;" 
+        height="315" 
+        width="560" 
+        allowfullscreen="" 
+        frameborder="0">
+    </iframe>
+</div>
+
+<!-- <div class="max-w-none">
+    <iframe  src="https://www.youtube.com/embed/DvwS7cV9GmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div> -->
+
 SEO For Beginners: A Basic Search Engine Optimization Tutorial for Higher Google Rankings by Ahrefs
-PPC advertising is another way to drive traffic to your website by paying for ads that appear at the top of search engine results. Finally, email marketing is a great way to keep your customers updated about your products and services.
+PPC advertising is another way to drive traffic to your website by paying for ads that appear at the top of search engine results. 
+
+Finally, email marketing is a great way to keep your customers updated about your products and services.
+
+
 
 ### 4. Attend Industry Events
 

@@ -47,7 +47,9 @@ All valid, right? Except none of them are full definitions in and of themselves.
 
 <br />
 
-![Brand Clarity](/images/blog/brand-clarity.jpg "Brand Clarity")
+![cola](images/cola.jpg "Cola")
+
+<!-- <h2>I AM AN IMAGE</h2> -->
 
 <br />
 
@@ -65,7 +67,7 @@ Sure, these are tangible components that add a visual, a voice, and an identity 
 
 ### So, if it’s intangible, where does a brand exist?
 
-<img alt="Brand Perception" style="padding: 10px; padding-right: 0px; float: right;" src="/images/blog/brand-perception.jpg" />
+<!-- <img alt="Brand Perception" style="padding: 10px; padding-right: 0px; float: right;" src="/images/blog/brand-perception.jpg" /> -->
 
 Brands live in the mind according to BrandingStrategyInsider. They occupy the spaces between thoughts and actions. A brand is created in the mind's eye. In much the same way that a person has a reputation, a company has a brand. A person can behave in specific ways that either support and enhance their reputation or in ways that damage it. If they choose the former and act with integrity, they positively impact their communities, and their social standing improves. A company is no different. Branding done correctly creates a strong, positive impression of the company’s offering.
 
@@ -87,10 +89,12 @@ Luckily, humans have developed the wonderful gift of language that allows us to 
 __Knowing this, we can then answer the question: what is the goal of a brand?__
 
 A brand’s goal is to instill an unwavering trust in the public’s mind about the quality and value of its product or service. Most recently, the ethical means by which the product is created or how the service is provided has become extremely important. We see this most notably in the fast fashion industry and the high street brands currently scrambling to add ‘ethical lines’ to their clothing range.
+</br>
+<img alt="Emotions created by brands" style="padding-right: 20px; float: left; width: 50%; margin-top: 45px; align-self: center;" src="images/fur-coat-lady.jpg" />
 
 The thought of an animal being sacrificed in the name of a fur trim coat or a fellow human suffering in a sweatshop evokes powerful emotions. Why do I mention this?
 
-<img alt="Emotions created by brands" style="padding-right: 20px; float: left;" src="/images/blog/emotions-created-by-brands.jpg" />
+
 
 Well, science has proven that emotion impacts perception, attention, memory, and decision making.
 
@@ -111,11 +115,11 @@ Emotion determines how we perceive our world, organise our memory, and make impo
 Let’s break it down - as we know, every company conducts its business in a certain way. Potential customers observe this conduct, and over time, a perception of the company, product, or service is created in their minds.   If this perception is positive, then the individual judges the value and integrity of the offering. If the company delivers on its promise, and the customer is satisfied, then the positive perception is bolstered, and the belief in the company is strengthened. The chances of repeat custom are high.
 
 <br />
-### Brand Perception
+<h3>Brand Perception</h3>
 
 On the other hand, if the customer is not satisfied with any aspect of the service or conduct, their perception of the company may change and, over time, could result in a total mistrust of the company and their goods. In this instance, the brand is effectively tarnished, and it will probably be a long, difficult road to recovery.
 
-<img alt="Fast Fashion Brand" style="padding: 10px; padding-right: 0px; float: right;" src="/images/blog/fast-fashion-brand.jpg" />
+<img alt="Fast Fashion Brand" style="padding: 10px; padding-right: 0px; float: right;  width: 40%; border-radius: 15px;" src="images/zara-clothing.jpg" />
 
 In the example of fast fashion, as the public awareness of the unethical means by which companies are mass-producing clothing grows, the more vulnerable the companies become. In such cases, businesses understand that the best course of action is to pivot if they are to salvage any of what they have already built. High street brands now producing ‘ethical lines’ is merely a tactic to influence their customers’ emotions, calm their outrage, and ensure they will continue to buy from them.
 
@@ -125,7 +129,7 @@ Is it any clearer now?
 
 <br />
 
-![Brand Value](/images/blog/brand-value.jpg "Brand Value")
+![Nike Shoes](images/nike-shoes.jpg "Nike Shoes" )
 
 <br />
 
