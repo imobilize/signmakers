@@ -1,17 +1,17 @@
 {{ define "main" }}
 <main>
 
-    {{ with .Site.Data.hero }}{{ partial "hero.html" . }}{{ end }}
+    {{ partial "hero.html" . }}
 
-    {{ with .Site.Data.hero }}{{ partial "partials/mission.html" . }}{{ end }}
+    {{ partial "partials/mission.html" . }}
 
-    {{ with .Site.Data.hero }}{{ partial "why-outsource.html" . }}{{ end }}
+    {{ partial "why-outsource.html" . }}
 
-    {{ with .Site.Data.hero }}{{ partial "how-we-work.html" . }}{{ end }}
+    {{ partial "how-we-work.html" . }}
 
-    <!-- {{ with .Site.Data.hero }}{{ partial "testimonial.html" . }}{{ end }} -->
+    <!-- {{ partial "testimonial.html" . }} -->
 
-    {{ with .Site.Data.hero }}{{ partial "faq.html" . }}{{ end }}
+    {{ partial "faq.html" . }}
 
     {{ partial "home-post-section.html" . }}
 
