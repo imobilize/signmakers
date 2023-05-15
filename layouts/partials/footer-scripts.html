@@ -2,9 +2,6 @@
 {{ $alpine := resources.Get "js/alpine.js" | js.Build }}
 <script src="{{ $alpine.RelPermalink }}"></script>
 
-{{ $darkmode := resources.Get "js/darkmode.js" | js.Build }}
-<script src="{{ $darkmode.RelPermalink }}"></script>
-
 {{ $jquery := resources.Get "js/jquery.min.js" }}
 <script src="{{ $jquery.RelPermalink }}"></script>
 
