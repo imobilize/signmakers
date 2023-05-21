@@ -33,7 +33,7 @@ To install Hugo and NPM, on a mac you can use brew
   ```
 
 **Clone Repository and open in VSCode**  
-`git clone git@github.com:imobilize/outsourcedselling`
+`git clone git@github.com:imobilize/outsourcedsales`
 
 ##### Install with NPM 
 `npm install`
