@@ -2,6 +2,7 @@
 title: Contact Form Sent
 date: 2022-12-18T03:10:36.000Z
 draft: false
+sitemapExclude: true
 language: en
 description: Contact us form submitted
 ---
