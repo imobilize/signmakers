@@ -1,57 +1,167 @@
-<section class="pt-24 pb-32 bg-white overflow-hidden">
-    <div class="container mx-auto px-4">
-      <div class="max-w-md mx-auto mb-20">
-        <h2 class="mb-4 font-heading font-semibold text-center text-4xl sm:text-5xl text-gray-900" data-config-id="auto-txt-1-4">Got questions?</h2>
-        <p class="text-lg text-gray-600 text-center" data-config-id="auto-txt-2-4">We are not a good fit for everyone. Here are some answers to common questions to help you decide if our service is right for you.</p>
-      </div>
-      <div class="flex flex-wrap -m-6 mb-24">
-        <div class="w-full md:w-1/2 p-6">
-          <div class="md:max-w-xl">
-            <h2 class="mb-4 font-heading font-medium text-2xl text-gray-900" data-config-id="auto-txt-3-4">How can Outsourced Sales help my business?</h2>
-            <p class="text-lg text-black" data-config-id="auto-txt-4-4">If you are at the stage where you know you need extra sales staff to grow your manufacturing or engineering business this is where we can help. We provide marketing and sales support to your business, which can free up internal resources in these areas, allowing you to focus on the delivery of your products and services.</p>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 p-6">
-          <div class="md:max-w-xl">
-            <h2 class="mb-4 font-heading font-medium text-2xl text-gray-900" data-config-id="auto-txt-5-4">Is it possible to work with our current sales and marketing team?</h2>
-            <p class="text-lg text-black" data-config-id="auto-txt-6-4">Absolutely. We work collaboratively with your existing team to provide additional support and expertise to your business, giving you a competitive edge. This approach gives us a better understanding of your customers which maximises the effectiveness and success of all marketing efforts for growth. Depending on your unique business need, our team can also take on your entire sales and marketing capability.</p>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 p-6">
-          <div class="md:max-w-xl">
-            <h2 class="mb-4 font-heading font-medium text-2xl text-gray-900" data-config-id="auto-txt-7-4">How long does it take to see results?</h2>
-            <p class="text-lg text-black" data-config-id="auto-txt-8-4">The timeline for seeing results can vary depending on the chosen service, solution, and goals of your business. Some strategies and solutions may produce quick measurable results, while others may take longer to show results. For instance, one way of measuring the effectiveness of social media marketing is by the number of inquiries or leads, and these results can be seen quickly.</p>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 p-6">
-          <div class="md:max-w-xl">
-            <h2 class="mb-4 font-heading font-medium text-2xl text-gray-900" data-config-id="auto-txt-9-4">How do we measure the success of marketing efforts?</h2>
-            <p class="text-lg text-black" data-config-id="auto-txt-10-4">Measuring the success of your marketing and sales efforts is done through a variety of metrics, such as website traffic, number of leads generated, sales revenue, and customer satisfaction. We work collaboratively with you to set clear goals and metrics to grow your business, providing you with regular reports, and analysis to track progress and identify areas for improvement.</p>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 p-6">
-          <div class="md:max-w-xl">
-            <h2 class="mb-4 font-heading font-medium text-2xl text-gray-900" data-config-id="auto-txt-11-4">How easy is it to terminate your services once a contract has been signed?
+<section  class="py-12">
+  <div class="flex justify-center items-start my-2">
+    <div class="w-full sm:w-10/12 md:w-1/2 my-1">
+      <h2 class="text-3xl text-center font-bold pt-12 pb-16">Frequently Asked Questions</h2>
+      <div class="container mx-auto my-auto">
+        <ul class="flex flex-col">
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(1)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Can I split the costs and make payment in instalments?</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
             </h2>
-            <p class="text-lg text-black" data-config-id="auto-txt-12-4">We don’t believe in stiff sticky long-term contracts because we believe in mutually beneficial relationships. Our prime focus is delivering results so that we keep you as a client. You can opt out of the contract agreement at the end of the month if you feel the strategy is not achieving the desired objectives.</p>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 p-6">
-          <div class="md:max-w-xl">
-            <h2 class="mb-4 font-heading font-medium text-2xl text-gray-900" data-config-id="auto-txt-13-4">Is Outsourcing Sales expensive?</h2>
-            <p class="text-lg text-black" data-config-id="auto-txt-14-4">Our pricing model is customised to each client based on the specific services needed and the scope of the project. We work with our clients to create a transparent and flexible pricing structure that fits their budget and business goals. If we don’t believe we can generate you extra profit based on the pricing, then we would not proceed.</p>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 p-6">
-          <div class="md:max-w-xl">
-            <h2 class="mb-4 font-heading font-medium text-2xl text-gray-900" data-config-id="auto-txt-13-4">How do you ensure that your marketing strategies align with our company's goals?</h2>
-            <p class="text-lg text-black" data-config-id="auto-txt-14-4">We conduct thorough research and analysis to understand your business, target audience, and competitors. Based on this, we develop customized marketing and sales strategies that align with your specific business goals and objectives. Our agency is committed to working collaboratively with you, to deliver customized solutions that are tailored to your unique needs and objectives.</p>
-          </div>
-        </div>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900">
+                Certainly! We can help you arrange a payment plan through our approved finance company. However, please note that we do have our standard payment terms in place.            </p>
+            </div>
+          </li>
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(2)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Will the machinery meet my specific needs? Can you provide examples of fields where it is commonly used?</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900">
+                Absolutely! To better understand your requirements, we will send you a client information request form. Once we have gathered all the necessary details, we will be able to make tailored recommendations based on your specific needs. Our machinery has been successfully employed in various fields, such as the bakery sector, fruits and vegetables, meat and fish and low-fat products.            </p>
+            </div>
+          </li>
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(3)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Will I receive assistance with the assembly process?</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900">
+                No, our machine is delivered fully assembled and ready to use. However, we do offer additional services, such as training and a commissioning package, which can be arranged at an extra cost.            </p>
+            </div>
+          </li>
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(4)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Will this product help me increase my production?</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900">
+                Absolutely! Our machine is designed to enhance production efficiency. By replacing manual operations, it enables faster and more cost-effective results. Many of our clients have experienced significant improvements in their production processes. 
+              </p>
+            </div>
+          </li>
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(4)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Can I customize the products to suit my specific requirements?</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900">
+                Yes, in some cases. The possibility of customization will depend on the specific changes you need. Once you discuss your customization needs with our engineering department, we can evaluate the feasibility of implementing the required modifications.            </p>
+            </div>
+          </li>
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(4)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>What type of warranty do you offer for your products?</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900">
+                We provide a standard 1-year warranty for all our machinery. Additionally, since we manufacture our own replacements for the machine, we can also recommend a basic spares package to accompany your purchase.            </p>
+            </div>
+          </li>
+        </ul>
       </div>
-      <a class="group block max-w-max mx-auto font-heading font-medium text-amber-600 hover:text-amber-500 text-2xl overflow-hidden" href="/contact">
-        <p class="" data-config-id="auto-txt-15-4">Didn’t find the answer? Contact us here</p>
-        <div class="w-full transform -translate-x-0 group-hover:translate-x-full h-px bg-gradient-cyan transition ease-in-out duration-500"></div>
-      </a>
     </div>
-  </section>
+  </div>
+</section>
+
+<script>
+  function accordion(tab) {
+    return {
+      open: tab === 1,
+      handleClick() {
+        this.open = !this.open;
+      },
+      handleToggle() {
+        return this.open ? "max-height: 500px" : "max-height: 0";
+      },
+      handleRotate() {
+        return this.open ? "rotate(180deg)" : "rotate(0deg)";
+      },
+    };
+  }
+</script>

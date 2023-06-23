@@ -2,31 +2,29 @@
 
 <main>
 
-    {{ $bgimage := (resources.Get "images/bg2.png").RelPermalink }}
-    <section
-        class="relative table w-full pb-0 lg:pb-0 bg-slate-800 bg-[url('{{ $bgimage }}')] bg-center bg-no-repeat bg-cover"
-        style="background-image: url('{{$bgimage}}');">
-        <div class="container px-4 mx-auto max-w-screen-xl">
-            <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
-                <div class="lg:col-span-7">
-                    <div class="md:me-6 md:mb-20">
-                        <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold  mb-5 text-white">About Outsourced
-                            Sales
-                        </h1>
-                        <p class="pr-0 my-8 text-base text-gray-200 sm:text-xl xl:text-2xl lg:pr-20">Outsourced Sales is
-                            a sales and marketing agency that works with small to medium size businesses to grow their
-                            sales. We offer a way to outsource your sales and marketing function so that you can
-                            concentrate on delivery of your products and services. </p>
-                        <div class="mt-20">
-                            <div class="flex flex-wrap -m-2.5 mb-20">
+  {{ $bgimage := (resources.Get "images/bg_hero.png").RelPermalink }}
+  <section
+    class="relative table w-full pb-0 lg:pb-0 bg-slate-800 bg-[url('{{ $bgimage }}')] bg-center bg-no-repeat bg-cover"
+    style="background-image: url('{{$bgimage}}');">
+    <div class="container px-4 mx-auto max-w-screen-xl mt-20">
+      <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+        <div class="lg:col-span-7">
+          <div class="md:me-6 md:mb-20">
+            <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold  mb-5 text-white">A Stanley
+              Saturn Spraying Systems Ltd.
+            </h1>
+            <p class="pr-0 my-8 text-base text-gray-200 sm:text-xl xl:text-2xl lg:pr-20">Making your production
+              automated</p>
+            <div class="mt-20">
+              <div class="flex flex-wrap -m-2.5 mb-20">
 
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div><!--end col-->
 
-                <div class="lg:col-span-5 mt-8 md:mt-0">
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <!-- <div class="lg:col-span-5 mt-8 md:mt-0">
                     {{ with resources.Get "images/sales-man.png" }}
                     {{ $small := (.Resize "400x webp q80").RelPermalink }}
                     {{ $medium := (.Resize "550x webp q80").RelPermalink }}
@@ -34,110 +32,283 @@
                     {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
                     <img src="{{ $featuredimage }}" srcset="" alt="">
                     {{end}}
-                </div><!--end col-->
-            </div><!--end grid-->
-        </div><!--end container-->
-    </section>
+                </div> -->
 
+        <!--end col-->
+      </div><!--end grid-->
+    </div><!--end container-->
+  </section>
 
+  <section class="mt-20 mb-20">
+    <div class="container  justify-center mx-auto">
+      <div class="flex rounded-lg" style="background-color: #FBF6F4;">
+        <div class="w-3/5 justify-start p-12 sm:p-4">
+          <h2 class="underline underline-offset-8 text-left text-dark font-bold text-4xl relative">
+            Saturn Spraying Systems Limited
+            <span class="absolute bottom-0 left-0 w-full h-1 bg-orange-500"></span>
+          </h2>
+          <p class="text-left text-dark text-2xl mt-4">At Saturn Spraying, we believe in the power of the human touch.
+            Each machine that bears our name is meticulously handcrafted, a fusion of artistry and engineering
+            expertise. It's a testament to our unwavering dedication to providing you, our valued customer, with a
+            bespoke solution that perfectly aligns with your unique needs.
+            We embark on a journey of collaboration, where your aspirations become our mission. We listen attentively,
+            understanding your goals and challenges. With our passion as your guide, we craft tailored solutions that
+            surpass expectations, elevating your business to new realms of success.
+            Join us in unravelling the captivating tale of Saturn Spraying. Discover the magic of handmade machinery and
+            experience the unrivalled joy of a tailored partnership. Together, let's redefine the boundaries of food
+            spraying technology and create a world where possibilities are limitless.
+            Welcome to Saturn Spraying, where excellence meets craftsmanship, and your success is our guiding star.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="">
-        <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24">
-          <div class="flex flex-wrap items-center mx-auto max-w-7xl">
-            <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
-              <div>
-                <div class="relative w-full max-w-lg">
-                  <div class="absolute top-0 rounded-full bg-violet-300 -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-      
-                  <div class="absolute rounded-full bg-fuchsia-300 -bottom-24 right-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-                  <div class="relative">
+  <section class="mt-20 mb-20">
+    <div class="relative table w-full pb-0 lg:pb-0 justify-center text-center" style="background-color: #4D4575;">
+      <h2 class="font-bold py-4 text-2xl text-white">Installed Base World Wide</h2>
+    </div>
 
-                    {{ with resources.Get "images/outsourced-sales.jpg" }}
-                    {{ $small := (.Resize "550x webp q100").RelPermalink }}
-                    {{ $medium := (.Resize "900x webp q100").RelPermalink }}
-                    {{ $large := (.Resize "1500x webp q100").RelPermalink }}
-                    {{ $together := (.Resize "1500x webp q100").RelPermalink }}
-                    <img class="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero" src="{{$together}}">
-                    {{ end }}
+    <div class="container mx-auto justify-center">
+      <div class="flex gap-6 items-center justify-center mt-12">
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/uk.png" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/germany.png" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/9.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/10.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/france.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/australia.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/italy.png" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/ireland.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+      </div>
+      <div class="flex gap-6 items-center justify-center mt-12">
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/tatti.png" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/denmark.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/hungary.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/poland.png" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/canada.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/norway.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/india.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/greece.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+      </div>
+      <div class="flex gap-6 items-center justify-center mt-12">
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/slovania.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/finalnd.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/switzerland.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/japan.png" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
+          {{end}}
+        </div>
+        <div class="w-3/6 justify-center">
+          {{ with resources.Get "images/flags/9.jpg" }}
+          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
+          {{end}}
+        </div>
+      </div>
+    </div>
 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col items-start mt-12 mb-16 text-left text-lg lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
-              <h2 class="mb-8 text-4xl font-medium leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">The UK's Leading Sales Outsourcing Company.</h2>
-              <p class="mb-8 leading-relaxed text-left">
-                Unlike digital marketing agencies you’ll come across, we’re not creating one size fits all packages. We don’t promote simply posting a few times a week on social media with the hope that more clients will know more about your company.</p>
-                <p class="mb-8 leading-relaxed text-left">
-                Why? Because Outsourced Sales was set up with a results driven approach in mind. What works for one company may not work for another. We therefore use a holistic approach to decide what key areas we will focus on to get you the best results with the least amount of budget. We get to know your business, understand your audience and we determine what it truly takes to drive your sales.
-                </p>
-                <p class="mb-8 leading-relaxed text-left">
-                How do we decide where to focus? We use data. Data drives what approach we should take. We can make smart decisions because it’s all backed by data and expert insights. This is what allows us to guarantee your results.
-                            </p>
-            </div>
-            {{ $logoimage := (resources.Get "images/logo/dark-blue-full.png").RelPermalink }}
-
-            <img class="pt-10" src="{{ $logoimage }}" alt="Outsourced Sales logo">
+    <div class="container mx-auto py-4 mt-20">
+      <div class="flex flex-wrap gap-6">
+        <div class="w-3/5  justify-start">
+          <div class="relative table rounded-r-lg w-full pb-0 lg:pb-0 justify-center text-center"
+            style="background-color: #4D4575;">
+            <h2 class="p-6 text-5xl grow font-bold text-white text-center"> Satisfied Customers</h2>
+            <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">999</p>
           </div>
         </div>
-      </section>
 
-      {{ with .Site.Data.hero }}{{ partial "dashboard.html" . }}{{ end }}
-
-
-    <section class="relative md:pb-24 py-12 lg:py-24">
-        <div class="lg:container mx-auto">
-            <div class="grid grid-cols-1">
-                <div class="relative -mt-12 shadow dark:shadow-gray-800 overflow-hidden bg-white dark:bg-slate-900">
-                    <div class="grid md:grid-cols-12 grid-cols-1 items-center">
-
-                        <div class="md:col-span-6">
-                            <div class="p-6">
-
-                                    <blockquote class="relative border-l-4 pl-4 sm:pl-6 dark:border-gray-700 mb-8">
-                                        <p class="text-gray-800 sm:text-3xl dark:text-white"><em>
-                                            "Engineers create great products by focusing on innovation. Everything else can be outsourced"</h3>
-
-                                        </p></em>
-                                      
-                                        <footer class="mt-4">
-                                          <div class="flex items-center">
-                            
-                                            <div class="ml-4">
-                                              <div class="text-2xl font-semibold text-gray-800 dark">Andre Barrett</div>
-                                              <div class="text-2xl">Founder of Outsourced Sales</div>
-                                            </div>
-                                          </div>
-                                        </footer>
-                                      </blockquote>
+        <div class="w-3/6 justify-end">
+          <div class="relative table border-amber-400 rounded-lg w-full pb-0 lg:pb-0 justify-center text-center"
+            style="background-color: #FBF6F4;">
+            <h3 class="p-6 text-4xl grow font-bold text-dark text-center"> Countries Served</h2>
+              <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">25</p>
+          </div>
+        </div>
+        <div class="w-3/6 justify-end">
+          <div class="relative table border-amber-400 rounded-lg w-full pb-0 lg:pb-0 justify-center text-center"
+            style="background-color: #FBF6F4;">
+            <h3 class="p-6 text-4xl grow font-bold text-dark text-center">Stations installed</h2>
+              <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">68</p>
+          </div>
+        </div>
+      </div>
 
 
-                                <p class="text-2xl text-gray-700">Let me invite you to a free masterclass. I'll share the strategies that we are using to help our clients grow their sales.</p>
+    </div>
+  </section>
 
-                                <div class="flex justify-center mt-12 mx-auto">
-                                    <a href="/sales-training" class="py-4 px-9 rounded text-white text-2xl font-semibold border border-amber-300 hover:border-amber-400 focus:ring focus:ring-amber-50 bg-amber-600 hover:bg-amber-500 transition ease-in-out duration-200">Watch Free Masterclass</a>
+  <section>
+    <div class="container mx-auto justify-center">
+      <div class="flex justify-center">
+        <div class="w-3/6">
+          <h2 class="p-6 text-5xl grow font-bold text-dark text-center"><span style="color:#FE590F">Supporting</span>
+            our Spinning Disc <br /> Installations around the World</h2>
+        </div>
+      </div>
+      <div class="flex justify-start">
+        <div class="w-3/5 justify-start p-12">
+          <p class="p-6 text-2xl grow text-left">Saturn Spraying has been manufacturing and supplying Spinning <b
+              class="font-bold" style="color: #FE590F;">Disc Spraying Machines around the world since the late
+              1980s.</b> Unique in our ability to offer a range of services, including bespoke design, we have
+            installations in the main food manufacturing countries within Asia, South America, and Australia.
+            <br /><br />
 
-                                </div>
-                            </div>
-                        </div>
+            Our strategy when dealing with long distances, language, and culture differences has always been to provide
+            support through the very <b class="font-bold" style="color: #FE590F;">best training at the time of
+              installation.</b> This, in turn, instills an advanced level of confidence in future installations. We
+            deliver a personal service that enables us to build and establish valuable working relationships with the
+            individuals who provide the day-to-day maintenance on-site.<br /><br />
 
-                        <div class="md:col-span-6">
-                            {{ with resources.Get "images/andre-barrett.jpg" }}
-                            {{ $andre := (.Resize "1500x webp q100").RelPermalink }}
-                            <div class="w-full h-full w-20 h-20" style="position: relative; z-index: 0;" data-jarallax>
-                                <img class="jarallax-img" src="{{ $andre }}" alt="" style="position: absolute; object-fit: cover; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-                                <div class="h-auto" style="height: 700px;">
-                                </div>
-                              </div>
-                            {{end}}
+            Through taking this customer-focused approach, we can respond quicker to the problems being experienced,
+            diagnosing faults and operating errors, as well as recommending the procedures and spares necessary to
+            restore full operation.<br /><br />
 
-                        </div><!--end col-->
+            The Spinning Disc Spraying machine is not a complex machine as it uses industry standard engineering
+            "building blocks" that an experienced engineer will be comfortable with.<br /><br />
+
+            Systems such as:<br /><br />
+            <ul class="p-6 text-2xl grow text-left font-bold" style="color: #FE590F;">
+              <li>Inverter/Motor combination sets</li>
+              <li>Conveyors</li>
+              <li>Motors</li>
+              <li>Pumps</li>
+              <li>Gearboxes</li>
+            </ul>
+            <br /><br />
+            <p class="p-6 text-2xl grow text-left">Additionally, there is specialist technology within our systems that would be explained in detail, ensuring
+            transparency through inclusion and offering insight and support every step of the way.<br /><br />
+
+            During the initial phase of the build program, <b class="font-bold" style="color: #FE590F;">we provide
+              support</b> with locally held spares from our recommended spares list, which details the recommended spares
+            holding items and quantities.</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="relative pb-16 mt-6">
+        <div class="max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
+            <div class="relative px-6 py-10 overflow-hidden shadow-xl rounded-2xl sm:px-12 sm:py-20" style="background: #FE590F;
+            border-radius: 5px;">
+                <div class="relative">
+                    <div class="sm:text-center">
+                        <h2 class="text-3xl font-bold tracking-tight text-white text-left sm:text-4xl w-3/5">
+                            Get in touch and book your respraying project before 27th June to receive 10% off your quote
+                        </h2>
                     </div>
                 </div>
-            </div><!--end grid-->
-        </div><!--end container-->
+                <div class="relative">
+                    <div class="mt-12 sm:mx-auto sm:flex sm:max-w-lg w-1/6">
+                        <a href="/"
+                            class="block w-full px-5 py-3 text-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-center font-medium text-grey-darker bg-white border border-amber-500 rounded-md shadow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+                            Find out more <span class="ml-2">&#8594;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    </section>
+
 
 
 

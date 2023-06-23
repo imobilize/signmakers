@@ -1,0 +1,281 @@
+{{ define "main" }}
+
+{{ $bgimage := (resources.Get "images/bg_hero.png").RelPermalink }}
+<section
+    class="relative table w-full pb-0 lg:pb-0 bg-slate-800 bg-[url('{{ $bgimage }}')] bg-center bg-no-repeat bg-cover"
+    style="background-image: url('{{$bgimage}}');">
+    <div class="container px-4 mx-auto max-w-screen-xl mt-20">
+        <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+            <div class="lg:col-span-7">
+                <div class="md:me-6 md:mb-20">
+                    <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold  mb-5 text-white">Technology
+                    </h1>
+                    <p class="pr-0 my-8 text-base text-gray-200 sm:text-xl xl:text-2xl lg:pr-20">Making your production
+                        automated</p>
+                    <div class="mt-20">
+                        <div class="flex flex-wrap -m-2.5 mb-20">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <!-- <div class="lg:col-span-5 mt-8 md:mt-0">
+                    {{ with resources.Get "images/sales-man.png" }}
+                    {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                    {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                    {{ $large := (.Resize "900x webp q80").RelPermalink }}
+                    {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+                    <img src="{{ $featuredimage }}" srcset="" alt="">
+                    {{end}}
+                </div> -->
+
+            <!--end col-->
+        </div><!--end grid-->
+    </div><!--end container-->
+</section>
+
+<section>
+    <div class="container mx-auto justify-center">
+        <div class="flex justify-center">
+            <div class="w-3/6">
+                <h1 class="p-6 text-5xl grow font-bold text-dark text-center mb-20">
+                    Introducing<span style="color:#FE590F"> Spinning Disc</span> Technology</h1>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="w-1/2">
+                <p class="text-dark">At the core of the spraying system is a dish-shaped rotating stainless steel disc.
+                    The disc is rotated at speed; whereupon liquids are fed into the centre of the spinning disc. As
+                    this liquid is accelerated by the spinning disc, it spirals out to the edge of the disc and is then
+                    launched tangentially into the air. Here, the disc will spray uniformly and homogeneously through a
+                    full 360 degrees.
+                    By enclosing the spinning disc with a metal cover incorporating an adjustable aperture; a precision
+                    spray pattern can be focused on the required area of application.
+
+                    The feed tube to the spinning disc has an aperture of between 6.0 to 9.5mm (dependent upon model).
+                    This allows liquids of varying densities, including scurries with particulates in suspension, to be
+                    sprayed with the same precision and uniformity of deposition: without fear of blockages or
+                    variations in the spray strength. For thorough system cleaning, we have ensured that the key parts
+                    disassemble very easily.</p>
+                <h2 class="p-6 text-4xl font-bold text-dark text-left mb-5 mt-5"><span style="color:#FE590F"> Primary
+                        Advantages </span> of Our Technology</h2>
+                <ul class="p-6 text-2xl grow text-left font-bold" style="color: #FE590F;">
+                    <li> Blockage resistant delivery system that gives reliable manufacturing performance. </br></br>
+                    </li>
+                    <li>Precision homogeneous spray that provides a faultless, even and consistent coverage of the
+                        product.</br></br>
+                    </li>
+                    <li>Easy maintenance & cleaning as the major assemblies disassemble very easily.</br></br>
+                    </li>
+                </ul>
+                <p class="text-dark">
+                    Operation Directors and Factory Managers alike value the clear benefits of operating a high quality,
+                    high yield precision spraying system. Maintenance Managers see the attention to design detail, the
+                    system build quality and the faultless reliability as a proven recipe for success. Through ensuring
+                    faultless precision and repeatable results we continually push the boundaries of what is achievable.
+                </p>
+            </div>
+            <div class="w-1/2">
+                {{ with resources.Get "images/DiscMaster2.png" }}
+                <img src="{{ .RelPermalink }}" class="h-full w-full" alt="">
+                {{ end }}
+            </div>
+        </div>
+        <div class="flex">
+            <div class="w-1/2">
+                {{ with resources.Get "images/top-spray.png" }}
+                <img src="{{ .RelPermalink }}" class="h-full w-full" alt="">
+                {{ end }}
+            </div>
+            <div class="w-1/2">
+                <h3 class="p-6 text-4xl font-bold text-dark text-left mb-5 mt-5"><span style="color:#FE590F"> Top Only
+                    </span>Spray Coverage</h3>
+                <p class="text-dark">
+                    A spinning disc with a focusing aperture lays down a simple spray pattern, perpendicular to the
+                    direction of product travel; that graduates in the strength of the spray linearly across its length.
+                    In certain applications, this can be very effective in providing a simple two-dimensional or "Top
+                    Only" spraying system. Note: The disc is inclined to improve the quality of the spray and to channel
+                    unused spray material back to the reservoir. </br></br>
+                </p>
+                <p>
+                    For a more effective application of spray liquid in a top only mode; two contra-rotating disc heads
+                    are used. The discs are grouped closely* together to provide a consistent, uniform spray directly
+                    over the product. A balanced stainless steel manifold ensures that the pump output is evenly
+                    distributed to each spray head. Spray material that is not deposited on the product is collected
+                    under the conveyor and channeled back to the reservoir. When used for spraying meat pies in foil
+                    bases, for example; this configuration helps protect the foil from being sprayed.</br></br>
+                </p>
+                <p>
+                    Precision Inverter/Motor Control Systems provides digital control to the Spinning Disc Speed, Pump
+                    Speed, and the Conveyor Speed. This provides a unique signature for each machine set-up. Product
+                    changeovers can be quickly accommodated by entering the signature code into the machine for the
+                    appropriate machine configuration. The precision accuracy inherent in the system ensures it
+                    correctly returns to an identical set up as the last batch for that particular product.</br></br>
+                </p>
+                <p>
+                    A proportion of the pump output is returned directly to the reservoir tank, which
+                    provides:</br></br>
+                </p>
+                <ul class="p-6 text-2xl grow text-left font-bold" style="color: #FE590F;">
+                    <li>Improved control of the spray application rate.</li></br></br>
+                    <li>Continuous recirculation that inhibits separation of emulsions.</li></br></br>
+                    <li>Enhanced temperature stabilization of the spray.</li></br>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-wrap">
+            <div class="w-1/2">
+                <p class="text-dark">A spinning disc with a focusing aperture lays down a simple spray pattern,
+                    perpendicular to the
+                    direction of product travel, that graduates in the strength of the spray linearly across its length.
+                    In certain applications, this can be very effective in providing a simple two-dimensional or "Top
+                    Only" spraying system. For "Top &amp; Sides" coverage, a single disc is not sufficient. Note: The
+                    disc is inclined to improve the quality of the spray and to channel unused spray material back to
+                    the reservoir. </br></br> In Top &amp; Sides spraying, it is important to ensure that the spray
+                    pattern covers evenly and with precision the key surfaces:</p>
+
+                <ul class="p-6 text-2xl grow text-left font-bold" style="color: #FE590F;">
+                    <li>Top Surface</li>
+                    <li>Front Leading Face</li>
+                    <li>Left Side Face</li>
+                    <li>Right Side Face</li>
+                    <li>Rear Trailing Face</li>
+                </ul>
+
+                <p>To create a spray pattern for "Top &amp; Sides," we use a pair of contra-rotating discs. The spray
+                    patterns of each disc in this configuration merge with the other to provide an even homogeneous
+                    precision coverage of spray material across the full width of the system. The discs are arranged in
+                    a "V" shape so that the front and rear of the product can be sprayed. A balanced stainless steel
+                    manifold ensures that the pump output is evenly distributed to each spray head. Spray material that
+                    is not deposited on the product is collected under the conveyor and channeled back to the reservoir.
+
+                    </br></br>The effectiveness of the "Top &amp; Sides" coverage is also dependent upon the shape or
+                    profile of the product itself, as well as on the potential masking of the spray by adjacent products
+                    on the conveyor system. In such circumstances, we may use multiple spinning discs ganged together as
+                    contra-rotating pairs. This provides the flexibility to create a configuration for consistent and
+                    uniform spray across the spray bed.</br></br>
+
+                    A balanced stainless steel manifold ensures that the pump output is evenly distributed to each spray
+                    head. Spray material that is not deposited on the product is collected under the conveyor and
+                    channeled back to the tank. Precision Inverter/Motor Control Systems provide digital control to the
+                    spinning disc speed, pump speed, and the conveyor speed. This provides a unique signature for each
+                    machine setup. Product changeovers can be quickly accommodated by entering the signature code into
+                    the machine for the appropriate machine configuration. The accuracy inherent in the system ensures
+                    it correctly returns to an identical setup as the last batch for that particular product.</br></br>
+
+                <p>A proportion of the pump output is returned directly to the reservoir tank, which provides:</p>
+
+                <ul class="p-6 text-2xl grow text-left font-bold" style="color: #FE590F;">
+                    <li>Improved control of the spray application rate.</li>
+                    <li>Continuous recirculation inhibits separation of emulsions.</li>
+                    <li>Enhances the temperature stabilization of the spray.</li>
+                </ul>
+
+            </div>
+            <div class="w-1/2">
+                {{ with resources.Get "images/top-side-spray.png" }}
+                <img src="{{ .RelPermalink }}" class="h-full w-full" alt="">
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    <div class="flex">
+        <div class="w-full">
+            <h4 class="p-6 text-4xl font-bold text-dark text-center mb-5 mt-5"><span style="color:#FE590F"> Top & Bottom
+                </span>Spray Coverage
+            </h4>            
+        </div>
+    </div>
+    <div class="flex">
+        <div class="container my-auto mx-auto">
+            <div class="w-3/5">
+                <p class="text-dark">Sometimes referred to as "All Over Spraying," this configuration requires a minimum of
+                    two pairs of contra-rotating disc heads. The appropriate "Top Only" or "Top &amp; Sides" configuration
+                    is augmented with a further pair of discs located under the conveyor, spraying the underside of the
+                    products. In this way, we can ensure that the spray pattern is extended to spray the key areas:</p>
+    
+                <ul class="p-6 text-2xl grow text-left font-bold" style="color: #FE590F;">
+                    <li>2D Product</li>
+                    <li>Top Surface</li>
+                    <li>Underside Surface</li>
+                    <li>3D Product</li>
+                    <li>Top Surface</li>
+                    <li>Front Leading Face</li>
+                    <li>Left Side Face</li>
+                    <li>Right Side Face</li>
+                    <li>Rear Trailing Face</li>
+                    <li>Underside Surface</li>
+                </ul>
+    
+                <p class="p-6 text-2xl grow text-left font-bold mb-2 mt-2">Top &amp; Bottom System Schematic</p>
+            </br></br>
+                <p class="text-dark">The rotating pairs are configured to provide a consistent and uniform spray over and underneath the spray
+                    bed. A balanced stainless steel manifold ensures that the pump output is evenly distributed to each
+                    spray head. Spray material that is not deposited on the product is collected under the conveyor and
+                    channeled back to the tank.</br></br>
+    
+                Precision Inverter/Motor Control Systems provide digital control to the Spinning Disc Speed, Pump Speed,
+                    and the Conveyor Speed. This provides a unique signature for each machine setup. Product changeovers can
+                    be quickly accommodated by entering the signature code into the machine for the appropriate machine
+                    configuration. The accuracy inherent in the system ensures it correctly returns to an identical setup as
+                    the last batch for that particular product.</br></br>
+    
+                A proportion of the pump output is returned directly to the reservoir tank, which provides:</p>
+    
+                <ul class="p-6 text-2xl grow text-left font-bold" style="color: #FE590F;">
+                    <li>Improved control of the spray application rate.</li></br></br>
+                    <li>Continuous re-circulation that inhibits separation of emulsions.</li></br></br>
+                    <li>Enhanced temperature stabilization of the spray.</li></br>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="flex">
+        <div class="container my-auto mx-auto items-center justify-center">
+            <center>
+                <div class="w-1/2 justify-center items-center">
+                    {{ with resources.Get "images/top-bottom-spray.png" }}
+                <img src="{{ .RelPermalink }}" class="h-full w-full" alt="">
+                    {{ end }}
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="flex">
+        <div class="w-1/2 container my-auto mx-auto ">
+            <h5 class="p-6 text-4xl font-bold text-dark text-center mb-5 mt-5"><span style="color:#FE590F"> Top & Bottom
+            </span>Spray Coverage
+            </h5>  
+
+            <p class="text-dark">Not all food spraying can be accomplished at ambient temperature; some applications require that the spraying material is heated or chilled to a temperature other than that of its surroundings. There are typically three reasons why temperature is varied at the point of spray application.</p><br><br>
+
+<h3 class="font-bold">SAFETY</h3>
+
+<p class="text-dark">Certain spray materials such as real egg glaze/egg wash require constant chilling to stop the growth of bacteria within the spray medium. The EU's directive on spraying of real egg glaze requires the medium to be maintained at a temperature of between 4-6 degrees centigrade. Chilled egg glaze has a longer active production life than non-chilled.</p><br><br>
+
+<h3 class="font-bold">EFFECTIVENESS</h3>
+
+<p class="text-dark">Typically, the spray medium is easier to apply when the temperature is raised since the medium is less viscous and can be applied thinly.</p><br><br>
+
+<h3 class="font-bold">AVAILABILITY</h3>
+
+<p class="text-dark">When spraying a supersaturated solution that cannot exist at ambient temperature, for example when spraying a high-value Brix sugar syrup solution. Here, the supersaturated solution could only exist in solution at temperatures above ambient.</p><br><br>
+
+<h3 class="font-bold">METHODOLOGY</h3>
+
+<p class="text-dark">Saturn Spraying augments its standard DiscMaster™ and DiscMatic™ design with double-skinned capillary-tracked radiating surfaces on its in-feed and out-feed drip trays, as well as the system reservoir since these surfaces are in close contact with the spraying liquid. An external temperature control pack pumps food-safe coolant through the closed loop system allowing close regulation of the temperature. The system temperature control pack is rated to be able to easily maintain the spray material at the desired temperature.</p><br><br>
+
+<!-- <h3 class="font-bold">TEMPERATURE CONTROLLED TOP & SIDES SIDES SPRAYING</h3> -->
+
+        </div>
+        <div class="w-1/2">
+            {{ with resources.Get "images/temperature-control-spraying.png" }}
+            <img src="{{ .RelPermalink }}" class="h-full w-full" alt="">
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}
