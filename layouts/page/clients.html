@@ -1,0 +1,376 @@
+{{ define "main" }}
+
+{{ $bgimage := (resources.Get "images/bg_hero.png").RelPermalink }}
+<section
+    class="relative table w-full pb-0 lg:pb-0 bg-slate-800 bg-[url('{{ $bgimage }}')] bg-center bg-no-repeat bg-cover"
+    style="background-image: url('{{$bgimage}}');">
+    <div class="container px-4 mx-auto max-w-screen-xl mt-20">
+        <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+            <div class="lg:col-span-7">
+                <div class="md:me-6 md:mb-20">
+                    <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold  mb-5 text-white">Our Clients
+                    </h1>
+                    <p class="pr-0 my-8 text-base text-gray-200 sm:text-xl xl:text-2xl lg:pr-20">Making your production
+                        automated</p>
+                    <div class="mt-20">
+                        <div class="flex flex-wrap -m-2.5 mb-20">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <!-- <div class="lg:col-span-5 mt-8 md:mt-0">
+                    {{ with resources.Get "images/sales-man.png" }}
+                    {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                    {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                    {{ $large := (.Resize "900x webp q80").RelPermalink }}
+                    {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+                    <img src="{{ $featuredimage }}" srcset="" alt="">
+                    {{end}}
+                </div> -->
+
+            <!--end col-->
+        </div><!--end grid-->
+    </div><!--end container-->
+</section>
+
+
+<section>
+    <div class="container mx-auto justify-center">
+        <div class="flex justify-center">
+            <div class="w-3/6">
+                <h2 class="p-6 text-5xl grow font-bold text-dark text-center"><span style="color:#FE590F">This is what
+                        our clients say about us</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+<section class="bg-cover bg-center h-screen">
+    <div class="mx-auto max-w-[1340px] px-4 py-16 sm:px-6 sm:py-24 lg:me-0 lg:pe-0 lg:ps-8">
+        <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
+            <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-dark">
+                    Don't just take our word for it...
+                    <br class="hidden sm:block lg:hidden" />
+                    Read reviews from our customers
+                </h2>
+
+                <p class="mt-4  text-dark">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+                    veritatis illo placeat harum porro optio fugit a culpa sunt id!
+                </p>
+
+                <div class="hidden lg:mt-8 lg:flex lg:gap-4 justify-center p-3">
+                    <button
+                        class="prev-button rounded-full border border-pink-600 p-3 text-pink-600 hover:bg-pink-600 hover:text-white">
+                        <span class="sr-only">Previous Slide</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="#000000" class="h-5 w-5 rtl:rotate-180">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <button
+                        class="next-button rounded-full border border-pink-600 p-3 text-pink-600 hover:bg-pink-600 hover:text-white">
+                        <span class="sr-only">Next Slide</span>
+                        <svg class="h-5 w-5 rtl:rotate-180" fill="none" stroke="#000000" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="-mx-6 lg:col-span-2 lg:mx-0">
+                <div class="swiper-container overflow-hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <blockquote class="flex h-full flex-col justify-between bg-white p-12">
+                                <div class="p-4 rounded-lg bg-slate-800">
+                                    <div class="flex gap-0.5 text-green-500">
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <p class="text-2xl font-bold text-white sm:text-3xl">
+                                            Stayin' Alive
+                                        </p>
+
+                                        <p class="mt-4 leading-relaxed text-white">
+                                            No, Rose, they are not breathing. And they have no arms or
+                                            legs … Where are they? You know what? If we come across
+                                            somebody with no arms or legs, do we bother resuscitating
+                                            them? I mean, what quality of life do we have there?
+                                        </p>
+                                    </div>
+                                    <footer class="mt-8 text-sm text-white bg-slate-800">
+                                        &mdash; Michael Scott
+                                    </footer>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="swiper-slide">
+                            <blockquote class="flex h-full flex-col justify-between bg-white p-12">
+                                <div class="p-4 rounded-lg bg-slate-800">
+                                    <div class="flex gap-0.5 text-green-500">
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <p class="text-2xl font-bold text-white sm:text-3xl">
+                                            Stayin' Alive
+                                        </p>
+
+                                        <p class="mt-4 leading-relaxed text-white">
+                                            No, Rose, they are not breathing. And they have no arms or
+                                            legs … Where are they? You know what? If we come across
+                                            somebody with no arms or legs, do we bother resuscitating
+                                            them? I mean, what quality of life do we have there?
+                                        </p>
+                                    </div>
+                                    <footer class="mt-8 text-sm text-white bg-slate-800">
+                                        &mdash; Michael Scott
+                                    </footer>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="swiper-slide">
+                            <blockquote class="flex h-full flex-col justify-between bg-white p-12">
+                                <div class="p-4 rounded-lg bg-slate-800">
+                                    <div class="flex gap-0.5 text-green-500">
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+
+                                        <svg class="h-5 w-5" fill="#D5AB55" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <p class="text-2xl font-bold text-white sm:text-3xl">
+                                            Stayin' Alive
+                                        </p>
+
+                                        <p class="mt-4 leading-relaxed text-white">
+                                            No, Rose, they are not breathing. And they have no arms or
+                                            legs … Where are they? You know what? If we come across
+                                            somebody with no arms or legs, do we bother resuscitating
+                                            them? I mean, what quality of life do we have there?
+                                        </p>
+                                    </div>
+                                    <footer class="mt-8 text-sm text-white bg-slate-800">
+                                        &mdash; Michael Scott
+                                    </footer>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 flex justify-center gap-4 lg:hidden">
+            <button aria-label="Previous slide"
+                class="prev-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white">
+                <svg class="h-5 w-5 -rotate-180 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </svg>
+            </button>
+
+            <button aria-label="Next slide"
+                class="next-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 32,
+            autoplay: {
+                delay: 8000,
+            },
+            breakpoints: {
+                640: {
+                    centeredSlides: true,
+                    slidesPerView: 1.25,
+                },
+                1024: {
+                    centeredSlides: false,
+                    slidesPerView: 1.5,
+                },
+            },
+            navigation: {
+                nextEl: '.next-button',
+                prevEl: '.prev-button',
+            },
+        })
+    })
+</script>
+
+<section class="mt-20 mb-20">
+    <div class="relative table w-full pb-0 lg:pb-0 justify-center text-center" style="background-color: #FBf6f4;">
+        <div class="container mx-auto justify-center">
+            <div class="flex justify-center gap-6 p-4">
+                <div class="w-3/6 justify-center">
+                    {{ with resources.Get "images/clients/1.png" }}
+                    <img src="{{ .RelPermalink }}" class="rounded-full" alt="">
+                    {{ end }}
+                </div>
+                <div class="w-3/6 justify-center">
+                    {{ with resources.Get "images/clients/2.png" }}
+                    <img src="{{ .RelPermalink }}" class="rounded-full" alt="">
+                    {{ end }}
+                </div>
+                <div class="w-3/6 justify-center">
+                    {{ with resources.Get "images/clients/3.png" }}
+                    <img src="{{ .RelPermalink }}" class="rounded-full" alt="">
+                    {{ end }}
+                </div>
+                <div class="w-3/6 justify-center">
+                    {{ with resources.Get "images/clients/4.png" }}
+                    <img src="{{ .RelPermalink }}" class="rounded-full" alt="">
+                    {{ end }}
+                </div>
+                <div class="w-3/6 justify-center">
+                    {{ with resources.Get "images/clients/5.png" }}
+                    <img src="{{ .RelPermalink }}" class="rounded-full" alt="">
+                    {{ end }}
+                </div>
+                <div class="w-3/6 justify-center">
+                    {{ with resources.Get "images/clients/6.png" }}
+                    <img src="{{ .RelPermalink }}" class="rounded-full" alt="">
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="relative pb-16 mt-6">
+        <div class="max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
+            <div class="relative px-6 py-10 overflow-hidden shadow-xl rounded-2xl sm:px-12 sm:py-20" style="background: #FE590F;
+            border-radius: 5px;">
+                <div class="relative">
+                    <div class="text-left">
+                        <h2 class="font-bold text-8xl tracking-tight text-white text-left">
+                            Intrested?
+                        </h2>
+                        <p class="text-2xl font-bold text-white">Would you like to find out more about this subject?</p>
+                        <p class="text-2xl font-bold text-white pt-4">Do you have an application that could use this technology?</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="flex">
+                        <div class="justify-start">
+                            <div class="mt-12 sm:mx-auto sm:flex sm:max-w-lg w-1/6">
+                                <a href="/"
+                                    class="block w-full px-5 py-3 text-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-center font-medium text-grey-darker bg-white border border-amber-500 rounded-md shadow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+                                    Find out more <span class="ml-2">&#8594;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{ end }}

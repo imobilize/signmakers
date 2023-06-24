@@ -7,10 +7,11 @@ module.exports = {
   theme: {
 
     fontFamily: {
-      // 'sans': ['ui-sans-serif', 'Poppins'],
-      // 'serif': ['ui-serif', 'Poppins'],
-      // 'mono': ['ui-monospace', 'Poppins'],
-      'poppins': ['"Poppins"', 'cursive']
+      sans: ['Mukta', ...defaultTheme.fontFamily.sans],
+      // You can uncomment the following lines if you want to customize other font families as well
+      // serif: ['ui-serif', 'Poppins'],
+      // mono: ['ui-monospace', 'Poppins'],
+      poppins: ['"Poppins"', 'cursive'],
     },
     container: {
       padding: '2rem',

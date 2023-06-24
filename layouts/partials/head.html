@@ -32,3 +32,64 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!-- Include jQuery -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+<!-- Initialize Slider -->
+<script>
+  var cont = 0;
+  var xx;
+
+  function loopSlider() {
+    xx = setInterval(function() {
+      switch (cont) {
+        case 0:
+          {
+            $("#slider-1").fadeOut(400);
+            $("#slider-2").delay(400).fadeIn(400);
+            $("#sButton1").removeClass("bg-purple-800");
+            $("#sButton2").addClass("bg-purple-800");
+            cont = 1;
+            break;
+          }
+        case 1:
+          {
+            $("#slider-2").fadeOut(400);
+            $("#slider-1").delay(400).fadeIn(400);
+            $("#sButton2").removeClass("bg-purple-800");
+            $("#sButton1").addClass("bg-purple-800");
+            cont = 0;
+            break;
+          }
+      }
+    }, 8000);
+  }
+
+  function reinitLoop(time) {
+    clearInterval(xx);
+    setTimeout(loopSlider(), time);
+  }
+
+  $(window).ready(function() {
+    $("#slider-2").hide();
+    $("#sButton1").addClass("bg-purple-800");
+    loopSlider();
+  });
+</script>
+
+<!-- Include Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('#slider', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '#sButton2',
+      prevEl: '#sButton1',
+    },
+  });
+</script>

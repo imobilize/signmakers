@@ -1,0 +1,161 @@
+<div class="relative flex justify-center pt-12 pb-16">
+    <h2 class="text-3xl font-medium text-black sm:text-4xl">
+        Our Agents</h2>
+</div>
+<div class="flex justify-center mt-8 overflow-hidden">
+    <div id="slider" class="swiper-container w-full max-w-screen-lg gap-4">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          {{ $logo1 := resources.Get "images/our-agents/16.png" }}
+          {{ with $logo1 }}
+            {{ with .Resize "250x100" }}
+              <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+            {{ end }}
+          {{ end }}
+        </div>
+        <div class="swiper-slide">
+          {{ $logo1 := resources.Get "images/our-agents/15.png" }}
+          {{ with $logo1 }}
+            {{ with .Resize "250x100" }}
+              <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+            {{ end }}
+          {{ end }}
+        </div>
+        <div class="swiper-slide">
+          {{ $logo2 := resources.Get "images/our-agents/14.png" }}
+          {{ with $logo2 }}
+            {{ with .Resize "250x100" }}
+              <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+            {{ end }}
+          {{ end }}
+        </div>
+        <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/13.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/12.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/11.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/10.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/9.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/8.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/7.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/6.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/5.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/4.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/3.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/2.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/1.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="swiper-slide">
+            {{ $logo2 := resources.Get "images/our-agents/0.png" }}
+            {{ with $logo2 }}
+              {{ with .Resize "250x100" }}
+                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="" />
+              {{ end }}
+            {{ end }}
+          </div>
+        <!-- Add more slide divs here -->
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var swiper = new Swiper('#slider', {
+        slidesPerView: 6,
+        loop: true,
+        autoplay: {
+          disableOnInteraction: false,
+        },
+      });
+    });
+  </script>

@@ -1,4 +1,6 @@
 @import "./glightbox.css";
+@import 'typeface-mukta';
+
 
 /* assets */ 
 @tailwind base;
