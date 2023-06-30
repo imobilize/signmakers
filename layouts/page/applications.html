@@ -1,0 +1,668 @@
+{{ define "main" }}
+<style>
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    margin-left: 0.75em;
+  }
+</style>
+
+{{ $bgimage := (resources.Get "images/bg_hero.png").RelPermalink }}
+<section
+  class="relative table w-full pb-0 lg:pb-0 bg-slate-800 bg-[url('{{ $bgimage }}')] bg-center bg-no-repeat bg-cover"
+  style="background-image: url('{{$bgimage}}');">
+  <div class="container px-4 mx-auto max-w-screen-xl mt-20">
+    <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+      <div class="lg:col-span-7">
+        <div class="md:me-6 md:mb-20">
+          <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold  mb-5 text-white">Applications
+          </h1>
+          <p class="pr-0 my-8 text-base text-gray-200 sm:text-xl xl:text-2xl lg:pr-20">Making your production
+            automated</p>
+          <div class="mt-20">
+            <div class="flex flex-wrap -m-2.5 mb-20">
+
+
+            </div>
+          </div>
+        </div>
+      </div><!--end col-->
+
+      <!-- <div class="lg:col-span-5 mt-8 md:mt-0">
+                    {{ with resources.Get "images/sales-man.png" }}
+                    {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                    {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                    {{ $large := (.Resize "900x webp q80").RelPermalink }}
+                    {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+                    <img src="{{ $featuredimage }}" srcset="" alt="">
+                    {{end}}
+                </div> -->
+
+      <!--end col-->
+    </div><!--end grid-->
+  </div><!--end container-->
+</section>
+
+<section class="mt-12 mb-12">
+  <div class="container mx-auto">
+    <div class="flex justify-center">
+      <div class="w-3/6">
+        <h5 class="p-6 text-4xl font-bold text-dark text-center mb-5 mt-5">
+          <span style="color:#FE590F"> Saturn Spraying </span>Applications Areas
+        </h5>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="container mx-auto pt-12 p-6 overflow-hidden">
+        <div class="swiper-container">
+          <div class="swiper-wrapper flex w-full">
+            <!-- Dummy Cards -->
+            <a href="/applications/#biscuits" class="hover:scale-125 transition ease-in-out duration-200">
+            <div class="swiper-slide w-full  hover:scale-125">
+                <div class="rounded-lg p-4 w-full h-full" style="background-color: #FBF6F4;">
+                  <center>
+                    {{ with resources.Get "images/nutella-biscuits.png" }}
+                    <img src="{{ .RelPermalink }}" class="w-3/6"
+                      style="position: relative; margin-top: -40px; width: 60%;" alt="">
+                    {{ end }}
+                  </center>
+                  <h2 class="text-dark text-2xl font-bold mt-2 mb-2">Biscuits and Snack Food</h2>
+                  <p class="text-dark">Spraying oil and sprinkling salt and/or nuts onto our all-time favourite snack
+                    foods.</p>
+                </div>
+            </div>
+            </a>
+            <a href="/applications/#bakery" class="hover:scale-125 transition ease-in-out duration-200">
+            <div class="swiper-slide w-3/5">
+              <div class="rounded-lg p-4 w-full h-full" style="background-color: #FBF6F4;">
+                <center>
+                  {{ with resources.Get "images/croissant.png" }}
+                  <img src="{{ .RelPermalink }}" class="w-3/6"
+                    style="position: relative; margin-top: -40px; width: 50%;" alt="">
+                  {{ end }}
+                </center>
+                <h2 class="text-dark text-2xl font-bold mt-2 mb-2">Bakery</h2>
+                <p class="text-dark">​Egg glazing of bakery products, including savory pies, pasties, brioche and
+                  croissants. Just too good to resist.</p>
+              </div>
+            </div>
+            </a>
+            <a href="/applications/#meatandfish" class="hover:scale-125 transition ease-in-out duration-200">
+            <div class="swiper-slide w-3/5">
+              <div class="rounded-lg p-4 w-full h-full" style="background-color: #FBF6F4;">
+                <center>
+                  {{ with resources.Get "images/meat-fish.png" }}
+                  <img src="{{ .RelPermalink }}" class="w-3/6"
+                    style="position: relative; margin-top: -40px; width: 50%;" alt="">
+                  {{ end }}
+                </center>
+                <h2 class="text-dark text-2xl font-bold mt-2 mb-2">Meat, Fish & Cheese</h2>
+                <p class="text-dark">Reducing freezer burn on meat, anti-fungal barriers on cheese and sprinkling herbs
+                  onto fish. All in a days work.</p>
+              </div>
+            </div>
+            </a>
+            <a href="/applications/#fruitsandveggies" class="hover:scale-125 transition ease-in-out duration-200">
+            <div class="swiper-slide w-3/5">
+              <div class="rounded-lg p-4 w-full h-full" style="background-color: #FBF6F4;">
+                <center>
+                  {{ with resources.Get "images/fruits.png" }}
+                  <img src="{{ .RelPermalink }}" class="w-3/6"
+                    style="position: relative; margin-top: -40px; width: 80%;" alt="">
+                  {{ end }}
+                </center>
+                <h2 class="text-dark text-2xl font-bold mt-2 mb-2">Fruit & Vegetables</h2>
+                <p class="text-dark">Sterilising soft fruits and berries is a vital task made easier; whilst the humble
+                  potato 'grows up' with our precision spraying process.</p>
+              </div>
+            </div>
+            </a>
+            <a href="/applications/#lowfatproducts" class="hover:scale-125 transition ease-in-out duration-200">
+            <div class="swiper-slide w-3/5">
+              <div class="rounded-lg p-4 w-full h-full" style="background-color: #FBF6F4;">
+                <center>
+                  {{ with resources.Get "images/croissant.png" }}
+                  <img src="{{ .RelPermalink }}" class="w-3/6"
+                    style="position: relative; margin-top: -40px; width: 50%;" alt="">
+                  {{ end }}
+                </center>
+                <h2 class="text-dark text-2xl font-bold mt-2 mb-2">Low Fat Products</h2>
+                <p class="text-dark">​Saturn is active in developing application systems for low-fat food production.
+                  Read all about it. </p>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+        <center>
+          <div class="swiper-pagination"></div>
+        </center>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    spaceBetween: 6,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
+<section>
+  <div class="container mx-auto">
+    <div class="flex justify-center">
+      <div class="w-3/6">
+        <h5 class="p-6 text-4xl font-bold text-dark text-center mb-5 mt-5">
+          <span style="color:#FE590F" id="bakery"> Bakery </span>Products Applications
+        </h5>
+      </div>
+    </div>
+    <div class="flex flex-wrap">
+      <div class="w-1/2 sm:w-full md:w-3/6 xs:w-full">
+        <div class="w-full">
+          <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+            Egg Glazing </h5>
+        </div>
+        <p class="text-dark">At the core of the spraying system is a dish-shaped rotating stainless steel disc.
+          The disc is rotated at speed; whereupon liquids are fed into the centre of the spinning disc. As
+          this liquid is accelerated by the spinning disc, it spirals out to the edge of the disc and is then
+          launched tangentially into the air. Here, the disc will spray uniformly and homogeneously through a
+          full 360 degrees.
+          By enclosing the spinning disc with a metal cover incorporating an adjustable aperture; a precision
+          spray pattern can be focused on the required area of application.
+  
+          The feed tube to the spinning disc has an aperture of between 6.0 to 9.5mm (dependent upon model).
+          This allows liquids of varying densities, including scurries with particulates in suspension, to be
+          sprayed with the same precision and uniformity of deposition: without fear of blockages or
+          variations in the spray strength. For thorough system cleaning, we have ensured that the key parts
+          disassemble very easily.</p>
+      </div>
+      <div class="w-1/2 sm:w-full">
+        <!-- <div class="pt-12"> -->
+        <center>
+          {{ with resources.Get "images/croissant.png" }}
+          <img src="{{ .RelPermalink }}" class="h-full w-1/2" alt="">
+          {{ end }}
+        </center>
+        <!-- </div> -->
+      </div>
+      <div class="w-full mt-2">
+  
+        <p>
+          With Spinning Disc Spraying, the glaze is applied to either the 'top only' or 'top & sides' surfaces, depending
+          on the needs of the product. The combination of the number of discs pairs, their geometric position, and the
+          system's various speed settings give the desired precision spray coverage. Saturn Spraying System's DiscMaster™
+          and DiscMatic™ series of machines are designed to provide high-performance egg glazing capabilities.
+        </p>
+        </br>
+        <p>
+          The egg glaze itself can be real or synthetic and applied at either ambient or chilled temperatures. EU
+          recommendation stresses the importance of maintaining real egg at a temperature of between 4 ­to 6°C. Saturn
+          provides the facility to temperature regulate the spray material during application. The advantage of our design
+          is that the spray material is being continuously pumped around the machine and returned to the system reservoir,
+          which brings the spray material into contact with the refrigerated surfaces of the machine, maintaining the
+          temperature of the egg glaze more accurately.
+        </p>
+        </br>
+        <p>
+          Our clients tell us that our Technology allows them to:
+        </p>
+        </br>
+        <ul class="p-6 text-2xl grow text-left font-bold" style="color: #FE590F;">
+          <li>Meet the exacting requirements of retailers worldwide</li> </br>
+  
+          <li>Deliver homogeneous spray coverage with precision control</li> </br>
+  
+          <li>Extend the useful operational life of the glaze by continuous recycling</li> </br>
+  
+          <li>Save costs by applying an expensive glaze at the optimal coverage rate with minimal wastage</li> </br>
+  
+          <li>Operate a virtually blockage-free production process with high yield rates</li> </br>
+  
+          <li>Handle real eggs in a safe, controlled environment without clouds of atomized egg in the working area</li>
+        </ul>
+      </div>
+      <div class="w-3/6">
+        <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+          Egg Glazing </h5>
+        <p>Food Production requires the spraying of oil onto the food surface for the following reasons:</p>
+        <h3 class="text-2xl mt-5 mb-5 font-bold">Barrier Coat:</h3>
+        <p>
+          Oils such as Palm Oil are sprayed over the outside of the product. The coating reduces the uptake of moisture in
+          the next manufacturing stage. Since viscosity is inversely proportional to temperature for all materials, the
+          palm oil (which is a solid at room temperature) is heated to the point where the viscosity is optimum for
+          precision spraying.
+        </p>
+        <h3 class="text-2xl mt-5 mb-5 font-bold">Provide Lubrication:</h3>
+  
+        <p>
+          Oil acts as a lubricant between the layers of pastry in products like Filo Pastry, where dough oiling ensures an
+          excellent product.
+        </p>
+        <h3 class="text-2xl mt-5 mb-5 font-bold">Crisping Agent:</h3>
+  
+        <p>
+          Oil is sprayed onto the outside of the product to improve product texture in the next stage of the cooking
+          process. For example, French Fries &amp; Roast Potatoes.
+        </p>
+  
+      </div>
+      <div class="w-3/6">
+        <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+          Barrier Coat Spraying
+        </h5>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="w-full md:w-3/6 h-full p-5">
+        <div class="aspect-w-16 aspect-h-16 rounded-lg h-full p-5">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/pvMzPnTtPvw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="w-3/6">
+      <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+        Dough Oiling
+      </h5>
+      <p>Dough Oiling is simply the process of providing a light film of oil to the outer surface of kneaded dough,
+        including dough balls and pizza bases. One of the most popular oiling processes is the preparation of Filo
+        {Phyllo, Fillo} pastry for pie lines. Oil can be applied to either a single side or both sides of the continuous
+        pastry line, providing lubrication as it is folded and layered.</p>
+      </br>
+      <p>The process requires that the applicator should:</p>
+      </br>
+      <ul class="p-6 text-2xl grow text-left font-bold" style="color: #FE590F;">
+        <li>Apply oil homogeneously across the FILO pastry</li></br>
+        <li>Cover both sides of the pastry (if required)</li></br>
+        <li>Precision regulation of the oil coverage</li></br>
+        <li>Accommodate relatively high-speed line application</li></br>
+      </ul>
+      </br>
+      <p>Saturn’s DiscMaster™ and DiscMatic™ Series of Spraying Systems provides the optimum oiling application systems,
+        by utilizing the 2D Top & Bottom system configuration.</p>
+      </br>
+  
+      <h3 class="text-4xl font-bold text-dark mb-5 mt-5">Schematic of a DiscMaster™DN4TB providing top & Bottom Spraying
+        for filo pastry</h3>
+      <div class="float-right">
+        {{ with resources.Get "images/dough-oiling.png" }}
+        <img src="{{ .RelPermalink }}" class="h-full w-1/2" alt="">
+        {{ end }}
+      </div>
+      <p class="font-bold text-2xl">These systems provide:</p>
+  
+      <ul class="p-6 text-2xl grow text-left font-bold" style="color: #FE590F;">
+        <li>Precision control for optimum system yield</li>
+        <li>Consistent and even homogenous spray coverage 'Top & Bottom'</li>
+        <li>Upgraded pump selection for high-speed application</li>
+        <li>Auto refill reservoir option for long endurance application which reduces operator interaction</li>
+      </ul>
+    </div>
+    <div class="w-3/6">
+      <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+        Bread Preservatives
+      </h5>
+      <p>
+        For leavened bread products, particularly in warmer environments, a mixture of Potassium Sorbate and other mould
+        inhibitors are applied to the external surfaces of the bread to increases the shelf life. By inhibiting the growth
+        of mould, the shelf life can be significantly extended without compromising either the taste or the cosmetic
+        appearance of the bread. The Potassium Sorbate needs to be applied with an evenness and precision to ensure that
+        the loaf is completely coated.
+        </br></br>
+        Preservatives are precision sprayed onto the bread, as one of the last manufacturing processes the bread is
+        subjected to after it exits the oven. Here it is important to ensure that adjacent products do not mask or inhibit
+        the application of the Potassium Sorbate spray. Divergent conveyor belts or spreaders are used to increase the gap
+        between the loaves until full spray coverage can be completed. A converging conveyor is often used to return the
+        loaves to their previous belt configuration.
+        </br></br>
+        The picture shows loaves too close for spraying. These would need to pass through a divergent conveyor unit which
+        will increase the spacing between the loaves to prevent product masking of the spray.
+        </br></br>
+      </p>
+    </div>
+    <div class="flex flex-wrap items-center">
+      <div class="w-1/2">
+        {{ with resources.Get "images/bread-preservation.png" }}
+        <img src="{{ .RelPermalink }}" class="w-96" alt="">
+        {{ end }}
+      </div>
+      <div class="w-1/2">
+        <p>Saturn’s DiscMaster™ and DiscMatic™ Spinning Disc Spraying Systems both equally lend themselves to this
+          application. The choice of systems depends on the conveyor belt size and scale of the operation. High volume
+          bread production invariably requires the belt widths available only with the DiscMatic™ system.
+          The key success drivers in this process are:</p>
+        <ul class="p-6 text-2xl grow text-left font-bold" style="color: #FE590F;">
+          <li>Accuracy in the spraying of bread loaves
+          </li></br>
+          <li>Accurate control of the deposition rate with equal three-dimensional spray strength
+          </li></br>
+          <li>Conveyor spreaders and convergers to remove the inter-product masking effects
+          </li></br>
+          <li>Effectively operate in a high volume - High yield environment</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-wrap">
+      <div class="w-full justify-center">
+        <h5 class="text-4xl font-bold text-dark mb-5 mt-5 text-center">
+          <span style="color: #FE590F;">Biscuit & Snack </span> Food Products Applications
+        </h5>
+      </div>
+    </div>
+    <div class="flex flex-wrap">
+      <div class="w-1/2 sm:w-full md:w-3/6 xs:w-full">
+        <div class="w-full">
+          <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+            Oil & Salt Coating</h5>
+        </div>
+        <p class="text-dark">Oil & Salt coating of Biscuits and Snacks is easily accomplished with Saturn’s DiscMatic™
+          Slurry System. As with the application of flavors, spices and seasoning, a base layer of oil provides the medium
+          for the additive to form a simple slurry mixture. This is a particularly efficient and effective way of applying
+          your coating as in one step it reduces the number and expense of the processing equipment and improves the
+          adhesion and distribution of the particulate over the food product.
+          </br></br>
+          The technology available to apply this slurry spray is limited almost entirely to spinning disc spraying with
+          its virtual blockage free performance since nozzle appliances spectacularly fail in this area.
+          Saturn Slurry machines use hygienic stainless steel pumps, absent from potential blocking points and no mating
+          surfaces to crush and damage the product. Some types of pump throw the particles outwards causing them to stick
+          to the chamber walls, which can create blockages and crush the particles, which, in the case of herbs etc., can
+          change the flavor of the particle.
+          <span class="font-bold" style="color: #FE590F;">Saturn’s DiscMatic™ Slurry Variant System</span> demonstrates
+          the key features required to satisfactorily handle and apply particulates in solution..
+        </p>
+      </div>
+      <div class="w-1/2 sm:w-full">
+        <!-- <div class="pt-12"> -->
+        <center>
+          {{ with resources.Get "images/nutella-biscuits.png" }}
+          <img src="{{ .RelPermalink }}" class="h-full w-full" alt="">
+          {{ end }}
+        </center>
+        <!-- </div> -->
+      </div>
+      <div class="w-1/2 sm:w-full md:w-3/6 xs:w-full">
+        <div class="w-full">
+          <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+            Milk Glazing</h5>
+        </div>
+        <p class="text-dark">Milk Glazing is most often used to put a ‘shine’ on sweet biscuits and here the quality of
+          glaze can make a difference to the visual appeal of the product. The glaze must be applied in a homogeneous,
+          streak free process. Over-glazing, spots, drips or void areas are simply not acceptable.
+          </br></br>
+          With Spinning Disc Spraying, the glaze is applied to either the<span class="font-bold"
+            style="color: #FE590F;">‘top only’</span> or <span class="font-bold" style="color: #FE590F;">‘top &
+            sides’</span> surfaces, depending on the size, shape and needs of the product. The combination of the number
+          of discs pairs, their geometric position and the systems various speed settings give the desired precision spray
+          coverage. Saturn Spraying System’s <span class="font-bold" style="color: #FE590F;">DiscMaster™</span> and <span
+            class="font-bold" style="color: #FE590F;">DiscMatic™</span> Series of machines are designed to provide
+          high-performance glazing capabilities.
+      </div>
+    </div>
+    <div class="flex flex-wrap">
+      <div class="w-1/2 sm:w-full md:w-3/6 xs:w-full">
+        <div class="w-full">
+          <h5 class="text-4xl font-bold text-dark mb-5 mt-5" id="biscuits">
+            Biscuit Flavouring</h5>
+        </div>
+        <p class="text-dark">Flavourings are commonly mixed with a carrier oil to improve handling and application during
+          the manufacturing process. Flavours are not restricted to simple liquid additives but can also include powders,
+          providing they dissolve completely.
+          </br></br>
+          The key requirements associated with successful application of flavourings are:</br></br>
+        <ul class="font-bold" style="color: #FE590F;">
+          <li>
+            Blockage Free Application Process
+          </li></br>
+          <li>Controlled Deposition Rate
+          </li></br>
+          <li>Consistent Batch to Batch Performance
+          </li></br>
+          <li>Quick Changeover of Flavours
+          </li></br>
+          <li>High Yield Rate</li></br>
+        </ul>
+        The technology available to apply this slurry spray is limited almost entirely to spinning disc spraying with its
+        virtual blockage free performance since nozzle appliances spectacularly fail in this area.
+        Saturn Slurry machines use hygienic stainless steel pumps, absent from potential blocking points and no mating
+        surfaces to crush and damage the product. Some types of pump throw the particles outwards causing them to stick to
+        the chamber walls, which can create blockages and crush the particles, which, in the case of herbs etc., can
+        change the flavor of the particle.
+        <span class="font-bold" style="color: #FE590F;">Saturn’s DiscMatic™ Slurry Variant System</span> demonstrates the
+        key features required to satisfactorily handle and apply particulates in solution..</p>
+      </div>
+      <div class="w-1/2 sm:w-full">
+        <!-- <div class="pt-12"> -->
+        <center>
+          {{ with resources.Get "images/flavours.png" }}
+          <img src="{{ .RelPermalink }}" class="h-full w-full" alt="">
+          {{ end }}
+        </center>
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="flex">
+      <div class="w-1/2 sm:w-full md:w-3/6 xs:w-full">
+        <div class="w-full">
+          <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+            Nut & Sugar Sprinkling</h5>
+        </div>
+        <p class="text-dark">
+          Granular products such as sugars, nuts, dried herbs, breadcrumbs and various seeds, such as poppy, sesame and
+          cracked wheat, can be sprinkled with even precision on to the top of produce using Saturn's Sprinkler. The
+          sprinkler head is mounted over its own integral conveyor.
+          </br></br>
+          The sprinkler uses an interchangeable, grooved roller which is driven by an inverter controlled, electric motor.
+          The roller is mounted on the bottom of a hopper, into which the granular material to be sprinkled is placed. As
+          the roller rotates, granular products in the hopper, are gravity fed to engage with the grooved roller. The
+          grooves picks up granuals and rotates through 180 degrees. The granular products are now free to drop by gravity
+          onto the products directly underneath the roller.
+          </br></br>
+          The application rate is regulated by adjusting the speed of rotation of the roller, using the digital
+          potentiometer in the control cabinet. The grooves in the roller are machined to accept the granular size of the
+          product being sprinkled. Where different granular sizes of products are to be used, interchangeable application
+          rollers may be required for each product.
+          </br> </p>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center">
+      <div class="w-full justify-center">
+        <h5 class="text-4xl font-bold text-dark mb-5 mt-5 text-center">
+          <span style="color: #FE590F;" id="meatandfish">Meat & Fish </span> Products Applications
+        </h5>
+      </div>
+      <div class="w-1/2">
+        <div class="w-full">
+          <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+            Water Spraying to Relieve Freezer Burn</h5>
+        </div>
+        <div class="w-1/2">
+          <p class="text-dark">Appearing as brown leathery spots on frozen meats and vegetables, freezer burn occurs when
+            the product is damaged by dehydration and oxidation as air reaches the food’s surface. Whilst freezer burn
+            itself doesn’t make the food unsafe, it does make it undesirable. Fluctuations of freezer temperature and low
+            moisture levels can also promote the development of this blight.
+          </p>
+        </div>
+        <div class="w-full">
+          <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+            FREEZER BURN ON MEAT</h5>
+        </div>
+        <div class="w-1/2">
+          <p class="text-dark">One of the most effective ways of combating the onset of this problem is to lightly
+            precision spray the product with water prior to its packaging and quench freezing. This process increases the
+            level of moisture in the freezer and reduces the potential of freezer burn onset.
+            </br></br>
+            Precision spraying of water is a fast and effective method of increasing the overall yield of the production
+            process. Saturn Spraying DiscMaster™ and DiscMatic™ Systems are designed to precision control the application
+            of spraying materials and lend themselves easily to this process. The flexibility to provide 2D and 3D
+            coverage for all-over spraying is very important.</p>
+        </div>
+      </div>
+      <div class="w-1/2">
+        {{ with resources.Get "images/meat-fish-2.png" }}
+        <img src="{{ .RelPermalink }}" class="h-full w-full" alt="">
+        {{ end }}
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center">
+      <div class="w-full justify-center">
+        <h5 class="text-4xl font-bold text-dark mb-5 mt-5 text-center">
+          <span style="color: #FE590F;" id="fruitsandveggies">Fruit & Vegetables</span> Products Applications
+        </h5>
+      </div>
+      <div class="w-1/2">
+        <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+          Extending the Shelf Life of Fruit and Vegetables.
+        </h5>
+        <p>
+          Food safety is vitally important to the food processing industry since all food items are extremely vulnerable
+          to contamination. The uncontrolled growth of microorganisms such as bacteria, fungi and protozoa, results in
+          food spoilage, which reduces both the shelf life and yield of the product. The Food industry always faces a
+          challenging situation in the minimising of microbial contamination, giving the customer the very best product
+          they can buy, whilst protecting their narrow profit margins in a highly competitive market.
+          </br></br>
+          However, with the investment and effort made in producing quality products, it makes sense to take the
+          appropriate steps to protect the product. Contamination can happen at any time during harvesting, processing,
+          storage or transportation. For many years, the traditional treatment of many fresh fruit and vegetable products
+          was to wash them in either a ‘bath’ or flume, with a liquid sterilant, e.g., chlorinated water. Unfortunately,
+          the processes themselves result in damage or ‘bruising’ to the product. This reduces yield and increases the
+          cost of getting fruits to market.
+          </br></br>
+          Saturn’s <span class="font-bold" style="color: #FE590F;">DiscMaster™</span> and <span class="font-bold"
+            style="color: #FE590F;">DiscMatic™</span> Spraying Systems have proven extremely adept at solving the issues
+          of
+          applying a very fine precision spray of sterilant to the products, as they pass through the machine, whilst
+          ensuring that product handling problems are minimised. The ‘all over’ sterilant spray capability has proved
+          particularly successful in the processing of berry fruits, such as strawberries, raspberries, blackberries,
+          grapes, blueberries, blackcurrants and redcurrants. Peppers, tomatoes, carrots, and even ‘Portobello’ mushrooms
+          have benefited from the treatment, where the application of an organic sterilant has successfully been shown to
+          extend the shelf life of these products. Notwithstanding the benefits to the supplier and the consumer, in
+          knowing products are ‘safe for consumption’.
+          </br></br>
+          Such has been the success of this development that many suppliers of fruit and vegetable products to the major
+          supermarket chains have installed the Saturn Spraying Systems’ machines in their production lines.
+        </p>
+      </div>
+      <div class="w-1/2">
+        {{ with resources.Get "images/fruits.png" }}
+        <img src="{{ .RelPermalink }}" class="w-3/6" alt="">
+        {{ end }}
+      </div>
+    </div>
+    <div class="flex flex-wrap" id="lowfatproducts">
+      <div class="w-full justify-center">
+        <h5 class="text-4xl font-bold text-dark mb-5 mt-5 text-center">
+          <span style="color: #FE590F;">Low Fat</span> Products Applications
+        </h5>
+      </div>
+      <div class="w-full justify-start overflow-hidden" style="position: relative; left: -150px;">
+        {{ with resources.Get "images/low-fat.png" }}
+        <img src="{{ .RelPermalink }}" class="w-3/6" alt="">
+        {{ end }}
+      </div>
+      <div class="w-3/5">
+        <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+          Introduction
+        </h5>
+        <p>
+          Fried foods are popular due to their taste, distinctive flavour, aroma and crunchy texture, which results from
+          an important and versatile cooking process that has been around since antiquity. Modern manufacturing also likes
+          the Deep Fat Frying (DFF), since not only does it make a unique contribution to the smell and taste of the food,
+          but the relatively low cost of large-scale frying, has made fried foods the staple of the ever growing late
+          20th-century fast food industry. The downside, however, is that the high content of saturated fats associated
+          with DFF is considered a major factor in increasing health risks such as coronary heart disease, cancer,
+          diabetes and hypertension. A large proportion of the total fat consumed in modern society is through fried
+          foods.
+          </br></br>
+          Scientists and Food Technologists have worked hard to understand the principles of DFF in order to reduce the
+          uptake of fat which occurs within the process. Currently, there are two processes that have achieved commercial
+          results, the first is the application of a Barrier Emulsion which blocks the take-up of fat during the frying
+          process; the second creates a product with the appearance of a DFF product but achieves this by using oven
+          baking, resulting in all the enjoyment of fried food without the guilt.
+          </br></br>
+          Saturn has worked closely with Food Scientists from some of the top European Food Technology Centres to support
+          the development of these processes. We were approached because Saturn’s Spinning Disc Technology demonstrably
+          met the demanding criteria necessary for the successful application. Saturn’s DiscMaster™ and DiscMatic™
+          products have shown that precision all over spraying with controlled deposition is crucial to achieving
+          consistently high-quality low-fat products.
+        </p>
+      </div>
+      <div class="w-3/5">
+        <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+          Barrier Emulsions
+        </h5>
+        <p>
+          By applying a barrier emulsion to the food product prior to the deep fat frying process, the emulsion blocks the rapid take-up of oil during the initial phases of the cooking process. Careful control of the application process can ensure the finished product will be classified as low fat. Recent formulations make it impossible to discern a difference in the presentation and taste of the finished product. Control of the barrier application is a key part in the successful outcome of the process.
+        </p>
+      </div>
+      <div class="w-3/5">
+        <h5 class="text-4xl font-bold text-dark mb-5 mt-5">
+          The Low Fat Chip and Roast Potatoes
+        </h5>
+        <p>
+          The humble potato is sometimes considered as the mainstay of western cuisine. Served roasted, chipped, sautéed, scalloped or just plain mashed, the versatile potato has always been popular. However, in the last few decades, it is perhaps fitting that the two more unhealthy versions the potato, the ‘chip’ and the ‘roasted’ potato have undergone a healthy makeover. Modern production techniques have been applied to provide us with the oven cooked low-fat chip and the low-fat roasted potato, all the flavour with only a little of the guilt.
+        </br></br>
+          Without completely demystifying an elaborate and carefully controlled production process, the essential aim of the ‘low-fat’ potato product, is to carefully control the type and amount of oil take-up in the cooking process. By pre-covering the potato with exactly the correct amount of oil coverage by weight, the final oven cooked product will be perfect every time.
+        </br></br>
+          By applying a ‘3D all over spray’ of oil to a mono-layer of the potato product, Saturn Spraying’s DiscMaster™ and DiscMatic™ are up to the task of applying the precision control to the spray process. Without this control, it would be impossible to claim the ‘low-fat’ accolade so necessary for this process.
+        </p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="relative pb-16 mt-6">
+      <div class="max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
+          <div class="relative px-6 py-10 overflow-hidden shadow-xl rounded-2xl sm:px-12 sm:py-20" style="background: #FE590F;
+          border-radius: 5px;">
+              <div class="relative">
+                  <div class="text-left">
+                      <h2 class="font-bold text-4xl tracking-tight text-white text-left">
+                          Intrested?
+                      </h2>
+                      <p class="text-2xl font-semibold text-white">Would you like to find out more about this subject?</p>
+                      <p class="text-2xl font-semibold text-white pt-4">Do you have an application that could use this technology?</p>
+                  </div>
+              </div>
+              <div class="relative">
+                  <div class="flex">
+                      <div class="justify-start">
+                          <div class="mt-12 sm:mx-auto sm:flex sm:max-w-lg w-1/6">
+                              <a href="/"
+                                  class="block w-full px-5 py-3 text-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-center font-medium text-grey-darker bg-white border border-amber-500 rounded-md shadow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+                                  Find out more <span class="ml-2">&#8594;</span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+{{ end }}

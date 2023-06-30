@@ -4178,6 +4178,9 @@ EmojiSymbols;
     }
   }
 }
+.hover\:scale-125:hover {
+  transform: scale(1.25);
+}
 
 .hover\:ml-0:hover {
   margin-left: 0px;
@@ -4425,7 +4428,7 @@ EmojiSymbols;
 }
 
 .focus\:ring-offset-amber-500:focus {
-  --tw-ring-offset-color: #f59e0b;
+  --tw-ring-offset-color: #FE590F;
 }
 
 .focus\:ring-offset-gray-700:focus {

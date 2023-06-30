@@ -1,94 +1,114 @@
 <section class="py-8 px-4 md:px-10 lg:px-20">
+  <div class="container mx-auto my-auto">
     <div class="max-w-7xl mx-auto">
-        <h2 class="text-4xl font-bold mb-4 text-center"><span style="color:#FE590F">Industries</span> that we serve</h2>
-        <p class="text-left mb-6">Welcome to Saturn Spraying, the essence of excellence in the world of spraying
-            technology for the food production industry. For over three decades, we have been a leading global supplier,
-            serving clients with our handmade machinery and unparalleled commitment to a tailored customer experience.
-            Saturn’s proudly hold the title of benchmark quality spraying. Our spinning disc technology sets the gold
-            standard, captivating taste buds and inspiring the finest confections. But our story doesn't end there.
-            Saturn Spraying's expertise extends far beyond the bakery, reaching into a multitude of food-related markets
-            like sweet, fruits, veggie, fish and low-calorie food.
-        </p>
-        <div class="relative">
-            <div class="container mx-auto my-auto">
-              <div class="flex flex-wrap justify-center">
-                <div class="px-4 py-2 w-3/6 sm:w-full md:w-3/6 lg:w-3/6 xl:w-3/6">
-                  {{ $bgimage := (resources.Get "images/vegetables.jpg").RelPermalink }}
-                  <div class="bg-white p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
-                    style="background-image: url('{{$bgimage}}');
-                    background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
-                    <h4 class="text-white font-bold relative bottom-0 left-0 right-0 p-2">
-                      Fruits & Vegetables
-                    </h4>
-                  </div>
+      <h2 class="relative mb-4 drop-shadow-lg text-slate-800 xl:mb-8 text-5xl md:text-6xl lg:text-6xl pt-20 leading-tight font-semibold font-poppins tracking-tight"><span style="color:#FE590F">Industries</span> that we serve</h2>
+      <p class="text-left mb-6 text-2xl sm:text-1xl">At the heart of Saturn Spraying's expertise lies their mastery of atomized spraying
+        technology. They have developed advanced systems capable of delivering precise and controlled sprays to food
+        products, ensuring optimal coverage and minimal waste. Whether it's <b>fruits, vegetables, dairy products, or
+          bakery items,</b> their spraying techniques are tailored to enhance the taste, appearance, and shelf life of a
+        wide range of food products.
+        One of Saturn Spraying's primary focuses is food preservation. They understand the challenges faced by
+        manufacturers and distributors in preserving perishable items. With their specialized spraying solutions, they
+        can apply natural preservatives or coatings that help extend the shelf life of food products without
+        compromising their quality or taste. This breakthrough technology not only reduces food waste but also enables
+        companies to deliver fresher products to consumers.
+      </p>
+      <div class="relative">
+        <div class="container mx-auto my-auto">
+          <div class="flex flex-wrap justify-center">
+            <a href="/applications/#fruitsandveggies" class="hover:scale-125 transition ease-in-out duration-200">
+              <div class="px-4 py-2 w-3/6 sm:w-full md:w-3/6 lg:w-3/6 xl:w-3/6">
+                {{ $bgimage := (resources.Get "images/vegetables.jpg").RelPermalink }}
+                <div
+                  class="bg-white p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
+                  style="background-image: url('{{$bgimage}}');
+                      background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
+                  <h4 class="text-white font-bold relative bottom-0 left-0 right-0 p-2">
+                    Fruits & Vegetables
+                  </h4>
                 </div>
-                <div class="px-4 py-2 w-3/6 sm:w-full md:w-3/6 lg:w-3/6 xl:w-3/6">
-                  {{ $bgimage := (resources.Get "images/fish-meat.jpg").RelPermalink }}
-                  <div class="bg-white p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
-                    style="background-image: url('{{$bgimage}}');
-                    background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
-                    <h4 class="text-white font-bold relative bottom-0 left-0 right-0 p-2">
-                      Fish & Meat
-                    </h4>
-                  </div>
+              </div>
+            </a>
+            <a href="/applications/#meatandfish" class="hover:scale-125 transition ease-in-out duration-200">
+              <div class="px-4 py-2 w-3/6 sm:w-full md:w-3/6 lg:w-3/6 xl:w-3/6">
+                {{ $bgimage := (resources.Get "images/fish-meat.jpg").RelPermalink }}
+                <div
+                  class="bg-white p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
+                  style="background-image: url('{{$bgimage}}');
+                      background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
+                  <h4 class="text-white font-bold relative bottom-0 left-0 right-0 p-2">
+                    Fish & Meat
+                  </h4>
                 </div>
-                <div class="px-4 py-2 w-3/6 sm:w-full md:w-3/6 lg:w-3/6 xl:w-3/6">
-                  {{ $bgimage := (resources.Get "images/cookies.jpg").RelPermalink }}
-                  <div class="bg-white p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
-                    style="background-image: url('{{$bgimage}}');
-                    background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
-                    <h4 class="text-white font-bold relative bottom-0 left-0 right-0 p-2">
-                      Biscuits & Snacks
-                    </h4>
-                  </div>
+              </div>
+            </a>
+            <a href="/applications/#biscuits" class="hover:scale-125 transition ease-in-out duration-200">
+              <div class="px-4 py-2 w-3/6 sm:w-full md:w-3/6 lg:w-3/6 xl:w-3/6">
+                {{ $bgimage := (resources.Get "images/cookies.jpg").RelPermalink }}
+                <div
+                  class="bg-white p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
+                  style="background-image: url('{{$bgimage}}');
+                      background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
+                  <h4 class="text-white font-bold relative bottom-0 left-0 right-0 p-2">
+                    Biscuits & Snacks
+                  </h4>
                 </div>
-                <div class="px-4 py-2 w-3/6 sm:w-full md:w-3/6 lg:w-3/6 xl:w-3/6">
-                  {{ $bgimage := (resources.Get "images/croissant.jpg").RelPermalink }}
-                  <div class="bg-white p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
-                    style="background-image: url('{{$bgimage}}');
-                    background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
-                    <h4 class="text-white font-bold relative bottom-0 left-0 right-0 p-2">
-                      Bakery Items
-                    </h4>
-                  </div>
+              </div>
+            </a>
+            <a href="/applications/#bakery" class="hover:scale-125 transition ease-in-out duration-200">
+              <div class="px-4 py-2 w-3/6 sm:w-full md:w-3/6 lg:w-3/6 xl:w-3/6">
+                {{ $bgimage := (resources.Get "images/croissant.jpg").RelPermalink }}
+                <div
+                  class="bg-white p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
+                  style="background-image: url('{{$bgimage}}');
+                      background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
+                  <h4 class="text-white font-bold relative bottom-0 left-0 right-0 p-2">
+                    Bakery Items
+                  </h4>
                 </div>
-                <div class="px-4 py-2 w-3/6 sm:w-full md:w-3/6 lg:w-3/6 xl:w-3/6">
-                  {{ $bgimage := (resources.Get "images/low-fat-min.jpg").RelPermalink }}
-                  <div class="bg-white p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
-                    style="background-image: url('{{$bgimage}}');
-                    background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
-                    <h4 class="text-white font-bold relative bottom-0 left-0 right-0 p-2">
-                      Low Fat Products
-                    </h4>
-                  </div>
+              </div>
+            </a>
+            <a href="/applications/#lowfatproducts" class="hover:scale-125 transition ease-in-out duration-200">
+              <div class="px-4 py-2 w-3/6 sm:w-full md:w-3/6 lg:w-3/6 xl:w-3/6">
+                {{ $bgimage := (resources.Get "images/low-fat-min.jpg").RelPermalink }}
+                <div
+                  class="bg-white p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
+                  style="background-image: url('{{$bgimage}}');
+                      background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
+                  <h4 class="text-white font-bold relative bottom-0 left-0 right-0 p-2">
+                    Low Fat Products
+                  </h4>
                 </div>
-            </div>
+              </div>
+            </a>
+          </div>
         </div>
 
+      </div>
     </div>
-    </div>
+  </div>
 </section>
 <section>
-    <div class="relative pb-16 mt-6">
-        <div class="max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
-            <div class="relative px-6 py-10 overflow-hidden shadow-xl rounded-2xl sm:px-12 sm:py-20" style="background: #FE590F;
+  <div class="relative pb-16 mt-6">
+    <div class="max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
+      <div class="relative px-6 py-10 overflow-hidden shadow-xl rounded-2xl sm:px-12 sm:py-20" style="background: #FE590F;
             border-radius: 5px;">
-                <div class="relative">
-                    <div class="sm:text-center">
-                        <h2 class="text-3xl font-bold tracking-tight text-white text-left sm:text-4xl w-3/5">
-                            Get in touch and book your respraying project before 27th June to receive 10% off your quote
-                        </h2>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="mt-12 sm:mx-auto sm:flex sm:max-w-lg w-1/6">
-                        <a href="/"
-                            class="block w-full px-5 py-3 text-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-center font-medium text-grey-darker bg-white border border-amber-500 rounded-md shadow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
-                            Find out more <span class="ml-2">&#8594;</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="relative">
+          <div class="sm:text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-white text-left sm:text-4xl w-3/5">
+              Get in touch and book your respraying project before 27th June to receive 10% off your quote
+            </h2>
+          </div>
         </div>
+        <div class="relative">
+          <div class="mt-12 sm:mx-auto sm:flex sm:max-w-lg w-1/6">
+            <a href="/book-consultation"
+              class="block w-full px-5 py-3 text-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-center font-medium text-grey-darker bg-white border border-amber-500 rounded-md shadow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+              Find out more <span class="ml-2">&#8594;</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>

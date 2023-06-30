@@ -1,0 +1,68 @@
+{{define "main"}}
+
+{{ $blogbg := resources.Get "images/bg_hero.png" }}
+<div class="relative overflow-hidden table w-full py-32 lg:py-36 bg-center bg-no-repeat bg-cover" style="
+        background-position: 50%;
+        background-image: url('{{ $blogbg.RelPermalink}}');
+      ">
+    <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+        style="background-color: rgba(0, 0, 0, 0.75)">
+        <div class="flex justify-center items-center h-full">
+            <div class="text-center text-white px-6 md:px-12">
+                <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">
+                    {{ .Title }}
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="container table w-full  mx-auto p-5">
+        <div class="flex justify-center">
+            <h2 class="text-2xl md:text-6xl xl:text-7xl font-bold text-center tracking-tight mb-12 mt-20 mb-20"> Our Award<span  style="color: #FE590F;"> Winning Products </span></h1>
+        </div>
+    </div>
+</section>
+<section class="relative"> 
+  <div class="container mx-auto my-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      {{ range $index, $element := (where .Site.RegularPages "Section" "products") }}
+        <article class="px-4 py-2 w-full">
+          <a href="{{ .RelPermalink }}" class="hover:opacity-75">
+            {{ with .Resources.GetMatch .Params.featuredImage }}
+              {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
+              <div class="p-3" style="background-color: #FBF6F4;">
+                <center>
+                  <img src="{{ $postimage }}" class="object-fill overflow-hidden" width="100%" height="50%"
+                    loading="lazy" alt="{{ .Title }}" />
+                </center>
+              </div>
+            {{ else }}
+              {{ $im := (.Resources.Get .Params.featuredImage) }}
+              {{ $im }}
+            {{ end }}
+          </a>
+          <div class="flex flex-col justify-start p-6" style="background-color: #FBF6F4;">
+            {{ range $elem_index, $elem_val := (.GetTerms "categories") }}
+              {{- if gt $elem_index 0 }}, {{ end -}}
+              <a href="{{.RelPermalink}}" class="text-blue-700 text-sm font-bold uppercase pb-4">{{ .LinkTitle }}</a>
+            {{ end }}
+            <a href="{{.RelPermalink}}" class="text-3xl font-semibold hover:text-amber-600 pb-4">{{.Title}}</a>
+            <a href="{{.RelPermalink}}" class="pb-6">
+              {{ if .Params.summary }}
+                {{ .Params.summary }}
+              {{ else }}
+                {{ .Params.description }}
+              {{ end }}
+            </a>
+            <a href="{{.RelPermalink}}" class="uppercase text-amber-600 hover:text-amber-500">Browse product <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+  
+{{ end }}

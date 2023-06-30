@@ -1,0 +1,394 @@
+{{define "main"}}
+<style>
+    /* Custom styles */
+    .btn-continent {
+        padding: 0.5rem 1rem;
+        background-color: #2A2C51;
+        color: #ffffff;
+        border: 1px solid #e2e8f0;
+        font-weight: 500;
+        border-radius: 0.75rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-continent.active {
+        background-color: #FE590F;
+        color: white;
+    }
+
+    .world-map {
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 1em;
+        position: relative;
+    }
+
+    .world-map img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .pin {
+        position: absolute;
+        width: 1.7em;
+        height: 1.7em;
+        border-radius: 50%;
+        background-color: #FE590F;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .pin:hover {
+        background-color: #fbbf24;
+    }
+
+    .pin::before {
+        content: '';
+        background-color: #FE590F;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        animation: pulse 1.3s ease-in-out infinite;
+    }
+
+    .pin span {
+        display: inline-block;
+        white-space: nowrap;
+        position: absolute;
+        left: 50%;
+        top: -2rem;
+        transform: translateX(-50%);
+        background: #fff;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        font-size: 0.9em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .north-america {
+        top: 30%;
+        left: 15%;
+    }
+
+    .south-america {
+        top: 70%;
+        left: 25%;
+    }
+
+    .europe {
+        top: 25%;
+        left: 48%;
+    }
+
+    .asia {
+        top: 33%;
+        left: 65%;
+    }
+
+    .africa {
+        top: 55%;
+        left: 52%;
+    }
+
+    .australia {
+        top: 75%;
+        left: 85%;
+    }
+
+    .agent-popup {
+        z-index: 10;
+        display: none;
+        position: absolute;
+        padding: 1rem;
+        background-color: #ffffff;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transform: translate(-50%, 0);
+    }
+    @keyframes pulse {
+        100% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(2.5);
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .world-map {
+            font-size: 13px;
+        }
+    }
+
+    .logo-container {
+            margin-right: 16px; /* Adjust the spacing as per your preference */
+            padding: 0.7em;
+        }
+        .logo-container img {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+        .logo-container img:hover {
+            filter: none;
+        }
+</style>
+{{ $blogbg := resources.Get "images/bg_hero.png" }}
+<div class="relative overflow-hidden table w-full py-32 lg:py-36 bg-center bg-no-repeat bg-cover" style="
+        background-position: 50%;
+        background-image: url('{{ $blogbg.RelPermalink}}');
+      ">
+    <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+        style="background-color: rgba(0, 0, 0, 0.75)">
+        <div class="flex justify-center items-center h-full">
+            <div class="text-center text-white px-6 md:px-12">
+                <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">
+                    {{ .Title }}
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mx-auto mt-20 mb-20">
+    <h2 class="text-5xl font-bold mb-4 text-center mb-12">Contact our <span style="color:#FE590F">Agents 
+        World Wide</span></h2>
+    <div class="flex flex-wrap justify-center mb-6 gap-y-6 gap-x-6 mt-12">
+        <!-- Create the buttons for continents -->
+        <button class="btn btn-continent" data-continent="africa">Africa</button>
+        <button class="btn btn-continent" data-continent="asia">Asia</button>
+        <button class="btn btn-continent" data-continent="europe">Europe</button>
+        <button class="btn btn-continent" data-continent="north-america">North America</button>
+        <button class="btn btn-continent" data-continent="south-america">South America</button>
+    </div>
+
+    <div class="relative">
+        <div class="world-map">
+            <center>
+                {{ with resources.Get "images/world-map-dotted.png" }}
+                <img src="{{ .RelPermalink }}" class="w-3/6" alt="">
+                {{ end }}
+            </center>
+            <div class="pin north-america" data-continent="north-america">
+                <span>North America</span>
+            </div>
+            <div class="pin south-america" data-continent="south-america">
+                <span>South America</span>
+            </div>
+            <div class="pin europe" data-continent="europe">
+                <span>Europe</span>
+            </div>
+            <div class="pin asia" data-continent="asia">
+                <span>Asia</span>
+            </div>
+            <div class="pin africa" data-continent="africa">
+                <span>Africa</span>
+            </div>
+            <div class="pin australia" data-continent="australia">
+                <span>Australia</span>
+            </div>
+        </div>
+
+        <!-- Create the pop-up boxes for agents -->
+        <div class="agent-popup africa bg-white rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-2">Agents in Africa</h3>
+            <ul>
+                <li><a href="/agents/techquip_developments" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">South Africa</a></li>
+            </ul>
+        </div>
+
+        <div class="agent-popup asia bg-white rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-2">Agents in Asia</h3>
+            <ul>
+                <li><a href="/agents/cbm_co" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Japan</a></li>
+                <li><a href="/agents/al-abd_corporation" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Pakistan</a></li>
+                <li><a href="/agents/rgmtsi" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Philippines</a></li>
+            </ul>
+        </div>
+
+        <div class="agent-popup europe bg-white rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-2">Agents in Europe</h3>
+            <ul>
+                <li><a href="/agents/artiso_bakery_equipment/" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Belgium</a></li>
+                <li><a href="/agents/scanstore_food_a_s" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Denmark</a></li>
+                <li><a href="/agents/tesco_engineering_s_a" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Greece</a></li>
+                <li><a href="/agents/castex_consulting" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">France</a></li>
+                <li><a href="/agents/kogep" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Hungary</a></li>
+                <li><a href="/agents/smadar_technologies" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Israel</a></li>
+                <li><a href="/agents/artiso_bakery_equipment" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Luxembourg</a></li>
+                <li><a href="/agents/Nordisk_Bageriteknik_AB" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Norway</a></li>
+                <li><a href="/agents/aseas_international" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Romania</a></li>
+                <li><a href="/agents/procesos_ind_carnicos_s_l" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Spain - Meat & Fish</a></li>
+                <li><a href="/agents/repco" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Spain - Bakery</a></li>
+                <li><a href="/agents/Nordisk_Bageriteknik_AB" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Sweden</a></li>
+                <li><a href="/agents/artiso_bakery_equipment" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">The Netherlands</a></li>
+            </ul>
+        </div>
+
+        <div class="agent-popup north-america bg-white rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-2">Agents in North America</h3>
+            <ul>
+                <li><a href="/agents/hughes_industrial_sales_llc" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">United States</a></li>
+            </ul>
+        </div>
+
+        <div class="agent-popup south-america bg-white rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-2">Agents in South America</h3>
+            <ul>
+                <li><a href="/agents/Prime_International_SRL" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Argentina</a></li>
+                <li><a href="/agents/teknomeal" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Chile</a></li>
+                <li><a href="/agents/anditec" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Colombia</a></li>
+                <li><a href="/agents/teknomeal" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Ecuador</a></li>
+                <li><a href="/agents/teknomeal" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Peru</a></li>
+                <li><a href="/agents/teknomeal" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Uruguay</a></li>
+            </ul>
+        </div>
+
+        <div class="agent-popup australia bg-white rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-2">Agents in Australia</h3>
+            <ul>
+                <li><a href="/agents/efca" class="hover:text-amber-600 focus:text-dark hover:text-amber-600 focus:outline-none focus:shadow-outline">Australia</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section class="justify-center">
+    <div class="container mx-auto py-4 mt-20">
+        <div class="flex flex-wrap gap-6">
+          <div class="w-3/5  justify-start">
+            <div class="relative table rounded-r-lg w-full pb-0 lg:pb-0 justify-center text-center"
+              style="background-color: #4D4575;">
+              <h2 class="p-6 text-5xl grow font-bold text-white text-center"> Satisfied Customers</h2>
+              <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">999</p>
+            </div>
+          </div>
+  
+          <div class="w-3/6 justify-end">
+            <div class="relative table border-amber-400 rounded-lg w-full pb-0 lg:pb-0 justify-center text-center"
+              style="background-color: #FBF6F4;">
+              <h3 class="p-6 text-4xl grow font-bold text-dark text-center"> Countries Served</h2>
+                <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">25</p>
+            </div>
+          </div>
+          <div class="w-3/6 justify-end">
+            <div class="relative table border-amber-400 rounded-lg w-full pb-0 lg:pb-0 justify-center text-center"
+              style="background-color: #FBF6F4;">
+              <h3 class="p-6 text-4xl grow font-bold text-dark text-center">Stations installed</h2>
+                <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">68</p>
+            </div>
+          </div>
+        </div>
+  
+  
+      </div>
+</section>
+
+<section>
+    <div class="container mx-auto my-auto">
+        <div class="row flex justify-center">
+            <h2 class="text-8xl md:text-4xl font-bold mb-12 mt-12 text-center">Our <span style="color:#FE590F">Proud Agents</span></h2>
+        </div>
+        <div class="flex flex-wrap justify-center items-center">
+            {{ range (where .Site.RegularPages "Section" "agents") }}
+                <div class="logo-container">
+                    <a href="{{ .Permalink }}">
+                        {{ $logo := .Resources.GetMatch "images/*.{png,jpg,gif}" }}
+                        {{ with $logo }}
+                            {{ with .Resize "250x100" }}
+                                <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="">
+                            {{ end }}
+                        {{ end }}
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const continentButtons = document.querySelectorAll(".btn-continent");
+      const agentPopups = document.querySelectorAll(".agent-popup");
+      let activePopup = null;
+  
+      // Function to show the agent popup for a specific continent
+      function showAgentPopup(continent) {
+        // Hide all agent popups
+        agentPopups.forEach(function (popup) {
+          popup.style.display = "none";
+        });
+  
+        // Find the popup for the specified continent and show it
+        const popup = document.querySelector(`.agent-popup.${continent}`);
+        popup.style.display = "block";
+        activePopup = popup;
+      }
+  
+      // Function to hide the active agent popup
+      function hideActivePopup() {
+        if (activePopup) {
+          activePopup.style.display = "none";
+          activePopup = null;
+        }
+      }
+  
+      // Add click event listener to each continent button
+      continentButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          const continent = this.dataset.continent;
+  
+          // Toggle active class on the clicked button
+          continentButtons.forEach(function (btn) {
+            btn.classList.remove("active");
+          });
+          this.classList.add("active");
+  
+          // Show the agent popup for the clicked continent
+          showAgentPopup(continent);
+        });
+      });
+  
+      // Add mousemove event listener to track cursor position and show/hide the popup
+      const worldMap = document.querySelector(".world-map");
+      worldMap.addEventListener("mousemove", function (event) {
+        const pins = document.querySelectorAll(".pin");
+  
+        let isCursorOnPin = false;
+        pins.forEach(function (pin) {
+          const pinRect = pin.getBoundingClientRect();
+          const pinX = pinRect.left + window.scrollX;
+          const pinY = pinRect.top + window.scrollY;
+  
+          if (
+            event.pageX >= pinX &&
+            event.pageX <= pinX + pinRect.width &&
+            event.pageY >= pinY &&
+            event.pageY <= pinY + pinRect.height
+          ) {
+            isCursorOnPin = true;
+            const continent = pin.dataset.continent;
+            showAgentPopup(continent);
+          }
+        });
+  
+        if (!isCursorOnPin) {
+          hideActivePopup();
+        }
+      });
+    });
+
+  </script>
+  
+
+
+
+{{end}}
