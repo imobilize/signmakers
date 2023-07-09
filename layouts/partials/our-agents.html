@@ -6,6 +6,7 @@
         .logo-container img {
             filter: grayscale(100%);
             transition: filter 0.3s ease;
+            width: 100%;
         }
         .logo-container img:hover {
             filter: none;
@@ -14,15 +15,15 @@
 <section>
   <div class="container mx-auto my-auto">
       <div class="row flex justify-center">
-          <h2 class="text-8xl md:text-4xl font-bold mb-12 mt-12 text-center">Our <span style="color:#FE590F">Proud Agents</span></h2>
+          <h2 class="relative mb-4 drop-shadow-lg text-slate-800 xl:mb-8 text-5xl md:text-5xl lg:text-5xl mt-20 leading-tight font-semibold font-poppins tracking-tight">Our <span style="color:#FE590F">Proud Agents</span></h2>
       </div>
       <div class="flex flex-wrap justify-center items-center">
           {{ range (where .Site.RegularPages "Section" "agents") }}
               <div class="logo-container">
-                  <a href="{{ .Permalink }}">
+                  <a href="/agents">
                       {{ $logo := .Resources.GetMatch "images/*.{png,jpg,gif}" }}
                       {{ with $logo }}
-                          {{ with .Resize "250x100" }}
+                          {{ with .Resize "609x500" }}
                               <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="">
                           {{ end }}
                       {{ end }}

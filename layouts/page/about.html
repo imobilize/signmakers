@@ -1,51 +1,29 @@
 {{ define "main" }}
 
 <main>
-
-  {{ $bgimage := (resources.Get "images/bg_hero.png").RelPermalink }}
-  <section
-    class="relative table w-full pb-0 lg:pb-0 bg-slate-800 bg-[url('{{ $bgimage }}')] bg-center bg-no-repeat bg-cover"
-    style="background-image: url('{{$bgimage}}');">
-    <div class="container px-4 mx-auto max-w-screen-xl mt-20">
-      <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
-        <div class="lg:col-span-7">
-          <div class="md:me-6 md:mb-20">
-            <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold  mb-5 text-white">A Stanley
-              Saturn Spraying Systems Ltd.
-            </h1>
-            <p class="pr-0 my-8 text-base text-gray-200 sm:text-xl xl:text-2xl lg:pr-20">Making your production
-              automated</p>
-            <div class="mt-20">
-              <div class="flex flex-wrap -m-2.5 mb-20">
-
-
+  {{ $blogbg := resources.Get "images/bg_hero.png" }}
+  <div class="relative overflow-hidden table w-full py-32 lg:py-36 bg-center bg-no-repeat bg-cover" style="
+          background-position: 50%;
+          background-image: url('{{ $blogbg.RelPermalink}}');
+        ">
+      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+          style="background-color: rgba(0, 0, 0, 0.75)">
+          <div class="flex justify-center items-center h-full">
+              <div class="text-center text-white px-6 md:px-12">
+                  <h1 class="text-4xl md:text-5xl xl:text-5xl font-bold tracking-tight mb-12">
+                      {{ .Title }}
+                  </h1>
               </div>
-            </div>
           </div>
-        </div><!--end col-->
-
-        <!-- <div class="lg:col-span-5 mt-8 md:mt-0">
-                    {{ with resources.Get "images/sales-man.png" }}
-                    {{ $small := (.Resize "400x webp q80").RelPermalink }}
-                    {{ $medium := (.Resize "550x webp q80").RelPermalink }}
-                    {{ $large := (.Resize "900x webp q80").RelPermalink }}
-                    {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-                    <img src="{{ $featuredimage }}" srcset="" alt="">
-                    {{end}}
-                </div> -->
-
-        <!--end col-->
-      </div><!--end grid-->
-    </div><!--end container-->
-  </section>
+      </div>
+  </div>
 
   <section class="mt-20 mb-20">
     <div class="container  justify-center mx-auto">
-      <div class="flex rounded-lg" style="background-color: #FBF6F4;">
+      <div class="flex rounded-2xl bg-gray-100">
         <div class="w-3/5 justify-start p-12 sm:p-4">
-          <h2 class="underline underline-offset-8 text-left text-dark font-bold text-4xl relative">
-            Saturn Spraying Systems Limited
-            <span class="absolute bottom-0 left-0 w-full h-1 bg-orange-500"></span>
+          <h2 class="relative mb-4 drop-shadow-lg text-slate-800 xl:mb-8 text-4xl md:text-5xl lg:text-5xl pt-20 leading-tight font-semibold font-poppins tracking-tight"><span style="color:#FE590F">
+            Saturn Spraying Systems</span> Limited
           </h2>
           <p class="text-left text-dark text-2xl mt-4">At Saturn Spraying, we believe in the power of the human touch.
             Each machine that bears our name is meticulously handcrafted, a fusion of artistry and engineering
@@ -69,137 +47,140 @@
     </div>
 
     <div class="container mx-auto justify-center">
-      <div class="flex gap-6 items-center justify-center mt-12">
+      <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/uk.png" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/germany.png" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/9.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/10.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/france.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/australia.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/italy.png" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/ireland.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
       </div>
-      <div class="flex gap-6 items-center justify-center mt-12">
+      <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/tatti.png" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/denmark.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/hungary.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/poland.png" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/canada.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/norway.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/india.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/greece.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
       </div>
-      <div class="flex gap-6 items-center justify-center mt-12">
+      <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/slovania.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/finalnd.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/switzerland.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/japan.png" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/9.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
           {{end}}
         </div>
+      </div>
+      <div class="flex">
+        <p class="text-sm mt-12">Please Note: This is a small sample of our World - Wide Installed Base provided for information only        </p>
       </div>
     </div>
 
@@ -209,20 +190,18 @@
           <div class="relative table rounded-r-lg w-full pb-0 lg:pb-0 justify-center text-center"
             style="background-color: #4D4575;">
             <h2 class="p-6 text-5xl grow font-bold text-white text-center"> Satisfied Customers</h2>
-            <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">999</p>
+            <p class="p-6 text-8xl grow font-bold text-center text-white">249</p>
           </div>
         </div>
 
         <div class="w-3/6 justify-end">
-          <div class="relative table border-amber-400 rounded-lg w-full pb-0 lg:pb-0 justify-center text-center"
-            style="background-color: #FBF6F4;">
+          <div class="relative table border-amber-400 rounded-lg w-full pb-0 lg:pb-0 justify-center text-center bg-gray-100">>
             <h3 class="p-6 text-4xl grow font-bold text-dark text-center"> Countries Served</h2>
               <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">25</p>
           </div>
         </div>
         <div class="w-3/6 justify-end">
-          <div class="relative table border-amber-400 rounded-lg w-full pb-0 lg:pb-0 justify-center text-center"
-            style="background-color: #FBF6F4;">
+          <div class="relative table border-amber-400 rounded-lg w-full pb-0 lg:pb-0 justify-center text-center bg-gray-50">
             <h3 class="p-6 text-4xl grow font-bold text-dark text-center">Stations installed</h2>
               <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">68</p>
           </div>
@@ -235,14 +214,14 @@
 
   <section>
     <div class="container mx-auto justify-center">
-      <div class="flex justify-center">
-        <div class="w-3/6">
+      <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
+        <div class="w-full">
           <h2 class="p-6 text-5xl grow font-bold text-dark text-center"><span style="color:#FE590F">Supporting</span>
             our Spinning Disc <br /> Installations around the World</h2>
         </div>
       </div>
-      <div class="flex justify-start">
-        <div class="w-3/5 justify-start p-12">
+      <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
+        <div class="w-full justify-start">
           <p class="p-6 text-2xl grow text-left">Saturn Spraying has been manufacturing and supplying Spinning <b
               class="font-bold" style="color: #FE590F;">Disc Spraying Machines around the world since the late
               1980s.</b> Unique in our ability to offer a range of services, including bespoke design, we have
