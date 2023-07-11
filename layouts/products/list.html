@@ -32,7 +32,7 @@
           <a href="{{ .RelPermalink }}" class="hover:opacity-75">
             {{ with .Resources.GetMatch .Params.featuredImage }}
               {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
-              <div class="p-3" style="background-color: #FBF6F4;">
+              <div class="p-3 bg-gray-100">
                 <center>
                   <img src="{{ $postimage }}" class="object-fill overflow-hidden" width="100%" height="50%"
                     loading="lazy" alt="{{ .Title }}" />
@@ -43,7 +43,7 @@
               {{ $im }}
             {{ end }}
           </a>
-          <div class="flex flex-col justify-start p-6" style="background-color: #FBF6F4;">
+          <div class="flex flex-col justify-start p-6 bg-gray-50">
             {{ range $elem_index, $elem_val := (.GetTerms "categories") }}
               {{- if gt $elem_index 0 }}, {{ end -}}
               <a href="{{.RelPermalink}}" class="text-blue-700 text-sm font-bold uppercase pb-4">{{ .LinkTitle }}</a>
@@ -56,7 +56,7 @@
                 {{ .Params.description }}
               {{ end }}
             </a>
-            <a href="{{.RelPermalink}}" class="uppercase text-amber-600 hover:text-amber-500">Browse product <i
+            <a href="{{.RelPermalink}}" class="uppercase hover:text-amber-500" style="color: #FE590F;">Browse product <i
                 class="fas fa-arrow-right"></i></a>
           </div>
         </article>
