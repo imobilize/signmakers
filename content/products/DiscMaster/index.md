@@ -12,13 +12,12 @@ keywords: "production"
 Height: 
 Width: 
 Operators:
+video_link: "https://www.youtube.com/embed/drWnTtA2bRw"
 Components:
 Details_1: "The DiscMaster™ series of Spraying Machines have been designed as the versatile system of choice for small to medium scale business. It provides the important economies of scale and manufacturing flexibility that such operations demand. High operational up time is achieved by the blockage resistant spray delivery system, which coupled with easy maintenance access, minimises downtime and delivers a quick ROI for business managers. Transportable on castors for easy relocation within the factory, it can be used as either a stand-alone offline unit or integrated into a small production facility.
 
 Configured during manufacturing to provide Top, Top & Sides or All Over Spray Coverage, these machines utilise the same proven spinning disc spray technology, previously associated with professional level equipment. For operation at temperatures other than ambient, the heating/chiller packs can maintain the unit at the appropriate temperature for either heated or chilled spraying operations."
-Video: [""]
 Details_2: "Operationally, the DiscMaster™ offers repeatable precision in the application of spray material, previously unavailable at this investment level. Precision Inverter/Motor Control Systems provide digital control to the Spinning Disc Speed, Pump Speed and the Conveyor Speed, allowing full control over the droplet formation and deposition of the spray material. Recording the setting of the digital potentiometer for each of the key control systems provides a unique digital signature for each machine set-up. Product changeovers can be quickly accommodated by entering the signature code into the machine for the appropriate machine configuration. The precision accuracy inherent in the system ensures it correctly returns to an identical set-up as the last batch of that particular product. A proportion of the pump output is returned directly to the reservoir tank, which provides"
-video_link: 
 System_Construcion: "Built as a single integral unit with removable access panels and stainless steel pipe work, the DiscMaster™ is designed for ease of cleaning and maintenance. When configured for both top and bottom spraying there will be a minimum working height for the conveyor belt. The Standard Disc Motor supplied is an IP66 Stainless Steel which provides a high level of water protection with an excellent cosmetic finish. It allows for easy cleaning as well as ease of maintenance
 
 The width of the machine can be selected to suit either the application or the existing conveyor belt width. The machine series can accommodate line widths up to 700 mm. The maximum number of spray heads on the top is four with two spray heads fitted underneath.

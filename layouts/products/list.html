@@ -1,5 +1,12 @@
 {{define "main"}}
-
+<style>
+  .products_title {
+    color: rgb(29, 29, 29);
+  }
+  .products_title:hover {
+    color: #FE590F;
+  }
+</style>
 {{ $blogbg := resources.Get "images/bg_hero.png" }}
 <div class="relative overflow-hidden table w-full py-32 lg:py-36 bg-center bg-no-repeat bg-cover" style="
         background-position: 50%;
@@ -20,7 +27,7 @@
 <section>
     <div class="container table w-full  mx-auto p-5">
         <div class="flex justify-center">
-            <h2 class="relative mb-4 drop-shadow-lg text-slate-800 xl:mb-8 text-5xl md:text-6xl lg:text-6xl pt-20 leading-tight font-semibold font-poppins tracking-tight mt-20"> Our Award<span  style="color: #FE590F;"> Winning Products </span></h1>
+            <h2 class="relative mb-4 drop-shadow-lg text-slate-800 xl:mb-8 text-4xl md:text-5xl xl:text-5xl pt-20 leading-tight font-poppins tracking-tight mt-20"> Our Award Winning<span  style="color: #FE590F;" class="font-semibold "> Products </span></h1>
         </div>
     </div>
 </section>
@@ -48,7 +55,7 @@
               {{- if gt $elem_index 0 }}, {{ end -}}
               <a href="{{.RelPermalink}}" class="text-blue-700 text-sm font-bold uppercase pb-4">{{ .LinkTitle }}</a>
             {{ end }}
-            <a href="{{.RelPermalink}}" class="text-3xl font-semibold hover:text-amber-600 pb-4">{{.Title}}</a>
+            <a href="{{.RelPermalink}}" class="text-3xl font-semibold products_title pb-4">{{.Title}}</a>
             <a href="{{.RelPermalink}}" class="pb-6">
               {{ if .Params.summary }}
                 {{ .Params.summary }}
@@ -56,8 +63,9 @@
                 {{ .Params.description }}
               {{ end }}
             </a>
-            <a href="{{.RelPermalink}}" class="uppercase hover:text-amber-500" style="color: #FE590F;">Browse product <i
-                class="fas fa-arrow-right"></i></a>
+            <a href="{{.RelPermalink}}" class="hover:text-amber-500  products_title ">
+              <p  class="text-sm text-left text-gray mt-5 mb-6 font-bold tracking-tight"> READ MORE <i class="fas fa-arrow-right fa-sm mt-3"></i></p>
+            </a>
           </div>
         </article>
       {{ end }}
