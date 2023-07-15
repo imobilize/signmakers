@@ -1,129 +1,44 @@
-
-
-<div class="container mx-auto">
-    <div class="max-w-7x mx-auto mb-12">
-        <h2
-            class="relative mb-4 text-center text-dark drop-shadow-lg text-slate-800 text-3xl md:text-5xl xl:text-5xl tracking-tight mb-12 md:mt-6 mt-0 pt-6 leading-tight font-poppins tracking-tight">
-            Saturn’s Spraying <span style="color:#FE590F" class="font-bold">Products</span>  are</h2>
-        <p class="w-full text-2xl mb-5">At Saturn Spraying, we specialise in offering a wide range of high-quality food spraying machines designed to meet the diverse requirements of various industries and applications. The majority of spraying applications for food occur in the Bakery Sector, and within that field, Saturn Spraying is considered the standard for quality spraying with our spinning disc technology. Some of our products include:</p>
+<div class="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 bg-neutral">
+    <div
+        class="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+        <svg class="absolute left-0 hidden h-full text-neutral transform -translate-x-1/2 lg:block"
+            viewBox="0 0 100 100" fill="currentColor" preserveAspectRatio="none slice">
+            <path d="M50 0H100L50 100H0L50 0Z"></path>
+        </svg>
+        {{ with resources.Get "images/saturn-machining.jpg" }}
+        {{ $small := (.Resize "400x webp q80").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+        {{ $large := (.Resize "900x webp q80").RelPermalink }}
+        {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+        <img src="{{ $featuredimage }}" srcset="
+          {{- with $small -}}, {{.}} 400w{{- end -}}
+          {{- with $medium -}}, {{.}} 550w{{- end -}}
+          {{- with $large -}}, {{.}} 768w{{- end -}}
+          {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
+            class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+            alt="Saturn custom built products" />
+        {{ end }}
     </div>
-    <div class="flex justify-center">
+    <div class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+        <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
+            <h2 class="mb-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                Products Completely Customised For You
+            </h2>
+            <p class="pr-5 mb-5 text-xl text-gray-700 md:text-xl">
+                At Saturn Spraying, we specialise in offering a wide range of high-quality food spraying machines
+                designed to meet the diverse requirements of various industries and applications.
+            </p>
+            <p class="pr-5 mb-5 text-xl text-gray-700 md:text-xl">
+                Each machine is completely bespoke. It is custom designed and built to suit the specific needs of each
+                one of our customers.
+            </p>
+            <div class="flex items-center mt-12">
+                <a href="/products"
+                    class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary hover:bg-amber-600 focus:shadow-outline focus:outline-none">
+                    See Products Page
+                </a>
 
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="col-span-1">
-            <div class="relative p-6 table rounded-xl w-full pb-0 lg:pb-0 justify-center text-center  bg-gray-50 ">
-                <div class="flex items-center flex-col lg:flex-row">
-                    <div class="w-full">
-                        <h4 class="text-lg md:text-xl xl:text-2xl font-semibold text-slate-800 text-left mb-2">DiscMatic™</h4>
-                        <p class="text-sm md:text-xl text-left text-dark mb-6">The <b>DiscMatic™ </b> Spraying System has evolved to become the cornerstone of industrial food spraying worldwide. The flexibility of the design enables the seamless integration of our custom spraying systems into the client's production line without compromising the performance and quality of the spray.</p>
-                        <a href="/products/discmatic/" class="transition ease-in-out duration-200 hover:underline">
-                            <p  class="text-sm text-left text-gray mt-5 mb-6 font-bold tracking-tight"> READ MORE</p>
-                        </a>
-                        </div>
-                    <div class="w-1/2">
-                        <center>
-                            {{ with resources.Get "images/DiscMatic™.png" }}
-                            <img src="{{ .RelPermalink }}" alt="DiscMatic™" loading="lazy" class="w-full h-auto">
-                            {{ end }}
-                        </center>
-                    </div>
-                </div>
             </div>
         </div>
-
-        <div class="col-span-1">
-            <div class="relative p-6 table rounded-xl w-full pb-0 lg:pb-0 justify-center text-center  bg-gray-50 ">
-                <div class="flex items-center flex-col lg:flex-row">
-                    <div class="w-full">
-                        <h4 class="text-lg md:text-xl xl:text-2xl font-semibold text-slate-800 text-left mb-2">DiscNomic™</h4>
-                        <p class="text-sm md:text-lg text-left text-dark mb-6">The <b>DiscNomic™</b>The DiscNomic™ Spraying Machine is a single-disc, 'Top Only' spraying machine specifically designed for small business establishments. Its cost-effective construction and exceptional professional performance offer operational precision and reproducible results, which were previously inaccessible at this entry-level system.</p>
-                        <a href="/products/discnomic/" class="transition ease-in-out duration-200 hover:underline">
-                            <p  class="text-sm text-left text-gray mt-5 mb-6 font-bold tracking-tight"> READ MORE</p>
-                        </a>
-                    </div>
-                    <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
-                        <center>
-                            {{ with resources.Get "images/discNomic.png" }}
-                            <img src="{{ .RelPermalink }}" alt="DiscMatic™" loading="lazy" class="w-full h-auto">
-                            {{ end }}
-                        </center>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="flex mt-6">
-        <div class="relative p-6 table rounded-xl w-full pb-0 lg:pb-0 justify-center text-center bg-gray-100 ">
-          <div class="flex flex-col lg:flex-row items-center">
-            <div class="w-full lg:w-1/2 lg:order-2">
-              <center>
-                {{ with resources.Get "images/DiscMaster2.png" }}
-                <img src="{{ .RelPermalink }}" alt="DiscMatic™" loading="lazy" class="w-1/2 h-auto">
-                {{ end }}
-              </center>
-            </div>
-            <div class="w-full lg:w-1/2 lg:order-first lg:order-1">
-              <h4 class="text-lg md:text-xl xl:text-2xl font-semibold text-slate-800 text-left mb-2">DiscMaster™</h4>
-              <p class="text-sm md:text-lg text-left text-dark mb-6">The <b>DiscMaster™</b>series of Spraying Machines has been designed as the versatile system of choice for small to medium-scale businesses. It offers the essential economies of scale and manufacturing flexibility that are demanded by such operations. The spray delivery system, resistant to blockages, ensures high operational uptime. Additionally, the easy maintenance access minimises downtime, providing a quick return on investment (ROI) for business managers.
-              </p>
-              <a href="/products/discmaster/" class="transition ease-in-out duration-200 hover:underline">
-                <p class="text-sm text-left text-gray mt-5 mb-6 font-bold tracking-tight">READ MORE</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        </div>
-      
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-        <div class="col-span-1">
-            <div class="relative p-6 table rounded-xl w-full pb-0 lg:pb-0 justify-center text-center  bg-gray-50 ">
-                <div class="flex items-center flex-col lg:flex-row">
-                    <div class="w-full">
-                        <h4 class="text-lg md:text-xl xl:text-2xl font-semibold text-slate-800 text-left mb-2">PortaDisc™</h4>
-                        <p class="text-sm md:text-lg text-left text-dark mb-6"> The <b>Portadisc™ </b>System offers a 'Top Only' spraying capability in situations where space or an existing conveyor line limits the use of the mainstream DiscMaster™ or DiscMatic™ Spraying Systems. By incorporating key design components from the DiscMatic™ System library, a highly flexible range of 'Top Only' spray systems, collectively known as "PORTADISC," can be configured.</p>
-                        <a href="/products/portadisc/" class="transition ease-in-out duration-200 hover:underline">
-                            <p  class="text-sm text-left text-gray mt-5 mb-6 font-bold tracking-tight"> READ MORE</p>
-                        </a>
-                        </div>
-                    <div class="w-1/2">
-                        <center>
-                            {{ with resources.Get "images/portadisc-nobg.png" }}
-                            <img src="{{ .RelPermalink }}" alt="DiscMatic™" loading="lazy" class="w-full h-auto">
-                            {{ end }}
-                        </center>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-span-1">
-            <div class="relative p-6 table rounded-xl w-full pb-0 lg:pb-0 justify-center text-center  bg-gray-50 ">
-                <div class="flex items-center flex-col lg:flex-row">
-                    <div class="w-full">
-                        <h4 class="text-lg md:text-xl xl:text-2xl font-semibold text-slate-800 text-left mb-2">Sprinkling Machine</h4>
-                        <p class="text-sm md:text-lg text-left text-dark mb-6">Granular products, including sugars, nuts, dried herbs, breadcrumbs, and various seeds like poppy, sesame, and cracked wheat, can be evenly sprinkled onto the top of produce using Saturn's sprinkler. The sprinkler head is mounted over its own integrated conveyor.</p>
-                        <a href="/products/sprinklingmachine/" class="transition ease-in-out duration-200 hover:underline">
-                            <p  class="text-sm text-left text-gray mt-5 mb-6 font-bold tracking-tight"> READ MORE</p>
-                        </a>
-                    </div>
-                    <div class="w-1/2 mt-4">
-                        <center>
-                            {{ with resources.Get "images/sprinkler-nobg.png" }}
-                            <img src="{{ .RelPermalink }}" alt="DiscMatic™" loading="lazy" class="w-full h-auto">
-                            {{ end }}
-                        </center>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="mt-6 mb-12">
-        <center>
-            <a class="py-4 px-6 w-3/6 inline-flex items-center my-auto md:text-xl text-base text-white font-semibold border rounded-lg transition ease-in-out duration-200 hover:scale-125"
-            style="color: #FE590F; border-color: #FE590F;" href="/products">
-            <span>SEE ALL PRODUCTS</span>
-            </a>
-        </center>
     </div>
 </div>

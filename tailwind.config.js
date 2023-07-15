@@ -13,9 +13,11 @@ module.exports = {
         padding: '2rem',
       },
       colors: {
-        primary: 'colors.indigo',
-        secondary: 'colors.yellow',
-        neutral: 'colors.gray',
+        primary: '#FE590F',
+        secondary: '#6699cc',
+        neutral: '#EFECCA',
+        dark: '#363344',
+        darksecondary: '#56445d',
       },
       lineHeight: {
         'extra-loose': '2.5',

@@ -1,78 +1,105 @@
-{{ $bgimage := (resources.Get "images/bg_hero.png").RelPermalink }}
-<div class="relative items-center justify-center w-full overflow-x-hidden overflow-hidden">
-    <div class="container mx-auto mt-6 md:mt-20">
-        <div class="flex items-center flex-col lg:flex-row justify-center">
-            <div class="z-30 flex flex-col items-center w-full max-w-xl text-center lg:items-start lg:text-left">
-                <h1
-                    class="relative mb-4 text-dark drop-shadow-lg text-slate-800 xl:mb-8 text-5xl md:text-6xl lg:text-6xl pt-20 leading-tight font-semibold font-poppins tracking-tight">
-                    Welcome to <span style="color: #FE590F;">Saturn Spraying Systems</span>
-                </h1>
-                <p class="pr-0 mb-8 text-dark drop-shadow-lg sm:text-1xl xl:text-2xl lg:pr-20">
-                    Saturn Spraying is a leading supplier of spraying technology for the food production industry
-                    globally and has supplied clients worldwide for the past 30 years with our food production
-                    equipment.
-                </p>
-                <div class="flex flex-wrap -m-2.5 mb-12">
-                    <div class="w-full md:w-auto pt-4">
-                        <div class="block">
-                            <a class="py-4 px-6 w-full inline-flex justify-center items-center my-auto md:text-xl text-base text-white font-semibold rounded-xl border border-white transition ease-in-out duration-200"
-                                style="background-color: #FE590F" href="/book-consultation">
-                                <span class="text-center">Book Your Free Consultation</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-auto pt-4 ml-2">
-                        <div class="block">
-                            <a href="https://fast.wistia.net/embed/iframe/xhtlalrxvu" class="glightbox-hero">
+<div class="relative bg-white items-center justify-center w-full overflow-x-hidden lg:pt-20 xl:pt-20 lg:pb-40 xl:pb-64">
+    <div
+        class="container flex flex-col items-center justify-between h-full max-w-6xl px-8 mx-auto -mt-32 lg:flex-row xl:px-0">
+        <div
+            class="z-30 flex flex-col items-center w-full max-w-xl pt-48 text-center lg:items-start lg:w-1/2 lg:pt-20 xl:pt-40 lg:text-left">
+            <h1
+                class="relative mb-4 text-slate-800 xl:mb-8 text-5xl md:text-6xl lg:text-6xl pt-20 leading-tight font-semibold font-poppins tracking-tight">
+                Welcome to <span class="text-primary">Saturn Spraying Systems</span>
+            </h1>
+            <p class="pr-0 mb-8 text-base text-gray-600 sm:text-2xl xl:text-3xl lg:pr-20">Saturn Spraying is a leading
+                supplier of spraying technology for the food production industry globally and has supplied clients
+                worldwide for the past 30 years with our food production equipment.
+            </p>
 
-                                <button
-                                    class="mr-12 py-3 px-9 w-full text-white text-xl font-semibold border border-gray-300 hover:border-gray-400 rounded-xl focus:ring focus:ring-white transition ease-in-out duration-200"
-                                    style="background-color: #363344;" type="button">
-                                    <div class="flex flex-wrap justify-center items-center">
-                                        <div class="w-auto p-1">
-                                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect width="24" height="24" fill="none" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M3 5.49686C3 3.17662 5.52116 1.73465 7.52106 2.91106L18.5764 9.41423C20.5484 10.5742 20.5484 13.4259 18.5764 14.5858L7.52106 21.089C5.52116 22.2654 3 20.8234 3 18.5032V5.49686Z"
-                                                    fill="#ffffff" />
-                                            </svg>
-                                        </div>
-                                        <div class="w-auto p-1">
-                                            <span data-config-id="auto-txt-15-1">Watch Video</span>
-                                        </div>
+            <div class="flex flex-wrap -m-2.5 mb-20">
+                <div class="w-full md:w-auto p-2.5">
+                    <div class="block">
+                        <a class="py-4 px-6 w-full inline-flex items-center my-auto md:text-xl text-base text-white font-semibold border border-amber-500 rounded-xl focus:ring focus:ring-amber-300 bg-primary hover:bg-amber-500 transition ease-in-out duration-200"
+                            href="/book-consultation">
+
+                            <div class="flex flex-wrap justify-center items-center -m-1">
+                                <div class="w-auto p-1">
+                                    <svg class="w-5 h-5" viewBox="0 0 19 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" data-config-id="auto-svg-4-1">
+                                        <path
+                                            d="M2.75 3.75C2.75 2.92157 3.42157 2.25 4.25 2.25H6.70943C7.03225 2.25 7.31886 2.45657 7.42094 2.76283L8.5443 6.13291C8.66233 6.48699 8.50203 6.87398 8.1682 7.0409L6.47525 7.88737C7.30194 9.72091 8.77909 11.1981 10.6126 12.0247L11.4591 10.3318C11.626 9.99796 12.013 9.83767 12.3671 9.9557L15.7372 11.0791C16.0434 11.1811 16.25 11.4677 16.25 11.7906V14.25C16.25 15.0784 15.5784 15.75 14.75 15.75H14C7.7868 15.75 2.75 10.7132 2.75 4.5V3.75Z"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                                <div class="w-auto p-1">
+                                    <span>Talk To Us</span>
+                                </div>
+                            </div>
+
+
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-auto p-2.5">
+                    <div class="block">
+
+                        <a href="https://youtu.be/j2azSk4_TdQ" class="glightbox-hero">
+
+                            <button
+                                class="py-4 px-9 w-full text-white text-xl font-semibold border border-gray-300 hover:border-gray-400 rounded-xl focus:ring focus:ring-gray-50 bg-secondary hover:bg-sky-600 transition ease-in-out duration-200"
+                                type="button">
+                                <div class="flex flex-wrap justify-center items-center -m-1">
+
+                                    <div class="w-auto p-1">
+                                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="none" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3 5.49686C3 3.17662 5.52116 1.73465 7.52106 2.91106L18.5764 9.41423C20.5484 10.5742 20.5484 13.4259 18.5764 14.5858L7.52106 21.089C5.52116 22.2654 3 20.8234 3 18.5032V5.49686Z"
+                                                fill="#ffffff" />
+                                        </svg>
                                     </div>
-                                </button>
-                            </a>
-                        </div>
+                                    <div class="w-auto p-1">
+                                        <span data-config-id="auto-txt-15-1">Watch Video</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="relative flex flex-col items-end justify-center w-full h-full lg:w-1/2 ms:pl-10 pb-0 md:pb-24">
-                <div class="relative left-0 w-full max-w-4xl  lg:absolute xl:max-w-6xl lg:w-screen pb-16 ">
-                    {{ with resources.Get "images/DiscMatic™.png" }}
-                    <img src="{{ .RelPermalink }}"
-                        class="w-full h-auto mt-20 mb-20 ml-0 lg:w-1/2 lg:mt-24 xl:mt-40 lg:mb-0 lg:h-full lg:-ml-12 max-w-none">
-                    {{ end }}
-                </div>
-                <div class="absolute bottom-2/4 translate-y-2/4 right-0 left-0 text-center">
-                    <a href="#!" data-type="youtube" data-id="yba7hPeTSjk"
-                        class="lightbox h-20 w-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-sky-500 dark:text-white">
-                        <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
-                    </a>
-    
-                    <a href="https://fast.wistia.net/embed/iframe/xhtlalrxvu" class="glightbox-hero">
-                        <svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer text-sky-500 hover:text-sky-600"
-                            width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            data-config-id="auto-svg-3-2">
-                            <circle cx="32" cy="32" r="32" fill="#FE590F"></circle>
-                            <path class="text-white"
-                                d="M40.5 31.13L26.5 23.05C26.348 22.9622 26.1755 22.916 26 22.916C25.8245 22.916 25.652 22.9622 25.5 23.05C25.3474 23.1381 25.2208 23.265 25.133 23.4177C25.0452 23.5705 24.9993 23.7438 25 23.92V40.08C24.9993 40.2562 25.0452 40.4295 25.133 40.5822C25.2208 40.735 25.3474 40.8619 25.5 40.95C25.652 41.0378 25.8245 41.084 26 41.084C26.1755 41.084 26.348 41.0378 26.5 40.95L40.5 32.87C40.6539 32.7828 40.7819 32.6563 40.871 32.5035C40.96 32.3506 41.007 32.1769 41.007 32C41.007 31.8231 40.96 31.6494 40.871 31.4965C40.7819 31.3437 40.6539 31.2172 40.5 31.13ZM27 38.35V25.65L38 32L27 38.35Z"
-                                fill="#ffffff">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
+        </div>
+        <div class="relative flex flex-col items-end justify-center w-full h-full lg:w-1/2 ms:pl-10">
+            <div class="relative left-0 w-full max-w-4xl lg:absolute xl:max-w-6xl lg:w-screen">
+                {{ with resources.Get "images/machines/disc-matic.png" }}
+                {{ $small := (.Resize "900x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "1500x webp q100").RelPermalink }}
+                {{ $large := (.Resize "2000x webp q100").RelPermalink }}
+                {{ $heroimage := (.Resize "2000x webp q100").RelPermalink }}
+                <img srcset="
+                {{- with $small -}}, {{.}} 768w{{- end -}}
+                {{- with $medium -}}, {{.}} 1024w{{- end -}}
+                {{- with $large -}}, {{.}} 1374w{{- end -}}" src="{{ $heroimage }}"
+                    class="w-full h-auto mt-20 mb-20 ml-0 lg:mt-24 xl:mt-40 lg:mb-0 lg:h-full lg:-ml-12">
+                {{ end }}
+            </div>
+
+
+            <div class="absolute bottom-2/4 translate-y-2/4 right-0 left-0 text-center">
+                <a href="#!" data-type="youtube" data-id="yba7hPeTSjk"
+                    class="lightbox h-20 w-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-sky-500 dark:text-white">
+                    <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
+                </a>
+
+                <a href="https://youtu.be/j2azSk4_TdQ" class="glightbox-hero">
+
+                    <svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer text-sky-500 hover:text-sky-600"
+                        width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        data-config-id="auto-svg-3-2">
+                        <circle cx="32" cy="32" r="32" fill="currentColor"></circle>
+                        <path class="text-white"
+                            d="M40.5 31.13L26.5 23.05C26.348 22.9622 26.1755 22.916 26 22.916C25.8245 22.916 25.652 22.9622 25.5 23.05C25.3474 23.1381 25.2208 23.265 25.133 23.4177C25.0452 23.5705 24.9993 23.7438 25 23.92V40.08C24.9993 40.2562 25.0452 40.4295 25.133 40.5822C25.2208 40.735 25.3474 40.8619 25.5 40.95C25.652 41.0378 25.8245 41.084 26 41.084C26.1755 41.084 26.348 41.0378 26.5 40.95L40.5 32.87C40.6539 32.7828 40.7819 32.6563 40.871 32.5035C40.96 32.3506 41.007 32.1769 41.007 32C41.007 31.8231 40.96 31.6494 40.871 31.4965C40.7819 31.3437 40.6539 31.2172 40.5 31.13ZM27 38.35V25.65L38 32L27 38.35Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </a>
+
             </div>
         </div>
     </div>

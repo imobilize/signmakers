@@ -1,114 +1,73 @@
-<!-- Second Section section -->
-<section class="bg-gray-50">
-  <div class="relative my-4 mb-20">
-    <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8 items-center">
-  
-      <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
-        <!-- Content area -->
-        <div class="md:pt-12 sm:pt-6 lg:pt-20">
-          <h2
-            class="relative mb-4 text-dark drop-shadow-lg text-slate-800 text-4xl md:text-5xl xl:text-5xl tracking-tight mb-12 md:mt-6 mt-0 pt-6 leading-tight font-poppins tracking-tight">
-            Specialists in <span style="color:#FE590F" class="font-semibold">Food Spraying </span>  Technology</h2>
-          <div class="mt-6 space-y-6">
-            <p class="text-2xl leading-tight mb-12">Saturn Spraying is a leading provider of innovative food technology solutions. With expertise in atomised spraying, they offer precise and controlled sprays to enhance food preservation, flavour, and quality. Their spraying techniques optimise coverage and reduce waste, benefiting a wide range of food products, from fruits and vegetables to dairy and bakery items. Saturn Spraying specialises in food preservation, extending shelf life with natural coatings and preservatives. They excel in flavour enhancement, delivering precise and enticing flavours and aromas to various food and beverage applications. Additionally, their spraying techniques enhance the appearance of food products, creating visually appealing coatings, glazes, and finishes.
-            </p>
-          </div>
+<!-- Testimonial/stats section -->
+<div class="relative my-4 bg-gray-50">
+  <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
+    <div class="relative sm:py-8 lg:py-0">
+      <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
+        <div class="absolute inset-y-0 w-full bg-gray-50 dark:bg-gray-900/10 right-1/2 rounded-r-3xl lg:right-72">
         </div>
-        <!-- Content area End -->
+        <svg class="absolute -ml-3 top-8 left-1/2 lg:-right-8 lg:left-auto lg:top-12" width="404" height="392"
+          fill="none" viewBox="0 0 404 392" loading="lazy">
+          <defs>
+            <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0" width="20" height="20"
+              patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-gray-900/60" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="404" height="392" fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)" />
+        </svg>
       </div>
-      <div class="relative sm:py-8 lg:py-0">
-        <div class="relative max-w-md px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
-          <div class="relative overflow-hidden rounded-2xl grayscale hover:contrast-125">
-            {{ $missionimage := resources.Get "images/factory-worker.png" }}
-            {{ with $missionimage }}
-            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
-            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
-              class="object-cover w-full h-full rounded-full shadow-lg border-b-stone-200 items-center"
-              alt="Our Mission - Outsource Sales" loading="lazy" />
-            {{ end }}
-            {{ end }}
-          </div>
-        </div>
-      </div>
-  
-    </div>
-  
-  </div>
-</section>
-
-<!-- Request a quote Section Starting -->
-
-
-
-<!-- Request a quote Ending -->
-
-<!-- Third Section Starting -->
-
-<!-- <section class="pt-2">
-  {{ $bgimage := (resources.Get "images/bg-orange.png").RelPermalink }}
-  <div
-    class="relative bg-gray-50 items-center justify-center w-full overflow-x-hidden lg:pt-12 xl:pt-12 lg:pb-20 xl:pb-20">
-    <div
-      class="container mt-5 flex flex-col items-center justify-between h-full max-w-6xl px-8 mx-auto -mt-32 lg:flex-row xl:px-0">
-      <div
-        class="z-30 flex flex-col items-center w-full max-w-xl pt-0 text-center lg:items-start lg:w-3/4 lg:pt-0 xl:pt-0 lg:text-left">
-        <h4
-          class="relative mb-4 drop-shadow-lg text-slate-800 xl:mb-8 text-2xl md:text-5xl lg:text-5xl pt-20 leading-tight font-semibold font-poppins tracking-tight">
-          Saturn’s spraying main products are</h4>
-        <div class=" space-y-6 text-dark dark:text-white">
-          <p class="text-lg leading-7 text-dark text-2xl">Saturn Spraying is a major supplier of Spraying Technology for
-            the Food Production
-            Industry worldwide, and has over the last 30 years supplied clients throughout the world, with our food
-            production equipment.
-            The majority of spraying applications for foodstuffs occurs in the Bakery Sector and within that arena
-            Saturn
-            Spraying, with our spinning disc technology, is considered to be the benchmark in quality spraying. Some of
-            our products are:
-          <ul class="font-bold text-sm text-slate-800">
-            <a href="">
-              <li><span class="text-2xl" style="color:#FE590F">DiscNomic™</span> SPRAYING SYSTEM</li>
-            </a>
-            <a href="">
-              <li><span class="text-2xl" style="color:#FE590F">DiscMaster™</span> SPRAYING SYSTEM</li>
-            </a>
-            <a href="">
-              <li><span class="text-2xl" style="color:#FE590F">DiscMatic™</span> SPRAYING SYSTEM</li>
-            </a>
-            <a href="">
-              <li><span class="text-2xl" style="color:#FE590F">Sprinkler</span> SYSTEM</li>
-            </a>
-            <a href="">
-              <li><span class="text-2xl" style="color:#FE590F">PortaDisc™</span> SYSTEM</li>
-            </a>
-          </ul>
-          </p>
-          <div class="mx-auto">
-            <div class="flex justify-start mt-4">
-              <a href="/book-consultation" class="hover:scale-125 -translate-x-1">
-                <button class="bg-orange hover:bg-orange-dark text-white font-bold py-2 px-4 rounded mx-auto"
-                  style="background-color: #FE590F; border-radius: 5px; color: #ffffff ;">
-                  See all products
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="relative items-center sm:py-8 lg:py-0" style="z-index: 2;">
-        <div class="relative w-3/6 h-full px-4 py-6 mx-auto sm:max-full sm:pt-12 lg:max-w-none lg:px-0 lg:py-20">
-          {{ with resources.Get "images/DiscMatic™.png" }}
-          <img src="{{ .RelPermalink }}" alt="DiscMatic™" loading="lazy" class="w-full h-auto"
-            style="max-height: 100%; width: auto;">
+      <div class="relative max-w-md px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
+        <!-- Testimonial card-->
+        <div class="relative overflow-hidden">
+          {{ $missionimage := resources.Get "images/machines/spraying-muffins.png" }}
+          {{ with $missionimage }}
+          {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full"
+            alt="Our Mission - Saturn Spraying" loading="lazy" />
           {{ end }}
+          {{ end }}
+
         </div>
       </div>
     </div>
+
+    <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
+      <!-- Content area -->
+      <div class="md:py-12 sm:pt-6 lg:py-20">
+        <h2 class="text-4xl font-medium text-black lg:text-5xl">
+          Specialists in Food Spraying Technology</h2>
+        <div class="text-2xl mt-6 space-y-6 text-gray-900 dark:text-white">
+          <p class="leading-7">Saturn Spraying is a leading provider of innovative food technology solutions.
+            With expertise in automated spraying, we offer precise and controlled sprays to enhance food preservation,
+            flavour, and quality.
+
+          </p>
+          <p class="leading-7">Our spraying techniques optimise coverage and reduce waste, benefiting a wide
+            range of food products, from fruits and vegetables to dairy and bakery items. Saturn Spraying specialises in
+            food preservation, extending shelf life with natural coatings and preservatives.
+          </p>
+          <p class="leading-7">
+            We excel in flavour enhancement, delivering precise and enticing flavours and aromas to various food and
+            beverage applications. Additionally, our spraying techniques enhance the appearance of food products,
+            creating visually appealing coatings, glazes, and finishes.
+          </p>
+          <p class="leading-7">Wherever you are located in the world, we can deliver you a spraying machine that
+            integrates with your food production line.
+          </p>
+          {{ with resources.Get "images/logo/saturn-spraying-logo.png" }}
+          {{ $small := (.Resize "400x webp q100").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+          <img src="{{ $logoimage }}" srcset="" alt="" class="py-12">
+          {{end}}
+          <a href="./contact"
+            class="block px-5 py-3 text-xl text-center font-medium text-white bg-secondary border border-sky-700 rounded-md shadow hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+            Talk To Us
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-</section> -->
-
-
-
-
-
-<!-- Third section Ending -->
+</div>

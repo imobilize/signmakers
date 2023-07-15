@@ -1,25 +1,14 @@
-<!-- Popup on top of NavBar -->
-
-<!-- <div class="text-white text-center md:text-center py-2 px-4" style="background-color: 
-#FE590F;">
-    Welcome to Satrun Sparying Systems. Have any questions for us? <a href="/book-consultation" class="font-bold underline hover:text-indigo-100">Talk to us now</a>.
-  </div> -->
-
-<!-- NavBar Menu Start -->
-<div class="top-0 z-50 w-full text-gray-200 md:sticky border-b-stone-200/10" style="background-color: 
-#363344;">
+<div class="top-0 z-50 w-full text-gray-200 bg-dark border-2 border-gray-900 md:sticky border-b-stone-200/10">
     <div x-data="{ open: false }"
         class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between p-4">
             <a href="/" class="flex text-gray-100 transition duration-1000 ease-in-out group">
-                {{ $logoImage := resources.Get "images/satrun-logo.png" }}
-                {{ with $logoImage }}
-                <img src="{{ .RelPermalink }}"
-                    class="transition-opacity mx-auto max-w-full h-16 group-hover:opacity-50 group-focus:opacity-70" />
-                {{ end }}
-                <div
-                    class="mt-4 ml-3 text-sm md:text-sm xl:text-2xl lg:text-2xl font-medium font-poppins text-gray-100 transition-colors group-hover:text-amber-500">
-                    SATURN SPRAYING</div>
+                <img src="/images/saturn-spraying-logo.png"
+                    class="transition-opacity h-9 group-hover:opacity-50 group-focus:opacity-70"
+                    alt="{{ .Site.Title }} Logo" />
+                <!-- <div
+                    class="mt-1 ml-3 text-xl font-medium font-poppins text-gray-100 transition-colors group-hover:text-amber-500">
+                    {{ .Site.Title }}</div> -->
             </a>
             <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open"
                 role="navigation" aria-expanded="false" aria-label="Main" aria-controls="menuItems">
@@ -33,29 +22,20 @@
                 </svg>
             </button>
         </div>
+
         <nav :class="{'flex': open, 'hidden': !open}"
             class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row sm:items-center sm:justify-center">
-            <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-white focus:text-white hover:text-amber-500 "
+            <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary hover:bg-dark"
                 href="/about/">About</a>
-            <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-white focus:text-white hover:text-amber-500 "
-                href="/agents/">Agents</a>
-            <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-white focus:text-white hover:text-amber-500 "
+            <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary hover:bg-dark"
                 href="/applications/">Applications</a>
-                <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-white focus:text-white "
-                href="/blog/">Blog</a>
-            <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-white focus:text-white hover:text-amber-500 "
-                href="/clients/">Clients</a>
-                <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-white focus:text-white hover:text-amber-500"
+            <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary hover:bg-dark"
                 href="/contact"> Contact
             </a>
-                <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-white focus:text-white hover:text-amber-500 "
+            <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary hover:bg-dark"
                 href="/products">Products</a>
-            <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-white focus:text-white hover:text-amber-500 "
+            <a class="px-2 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary hover:bg-dark"
                 href="/technology/">Technology</a>
-            <a href="/book-consultation"
-                class="inline-flex my-auto sm:text-sm text-md sm:py-0  py-1 px-2  justify-center text-white font-semibold transition ease-in-out duration-200 rounded-lg"
-                style="background-color: #FE590F;">Book
-                Free Consultation</a>
         </nav>
     </div>
 </div>
