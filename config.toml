@@ -23,14 +23,14 @@ home = ["HTML", "AMP", "RSS", "JSON"]
     tags = "/:title"
 
 [params]
-author = "Outsourced Sales"
+author = "Satrun Spraying Ltd"
 authorimage = "../assets/images/global/author.webp"
 github = "https://github.com/imobilize"
 facebook = "https://facebook.com/outsourcedsales"
 og_image = "/images/outsourced-sales-cover.png"
-sitename = "Outsourced Sales"
+sitename = "Satrun Spraying Ltd"
 twitter = "@outsourcedsales"
-description = "Saturn Spraying Ltd &#124; Specialists in Food Spraying Technology"
+description = "Saturn Spraying Ltd | Specialists in Food Spraying Technology"
 logo = ""
 home = "Home"
 # Google Analitycs

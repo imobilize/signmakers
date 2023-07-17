@@ -2,19 +2,19 @@
 
 <main>
 
-  {{ $bgimage := (resources.Get "images/bg_hero.png").RelPermalink }}
+  {{ $bgimage := (resources.Get "images/bg-hero.png").RelPermalink }}
   <section
     class="relative table w-full pb-0 lg:pb-0 bg-slate-800 bg-[url('{{ $bgimage }}')] bg-center bg-no-repeat bg-cover"
     style="background-image: url('{{$bgimage}}');">
-    <div class="container px-4 mx-auto max-w-screen-xl mt-20">
+    <div class="container px-4 mx-auto max-w-screen-xl">
       <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
         <div class="lg:col-span-7">
-          <div class="md:me-6 md:mb-20">
-            <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold  mb-5 text-white">A Stanley
-              Saturn Spraying Systems Ltd.
-            </h1>
-            <p class="pr-0 my-8 text-base text-gray-200 sm:text-xl xl:text-2xl lg:pr-20">Making your production
-              automated</p>
+          <div class="md:mt-20 md:mb-20">
+            <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold  mb-5 text-white">About Saturn
+              Spraying</h1>
+            <p class="pr-0 my-8 text-base text-white sm:text-xl xl:text-2xl lg:pr-20">Saturn Spraying is a global
+              supplier noted for its high quality innovative solutions in food spraying applications. We are at the very
+              forefront of spinning disc spray technology. </p>
             <div class="mt-20">
               <div class="flex flex-wrap -m-2.5 mb-20">
 
@@ -24,258 +24,349 @@
           </div>
         </div><!--end col-->
 
-        <!-- <div class="lg:col-span-5 mt-8 md:mt-0">
-                    {{ with resources.Get "images/sales-man.png" }}
-                    {{ $small := (.Resize "400x webp q80").RelPermalink }}
-                    {{ $medium := (.Resize "550x webp q80").RelPermalink }}
-                    {{ $large := (.Resize "900x webp q80").RelPermalink }}
-                    {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-                    <img src="{{ $featuredimage }}" srcset="" alt="">
-                    {{end}}
-                </div> -->
-
-        <!--end col-->
+        <div class="lg:col-span-5 mt-8 md:mt-0">
+          {{ with resources.Get "images/sales-man.png" }}
+          {{ $small := (.Resize "400x webp q80").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+          {{ $large := (.Resize "900x webp q80").RelPermalink }}
+          {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+          <img src="{{ $featuredimage }}" srcset="" alt="">
+          {{end}}
+        </div><!--end col-->
       </div><!--end grid-->
     </div><!--end container-->
   </section>
 
+
   <section class="mt-20 mb-20">
-    <div class="container  justify-center mx-auto">
-      <div class="flex rounded-lg" style="background-color: #FBF6F4;">
-        <div class="w-3/5 justify-start p-12 sm:p-4">
-          <h2 class="underline underline-offset-8 text-left text-dark font-bold text-4xl relative">
-            Saturn Spraying Systems Limited
-            <span class="absolute bottom-0 left-0 w-full h-1 bg-orange-500"></span>
-          </h2>
-          <p class="text-left text-dark text-2xl mt-4">At Saturn Spraying, we believe in the power of the human touch.
-            Each machine that bears our name is meticulously handcrafted, a fusion of artistry and engineering
-            expertise. It's a testament to our unwavering dedication to providing you, our valued customer, with a
-            bespoke solution that perfectly aligns with your unique needs.
-            We embark on a journey of collaboration, where your aspirations become our mission. We listen attentively,
-            understanding your goals and challenges. With our passion as your guide, we craft tailored solutions that
-            surpass expectations, elevating your business to new realms of success.
-            Join us in unravelling the captivating tale of Saturn Spraying. Discover the magic of handmade machinery and
-            experience the unrivalled joy of a tailored partnership. Together, let's redefine the boundaries of food
-            spraying technology and create a world where possibilities are limitless.
-            Welcome to Saturn Spraying, where excellence meets craftsmanship, and your success is our guiding star.</p>
+    <div class="relative my-4 mb-20">
+      <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8 items-center">
+
+        <div class="relative sm:py-8 lg:py-0">
+          <div class="relative max-w-md px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
+            <div class="relative overflow-hidden rounded-2xl hover:contrast-125">
+              {{ $missionimage := resources.Get "images/factory-worker.png" }}
+              {{ with $missionimage }}
+              {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+              <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
+                class="object-cover w-full h-full rounded-full shadow-lg border-b-stone-200 items-center"
+                alt="About Saturn" loading="lazy" />
+              {{ end }}
+              {{ end }}
+            </div>
+          </div>
         </div>
+
+
+        <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
+          <!-- Content area -->
+          <div class="md:pt-12 sm:pt-6 lg:pt-20">
+            <h2
+              class="relative mb-4 text-dark text-slate-800 text-4xl md:text-5xl xl:text-5xl tracking-tight mb-12 md:mt-6 mt-0 pt-6 leading-tight font-poppins tracking-tight">
+              Specialists in <span style="color:#FE590F" class="font-semibold">Food Spraying </span> Technology</h2>
+            <div class="mt-6 space-y-6">
+              <p class="text-2xl leading-tight mb-12">Saturn Spraying Systems Limited specialises in Food Spraying
+                Technology, and applies the best current technologies in order to provide the most cost effective and
+                innovative solutions to meet our customers’ needs.
+              </p>
+              <p class="text-2xl leading-tight mb-12">
+                We are committed to maintaining a high level of quality in all of our processes, from design and
+                fabrication through to personal contact. Our first responsibility is to our customer: to provide a
+                specified product or service in a timely manner, to give sound, objective advice and to communicate
+                effectively. It is this personal approach, coupled with our innovative solutions that have contributed
+                significantly to our client’s satisfaction.
+              </p>
+            </div>
+          </div>
+          <!-- Content area End -->
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="mt-20 mb-20">
+
+
+  <!-- component -->
+  <section class="bg-gray-100 dark:bg-gray-800 border-t">
+
+    <div class="container flex px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
+      <div class="w-full lg:w-1/2">
+        <div class="lg:max-w-lg">
+          <h2 class="text-3xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-5xl">
+            Saturn Spraying Systems Limited
+          </h2>
+
+          <p class="text-left text-dark text-2xl mt-4">
+            Saturn is a global supplier at the very forefront of spinning disc spray technology. The spraying of
+            glazes
+            oils and emulsions; consistently onto foodstuffs with precision and repeatability, provides tangible
+            benefits in productivity and yield for today’s modern food production industry. Our worldwide sales have
+            established Saturn as the suppliers of choice for a large range of household names.
+          </p>
+          <p class="text-left text-dark text-2xl mt-4">
+            Our clients demand the improvements in product quality and performance that our machines deliver, as well
+            as
+            the benefits of savings through the control and minimal wastage that our closed system spraying provides.
+            The systems are simple to use and control, and with the high levels of after sales support, downtime due
+            to
+            maintenance is minimised.
+          </p>
+          <p class="text-left text-dark text-2xl mt-4">
+            Quality and reliability apart, it is our ability to engineer the spraying solution into specific physical
+            locations on the client’s production line without diminishing the system performance that the client
+            requires. Bespoke system design of this nature is unique to Saturn Spraying Systems Limited.
+          </p>
+          <p class="text-left text-dark text-2xl mt-4">
+            Located on the Ferndown Industrial Estate, near Bournemouth, this south coast location provides us with
+            excellent modern road, rail and air distribution routes for our business in the UK, Europe and the rest of
+            the world. We are located only 5 km from Bournemouth International Airport.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="flex items-center justify-center w-full h-96 lg:w-1/2">
+
+        {{ with resources.Get "images/saturn-workers.png" }}
+        {{ $small := (.Resize "400x webp q80").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+        {{ $large := (.Resize "900x webp q80").RelPermalink }}
+        {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+        <img src="{{ $featuredimage }}" srcset="
+            {{- with $small -}}, {{.}} 400w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}
+            {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
+          class="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" alt="About Saturn Spraying Systems" />
+        {{ end }}
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="mt-20 mb-20 bg-gray-50">
     <div class="relative table w-full pb-0 lg:pb-0 justify-center text-center" style="background-color: #4D4575;">
-      <h2 class="font-bold py-4 text-2xl text-white">Installed Base World Wide</h2>
+      <h3 class="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight mt-6 text-white mb-6">Installed Base World
+        Wide</h3>
     </div>
 
     <div class="container mx-auto justify-center">
-      <div class="flex gap-6 items-center justify-center mt-12">
+      <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/uk.png" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/germany.png" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/9.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/10.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/france.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/australia.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/italy.png" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/ireland.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
       </div>
-      <div class="flex gap-6 items-center justify-center mt-12">
+      <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/tatti.png" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/denmark.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/hungary.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/poland.png" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/canada.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/norway.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/india.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/greece.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
       </div>
-      <div class="flex gap-6 items-center justify-center mt-12">
+      <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/slovania.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/finalnd.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/switzerland.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/japan.png" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
           {{end}}
         </div>
         <div class="w-3/6 justify-center">
           {{ with resources.Get "images/flags/9.jpg" }}
-          {{ $flag := (.Resize "102x webp q100").RelPermalink }}
+          {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
           {{end}}
         </div>
       </div>
-    </div>
-
-    <div class="container mx-auto py-4 mt-20">
-      <div class="flex flex-wrap gap-6">
-        <div class="w-3/5  justify-start">
-          <div class="relative table rounded-r-lg w-full pb-0 lg:pb-0 justify-center text-center"
-            style="background-color: #4D4575;">
-            <h2 class="p-6 text-5xl grow font-bold text-white text-center"> Satisfied Customers</h2>
-            <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">999</p>
-          </div>
-        </div>
-
-        <div class="w-3/6 justify-end">
-          <div class="relative table border-amber-400 rounded-lg w-full pb-0 lg:pb-0 justify-center text-center"
-            style="background-color: #FBF6F4;">
-            <h3 class="p-6 text-4xl grow font-bold text-dark text-center"> Countries Served</h2>
-              <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">25</p>
-          </div>
-        </div>
-        <div class="w-3/6 justify-end">
-          <div class="relative table border-amber-400 rounded-lg w-full pb-0 lg:pb-0 justify-center text-center"
-            style="background-color: #FBF6F4;">
-            <h3 class="p-6 text-4xl grow font-bold text-dark text-center">Stations installed</h2>
-              <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">68</p>
-          </div>
-        </div>
+      <div class="flex justify-center">
+        <p class="text-xl font-bold mt-12 mb-12 text-center">Please Note: This is a small sample of our World - Wide
+          Installed Base provided for
+          information only </p>
       </div>
-
-
+    </div>
     </div>
   </section>
 
   <section>
-    <div class="container mx-auto justify-center">
-      <div class="flex justify-center">
-        <div class="w-3/6">
-          <h2 class="p-6 text-5xl grow font-bold text-dark text-center"><span style="color:#FE590F">Supporting</span>
-            our Spinning Disc <br /> Installations around the World</h2>
+    <div class="container mx-auto py-4 mt-20">
+      <div class="flex flex-wrap gap-6 justify-center">
+        <div class="w-3/5  justify-start">
+          <div class="relative table rounded-2xl w-full pb-0 lg:pb-0 justify-center text-center"
+            style="background-color: #4D4575;">
+            <h4 class="p-6 text-xl md:text-2xl xl:text-3xl font-semibold text-white text-center"> Satisfied Customers
+            </h4>
+            <p class="p-6 text-8xl grow font-bold text-center text-white">249</p>
+          </div>
+        </div>
+
+        <div class="w-3/6 justify-end">
+          <div
+            class="relative table border-amber-400 rounded-2xl w-full pb-0 lg:pb-0 justify-center text-center bg-gray-100">
+            <h4 class="p-6 text-xl md:text-2xl xl:text-3xl font-semibold text-dark text-center"> Countries Served</h4>
+            <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">25</p>
+          </div>
+        </div>
+        <div class="w-3/6 justify-end">
+          <div
+            class="relative table border-amber-400 rounded-2xl w-full pb-0 lg:pb-0 justify-center text-center bg-gray-50">
+            <h4 class="p-6 text-xl md:text-2xl xl:text-3xl font-semibold text-dark text-center">Stations installed
+            </h4>
+            <p class="p-6 text-8xl grow font-bold text-center" style="color:#FE590F;">68</p>
+          </div>
         </div>
       </div>
-      <div class="flex justify-start">
-        <div class="w-3/5 justify-start p-12">
+  </section>
+
+  <section>
+    <div class="container mx-auto justify-center">
+      <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
+        <div class="w-full">
+          <h2
+            class="relative mb-4 text-dark text-center text-slate-800 xl:mb-8 text-4xl md:text-6xl lg:text-6xl pt-20 leading-tight font-poppins tracking-tight">
+            Supporting our <span style="color:#FE590F" class="font-semibold ">Spinning Disc
+              Installations</span> around the World</h2>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
+        <div class="w-full justify-start">
           <p class="p-6 text-2xl grow text-left">Saturn Spraying has been manufacturing and supplying Spinning <b
-              class="font-bold" style="color: #FE590F;">Disc Spraying Machines around the world since the late
-              1980s.</b> Unique in our ability to offer a range of services, including bespoke design, we have
-            installations in the main food manufacturing countries within Asia, South America, and Australia.
+              class="font-bold" style="color: #363344;">Disc Spraying Machines worldwide since the late 1980s.</b>
+            With
+            our unique ability to offer a range of services, including bespoke design, we have installations in key
+            food
+            manufacturing countries across Asia, South America, and Australia.
             <br /><br />
 
-            Our strategy when dealing with long distances, language, and culture differences has always been to provide
-            support through the very <b class="font-bold" style="color: #FE590F;">best training at the time of
-              installation.</b> This, in turn, instills an advanced level of confidence in future installations. We
-            deliver a personal service that enables us to build and establish valuable working relationships with the
-            individuals who provide the day-to-day maintenance on-site.<br /><br />
+            When dealing with long distances, language, and cultural differences, our strategy has always been to
+            provide excellent training during the installation process. This instills a high level of confidence in
+            future installations. We prioritise delivering a personal service that allows us to build valuable working
+            relationships with on-site maintenance staff.<br /><br />
 
-            Through taking this customer-focused approach, we can respond quicker to the problems being experienced,
-            diagnosing faults and operating errors, as well as recommending the procedures and spares necessary to
-            restore full operation.<br /><br />
-
-            The Spinning Disc Spraying machine is not a complex machine as it uses industry standard engineering
-            "building blocks" that an experienced engineer will be comfortable with.<br /><br />
-
-            Systems such as:<br /><br />
-            <ul class="p-6 text-2xl grow text-left font-bold" style="color: #FE590F;">
-              <li>Inverter/Motor combination sets</li>
-              <li>Conveyors</li>
-              <li>Motors</li>
-              <li>Pumps</li>
-              <li>Gearboxes</li>
-            </ul>
-            <br /><br />
-            <p class="p-6 text-2xl grow text-left">Additionally, there is specialist technology within our systems that would be explained in detail, ensuring
+            By taking this customer-focused approach, we can quickly respond to any issues, diagnose faults and
+            operating errors, and provide recommendations for restoring full operation. The Spinning Disc Spraying
+            machine is not a complex machine, as it utilises industry-standard engineering components that experienced
+            engineers are familiar with. These components include:<br />
+          <ul class="p-6 text-xl grow text-left font-bold text-slate-800">
+            <li><i class="fa-solid fa-circle fa-2xs mr-5"></i>Inverter/Motor combination sets</li>
+            <li><i class="fa-solid fa-circle fa-2xs mr-5"></i>Conveyors</li>
+            <li><i class="fa-solid fa-circle fa-2xs mr-5"></i>Motors</li>
+            <li><i class="fa-solid fa-circle fa-2xs mr-5"></i>Pumps</li>
+            <li><i class="fa-solid fa-circle fa-2xs mr-5"></i>Gearboxes</li>
+          </ul>
+          <p class="p-6 text-2xl grow text-left">Additionally, there is specialist technology within our systems that
+            would be explained in detail, ensuring
             transparency through inclusion and offering insight and support every step of the way.<br /><br />
 
             During the initial phase of the build program, <b class="font-bold" style="color: #FE590F;">we provide
-              support</b> with locally held spares from our recommended spares list, which details the recommended spares
+              support</b> with locally held spares from our recommended spares list, which details the recommended
+            spares
             holding items and quantities.</p>
           </p>
         </div>
@@ -284,35 +375,44 @@
   </section>
 
   <section>
-    <div class="relative pb-16 mt-6">
-        <div class="max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
-            <div class="relative px-6 py-10 overflow-hidden shadow-xl rounded-2xl sm:px-12 sm:py-20" style="background: #FE590F;
-            border-radius: 5px;">
-                <div class="relative">
-                    <div class="sm:text-center">
-                        <h2 class="text-3xl font-bold tracking-tight text-white text-left sm:text-4xl w-3/5">
-                            Get in touch and book your respraying project before 27th June to receive 10% off your quote
-                        </h2>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="mt-12 sm:mx-auto sm:flex sm:max-w-lg w-1/6">
-                        <a href="/"
-                            class="block w-full px-5 py-3 text-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-center font-medium text-grey-darker bg-white border border-amber-500 rounded-md shadow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
-                            Find out more <span class="ml-2">&#8594;</span>
-                        </a>
-                    </div>
-                </div>
+    <div class="relative pb-16 mt-16">
+      <div aria-hidden="true" class="hidden sm:block">
+        <div class="absolute inset-y-0 left-0 w-1/2 rounded-r-3xl"></div><svg class="absolute -ml-3 top-8 left-1/2"
+          width="404" height="392" fill="none" viewBox="0 0 404 392">
+          <defs>
+            <pattern id="8228f071-bcee-4ec8-905a-2a059a2cc4fb" x="0" y="0" width="20" height="20"
+              patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-gray-900/60" fill="currentcolor">
+              </rect>
+            </pattern>
+          </defs>
+          <rect width="404" height="392" fill="url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)"></rect>
+        </svg>
+      </div>
+      <div class="max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
+        <div class="relative px-6 py-10 overflow-hidden bg-neutral shadow-xl rounded-2xl sm:px-12 sm:py-20">
+          <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0"><svg
+              class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360" loading="lazy">
+              <path class="text-yellow-100 text-opacity-40" fill="currentcolor"
+                d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"></path>
+              <path class="text-yellow-100 text-opacity-40" fill="currentcolor"
+                d="M-217.088 544.086 1544.761 72l134.327 501.316-1761.849 472.086z"></path>
+            </svg></div>
+          <div class="relative">
+            <div class="sm:text-center">
+              <h2 class="text-3xl font-bold tracking-tight text-dark sm:text-4xl">Want To Talk To Someone?</h2>
+              <p class="max-w-2xl mx-auto mt-6 text-xl text-dark">Do you have an application that could use this
+                technology?</p>
             </div>
+            <div class="mt-12 sm:mx-auto sm:flex sm:max-w-lg"><a href="./contact"
+                class="block w-full px-5 py-3 text-xl text-center font-medium text-white bg-primary border border-amber-500 rounded-md shadow hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+                Contact Us</a></div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
 
-
-
-
-
-
-
+  </section>
 </main>
 {{ end }}

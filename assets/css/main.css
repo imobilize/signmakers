@@ -1,6 +1,6 @@
 @import "./glightbox.css";
 @import 'typeface-mukta';
-
+@import "./custom.css";
 
 /* assets */ 
 @tailwind base;
@@ -28,5 +28,46 @@ EmojiSymbols;
 .prose :where(h1):not(:where([class~="not-prose"] *)) {
     color: white !important;
 }
+
+.product-inner {
+    position: relative;
+    width: 100%;
+    border-radius: .75rem;
+    background-image: linear-gradient(to top right,var(--tw-gradient-stops));
+    --tw-gradient-from: #f8fafc80 var(--tw-gradient-from-position);
+    --tw-gradient-to: #f8fafc00 var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+    --tw-gradient-to: #f1f5f900 var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from),#f1f5f9 var(--tw-gradient-via-position),var(--tw-gradient-to);
+    --tw-gradient-to: #94a3b880 var(--tw-gradient-to-position)
+    }
+    
+    .product-inner:before {
+    margin: -1px;
+    background-image: linear-gradient(to top right,var(--tw-gradient-stops));
+    --tw-gradient-from: #e2e8f0 var(--tw-gradient-from-position);
+    --tw-gradient-to: #e2e8f000 var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to)
+    }
+    
+    .product-inner:after,.product-inner:before {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    border-radius: .75rem;
+    content: var(--tw-content)
+    }
+    
+    .product-inner:after {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    }
+    
+    @media (min-width: 768px) {
+    .product-inner {
+        --tw-gradient-to:#94a3b8 var(--tw-gradient-to-position)
+    }
+    }
 
 /* Custom CSS end */
