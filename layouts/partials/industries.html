@@ -24,24 +24,29 @@
         <!-- Card -->
         <a class="group sm:flex" href="#">
           <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
+            {{ with resources.Get "images/vegetables.jpg" }}
+          {{ $small := (.Resize "400x webp q100").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+          {{ $large := (.Resize "2000x webp q100").RelPermalink }}
+          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
             <img class="w-full h-full absolute top-0 left-0 object-cover"
-              src="https://images.unsplash.com/photo-1664574654529-b60630f33fdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              src="{{ $logoimage }}"
               alt="Image Description">
+              {{end}}
           </div>
 
           <div class="grow">
             <div class="p-4 flex flex-col h-full sm:p-6">
               <h3
-                class="text-lg sm:text-2xl font-semibold text-gray-800 group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-white">
-                Preline becomes an official Instagram Marketing Partner
+                class="text-lg sm:text-2xl font-semibold text-gray-800 hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
+                Fruits & Vegetables Application Area
               </h3>
-              <p class="mt-2 text-gray-600 dark:text-gray-400">
-                Great news we're eager to share.
-              </p>
+              <p class="mt-2 text-xl sm:text-xl">
+                Learn more about how Saturn's products can enhance your industry by increasing production and automating processes.              </p>
 
               <div class="mt-5 sm:mt-auto">
                 <p
-                  class="mt-4 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium">
+                  class="mt-4 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
                   Read more
                   <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
@@ -57,23 +62,104 @@
         <!-- Card -->
         <a class="group sm:flex" href="#">
           <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
+            {{ with resources.Get "images/fish-meat.jpg" }}
+          {{ $small := (.Resize "400x webp q100").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+          {{ $large := (.Resize "2000x webp q100").RelPermalink }}
+          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
             <img class="w-full h-full absolute top-0 left-0 object-cover"
-              src="https://images.unsplash.com/photo-1669824774762-65ddf29bee56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              src="{{ $logoimage }}"
               alt="Image Description">
+              {{end}}
           </div>
+
           <div class="grow">
             <div class="p-4 flex flex-col h-full sm:p-6">
               <h3
-                class="text-lg sm:text-2xl font-semibold text-gray-800 group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-white">
-                Announcing a free plan for small teams
-              </h3>
-              <p class="mt-2 text-gray-600 dark:text-gray-400">
-                At Wake, our mission has always been focused on bringing openness.
-              </p>
+                class="text-lg sm:text-2xl font-semibold text-gray-800  hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
+                Meat, Fish & Cheese Application             </h3>
+              <p class="mt-2 text-xl sm:text-xl">
+                Learn more about how Saturn's products can enhance your industry by increasing production and automating processes.              </p>
 
               <div class="mt-5 sm:mt-auto">
                 <p
-                  class="mt-4 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium">
+                  class="mt-4 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
+                  Read more
+                  <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <a class="group sm:flex" href="#">
+          <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
+            {{ with resources.Get "images/cookies.jpg" }}
+          {{ $small := (.Resize "400x webp q100").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+          {{ $large := (.Resize "2000x webp q100").RelPermalink }}
+          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+            <img class="w-full h-full absolute top-0 left-0 object-cover"
+              src="{{ $logoimage }}"
+              alt="Image Description">
+              {{end}}
+          </div>
+
+          <div class="grow">
+            <div class="p-4 flex flex-col h-full sm:p-6">
+              <h3
+                class="text-lg sm:text-2xl font-semibold text-gray-800  hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
+                Biscuit & Snacks
+              </h3>
+              <p class="mt-2 text-xl sm:text-xl">
+                Learn more about how Saturn's products can enhance your industry by increasing production and automating processes.              </p>
+
+              <div class="mt-5 sm:mt-auto">
+                <p
+                  class="mt-4 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
+                  Read more
+                  <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <a class="group sm:flex" href="#">
+          <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
+            {{ with resources.Get "images/croissant.jpg" }}
+          {{ $small := (.Resize "400x webp q100").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+          {{ $large := (.Resize "2000x webp q100").RelPermalink }}
+          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+            <img class="w-full h-full absolute top-0 left-0 object-cover"
+              src="{{ $logoimage }}"
+              alt="Image Description">
+              {{end}}
+          </div>
+
+          <div class="grow">
+            <div class="p-4 flex flex-col h-full sm:p-6">
+              <h3
+                class="text-lg sm:text-2xl font-semibold text-gray-800  hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
+                Bakery Products
+              </h3>
+              <p class="mt-2 text-xl sm:text-xl">
+                Learn more about how Saturn's products can enhance your industry by increasing production and automating processes.              </p>
+
+              <div class="mt-5 sm:mt-auto">
+                <p
+                  class="mt-4 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
                   Read more
                   <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
@@ -86,6 +172,45 @@
         </a>
         <!-- End Card -->
       </div>
+      <div class="flex mt-6">
+        <div class="w-full md:w-1/2 justify-center">
+          <a class="group sm:flex" href="#">
+            <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
+              {{ with resources.Get "images/low-fat-min.jpg" }}
+            {{ $small := (.Resize "400x webp q100").RelPermalink }}
+            {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+            {{ $large := (.Resize "2000x webp q100").RelPermalink }}
+            {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+              <img class="w-full h-full absolute top-0 left-0 object-cover"
+                src="{{ $logoimage }}"
+                alt="Image Description">
+                {{end}}
+            </div>
+  
+            <div class="grow">
+              <div class="p-4 flex flex-col h-full sm:p-6">
+                <h3
+                  class="text-lg sm:text-2xl font-semibold text-gray-800  hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
+                  Low Fat Products
+                </h3>
+                <p class="mt-2 text-xl sm:text-xl">
+                  Learn more about how Saturn's products can enhance your industry by increasing production and automating processes.              </p>
+  
+                <div class="mt-5 sm:mt-auto">
+                  <p
+                    class="mt-4 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
+                    Read more
+                    <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
       <!-- End Grid -->
     </div>
     <!-- End Card Blog -->
@@ -95,7 +220,7 @@
 
 
 
-<section class="py-8 px-4 md:px-10 lg:px-20">
+<!-- <section class="py-8 px-4 md:px-10 lg:px-20">
   <div class="container mx-auto my-auto">
     <div class="max-w-7xl mx-auto">
 
@@ -135,7 +260,6 @@
                     <p class="absolute bottom-0 mb-4 font-semibold left-1 hover:underline text-lg text-white z-20"> Read
                       More<span class="mt-1">&#8594;</span></p>
 
-                    <!-- <p  class="text-sm text-left text-gray mt-5 mb-6 font-bold tracking-tight"> READ MORE</p> -->
                   </div>
                 </div>
               </div>
@@ -204,4 +328,4 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->

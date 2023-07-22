@@ -18,6 +18,7 @@ module.exports = {
         neutral: '#EFECCA',
         dark: '#363344',
         darksecondary: '#56445d',
+        hoverprimary: '#E45310',
       },
       lineHeight: {
         'extra-loose': '2.5',

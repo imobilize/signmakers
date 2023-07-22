@@ -34,11 +34,11 @@
       <div class="md:w-1/2 {{ if eq (mod $index 2) 0 }} md:pl-24  {{ else }} md:pr-24 {{ end }} pb-8">
         <a href="{{.RelPermalink}}" class="hover:text-primary">
           <h2
-            class="pb-4 text-3xl md:text-5xl font-headline font-bold text-gray-900 tracking-snug leading-tight md:leading-tight hover:text-primary">
+            class="text-lg sm:text-2xl font-semibold text-gray-800 hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
             {{ .Title }}</h2>
         </a>
 
-        <p class="pb-6 text-gray-600 text-lg md:text-xl leading-normal md:leading-normal">
+        <p class="mt-2 text-xl sm:text-xll">
           {{ if .Params.summary }}
           {{ .Params.summary }}
           {{ else }}
@@ -46,8 +46,15 @@
           {{ end }}
         </p>
         <a href="{{.RelPermalink}}" class="hover:text-primary">
-          <p class="text-xl text-left text-gray mt-5 mb-6 font-bold tracking-tight"> READ MORE <i
-              class="fas fa-arrow-right fa-sm mt-3"></i></p>
+          <p
+                            class="mt-4 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
+                            Read more
+                            <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path
+                                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </p>
       </div>
       <div class="relative flex md:w-1/2">
         <div

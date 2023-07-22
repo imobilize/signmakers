@@ -9,7 +9,7 @@
     <div class="container px-4 mx-auto max-w-screen-xl">
       <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
         <div class="lg:col-span-7">
-          <div class="md:mt-20 md:mb-20">
+          <div class="md:mt-20 md:mb-20 mt-12">
             <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold  mb-5 text-white">About Saturn
               Spraying</h1>
             <p class="pr-0 my-8 text-base text-white sm:text-xl xl:text-2xl lg:pr-20">Saturn Spraying is a global
@@ -90,57 +90,60 @@
   <!-- component -->
   <section class="bg-gray-100 dark:bg-gray-800 border-t">
 
-    <div class="container flex px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
-      <div class="w-full lg:w-1/2">
-        <div class="lg:max-w-lg">
-          <h2 class="text-3xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-5xl">
-            Saturn Spraying Systems Limited
-          </h2>
-
-          <p class="text-left text-dark text-2xl mt-4">
-            Saturn is a global supplier at the very forefront of spinning disc spray technology. The spraying of
-            glazes
-            oils and emulsions; consistently onto foodstuffs with precision and repeatability, provides tangible
-            benefits in productivity and yield for today’s modern food production industry. Our worldwide sales have
-            established Saturn as the suppliers of choice for a large range of household names.
-          </p>
-          <p class="text-left text-dark text-2xl mt-4">
-            Our clients demand the improvements in product quality and performance that our machines deliver, as well
-            as
-            the benefits of savings through the control and minimal wastage that our closed system spraying provides.
-            The systems are simple to use and control, and with the high levels of after sales support, downtime due
-            to
-            maintenance is minimised.
-          </p>
-          <p class="text-left text-dark text-2xl mt-4">
-            Quality and reliability apart, it is our ability to engineer the spraying solution into specific physical
-            locations on the client’s production line without diminishing the system performance that the client
-            requires. Bespoke system design of this nature is unique to Saturn Spraying Systems Limited.
-          </p>
-          <p class="text-left text-dark text-2xl mt-4">
-            Located on the Ferndown Industrial Estate, near Bournemouth, this south coast location provides us with
-            excellent modern road, rail and air distribution routes for our business in the UK, Europe and the rest of
-            the world. We are located only 5 km from Bournemouth International Airport.
-          </p>
+    <div class="container px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
+      <div class="flex items-center flex-col lg:flex-row">
+        <div class="w-full lg:w-1/2">
+          <div class="lg:max-w-lg">
+            <h2 class="text-3xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-5xl">
+              Saturn Spraying Systems Limited
+            </h2>
+  
+            <p class="text-left text-dark text-2xl mt-4">
+              Saturn is a global supplier at the very forefront of spinning disc spray technology. The spraying of
+              glazes
+              oils and emulsions; consistently onto foodstuffs with precision and repeatability, provides tangible
+              benefits in productivity and yield for today’s modern food production industry. Our worldwide sales have
+              established Saturn as the suppliers of choice for a large range of household names.
+            </p>
+            <p class="text-left text-dark text-2xl mt-4">
+              Our clients demand the improvements in product quality and performance that our machines deliver, as well
+              as
+              the benefits of savings through the control and minimal wastage that our closed system spraying provides.
+              The systems are simple to use and control, and with the high levels of after sales support, downtime due
+              to
+              maintenance is minimised.
+            </p>
+            <p class="text-left text-dark text-2xl mt-4">
+              Quality and reliability apart, it is our ability to engineer the spraying solution into specific physical
+              locations on the client’s production line without diminishing the system performance that the client
+              requires. Bespoke system design of this nature is unique to Saturn Spraying Systems Limited.
+            </p>
+            <p class="text-left text-dark text-2xl mt-4">
+              Located on the Ferndown Industrial Estate, near Bournemouth, this south coast location provides us with
+              excellent modern road, rail and air distribution routes for our business in the UK, Europe and the rest of
+              the world. We are located only 5 km from Bournemouth International Airport.
+            </p>
+          </div>
+  
         </div>
-
+  
+        <div class="flex items-center justify-center w-full h-96 lg:w-1/2 pt-12 md:pt-0">
+  
+          {{ with resources.Get "images/saturn-workers.png" }}
+          {{ $small := (.Resize "400x webp q80").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+          {{ $large := (.Resize "900x webp q80").RelPermalink }}
+          {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+          <img src="{{ $featuredimage }}" srcset="
+              {{- with $small -}}, {{.}} 400w{{- end -}}
+              {{- with $medium -}}, {{.}} 550w{{- end -}}
+              {{- with $large -}}, {{.}} 768w{{- end -}}
+              {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
+            class="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" alt="About Saturn Spraying Systems" />
+          {{ end }}
+        </div>
       </div>
-
-      <div class="flex items-center justify-center w-full h-96 lg:w-1/2">
-
-        {{ with resources.Get "images/saturn-workers.png" }}
-        {{ $small := (.Resize "400x webp q80").RelPermalink }}
-        {{ $medium := (.Resize "550x webp q80").RelPermalink }}
-        {{ $large := (.Resize "900x webp q80").RelPermalink }}
-        {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-        <img src="{{ $featuredimage }}" srcset="
-            {{- with $small -}}, {{.}} 400w{{- end -}}
-            {{- with $medium -}}, {{.}} 550w{{- end -}}
-            {{- with $large -}}, {{.}} 768w{{- end -}}
-            {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-          class="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" alt="About Saturn Spraying Systems" />
-        {{ end }}
-      </div>
+      
 
     </div>
   </section>
@@ -152,51 +155,51 @@
         Wide</h3>
     </div>
 
-    <div class="container mx-auto justify-center">
-      <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
-        <div class="w-3/6 justify-center">
+    <div class="container mx-auto">
+      <div class="flex flex-col lg:flex-row mt-12 items-center  gap-6">
+        <div class="w-3/6 flex justify-center">
           {{ with resources.Get "images/flags/uk.png" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6 flex justify-center">
           {{ with resources.Get "images/flags/germany.png" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6 flex justify-center">
           {{ with resources.Get "images/flags/9.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6 flex justify-center">
           {{ with resources.Get "images/flags/10.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6 flex justify-center">
           {{ with resources.Get "images/flags/france.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6 flex justify-center">
           {{ with resources.Get "images/flags/australia.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6 flex justify-center">
           {{ with resources.Get "images/flags/italy.png" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6 flex justify-center">
           {{ with resources.Get "images/flags/ireland.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
@@ -204,49 +207,49 @@
         </div>
       </div>
       <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6  flex justify-center">
           {{ with resources.Get "images/flags/tatti.png" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6  flex justify-center">
           {{ with resources.Get "images/flags/denmark.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6  flex justify-center">
           {{ with resources.Get "images/flags/hungary.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6  flex justify-center">
           {{ with resources.Get "images/flags/poland.png" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6  flex justify-center">
           {{ with resources.Get "images/flags/canada.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6  flex justify-center">
           {{ with resources.Get "images/flags/norway.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6  flex justify-center">
           {{ with resources.Get "images/flags/india.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6  flex justify-center">
           {{ with resources.Get "images/flags/greece.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
@@ -254,31 +257,31 @@
         </div>
       </div>
       <div class="flex flex-col lg:flex-row mt-12 items-center justify-center gap-6">
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6  flex justify-center">
           {{ with resources.Get "images/flags/slovania.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
-          {{ with resources.Get "images/flags/finalnd.jpg" }}
+        <div class="w-3/6  flex justify-center">
+          {{ with resources.Get "images/flags/finland.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6  flex justify-center">
           {{ with resources.Get "images/flags/switzerland.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6  flex justify-center">
           {{ with resources.Get "images/flags/japan.png" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
           {{end}}
         </div>
-        <div class="w-3/6 justify-center">
+        <div class="w-3/6  flex justify-center">
           {{ with resources.Get "images/flags/9.jpg" }}
           {{ $flag := (.Resize "129x webp q100").RelPermalink }}
           <img src="{{ $flag }}" class="rounded-full border-amber-300" alt="">
