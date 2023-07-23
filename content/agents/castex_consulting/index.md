@@ -5,7 +5,7 @@ draft: false
 country: "France
 "
 description: "After many years of working within the French Food Ingredients Market, Christophe is launching his own consulting organisation. Saturn Spraying is extremely excited in working with Christophe, whose knowledge of the French Food Manufacturing Industy has assisted his company in establishing itself quickly. Christophe is comfortable in working in either English or French at an advanced technical level."
-author: "iMobilize LTD"
+author: "Outsourced Sales"
 # images: ["images/blog/branding-for-profit-book.jpg"]
 keywords: ""
 logo: "images/1.jpg"

@@ -6,7 +6,7 @@ draft: false
 country: "Philippines
 "
 description: "Teknomeal SpA specialises in developing technology solutions for our client’s food processing projects. Teknomeal works closely with the leading International equipment suppliers, which, coupled with the extensive expertise of our engineering team, helps to develop the optimum solution for our client’s application needs."
-author: "iMobilize LTD"
+author: "Outsourced Sales"
 # images: ["images/blog/branding-for-profit-book.jpg"]
 keywords: ""
 logo: "images/1.jpg"

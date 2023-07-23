@@ -4,7 +4,7 @@ date: 2020-09-23T15:28:43+06:00
 draft: false
 country: "Denmark"
 description: "Focuses on the meat, fish and dairy food sectors, providing processing and packaging solutions. We are able to supply either a single machine or a bespoke processing line. We work with the very best machine suppliers available to fulfil the high demands equired by the food market today. ScanStore’s experienced project department make life easier for our clients. Our highly skilled service team provide comprehensive support for our customers."
-author: "iMobilize LTD"
+author: "Outsourced Sales"
 # images: ["images/blog/branding-for-profit-book.jpg"]
 keywords: ""
 logo: "images/1.png"

@@ -6,7 +6,7 @@ draft: false
 country: "Japan
 "
 description: "Since our formation in 1976, CBM represents some of the best equipment manufacturers from around the World. These alliances enable us to offer our customers innovative solutions using proven technologies. From individual equipment requirements to full production lines, we work in partnership with our customers from initial enquiry through to satisfactory installation and after sales service. We continue to expand and develop our range providing greater choice to our customers."
-author: "iMobilize LTD"
+author: "Outsourced Sales"
 # images: ["images/blog/branding-for-profit-book.jpg"]
 keywords: ""
 logo: "images/1.jpg"

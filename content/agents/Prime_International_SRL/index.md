@@ -10,7 +10,7 @@ description: "PIC formed in 2007 to provide our customers in both Spain and Port
 We have a full range of innovative products and services for the food industry markets we serve. Our business is the sale and distribution of equipment manufactured by top companies worldwide, specializing in the different stages of each process, seeking the highest performance and productivity.
 
 Our sales and service team provides advice and technical assistance, designed to guide our customers to purchase the product that best suits your needs and ensure timely and efficient customer service."
-author: "iMobilize LTD"
+author: "Outsourced Sales"
 # images: ["images/blog/branding-for-profit-book.jpg"]
 keywords: ""
 logo: "images/1.jpg"

@@ -8,7 +8,7 @@ country: "AUSTRALIA
 description: "Are representatives for Australia and New Zealand for manufacturers of food process and packaging equipment. EFCA is a family-owned Australian business that has been established for over 50 years.
 
 Our Principals are leaders in their field and can provide the automation and technology that you need."
-author: "iMobilize LTD"
+author: "Outsourced Sales"
 # images: ["images/blog/branding-for-profit-book.jpg"]
 keywords: ""
 logo: "images/1.jpg"
