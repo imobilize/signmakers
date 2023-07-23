@@ -1,9 +1,9 @@
 ---
-title: Book Consultation
+title: Book A Call
 date: 2021-12-18T03:10:36.000Z
 draft: false
 language: en
-description: Book in your consultation to get a free sales strategy
+description: Book in your call to talk about your spraying needs
 ---
 
 

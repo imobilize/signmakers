@@ -1,35 +1,23 @@
-<style>
-  .logo-container {
-            margin-right: 16px; /* Adjust the spacing as per your preference */
-            padding: 0.7em;
-        }
-        .logo-container img {
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-            width: 100%;
-        }
-        .logo-container img:hover {
-            filter: none;
-        }
-</style>
-<section>
-  <div class="container mx-auto my-auto">
-      <div class="row flex justify-center">
-          <h2 class="relative mb-4 text-slate-800 text-3xl md:text-5xl xl:text-5xl tracking-tight mb-20 mt-20 leading-tight font-poppins tracking-tight">Our Proud <span style="color:#FE590F" class=" font-semibold">Agents</span></h2>
-      </div>
-      <div class="flex flex-wrap justify-center items-center">
-          {{ range (where .Site.RegularPages "Section" "agents") }}
-              <div class="logo-container">
-                  <a href="/agents">
-                      {{ $logo := .Resources.GetMatch "images/*.{png,jpg,gif}" }}
-                      {{ with $logo }}
-                          {{ with .Resize "609x500" }}
-                              <img src="{{ .RelPermalink }}" class="h-16 md:h-24" alt="">
-                          {{ end }}
-                      {{ end }}
-                  </a>
-              </div>
-          {{ end }}
-      </div>
-  </div>
+<section class="px-4 py-24 mx-auto max-w-7xl">
+    <h3 class="mb-3 text-3xl font-semibold leading-tight text-center text-gray-900 md:text-4xl">We work with multiple
+        agents
+        across the globe</h3>
+    <p class="mb-16 text-xl text-center text-gray-600">These agents are in your local country and help us ship our
+        products to you</p>
+    <div class="grid grid-cols-2 gap-16 mb-16 text-center lg:grid-cols-6">
+        {{ range (where .Site.RegularPages "Section" "agents") }}
+        <div class="flex items-center justify-center">
+            {{ $logo := .Resources.GetMatch "images/*.{png,jpg,gif}" }}
+            {{ with $logo }}
+            <img src="{{ .RelPermalink }}" alt="Saturn Spraying Agent" class="block object-contain h-16" />
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+    <div class="text-center">
+        <a href="/contact#worldwide-agents"
+            class="px-5 py-3 text-xl text-center font-medium text-white bg-secondary border border-sky-700 rounded shadow hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+            Find An Agent Located In Your Country
+        </a>
+    </div>
 </section>

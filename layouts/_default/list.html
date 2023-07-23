@@ -20,7 +20,7 @@
 
     <ul>
         {{ range .Site.Taxonomies.tags }}
-                <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
         {{ end }}
     </ul>
 
@@ -37,9 +37,9 @@
             <div
                 class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
                 {{ range $term, $value := (.Site.Taxonomies.categories) }}
-                <a href="{{ "/categories/" | relLangURL }}{{ $term | urlize }}">{{ $value }}</a>
+                <a href="{{ " /categories/" | relLangURL }}{{ $term | urlize }}">{{ $value }}</a>
                 {{ end }}
-                
+
                 {{ range $name, $taxonomy := .Site.Taxonomies }}
                 {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
                 <a href="{{ .RelPermalink }}" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">{{$name}}</a>
@@ -67,8 +67,9 @@
 
                     <!--Search button-->
                     <button
-                        class="relative z-[2] flex items-center rounded-r px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:bg-amber-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-500 active:shadow-lg" style="background-color: #FE590F;"
-                        type="submit" id="button-addon1" data-te-ripple-init data-te-ripple-color="light">
+                        class="relative z-[2] flex items-center rounded-r px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-500 active:shadow-lg"
+                        style="background-color: #FE590F;" type="submit" id="button-addon1" data-te-ripple-init
+                        data-te-ripple-color="light">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
                             <path fill-rule="evenodd"
                                 d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
@@ -78,45 +79,25 @@
                 </form>
             </div>
 
-            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+            <div class="w-full bg-neutral shadow flex flex-col my-4 p-6">
                 <div class="relative pb-16 mt-6">
-                    <div aria-hidden="true" class="hidden sm:block">
-                        <!-- <div class="absolute inset-y-0 left-0 w-1/2 rounded-r-3xl"></div><svg class="absolute -ml-3 top-8 left-1/2"
-                            width="404" height="392" fill="none" viewBox="0 0 404 392">
-                            <defs>
-                                <pattern id="8228f071-bcee-4ec8-905a-2a059a2cc4fb" x="0" y="0" width="20" height="20"
-                                    patternUnits="userSpaceOnUse">
-                                    <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-gray-900/60"
-                                        fill="currentcolor">
-                                    </rect>
-                                </pattern>
-                            </defs>
-                            <rect width="404" height="392" fill="url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)"></rect>
-                        </svg> -->
-                    </div>
-                    <div class="max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
-                        <div class="relative px-6 py-10 overflow-hidden bg-neutral shadow-xl rounded-2xl sm:px-12 sm:py-20">
-                            <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0"><svg
-                                    class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360" loading="lazy">
-                                    <path class="text-yellow-100 text-opacity-40" fill="currentcolor"
-                                        d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"></path>
-                                    <path class="text-yellow-100 text-opacity-40" fill="currentcolor"
-                                        d="M-217.088 544.086 1544.761 72l134.327 501.316-1761.849 472.086z"></path>
-                                </svg></div>
-                            <div class="relative">
-                                <div class="sm:text-center">
-                                    <h2 class="text-xl md:text-3xl  font-bold tracking-tight text-dark sm:text-3xl">Want To Talk To Someone?
-                                    </h2>
-                                    <p class="max-w-2xl mx-auto mt-6 text-lg text-dark">Do you have an application that could use
-                                        this
-                                        technology?</p>
-                                </div>
-                                <div class="mt-12 sm:mx-auto sm:flex sm:max-w-lg"><a href="./contact"
-                                        class="block w-full px-5 py-3 text-xl text-center font-medium text-white bg-primary border border-amber-500 rounded-md shadow hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
-                                        Contact Us</a></div>
+                    <div class=" max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
+
+                        <div class="relative">
+                            <div class="sm:text-center">
+                                <h3 class="text-xl md:text-3xl  font-bold tracking-tight text-dark sm:text-3xl">Want
+                                    To Talk To Someone?
+                                </h3>
+                                <p class="max-w-2xl mx-auto mt-6 text-lg text-dark">Do you have an application that
+                                    could use
+                                    this
+                                    technology?</p>
                             </div>
+                            <div class="mt-12 sm:mx-auto sm:flex sm:max-w-lg"><a href="/book-consultation"
+                                    class="block w-full px-5 py-3 text-xl text-center font-medium text-white bg-primary border border-amber-500 rounded-md shadow hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+                                    Contact Us</a></div>
                         </div>
+
                     </div>
                 </div>
             </div>
