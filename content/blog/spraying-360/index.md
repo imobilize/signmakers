@@ -12,7 +12,7 @@ tags: [ "Spining Disc", "Production"]
 
 Discover the power of precision spray coverage with Saturn Spraying's Spinning Disc Technology. From 'Top Only' to 'Top & Sides' and 'Top & Bottom' configurations, explore how this innovative system delivers uniform and consistent spraying of oils, flavors, liquids, and nuts onto various food products. Experience blockage-resistant delivery, easy maintenance, and enhanced control with digital potentiometer technology.
 
-# Top Only Spray Coverage
+## Top Only Spray Coverage
 
 A spinning disc with a focusing aperture lays down a simple spray pattern, perpendicular to the direction of product travel; that graduates in the strength of the spray linearly across its length. In certain applications, this can be very effective in providing a simple two-dimensional or “Top Only” spraying system. Note: The disc is inclined to improve the quality of the spray and to channel unused spray material back to the reservoir.
 
@@ -26,7 +26,7 @@ A proportion of the pump output is returned directly to the reservoir tank, whic
 - Continuous recirculation that inhibits separation of emulsions.
 - Enhanced temperature stabilisation of the spray.
 
-# Top & Sides Spray Coverage
+## Top & Sides Spray Coverage
 A spinning disc with a focusing aperture lays down a simple spray pattern; perpendicular to the direction of product travel, that graduates in the strength of the spray linearly across its length. In certain applications, this can be very effective in providing a simple two-dimensional or “Top Only” spraying system. For “Top & Sides" coverage, a single disc is not sufficient. Note: The disc is inclined to improve the quality of the spray and to channel unused spray material back to the reservoir.
 
 In Top & Sides spraying, it is important to ensure that the spray pattern covers evenly and with precision the key surfaces:
@@ -49,7 +49,7 @@ A proportion of the pump output is returned directly to the reservoir tank, whic
 - Continuous recirculation inhibits separation of emulsions.
 - Enhances the temperature stabilisation of the spray.
 
-# Top & Bottom Spray Coverage
+## Top & Bottom Spray Coverage
 Sometimes referred to as "All Over Spraying" this configuration requires a minimum of two pairs of contra-rotating disc heads. The appropriate "Top Only" or "Top & Sides" configuration, is augmented with a further pair of discs located under the conveyor; spraying the underside of the products. In this way, we can ensure that the spray pattern is extended to spray the key areas:
 
 2D Product
@@ -68,7 +68,7 @@ Sometimes referred to as "All Over Spraying" this configuration requires a minim
 
 The rotating pairs are configured to provide a consistent and uniform spray over and underneath the spray bed. A balanced stainless steel manifold ensures that the pump output is evenly distributed to each spray head. Spray material that is not deposited on the product is collected under the conveyor and channelled back to the tank.
 
-#### Digital Potentiometer
+### Digital Potentiometer
 This provides a unique signature for each machine set-up. Product changeovers can be quickly accommodated by entering the signature code into the machine for the appropriate machine configuration. The accuracy inherent in the system ensures it correctly returns to an identical set up as the last batch for that particular product.
 
 A proportion of the pump output is returned directly to the reservoir tank, which provides:-

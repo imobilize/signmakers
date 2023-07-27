@@ -2,13 +2,13 @@
 title: "DiscMaster™"
 date: 2023-05-23T15:28:43+06:00
 draft: false
-description: "Medium volume spraying system designed for the small Artisan and medium sized business enterprise. Covers belt widths to 700mm, and provides 'Top Only', 'Top & Sides' and 'All Over' spray coverage. Can be modified to offer chain drive for products on trays."
+description: "Discmaster System is Saturn's Small to Medium Sized Business Spraying System. Configured for Top Or All Over Precision Spraying."
 featuredImage: "images/1.png"
 image1: "images/2.png"
 image1: "images/3.png"
 image1: "images/4.png"
 categories: "production"
-keywords: "production"
+keywords: "Discmaster, Precision Spraying, Food Spraying, Spray Coverage"
 Height: 
 Width: 
 Operators:
@@ -30,7 +30,7 @@ UK Power Requirements: 240V Single Phase 50Hz & Earth"
 ---
 
 
-# The DiscMaster™ Spraying System
+## The DiscMaster™ Spraying System
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
   <iframe src="https://www.youtube.com/embed/drWnTtA2bRw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 8px;" allowfullscreen="" frameborder="0"></iframe>
@@ -48,7 +48,7 @@ Operationally, the DiscMaster™ offers repeatable precision in the application 
  
 - Enhanced temperature stabilisation of the spray material
 
-## DiscMaster™ Spraying System Schematics
+#### DiscMaster™ Spraying System Schematics
 
 ![DiscMaster™ Spraying System Schematics](images/5.jpg)
 
@@ -62,7 +62,7 @@ Operationally, the DiscMaster™ offers repeatable precision in the application 
 - Quick Product Changeovers: Incrementing/decrementing the code on the digital potentiometers alters the performance of the system's conveyors and pumps to the required level, ensuring perfect re-registration of the system set-up from one production batch to another.
 - Environmentally Friendly: Saturn's patented spinning disc technology is seen as a safe and environmentally friendly spray coating system for modern work environments.
 
-## System Construction
+### System Construction
 
 Built as a single integral unit with removable access panels and stainless steel pipe work, the DiscMaster™ is designed for ease of cleaning and maintenance. When configured for both top and bottom spraying, there will be a minimum working height for the conveyor belt. The Standard Disc Motor supplied is an IP66 Stainless Steel which provides a high level of water protection with an excellent cosmetic finish. It allows for easy cleaning as well as ease of maintenance.
 
@@ -70,7 +70,7 @@ The width of the machine can be selected to suit either the application or the e
 
 The standard length of the machine is 1000 mm, but the in-feed and out-feed can be extended as required to meet system installation requirements. Conveyor belts can be either stainless steel wire enrobing for loose product or chain drive for trays. The maximum belt width available with the DiscMaster™ series is 700 mm.
 
-## System Configuration Options
+### System Configuration Options
 
 - Low Sensor Level & Beacon: A visual warning by an amber flashing beacon indicates that the reservoir requires topping up.
 - Extended Conveyor: When used in a standalone offline configuration, extending the length of the conveyor in-feed and out-feed sections allows trays and/or loose products to be loaded and off-loaded with ease.
@@ -78,11 +78,11 @@ The standard length of the machine is 1000 mm, but the in-feed and out-feed can 
 - Conveyor Mist Covers: This option is highly recommended when the machine is used for the spraying of oils. The covers provide a simple mechanism to reduce the entry aperture of the spraying machine to the minimum clearance necessary for the product to transit the machine.
 - Sealed Stainless Steel IP66 Disc Motors: The Standard Disc Motor supplied is an IP66 Stainless Steel which provides a high level of water protection with an excellent cosmetic finish.
   
-## System Materials
+### System Materials
 
 The machine is constructed in stainless steel grade 304, with pipework in 316-grade steel. All components in direct contact with the material being sprayed and the product are stainless steel or other food quality materials. The design ensures all areas of the machine are fully accessible for cleaning, and every effort is made to ensure the hygiene aspects of the machine are to the highest possible standard.
 
-## System Electrical Requirements
+### System Electrical Requirements
 
 These machines require a single-phase mains power connection for operation. The equipment will be configured to work with the standard single-phase voltage systems in the country of operation. Note: If a Temperature Control System is integrated into the unit, then a 3-phase supply will be required.
 

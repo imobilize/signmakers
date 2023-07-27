@@ -8,7 +8,7 @@ image1: "images/1.jpg"
 image2: "images/2.jpg"
 image3: "images/3.jpg"
 categories: "production"
-keywords: "production"
+keywords: "Production, Sprinkler, Food Spraying, Satrun Spraying"
 Height: 
 Width: 
 Operators:

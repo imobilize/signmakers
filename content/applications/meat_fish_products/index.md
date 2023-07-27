@@ -7,11 +7,11 @@ description: Meat & Fish Breadcrumbed foods with low fat uptake using barrier em
 featuredImage: "images/1.jpg"
 ---
 
-# Meat & Fish Products
+## Meat & Fish Products
 
 ![Meat and Fish Products](images/2.png)
 
-## Water Spraying to Relieve Freezer Burn
+### Water Spraying to Relieve Freezer Burn
 
 Freezer burn, appearing as brown leathery spots on frozen meats and vegetables, occurs when the product is damaged by dehydration and oxidation as air reaches the food's surface. While freezer burn itself doesn't make the food unsafe, it does make it undesirable. Fluctuations in freezer temperature and low moisture levels can also promote the development of this blight.
 

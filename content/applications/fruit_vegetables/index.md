@@ -7,9 +7,9 @@ description: "Precision Spraying onto Fruit and vegetables. Extending Shelf life
 featuredImage: "images/1.jpg"
 ---
 
-# Fruit & Vegetables
+## Fruit & Vegetables
 
-## Extending the Shelf Life of Fruit and Vegetables
+### Extending the Shelf Life of Fruit and Vegetables
 
 Food safety is vitally important to the food processing industry since all food items are extremely vulnerable to contamination. The uncontrolled growth of microorganisms such as bacteria, fungi, and protozoa results in food spoilage, which reduces both the shelf life and yield of the product. The food industry always faces a challenging situation in minimizing microbial contamination, providing customers with the best possible product while protecting their narrow profit margins in a highly competitive market.
 

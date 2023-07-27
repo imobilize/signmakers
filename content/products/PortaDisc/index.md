@@ -8,7 +8,7 @@ image1: "images/PortaDisc2.jpg"
 image2: "images/PortaDisc3.jpg"
 image3: "images/PortaDisc4.jpg"
 categories: "production"
-keywords: "production"
+keywords: "PortaDisc, Production, Food Processing, Sensor trigger"
 Height: 
 Width: 
 Operators:
@@ -26,11 +26,11 @@ UK Power requirements are :-      415V 3Ph 50Hz + Neutral + Earth."
 Spray_Material_Recirculation: "Unused spray material that passes through the conveyor line can be recovered by a collection tray. The material can either be returned to the system reservoir or discarded. The design and effectiveness of this reclamation system is entirely dependent on the conveyor design and whether the materials used in the conveyor’s construction are food-safe. Where design restrictions allow, an effective spray material re-circulation system can be provided."
 
 ---
-# PortaDisc™
+## PortaDisc™
 
 The PortaDisc™ System provides a 'Top Only' spray capability, in situations where space or an existing conveyor line precludes the use of either the mainstream DiscMaster™ or DiscMatic™ Spraying Systems. By using key design components from the DiscMatic™ System library, a highly flexible range of 'Top Only' spray systems offered under the title "PORTADISC" can be configured.
 
-## Spray Head Configuration
+### Spray Head Configuration
 
 A space-limited, top-only spray capability is available with the PortaDisc™ Spray Head. This will accommodate belt widths up to 1600 mm starting with a single contra-rotating pair of spinning discs and increasing to two ganged pairs as required. The discs are inclined to provide a high-quality spray pattern and to channel unused spray material back to the reservoir via a re-circulation channel. This setup provides the classic precision Saturn Spraying regimen.
 
@@ -38,6 +38,6 @@ The head is positioned over the existing conveyor belt at the optimum height for
 
 <!-- ![PortaDisc PD4 Cleaned](portadisc_image.jpg) -->
 
-## Spray Material Recirculation
+### Spray Material Recirculation
 
 Unused spray material that passes through the conveyor line can be recovered by a collection tray. The material can either be returned to the system reservoir or discarded. The design and effectiveness of this reclamation system are entirely dependent on the conveyor design and whether the materials used in the conveyor's construction are food-safe. Where design restrictions allow, an effective spray material re-circulation system can be provided.

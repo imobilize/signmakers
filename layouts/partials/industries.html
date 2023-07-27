@@ -2,7 +2,7 @@
   <div class="container mx-auto my-auto">
     <div class="max-w-7xl mx-auto">
       <h2
-        class="relative mb-8 text-center text-dark text-slate-800 text-3xl md:text-5xl xl:text-5xl tracking-tight mb-12 md:mt-6 mt-0 leading-tight font-poppins tracking-tight">
+        class="text-3xl font-bold tracking-tight text-dark sm:text-4xl text-center mb-12">
         <span class="font-bold">Industries</span> <span class="">that we serve</span>
       </h2>
       <p class="text-left mb-6 text-xl sm:text-xl">At the core of Saturn Spraying's expertise lies their mastery of
@@ -22,7 +22,7 @@
       <!-- Grid -->
       <div class="grid lg:grid-cols-2 gap-6">
         <!-- Card -->
-        <a class="group sm:flex" href="#">
+        <a class="group sm:flex" href="/applications/fruit_vegetables/">
           <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
             {{ with resources.Get "images/vegetables.jpg" }}
           {{ $small := (.Resize "400x webp q100").RelPermalink }}
@@ -60,7 +60,7 @@
         <!-- End Card -->
 
         <!-- Card -->
-        <a class="group sm:flex" href="#">
+        <a class="group sm:flex" href="/applications/meat_fish_products/">
           <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
             {{ with resources.Get "images/fish-meat.jpg" }}
           {{ $small := (.Resize "400x webp q100").RelPermalink }}
@@ -97,7 +97,7 @@
         <!-- End Card -->
 
         <!-- Card -->
-        <a class="group sm:flex" href="#">
+        <a class="group sm:flex" href="/applications/biscuit_snack_foods/">
           <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
             {{ with resources.Get "images/cookies.jpg" }}
           {{ $small := (.Resize "400x webp q100").RelPermalink }}
@@ -135,7 +135,7 @@
         <!-- End Card -->
 
         <!-- Card -->
-        <a class="group sm:flex" href="#">
+        <a class="group sm:flex" href="/applications/bakery-products/">
           <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
             {{ with resources.Get "images/croissant.jpg" }}
           {{ $small := (.Resize "400x webp q100").RelPermalink }}
@@ -174,7 +174,7 @@
       </div>
       <div class="flex mt-6">
         <div class="w-full md:w-1/2 justify-center">
-          <a class="group sm:flex" href="#">
+          <a class="group sm:flex" href="/applications/low_fat_products/">
             <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
               {{ with resources.Get "images/low-fat-min.jpg" }}
             {{ $small := (.Resize "400x webp q100").RelPermalink }}

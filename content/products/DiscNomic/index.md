@@ -2,11 +2,11 @@
 title: "DiscNomic™"
 date: 2023-05-24T15:28:43+06:00
 draft: false
-description: "Entry Level Single Disc Spraying System providing a 'top only' spray coverge across a belt width of 300mm to 610mm. System can be modified to offer a chain drive to work with products on trays if required."
+description: "DiscNomic is Saturn Spraying Systems entry level single disc Top Only Spray Machine"
 featuredImage: "images/2.jpg"
 image1: "images/1.png"
 categories: "production"
-keywords: "production"
+keywords: "DiscNomic, Precision Spraying System, Food Processing, Sensor trigger"
 Height: 
 Width: 
 Operators:
@@ -19,7 +19,7 @@ System_Materials: The machine is constructed in stainless steel grade 304, with 
 System_Electrical_Requirements: These machines require a single phase mains power connection for operation. For UK operation, the power requirements are 240V 1 Ph 50Hz & Earth.
 ---
 
-# The DiscNomic™ Spraying System
+## The DiscNomic™ Spraying System
 
 The DiscNomic™ Spraying Machine is a single disc, 'Top Only' spraying machine designed directly for the small business establishment. The cost-effective construction and outstanding professional performance provide (in this entry level system) operational precision and replicable results, previously unavailable. The DiscNomic™ allows for the spraying of glazes and oils, at ambient temperatures, onto the top of either loose products or those placed upon trays.
 
@@ -29,7 +29,7 @@ The DiscNomic™ Spraying Machine is a single disc, 'Top Only' spraying machine 
 
 Transportable on castors for easy relocation within the factory, it can be used as either a stand-alone offline unit or integrated into a small production facility.
 
-## System Construction
+### System Construction
 
 Built as a single integral unit with removable access panels and stainless steel pipe work, the DiscNomic™ is designed for ease of cleaning and maintenance. Its 600 mm conveyor belt width comes in either stainless steel wire enrobing for loose product or chain drive for trays.
 
