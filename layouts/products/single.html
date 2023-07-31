@@ -48,53 +48,50 @@
       <div class="lg:col-span-8 md:col-span-6">
         <h1 class="my-3 text-4xl md:text-5xl xl:text-5xl font-bold tracking-tight mb-12 mx-auto text-center">{{ .Title
           }}</h1>
-        <div class="px-6 border-r">
-          <div class="flex flex-col md:flex-row -mx-4">
-            <div class="md:flex-1 px-4 w-full">
+          <div class="px-6 border-r">
+            <div class="flex flex-col md:flex-row -mx-4">
               <div class="md:flex-1 px-4 w-full">
-                <div class="md:flex-1 px-4 w-full">
-                  <div x-data="{ image: 1 }" x-cloak>
-                    <div class="h-80 rounded-lg bg-gray-100 mb-4">
-                      <div x-show="image === 1" class="h-80 rounded-lg bg-cover bg-no-repeat"
-                        :style="'background-image: url(' + '{{ .Params.featuredImage }}' + ');'">
-                        <img :src="'{{ .Params.featuredImage }}'" alt="Featured Image" class="invisible">
+                <div x-data="{ image: 1 }" x-cloak>
+                  <div class="h-80 rounded-lg bg-gray-100 mb-4">
+                    <template x-for="i in 4">
+                      <div x-show="image === i" class="h-80 rounded-lg bg-cover bg-no-repeat"
+                        :style="'background-image: url(' + getImageUrl(i) + ');'">
                       </div>
-                      <div x-show="image === 2" class="h-80 rounded-lg bg-cover bg-no-repeat"
-                        :style="'background-image: url(' + '{{ .Params.image1 }}' + ');'">
-                        <img :src="'{{ .Params.image1 }}'" alt="Image 1" class="invisible">
+                    </template>
+                  </div>
+                  <div class="flex -mx-2 mb-4">
+                    <template x-for="i in 4">
+                      <div class="flex-1 px-2">
+                        <button x-on:click="image = i"
+                          :class="{ 'ring-2 ring-indigo-300 ring-inset': image === i }"
+                          class="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center image-selector bg-cover bg-no-repeat"
+                          :style="'background-image: url(' + getImageUrl(i) + ');'">
+                        </button>
                       </div>
-                      <div x-show="image === 3" class="h-80 rounded-lg bg-cover bg-no-repeat"
-                        :style="'background-image: url(' + '{{ .Params.image2 }}' + ');'">
-                        <img :src="'{{ .Params.image2 }}'" alt="Image 2" class="invisible">
-                      </div>
-                      <div x-show="image === 4" class="h-80 rounded-lg bg-cover bg-no-repeat"
-                        :style="'background-image: url(' + '{{ .Params.image3 }}' + ');'">
-                        <img :src="'{{ .Params.image3 }}'" alt="Image 3" class="invisible">
-                      </div>
-                    </div>
-                    <div class="flex -mx-2 mb-4">
-                      <template
-                        x-for="(item, index) in ['{{ .Params.featuredImage }}', '{{ .Params.image1 }}', '{{ .Params.image2 }}', '{{ .Params.image3 }}']">
-                        <div class="flex-1 px-2">
-                          <button x-on:click="image = index + 1"
-                            :class="{ 'ring-2 ring-indigo-300 ring-inset': image === index + 1 }"
-                            class="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center image-selector bg-cover bg-no-repeat"
-                            :style="'background-image: url(' + item + ');'">
-                            <img :src="item" :alt="getImageAlt(index + 1)" class="invisible">
-                          </button>
-                        </div>
-                      </template>
-                    </div>
+                    </template>
                   </div>
                 </div>
               </div>
             </div>
+          
+            <article class="prose dark:prose-invert lg:prose-xl mt-6">
+              {{ .Content }}
+            </article>
           </div>
-
-          <article class="prose dark:prose-invert lg:prose-xl mt-6">
-            {{.Content}}
-          </article>
-        </div>
+          <script>
+            function getImageUrl(index) {
+              // Define an array containing the image URLs corresponding to featuredImage, image1, image2, image3
+              const imageUrls = [
+                '{{ .Params.featuredImage }}',
+                '{{ .Params.image1 }}',
+                '{{ .Params.image2 }}',
+                '{{ .Params.image3 }}',
+              ];
+          
+              // Return the URL of the image based on the index (1-based)
+              return imageUrls[index - 1];
+            }
+          </script>       
       </div>
 
       <div class="px-6 lg:px-0 lg:col-span-4 md:col-span-6">

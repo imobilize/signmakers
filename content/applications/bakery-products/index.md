@@ -3,12 +3,14 @@ title: "Bakery Products Food Spraying"
 date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
-description: Egg Glazing, Bakery Products Food Spraying with Precision Spinning Disc Technology
+description: Additions of flavours and textures to Biscuits and Snack Foods
 featuredImage: "images/1.jpg"
+keywords: "Milk Glazing, oil and salt coating"
+
 ---
 <div id="eggglazing"></div>
 
-# Egg Glazing
+## Egg Glazing
 
 Egg Glazing, sometimes referred to as Egg Washing, is the singular most popular spraying application in the bakery industry. It transforms a pastry product into the golden honey-colored product that we find mighty difficult to resist. These could include but are not limited to:
 
@@ -45,23 +47,23 @@ Our clients tell us that our Technology allows them to:
 <!-- Oil Gazing -->
 
 
-# Oil Spraying
+## Oil Spraying
 
 Food Production requires the spraying of oil onto food surface for the following reasons:
 
-## Barrier Coat
+### Barrier Coat
 
 Oils such as Palm Oil are sprayed over the outside of the product. The coating reduces the uptake of moisture in the next manufacturing stage. Since viscosity is inversely proportional to temperature for all materials, the palm oil (which is a solid at room temperature) is heated to the point where the viscosity is optimum for precision spraying.
 
-## Provide Lubrication
+### Provide Lubrication
 
 Oil acts as a lubricant between the layers of pastry in products like Filo Pastry, where dough oiling ensures an excellent product.
 
-## Crisping Agent
+### Crisping Agent
 
 Oil is sprayed onto the outside of the product to improve product texture in the next stage of the cooking process. For example, French Fries & Roast Potatoes.
 
-## Barrier Coat Spraying
+### Barrier Coat Spraying
 
 Dough Oiling is simply the process of providing a light film of oil to the outer surface of kneaded dough, including dough balls and pizza bases. One of the most popular oiling processes is the preparation of Filo {Phyllo, Fillo} pastry for pie lines. Oil can be applied to either a single side or both sides of the continuous pastry line, providing lubrication as it is folded and layered.
 
@@ -87,7 +89,7 @@ These systems provide:
 
 <!-- Bread Preservatives -->
 
-# Bread Preservatives
+## Bread Preservatives
 
 For leavened bread products, particularly in warmer environments, a mixture of Potassium Sorbate and other mold inhibitors is applied to the external surfaces of the bread to increase the shelf life. By inhibiting the growth of mold, the shelf life can be significantly extended without compromising either the taste or the cosmetic appearance of the bread. The Potassium Sorbate needs to be applied with evenness and precision to ensure that the loaf is completely coated.
 

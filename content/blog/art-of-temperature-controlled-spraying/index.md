@@ -10,7 +10,7 @@ categories: "Spraying"
 tags: [ "Temperature Controlled Spraying", "Production"]
 ---
 
-# Spraying at Temperatures
+## Spraying at Temperatures
 
 Not all food spraying can be accomplished at ambient temperature; some applications require that the spraying material is heated or chilled to a temperature other than that of its surroundings. There are typically three reasons why temperature is varied at the point of spray application.
 

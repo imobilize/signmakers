@@ -7,7 +7,7 @@ description: Additions of flavours and textures to Biscuits and Snack Foods
 featuredImage: "images/2.jpg"
 ---
 
-# Oil & Salt Coating
+## Oil & Salt Coating
 
 Oil & Salt coating of Biscuits and Snacks is easily accomplished with Saturn's DiscMatic™ Slurry System. As with the application of flavours, spices, and seasoning, a base layer of oil provides the medium for the additive to form a simple slurry mixture. This is a particularly efficient and effective way of applying your coating as it reduces the number and expense of the processing equipment and improves the adhesion and distribution of the particulate over the food product.
 
@@ -26,7 +26,7 @@ Saturn's DiscMatic™ Slurry Variant System demonstrates the key features requir
 
 <!-- Milk Glazing -->
 
-# Milk Glazing
+## Milk Glazing
 
 Milk Glazing is most often used to put a 'shine' on sweet biscuits, and the quality of glaze can make a difference to the visual appeal of the product. The glaze must be applied in a homogenous, streak-free process. Over-glazing, spots, drips, or void areas are simply not acceptable.
 
@@ -45,13 +45,13 @@ Our clients report that the benefits of our technology allow them to:
 - Sweet Biscuits
 
 
-# Biscuit Flavouring
+## Biscuit Flavouring
 
 ![Biscuits Flavouring](images/3.jpg)
 
 Flavourings are commonly mixed with a carrier oil to improve handling and application during the manufacturing process. Flavours are not restricted to simple liquid additives but can also include powders, providing they dissolve completely.
 
-## Spices Flavours
+### Spices Flavours
 
 The key requirements associated with successful application of flavourings are:
 
@@ -66,7 +66,7 @@ Applying flavour requires the control of the deposition rate. The process should
 
 Saturn Spraying Systems' range of spinning disc machines is ideal for the process of applying flavour. The DiscMaster™ and DiscMatic™ machines are virtually blockage free and are able to apply just the right amount of flavour in a consistent and replicable way time after time.
 
-# Nut & Sugar Sprinkling
+## Nut & Sugar Sprinkling
 
 ![Nut & Sugar Sprinkling on Biscuits](images/4.jpg)
 

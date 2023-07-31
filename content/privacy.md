@@ -8,9 +8,9 @@ description: Privacy policy
 
 ### 1. INTRODUCTION  
 
-This privacy notice provides you with details of how we collect and process your personal data through your use of our site www.outsourcedsales.com. By providing us with your data, you warrant to us that you are over 13 years of age.
+This privacy notice provides you with details of how we collect and process your personal data through your use of our site [www.saturnspraying.com](/). By providing us with your data, you warrant to us that you are over 13 years of age.
 
-Outsourced Sales/Saturn Spraying [is/am/are] the data controller and we are responsible for your personal data (referred to as “we”, “us” or “our” in this privacy notice)
+iMobilize Ltd/Saturn Spraying ltd [is/am/are] the data controller and we are responsible for your personal data (referred to as “we”, “us” or “our” in this privacy notice)
 
 ### 2. WHAT DATA DO WE COLLECT ABOUT YOU, FOR WHAT PURPOSE AND ON WHAT GROUND WE PROCESS IT 
 
@@ -30,16 +30,15 @@ Sensitive Data
 We do not collect any Sensitive Data about you. Sensitive data refers to data that includes details about your race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership, information about your health and genetic and biometric data. We do not collect any information about criminal convictions and offences.
 
 General.
-Saturn Spraying shall maintain the confidentiality of the Client Data and shall not without the prior written consent of the Client or in accordance with the Contract, disclose or copy the Client Data other than as necessary for the performance of the Program or its express rights and obligations under the Contract. Saturn Spraying shall implement technical and organizational security measures in accordance with [the Informa on Security Addendum]. Saturn Spraying undertakes to disclose the Client Data only to those of its officers, employees, agents, contractors, and direct and indirect subcontractors to whom, and to the extent to which, such disclosure is necessary for the purposes contemplated under the Contract of the specific program or as otherwise reasonably necessary for the provision or receipt of the Program, and shall be responsible to the Client for any acts or omissions of any of the persons referred to in clause in respect of the confidentiality and security of the Client Data as if they were Saturn Spraying own. The provisions shall not apply to information which comes into the public domain through no fault of Saturn Spraying, its officers, employees, agents, or contractors; is lawfully received by Outsourced Sales from a third party free of any obligation of confidence at me of its disclosure. This clause shall survive the termination or expiry of the Contract for a period of 10 years. To the extent any Client Data is Protected Data, Saturn Spraying shall ensure that such Client Data may be disclosed or used only to the extent such disclosure or use does not conflict with any of Saturn Spraying obligations under the Data Protection Addendum.
+Saturn Spraying shall maintain the confidentiality of the Client Data and shall not without the prior written consent of the Client or in accordance with the Contract, disclose or copy the Client Data other than as necessary for the performance of the Program or its express rights and obligations under the Contract. Saturn Spraying shall implement technical and organizational security measures in accordance with [the Informa on Security Addendum]. Saturn Spraying undertakes to disclose the Client Data only to those of its officers, employees, agents, contractors, and direct and indirect subcontractors to whom, and to the extent to which, such disclosure is necessary for the purposes contemplated under the Contract of the specific program or as otherwise reasonably necessary for the provision or receipt of the Program, and shall be responsible to the Client for any acts or omissions of any of the persons referred to in clause in respect of the confidentiality and security of the Client Data as if they were Saturn Spraying own. The provisions shall not apply to information which comes into the public domain through no fault of Saturn Spraying, its officers, employees, agents, or contractors; is lawfully received by Saturn Spraying from a third party free of any obligation of confidence at me of its disclosure. This clause shall survive the termination or expiry of the Contract for a period of 10 years. To the extent any Client Data is Protected Data, Saturn Spraying shall ensure that such Client Data may be disclosed or used only to the extent such disclosure or use does not conflict with any of Saturn Spraying obligations under the Data Protection Addendum.
 
 ### 3. HOW WE COLLECT YOUR PERSONAL DATA
 
-We may collect data about you by you providing the data directly to us (for example by filling in forms on our site or by sending us emails). We may automatically collect certain data from you as you use our website by using cookies and similar technologies. 
+We may collect data about you by you providing the data directly to us (for example by filling in forms on our site or by sending us emails). We may automatically collect certain data from you as you use our website by using cookies and similar technologies.
 
 We may receive data from third parties such as analytics providers such as Google based outside the EU, advertising networks such as Facebook based outside the EU, such as search information providers such as Google based outside the EU, providers of technical, payment and delivery services, such as data brokers or aggregators.
 
 We may also receive data from publicly availably sources such as Companies House and the Electoral Register based inside the EU.
-
 
 ### 4. MARKETING COMMUNICATIONS 
 
@@ -47,11 +46,9 @@ Our lawful ground of processing your personal data to send you marketing communi
 
 Under the Privacy and Electronic Communications Regulations, we may send you marketing communications from us if (i) you made a purchase or asked for information from us about our goods or services or (ii) you agreed to receive marketing communications and in each case you have not opted out of receiving such communications since. Under these regulations, if you are a limited company, we may send you marketing emails without your consent. However you can still opt out of receiving marketing emails from us at any time.
 
- 
-
 Before we share your personal data with any third party for their own marketing purposes we will get your express consent.
 
-You can ask us or third parties to stop sending you marketing messages at any time [by logging into the website and checking or unchecking relevant boxes to adjust your marketing preferences] OR [by following the opt-out links on any marketing message sent to you or] OR by emailing us at support@outsourcedsales.com at any time].
+You can ask us or third parties to stop sending you marketing messages at any time [by logging into the website and checking or unchecking relevant boxes to adjust your marketing preferences] OR [by following the opt-out links on any marketing message sent to you or] OR by emailing us at support@saturnspraying.com.com at any time].
 
 If you opt out of receiving marketing communications this opt-out does not apply to personal data provided as a result of other transactions, such as purchases, warranty registrations etc. 
 
@@ -111,7 +108,7 @@ You can see more about these rights at:
 
 https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/
 
-If you wish to exercise any of the rights set out above, please email us at support@outsourcedsales.com.
+If you wish to exercise any of the rights set out above, please email us at support@saturnspraying.com.
 
 You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive or refuse to comply with your request in these circumstances.
 
@@ -131,14 +128,14 @@ Full name of legal entity: Andre Barrett
 
 Job Title: Operations Director
 
-Email address: support@outsourcedsales.com
+Email address: support@saturnspraying.com
 
 Postal address: Kemp House, 160 City Road, London, EC1V 2NX
 
-It is very important that the information we hold about you is accurate and up to date. Please let us know if at any time your personal information changes by emailing us at support@outsourcedsales.com.  
+It is very important that the information we hold about you is accurate and up to date. Please let us know if at any time your personal information changes by emailing us at support@saturnspraying.com.  
 
 Services will be provided by:
-Outsourced Sales
+Saturn Spraying
 Kemp House, 160 City Road, London, EC1V 2NX
 Effective Date: April 2, 2023
 
