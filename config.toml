@@ -1,4 +1,4 @@
-baseURL = "https://outsourcedsales.com/"
+baseURL = "https://www.saturnspraying.com/"
 title = "Saturn Spraying Ltd"
 
 languageCode = "en-us"
@@ -25,8 +25,8 @@ home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
 author = "Satrun Spraying Ltd"
 authorimage = "../assets/images/global/author.webp"
-github = "https://github.com/imobilize"
-facebook = "https://facebook.com/outsourcedsales"
+github = "https://github.com/imobilize/saturnspraying"
+facebook = "https://www.facebook.com/saturnsprayingltd"
 og_image = "/images/saturn_spraying_systems.png"
 sitename = "Satrun Spraying Ltd"
 twitter = "@outsourcedsales"
@@ -35,7 +35,7 @@ logo = ""
 keywords = "fruit glaze sprayers, automatic fruit glaze sprayer, automatic fondant sprayers, amanual fondant sprayer, finishing machine,chocolate sprayers,butter sprayer,egg wash sprayers,egg wash spraying,egg glaze spraying,egg glaze sprayer,disk sprayer,spray-mix,depositiors,food processing machines,baking equipment,depositing,pizzabase spraying,waterfall depositors,oil spraying,milk wash spraying,milk spraying,disc spraying,disk sprayer,liquid flovouring,liquid flavouring,liquid flavoring,oil deposition,rademaker,fritsch,rheon,kortlever,bakon,arcall,acrivarn,repco,tromp,connolly international,peeters,alimetec,anditec,artiso,efca"
 home = "Home"
 # Google Analitycs
-googleAnalitycsID = "" # Your ID
+googleAnalitycsID = "GTM-NP87DJBR" # Your ID
 
 [markup]
   defaultMarkdownHandler = "goldmark"
