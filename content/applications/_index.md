@@ -1,5 +1,5 @@
 ---
-title: "Applications - Saturn Spraying Ltd | Specialists in Food Spraying Technology"
+title: "Applications Of Food Spraying Technology"
 date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
