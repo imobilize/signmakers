@@ -1,41 +1,14 @@
-<title itemprop="name">
-  {{ if .IsHome }}
-      {{ $.Site.Params.description }} - {{ .Title }}
-  {{ else }}
-      {{ .Title }} - {{ .Site.Title }}
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ hugo.Generator }}
+
+  {{ with .Params.FeaturedImage }}
+  <meta property="og:image" content="{{ . | relURL }}" />
   {{ end }}
-</title>
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-<meta name="keywords" content="{{ with .Params.keywords }}{{ range $index, $keyword := . }}{{ if $index }}, {{ end }}{{ $keyword }}{{ end }}{{ end }}" />
-<meta property="og:title" content="{{ if .IsHome }}{{ $.Site.Params.description }} - {{ .Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}" />
-<meta itemprop="name" content="{{ if .IsHome }}{{ $.Site.Params.description }} - {{ .Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}" />
-<meta name="application-name" content="{{ if .IsHome }}{{ $.Site.Params.description }} - {{ .Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}" />
-<meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
-<meta property="og:type" content="website" />
-<meta property="og:description"
-    content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-<meta property="og:site_name" content="{{ .Site.Title }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:locale" content="en">
-
-{{ with .Params.featuredImage }}
-<meta property="og:image" content="{{ . | absURL }}" />
-<meta property="og:image:secure_url" content="{{ . | absURL }}" />
-{{ else }}
-<meta property="og:image" content="{{ .Site.Params.og_image | absURL }}" />
-<meta property="og:image:secure_url" content="{{ .Site.Params.og_image | absURL }}" />
-{{ end }}
-
-<!-- Twitter Card metadata -->
-{{ if .IsHome }}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ $.Site.Params.description }} - {{ .Title }}">
-<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="twitter:image" content="{{ .Site.Params.og_image | absURL }}">
-{{ else }}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
-<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="twitter:image" content="{{ with .Params.featuredImage }}{{ . | absURL }}{{ else }}{{ .Site.Params.og_image | absURL }}{{ end }}">
-{{ end }}
-<meta property="og:type" content="website" />
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+  {{ template "_internal/schema.html" . }}
