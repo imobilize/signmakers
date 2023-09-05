@@ -1,0 +1,159 @@
+{{define "main"}}
+
+
+<section class="relative md:pb-24 md:pt-12 pb-16 pt-6">
+
+    <div class="lg:container mx-auto">
+        <nav class="flex px-6 mb-6" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                {{ range $index, $item := .Ancestors.Reverse }}
+                {{ with $item }}
+                <li class="inline-flex items-center">
+                    <a href="{{ .RelPermalink}}"
+                        class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary dark:text-gray-400 dark:hover:text-white">
+                        {{ if lt $index 1}}
+                        <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                            </path>
+                        </svg>
+                        {{ else }}
+                        <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        {{ end }}
+                        {{ .Title }}
+                    </a>
+                </li>
+                {{ end }}
+                {{- end }}
+                <li aria-current="page">
+                    <div class="flex items-center">
+                        <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">{{ .Title
+                            }}</span>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+        <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+            <div class="lg:col-span-8 md:col-span-6">
+                <h1 class="my-3 text-4xl md:text-5xl xl:text-5xl font-bold tracking-tight mb-12 mx-auto text-center">{{
+                    .Title }}</h1>
+                <div class="px-6 border-r">
+
+                    {{ with .Resources.GetMatch .Params.featuredImage }}
+                    {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                    {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                    {{ $large := (.Resize "900x webp q80").RelPermalink }}
+                    {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+                    <img src="{{ $featuredimage }}" srcset="
+                  {{- with $small -}}, {{.}} 400w{{- end -}}
+                  {{- with $medium -}}, {{.}} 550w{{- end -}}
+                  {{- with $large -}}, {{.}} 768w{{- end -}}
+                  {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
+                        class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
+                        width="100%" alt="{{ .Params.title }}" />
+                    {{ end }}
+
+                    <article class="prose dark:prose-invert lg:prose-xl mt-6">
+                        {{.Content}}
+                    </article>
+                </div>
+            </div>
+            <div class="px-6 lg:px-0 lg:col-span-4 md:col-span-6">
+                <div class="sticky top-20">
+                    <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                        <p class="text-xl font-semibold pb-5">Search Content</p>
+                        <form action="{{ `search` | relURL }}" class="flex flex-row lg:flex-row">
+                            <input type="search" name="q" id="search-query"
+                                class="w-full m-0 -mr-0.5 block px-4 py-2 text-gray-700 bg-white border rounded-l-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-amber-400 dark:focus:border-amber-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-amber-300"
+                                placeholder="Search for..." placeholder="Search" aria-label="Search"
+                                aria-describedby="button-addon1" />
+
+                            <!--Search button-->
+                            <button
+                                class="relative z-[2] flex items-center rounded-r px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-500 active:shadow-lg"
+                                style="background-color: #FE590F;" type="submit" id="button-addon1" data-te-ripple-init
+                                data-te-ripple-color="light">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="h-5 w-5">
+                                    <path fill-rule="evenodd"
+                                        d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- component -->
+                    <div class="h-screen px-4 py-8 bg-white dark:bg-gray-800 dark:border-gray-600">
+
+                        <h3 class="text-3xl font-semibold text-gray-800 dark:text-white">Other Services</h3>
+
+                        <div class="flex flex-col justify-between flex-1 mt-6">
+                            <nav>
+
+                                {{ $related := (where .Site.RegularPages "Section" "services") }}
+                                {{ range $index, $item := $related }}
+                                {{ with $item }}
+                                <div class="flex items-center mt-5">
+                                    {{ if .Resources.GetMatch (.Params.featuredImage) }}
+                                    {{ $postimage := .Resources.GetMatch (.Params.featuredImage) }}
+                                    {{ $small := ($postimage.Resize "200x webp q90").RelPermalink }}
+                                    <a href="{{ .RelPermalink }}" class="">
+                                        <img src="{{ $small }}" class="h-16 rounded-md shadow dark:shadow-gray-800"
+                                            alt="{{ .Title }}" />
+                                    </a>
+                                    {{ end }}
+                                    <div class="mx-3">
+                                        <a href="{{ .RelPermalink }}" class="font-semibold hover:text-primary">{{ .Title
+                                            }}</a>
+
+                                    </div>
+                                </div>
+                                {{ if lt $index ( len $related )}}
+                                <hr class="mt-5" />
+                                {{ end }}
+                                {{ end }}
+                                {{ end }}
+
+
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end grid-->
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const dropdowns = document.querySelectorAll(".dropdown");
+
+        dropdowns.forEach(function (dropdown) {
+            const parentLink = dropdown.querySelector("a");
+            const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+
+            parentLink.addEventListener("click", function (event) {
+                event.preventDefault();
+                dropdownMenu.classList.toggle("hidden");
+                if (!dropdownMenu.classList.contains("hidden")) {
+                    window.location.href = parentLink.href;
+                }
+            });
+        });
+    });
+</script>
+
+{{end}}

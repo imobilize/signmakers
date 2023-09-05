@@ -27,7 +27,7 @@ The quality of glaze can make a profound difference to the visual acceptance of 
   <iframe src="https://www.youtube.com/embed/pvMzPnTtPvw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 8px;" allowfullscreen="" frameborder="0"></iframe>
 </div>
 
-With Spinning Disc Spraying, the glaze is applied to either the 'top only' or 'top & sides' surfaces, depending on the needs of the product. The combination of the number of disc pairs, their geometric position, and the system's various speed settings give the desired precision spray coverage. Saturn Spraying System's DiscMaster™ and DiscMatic™ series of machines are designed to provide high-performance egg glazing capabilities.
+With Spinning Disc Spraying, the glaze is applied to either the 'top only' or 'top & sides' surfaces, depending on the needs of the product. The combination of the number of disc pairs, their geometric position, and the system's various speed settings give the desired precision spray coverage. Mental Workers System's DiscMaster™ and DiscMatic™ series of machines are designed to provide high-performance egg glazing capabilities.
 
 The egg glaze itself can be real or synthetic and applied at either ambient or chilled temperatures. EU recommendation stresses the importance of maintaining real egg at a temperature of between 4 to 6 °C. Saturn provides the facility to temperature regulate the spray material during application. The advantage of our design is that the spray material is being continuously pumped around the machine and returned to the system reservoir, which brings the spray material into contact with the refrigerated surfaces of the machine, which maintains the temperature of the egg glaze more accurately.
 

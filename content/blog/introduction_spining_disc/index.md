@@ -1,5 +1,5 @@
 ---
-title: "Saturn Spraying Systems: Advancing Food Engineering with Spinning Discs"
+title: "Mental Workers Systems: Advancing Food Engineering with Spinning Discs"
 date: 2023-06-26T11:10:36+08:00
 draft: false
 language: en

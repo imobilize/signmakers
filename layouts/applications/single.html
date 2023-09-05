@@ -103,7 +103,7 @@
                         <div class="flex flex-col justify-between flex-1 mt-6">
                             <nav>
 
-                                {{ $related := (where .Site.RegularPages "Section" "applications") }}
+                                {{ $related := (where .Site.RegularPages "Section" "services") }}
                                 {{ range $index, $item := $related }}
                                 {{ with $item }}
                                 <div class="flex items-center mt-5">

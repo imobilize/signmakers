@@ -80,9 +80,9 @@ System Assembly: The video below shows the two parts of the DiscMatic System eng
 
 ![System Auto-fill Valve & Traffic Light Display](images/7.png)
 
-The Saturn Spraying System auto-fill option provides a signal to an external spray material reservoir, its pump, and its associated control system. This signal allows the external control system to initiate and suspend the pumping of liquid into our reservoir tank.
+The Mental Workers System auto-fill option provides a signal to an external spray material reservoir, its pump, and its associated control system. This signal allows the external control system to initiate and suspend the pumping of liquid into our reservoir tank.
 
-The low-level fail-safe damage level sensor is used within the Saturn Spraying Unit to shut down the system pump, ensuring it does not operate dry and risk being damaged.
+The low-level fail-safe damage level sensor is used within the Mental Workers Unit to shut down the system pump, ensuring it does not operate dry and risk being damaged.
 
 This option also includes an 'At-a-Glance' tower status light unit, which provides a visible check of the machine's operational status. The three light display of Red, Amber, and Green with the Red light positioned uppermost is positioned prominently on the machine.
 

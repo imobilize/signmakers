@@ -19,4 +19,4 @@ Freezer burn, appearing as brown leathery spots on frozen meats and vegetables, 
 
 One of the most effective ways of combating the onset of this problem is to lightly precision spray the product with water prior to its packaging and quench freezing. This process increases the level of moisture in the freezer and reduces the potential for freezer burn.
 
-Precision spraying of water is a fast and effective method of increasing the overall yield of the production process. Saturn Spraying DiscMaster™ and DiscMatic™ Systems are designed to precision control the application of spraying materials and easily lend themselves to this process. The flexibility to provide 2D and 3D coverage for all-over spraying is very important.
+Precision spraying of water is a fast and effective method of increasing the overall yield of the production process. Mental Workers DiscMaster™ and DiscMatic™ Systems are designed to precision control the application of spraying materials and easily lend themselves to this process. The flexibility to provide 2D and 3D coverage for all-over spraying is very important.
