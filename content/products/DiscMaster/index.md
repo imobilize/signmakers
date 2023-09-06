@@ -60,7 +60,7 @@ Operationally, the DiscMaster™ offers repeatable precision in the application 
 - High Throughput: Saturn's systems can maintain a consistent, even density of product coverage, even with higher conveyor speeds. The spinning disc technology, a nozzle-less application method, is resistant to blockages and uneven spread patterns.
 - Precision and Control: Precision Inverter/Motor Control Systems provide digital control to the Spinning Disc Speed, Pump Speed, and the Conveyor Speed, allowing full control over the droplet formation and deposition of the spray material.
 - Quick Product Changeovers: Incrementing/decrementing the code on the digital potentiometers alters the performance of the system's conveyors and pumps to the required level, ensuring perfect re-registration of the system set-up from one production batch to another.
-- Environmentally Friendly: Saturn's patented spinning disc technology is seen as a safe and environmentally friendly spray coating system for modern work environments.
+- EnvironMetally Friendly: Saturn's patented spinning disc technology is seen as a safe and environMetally friendly spray coating system for modern work environments.
 
 ### System Construction
 

@@ -27,4 +27,4 @@ By applying a preparation of specialist oils to the food product, which is then 
 
 The humble potato, often considered a mainstay of Western cuisine, has undergone a healthy makeover in the last few decades. Modern production techniques have been applied to provide low-fat alternatives for potato-based dishes such as chips and roast potatoes. By carefully controlling the type and amount of oil uptake in the cooking process, oven-cooked low-fat chips and roasted potatoes can deliver all the flavour with only a fraction of the guilt.
 
-Mental Workers's DiscMaster™ and DiscMatic™ excel in applying a precise "3D all-over spray" of oil to a mono-layer of potato products. This precision control is essential in achieving the desired low-fat outcome in the oven cooking process.
+Metal Workers's DiscMaster™ and DiscMatic™ excel in applying a precise "3D all-over spray" of oil to a mono-layer of potato products. This precision control is essential in achieving the desired low-fat outcome in the oven cooking process.

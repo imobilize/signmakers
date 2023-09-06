@@ -1,4 +1,4 @@
-<div class="top-0 z-50 w-full text-dark bg-gray-800	 md:sticky">
+<div class="top-0 z-50 w-full text-dark bg-gray-800 md:sticky">
     <div x-data="{ open: false }"
         class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between p-4">
@@ -22,20 +22,29 @@
 
         <nav :class="{'flex': open, 'hidden': !open}"
             class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row sm:items-center sm:justify-center">
-            <!-- <a class="px-4 py-2 mt-2 text-lg font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary hover:bg-dark"
+            <a class="px-4 py-2 mt-2 text-lg text-white font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
                 href="/about/">About</a>
-            <a class="px-4 py-2 mt-2 text-lg font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary hover:bg-dark"
-                href="/applications/">Applications</a>
-            <a class="px-4 py-2 mt-2 text-lg font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary hover:bg-dark"
-                href="/products">Products</a>
-            <a class="px-4 py-2 mt-2 text-lg font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary hover:bg-dark"
-                href="/blog/">Blog</a>
-            <a class="px-4 py-2 mt-2 text-lg font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary hover:bg-dark"
-                href="/contact"> Contact
-            </a> -->
-            <a class="px-4 py-2 mt-2 text-lg text-dark bg-primary font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-white focus:text-primary hover:bg-stone-50"
-                href="/quotation-form/"> Free Quotation
-            </a>
+            <a class="px-4 py-2 mt-2 text-lg text-white font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
+                href="/about/">Products</a>
+            <div x-data="{ open: false }" @click.away="open = false" class="relative inline-block text-left">
+                <button type="button" class="px-4 py-2 mt-2 text-lg text-white font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
+                    @click="open = !open">
+                    Services
+                </button>
+                <div x-show="open" class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                        {{ $servicesPages := (where .Site.RegularPages "Section" "services") }}
+                        {{ range $servicesPages }}
+                            <a href="{{ .Permalink }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                role="menuitem">{{ .Title }}</a>
+                        {{ end }}
+                        <a href="/services" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                role="menuitem">View All Services</a>
+                    </div>
+                </div>
+            </div>
+            <a class="px-4 py-2 mt-2 text-lg text-white bg-primary font-semibold rounded-lg md:mt-0 md:ml-1 focus:text-primary"
+                href="/quotation-form/">Free Quotation</a>
         </nav>
     </div>
 </div>

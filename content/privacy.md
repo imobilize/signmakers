@@ -10,7 +10,7 @@ description: Privacy policy
 
 This privacy notice provides you with details of how we collect and process your personal data through your use of our site [www.saturnspraying.com](/). By providing us with your data, you warrant to us that you are over 13 years of age.
 
-iMobilize Ltd/Mental Workers ltd [is/am/are] the data controller and we are responsible for your personal data (referred to as “we”, “us” or “our” in this privacy notice)
+iMobilize Ltd/Metal Workers ltd [is/am/are] the data controller and we are responsible for your personal data (referred to as “we”, “us” or “our” in this privacy notice)
 
 ### 2. WHAT DATA DO WE COLLECT ABOUT YOU, FOR WHAT PURPOSE AND ON WHAT GROUND WE PROCESS IT 
 
@@ -30,7 +30,7 @@ Sensitive Data
 We do not collect any Sensitive Data about you. Sensitive data refers to data that includes details about your race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership, information about your health and genetic and biometric data. We do not collect any information about criminal convictions and offences.
 
 General.
-Mental Workers shall maintain the confidentiality of the Client Data and shall not without the prior written consent of the Client or in accordance with the Contract, disclose or copy the Client Data other than as necessary for the performance of the Program or its express rights and obligations under the Contract. Mental Workers shall implement technical and organizational security measures in accordance with [the Informa on Security Addendum]. Mental Workers undertakes to disclose the Client Data only to those of its officers, employees, agents, contractors, and direct and indirect subcontractors to whom, and to the extent to which, such disclosure is necessary for the purposes contemplated under the Contract of the specific program or as otherwise reasonably necessary for the provision or receipt of the Program, and shall be responsible to the Client for any acts or omissions of any of the persons referred to in clause in respect of the confidentiality and security of the Client Data as if they were Mental Workers own. The provisions shall not apply to information which comes into the public domain through no fault of Mental Workers, its officers, employees, agents, or contractors; is lawfully received by Mental Workers from a third party free of any obligation of confidence at me of its disclosure. This clause shall survive the termination or expiry of the Contract for a period of 10 years. To the extent any Client Data is Protected Data, Mental Workers shall ensure that such Client Data may be disclosed or used only to the extent such disclosure or use does not conflict with any of Mental Workers obligations under the Data Protection Addendum.
+Metal Workers shall maintain the confidentiality of the Client Data and shall not without the prior written consent of the Client or in accordance with the Contract, disclose or copy the Client Data other than as necessary for the performance of the Program or its express rights and obligations under the Contract. Metal Workers shall implement technical and organizational security measures in accordance with [the Informa on Security Addendum]. Metal Workers undertakes to disclose the Client Data only to those of its officers, employees, agents, contractors, and direct and indirect subcontractors to whom, and to the extent to which, such disclosure is necessary for the purposes contemplated under the Contract of the specific program or as otherwise reasonably necessary for the provision or receipt of the Program, and shall be responsible to the Client for any acts or omissions of any of the persons referred to in clause in respect of the confidentiality and security of the Client Data as if they were Metal Workers own. The provisions shall not apply to information which comes into the public domain through no fault of Metal Workers, its officers, employees, agents, or contractors; is lawfully received by Metal Workers from a third party free of any obligation of confidence at me of its disclosure. This clause shall survive the termination or expiry of the Contract for a period of 10 years. To the extent any Client Data is Protected Data, Metal Workers shall ensure that such Client Data may be disclosed or used only to the extent such disclosure or use does not conflict with any of Metal Workers obligations under the Data Protection Addendum.
 
 ### 3. HOW WE COLLECT YOUR PERSONAL DATA
 
@@ -135,7 +135,7 @@ Postal address: Kemp House, 160 City Road, London, EC1V 2NX
 It is very important that the information we hold about you is accurate and up to date. Please let us know if at any time your personal information changes by emailing us at support@saturnspraying.com.  
 
 Services will be provided by:
-Mental Workers
+Metal Workers
 Kemp House, 160 City Road, London, EC1V 2NX
 Effective Date: April 2, 2023
 

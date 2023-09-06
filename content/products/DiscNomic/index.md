@@ -2,7 +2,7 @@
 title: "DiscNomic™"
 date: 2023-05-24T15:28:43+06:00
 draft: false
-description: "DiscNomic is Mental Workers Systems entry level single disc Top Only Spray Machine"
+description: "DiscNomic is Metal Workers Systems entry level single disc Top Only Spray Machine"
 featuredImage: "images/2.jpg"
 image1: "images/1.png"
 categories: "production"
