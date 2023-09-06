@@ -35,7 +35,7 @@ logo = ""
 keywords = "fruit glaze sprayers, automatic fruit glaze sprayer, automatic fondant sprayers, amanual fondant sprayer, finishing machine,chocolate sprayers,butter sprayer,egg wash sprayers,egg wash spraying,egg glaze spraying,egg glaze sprayer,disk sprayer,spray-mix,depositiors,food processing machines,baking equipment,depositing,pizzabase spraying,waterfall depositors,oil spraying,milk wash spraying,milk spraying,disc spraying,disk sprayer,liquid flovouring,liquid flavouring,liquid flavoring,oil deposition,rademaker,fritsch,rheon,kortlever,bakon,arcall,acrivarn,repco,tromp,connolly international,peeters,alimetec,anditec,artiso,efca"
 home = "Home"
 # Google Analitycs
-googleAnalitycsID = "GTM-NP87DJBR" # Your ID
+googleAnalitycsID = "" # Your ID
 
 [markup]
   defaultMarkdownHandler = "goldmark"
