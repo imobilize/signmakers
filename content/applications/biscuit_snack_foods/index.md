@@ -30,7 +30,7 @@ Saturn's DiscMatic™ Slurry Variant System demonstrates the key features requir
 
 Milk Glazing is most often used to put a 'shine' on sweet biscuits, and the quality of glaze can make a difference to the visual appeal of the product. The glaze must be applied in a homogenous, streak-free process. Over-glazing, spots, drips, or void areas are simply not acceptable.
 
-With Spinning Disc Spraying, the glaze is applied to either the 'top only' or 'top & sides' surfaces, depending on the size, shape, and needs of the product. The combination of the number of disc pairs, their geometric position, and the system's various speed settings give the desired precision spray coverage. Saturn Spraying System's DiscMaster™ and DiscMatic™ Series of machines are designed to provide high-performance glazing capabilities.
+With Spinning Disc Spraying, the glaze is applied to either the 'top only' or 'top & sides' surfaces, depending on the size, shape, and needs of the product. The combination of the number of disc pairs, their geometric position, and the system's various speed settings give the desired precision spray coverage. Metal Workers System's DiscMaster™ and DiscMatic™ Series of machines are designed to provide high-performance glazing capabilities.
 
 Our clients report that the benefits of our technology allow them to:
 
@@ -64,7 +64,7 @@ The key requirements associated with successful application of flavourings are:
 Applying flavour requires the control of the deposition rate. The process should also be replicable between batches to ensure product consistency. However, balance and finesse are also important qualities to discuss, since some flavours impart a stronger impression than others. Nozzles and spray guns simply block and production downtime increases exponentially.
 <div id="nutandsugarsprinkling"></div>
 
-Saturn Spraying Systems' range of spinning disc machines is ideal for the process of applying flavour. The DiscMaster™ and DiscMatic™ machines are virtually blockage free and are able to apply just the right amount of flavour in a consistent and replicable way time after time.
+Metal Workers Systems' range of spinning disc machines is ideal for the process of applying flavour. The DiscMaster™ and DiscMatic™ machines are virtually blockage free and are able to apply just the right amount of flavour in a consistent and replicable way time after time.
 
 ## Nut & Sugar Sprinkling
 

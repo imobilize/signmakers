@@ -5,7 +5,7 @@ draft: false
 sitemapExclude: true
 language: en
 description: Your free food spraying consultation has been scheduled
-keywords: "Saturn Spraying, Spraying oils and glazes, Food Processing, Food Production, Our Agents, Our Clients, Distributors, Egg Glazing"
+keywords: "Metal Workers, Spraying oils and glazes, Food Processing, Food Production, Our Agents, Our Clients, Distributors, Egg Glazing"
 ---
 
 ## Your free sales strategy consultation has been scheduled

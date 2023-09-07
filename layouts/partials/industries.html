@@ -1,48 +1,53 @@
 <section class="py-16 px-4 md:px-10 lg:px-20">
   <div class="container mx-auto my-auto">
     <div class="max-w-7xl mx-auto">
-      <h2
-        class="text-3xl font-bold tracking-tight text-dark sm:text-4xl text-center mb-12">
-        <span class="font-bold">Industries</span> <span class="">that we serve</span>
+      <h2 class="text-3xl font-bold tracking-tight text-dark sm:text-4xl text-center mb-12">
+        <span class="font-bold">Your Premier Source for </span> <span class="">Custom Metal Fabrication Solutions</span>
       </h2>
-      <p class="text-left mb-6 text-xl sm:text-xl">At the core of Saturn Spraying's expertise lies their mastery of
-        atomised spraying technology. They have developed advanced systems capable of delivering precise and controlled
-        sprays to food products, ensuring optimal coverage and minimal waste. Whether it's fruits, vegetables, dairy
-        products, or bakery items, their spraying techniques are tailored to enhance the taste, appearance, and shelf
-        life of a wide range of food products.</p>
-      <p class="text-left mb-6 text-xl sm:text-xl">One of Saturn Spraying's primary focuses is food preservation. They
-        understand the challenges faced by manufacturers and distributors in preserving perishable items. With their
-        specialised spraying solutions, they can apply natural preservatives or coatings that help extend the shelf life
-        of food products without compromising their quality or taste. This breakthrough technology not only reduces food
-        waste but also enables companies to deliver fresher products to consumers.
+      <p class="text-left mb-6 text-xl sm:text-xl">At Metal Workers, we're dedicated to bringing your metal fabrication
+        dreams to life. Whether you're envisioning intricate railings, stunning architectural metalwork, ornate
+        decorative pieces, functional furniture and fixtures, sturdy gates, or precision-crafted sheet metal projects,
+        our team of experts has the skills and experience to turn your vision into reality.
+      </p>
+      <p class="text-left mb-6 text-xl sm:text-xl">Discover how Metal Workers can elevate your metalworking projects to
+        new heights. Learn more about how our craftsmanship and expertise can enhance your industry by providing
+        innovative solutions, increasing efficiency, and delivering top-quality results. Together, we'll forge a path to
+        success in the world of metal fabrication
       </p>
     </div>
     <!-- Card Blog -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <!-- Grid -->
       <div class="grid lg:grid-cols-2 gap-6">
+        {{ $servicesPages := where .Site.RegularPages "Section" "services" }}
+        {{ range $servicesPages }}
         <!-- Card -->
-        <a class="group sm:flex" href="/applications/fruit_vegetables/">
+        <a class="group sm:flex" href="{{ .RelPermalink }}">
           <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
-            {{ with resources.Get "images/vegetables.jpg" }}
-          {{ $small := (.Resize "400x webp q100").RelPermalink }}
-          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-          {{ $large := (.Resize "2000x webp q100").RelPermalink }}
-          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
-            <img class="w-full h-full absolute top-0 left-0 object-cover"
-              src="{{ $logoimage }}"
-              alt="Image Description">
-              {{end}}
+            {{ with .Resources.GetMatch .Params.featuredImage }}
+                    {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                    {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                    {{ $large := (.Resize "900x webp q80").RelPermalink }}
+                    {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+                    <img src="{{ $featuredimage }}" srcset="
+                  {{- with $small -}}, {{.}} 400w{{- end -}}
+                  {{- with $medium -}}, {{.}} 550w{{- end -}}
+                  {{- with $large -}}, {{.}} 768w{{- end -}}
+                  {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
+                        class="w-full h-full absolute top-0 left-0 object-cover"
+                        width="100%" alt="{{ .Params.title }}" />
+                    {{ end }}
           </div>
 
           <div class="grow">
             <div class="p-4 flex flex-col h-full sm:p-6">
               <h3
                 class="text-lg sm:text-2xl font-semibold text-gray-800 hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
-                Fruits & Vegetables Application Area
+                {{ .Title }}
               </h3>
               <p class="mt-2 text-xl sm:text-xl">
-                Learn more about how Saturn's products can enhance your industry by increasing production and automating processes.              </p>
+                {{ if .Params.summary }}{{ .Params.summary }}{{ else }}{{ .Params.description }}{{ end }}
+              </p>
 
               <div class="mt-5 sm:mt-auto">
                 <p
@@ -58,274 +63,13 @@
           </div>
         </a>
         <!-- End Card -->
-
-        <!-- Card -->
-        <a class="group sm:flex" href="/applications/meat_fish_products/">
-          <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
-            {{ with resources.Get "images/fish-meat.jpg" }}
-          {{ $small := (.Resize "400x webp q100").RelPermalink }}
-          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-          {{ $large := (.Resize "2000x webp q100").RelPermalink }}
-          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
-            <img class="w-full h-full absolute top-0 left-0 object-cover"
-              src="{{ $logoimage }}"
-              alt="Image Description">
-              {{end}}
-          </div>
-
-          <div class="grow">
-            <div class="p-4 flex flex-col h-full sm:p-6">
-              <h3
-                class="text-lg sm:text-2xl font-semibold text-gray-800  hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
-                Meat, Fish & Cheese Application             </h3>
-              <p class="mt-2 text-xl sm:text-xl">
-                Learn more about how Saturn's products can enhance your industry by increasing production and automating processes.              </p>
-
-              <div class="mt-5 sm:mt-auto">
-                <p
-                  class="mt-4 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
-                  Read more
-                  <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                  </svg>
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <!-- End Card -->
-
-        <!-- Card -->
-        <a class="group sm:flex" href="/applications/biscuit_snack_foods/">
-          <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
-            {{ with resources.Get "images/cookies.jpg" }}
-          {{ $small := (.Resize "400x webp q100").RelPermalink }}
-          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-          {{ $large := (.Resize "2000x webp q100").RelPermalink }}
-          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
-            <img class="w-full h-full absolute top-0 left-0 object-cover"
-              src="{{ $logoimage }}"
-              alt="Image Description">
-              {{end}}
-          </div>
-
-          <div class="grow">
-            <div class="p-4 flex flex-col h-full sm:p-6">
-              <h3
-                class="text-lg sm:text-2xl font-semibold text-gray-800  hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
-                Biscuit & Snacks
-              </h3>
-              <p class="mt-2 text-xl sm:text-xl">
-                Learn more about how Saturn's products can enhance your industry by increasing production and automating processes.              </p>
-
-              <div class="mt-5 sm:mt-auto">
-                <p
-                  class="mt-4 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
-                  Read more
-                  <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                  </svg>
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <!-- End Card -->
-
-        <!-- Card -->
-        <a class="group sm:flex" href="/applications/bakery-products/">
-          <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
-            {{ with resources.Get "images/croissant.jpg" }}
-          {{ $small := (.Resize "400x webp q100").RelPermalink }}
-          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-          {{ $large := (.Resize "2000x webp q100").RelPermalink }}
-          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
-            <img class="w-full h-full absolute top-0 left-0 object-cover"
-              src="{{ $logoimage }}"
-              alt="Image Description">
-              {{end}}
-          </div>
-
-          <div class="grow">
-            <div class="p-4 flex flex-col h-full sm:p-6">
-              <h3
-                class="text-lg sm:text-2xl font-semibold text-gray-800  hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
-                Bakery Products
-              </h3>
-              <p class="mt-2 text-xl sm:text-xl">
-                Learn more about how Saturn's products can enhance your industry by increasing production and automating processes.              </p>
-
-              <div class="mt-5 sm:mt-auto">
-                <p
-                  class="mt-4 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
-                  Read more
-                  <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                  </svg>
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <!-- End Card -->
-      </div>
-      <div class="flex mt-6">
-        <div class="w-full md:w-1/2 justify-center">
-          <a class="group sm:flex" href="/applications/low_fat_products/">
-            <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
-              {{ with resources.Get "images/low-fat-min.jpg" }}
-            {{ $small := (.Resize "400x webp q100").RelPermalink }}
-            {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-            {{ $large := (.Resize "2000x webp q100").RelPermalink }}
-            {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
-              <img class="w-full h-full absolute top-0 left-0 object-cover"
-                src="{{ $logoimage }}"
-                alt="Image Description">
-                {{end}}
-            </div>
-  
-            <div class="grow">
-              <div class="p-4 flex flex-col h-full sm:p-6">
-                <h3
-                  class="text-lg sm:text-2xl font-semibold text-gray-800  hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
-                  Low Fat Products
-                </h3>
-                <p class="mt-2 text-xl sm:text-xl">
-                  Learn more about how Saturn's products can enhance your industry by increasing production and automating processes.              </p>
-  
-                <div class="mt-5 sm:mt-auto">
-                  <p
-                    class="mt-4 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
-                    Read more
-                    <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
+        {{ end }}
       </div>
       <!-- End Grid -->
     </div>
+
+
     <!-- End Card Blog -->
 
   </div>
 </section>
-
-
-
-<!-- <section class="py-8 px-4 md:px-10 lg:px-20">
-  <div class="container mx-auto my-auto">
-    <div class="max-w-7xl mx-auto">
-
-      <div class="relative">
-        <div class="container mx-auto my-auto">
-          <div class="flex items-center flex-col lg:flex-row justify-center">
-            <a href="/applications/#fruitsandveggies" class="hover:scale-125 transition ease-in-out duration-200">
-              <div class="px-4 py-2 w-full md:w-3/6">
-                {{ $bgimage := (resources.Get "images/vegetables.jpg") }}
-                {{ $resizedImage := $bgimage.Resize "500x" }}
-                <div class="relative group">
-                  <div
-                    class="p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
-                    style="background-image: url('{{ $resizedImage.RelPermalink }}'); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-                    <h4 class="text-white text-xl md:text-2xl xl:text-3xl font-semibold relative z-20 hover:underline">
-                      Fruits & Vegetables
-                    </h4>
-                    <p class="absolute bottom-0 mb-4 font-semibold left-1 hover:underline text-lg text-white z-20"> Read
-                      More<span class="mt-1">&#8594;</span></p>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="/applications/#meatandfish" class="hover:scale-125 transition ease-in-out duration-200">
-              <div class="px-4 py-2 w-full md:w-3/6">
-                {{ $bgimage := (resources.Get "images/fish-meat.jpg") }}
-                {{ $resizedImage := $bgimage.Resize "500x" }}
-                <div class="relative group">
-                  <div
-                    class="p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
-                    style="background-image: url('{{ $resizedImage.RelPermalink }}'); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-                    <h4 class="text-white text-2xl md:text-2xl xl:text-3xl font-semibold relative z-20 hover:underline">
-                      Meat & Cheese
-                    </h4>
-                    <p class="absolute bottom-0 mb-4 font-semibold left-1 hover:underline text-lg text-white z-20"> Read
-                      More<span class="mt-1">&#8594;</span></p>
-
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="/applications/#biscuits" class="hover:scale-125 transition ease-in-out duration-200">
-              <div class="px-4 py-2 w-full md:w-3/6">
-                {{ $bgimage := (resources.Get "images/cookies.jpg") }}
-                {{ $resizedImage := $bgimage.Resize "500x" }}
-                <div class="relative group">
-                  <div
-                    class="p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
-                    style="background-image: url('{{ $resizedImage.RelPermalink }}'); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-                    <h4
-                      class="text-white text-2xl md:text-2xl xl:text-3xl font-semibold font-bold relative z-20 hover:underline">
-                      Biscuit & Snacks
-                    </h4>
-                    <p class="absolute bottom-0 mb-4 font-semibold left-1 hover:underline text-lg text-white z-20"> Read
-                      More<span class="mt-1">&#8594;</span></p>
-
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="/applications/#bakery" class="hover:scale-125 transition ease-in-out duration-200">
-              <div class="px-4 py-2 w-full md:w-3/6">
-                {{ $bgimage := (resources.Get "images/croissant.jpg") }}
-                {{ $resizedImage := $bgimage.Resize "500x" }}
-                <div class="relative group">
-                  <div
-                    class="p-4 shadow-md rounded-lg border border-black relative overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
-                    style="background-image: url('{{ $resizedImage.RelPermalink }}'); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-                    <h4
-                      class="text-white text-2xl md:text-2xl xl:text-3xl font-semibold font-bold relative z-20 hover:underline">
-                      Bakery Products
-                    </h4>
-                    <p class="absolute bottom-0 mb-4 font-semibold left-1 hover:underline text-lg text-white z-20"> Read
-                      More<span class="mt-1">&#8594;</span></p>
-
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="/applications/#lowfatproducts" class="hover:scale-125 transition ease-in-out duration-200">
-              <div class="px-4 py-2 w-full md:w-3/6">
-                {{ $bgimage := (resources.Get "images/low-fat-min.jpg") }}
-                {{ $resizedImage := $bgimage.Resize "500x" }}
-                <div class="relative group">
-                  <div
-                    class="p-4 shadow-md rounded-lg border border-black relative hover:bg-black overflow-hidden group items-center hover:scale-105 transition-transform duration-300"
-                    style="background-image: url('{{ $resizedImage.RelPermalink }}'); background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 25px; min-height: 174px;">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-                    <h4
-                      class="text-white text-2xl md:text-2xl xl:text-3xl font-semibold font-bold relative z-20 hover:underline">
-                      Low Fat Products
-                    </h4>
-                    <p class="absolute bottom-0 mb-4 font-semibold left-1 hover:underline text-lg text-white z-20"> Read
-                      More<span class="mt-1">&#8594;</span></p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
