@@ -5,6 +5,8 @@ draft: false
 language: en
 description: At Metal Workers, we understand that architecture is more than just structures; it's an art form that shapes our surroundings and leaves a lasting impression. That's why we take immense pride in our expertise in architectural metalwork, where creativity meets precision engineering.
 featuredImage: "images/1.jpg"
+image: "images/1.jpg"
+images: ["images/1.jpg"]
 keywords: "Milk Glazing, oil and salt coating"
 
 ---

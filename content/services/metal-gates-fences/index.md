@@ -5,6 +5,8 @@ draft: false
 language: en
 description: At Metal Workers, we excel in expert fabrication, crafting custom wrought iron railings, fences, and gates
 featuredImage: "images/1.png"
+image: "images/1.jpg"
+images: "images/1.jpg"
 keywords: "Milk Glazing, oil and salt coating"
 ---
 

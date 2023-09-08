@@ -5,7 +5,7 @@
             viewBox="0 0 100 100" fill="currentColor" preserveAspectRatio="none slice">
             <path d="M50 0H100L50 100H0L50 0Z"></path>
         </svg>
-        {{ with resources.Get "images/saturn-machining.jpg" }}
+        {{ with resources.Get "images/bg-blog.jpg" }}
         {{ $small := (.Resize "400x webp q80").RelPermalink }}
         {{ $medium := (.Resize "550x webp q80").RelPermalink }}
         {{ $large := (.Resize "900x webp q80").RelPermalink }}
