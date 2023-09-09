@@ -1,3 +1,6 @@
+<script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
+​​ <div hidden id="snipcart" data-api-key="YmYxZTJjMTMtYTRhYS00MDAxLWFmYTYtZmM2NGI2YjljMmFkNjM4Mjk2NzY0NjQyNzI4MDUy">
+</div>
 
 {{ $alpine := resources.Get "js/alpine.js" | js.Build }}
 <script src="{{ $alpine.RelPermalink }}"></script>
@@ -22,56 +25,55 @@
 
 <script>
 
-    var lightBoxHero = GLightbox({
-        selector: '.glightbox-hero',
-        autoplayVideos: true,
-    });
+  var lightBoxHero = GLightbox({
+    selector: '.glightbox-hero',
+    autoplayVideos: true,
+  });
 
-    lightBoxHero.on('open', (target) => {
-        console.log('lightbox opened');
-    });
+  lightBoxHero.on('open', (target) => {
+    console.log('lightbox opened');
+  });
 
-    var lightBoxTestimonial = GLightbox({
-        selector: '.glightbox-testimonial'
-    });
+  var lightBoxTestimonial = GLightbox({
+    selector: '.glightbox-testimonial'
+  });
 </script>
 
 
-  <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
-  <script>
-    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-    window.LOCALE = 'en';
-    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-  
-    window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
-  
-    window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-  
-  
-  
-  
-    window.translation = {
-      common: {
-        selectedList: '{quantity} list selected',
-        selectedLists: '{quantity} lists selected'
-      }
-    };
-  
-    var AUTOHIDE = Boolean(1);
-  </script>
-  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-  
-  <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
-  
-  <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
-  <!-- End Sendinblue Form -->
+<!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+  window.LOCALE = 'en';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
 
-  <script> var clearout = window.clearout = window.clearout || [], opts = { app_token: "88be7a97e6445bfa87b2bde2152c22ef:562a5929e339fc481f4deece79321ab7679f029ba55218685c0f23f168ef5454", mode: "ajax", api_url:"https://api.clearout.io"};
-    clearout.push(["initialize", opts]), 
-    function () 
-    { 
-      var t = document, e = t.createElement("script"), a = t.getElementsByTagName("script")[0]; 
-      e.type = "text/javascript", e.async = !0, e.src = "https://clearout.io/wp-content/co-js-widget/clearout_js_widget.js", 
-      a.parentNode.insertBefore(e, a) 
+  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+
+  window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+
+
+
+  window.translation = {
+    common: {
+      selectedList: '{quantity} list selected',
+      selectedLists: '{quantity} lists selected'
+    }
+  };
+
+  var AUTOHIDE = Boolean(1);
+</script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+
+<!-- END - We recommend to place the above code in footer or bottom of your website html  -->
+<!-- End Sendinblue Form -->
+
+<script> var clearout = window.clearout = window.clearout || [], opts = { app_token: "88be7a97e6445bfa87b2bde2152c22ef:562a5929e339fc481f4deece79321ab7679f029ba55218685c0f23f168ef5454", mode: "ajax", api_url: "https://api.clearout.io" };
+  clearout.push(["initialize", opts]),
+    function () {
+      var t = document, e = t.createElement("script"), a = t.getElementsByTagName("script")[0];
+      e.type = "text/javascript", e.async = !0, e.src = "https://clearout.io/wp-content/co-js-widget/clearout_js_widget.js",
+        a.parentNode.insertBefore(e, a)
     }();
-  </script>
+</script>

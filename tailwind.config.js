@@ -16,7 +16,7 @@ module.exports = {
         primary: '#EB5416',
         secondary: '#818181',
         neutral: '#FFC15E',
-        dark: '#363344',
+        dark: '#0A1045',
         darksecondary: '#56445D',
         hoverprimary: '#E45310',
         green: '#56E39F',
