@@ -5,6 +5,8 @@ draft: false
 language: en
 description: Metal Workers specializes in crafting exceptional metal staircases, setting the standard for internal steel staircases and metal escape stairs
 featuredImage: "images/1.jpg"
+image: "images/1.jpg"
+images: "images/1.jpg"
 keywords: "Milk Glazing, oil and salt coating"
 ---
 

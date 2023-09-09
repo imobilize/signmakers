@@ -5,6 +5,8 @@ draft: false
 language: en
 description: At Metal Workers, we take immense pride in our mastery of crafting steel frames that exemplify precision and excellence
 featuredImage: "images/1.jpg"
+image: "images/1.jpg"
+images: ["images/1.jpg"]
 keywords: "Milk Glazing, oil and salt coating"
 ---
 

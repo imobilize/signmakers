@@ -5,6 +5,8 @@ draft: false
 language: en
 description: Our expertly crafted metal railings find their place on steps, staircases, balconies, both indoors and outdoors. We offer a diverse selection of styles and materials to suit your needs
 featuredImage: "images/1.jpg"
+image: "images/1.jpg"
+images: ["images/1.jpg"]
 keywords: "Milk Glazing, oil and salt coating"
 
 ---

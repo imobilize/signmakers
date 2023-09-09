@@ -5,6 +5,8 @@ draft: false
 language: en
 description: Metal Workers, equipped with the latest sheet metal fabrication tools, advanced welding machines, and a state-of-the-art plasma cutting table, offers professional metal fabrication installation and repair services.
 featuredImage: "images/1.png"
+image: "images/1.jpg"
+images: ["images/1.jpg"]
 keywords: "Milk Glazing, oil and salt coating"
 
 ---
