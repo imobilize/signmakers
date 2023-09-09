@@ -25,30 +25,46 @@
             class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row sm:items-center sm:justify-center">
             <a class="px-4 py-2 mt-2 text-lg text-slate-800 font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
                 href="/about/">About</a>
+            <div x-data="{ open: false }" @click.away="open = false" class="relative inline-block text-left">
+                <button type="button"
+                    class="flex items-center px-4 py-2 mt-2 text-lg text-slate-800 font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
+                    @click="open = !open">
+                    Services
+                    <svg class="w-2.5 h-2.5 ml-1 mt-1 transition-transform duration-200 transform"
+                        :class="{'rotate-180': open, 'rotate-0': !open}" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opacity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95"
+                    class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                        {{ $servicesPages := (where .Site.RegularPages "Section" "services") }}
+                        {{ range $servicesPages }}
+                        <a href="{{ .Permalink }}"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                            role="menuitem">{{ .Title }}</a>
+                        {{ end }}
+                        <a href="/services"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                            role="menuitem">View All Services</a>
+                    </div>
+                </div>
+            </div>
+
             <a class="px-4 py-2 mt-2 text-lg text-slate-800 font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
                 href="/blog/">Blog</a>
-                <a class="px-4 py-2 mt-2 text-lg text-slate-800 font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
+            <a class="px-4 py-2 mt-2 text-lg text-slate-800 font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
                 href="/contact/">Contact</a>
             <a class="px-4 py-2 mt-2 text-lg text-slate-800 font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
                 href="/products/">Products</a>
-                <div x-data="{ open: false }" @click.away="open = false" class="relative inline-block text-left">
-                    <button type="button" class="flex items-center px-4 py-2 mt-2 text-lg text-slate-800 font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary" @click="open = !open">
-                      Services
-                      <svg class="w-2.5 h-2.5 ml-1 mt-1 transition-transform duration-200 transform" :class="{'rotate-180': open, 'rotate-0': !open}" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                      </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                        {{ $servicesPages := (where .Site.RegularPages "Section" "services") }}
-                        {{ range $servicesPages }}
-                        <a href="{{ .Permalink }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">{{ .Title }}</a>
-                        {{ end }}
-                        <a href="/services" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">View All Services</a>
-                      </div>
-                    </div>
-                </div>
-                  
+
             <div class="header__cart ">
                 <a href="#"
                     class="snipcart-checkout header__checkout relative inline-flex items-center p-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -58,13 +74,13 @@
                         <div
                             class="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-primary rounded-full dark:border-gray-900 snipcart-items-count">
                         </div>
-                        <span><svg class="w-8 h-8 text-slate-800" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                        <span><svg class="w-8 h-8 text-slate-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 18 20">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2"
                                     d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
                             </svg></span>
-                        
+
                         <!-- <span class="snipcart-items-count text-white"></span> -->
                         <!-- <span class="snipcart-total-price text-white"></span> -->
                     </div>

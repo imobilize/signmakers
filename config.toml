@@ -21,6 +21,7 @@ home = ["HTML", "AMP", "RSS", "JSON"]
     blog = "/:title"
     categories = "/:title"
     tags = "/:title"
+    services = "/:title"
 
 [params]
 author = "Metal Workers"
