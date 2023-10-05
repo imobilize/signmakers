@@ -19,11 +19,11 @@
       <div class="relative max-w-md px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
         <!-- Testimonial card-->
         <div class="relative overflow-hidden">
-          {{ $missionimage := resources.Get "images/steel-works.png" }}
+          {{ $missionimage := resources.Get "images/sign-maker-mission.png" }}
           {{ with $missionimage }}
           {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
           <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full"
-            alt="Our Mission - Metal Workers" loading="lazy" />
+            alt="Our Mission - Sign Makers" loading="lazy" />
           {{ end }}
           {{ end }}
 
@@ -35,16 +35,9 @@
       <!-- Content area -->
       <div class="md:py-12 sm:pt-6 lg:py-20">
         <h2 class="text-3xl font-bold tracking-tight text-dark sm:text-4xl">
-          Crafting Premier Metal Fabrications Since 1963</h2>
+          NATIONWIDE SIGN DESIGN, MANUFACTURE & INSTALLATION</h2>
         <div class="text-2xl mt-6 space-y-6 text-gray-900 dark:text-white">
-          <p class="leading-7">Metal Workers, established in 1963, has steadfastly delivered top-tier metal fabrications for both the film and construction industries. Our expertise encompasses stainless steel balustrades, aluminum, brass, and various metals, in addition to mild steel. Notably, we have supplied balustrades to renowned global retailers and multinational corporate headquarters.
-
-          </p>
-          <p class="leading-7">With a commitment to precision and client satisfaction, all our equipment is housed in-house, including tube rolling, bending, sheet forming, rolling, and advanced machine shop facilities for turning and milling. Experience excellence with Metal Workers.
-          </p>
-          <p class="leading-7">
-            What truly sets Metal Workers apart is their commitment to maintaining in-house capabilities. With cutting-edge facilities encompassing tube rolling, bending, sheet forming and rolling, as well as a fully-equipped machine shop for turning and milling, they exercise precise control over the entire production process. This dedication to craftsmanship and precision extends to their client-centric approach, where they collaborate closely with clients to transform their unique designs into tangible realities. In essence, Metal Workers stands as a paragon of excellence in the metal fabrication industry, fortified by a rich legacy, a prestigious clientele, and an unwavering commitment to delivering exceptional services tailored to the highest standards of quality and precision.
-          </p>
+          <p class="leading-7">Sign Makers specializes in Nationwide Sign Design, Manufacture, and Installation, offering a comprehensive range of services to meet all your signage needs. With a rich history dating back to 1946, our family-owned and operated business is committed to delivering excellence in every aspect of sign creation. Whether you require a single sign or a full-scale nationwide installation, our experienced team is dedicated to providing high-quality, tailor-made solutions that leave a lasting impression. We take pride in our ability to serve both national accounts and individual projects, ensuring that your signage requirements are met with precision and professionalism. Choose Sign Makers for all your sign design, manufacturing, and installation needs, and experience the difference that decades of expertise can make.</p>
           {{ with resources.Get "images/logo/saturn-spraying-logo.png" }}
           {{ $small := (.Resize "400x webp q100").RelPermalink }}
           {{ $medium := (.Resize "550x webp q100").RelPermalink }}

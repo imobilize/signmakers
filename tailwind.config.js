@@ -13,14 +13,16 @@ module.exports = {
         padding: '2rem',
       },
       colors: {
-        primary: '#EB5416',
-        secondary: '#818181',
-        neutral: '#FFC15E',
+        primary: '#F56316',
+        secondary: '#1B9AAA',
+        neutral: '#F8FFE5',
         dark: '#0A1045',
         darksecondary: '#56445D',
         hoverprimary: '#E45310',
         green: '#56E39F',
-        blue: "#0A1045"
+        blue: "#0A1045",
+        offwhite: "#F8FFE5",
+        lightgreen: "#06D6A0"
       },
       lineHeight: {
         'extra-loose': '2.5',

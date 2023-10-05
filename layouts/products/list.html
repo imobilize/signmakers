@@ -5,9 +5,9 @@
   <div class="mx-auto max-w-screen-xl px-6 pt-8 md:pt-14 lg:pt-20">
     <h1
       class="pb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-gray-900 tracking-snug leading-tight sm:leading-tight md:leading-tight lg:leading-tight md:text-center">
-      Elevate Your Business with Metal Workers    </h1>
+      Elevate Your Business with Sign Makers    </h1>
     <p class="pb-6 text-gray-600 text-lg md:text-2xl md:tracking-tight md:text-center leading-normal md:leading-normal">
-      But don’t just take our word for it. We’ll let the product do the talking.
+      But don’t just take our word for it. We’ll let the portfolio do the talking.
     </p>
     <div class="pt-8 flex justify-center text-primary">
       <svg width="204" height="14" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  {{ $products := getJSON "/data/products.json" }}
+  <!-- {{ $products := getJSON "/data/products.json" }}
 
   <section class="container pt-12 mb-12 mx-auto">
       <div class="flex justify-center">
@@ -36,10 +36,8 @@
           {{ partial "product.html" . }}
           {{ end }}
       </div>
-  </section>
-  <div class="flex justify-center">
-    <h2 class="font-semibold mt-4 text-4xl leading-snug lg:text-5xl lg:leading-[62px] text-slate-800 mb-12">All Products</h2>
-</div>
+  </section> -->
+
   {{ range $index, $element := (where .Site.RegularPages "Section" "products") }}
 
   <div class="mx-auto max-w-screen-xl">
