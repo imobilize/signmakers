@@ -1,5 +1,5 @@
 baseURL = ""
-title = "Metal Workers"
+title = "Sign Makers"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
@@ -24,14 +24,14 @@ home = ["HTML", "AMP", "RSS", "JSON"]
     services = "/:title"
 
 [params]
-author = "Metal Workers"
+author = "Sign Makers"
 authorimage = "../assets/images/global/author.webp"
 github = ""
 facebook = ""
 og_image = "/images/metal-workings.jpg"
-sitename = "Metal Workers"
+sitename = "Sign Makers"
 twitter = ""
-description = "Metal Workers excels in crafting top-tier metal fabrications, specializing in stainless steel balustrades, aluminum, brass, and mild steel."
+description = "Sign Makers excels in crafting top-tier metal fabrications, specializing in stainless steel balustrades, aluminum, brass, and mild steel."
 logo = ""
 keywords = "metal fabrication, custom metalwork, metalwork services, steel fabrication, metal welding, architectural metalwork, metal craftsmen, metal fabrication company, stainless steel fabrication, precision metalwork, metal welding services, structural steel fabrication, ornamental ironwork, metalwork design, metal fabrication experts, metal fabrication solutions, bespoke metalwork, metalwork projects, industrial metalwork, commercial metalwork, residential metalwork, metalwork artisans, metalwork craftsmanship, modern metalwork, sustainable metalwork, eco-friendly metalwork, metal restoration, metalwork innovations, metal design, metal engineering, metal craftsmanship, metalwork artistry, metalwork quality, metalwork excellence, metalwork specialists, metalwork legacy"
 home = "Home"

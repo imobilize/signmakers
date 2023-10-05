@@ -1,0 +1,115 @@
+<section class="bg-white dark:bg-gray-900">
+    <div class="flex justify-center">
+        <h2 class="text-3xl font-bold tracking-tight text-dark sm:text-4xl">
+            What our clients say about us</h2>
+    </div>
+    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+        <figure class="max-w-screen-md mx-auto">
+            <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+            </svg> 
+            <blockquote>
+                <p class="text-2xl font-medium text-gray-900 dark:text-white">"A great service from beginning to end. Completed the whole planning process for us and installed our new signage quickly and efficiently. Aftercare has been excellent too."</p>
+            </blockquote>
+            <!-- <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+                <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                    <div class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</div>
+                    <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at Google</div>
+                </div>
+            </figcaption> -->
+        </figure>
+    </div>
+    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+        <figure class="max-w-screen-md mx-auto">
+            <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+            </svg> 
+            <blockquote>
+                <p class="text-2xl font-medium text-gray-900 dark:text-white">"Sign Makers were able to change the branding on all our 235 pubs."</p>
+            </blockquote>
+            <!-- <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+                <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                    <div class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</div>
+                    <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at Google</div>
+                </div>
+            </figcaption> -->
+        </figure>
+    </div>
+    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+        <figure class="max-w-screen-md mx-auto">
+            <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+            </svg> 
+            <blockquote>
+                <p class="text-2xl font-medium text-gray-900 dark:text-white">"We had planned for our shop fascias to be changed on a schedule and Parkinson’s kept to the plan and completed on time."</p>
+            </blockquote>
+            <!-- <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+                <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                    <div class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</div>
+                    <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at Google</div>
+                </div>
+            </figcaption> -->
+        </figure>
+    </div>
+
+    <div class="mt-12 flex justify-center gap-x-6 px-6">
+        <div class="h-6">
+            {{ with resources.Get "images/clients/logo-1.jpg" }}
+          {{ $small := (.Resize "400x webp q100").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+          {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+          <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+          {{- with $medium -}}, {{.}} 1024w{{- end -}}
+          {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto h-20">
+          {{end}}
+        </div>
+        <div class="w-32">
+            {{ with resources.Get "images/clients/logo-2.jpg" }}
+          {{ $small := (.Resize "400x webp q100").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+          {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+          <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+          {{- with $medium -}}, {{.}} 1024w{{- end -}}
+          {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto h-20">
+          {{end}}
+        </div>
+        <div class="w-32">
+            {{ with resources.Get "images/clients/logo-3.jpg" }}
+          {{ $small := (.Resize "400x webp q100").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+          {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+          <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+          {{- with $medium -}}, {{.}} 1024w{{- end -}}
+          {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto h-20">
+          {{end}}
+        </div>
+        <div class="w-32">
+            {{ with resources.Get "images/clients/logo-4.jpg" }}
+          {{ $small := (.Resize "400x webp q100").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+          {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+          <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+          {{- with $medium -}}, {{.}} 1024w{{- end -}}
+          {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto h-20">
+          {{end}}
+        </div>
+        <div class="w-32">
+            {{ with resources.Get "images/clients/logo-5.jpg" }}
+          {{ $small := (.Resize "400x webp q100").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+          {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+          {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+          <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+          {{- with $medium -}}, {{.}} 1024w{{- end -}}
+          {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto h-20">
+          {{end}}
+        </div>
+    </div>
+  </section>

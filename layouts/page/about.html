@@ -2,7 +2,7 @@
 
 <main>
 
-  {{ $bgimage := (resources.Get "images/bg-about.jpg").RelPermalink }}
+  {{ $bgimage := (resources.Get "images/signboard.jpg").RelPermalink }}
   <section
     class="relative table w-full pb-0 lg:pb-0 bg-slate-800 bg-[url('{{ $bgimage }}')] bg-center bg-no-repeat bg-cover"
     style="background-image: url('{{$bgimage}}');">
@@ -10,10 +10,9 @@
       <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
         <div class="lg:col-span-7">
           <div class="md:mt-20 md:mb-20 mt-12 shadow-lg">
-            <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold  mb-5 text-white">About Metal Workers</h1>
-            <p class="pr-0 my-8 text-base text-white sm:text-xl xl:text-2xl lg:pr-20 shadow-lg">Metal Workers excels in
-              crafting top-tier metal fabrications, specializing in stainless steel balustrades, aluminum, brass, and
-              mild steel</p>
+            <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold  mb-5 text-white">About Sign Makers</h1>
+            <p class="pr-0 my-8 text-base text-white sm:text-xl xl:text-2xl lg:pr-20 shadow-lg">Sign Makers excels in
+              crafting top-tier Sign Boards</p>
             <div class="mt-20">
               <div class="flex flex-wrap -m-2.5 mb-20">
 
@@ -45,12 +44,12 @@
           <div
             class="relative max-w-md px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20 mt-2 md:mt-20">
             <div class="relative overflow-hidden rounded-2xl hover:contrast-125">
-              {{ $missionimage := resources.Get "images/bg-blog.jpg" }}
+              {{ $missionimage := resources.Get "images/about-signs.jpg" }}
               {{ with $missionimage }}
               {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
               <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
                 class="object-cover w-full h-full rounded-full shadow-lg border-b-stone-200 items-center"
-                alt="About Metal Workers" loading="lazy" />
+                alt="About Sign Makers" loading="lazy" />
               {{ end }}
               {{ end }}
             </div>
@@ -63,20 +62,11 @@
           <div class="md:pt-12 sm:pt-6 lg:pt-20">
             <h2
               class="relative mb-4 text-dark text-slate-800 text-3xl font-bold tracking-tight text-dark sm:text-4xl tracking-tight mb-12 md:mt-6 mt-0 pt-6 leading-tight font-poppins tracking-tight">
-              Specialists in <span style="color:#FE590F" class="font-semibold">Metal & Steel Fabrication </span></h2>
+              Specialists in <span style="color:#FE590F" class="font-semibold">Sign Board Designing and Making </span></h2>
             <div class="mt-6 space-y-6">
-              <p class="text-2xl leading-tight mb-12">Metal Workers excels in crafting top-tier metal fabrications,
-                specializing in stainless steel balustrades, aluminum, brass, and mild steel. Our in-house capabilities,
-                including tube rolling, sheet forming, and machining, guarantee precision and excellence in every
-                project.
+              <p class="text-2xl leading-tight mb-12">At Sign Makers, we pride ourselves as the Specialists in Sign Board Designing and Making. With a wealth of experience and a dedicated team of experts, we bring a deep understanding of the art and science behind creating impactful signage. Our commitment to excellence extends from the initial concept and design phase to the meticulous craftsmanship in our manufacturing process. Whether you require eye-catching storefront signs, informative directional boards, or any other signage solution, our specialized approach ensures that your unique vision is brought to life with precision and flair
               </p>
-              <p class="text-2xl leading-tight mb-12">
-                We are committed to maintaining a high level of quality in all of our processes, from design and
-                fabrication through to personal contact. Our first responsibility is to our customer: to provide a
-                specified product or service in a timely manner, to give sound, objective advice and to communicate
-                effectively. It is this personal approach, coupled with our innovative solutions that have contributed
-                significantly to our client’s satisfaction.
-              </p>
+           
             </div>
           </div>
           <!-- Content area End -->
@@ -96,23 +86,16 @@
         <div class="w-full lg:w-1/2">
           <div class="lg:max-w-lg">
             <h2 class="text-3xl font-bold tracking-tight text-dark sm:text-4xl">
-              Metal Workers Systems Limited
+              Sign Makers Systems Limited
             </h2>
 
             <p class="text-left text-dark text-2xl mt-4">
-              Metal Workers is the new name for Thames Wire Productions, which was formerly known as Thames Wire
-              Productions.
+              Sign Makers, formerly known as Parkinson Signs, carries a rich legacy dating back to its establishment in 1946. As a family-owned and operated business, we have consistently upheld a tradition of excellence in the world of signage. Our expertise spans the entire spectrum of sign-related services, encompassing top-tier design, precise manufacturing, seamless installation, and meticulous maintenance.
+
             </p>
             <p class="text-left text-dark text-2xl mt-4">
-              Established in 1963, Thames Wire Productions has a rich history of crafting top-tier metal fabrications
-              for both the film and construction industries. Our expertise spans various materials, including stainless
-              steel, aluminum, brass, as well as the commonly used mild steel. Over the years, we have proudly
-              manufactured balustrades for renowned global retailers and multinational corporate headquarters.
 
-              Our commitment to precision and quality is reflected in our fully equipped facilities, which include
-              in-house tube rolling and bending, sheet forming and rolling, and a comprehensive machine shop equipped
-              for turning and milling. We collaborate closely with clients to bring their designs to life, ensuring that
-              every project meets the highest standards of craftsmanship.
+With a strong presence across the UK, we cater to a diverse clientele, ranging from single, one-off contracts to comprehensive nationwide installations for both national accounts and individual projects. Our commitment to quality extends beyond installation, as we also offer maintenance contracts to ensure that all types of signs remain in optimal condition. At Sign Makers, we take pride in our decades-long experience and unwavering dedication to delivering outstanding sign solutions that stand the test of time.
             </p>
           </div>
 
@@ -120,7 +103,7 @@
 
         <div class="flex items-center justify-center w-full h-96 lg:w-1/2 pt-12 md:pt-0">
 
-          {{ with resources.Get "images/metal-workings.jpg" }}
+          {{ with resources.Get "images/signboard.jpg" }}
           {{ $small := (.Resize "400x webp q80").RelPermalink }}
           {{ $medium := (.Resize "550x webp q80").RelPermalink }}
           {{ $large := (.Resize "900x webp q80").RelPermalink }}
@@ -130,7 +113,7 @@
               {{- with $medium -}}, {{.}} 550w{{- end -}}
               {{- with $large -}}, {{.}} 768w{{- end -}}
               {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-            class="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" alt="About Metal Workers Systems" />
+            class="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" alt="About Sign Makers Systems" />
           {{ end }}
         </div>
       </div>
@@ -346,7 +329,7 @@
               {{- with $large -}}, {{.}} 768w{{- end -}}
               {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
             class="rounded-lg object-cover object-center cursor-pointer aspect-[6/4]" loading="lazy"
-            alt="About Metal Workers Systems" />
+            alt="About Sign Makers Systems" />
           {{ end }}
 
         </div>
@@ -354,7 +337,7 @@
           <div class="text-center md:text-left">
             <p
               class="mt-4 text-center md:text-left md:text-base lg:text-lg font-medium leading-relaxed text-secondary-200">
-              Metal Workers has been manufacturing and supplying Spinning <b class="font-bold"
+              Sign Makers has been manufacturing and supplying Spinning <b class="font-bold"
                 style="color: #363344;">Disc Spraying Machines worldwide since the late 1980s.</b>
               With
               our unique ability to offer a range of services, including bespoke design, we have installations in key

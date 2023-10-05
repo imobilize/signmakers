@@ -5,7 +5,7 @@ draft: false
 sitemapExclude: true
 language: en
 description: Your free metal work consultation has been scheduled
-keywords: "Metal Workers"
+keywords: "Sign Makers"
 ---
 
 ## Your free consultation has been scheduled
