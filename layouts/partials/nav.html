@@ -1,4 +1,4 @@
-<div class="top-0 z-50 w-full text-dark bg-gray-100 md:sticky">
+<div class="top-0 z-50 w-full text-dark bg-sky-600 md:sticky">
     <div x-data="{ open: false }"
         class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between p-4">
@@ -23,11 +23,11 @@
 
         <nav :class="{'flex': open, 'hidden': !open}"
             class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row sm:items-center sm:justify-center">
-            <a class="px-4 py-2 mt-2 text-lg text-slate-800 font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
+            <a class="px-4 py-2 mt-2 text-lg text-white font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
                 href="/about/">About</a>
             <div x-data="{ open: false }" @click.away="open = false" class="relative inline-block text-left">
                 <button type="button"
-                    class="flex items-center px-4 py-2 mt-2 text-lg text-slate-800 font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
+                    class="flex items-center px-4 py-2 mt-2 text-lg text-white font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
                     @click="open = !open">
                     Services
                     <svg class="w-2.5 h-2.5 ml-1 mt-1 transition-transform duration-200 transform"
@@ -58,12 +58,12 @@
                 </div>
             </div>
 
-            <a class="px-4 py-2 mt-2 text-lg text-slate-800 font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
+            <a class="px-4 py-2 mt-2 text-lg text-white font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
                 href="/blog/">Blog</a>
-            <a class="px-4 py-2 mt-2 text-lg text-slate-800 font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
+            <a class="px-4 py-2 mt-2 text-lg text-white font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
                 href="/contact/">Contact</a>
-            <a class="px-4 py-2 mt-2 text-lg text-slate-800 font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
-                href="/products/">Porfolio</a>
+            <a class="px-4 py-2 mt-2 text-lg text-white font-semibold rounded-lg md:mt-0 md:ml-1 hover:text-primary focus:text-primary"
+                href="/products/">Portfolio</a>
             <a class="px-4 py-2 mt-2 text-lg text-white bg-primary font-semibold rounded-lg md:mt-0 md:ml-1 focus:text-primary"
                 href="/quotation-form/">Free Quotation</a>
         </nav>
