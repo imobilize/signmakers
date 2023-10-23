@@ -7,7 +7,7 @@
   "author": "Andre Barrett",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
-    "alpinejs": "^3.13.0",
+    "alpinejs": "^3.13.2",
     "autoprefixer": "^10.4.14",
     "concurrently": "^8.2.1",
     "postcss": "^8.4.21",
