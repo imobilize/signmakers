@@ -13,9 +13,9 @@ module.exports = {
         padding: '2rem',
       },
       colors: {
-        primary: '#F56316',
-        secondary: '#1B9AAA',
-        neutral: '#F8FFE5',
+        primary: '#DD1C1A',
+        secondary: '#29086A',
+        neutral: '#306BAC',
         dark: '#0A1045',
         darksecondary: '#56445D',
         hoverprimary: '#E45310',
