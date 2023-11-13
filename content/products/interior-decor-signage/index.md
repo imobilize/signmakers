@@ -2,7 +2,7 @@
 title: "Interior Decor Signs"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: Anglesey Arms reached out to us to help them build top notch sign boards for their business
+description: The moment customers step inside your business, they immediately have an impression of who you are, what you do – and, most of all, if they want to do business with you.
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -10,7 +10,7 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "Interior Signs, Signs"
 
 ---
 ## The Only Limit Is Your Imagination

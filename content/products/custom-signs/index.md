@@ -2,7 +2,7 @@
 title: "Custom Signs"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: Anglesey Arms reached out to us to help them build top notch sign boards for their business
+description: If you're searching for ways to enhance the visibility of your business and create a memorable experience for your customers, there's no better approach than investing in quality signage. The team at Sign Makers specializes in crafting a diverse range of building signs tailored to your unique requirements.
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -10,7 +10,7 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "Custom, Custom Signs, Signs"
 
 ---
 

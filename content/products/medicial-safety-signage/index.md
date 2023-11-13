@@ -2,7 +2,7 @@
 title: "Medical Safety Signage"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: Anglesey Arms reached out to us to help them build top notch sign boards for their business
+description: Ensure that everyone in your facility is aware of your unwavering commitment to their safety. Medical safety signs play a vital role in protecting and informing patients about risks, biohazards, and safety procedures.
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -10,7 +10,7 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "Saftey, Medical, Sign"
 
 ---
 ## Custom Signs for Businesses of All Sizes

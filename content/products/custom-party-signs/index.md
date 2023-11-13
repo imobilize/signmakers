@@ -2,7 +2,7 @@
 title: "Custom Party Signs"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: Anglesey Arms reached out to us to help them build top notch sign boards for their business
+description: If you're organizing an event or party, it's essential to convey the theme, message, or cause with a diverse range of party signs. Sign Makers can transform your next celebration into an exceptional one with fun, unique, and personalized signs in various sizes, colors, and shapes. Regardless of the occasion for your party, we will tailor the perfect assortment of signage to suit your needs
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -10,7 +10,7 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "Party Signs, Neon Signs"
 
 ---
 ## Show Your Appreciation
