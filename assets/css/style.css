@@ -2286,6 +2286,14 @@ video {
   margin-top: 10px;
 }
 
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -3307,6 +3315,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
 }
 
 .text-left {
