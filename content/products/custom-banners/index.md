@@ -2,7 +2,7 @@
 title: "Custom Banners"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: Anglesey Arms reached out to us to help them build top notch sign boards for their business
+description: Sign Makers offers tailor-made sign and banner solutions for businesses of all sizes. With over 35 years of experience, we transcend the role of a traditional sign company. Our comprehensive range of services and unmatched expertise leads to success for our valued customers.
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -10,7 +10,7 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "Banners, Custom Banners"
 
 ---
 
