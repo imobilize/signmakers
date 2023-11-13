@@ -38,14 +38,14 @@
           NATIONWIDE SIGN DESIGN, MANUFACTURE & INSTALLATION</h2>
         <div class="text-2xl mt-6 space-y-6 text-gray-900 dark:text-white">
           <p class="leading-7">Sign Makers specializes in Nationwide Sign Design, Manufacture, and Installation, offering a comprehensive range of services to meet all your signage needs. With a rich history dating back to 1946, our family-owned and operated business is committed to delivering excellence in every aspect of sign creation. Whether you require a single sign or a full-scale nationwide installation, our experienced team is dedicated to providing high-quality, tailor-made solutions that leave a lasting impression. We take pride in our ability to serve both national accounts and individual projects, ensuring that your signage requirements are met with precision and professionalism. Choose Sign Makers for all your sign design, manufacturing, and installation needs, and experience the difference that decades of expertise can make.</p>
-          {{ with resources.Get "images/logo/saturn-spraying-logo.png" }}
+          {{ with resources.Get "images/logo/sign-makers-logo.png" }}
           {{ $small := (.Resize "400x webp q100").RelPermalink }}
           {{ $medium := (.Resize "550x webp q100").RelPermalink }}
           {{ $large := (.Resize "2000x webp q50").RelPermalink }}
           {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
           <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
           {{- with $medium -}}, {{.}} 1024w{{- end -}}
-          {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="py-12">
+          {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="">
           {{end}}
           <a href="./contact"
             class="block px-5 py-3 text-xl text-center font-medium text-white bg-secondary border border-sky-700 rounded shadow hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
