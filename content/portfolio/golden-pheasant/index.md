@@ -10,7 +10,9 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "The Golden Pheasant, Branding, Signage, Sign Design, Design, interior signage, exterior design"
+categories: ["branding"]
+
 ---
 ## What the Client Wanted
 The Golden Pheasant, located in Plumley, owned by JW LEES Brewery, required a nice face lift. This included the design, manufacture and fitting of signs. Along with an hand sign painted original art piece to the front elevation of the building.
