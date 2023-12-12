@@ -5,5 +5,5 @@ draft: false
 description: "Product Range of Sign Makers"
 author: " "
 featuredImage: "images/pages/products-saturn-spraying.png"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "Signage, business signs"
 ---

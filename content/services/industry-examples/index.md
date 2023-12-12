@@ -7,7 +7,7 @@ description: Our expert team handles every kind of sign boards, may it be a 3d s
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
 images: ["images/1.jpg"]
-keywords: "Milk Glazing, oil and salt coating"
+keywords: "Resturant, Bars, flower shops, business"
 
 ---
 

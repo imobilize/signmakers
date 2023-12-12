@@ -1,0 +1,96 @@
+{{ define "main" }}
+<div class="bg-violet-900 text-white text-md md:text-center py-2 px-4">
+    <span class="bg-primary text-white text-sm font-medium mr-2 px-2.5 py-0.5 rounded">New year's special</span>Apply now to bring your visions to life and enjoy an exclusive 15% discount on your project.
+</div>
+
+<div class="container mx-auto my-auto">
+    <div class="flex items-center flex-col lg:flex-row justify-center">
+        <div class="w-full justify-center px-0 md:px-20">
+            <h1 class="text-3xl md:text-5xl text-center font-bold mt-12 leading-12">Creating a <span
+                    class="font-extrabold text-secondary">Business Sign</span>? Avoid the <span
+                    class="font-extrabold text-secondary">New Year's</span> Rush with Sign Makers!</h1>
+            <div class="flex items-center flex-col lg:flex-row mt-6 mb-6">
+                <p class="text-xl md:text-special  font-base my-6 mb-6 w-full md:w-1/2 text-center md:text-left">Don't let the hustle and bustle of the new year
+                    overwhelm your signage plans. At Sign Makers, we ensure your business stands out with professionally
+                    crafted signs that leave a lasting impression.</p>
+                {{ with resources.Get "images/special-discount.png" }}
+                {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                {{ $large := (.Resize "900x webp q80").RelPermalink }}
+                {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+                <img src="{{ $featuredimage }}" srcset="" alt="" class="w-1/2 rounded">
+                {{end}}
+            </div>
+        </div>
+    </div>
+    <div class="flex px-0 md:px-20 mb-12">
+        <div class="w-full mx-auto justify-center">
+            <p class="text-xl md:text-special  text-center font-base my-6 mb-6 w-full">
+                Welcome to Sign Makers, where excellence meets visibility. As the year comes to a close, businesses are gearing up for a fresh start. <span class="underline font-semibold"> Why wait until the new year rush to elevate your brand?</span> Act now and get ahead of the competition with our expertly designed and meticulously crafted business signs.
+            </p>
+            <div class="mt-12 mb-12 sm:mx-auto sm:flex sm:max-w-lg"><a href="/book-consultation"
+                class="block w-full px-5 py-3 text-xl text-center font-medium text-white bg-secondary border border-amber-500 rounded-md shadow hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+                Contact Us</a></div>
+        </div>
+    </div>
+</div>
+
+<div class="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 bg-gray-50 mt-3 md:mt-15">
+    <div class="container md:mt-12 mt-3">
+        <div class="w-full mx-auto my-auto">
+            <h2 class="text-4xl font-bold text-center">🚀 Why Choose Sign Makers?</h2>
+        </div>
+        <div class="flex items-center flex-col lg:flex-row w-full md:px-20 px-0 space-x-6">
+            <div class="w-1/2">
+                {{ with resources.Get "images/craftsmen.png" }}
+                {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                {{ $large := (.Resize "900x webp q80").RelPermalink }}
+                {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+                <img src="{{ $featuredimage }}" srcset="" alt="" class=" rounded-2xl mt-12 h-3/4">
+                {{end}}
+
+            </div>
+            <div class="w-full">
+                <ul class="w-full space-y-6 mt-6 md:mt-0 text-gray-500 list-inside dark:text-gray-400 text-xl md:text-special">
+                    <li class="flex items-center">
+                        ✅
+                        Customization: Tailor your sign to perfectly represent your brand identity.                    </li>
+                    <li class="flex items-center">
+                        ✅
+                        Expert Craftsmanship: Our skilled artisans bring your vision to life with precision and care.                    </li>
+                    <li class="flex items-center">
+                        ✅
+                        Quality Materials: We use top-notch materials for durable and eye-catching signage.
+
+                    </li>
+                    <li class="flex items-center">
+                        ✅
+                        Timely Delivery: No delays, no compromises – just exceptional signs ready when you need them.
+
+                    </li>
+                    <li class="flex items-center">
+                        ✅
+                        Customer Satisfaction Guarantee: If you're not thrilled with your new sign, we'll work tirelessly to make it right.
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full mt-12 mx-auto  px-0 md:px-20">
+            <h3 class="text-4xl font-semibold text-left md:font-bold">✨ Make a Statement in 2023!</h3>
+            <p class=" text-xl md:text-special mb-6">
+                Whether you're rebranding, opening a new location, or simply updating your look, Sign Makers is your trusted partner in signage solutions. Act now to secure your spot in our schedule and avoid the last-minute rush that often accompanies the new year.            </p>
+        </div>
+    </div>
+</div>
+<div class="container mt-12  px-5 md:px-20">
+    <h4 class="text-3xl md:text-4xl font-bold text-left md:text-center">Ready to Elevate your Business?  <br> <span class="font-semibold">📞 Book a Consultation Today!</span></h4>
+    <p class=" text-xl md:text-special text-center">
+        Ready to take the next step? Click the button below to schedule a consultation with our team. Let's discuss your vision, explore design possibilities, and ensure your business starts the new year with a standout sign that demands attention.
+    </p>
+    <div class="mt-12 mb-12 sm:mx-auto sm:flex sm:max-w-lg"><a href="/book-consultation"
+        class="block w-full px-5 py-3 text-xl text-center font-medium text-white bg-secondary border border-amber-500 rounded-md shadow hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+        Contact Us</a></div>
+</div>
+{{ end }}

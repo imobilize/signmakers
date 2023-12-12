@@ -7,7 +7,7 @@ description: Our design studio, based in Blackburn, has a qualified and experien
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
 images: ["images/1.jpg"]
-keywords: "Milk Glazing, oil and salt coating"
+keywords: "Logo Design, Banner Design, Card Design, signage design"
 
 ---
 

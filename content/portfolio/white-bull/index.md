@@ -10,7 +10,9 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "White Bull, Branding, Signage, Sign Design, Design, interior signage, exterior design"
+categories: ["business signage", "branding"]
+
 ---
 ## What the Client Wanted
 The White Bull located in Gisburn, was in need of whole new signage scheme and a general freshen up with a lick of paint, along with a new logo.
