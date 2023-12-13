@@ -10,7 +10,8 @@ images: ["images/1.png","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "Cock and Bottle, Branding, Signage, Sign Design, Design, interior signage, exterior design"
+categories: ["branding", "exterior signage"]
 ---
 ## What the Client Wanted
 The Cock & Bottle located in Tarleton, owned by Thwaites Brewery. We created a fresh new look with the manufacture and fitting of signs.

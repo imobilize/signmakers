@@ -10,7 +10,9 @@ images: ["images/1.jpeg","images/2.jpeg","images/3.jpeg","images/4.jpeg"]
 image1: "images/2.jpeg"
 image2: "images/3.jpeg"
 image3: "images/4.jpeg"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "The Silverdale Hotel, Branding, Signage, Sign Design, Design, interior signage, exterior design"
+categories: ["Logo Design", "exterior brand design"]
+
 ---
 ## What the Client Wanted
 The Silverdale Hotel Inn located in Silverdale, , required a full brand and signage package. This included the creation of a new logo, the manufacture and fitting of signs and a full planning permission application.

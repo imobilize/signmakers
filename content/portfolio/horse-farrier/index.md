@@ -10,7 +10,8 @@ images: ["images/1.jpeg","images/2.jpeg","images/3.jpg","images/4.jpeg"]
 image1: "images/2.jpeg"
 image2: "images/3.jpg"
 image3: "images/4.jpeg"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "Horse & Farrier, Branding, Signage, Sign Design, Design, interior signage, exterior design"
+categories: ["Signage", "logo design"]
 ---
 ## What the Client Wanted
 The Horse & Farrier, Lancaster, needed a complete new overhaul, with new signage scheme, fresh colours and new logo.

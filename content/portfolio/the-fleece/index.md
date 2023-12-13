@@ -10,7 +10,9 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "The Fleece, Branding, Signage, Sign Design, Design, interior signage, exterior design"
+categories: ["Business Sign", "exterior brand design"]
+
 ---
 ## What the Client Wanted
 The Fleece, located in Addingham, owned by the Seafood Pub Company, required a full signage package. This included the design, manufacture and fitting of signs.

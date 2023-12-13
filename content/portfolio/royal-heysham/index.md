@@ -10,7 +10,9 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
-keywords: "DiscMaster, DiscMatic, PortaDisc"
+keywords: "The Royal, Branding, Signage, Sign Design, Design, interior signage, exterior design"
+categories: ["LED signage", "hand crafted"]
+
 ---
 ## What the Client Wanted
 The Royal, located in Heysham, Morecambe, owned by Thwaites Brewery, needed a new lease of life with a whole new signage scheme.
