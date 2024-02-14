@@ -2,7 +2,7 @@
 title: "HIVE AWARDS 2019"
 date: 2023-09-08
 draft: false
-author: ""
+author: "Sign Makers"
 description: "The HIVE Blackburn & Darwen Business Awards celebrate and reward the outstanding work of businesses from different sectors and inspirational individuals from across Blackburn & Darwen."
 featuredImage: "images/1.jpg"
 images: ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/3.jpg"]
