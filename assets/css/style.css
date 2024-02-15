@@ -4963,6 +4963,10 @@ EmojiSymbols;
     width: 66.666667%;
   }
 
+  .md\:w-4\/5 {
+    width: 80%;
+  }
+
   .md\:w-6\/12 {
     width: 50%;
   }
@@ -5357,6 +5361,10 @@ EmojiSymbols;
     width: 66.666667%;
   }
 
+  .lg\:w-4\/5 {
+    width: 80%;
+  }
+
   .lg\:w-7\/12 {
     width: 58.333333%;
   }
@@ -5561,10 +5569,6 @@ EmojiSymbols;
 
   .lg\:text-5xl {
     font-size: 3rem;
-  }
-
-  .lg\:text-6xl {
-    font-size: 4rem;
   }
 
   .lg\:text-7xl {
