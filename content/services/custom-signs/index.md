@@ -47,6 +47,6 @@ Sign Makers serves as your trusted custom sign shop, helping businesses establis
 
 With building signs, you can effectively extend your brand identity beyond your sales area. Our dedicated team is excited to assist you in realizing the full potential of visual communication, enabling you to achieve more than you ever imagined.
 
-Feel free to get in touch with your local **Sign Makers** for a consultation today, or simply [click here](/quotation-form/) to get a free quote and learn more about our extensive range of custom building signage.
+Feel free to get in touch with your local **Sign Makers** for a consultation today, or simply [click here](/book-consultation/) to get a free quote and learn more about our extensive range of custom building signage.
 
 *Products and services may vary based on location. Please contact your nearest Sign Makers center for further details.*

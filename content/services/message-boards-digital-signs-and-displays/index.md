@@ -50,5 +50,5 @@ FASTSIGNS specializes in all types of signage, including marquee signs. These po
 
 If you're ready to elevate your brand message with captivating digital signage, get a **Quick Quote** within 12 hours and take the first step towards enhancing your visual communication.
 
-[Get Your Free Quote Now](/quotation-form/)
+[Get Your Free Quote Now](/book-consultation/)
 

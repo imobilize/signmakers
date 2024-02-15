@@ -4,8 +4,8 @@
 
   <div class="mx-auto max-w-screen-xl px-6 pt-8 md:pt-14 lg:pt-20">
     <h1
-      class="pb-4 h1 text-secondary tracking-snug leading-tight sm:leading-tight md:leading-tight lg:leading-tight md:text-center font-poppins">
-      Explore Our Craftsmanship Portfolio    </h1>
+      class="pb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-secondary tracking-snug leading-tight sm:leading-tight md:leading-tight lg:leading-tight md:text-center">
+      Explore Our Craftsmanship Portfolio </h1>
     <p class="pb-6 text-gray-600 text-lg md:text-2xl md:tracking-tight md:text-center leading-normal md:leading-normal">
       Unveiling a Tapestry of Expertise and Innovation in Signage Solutions
     </p>
@@ -43,50 +43,52 @@
       {{ range $index, $element := (where .Site.RegularPages "Section" "portfolio") }}
       <div class="{{ if mod $index 2 }}bg-gray-100 text-dark{{ else }}bg-gray-50{{ end }} p-6 rounded-lg">
         <a href="{{ .RelPermalink }}" class="group">
-            <div class="aspect-w-3 aspect-h-2">
-              {{ with .Resources.GetMatch .Params.featuredImage }}
-                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
-                <img class="object-cover shadow-lg rounded-lg group-hover:opacity-75 h-64" src="{{ $postimage }}" alt="{{ .Title }}">
-              {{ else }}
-                {{ $im := (.Resources.Get .Params.featuredImage) }}
-                {{ $im }}
+          <div class="aspect-w-3 aspect-h-2">
+            {{ with .Resources.GetMatch .Params.featuredImage }}
+            {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
+            <img class="object-cover shadow-lg rounded-lg group-hover:opacity-75 h-64" src="{{ $postimage }}"
+              alt="{{ .Title }}">
+            {{ else }}
+            {{ $im := (.Resources.Get .Params.featuredImage) }}
+            {{ $im }}
+            {{ end }}
+          </div>
+        </a>
+
+        <div class="mt-4">
+          <div class="flex items-center space-x-3">
+            <div class="flex items-center space-x-2">
+              {{ range $index, $tag := .Params.categories }}
+              <span
+                class="inline-flex items-center leading-none px-2.5 py-1.5 text-sm font-medium text-skin-inverted rounded-full border border-skin-input">
+                {{ $tag }}
+              </span>
               {{ end }}
             </div>
-          </a>
-    
-          <div class="mt-4">
-            <div class="flex items-center space-x-3">
-              <div class="flex items-center space-x-2">
-                {{ range $index, $tag := .Params.categories }}
-                  <span class="inline-flex items-center leading-none px-2.5 py-1.5 text-sm font-medium text-skin-inverted rounded-full border border-skin-input">
-                    {{ $tag }}
-                  </span>
-                {{ end }}
-              </div>
-            </div>
-    
-            <div class="mt-2">
-              <a href="{{ .RelPermalink }}" class="group">
-                <h4 class="text-[22px] leading-[34px]  font-semibold hover:text-primary mt-auto">{{ .Title }}</h4>
-              </a>
-              <p class="mt-1 text-sm font-normal text-skin-base leading-5">
-                {{ if .Params.summary }}
-                  {{ .Params.summary }}
-                {{ else }}
-                  {{ .Params.description }}
-                {{ end }}
-              </p>
-    
-              <a href="{{.RelPermalink}}"
-                        class="text-primary hover:underline mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read
-                        more</a>
-            </div>
+          </div>
+
+          <div class="mt-2">
+            <a href="{{ .RelPermalink }}" class="group">
+              <h4 class="text-[22px] leading-[34px]  font-semibold hover:text-primary mt-auto">{{ .Title }}</h4>
+            </a>
+            <p class="mt-1 text-sm font-normal text-skin-base leading-5">
+              {{ if .Params.summary }}
+              {{ .Params.summary }}
+              {{ else }}
+              {{ .Params.description }}
+              {{ end }}
+            </p>
+
+            <a href="{{.RelPermalink}}"
+              class="text-primary hover:underline mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read
+              more</a>
           </div>
         </div>
+      </div>
       {{ end }}
     </div>
   </div>
-  
+
 </main>
 
 {{ end }}
