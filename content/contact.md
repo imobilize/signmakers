@@ -6,7 +6,7 @@ language: en
 description: Contact Sign Makers
 type: page
 layout: contact
-image: ""
-images: [""]
+image: "images/sign-makers-card.png"
+images: ["images/sign-makers-card.png"]
 keywords: "Sign Makers, contact, email form, Our Location"
 ---
