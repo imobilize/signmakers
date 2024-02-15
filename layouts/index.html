@@ -3,32 +3,15 @@
 
     {{ partial "hero.html" . }}
 
-    {{ partial "partials/mission.html" . }}
+    {{ partial "mission.html" . }}
 
     {{ partial "why-outsource.html" . }}
 
     {{ partial "products-carousel.html" . }}
 
-    {{ partial "industries.html" . }}
-
-    {{ $products := getJSON "/data/products.json" }}
-
-    <!-- <section class="container pt-12 mb-12 mx-auto">
-        <div class="flex justify-center">
-            <h1
-                class="text-4xl md:text-5xl xl:text-5xl font-semibold tracking-tight mb-12 font-poppins text-slate-800 text-center">
-                Outdoor garden Products</h1>
-        </div>
-        <div class="flex-row md:flex space-y-4 gap-x-6 justify-center">
-            {{ range $products }}
-            {{ partial "product.html" . }}
-            {{ end }}
-        </div>
-    </section> -->
+    {{ partial "testimonial.html" . }}
 
     {{ partial "cta.html" . }}
-
-    {{ partial "testimonial.html" . }}
 
     {{ partial "home-post-section.html" . }}
 
