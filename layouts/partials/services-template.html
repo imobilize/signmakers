@@ -3,7 +3,7 @@
         {{ range .Paginator.Pages }}
 
         <a class="group sm:flex" href="{{.RelPermalink}}">
-            <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
+            <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[150px] sm:w-[250px] sm:h-[350px]">
                 {{ with .Resources.GetMatch .Params.featuredImage }}
                 {{ $small := (.Resize "400x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
@@ -41,6 +41,9 @@
         {{ end }}
     </div>
     <!-- Pagination -->
-    {{ partial "pagination" . }}
+    <div class="pt-8">
+        {{ partial "pagination" . }}
+
+    </div>
 
 </section>

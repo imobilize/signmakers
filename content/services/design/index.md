@@ -1,9 +1,9 @@
 ---
 title: "Design Services"
-date: 2021-12-18T11:10:36+08:00
+date: 2017-03-23T11:10:36+08:00
 draft: false
 language: en
-description: Our design studio, based in Blackburn, has a qualified and experienced graphic design team, who offer a range of design services.
+description: Our design services offer advice on styles, colours and typefaces. We are also happy to help in design and branding ideas.
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
 images: ["images/1.jpg"]
@@ -13,7 +13,7 @@ keywords: "Logo Design, Banner Design, Card Design, signage design"
 
 ## Design Services: Transforming Ideas into Visual Masterpieces
 
-Welcome to the **Sign Makers** Design Studio, located in Blackburn. Our studio boasts a qualified and experienced graphic design team dedicated to offering a wide array of design services. Whether you're looking for expert advice on styles, colors, and typefaces or need assistance with design ideas and branding, our team is here to bring your vision to life.
+Welcome to the **Parkinson Signs** Design Studio, located in Blackburn. Our studio boasts a qualified and experienced graphic design team dedicated to offering a wide array of design services. Whether you're looking for expert advice on styles, colors, and typefaces or need assistance with design ideas and branding, our team is here to bring your vision to life.
 
 ## Unleashing Creativity in Blackburn
 
@@ -29,7 +29,7 @@ Whether you need design ideas or assistance with branding, our team is ready to 
 ## Efficient & Cost-Effective Solutions
 
 ### Tailored to Your Budget
-At **Sign Makers**, we recognize that every budget is unique. Our commitment is to work with you, understanding your budget constraints, and finding the most cost-effective solutions without compromising on quality.
+At **Parkinson Signs**, we recognize that every budget is unique. Our commitment is to work with you, understanding your budget constraints, and finding the most cost-effective solutions without compromising on quality.
 
 ### State-of-the-Art Technology
 To ensure efficiency and precision, we utilize state-of-the-art specialist sign-making software and up-to-the-minute production techniques. Our streamlined processes enable us to provide fast and efficient design services without compromising on the quality of the final product.
@@ -44,7 +44,7 @@ Whether you need guidance on design, lighting, or installation options, our team
 
 ## Conclusion: Elevate Your Brand through Design Excellence
 
-At **Sign Makers**, our Design Services go beyond aesthetics; we are committed to transforming your ideas into visual masterpieces. From efficient and cost-effective solutions to a collaborative design process, our focus is on elevating your brand through design excellence.
+At **Parkinson Signs**, our Design Services go beyond aesthetics; we are committed to transforming your ideas into visual masterpieces. From efficient and cost-effective solutions to a collaborative design process, our focus is on elevating your brand through design excellence.
 
 ## Ready to Transform Your Ideas into Reality?
 
