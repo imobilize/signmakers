@@ -16,16 +16,16 @@ keywords: "Interior Signs, Signs"
 
 ## Transform Your Space with Interior Decor Signs
 
-First impressions are everything. The moment customers step inside your business, they immediately form an impression of who you are, what you do – and, most importantly, if they want to do business with you. That’s why the interior décor of your business must sell you. That includes just about everything that is in the line of sight of customers, including the walls, floors, counters, and reception desk. Parkinson Signs can help you make a great impression with our interior décor signs, graphics, and displays. We offer everything from printed floor mats to murals to fine art prints and can customize each to fit your brand style guidelines.
+First impressions are everything. The moment customers step inside your business, they immediately form an impression of who you are, what you do – and, most importantly, if they want to do business with you. That’s why the interior décor of your business must sell you. That includes just about everything that is in the line of sight of customers, including the walls, floors, counters, and reception desk. Sign Makers can help you make a great impression with our interior décor signs, graphics, and displays. We offer everything from printed floor mats to murals to fine art prints and can customize each to fit your brand style guidelines.
 
 Interior décor is a great way to extend your brand image and personality. It’s also an additional way to convey helpful information to your customers. We can create easy-to-read menu and display boards and digital signs as well as floor graphics and directional signs to guide your customers to a certain area. Being creative is something we are passionate about and we can’t wait to show you all the amazing things we can do. The possibilities are endless.
 
-Products and services may vary by location. Please reach out to your local Parkinson Signs center for more information.
+Products and services may vary by location. Please reach out to your local Sign Makers center for more information.
 
 ## Custom Canvas Signs
 ### Enhance Your Interior Décor
 
-Turn almost any photo, illustration or design into a fine art print using professionally printed canvas from Parkinson Signs. Custom canvas signs and prints provide a backdrop to enhance any space or quickly transform your interior décor in a professional office, lobby, medical facility and more.
+Turn almost any photo, illustration or design into a fine art print using professionally printed canvas from Sign Makers. Custom canvas signs and prints provide a backdrop to enhance any space or quickly transform your interior décor in a professional office, lobby, medical facility and more.
 
 There are several benefits to custom canvas prints. Here are a few:
 - **Assist with Branding:** Custom canvas signs provide a simple way to carry your brand identity and message throughout any space. They can communicate your message to employees, clients and visitors alike.

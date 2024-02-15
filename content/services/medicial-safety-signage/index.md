@@ -15,9 +15,9 @@ keywords: "Saftey, Medical, Sign"
 ---
 ## Custom Signs for Businesses of All Sizes
 
-Ensure that everyone in your facility is aware of your unwavering commitment to their safety. Medical safety signs play a vital role in protecting and informing patients about risks, biohazards, and safety procedures. Parkinson Signs provides an extensive range of outdoor and indoor safety signage, including compliance signs, workplace safety signs, OSHA signage, and more. Common examples of safety signage encompass exit signs, fire exit signs, emergency exit signs, no smoking signs, smoke-free workplace signs, fire extinguisher signs, and safety directional signs.
+Ensure that everyone in your facility is aware of your unwavering commitment to their safety. Medical safety signs play a vital role in protecting and informing patients about risks, biohazards, and safety procedures. Sign Makers provides an extensive range of outdoor and indoor safety signage, including compliance signs, workplace safety signs, OSHA signage, and more. Common examples of safety signage encompass exit signs, fire exit signs, emergency exit signs, no smoking signs, smoke-free workplace signs, fire extinguisher signs, and safety directional signs.
 
-Parkinson Signs can tailor your safety signs to suit your business's specific needs. We offer a wide selection of sizes, colors, and materials, ensuring that your signage seamlessly blends with your building's aesthetics. Whether you aim to communicate essential safety protocols or important instructions, we can make your signs stand out using vibrant colors and bold fonts. Our team collaborates closely with you to fully comprehend all your safety requirements.
+Sign Makers can tailor your safety signs to suit your business's specific needs. We offer a wide selection of sizes, colors, and materials, ensuring that your signage seamlessly blends with your building's aesthetics. Whether you aim to communicate essential safety protocols or important instructions, we can make your signs stand out using vibrant colors and bold fonts. Our team collaborates closely with you to fully comprehend all your safety requirements.
 
 ## More Than Just Safety Signs
 
@@ -30,7 +30,7 @@ Some of our other custom sign services include:
 - Mask required signage
 - Hand washing signage
 
-Parkinson Signs also specializes in designing and installing banners, digital displays, and much more. If you require assistance in effectively conveying your message to your customers, we are here to guide you.
+Sign Makers also specializes in designing and installing banners, digital displays, and much more. If you require assistance in effectively conveying your message to your customers, we are here to guide you.
 
 ## Ready to Enhance Your Safety Measures?
 

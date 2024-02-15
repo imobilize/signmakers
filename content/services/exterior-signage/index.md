@@ -17,7 +17,7 @@ keywords: "Exterior, Exterior Signs, Signs"
 
 If you want to send a message to prospective customers, the best way to do so is with eye-catching business signage. Though many businesses opt for thorough signage inside their business, exterior signage should also be considered when creating a visual communication strategy. There are a variety of exterior signs that can be used in a variety of ways to communicate your message. Whether you simply want to highlight your logo or name or promote a product or special, there is an exterior sign for all of your needs.
 
-Parkinson Signs can customize your exterior signage to fit your brand, including your colors, font, and any graphics or logos you may have. The right mix of styles, sizes, and types of custom storefront signs will depend on your business and what messages you want to communicate. During your consultation, the Parkinson Signs team will ask some questions about your business and your goals so that we can recommend results-producing solutions.
+Sign Makers can customize your exterior signage to fit your brand, including your colors, font, and any graphics or logos you may have. The right mix of styles, sizes, and types of custom storefront signs will depend on your business and what messages you want to communicate. During your consultation, the Sign Makers team will ask some questions about your business and your goals so that we can recommend results-producing solutions.
 
 **Awning Signage**
 ### A Visual Extension to Your Site’s Visual Communication Solution
@@ -38,7 +38,7 @@ Monument signs are sturdy signs made up of dimensional letters or a cabinet that
 **Channel Letters**
 ### Make a Lasting Impression with Custom Channel Lettering
 
-Channel letters are a type of dimensional letter that provides an impactful part of a visual communication solution for any business, organization, or outlet. Custom-made channel letters are designed and installed by Parkinson Signs and will help you accomplish your visual communication challenges.
+Channel letters are a type of dimensional letter that provides an impactful part of a visual communication solution for any business, organization, or outlet. Custom-made channel letters are designed and installed by Sign Makers and will help you accomplish your visual communication challenges.
 
 How are they constructed?
 - Face Illuminated Channel Letters
@@ -71,7 +71,7 @@ With the help of curbside pickup and service sign solutions, you can keep the cu
 
 ## Ready to Make Your Mark with Exterior Signage?
 
-Transform the facade of your business and enhance visibility with our premium Exterior Signage solutions. Whether you're looking for striking storefront signs, directional displays, or innovative outdoor branding, **Parkinson Signs** has you covered.
+Transform the facade of your business and enhance visibility with our premium Exterior Signage solutions. Whether you're looking for striking storefront signs, directional displays, or innovative outdoor branding, **Sign Makers** has you covered.
 
 [Get Your Free Quote Now](/quotation-form/) and let's embark on a journey to elevate your business exterior!
 
