@@ -5,5 +5,7 @@ draft: false
 language: en
 description: Sign Makers delivers high quality signs
 type: page
+image: "images/sign-makers-card.png"
+images: ["images/sign-makers-card.png"]
 layout: special-discount
 ---

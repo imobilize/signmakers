@@ -3,6 +3,8 @@ title: "Privacy Policy"
 date: 2023-04-10T11:10:36+08:00
 draft: false
 language: en
+image: "images/sign-makers-card.png"
+images: ["images/sign-makers-card.png"]
 description: Privacy policy
 ---
 
