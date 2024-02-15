@@ -4,6 +4,8 @@ date: 2021-12-18T03:10:36.000Z
 draft: false
 language: en
 description: ""
+image: "images/sign-makers-card.png"
+images: ["images/sign-makers-card.png"]
 keywords: ""
 ---
 
