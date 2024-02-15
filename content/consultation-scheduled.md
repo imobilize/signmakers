@@ -5,6 +5,8 @@ draft: false
 sitemapExclude: true
 language: en
 description: ""
+image: "images/sign-makers-card.png"
+images: ["images/sign-makers-card.png"]
 keywords: "Sign Makers"
 ---
 
