@@ -1,7 +1,7 @@
 <section class="py-16 px-4 md:px-10 lg:px-20">
   <div class="container mx-auto my-auto">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-3xl font-bold tracking-tight text-dark sm:text-4xl text-center mb-12">
+      <h2 class="h2 tracking-tight text-dark sm:text-4xl text-center mb-12">
         <span class="font-bold">Your Premier Source for </span> <span class="">Custom Sign Boards</span>
       </h2>
       <p class="text-left mb-6 text-xl sm:text-xl">Look no further than Sign Makers, your premier source for custom sign
@@ -16,50 +16,43 @@
       <!-- Grid -->
       <div class="grid lg:grid-cols-2 gap-6">
         {{ $servicesPages := where .Site.RegularPages "Section" "services" }}
-        {{ range $servicesPages }}
+        {{ $firstTwoPages := first 2 $servicesPages }} <!-- Select the first 2 pages -->
+        {{ range $firstTwoPages }} <!-- Range over the first two pages -->
         <!-- Card -->
         <a class="group sm:flex" href="{{ .RelPermalink }}">
-          <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
-            {{ with .Resources.GetMatch .Params.featuredImage }}
-            {{ $small := (.Resize "400x webp q80").RelPermalink }}
-            {{ $medium := (.Resize "550x webp q80").RelPermalink }}
-            {{ $large := (.Resize "900x webp q80").RelPermalink }}
-            {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-            <img src="{{ $featuredimage }}" srcset="
-                  {{- with $small -}}, {{.}} 400w{{- end -}}
-                  {{- with $medium -}}, {{.}} 550w{{- end -}}
-                  {{- with $large -}}, {{.}} 768w{{- end -}}
-                  {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-              class="w-full h-full absolute top-0 left-0 object-cover" width="100%" alt="{{ .Params.title }}" />
-            {{ end }}
-          </div>
-
-          <div class="grow">
-            <div class="p-4 flex flex-col h-full sm:p-6">
-              <h3
-                class="text-[22px] leading-[34px] font-semibold text-gray-800 hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
-                {{ .Title }}
-              </h3>
-              <p class="mt-2 text-xl sm:text-xl">
-                {{ if .Params.summary }}{{ .Params.summary }}{{ else }}{{ .Params.description }}{{ end }}
-              </p>
-
-              <div class="mt-5 sm:mt-auto">
-                <p
-                  class="mt-4 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
-                  Read more
-                  <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                  </svg>
-                </p>
-              </div>
+            <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
+                {{ with .Resources.GetMatch .Params.featuredImage }}
+                {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                {{ $large := (.Resize "900x webp q80").RelPermalink }}
+                {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+                <img src="{{ $featuredimage }}" srcset="{{ with $small }}, {{.}} 400w{{ end }} {{ with $medium }}, {{.}} 550w{{ end }} {{ with $large }}, {{.}} 768w{{ end }} {{ with $featuredimage }}, {{.}} 1100w{{ end }}"
+                    class="w-full h-full absolute top-0 left-0 object-cover" width="100%" alt="{{ .Params.title }}" />
+                {{ end }}
             </div>
-          </div>
+            <div class="grow">
+                <div class="p-4 flex flex-col h-full sm:p-6">
+                    <h3 class="text-[22px] leading-[34px] font-semibold text-gray-800 hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
+                        {{ .Title }}
+                    </h3>
+                    <p class="mt-2 text-xl sm:text-xl">
+                        {{ if .Params.summary }}{{ .Params.summary }}{{ else }}{{ .Params.description }}{{ end }}
+                    </p>
+                    <div class="mt-5 sm:mt-auto">
+                        <p class="mt-4 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
+                            Read more
+                            <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </a>
         <!-- End Card -->
         {{ end }}
-      </div>
+    </div>
+    
       <!-- End Grid -->
     </div>
 
