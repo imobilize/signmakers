@@ -1,144 +1,62 @@
-<section class="bg-white py-4 sm:py-6 md:py-8">
-    <div class="text-xl text-gray-800 container px-6  mx-auto max-w-6xl">
-        <div class="max-w-2xl">
+<section class="bg-white">
+    <div class="text-xl text-gray-800 container mt-12 px-6 py-20 mx-auto justify-center">
+        <div class="flex justify-center">
             <h2
                 class="relative text-3xl font-bold tracking-tight text-dark sm:text-4xl tracking-tight mb-12 md:mt-6 mt-0 pt-6 leading-tight font-poppins tracking-tight">
-                <span class=" text-secondary">Sign Makers</span><span class="font-bold text-primary"> Services</span>
+                <span class=" text-secondary">Sign Makers</span><span class="font-bold text-primary">
+                    Services</span>
             </h2>
-            <p class="text-grey-darker mb-8 text-2xl">Welcome to Sign Makers, where innovation meets experience. With
-                over
-                70 years of industry expertise, we offer a UK-wide service for both national accounts and individual
-                projects. Our team of qualified graphic designers and experienced installers ensure seamless sign
-                design,
-                manufacture, and installation. We take pride in maintaining full control over quality and schedules with
-                our
-                dedicated on-site workshops. Plus, our maintenance service ensures your signs and brand always look
-                their
-                best. Choose Sign Makers for all your sign needs, and experience excellence in design, installation, and
-                maintenance.</p>
+
+        </div>
+        <div class="flex justify-center">
+            <p class="text-grey-darker mb-8 text-2xl w-full md:w-4/5 lg:w-4/5">Welcome to Sign Maker, where
+                innovation meets experience. With over 70 years of industry expertise, we offer a UK-wide service for
+                both national accounts and individual projects. Our team of qualified graphic designers and experienced
+                installers ensure seamless sign design, manufacture, and installation. We take pride in maintaining full
+                control over quality and schedules with our dedicated on-site workshops. Plus, our maintenance service
+                ensures your signs and brand always look their best. Choose Parkinson Signs for all your sign needs, and
+                experience excellence in design, installation, and maintenance.</p>
+
         </div>
         <div class="container my-12 mx-auto px-4 md:px-12">
-            <div class="flex flex-wrap -mx-1 lg:-mx-4 ">
-
-                <!-- Column -->
-                <div class="my-1 mt-2 mb-2 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 h-full">
-                    <div class="rounded-lg w-full p-4 h-96 shadow-md border-b-stone-200 bg-gray-50 ">
-                        <div class="flex items-center justify-center">
-                            <span class="fas fa-spray-can fa-2x" style="color: rgb(17, 15, 43);"></span>
+            <div class="flex flex-wrap justify-center">
+                {{ $servicesPages := where .Site.RegularPages "Section" "services" }}
+                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
+                    {{ range first 3 $servicesPages }}
+                    <!-- Service Card -->
+                    <div
+                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="{{ .RelPermalink }}">
+                            {{ $featured := .Params.featuredImage }}
+                            {{ with .Resources.GetMatch $featured }}
+                            {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                            <img src="{{ $postimage }}" class="w-full" alt="{{ .Params.description }}"
+                                title="{{ .Params.description }}" />
+                            {{ end }} </a>
+                        <div class="p-5">
+                            <a href="{{ .RelPermalink }}">
+                                <h5
+                                    class="mb-2 text-2xl font-bold tracking-tight hover:text-primary text-gray-900 dark:text-white">
+                                    {{
+                                    .Title }}</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ if .Params.summary }}{{
+                                .Params.summary }}{{ else }}{{ .Params.description }}{{ end }}</p>
+                            <a href="{{ .RelPermalink }}"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:bg-sky-700 text-white bg-secondary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Read more
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2 ml-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
                         </div>
-                        <h4 class="text-lg md:text-xl xl:text-2xl font-semibold text-slate-800 text-center my-8 mb-6">
-                            FABRICATION
-                        </h4>
-                        <p class="mt-2 text-dark text-1xl text-center">Completed in our dedicated on-site workshops,
-                            giving us full control over quality and schedules. We understand your project from beginning
-                            to end.
-
-                        </p>
-
                     </div>
+                    <!-- End Service Card -->
+                    {{ end }}
                 </div>
-                <!-- END Column -->
 
-                <!-- Column -->
-                <div class="my-1 mt-2 mb-2 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 h-full">
-
-                    <div class="rounded-lg w-full shadow-md border-b-stone-200 p-4 h-96 bg-gray-100">
-                        <div class="flex items-center justify-center">
-                            <i class="fas fa-trash fa-2x" style="color:  rgb(17, 15, 43);"></i>
-                        </div>
-                        <h4 class="text-lg md:text-xl xl:text-2xl font-semibold text-slate-800 text-center my-8 mb-6">
-                            INNOVATIVE DESIGN
-                        </h4>
-                        <p class="mt-2 text-dark text-1xl text-center">Qualified and experienced graphic designers with
-                            a dedicated Design Studio. Full design service or support with integration of your existing
-                            brand.
-                        </p>
-                    </div>
-
-                </div>
-                <!-- END Column -->
-
-                <!-- Column -->
-                <div class="my-1 mt-2 mb-2 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 h-1/2">
-
-                    <div class="rounded-lg w-full p-4 shadow-md border-b-stone-200  h-96 bg-gray-50">
-                        <div class="flex items-center justify-center">
-                            <i class="fas fa-hourglass fa-2x" style="color: rgb(17, 15, 43);"></i>
-
-                        </div>
-                        <h4 class="text-lg md:text-xl xl:text-2xl font-semibold text-slate-800 text-center my-8 mb-6">
-                            INSTALLATION
-
-
-
-                        </h4>
-                        <p class="mt-2 text-1xl text-center text-dark">Our team of experienced installers will ensure
-                            your signage is installed with minimum disruption and at the perfect time for your business.
-
-
-                        </p>
-
-                    </div>
-
-                </div>
-                <!-- END Column -->
-                <!-- Column -->
-                <div class="my-1 mt-2 mb-2 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 h-full">
-                    <div class="rounded-lg w-full p-4 h-96 shadow-md border-b-stone-200 bg-gray-50 ">
-                        <div class="flex items-center justify-center">
-                            <span class="fas fa-spray-can fa-2x" style="color: rgb(17, 15, 43);"></span>
-                        </div>
-                        <h4 class="text-lg md:text-xl xl:text-2xl font-semibold text-slate-800 text-center my-8 mb-6">
-                            EXPERIENCE
-                        </h4>
-                        <p class="mt-2 text-dark text-1xl text-center">They say experience counts and with over 70 years
-                            of experience, you can rest assured that Parkinsons Signs can offer the highest standards in
-                            the UK.
-
-
-
-                        </p>
-
-                    </div>
-                </div>
-                <!-- END Column -->
-                <!-- Column -->
-                <div class="my-1 mt-2 mb-2 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 h-full">
-                    <div class="rounded-lg w-full p-4 h-96 shadow-md border-b-stone-200 bg-gray-50 ">
-                        <div class="flex items-center justify-center">
-                            <span class="fas fa-spray-can fa-2x" style="color: rgb(17, 15, 43);"></span>
-                        </div>
-                        <h4 class="text-lg md:text-xl xl:text-2xl font-semibold text-slate-800 text-center my-8 mb-6">
-                            NATIONWIDE
-
-                        </h4>
-                        <p class="mt-2 text-dark text-1xl text-center">UK-wide service for both national accounts &
-                            individual projects. Parkinson Signs can design, create and install your signs wherever you
-                            are based.
-
-                        </p>
-
-                    </div>
-                </div>
-                <!-- END Column -->
-                <!-- Column -->
-                <div class="my-1 mt-2 mb-2 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 h-full">
-                    <div class="rounded-lg w-full p-4 h-96 shadow-md border-b-stone-200 bg-gray-50 ">
-                        <div class="flex items-center justify-center">
-                            <span class="fas fa-spray-can fa-2x" style="color: rgb(17, 15, 43);"></span>
-                        </div>
-                        <h4 class="text-lg md:text-xl xl:text-2xl font-semibold text-slate-800 text-center my-8 mb-6">
-                            MAINTENANCE
-                        </h4>
-                        <p class="mt-2 text-dark text-1xl text-center">Our maintenance service offers peace of mind and
-                            ensures your signs and brand always look their best. From regular maintenance to emergency
-                            repairs.
-
-                        </p>
-
-                    </div>
-                </div>
-                <!-- END Column -->
             </div>
         </div>
         <div class="mx-auto max-w-sm pb-4">
