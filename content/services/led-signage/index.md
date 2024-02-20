@@ -36,4 +36,4 @@ For an unforgettable experience that captivates your audience, consider renting 
 
 If you're ready to enhance your event with stunning LED Displays, get a **Quick Quote** within 12 hours and make your upcoming event unforgettable.
 
-[Get Your Free Quote Now](/quotation-form/)
+[Get Your Free Quote Now](/book-consultation/)
