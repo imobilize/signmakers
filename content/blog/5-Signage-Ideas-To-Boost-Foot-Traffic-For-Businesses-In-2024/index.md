@@ -41,7 +41,7 @@ The best part is that these screens are very easy to see, even from far away or 
 
 Some cool examples are scrolling message boards that look like the words are moving across the screen, and animated advertisements that can tell a short story about a product. They’re not just signs; they’re like mini-movies that make you want to watch and see what happens next!
 
-To see how dynamic LED displays can elevate your brand presence, check out examples on Sign Makers website.
+[To see how dynamic LED displays can elevate your brand presence, check out examples on Sign Makers website.](/portfolio/)
 
 ![Dynamic LED](images/2.png)
 
@@ -55,8 +55,6 @@ To create these signs, businesses can ask you what you like when you visit their
 
 So, personalized signs are like friends who know what you like and show you things that make you smile. They help businesses make shopping fun and personal for everyone!
 
-For personalized signage solutions that resonate with your target audience, consider scheduling a consultation with Sign Makers today.
-
 ![Personalised Displays](images/5.png)
 
 ## Eco-Friendly Signage Options
@@ -66,8 +64,6 @@ More and more, businesses are choosing signs that are good for the Earth. These 
 Using eco-friendly signs is great because it shows that a business cares about nature. It can make people think better of the business, which is called enhancing the brand image. Plus, it’s a way to help our Earth stay healthy for a long time, which is known as sustainability.
 
 Some materials that are used for these kinds of signs include recycled wood, which is wood that has been used before; bamboo, a super-fast growing plant that doesn’t need much water; and LED lighting, which uses less electricity and lasts a long time.
-
-To explore eco-friendly signage options that align with your sustainability goals, visit Sign Makers website.
 
 ![Eco Friendly Signage](images/3.png)
 
@@ -104,4 +100,4 @@ Don’t wait for customers to find you—catch their eye and invite them in with
 
 Click that button and transform your space with signs that sparkle with personality and purpose. Let’s make your sign the sign that everyone talks about! ✨👇
 
-<a href="/contact" style="display:inline-block;text-decoration:none;background-color:#29086A;color:white;padding:10px 20px;border-radius:5px;font-family:sans-serif;font-size:16px;text-align:center;">Click Here</a>
+<a href="/contact" style="display:inline-block;text-decoration:none;background-color:#29086A;color:white;padding:10px 20px;border-radius:5px;font-family:sans-serif;font-size:16px;text-align:center;">Contact Us</a>
