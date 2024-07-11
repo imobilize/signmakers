@@ -2,7 +2,7 @@
 title: "Anglesey Arms"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: Anglesey Arms reached out to us to help them build top notch sign boards for their business
+description: "The Anglesey Arms reached out to us to help them build top notch sign boards for their business"
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -12,7 +12,11 @@ image2: "images/3.jpg"
 image3: "images/4.jpg"
 keywords: "Anglesy Arms, Branding, Signage, Sign Design, Design"
 categories: ["branding", "signage"]
-
+client: Angleseys Arms
+Industry: Hospitality
+Company_size: 2 - 10
+Headquarters: Entertainment
+Project_duration: 2 weeks 
 ---
 
 ## What the Client Wanted

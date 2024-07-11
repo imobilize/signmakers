@@ -1,44 +1,44 @@
 <section>
     <div class="bg-grey-50 max-w-5xl mx-auto">
         <div class="px-2 sm:container py-16 md:py-20 mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 items-end gap-6">
-                <div class="">
-                    <h2
-                        class="font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-none text-heading tracking-tighter">
-                        Latest from our
-                        blog</h2>
-                </div>
-                <div class="md:text-end">
-                    <a href="/blog"
-                        class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary hover:text-primaryHover">View
-                        all posts</a>
+            <div class="flex justify-center">
+                <div class="mb-8">
+                    <span
+                        class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-slate-50 font-medium text-secondary">Blogs and articles</span>
                 </div>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
-                {{ range ( first 2 ( where .Paginator.Pages "Type" "blog" ) ) }}
-                <div class="shadow border">
-                    <a href="{{.RelPermalink}}">
-                        {{ $featured := .Params.featuredImage }}
-                        {{ with .Resources.GetMatch $featured }}
-                        {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                        <img src="{{ $postimage }}" class="w-full" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
-                        {{ end }}
-                        <div class="py-6 px-5 xl:py-8">
-                            <h4 class="block font-body text-lg font-semibold text-heading hover:text-primaryHover">
-                                {{.Title}}</h4>
-                            <p class="block pt-2 text-body">{{ .Summary | truncate 200 }}</p>
-
-                        </div>
-                        <div class="pt-2 pb-4 px-5">
-                            <a href="{{ .RelPermalink }}" class="uppercase text-primary hover:text-primaryHover">Read
-                                More
-                                <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </a>
+            <div class="flex justify-center">
+                <h2
+                class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-none text-heading tracking-tighter">
+                Some of our articles </h2>
+            </div>
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12 w-full">
+                    {{ range ( first 3 ( where .Paginator.Pages "Type" "blog" ) ) }}
+                    <div class="">
+                        <a href="{{.RelPermalink}}">
+                            {{ $featured := .Params.featuredImage }}
+                            {{ with .Resources.GetMatch $featured }}
+                            {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                            <img src="{{ $postimage }}" class="w-full h-64 rounded-2xl" alt="{{ .Params.description }}"
+                                title="{{ .Params.description }}" />
+                            {{ end }}
+                            <div class="py-6 xl:py-8">
+                                <h4 class="block font-body text-lg font-semibold text-heading hover:text-primaryHover">
+                                    {{.Title}}</h4>
+                                <p class="block pt-2 text-body">{{ .Summary | truncate 200 }}</p>
+    
+                            </div>
+                            <div class="pt-2 pb-4">
+                                <a href="{{ .RelPermalink }}" class="uppercase text-sm text-dark-900 hover:text-primary hover:udnerline">Read
+                                    More
+                                    <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    {{ end }}
+    
                 </div>
-                {{ end }}
-
             </div>
         </div>
     </div>
