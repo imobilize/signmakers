@@ -6,8 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Mukta', ...defaultTheme.fontFamily.sans],
-        poppins: ['"Poppins"', 'cursive'],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       container: {
         padding: '2rem',
@@ -15,14 +14,15 @@ module.exports = {
       colors: {
         primary: '#DD1C1A',
         secondary: '#29086A',
-        neutral: '#306BAC',
+        neutral: '#F8F4FF',
         dark: '#0A1045',
         darksecondary: '#56445D',
         hoverprimary: '#E45310',
         green: '#56E39F',
         blue: "#0A1045",
         offwhite: "#F8FFE5",
-        lightgreen: "#06D6A0"
+        lightgreen: "#06D6A0",
+        lightpurple: "#F8F4FF",
       },
       lineHeight: {
         'extra-loose': '2.5',

@@ -1,0 +1,207 @@
+<section class="bg-white dark:bg-gray-900 py-10 sm:py-16">
+  <div class="container mx-auto">
+    <div class="flex justify-center">
+      <h1 class="text-3xl font-bold mb-4 font-medium">Trusted by over 500+ companies</h1>
+    </div>
+    <div class=" mt-4 lg:mt-12 grid grid-cols-3 md:grid-cols-7	 gap-x-6 px-12 my-8">
+      <div class="flex items-center justify-center my-4">
+        {{ with resources.Get "images/clients/1.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto h-12 ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center my-4">
+        {{ with resources.Get "images/clients/2.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center my-4">
+        {{ with resources.Get "images/clients/3.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center my-4">
+        {{ with resources.Get "images/clients/4.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center my-4">
+        {{ with resources.Get "images/clients/5.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center my-4">
+        {{ with resources.Get "images/clients/6.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center my-4">
+        {{ with resources.Get "images/clients/7.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <!-- <div class="flex items-center justify-center">
+        {{ with resources.Get "images/clients/8.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center">
+        {{ with resources.Get "images/clients/9.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center">
+        {{ with resources.Get "images/clients/10.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center">
+        {{ with resources.Get "images/clients/11.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center">
+        {{ with resources.Get "images/clients/12.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center">
+        {{ with resources.Get "images/clients/13.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center">
+        {{ with resources.Get "images/clients/14.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center">
+        {{ with resources.Get "images/clients/15.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center">
+        {{ with resources.Get "images/clients/16.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center">
+        {{ with resources.Get "images/clients/17.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div>
+      <div class="flex items-center justify-center">
+        {{ with resources.Get "images/clients/18.png" }}
+        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+        {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+        {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+        <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="w-auto ">
+        {{end}}
+      </div> -->
+    </div>
+  </div>
+</section>
