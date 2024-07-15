@@ -2,45 +2,37 @@
 <section class="w-full md:w-1/2 lg:w-2/3 flex flex-col items-center px-3">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
 
+        
         {{ range .Paginator.Pages }}
-
-        <article class="flex flex-col shadow my-4">
-            <!-- Article Image -->
-            <a href="{{.RelPermalink}}" class="hover:opacity-75">
-                {{ with .Resources.GetMatch .Params.featuredImage }}
-                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
-                <img src="{{ $postimage }}" class="object-fit overflow-hidden" width="100%" height="" loading="lazy"
-                    alt="{{ .Title }}" />
-                {{ else }}
-                {{ $im := (.Resources.Get .Params.featuredImage) }}
-
-                {{ $im }}
+        <div class="">
+            <a href="{{.RelPermalink}}">
+                {{ $featured := .Params.featuredImage }}
+                {{ with .Resources.GetMatch $featured }}
+                {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                <img src="{{ $postimage }}" class="w-full h-64 rounded-2xl" alt="{{ .Params.description }}"
+                    title="{{ .Params.description }}" />
                 {{ end }}
-
-            </a>
-            <div class="bg-white flex flex-col justify-start p-6">
-                <div class="flex">
+                <div class="mt-4">
                     {{ range $elem_index, $elem_val := (.GetTerms "tags") }}
                     <a href="{{.RelPermalink}}" class="uppercase pb-4 pr-4"><span
                             class="inline-flex items-center rounded-md bg-primary/10 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">{{
                             .LinkTitle }}</span></a>
                     {{- end -}}
                 </div>
-                <a href="{{.RelPermalink}}" class="hover:text-primary pb-4">
-                    <h4 class="h4">{{.Title}}</h4>
-                </a>
-                <p href="#" class="text-sm pb-3">
-                    By <span class="font-semibold hover:text-gray-800">{{ .Params.author }},</span>
-                    Published on <time datetime="January 2, 2006">{{.Date.Format "January 2, 2006"}}</time>
+                <div class="py-6 xl:py-8">
+                    <h4 class="block font-body text-lg font-semibold text-heading hover:text-primaryHover">
+                        {{.Title}}</h4>
+                    <p class="block pt-2 text-body">{{ .Summary | truncate 200 }}</p>
 
-                </p>
-                <a href="{{.RelPermalink}}" class="pb-6">{{ if .Summary }}{{ .Summary | truncate 160 }}{{ else }}{{
-                    .Params.description }}{{ end }}</a>
-
-                <a href="{{.RelPermalink}}" class="uppercase text-primary hover:text-amber-500">Continue Reading <i
-                        class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
+                </div>
+                <div class="pt-2 pb-4">
+                    <a href="{{ .RelPermalink }}" class="uppercase text-sm text-dark-900 hover:text-primary hover:udnerline">Read
+                        More
+                        <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </a>
+        </div>
+        
         {{ end }}
     </div>
 

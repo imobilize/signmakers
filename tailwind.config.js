@@ -1,5 +1,6 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
+// tailwind.config.js
 module.exports = {
   content: ['./layouts/**/*.html', './content/**/*.md'],
   darkMode: 'class',
@@ -15,14 +16,7 @@ module.exports = {
         primary: '#DD1C1A',
         secondary: '#29086A',
         neutral: '#F8F4FF',
-        dark: '#0A1045',
-        darksecondary: '#56445D',
-        hoverprimary: '#E45310',
-        green: '#56E39F',
-        blue: "#0A1045",
-        offwhite: "#F8FFE5",
-        lightgreen: "#06D6A0",
-        lightpurple: "#F8F4FF",
+        lightpurple: '#F8F4FF',
       },
       lineHeight: {
         'extra-loose': '2.5',
