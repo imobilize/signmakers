@@ -61,30 +61,30 @@
                     <div class="container">
                         <a class="group service-item" href="{{.RelPermalink}}">
                             {{ $featured := .Params.featuredImage }}
-                                {{ with .Resources.GetMatch $featured }}
-                                {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                                <img src="{{ $postimage }}" class="w-full h-64 rounded-2xl" alt="{{ .Params.description }}"
-                                    title="{{ .Params.description }}" />
-                                {{ end }}
+                            {{ with .Resources.GetMatch $featured }}
+                            {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                            <img src="{{ $postimage }}" class="w-full h-64 rounded-2xl" alt="{{ .Params.description }}"
+                                title="{{ .Params.description }}" />
+                            {{ end }}
                             <div class="py-4 flex flex-col h-full sm:p-6">
-                                <h3 class="h3 text-gray-800 hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
+                                <h3
+                                    class="h3 text-gray-800 hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
                                     {{ .Title }}
                                 </h3>
                                 <p class="mt-2 text-base">
-                                    {{ if .Params.summary }}{{ .Params.summary }}{{ else }}{{ .Params.description }}{{ end
+                                    {{ if .Params.summary }}{{ .Params.summary }}{{ else }}{{ .Params.description }}{{
+                                    end
                                     }}
                                 </p>
-                                <div class="mt-1 sm:mt-auto">
-                                    <p
-                                        class="inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
-                                        Read more
-                                        <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                            <path
-                                                d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                        </svg>
-                                    </p>
-                                </div>
+                                <p
+                                    class="inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
+                                    Read more
+                                    <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path
+                                            d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </p>
                             </div>
                         </a>
                     </div>
