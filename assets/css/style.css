@@ -2027,10 +2027,6 @@ video {
   margin-left: 0.5rem;
 }
 
-.ml-20{
-  margin-left: 5rem;
-}
-
 .ml-3{
   margin-left: 0.75rem;
 }
@@ -2326,10 +2322,6 @@ video {
 
 .flex-1{
   flex: 1 1 0%;
-}
-
-.flex-auto{
-  flex: 1 1 auto;
 }
 
 .flex-none{
@@ -2799,12 +2791,12 @@ video {
   --tw-gradient-to: #4c1d95;
 }
 
-.bg-cover{
-  background-size: cover;
-}
-
 .bg-contain{
   background-size: contain;
+}
+
+.bg-cover{
+  background-size: cover;
 }
 
 .bg-center{

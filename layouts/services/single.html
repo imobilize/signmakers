@@ -107,16 +107,16 @@
             <div class="flex justify-center">
                 <div class="mb-8">
                     <span
-                        class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-neutral font-medium text-secondary">Blogs & Articles</span>
+                        class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-neutral font-medium text-secondary">Explore Other Services</span>
                 </div>
             </div>
             <div class="flex justify-center">
                 <h2
                 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-none text-heading tracking-tighter">
-                Some of our articles </h2>
+                Related Services </h2>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12 w-full">
-                {{ range ( first 3 ( where .Paginator.Pages "Type" "blog" ) ) }}
+                {{ range ( first 3 ( where .Site.RegularPages "Section" "services" ) ) }}
                 <div class="">
                     <a href="{{.RelPermalink}}">
                         {{ $featured := .Params.featuredImage }}
