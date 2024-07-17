@@ -107,16 +107,16 @@
             <div class="flex justify-center">
                 <div class="mb-8">
                     <span
-          class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-slate-50 font-medium text-secondary">Explore Other Services</span>
+                        class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-neutral font-medium text-secondary">Blogs & Articles</span>
                 </div>
             </div>
             <div class="flex justify-center">
                 <h2
                 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-none text-heading tracking-tighter">
-                Related Services </h2>
+                Some of our articles </h2>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12 w-full">
-                {{ range ( first 3 ( where .Site.RegularPages "Section" "services" ) ) }}
+                {{ range ( first 3 ( where .Paginator.Pages "Type" "blog" ) ) }}
                 <div class="">
                     <a href="{{.RelPermalink}}">
                         {{ $featured := .Params.featuredImage }}
@@ -126,15 +126,21 @@
                             title="{{ .Params.description }}" />
                         {{ end }}
                         <div class="py-6 xl:py-8">
-                            <h4 class="block font-body text-lg font-semibold text-heading hover:text-primaryHover">
+                            <h4 class="block font-body text-lg font-semibold text-gray-800 hover:text-primary">
                                 {{.Title}}</h4>
-                            <p class="block pt-2 text-body">{{ .Summary | truncate 200 }}</p>
+                            <p class="block pt-2 text-body">{{ .Summary | truncate 100 }}</p>
 
                         </div>
                         <div class="pt-2 pb-4">
-                            <a href="{{ .RelPermalink }}" class="uppercase text-sm text-dark-900 hover:text-primary hover:udnerline">Read
-                                More
-                                <i class="fas fa-arrow-right"></i></a>
+                            <a href="{{ .RelPermalink }}" class="text-sm font-medium text-dark-900 hover:text-primary hover:underline"><p
+                                class="inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
+                                Read more
+                                <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path
+                                        d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </p></a>
                         </div>
                     </a>
                 </div>
