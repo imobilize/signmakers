@@ -43,78 +43,109 @@
       </div>
   </section> -->
 
-  <section class="relative bg-gray-50 pt-4 lg:pt-20 z-20">
+  <section class="relative bg-gray-50 my-8 pt-4 lg:pt-20 z-20">
     <div class="container mx-auto px-2">
-      {{ range $index, $element := (where .Site.RegularPages "Section" "portfolio") }}
-      {{ if mod $index 2 }}
-      <!-- Odd Index: Image on the right -->
-      <div class="flex flex-col md:flex-row mb-16 rounded-lg shadow-lg bg-white">
-        <div class="md:w-1/2 flex items-center justify-center p-10">
-          <div class="w-1/2 text-center md:text-left">
-            <h3 class="text-2xl md:text-4xl font-semibold my-4 md:my-0">
-              <a class="text-gray-900 my-2 md:my-0" href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h3>
-            {{ if .Params.summary }}
-            <p class="mt-3 text-gray-600">{{ .Params.summary }}</p>
-            {{ else }}
-            <p class="mt-3 text-gray-600">{{ .Params.description }}</p>
-            {{ end }}
-            <a href="{{ .RelPermalink }}"
-              class="mt-4 my-4 md:my-2 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary hover:bg-red-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-              View case study
-            </a>
+      <div class="w-full relative py-12 ">
+        <div id="keen-slider" class="keen-slider relative overflow-hidden">
+          {{ $portfolioPages := where .Site.RegularPages "Section" "portfolio" }}
+          {{ range $portfolioPages }}
+          <div class="keen-slider__slide px-2">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <a href="{{ .RelPermalink }}">
+                {{ $featured := .Params.featuredImage }}
+                {{ with .Resources.GetMatch $featured }}
+                {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                <img src="{{ $postimage }}" class="w-full h-64 rounded-2xl" alt="{{ .Params.description }}"
+                  title="{{ .Params.description }}" />
+                {{ end }}
+              </a>
+              <div class="p-5">
+                <a href="{{ .RelPermalink }}">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ .Title }}</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ .Summary | truncate 100 }}</p>
+                <a href="{{ .RelPermalink }}" class="text-blue-600 hover:text-blue-800 font-semibold">Learn more →</a>
+              </div>
+            </div>
           </div>
+          {{ end }}
         </div>
-        <div class="md:w-1/2 order-1 md:order-2">
-          <a href="{{ .RelPermalink }}">
-            {{ with .Resources.GetMatch .Params.featuredImage }}
-            {{ $postimage := (.Resize "600x400 webp q90").RelPermalink }}
-            <img class="rounded-xl md:py-12 md:px-12 px-4 py-4" src="{{ $postimage }}" alt="{{ .Title }}">
-            {{ else }}
-            {{ $im := (.Resources.Get .Params.featuredImage) }}
-            {{ $im }}
-            {{ end }}
-          </a>
+        <div class="relative flex justify-center items-center m-auto left-0 right-0 w-fit mt-12">
+          <button id="keen-slider-previous"
+            class="group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-indigo-600 !-translate-x-16">
+            <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button id="keen-slider-next"
+            class="group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-indigo-600 !translate-x-16">
+            <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
         </div>
       </div>
-      {{ else }}
-      <!-- Even Index: Image on the left -->
-      <div class="flex flex-col md:flex-row mb-16 rounded-lg shadow-lg bg-white">
-        <div class="md:w-1/2">
-          <a href="{{ .RelPermalink }}">
-            {{ with .Resources.GetMatch .Params.featuredImage }}
-            {{ $postimage := (.Resize "600x400 webp q90").RelPermalink }}
-            <img class="rounded-lg md:py-12 md:px-12 px-4 py-4" src="{{ $postimage }}" alt="{{ .Title }}">
-            {{ else }}
-            {{ $im := (.Resources.Get .Params.featuredImage) }}
-            {{ $im }}
-            {{ end }}
-          </a>
-        </div>
-        <div class="md:w-1/2 flex items-center justify-center p-5">
-          <div class="w-1/2 text-center md:text-left">
-            <h3 class="text-2xl md:text-4xl font-semibold">
-              <a class="text-gray-900 my-4 md:my-0" href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h3>
-            {{ if .Params.summary }}
-            <p class="mt-3 text-gray-600">{{ .Params.summary }}</p>
-            {{ else }}
-            <p class="mt-3 text-gray-600">{{ .Params.description }}</p>
-            {{ end }}
-            <a href="{{ .RelPermalink }}"
-              class="mt-4 my-4 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary hover:bg-red-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-              View case study
-            </a>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-      {{ end }}
     </div>
   </section>
 
 
+  <script type="module">
+    import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+
+    const keenSlider = new KeenSlider(
+      '#keen-slider',
+      {
+        loop: true,
+        slides: {
+          origin: 'center',
+          perView: 1,
+          spacing: 16,
+        },
+        breakpoints: {
+          '(min-width: 1024px)': {
+            slides: {
+              origin: 'auto',
+              perView: 3,
+              spacing: 32,
+            },
+          },
+          '(min-width: 724px)': {
+            slides: {
+              origin: 'auto',
+              perView: 3,
+              spacing: 32,
+            },
+          },
+          
+        },
+      },
+      []
+    )
+
+    const keenSliderPrevious = document.getElementById('keen-slider-previous')
+    const keenSliderNext = document.getElementById('keen-slider-next')
+
+    const keenSliderPreviousDesktop = document.getElementById('keen-slider-previous-desktop')
+    const keenSliderNextDesktop = document.getElementById('keen-slider-next-desktop')
+
+    keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
+    keenSliderNext.addEventListener('click', () => keenSlider.next())
+
+    keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev())
+    keenSliderNextDesktop.addEventListener('click', () => keenSlider.next())
+  </script>
+
+
+
+
+
 
 </main>
+
 
 {{ end }}
