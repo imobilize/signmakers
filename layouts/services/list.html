@@ -55,7 +55,7 @@
             </div>
             <!-- Services Grid -->
 
-            <div class="container mx-auto">
+            <div class=" mx-auto">
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-6">
                     {{ range .Pages }}
                     <div class="">
@@ -63,7 +63,7 @@
                             {{ $featured := .Params.featuredImage }}
                             {{ with .Resources.GetMatch $featured }}
                             {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                            <img src="{{ $postimage }}" class="w-full h-64 rounded-2xl bg-contain" alt="{{ .Params.description }}"
+                            <img src="{{ $postimage }}" class="w-full h-64 rounded-2xl bg-cover" alt="{{ .Params.description }}"
                                 title="{{ .Params.description }}" />
                             {{ end }}
                             <div class="py-4 flex flex-col h-full sm:p-6">
