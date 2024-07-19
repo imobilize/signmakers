@@ -85,15 +85,13 @@
                             title="{{ .Params.description }}" />
                         {{ end }}
                         <div class="py-6 xl:py-8">
-                            <h4 class="block font-body text-lg font-semibold text-heading hover:text-primaryHover">
+                            <h4 class="block font-body text-lg font-semibold text-blue-600 hover:text-blue-800">
                                 {{.Title}}</h4>
                             <p class="block pt-2 text-body">{{ .Summary | truncate 200 }}</p>
 
                         </div>
                         <div class="pt-2 pb-4">
-                            <a href="{{ .RelPermalink }}" class="uppercase text-sm text-dark-900 hover:text-primary hover:udnerline">Read
-                                More
-                                <i class="fas fa-arrow-right"></i></a>
+                            <a href="{{ .RelPermalink }}" class="text-blue-600 hover:text-blue-800 font-semibold">Learn more →</a>
                         </div>
                     </a>
                 </div>
