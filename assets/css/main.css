@@ -1,7 +1,10 @@
+/* main.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "./glightbox.css";
 
 /* assets */
+/* ./assets/css/main.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +12,7 @@
 /* Custom CSS */
 
 .prose :where(h1):not(:where([class~="not-prose"] *)) {
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 .product-inner {
@@ -84,7 +87,7 @@
 }
 
 .navheading {
-    @apply text-sm md:text-lg font-semibold text-dark-800
+    @apply text-sm md:text-lg font-semibold text-gray-800
 }
 
 /* Buttons */
@@ -102,3 +105,14 @@
 }
 
 /* Custom CSS end */
+.swiper-wrapper {
+    width: 100%;
+    height: max-content !important;
+    padding-bottom: 64px !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+    }
+    .swiper-pagination-bullet {
+    background: #4f46e5;
+    }

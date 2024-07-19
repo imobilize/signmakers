@@ -25,22 +25,22 @@
             </div>
             <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
                 <span
-                    class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-slate-50 font-medium text-secondary">What
+                    class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-neutral font-medium text-secondary">What
                     we offer</span>
                 <h1
-                    class="mb-4 my-8 text-4xl max-w-4xl mx-auto font-medium tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
+                    class="mb-4 text-3xl max-w-4xl mx-auto font-medium tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
                     Our Services</h1>
             </div>
         </div>
     </section>
 
 
-    <section class="bg-gray-50 relative z-10 py-8 
+    <section class="bg-gray-50 relative z-10 
     ">
         <div class="container mx-auto">
-            <div class="w-full max-w-screen-lg flex justify-between items-center my-6">
+            <div class="w-full  flex flex-col md:flex-row justify-center md:justify-between items-center my-6">
                 <h2 class="text-2xl md:text-4xl font-medium">Browse services</h2>
-                <div class="relative w-full max-w-md">
+                <div class="relative w-full md:max-w-md">
                     <input id="searchInput" type="text" class="w-full p-2 px-8 border border-gray-300 rounded-md"
                         placeholder="Search services...">
                     <div class="absolute inset-y-0 start-0 px-2 flex items-center ps-3 pointer-events-none">
@@ -55,36 +55,27 @@
             </div>
             <!-- Services Grid -->
 
-            <div class="container mx-auto">
+            <div class=" mx-auto">
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-6">
                     {{ range .Pages }}
-                    <div class="container">
+                    <div class="">
                         <a class="group service-item" href="{{.RelPermalink}}">
                             {{ $featured := .Params.featuredImage }}
-                                {{ with .Resources.GetMatch $featured }}
-                                {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                                <img src="{{ $postimage }}" class="w-full h-64 rounded-2xl" alt="{{ .Params.description }}"
-                                    title="{{ .Params.description }}" />
-                                {{ end }}
+                            {{ with .Resources.GetMatch $featured }}
+                            {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                            <img src="{{ $postimage }}" class="w-full h-64 rounded-2xl bg-cover" alt="{{ .Params.description }}"
+                                title="{{ .Params.description }}" />
+                            {{ end }}
                             <div class="py-4 flex flex-col h-full sm:p-6">
-                                <h3 class="h3 text-gray-800 hover:text-primary dark:text-gray-300 dark:group-hover:text-white">
+                                <h3
+                                    class="h3 text-blue-600 hover:text-blue-800 dark:text-gray-300 dark:group-hover:text-white">
                                     {{ .Title }}
                                 </h3>
                                 <p class="mt-2 text-base">
-                                    {{ if .Params.summary }}{{ .Params.summary }}{{ else }}{{ .Params.description }}{{ end
-                                    }}
+                                    {{ .Summary | truncate 100 }}
                                 </p>
-                                <div class="mt-1 sm:mt-auto">
-                                    <p
-                                        class="inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
-                                        Read more
-                                        <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                            <path
-                                                d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                        </svg>
-                                    </p>
-                                </div>
+                                <a href="{{ .RelPermalink }}" class="text-blue-600 hover:text-blue-800 font-semibold">Learn more →</a>
+
                             </div>
                         </a>
                     </div>
