@@ -1,13 +1,16 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ['./layouts/**/*.html', './content/**/*.md'],
+  content: [
+    './layouts/**/*.html',
+    './content/**/*.md',
+    './assets/js/**/*.js',
+  ],
   darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Mukta', ...defaultTheme.fontFamily.sans],
-        poppins: ['"Poppins"', 'cursive'],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       container: {
         padding: '2rem',
@@ -15,14 +18,8 @@ module.exports = {
       colors: {
         primary: '#DD1C1A',
         secondary: '#29086A',
-        neutral: '#306BAC',
-        dark: '#0A1045',
-        darksecondary: '#56445D',
-        hoverprimary: '#E45310',
-        green: '#56E39F',
-        blue: "#0A1045",
-        offwhite: "#F8FFE5",
-        lightgreen: "#06D6A0"
+        neutral: '#F8F4FF',
+        lightpurple: '#F8F4FF',
       },
       lineHeight: {
         'extra-loose': '2.5',
@@ -33,9 +30,9 @@ module.exports = {
         'sm': '0.875rem',    // Small
         'base': '1rem',      // Base
         'lg': '1.125rem',    // Large
-        'xl': '1rem',     // Extra Large
-        '1xl': '1rem',     // 1 Extra Large
-        '2xl': '1rem',     // 2 Extra Large
+        'xl': '1rem',        // Extra Large
+        '1xl': '1rem',       // 1 Extra Large
+        '2xl': '1.5rem',     // 2 Extra Large
         'special' : '1.50rem',
         '3xl': '1.875rem',   // 3 Extra Large
         '4xl': '2.25rem',    // 4 Extra Large

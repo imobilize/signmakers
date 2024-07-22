@@ -1,5 +1,5 @@
 ---
-title: "Unleashing the Power of Signage in Rebranding: 4 Things to Consider"
+title: "Power of Signage in Rebranding: 4 Things to Consider"
 date: 2023-10-24
 draft: false
 author: "Sign Makers"
