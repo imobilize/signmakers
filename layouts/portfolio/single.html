@@ -2,11 +2,11 @@
 
 <section class="relative md:pb-24 md:pt-12 pb-16 pt-6">
 
-  <div class="lg:container mx-auto pt-12">
-    <div class="w-full">
+  <div class="container mx-auto pt-12">
+    <div class="">
       <h1 class="my-3 p-2 md:p-5 text-4xl md:text-5xl xl:text-5xl font-medium tracking-tight mx-auto text-left">{{ .Title
         }}</h1>
-      <div class="flex my-4 lg:my-8">
+      <div class="flex my-4 container lg:my-8">
         {{ range $elem_index, $elem_val := (.GetTerms "categories") }}
         <a href="{{.RelPermalink}}" class="uppercase pb-4 pr-4"><span
             class="inline-block bg-purple-100 text-purple-800 py-1 px-3 rounded-full text-sm uppercase tracking-wider">{{

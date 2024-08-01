@@ -1,0 +1,321 @@
+{{ define "main" }}
+
+<section>
+    <div
+        class="flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-40 bg-gradient-to-r from-green-50/50 via-teal-50 to-green-50/50">
+        <h1
+            class="mx-auto max-w-4xl font-display text-3xl md:text-5xl font-bold tracking-normal text-white-300 dark:text-gray-300 sm:text-7xl">
+            {{ .Title }}
+        </h1>
+        <p class="mx-auto mt-9 max-w-3xl text-xl md:text-2xl tracking-tight text-dark-800 sm:mt-6">
+            <span class="inline-block">{{ .Params.subheading }}</span>
+        </p>
+        <a class="bg-primary dark:bg-gray-800 rounded-xl text-white dark:text-gray-300 font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-red-800 dark:hover:bg-gray-600 transition"
+            href="/book-consultation/">Contact Us</a>
+    </div>
+</section>
+
+<section class="bg-white">
+    <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24">
+        <div class="flex flex-wrap items-center mx-auto max-w-7xl">
+            <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
+                <div class="aspect-w-16 aspect-video md:aspect-square">
+                    <iframe class="w-full aaspect-video md:aspect-square"
+                        src="https://www.youtube.com/embed/uQJ5oe2tYx0?si=qD48TCDcNYfqrzwc"
+                        title="Increase your conversion rate" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay>
+                    </iframe>
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-start mt-12 mb-16 text-left text-lg lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
+                <h2 class="mb-8 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-neutral-600">
+                    {{ .Params.heading1 }}
+                </h2>
+                <p class="mb-8 leading-relaxed text-left">
+                    {{ .Params.paragraph1 }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gray-100 py-12" id="included">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-4xl font-semibold text-gray-800 mb-8">{{ .Params.benefits.title }}</h2>
+            <p class="text-lg text-gray-600 mb-12">{{ .Params.benefits.paragraph }}</p>
+        </div>
+        <div class="grid text-center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div class="p-6">
+                <div class="flex justify-center">
+                    <svg class="h-12 text-slate-800" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent"
+                            stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect>
+                        <svg width="512px" height="512px" viewBox="0 0 512 512" fill="currentColor" x="0" y="0" role="img"
+                            style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="currentColor">
+                                <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"
+                                    d="M421.83 293.82A144 144 0 0 0 218.18 90.17" />
+                                <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"
+                                    d="M353.94 225.94a48 48 0 0 0-67.88-67.88" />
+                                <path fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-miterlimit="10" stroke-width="32"
+                                    d="M192 464v-48m-101.82 5.82l33.94-33.94M48 320h48" />
+                                <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"
+                                    d="M286.06 158.06L172.92 271.19a32 32 0 0 1-45.25 0L105 248.57a32 32 0 0 1 0-45.26L218.18 90.17m203.65 203.65L308.69 407a32 32 0 0 1-45.26 0l-22.62-22.63a32 32 0 0 1 0-45.26l113.13-113.17M139.6 169.98l67.88 67.89m67.88 67.88l67.89 67.88" />
+                            </g>
+                        </svg>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-600 mb-4">{{ .Params.benefits.heading1 }}</h3>
+                <p class="text-gray-600">{{ .Params.benefits.paragraph1 }}</p>
+            </div>
+
+            <!-- Feature 3: Unlimited hosting -->
+            <div class="p-6">
+                <div class="flex justify-center">
+                    <svg class="h-12 text-slate-800" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                        class="h-full w-full">
+                        <rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent"
+                            stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect><svg width="512px"
+                            height="512px" viewBox="0 0 16 16" fill="currentColor" x="0" y="0" role="img"
+                            style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="currentColor">
+                                <g fill="currentColor">
+                                    <path d="M6 3a3 3 0 1 1-6 0a3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0a2 2 0 0 0-4 0z" />
+                                    <path
+                                        d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z" />
+                                    <path d="M9 6a3 3 0 1 0 0-6a3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0a2 2 0 0 1-4 0z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-600 mb-4">{{ .Params.benefits.heading2 }}</h3>
+                <p class="text-gray-600">{{ .Params.benefits.paragraph2 }}
+                </p>
+            </div>
+
+            <!-- Feature 4: Easy-to-use editor -->
+            <div class="p-6">
+                <div class="flex justify-center">
+                    <svg class="h-12 text-slate-800" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                        class="h-full w-full">
+                        <rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent"
+                            stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect><svg width="512px"
+                            height="512px" viewBox="0 0 32 32" fill="currentColor" x="0" y="0" role="img"
+                            style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="currentColor">
+                                <path fill="currentColor"
+                                    d="m30 28.6l-2.8-2.8c.5-.8.8-1.8.8-2.8c0-2.8-2.2-5-5-5s-5 2.2-5 5s2.2 5 5 5c1 0 2-.3 2.8-.8l2.8 2.8l1.4-1.4zM20 23c0-1.7 1.3-3 3-3s3 1.3 3 3s-1.3 3-3 3s-3-1.3-3-3zM8 16h10v2H8zm0-6h12v2H8z" />
+                                <path fill="currentColor"
+                                    d="m14 27.7l-5.2-2.8C5.8 23.4 4 20.3 4 17V4h20v11h2V4c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v13c0 4.1 2.2 7.8 5.8 9.7L14 30v-2.3z" />
+                            </g>
+                        </svg>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-600 mb-4">{{ .Params.benefits.heading3 }}</h3>
+                <p class="text-gray-600">{{ .Params.benefits.paragraph3 }}
+                </p>
+            </div>
+
+            <!-- Feature 5: Unlimited 0% commission sales -->
+            <div class="p-6">
+                <div class="flex justify-center">
+                    <svg class="h-12 text-slate-800" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                        class="h-full w-full">
+                        <rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent"
+                            stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect><svg width="512px"
+                            height="512px" viewBox="0 0 512 512" fill="currentColor" x="0" y="0" role="img"
+                            style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="currentColor">
+                                <path fill="currentColor"
+                                    d="m479.6 399.716l-81.084-81.084l-62.368-25.767A175.014 175.014 0 0 0 368 192c0-97.047-78.953-176-176-176S16 94.953 16 192s78.953 176 176 176a175.034 175.034 0 0 0 101.619-32.377l25.7 62.2l81.081 81.088a56 56 0 1 0 79.2-79.195ZM48 192c0-79.4 64.6-144 144-144s144 64.6 144 144s-64.6 144-144 144S48 271.4 48 192Zm408.971 264.284a24.028 24.028 0 0 1-33.942 0l-76.572-76.572l-23.894-57.835l57.837 23.894l76.573 76.572a24.028 24.028 0 0 1-.002 33.941Z" />
+                            </g>
+                        </svg>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-600 mb-4">{{ .Params.benefits.heading4 }}</h3>
+                <p class="text-gray-600">{{ .Params.benefits.paragraph4 }}
+                </p>
+            </div>
+
+            <!-- Feature 6: Take appointments 24/7 -->
+            <div class="p-6">
+                <div class="flex justify-center">
+                    <svg class="h-12 text-slate-800" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                        class="h-full w-full">
+                        <rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent"
+                            stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect><svg width="512px"
+                            height="512px" viewBox="0 0 32 32" fill="currentColor" x="0" y="0" role="img"
+                            style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="currentColor">
+                                <path fill="currentColor"
+                                    d="M16 5a2 2 0 1 0 0 4a2 2 0 0 0 0-4Zm-4 2a4 4 0 1 1 8 0a4 4 0 0 1-8 0Zm13.5-1a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3ZM22 7.5a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0Zm-17 0a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0ZM6.5 4a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7Zm2.151 20.505A3 3 0 0 1 4 22v-6.5a.5.5 0 0 1 .5-.5h4.031a3.981 3.981 0 0 1 .846-2H4.5A2.5 2.5 0 0 0 2 15.5V22a5 5 0 0 0 7.327 4.427a7.446 7.446 0 0 1-.676-1.922Zm14.022 1.922A5 5 0 0 0 30 22v-6.5a2.5 2.5 0 0 0-2.5-2.5h-4.877a3.99 3.99 0 0 1 .846 2H27.5a.5.5 0 0 1 .5.5V22a3 3 0 0 1-4.651 2.505a7.447 7.447 0 0 1-.676 1.922ZM12.5 13a2.5 2.5 0 0 0-2.5 2.5V23a6 6 0 0 0 12 0v-7.5a2.5 2.5 0 0 0-2.5-2.5h-7Zm-.5 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5V23a4 4 0 0 1-8 0v-7.5Z" />
+                            </g>
+                        </svg>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-600 mb-4">{{ .Params.benefits.heading5 }}</h3>
+                <p class="text-gray-600">{{ .Params.benefits.paragraph4 }}
+            </div>
+
+            <div class="p-6">
+                <div class="flex justify-center">
+                    <svg class="h-12 text-slate-800" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                        class="h-full w-full">
+                        <rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent"
+                            stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect><svg width="512px"
+                            height="512px" viewBox="0 0 32 32" fill="currentColor" x="0" y="0" role="img"
+                            style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="currentColor">
+                                <path fill="currentColor"
+                                    d="M16 5a2 2 0 1 0 0 4a2 2 0 0 0 0-4Zm-4 2a4 4 0 1 1 8 0a4 4 0 0 1-8 0Zm13.5-1a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3ZM22 7.5a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0Zm-17 0a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0ZM6.5 4a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7Zm2.151 20.505A3 3 0 0 1 4 22v-6.5a.5.5 0 0 1 .5-.5h4.031a3.981 3.981 0 0 1 .846-2H4.5A2.5 2.5 0 0 0 2 15.5V22a5 5 0 0 0 7.327 4.427a7.446 7.446 0 0 1-.676-1.922Zm14.022 1.922A5 5 0 0 0 30 22v-6.5a2.5 2.5 0 0 0-2.5-2.5h-4.877a3.99 3.99 0 0 1 .846 2H27.5a.5.5 0 0 1 .5.5V22a3 3 0 0 1-4.651 2.505a7.447 7.447 0 0 1-.676 1.922ZM12.5 13a2.5 2.5 0 0 0-2.5 2.5V23a6 6 0 0 0 12 0v-7.5a2.5 2.5 0 0 0-2.5-2.5h-7Zm-.5 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5V23a4 4 0 0 1-8 0v-7.5Z" />
+                            </g>
+                        </svg>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-600 mb-4">{{ .Params.benefits.heading6 }}</h3>
+                <p class="text-gray-600">{{ .Params.benefits.paragraph6 }}
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="max-w-7xl mx-auto mt-4">
+                <a href="/contact/"
+                    class="block px-5 py-3 text-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+                    Contact Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-white">
+    <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
+        <div class="font-light text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
+            <h2 class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none  text-gray-800">
+                {{ .Params.heading2 }}</h2>
+            <p class="mb-8 leading-relaxed text-left">
+                {{ .Params.paragraph2 }}
+            </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <img class="w-full rounded-lg" src="{{ .Params.image2 }}" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ .Params.image2 }}" alt="office content 2">
+        </div>
+    </div>
+
+</section>
+
+<section class="bg-white md:py-20 py-2">
+    <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
+        <div class="grid grid-cols-1 gap-4 mt-8">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                type="module"></script>
+
+            <dotlottie-player src="https://lottie.host/fd9c799f-f3ef-48b2-8a82-1faa0a2a6432/kkGtI9iU4h.json"
+                background="transparent" speed="1" class="h-64 md:h-96 " loop autoplay></dotlottie-player>
+        </div>
+        <div class="font-light text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
+            <h2 class="mb-8 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none  text-gray-800">
+                {{ .Params.heading3 }}
+            </h2>
+            <p class="text-base py-6">{{ .Params.paragraph3 }}
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<section class="bg-gray-50">
+    <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
+        <div class="font-light text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
+            <h2 class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-gray-800">
+                {{ .Params.heading4 }}</h2>
+            <p class="mb-8 leading-relaxed text-left">
+                {{ .Params.paragraph4 }}
+            </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <img class="w-full rounded-lg" src="{{ .Params.image4 }}" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ .Params.image4 }}" alt="office content 2">
+        </div>
+    </div>
+
+    <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
+        <div class="grid grid-cols-1 gap-4 mt-8">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                type="module"></script>
+
+            <dotlottie-player src="https://lottie.host/1310f04d-4885-4190-a936-afdbc43e84e5/qart6zco0I.json"
+                background="transparent" speed="1" class="h-64 md:h-96" loop autoplay></dotlottie-player>
+        </div>
+        <div class="font-light text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
+            {{ .Params.paragraph5 }}
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
+        <div class="font-light text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
+            <h2 class="mb-8 xs:text-2xl md:text-3xl lg:text-3xl font-medium leading-none text-gray-800">
+                {{ .Params.heading6 }}</h2>
+            <p class="mb-8 leading-relaxed text-left">
+                {{ .Params.paragraph6 }}
+            </p>
+            <div class="max-w-7xl mx-auto mt-4">
+                <a href="/contact/"
+                    class="block px-5 py-3 text-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+                    Conact Us
+                </a>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 gap-4 mt-8">
+            <img class="mt-4 w-full lg:mt-10 shaodw rounded-lg"
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="office content 1">
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA section -->
+<section class="pt-12 bg-white">
+    <div class="container mx-auto">
+        <div class="relative py-2 md:py-12">
+            <div
+                class="container mx-auto bg-gradient-to-tr from-green-200/50 via-teal-100 to-green-200/50 rounded-2xl shadow-md z-0">
+                <div class="row">
+                    <div class="flex-col flex md:flex-row justify-between items-center">
+                        <div class="mx-auto p-3 md:p-12">
+                            <h3
+                                class="text-2xl md:text-4xl max-w-2xl text-center md:text-left font-bold tracking-tight text-gray-900 sm:text-3xl">
+                                Effortless appointment setting tailored to your needs.
+
+                            </h3>
+                            <p
+                                class="max-w-2xl mb-12 py-4 mx-auto text-base md:text-xl text-center md:text-left f md:text-xl tracking-tight font-semibold text-stone-500">
+                                Experience zero hassle and unmatched support every step of the way. Unmatched customer
+                                service.
+                            </p>
+                            <a href="/book-consultation/"
+                                class="block px-5 py-3 w-64 mt-2 text-xl text-center text-white font-semibold border border-amber-500 rounded-lg focus:ring focus:ring-amber-300 bg-amber-600 hover:bg-amber-500 transition ease-in-out duration-200">
+                                Book Free Consultation</a>
+                        </div>
+                        <div class="sm:mx-auto sm:flex sm:max-w-lg">
+                            {{ with resources.Get "/images/appointmentsetting/cta.png" }}
+                            {{ $together := .RelPermalink }}
+                            <img src="{{$together}}" class="w-full z-40 overflow-vissible" alt="">
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
