@@ -11,7 +11,16 @@ image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
 keywords: "Business Signs, Business Hours"
-
+type: page
+layout: template-4
+heading1: "Your Brand, Your Schedule"
+paragraph1: "Effectively communicating your business hours is a critical aspect of customer engagement, and the optimal approach is through personalized signage. At Sign Makers, we specialize in crafting custom business hour signs that go beyond the standard templates seen in countless businesses. Our team of talented designers takes the time to understand your unique business needs, listen to your ideas, and create signs that seamlessly align with your distinctive brand and style."
+heading2: "Choose Your Materials & Font"
+paragraph2: "Sign Makers is committed to providing you with abundant choices when it comes to your business hour signs. Depending on your location, available sign materials may include Aluminum, Acrylic, Corrugated plastic, PVC, FabricVinyl, Magnetic and Wood"
+heading3: "Font Customization"
+paragraph3: "Personalize your signs further by selecting the font size, color, and style. Opt for a font that ensures easy readability, and our team can offer guidance to help you determine the most suitable font for enhanced visibility, noticeability, and legibility."
+heading4: "Fast Turnaround Times: Sign Makers' Promise"
+paragraph4: "True to our name, Sign Makers excels at delivering custom signs promptly while upholding the highest quality standards. The turnaround time for your signs will depend on factors like complexity and material selection. Rest assured, our team will provide you with a precise timeframe once they've gathered all the necessary information."
 ---
 
 ## Custom Business Hour Signs: Your Brand, Your Schedule
