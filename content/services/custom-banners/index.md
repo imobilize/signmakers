@@ -28,7 +28,7 @@ benefits:
   icon1: "images/benifit-1.svg"
   heading2: "Craftsmanship"
   paragraph2: "Every design, signage, or vinyl is a testament to our craftsmanship. We take pride in delivering not just products, but works of art that speak volumes about your brand."
-  icon2: "images/hammer-wrench.svg"
+  icon2: "images/benifit-2.svg"
   heading3: "Comprehensive Approach"
   paragraph3: "From the first spark of an idea to the final installation, Sign Makers adopts a comprehensive approach. We cover every aspect of branding to create a harmonious and impactful brand presence."
   icon3: "images/benifit-3.svg"

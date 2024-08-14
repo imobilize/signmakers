@@ -36,7 +36,7 @@
   <section class="bg-gray-50 relative z-10">
     <div class="container mx-auto">
       <div class="relative my-4">
-        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
+        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-center lg:gap-24 lg:px-8">
           <div class="relative sm:py-8 lg:py-0">
             <div class="md:py-12 sm:pt-6 lg:py-20">
               <div class="mb-4">
@@ -74,11 +74,11 @@
             <div class="relative max-w-md px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
               <!-- Testimonial card-->
               <div class="relative overflow-hidden">
-                {{ $missionimage := resources.Get "images/why-choose-us.png" }}
+                {{ $missionimage := resources.Get "images/about_us_sign_makers_custom_sign_making.JPG" }}
                 {{ with $missionimage }}
                 {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
                 <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
-                  class="object-cover w-full h-full" alt="Our Mission - Sign Makers" loading="lazy" />
+                  class="object-cover w-full h-full rounded-lg" alt="Our Mission - Sign Makers" loading="lazy" />
                 {{ end }}
                 {{ end }}
 

@@ -12,17 +12,12 @@
             <!-- End Title -->
 
             <div class="mt-5 max-w-3xl text-center mx-auto">
-                <p class="text-xl text-gray-600">Outsourcing lead generation is <span class="font-bold">46%</span> more
-                    efficient than generating them in-house. 63% of marketers state that generating traffic and leads is
-                    their biggest challenge.</p>
-                    <p class="mx-auto mt-9 max-w-3xl text-xl md:text-2xl tracking-tight text-dark-800 sm:mt-6">
-                        <span class="inline-block">{{ .Params.subheading }}</span>
-                    </p>
+                <p class="text-xl text-gray-600">{{ .Params.subheading }}</p>
             </div>
 
             <!-- Buttons -->
             <div class="mt-8 gap-3 flex justify-center">
-                <a class="isomorphic-link isomorphic-link--internal inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-amber-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                <a class="isomorphic-link isomorphic-link--internal inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-red-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                     href="/book-consultation/">
                     Book Free Consultation Now
                     <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -39,8 +34,8 @@
 </section>
 
 <section class="bg-gray-50 my-8">
-    <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
-        <div class="font-light text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
+    <div class="gap-16 items-center flex flex-col md:flex-row px-4 mx-auto  lg:px-6">
+        <div class="font-light  order-2 md:order-none w-full w-1/2 text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
             <h2 class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-gray-900">
                 {{ .Params.heading1 }}</h2>
             <p class="mb-8 leading-relaxed text-left">
@@ -53,10 +48,13 @@
                 </a>
             </div>
         </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="{{ .Params.image1 }}" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ .Params.image2 }}" alt="office content 2">
+        <div class="w-full w-1/2">
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <img class="w-full rounded-lg" src="{{ .Params.image1 }}" alt="office content 1">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ .Params.image2 }}" alt="office content 2">
+            </div>
         </div>
+        
     </div>
 </section>
 
@@ -66,14 +64,12 @@
 
             <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
                 <div class="relative w-full max-w-lg">
-                    <div class="aspect-w-16 aspect-video md:aspect-square">
                         {{ $image4 := .Params.image1 }}
                     {{ with .Resources.GetMatch $image4 }}
                     {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                    <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
+                    <img src="{{ $postimage }}" class="w-full  rounded-2xl my-8 md:my-0" alt="{{ .Params.description }}"
                         title="{{ .Params.description }}" />
                     {{ end }}
-                    </div>
                 </div>
             </div>
             <div
@@ -99,7 +95,7 @@
     <div class="px-4 py-12 mx-auto sm:px-6 md:px-12 lg:px-24 lg:py-24">
         <div class="flex flex-wrap max-w-6xl   items-center  mx-auto">
             <div
-                class="w-full md:w-1/2 max-w-md mx-auto items-start mb-16 text-left text-lg lg:flex-grow lg:w-1/2  md:mb-0 xl:mt-0">
+                class="w-full md:w-1/2  order-2 md:order-none max-w-md mx-auto items-start mb-16 text-left text-lg lg:flex-grow lg:w-1/2  md:mb-0 xl:mt-0">
                 <h2 class="mb-8 xs:text-2xl md:text-3xl max-w-xl lg:text-4xl font-medium leading-none text-neutral-600">
                     {{ .Params.heading3 }}
 
@@ -115,14 +111,12 @@
             </div>
             <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
                 <div class="relative w-full max-w-lg">
-                    <div class="aspect-w-16 aspect-video md:aspect-square">
                         {{ $image4 := .Params.image2 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
+                        <img src="{{ $postimage }}" class="w-full  rounded-2xl my-8 md:my-0" alt="{{ .Params.description }}"
                             title="{{ .Params.description }}" />
                         {{ end }}
-                    </div>
                 </div>
             </div>
 
@@ -130,11 +124,11 @@
     </div>
 </section>
 
-<section class="bg-gray-50">
+<section class="bg-gray-50 py-12 md:py-40">
     <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
         <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="{{ .Params.image1 }}" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ .Params.image2 }}" alt="office content 2">
+            <img class="w-full rounded-lg" src="{{ .Params.image3 }}" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ .Params.image4 }}" alt="office content 2">
         </div>
         <div class="font-light text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
             <h2 class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-gray-900">

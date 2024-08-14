@@ -20,9 +20,9 @@
         <div class="flex flex-wrap items-center mx-auto max-w-7xl">
             <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
                 <div class="aspect-w-16 aspect-video md:aspect-square">
-                    <iframe class="w-full aaspect-video md:aspect-square"
-                        src="https://www.youtube.com/embed/uQJ5oe2tYx0?si=qD48TCDcNYfqrzwc"
-                        title="Increase your conversion rate" frameborder="0"
+                    <iframe class="w-full aspect-video md:aspect-square"
+                        src="{{ .Params.videolink }}"
+                        title="Google Drive Video" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay>
                     </iframe>
@@ -41,6 +41,7 @@
     </div>
 </section>
 
+
 <section class="bg-gray-100 py-12" id="included">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
@@ -53,8 +54,9 @@
                     <svg class="h-12 text-slate-800" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                         <rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent"
                             stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect>
-                        <svg width="512px" height="512px" viewBox="0 0 512 512" fill="currentColor" x="0" y="0" role="img"
-                            style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="512px" height="512px" viewBox="0 0 512 512" fill="currentColor" x="0" y="0"
+                            role="img" style="display:inline-block;vertical-align:middle"
+                            xmlns="http://www.w3.org/2000/svg">
                             <g fill="currentColor">
                                 <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"
                                     d="M421.83 293.82A144 144 0 0 0 218.18 90.17" />
@@ -191,7 +193,7 @@
         </div>
     </div>
 </section>
-<section class="bg-white">
+<section class="bg-white  py-12 md:py-20">
     <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
         <div class="font-light text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
             <h2 class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none  text-gray-800">
@@ -200,24 +202,40 @@
                 {{ .Params.paragraph2 }}
             </p>
         </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="{{ .Params.image2 }}" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ .Params.image2 }}" alt="office content 2">
+        <div class="grid grid-cols-2 gap-4 mt-8 items-center">
+            <div class="relative w-full">
+                {{ $image := .Params.image12 }}
+                {{ with .Resources.GetMatch $image }}
+                {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
+                    title="{{ .Params.description }}" />
+                {{ end }}
+            </div>
+            <div class="relative w-full">
+                {{ $image4 := .Params.image }}
+                {{ with .Resources.GetMatch $image4 }}
+                {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
+                    title="{{ .Params.description }}" />
+                {{ end }}
+            </div>
         </div>
     </div>
 
 </section>
 
-<section class="bg-white md:py-20 py-2">
-    <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
-        <div class="grid grid-cols-1 gap-4 mt-8">
-            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-                type="module"></script>
-
-            <dotlottie-player src="https://lottie.host/fd9c799f-f3ef-48b2-8a82-1faa0a2a6432/kkGtI9iU4h.json"
-                background="transparent" speed="1" class="h-64 md:h-96 " loop autoplay></dotlottie-player>
-        </div>
-        <div class="font-light text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
+<section class="bg-white md:py-40 py-2">
+    <div class="container mx-auto">
+        <div class="gap-6 items-center px-4 mx-auto flex flex-col md:flex-row lg:px-6">
+            <div class="w-full md:w-1/2">
+                {{ $image := .Params.image13 }}
+                {{ with .Resources.GetMatch $image }}
+                {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                <img src="{{ $postimage }}" class="w-full  rounded-2xl rotate-90 my-12 md:my-0" alt="{{ .Params.description }}"
+                    title="{{ .Params.description }}" />
+                {{ end }}
+            </div>
+        <div class="font-light w-full md:w-1/2 text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400 order-2 lg:order-none">
             <h2 class="mb-8 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none  text-gray-800">
                 {{ .Params.heading3 }}
             </h2>
@@ -226,64 +244,77 @@
 
         </div>
     </div>
+    </div>
 </section>
 
 <section class="bg-gray-50">
-    <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
-        <div class="font-light text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
-            <h2 class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-gray-800">
-                {{ .Params.heading4 }}</h2>
-            <p class="mb-8 leading-relaxed text-left">
-                {{ .Params.paragraph4 }}
-            </p>
+    <div class="container mx-auto">
+        <div class="gap-6 items-center px-4 mx-auto flex flex-col md:flex-row lg:px-6 py-12 md:py-20">
+            <div class="font-light w-full md:w-1/2 text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
+                <h2 class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-gray-800">
+                    {{ .Params.heading4 }}</h2>
+                <p class="mb-8 leading-relaxed text-left">
+                    {{ .Params.paragraph4 }}
+                </p>
+            </div>
+            <div class=" w-full md:w-1/2 mt-8">
+                {{ $image := .Params.image14 }}
+                {{ with .Resources.GetMatch $image }}
+                {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
+                    title="{{ .Params.description }}" />
+                {{ end }}
+            </div>
         </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="{{ .Params.image4 }}" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ .Params.image4 }}" alt="office content 2">
-        </div>
-    </div>
-
-    <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
-        <div class="grid grid-cols-1 gap-4 mt-8">
-            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-                type="module"></script>
-
-            <dotlottie-player src="https://lottie.host/1310f04d-4885-4190-a936-afdbc43e84e5/qart6zco0I.json"
-                background="transparent" speed="1" class="h-64 md:h-96" loop autoplay></dotlottie-player>
-        </div>
-        <div class="font-light text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
-            {{ .Params.paragraph5 }}
+    
+        <div class="gap-6 items-center px-4 mx-auto flex flex-col md:flex-row lg:px-6">
+            <div class="w-full md:w-1/2 mt-8">
+                {{ $image := .Params.image15 }}
+                {{ with .Resources.GetMatch $image }}
+                {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
+                    title="{{ .Params.description }}" />
+                {{ end }}
+            </div>
+            <div class="font-light w-full md:w-1/2 order-2 md:order-none text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
+                {{ .Params.paragraph5 }}
+            </div>
         </div>
     </div>
 </section>
 
 
 <section>
-    <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
-        <div class="font-light text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
-            <h2 class="mb-8 xs:text-2xl md:text-3xl lg:text-3xl font-medium leading-none text-gray-800">
-                {{ .Params.heading6 }}</h2>
-            <p class="mb-8 leading-relaxed text-left">
-                {{ .Params.paragraph6 }}
-            </p>
-            <div class="max-w-7xl mx-auto mt-4">
-                <a href="/contact/"
-                    class="block px-5 py-3 text-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
-                    Conact Us
-                </a>
+    <div class="container mx-auto">
+        <div class="gap-6 items-center px-4 mx-auto flex flex-col md:flex-row lg:px-6">
+            <div class="font-light w-full md:w-1/2 order-2 lg:order-none text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
+                <h2 class="mb-8 xs:text-2xl  md:text-3xl lg:text-3xl font-medium leading-none text-gray-800">
+                    {{ .Params.heading6 }}</h2>
+                <p class="mb-8 leading-relaxed text-left">
+                    {{ .Params.paragraph6 }}
+                </p>
+                <div class="max-w-7xl mx-auto mt-4">
+                    <a href="/contact/"
+                        class="block px-5 py-3 text-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+                        Conact Us
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="grid grid-cols-1 gap-4 mt-8">
-            <img class="mt-4 w-full lg:mt-10 shaodw rounded-lg"
-                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="office content 1">
+            <div class=" w-full md:w-1/2 mt-8">
+                {{ $image := .Params.image16 }}
+                {{ with .Resources.GetMatch $image }}
+                {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.image1alt}}"
+                    title="{{ .Params.description }}" />
+                {{ end }}
+            </div>
         </div>
     </div>
 </section>
 
 
 <!-- CTA section -->
-<section class="pt-12 bg-white">
+<!-- <section class="pt-12 bg-white">
     <div class="container mx-auto">
         <div class="relative py-2 md:py-12">
             <div
@@ -302,7 +333,7 @@
                                 service.
                             </p>
                             <a href="/book-consultation/"
-                                class="block px-5 py-3 w-64 mt-2 text-xl text-center text-white font-semibold border border-amber-500 rounded-lg focus:ring focus:ring-amber-300 bg-amber-600 hover:bg-amber-500 transition ease-in-out duration-200">
+                                class="block px-5 py-3 w-64 mt-2 text-xl text-center text-white font-semibold border border-red-500 rounded-lg focus:ring focus:ring-red-300 bg-primary hover:bg-red-800 transition ease-in-out duration-200">
                                 Book Free Consultation</a>
                         </div>
                         <div class="sm:mx-auto sm:flex sm:max-w-lg">
@@ -316,6 +347,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 {{ end }}

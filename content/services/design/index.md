@@ -4,23 +4,24 @@ date: 2017-03-23T11:10:36+08:00
 draft: false
 language: en
 description: Our design services offer advice on styles, colours and typefaces. We are also happy to help in design and branding ideas.
-featuredImage: "images/1.jpg"
-image: "images/1.jpg"
-images: ["images/1.jpg"]
+featuredImage: "images/3.jpg"
+image: "images/3.jpg"
+images: ["images/3.jpg"]
 keywords: "Branding, Brand Building, Business Brand"
 type: page
 layout: branding
 subheading: "Creating a brand that nobody forgets 💅"
 quotation: "Whether you're looking for expert advice on styles, colors, and typefaces or need assistance with design ideas and branding, our team is here to bring your vision to life."
-image1: "images/1.jpg"
-image2: "images/2.jpg"
-image3: "images/2.jpg"
-image4: "images/2.jpg"
-image5: "images/2.jpg"
-image6: "images/2.jpg"
+image1: "images/3.jpg"
+image2: "images/7.jpg"
+image3: "images/3.jpg"
+image4: "images/4.jpg"
+image5: "images/5.jpg"
+image16: "images/6.jpg"
 image7: "images/2.jpg"
 heading1: "Transforming Ideas into Visual Masterpieces"
 paragraph2: "Welcome to the Sign Makers Design Studio, located in Blackburn. Our studio boasts a qualified and experienced graphic design team dedicated to offering a wide array of design services. Whether you're looking for expert advice on styles, colors, and typefaces or need assistance with design ideas and branding, our team is here to bring your vision to life."
+heading3: "Why Choose us?"
 paragraph3: "Why you need to choose us"
 benefits:
   heading1: "Tailored Solutions"
@@ -28,7 +29,7 @@ benefits:
   icon1: "images/benifit-1.svg"
   heading2: "Craftsmanship"
   paragraph2: "Every design, signage, or vinyl is a testament to our craftsmanship. We take pride in delivering not just products, but works of art that speak volumes about your brand."
-  icon2: "images/hammer-wrench.svg"
+  icon2: "images/benifit-2.svg"
   heading3: "Comprehensive Approach"
   paragraph3: "From the first spark of an idea to the final installation, Sign Makers adopts a comprehensive approach. We cover every aspect of branding to create a harmonious and impactful brand presence."
   icon3: "images/benifit-3.svg"
