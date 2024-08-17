@@ -4,13 +4,14 @@ date: 2020-09-23T15:28:43+06:00
 draft: false
 language: en
 description: Sign Makers offers tailor-made sign and banner solutions for businesses of all sizes. With over 35 years of experience, we transcend the role of a traditional sign company. Our comprehensive range of services and unmatched expertise leads to success for our valued customers.
-featuredImage: "images/2.jpg"
+featuredImage: "images/4.jpg"
 image: "images/1.jpg"
 images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
-image1: "images/2.jpg"
+image1: "images/3.jpg"
 image2: "images/2.jpg"
-image3: "images/1.jpg"
+image3: "images/3.jpg"
 image5: "images/1.jpg"
+image16: "images/4.jpg"
 images: ["images/1.jpg"]
 keywords: "Banners, Custom Banners"
 type: page
@@ -28,7 +29,7 @@ benefits:
   icon1: "images/benifit-1.svg"
   heading2: "Craftsmanship"
   paragraph2: "Every design, signage, or vinyl is a testament to our craftsmanship. We take pride in delivering not just products, but works of art that speak volumes about your brand."
-  icon2: "images/hammer-wrench.svg"
+  icon2: "images/benifit-2.svg"
   heading3: "Comprehensive Approach"
   paragraph3: "From the first spark of an idea to the final installation, Sign Makers adopts a comprehensive approach. We cover every aspect of branding to create a harmonious and impactful brand presence."
   icon3: "images/benifit-3.svg"

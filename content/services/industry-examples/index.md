@@ -5,17 +5,19 @@ date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
 description: Our expert team handles every kind of sign boards, may it be a 3D sign, interior signboards, or exterior signboards, ensuring top-notch quality.
-featuredImage: "images/1.jpg"
-image: "images/1.jpg"
+featuredImage: "images/2.jpg"
 images: ["images/1.jpg"]
-image1: "images/"
-image2: "images/"
-image3: "images/"
-image4: "images/"
-image5: "images/"
-image6: "images/"
+image: "images/2.jpg"
+image11: "images/2.jpg"
+image12: "images/4.jpg"
+image13: "images/5.jpg"
+image14: "images/6.jpg"
+image15: "images/7.jpg"
+image16: "images/8.jpg"
+image1alt: "Im under the water"
+videolink: "https://drive.google.com/file/d/1_bTQgv_QlCO0l9PaIWiRpALWA3QG1yzx/preview"
 keywords: "Restaurant, Bars, Flower Shops, Business"
-type: page
+type: page 
 layout: template-2
 heading1: "Elevating Brands Across Sectors"
 paragraph1: "With over 60 years of experience, The Sign Makers has cultivated strong relationships with leading breweries in the UK. We understand the paramount importance of getting the brand right in the brewing industry. Our brewery signage solutions include gold leaf finished lettering, amenity boards, chalk boards, flood lighting, full lighting schemes, post-mounted pictorials, A-boards, traditional sign writing, and pictorials. Additionally, we provide parasols, windbreaks, awnings, smoking solutions, menu and poster display cases, and planning applications."

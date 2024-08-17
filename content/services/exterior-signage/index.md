@@ -4,10 +4,10 @@ date: 2020-09-23T15:28:43+06:00
 draft: false
 description: Whether you simply want to highlight your logo or name or promote a product or special, there is an exterior sign for all of your needs.
 author: " "
-featuredImage: "images/1.jpg"
-image: "images/1.jpg"
+featuredImage: "images/6.jpg"
+image: "images/6.jpg"
 images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
-image1: "images/1.jpg"
+image1: "images/4.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
 keywords: "Exterior, Exterior Signs, Signs"
@@ -15,7 +15,7 @@ type: page
 layout: template-3
 subheading: "Whether you simply want to highlight your logo or name or promote a product or special, there is an exterior sign for all of your needs."
 quotation: "Your Quotation Here"
-heading1: "Sign Makers: Elevating Your Brand with Large Format Printing"
+heading1: "Make An Impression"
 paragraph1: "If you want to send a message to prospective customers, the best way to do so is with eye-catching business signage. Though many businesses opt for thorough signage inside their business, exterior signage should also be considered when creating a visual communication strategy. There are a variety of exterior signs that can be used in a variety of ways to communicate your message. Whether you simply want to highlight your logo or name or promote a product or special, there is an exterior sign for all of your needs.Sign Makers can customize your exterior signage to fit your brand, including your colors, font, and any graphics or logos you may have. The right mix of styles, sizes, and types of custom storefront signs will depend on your business and what messages you want to communicate. During your consultation, the Sign Makers team will ask some questions about your business and your goals so that we can recommend results-producing solutions."
 heading2: "Your Site’s Visual Communication Solution"
 paragraph2: "They are an architectural element that adds life and great aesthetics to your building and brand. Awnings can be made of fabric, acrylic, aluminum, and other materials in a variety of shapes and sizes. They can also be fully customized to your decor and color needs. Awning signage can take your brand to the next level by communicating your brand colors and messages with a high-end look and feel.Here are a few examples of what awning signage can accomplish for you. Awnings help to attract attention while simultaneously identifying entrances. They provide protection"

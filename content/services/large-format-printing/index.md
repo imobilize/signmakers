@@ -5,7 +5,7 @@ draft: false
 language: en
 description: Large format printing opens up many more creative possibilities for clients and is the reason behind our continuing investment in new technology.
 featuredImage: "images/1.jpg"
-image1: "images/1.jpg"
+image1: "images/2.jpg"
 images: ["images/1.jpg"]
 keywords: "Printing, Signs, Creative"
 type: page

@@ -36,6 +36,7 @@ paragraph3: "Regulatory signs convey the policies and safety precautions your bu
 - Interior ADA signs should be installed on the latch side of the door of the labeled room.
 - ADA signs should not be mounted directly on a door.
 - If there isn't sufficient space to mount the sign in the specified location, it may be installed on the nearest adjacent wall in a clearly visible spot."
+heading4: "Why Choose Us?"
 paragraph4: "Here are a few benefits of our large format printing services:"
 benefits:
   heading1: "Bright and Clear"

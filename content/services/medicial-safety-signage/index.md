@@ -24,6 +24,7 @@ paragraph3: "Beyond medical safety signs, our team can assist you in conveying o
 - Social distancing signage
 - Mask required signage
 - Hand washing signage. Sign Makers also specializes in designing and installing banners, digital displays, and much more. If you require assistance in effectively conveying your message to your customers, we are here to guide you."
+heading4: "Why Choose Us?"
 paragraph4: "Here are a few benefits of our large format printing services:"
 benefits:
   heading1: "Bright and Clear"
