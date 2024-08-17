@@ -2123,6 +2123,14 @@ video {
   margin-top: 10px;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mt-auto{
+  margin-top: auto;
+}
+
 .block{
   display: block;
 }
@@ -3309,6 +3317,11 @@ video {
   padding-bottom: 60px;
 }
 
+.py-1\.5{
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -3556,6 +3569,10 @@ video {
 
 .tracking-wider{
   letter-spacing: 0.05em;
+}
+
+.tracking-\[0\.86px\]{
+  letter-spacing: 0.86px;
 }
 
 .text-black{
@@ -4993,6 +5010,10 @@ video {
 .group:hover .group-hover\:text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:opacity-75{
+  opacity: 0.75;
 }
 
 [dir="rtl"] .rtl\:space-x-reverse > :not([hidden]) ~ :not([hidden]){

@@ -44,7 +44,56 @@
       </div>
   </section> -->
 
-  <section class="relative bg-gray-50 my-8 pt-4 lg:pt-20 z-20">
+  <div class="container mx-auto md:mt-12 mt-5">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      {{ range $index, $element := (where .Site.RegularPages "Section" "portfolio") }}
+      <div class="{{ if mod $index 2 }}bg-gray-100 text-dark{{ else }}bg-gray-50{{ end }} p-6 rounded-lg">
+        <a href="{{ .RelPermalink }}" class="group">
+            <div class="aspect-w-3 aspect-h-2">
+              {{ with .Resources.GetMatch .Params.featuredImage }}
+                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
+                <img class="object-cover shadow-lg rounded-lg group-hover:opacity-75 h-64" src="{{ $postimage }}" alt="{{ .Title }}">
+              {{ else }}
+                {{ $im := (.Resources.Get .Params.featuredImage) }}
+                {{ $im }}
+              {{ end }}
+            </div>
+          </a>
+    
+          <div class="mt-4">
+            <div class="flex items-center space-x-3">
+              <div class="flex items-center space-x-2">
+                {{ range $index, $tag := .Params.categories }}
+                  <span class="inline-flex items-center leading-none px-2.5 py-1.5 text-sm font-medium text-skin-inverted rounded-full border border-skin-input">
+                    {{ $tag }}
+                  </span>
+                {{ end }}
+              </div>
+            </div>
+    
+            <div class="mt-2">
+              <a href="{{ .RelPermalink }}" class="group">
+                <h4 class="text-[22px] leading-[34px]  font-semibold text-secondary  hover:text-blue-800 mt-auto">{{ .Title }}</h4>
+              </a>
+              <p class="mt-1 text-base font-normal text-skin-base tracking-tight leading-tight">
+                {{ if .Params.summary }}
+                  {{ .Params.summary }}
+                {{ else }}
+                  {{ .Params.description }}
+                {{ end }}
+              </p>
+    
+              <a href="{{.RelPermalink}}"
+                        class="text-secondary  hover:text-blue-800 mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read
+                        more</a>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <!-- <section class="relative bg-gray-50 my-8 pt-4 lg:pt-20 z-20">
     <div class="container mx-auto px-2">
       <div class="w-full relative py-12 ">
         <div id="keen-slider" class="keen-slider relative overflow-hidden">
@@ -92,7 +141,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <script type="module">

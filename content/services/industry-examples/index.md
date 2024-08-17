@@ -5,7 +5,7 @@ date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
 description: Our expert team handles every kind of sign boards, may it be a 3D sign, interior signboards, or exterior signboards, ensuring top-notch quality.
-featuredImage: "images/1.jpg"
+featuredImage: "images/2.jpg"
 images: ["images/1.jpg"]
 image: "images/2.jpg"
 image11: "images/2.jpg"
