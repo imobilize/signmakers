@@ -10,6 +10,7 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
+image4: "images/5.png"
 keywords: "Anglesy Arms, Branding, Signage, Sign Design, Design"
 categories: ["branding", "signage"]
 client: Angleseys Arms

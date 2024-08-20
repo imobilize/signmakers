@@ -33,28 +33,29 @@
     <!-- End Hero -->
 </section>
 
-<section class="bg-gray-50 my-8">
-    <div class="gap-16 items-center flex flex-col md:flex-row px-4 mx-auto  lg:px-6">
-        <div class="font-light  order-2 md:order-none w-full w-1/2 text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
-            <h2 class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-gray-900">
-                {{ .Params.heading1 }}</h2>
-            <p class="mb-8 leading-relaxed text-left">
-                {{ .Params.paragraph1 }}
-            </p>
-            <div class="flex justify-center mt-6 md:justify-start">
-                <a href="/contact"
-                    class="block px-5 mt-2 py-3 text-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
-                    Contact Us
-                </a>
+<section class="bg-gray-50 py-8">
+    <div class="container mx-auto">
+        <div class="gap-16 items-center flex flex-col md:flex-row px-4 mx-auto  lg:px-6">
+            <div class="font-light  order-2 md:order-none w-full w-1/2  max-w-5xl sm:text-lg dark:text-gray-400">
+                <h2 class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-gray-900">
+                    {{ .Params.heading1 }}</h2>
+                <p class="mb-8 leading-relaxed text-left">
+                    {{ .Params.paragraph1 }}
+                </p>
+                <div class="flex justify-center mt-6 md:justify-start">
+                    <a href="/contact"
+                        class="block px-5 mt-2 py-3 text-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <div class="w-full w-1/2">
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <img class="w-full rounded-lg" src="{{ .Params.image1 }}" alt="office content 1">
+                    <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ .Params.image2 }}" alt="office content 2">
+                </div>
             </div>
         </div>
-        <div class="w-full w-1/2">
-            <div class="grid grid-cols-2 gap-4 mt-8">
-                <img class="w-full rounded-lg" src="{{ .Params.image1 }}" alt="office content 1">
-                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ .Params.image2 }}" alt="office content 2">
-            </div>
-        </div>
-        
     </div>
 </section>
 
@@ -73,12 +74,12 @@
                 </div>
             </div>
             <div
-                class="w-full md:w-1/2 max-w-md mx-auto items-start mb-16 text-left text-lg lg:flex-grow lg:w-1/2  md:mb-0 xl:mt-0">
-                <h2 class="mb-8 xs:text-2xl md:text-3xl max-w-xl lg:text-4xl font-medium leading-none text-neutral-600">
+                class="w-full md:w-1/2 max-w-md mx-auto items-start mb-16 font-light text-left text-lg lg:flex-grow lg:w-1/2  md:mb-0 xl:mt-0">
+                <h2 class="mb-8 xs:text-2xl md:text-3xl max-w-xl lg:text-4xl font-medium  leading-none text-neutral-600">
                     {{ .Params.heading2 }}
 
                 </h2>
-                <p class="mb-4 max-w-xl  text-base leading-relaxed text-left font-medium">
+                <p class="mb-4 max-w-xl  text-base leading-relaxed text-left">
                     {{ .Params.paragraph2 }}
 
                 </p>
@@ -100,7 +101,7 @@
                     {{ .Params.heading3 }}
 
                 </h2>
-                <p class="mb-4 max-w-xl  text-base leading-relaxed text-left font-medium">
+                <p class="mb-4 max-w-xl  text-base leading-relaxed text-left font-light">
                     {{ .Params.paragraph3 }}
 
                 </p>

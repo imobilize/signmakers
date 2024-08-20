@@ -237,7 +237,7 @@
                 {{ $image := .Params.image13 }}
                 {{ with .Resources.GetMatch $image }}
                 {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                <img src="{{ $postimage }}" class="w-full  rounded-2xl rotate-90 my-12 md:my-0" alt="{{ .Params.description }}"
+                <img src="{{ $postimage }}" class="w-3/4 rounded-2xl my-12 md:my-0" alt="{{ .Params.description }}"
                     title="{{ .Params.description }}" />
                 {{ end }}
             </div>
@@ -267,7 +267,7 @@
                 {{ $image := .Params.image14 }}
                 {{ with .Resources.GetMatch $image }}
                 {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
+                <img src="{{ $postimage }}" class="w-3/4  rounded-2xl" alt="{{ .Params.description }}"
                     title="{{ .Params.description }}" />
                 {{ end }}
             </div>
@@ -310,7 +310,7 @@
                 {{ $image := .Params.image16 }}
                 {{ with .Resources.GetMatch $image }}
                 {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.image1alt}}"
+                <img src="{{ $postimage }}" class="w-3/4  rounded-2xl" alt="{{ .Params.image1alt}}"
                     title="{{ .Params.description }}" />
                 {{ end }}
             </div>

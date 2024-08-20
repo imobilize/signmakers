@@ -12,7 +12,7 @@ type: page
 layout: branding
 subheading: "Creating a brand that nobody forgets 💅"
 quotation: "HOW YOU CAN CREATE A STRONG BRAND THAT ATTRACTS MORE CUSTOMERS AND MASSIVELY OUTSELLS YOUR COMPETITION"
-image1: "images/3.jpg"
+image1: "images/8.jpg"
 image2: "images/4.jpg"
 image3: "images/5.jpg"
 image16: "images/6.jpg"

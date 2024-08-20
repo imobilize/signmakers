@@ -11,7 +11,7 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/4.jpg"
 image2: "images/5.jpg"
 image3: "images/6.jpg"
-image4: "images/8.jpg"
+image4: "images/8.jpg" 
 keywords: "LED, LED Displays Signs"
 type: page
 layout: template-4

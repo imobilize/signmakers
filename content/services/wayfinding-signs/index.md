@@ -10,7 +10,7 @@ image: "images/1.jpg"
 images: ["images/1.jpg"]
 image11: "images/2.jpg"
 image12: "images/3.jpg"
-image13: "images/4.jpg"
+image13: "images/7.jpg"
 image14: "images/5.jpg"
 image15: "images/2.jpg"
 image16: "images/3.jpg"

@@ -4,8 +4,8 @@ date: 2017-03-23T11:10:36+08:00
 draft: false
 language: en
 description: Our design services offer advice on styles, colours and typefaces. We are also happy to help in design and branding ideas.
-featuredImage: "images/3.jpg"
-image: "images/3.jpg"
+featuredImage: "images/5.jpg"
+image: "images/5.jpg"
 images: ["images/3.jpg"]
 keywords: "Branding, Brand Building, Business Brand"
 type: page
