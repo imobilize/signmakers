@@ -14,7 +14,8 @@ image13: "images/4.jpg"
 image14: "images/7.jpg"
 image15: "images/6.jpg"
 image16: "images/8.jpg"
-videolink: "https://drive.google.com/file/d/1qVWBFXcBaJiQUn2DsLPKdipqdCH5SXM6/preview"
+videolink: |
+  <script src="https://fast.wistia.com/embed/medias/q6v8fona5e.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_q6v8fona5e seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/q6v8fona5e/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
 keywords: "Restaurant, Bars, Flower Shops, Business"
 type: page
 layout: template-2
@@ -46,23 +47,16 @@ heading6: "Elevate Your Brand's Identity"
 paragraph6: "we go beyond creating signs; we craft visual identities that leave a lasting impact. From 3D signs that defy expectations to interior and exterior signboards that seamlessly integrate with your brand, our commitment to top-notch quality and innovation sets us apart."
 image6: "images/section1.jpg"
 benefits:
-  title: "Why you should Choose Us?"
-  paragraph: "Benefits Paragraph Here"
-  heading1: "Enhanced Recognition"
-  paragraph1: ": A strong brand identity makes your business easily recognizable, helping you stand out in a crowded market.
-Consistent Messaging: Consistent branding across all platforms builds trust and loyalty among your customers.
-Emotional Connection: A well-crafted brand identity can evoke emotions and create a deeper connection with your audience.
+  title: "Why choose sign makers?"
+  paragraph: "Sign Makers creates signage that enhances your brand’s recognition, making it easy for customers to identify your business in a competitive market. Their consistent and impactful designs build trust and loyalty. Here are few of the benifits:"
+  heading1: "Memorable Brand with Versatile Signage"
+  paragraph1: "Sign Makers helps your business establish a strong and recognizable brand identity through a wide range of signage options, including 3D signs, and interior, and exterior signboards. Their expert team ensures top-notch quality, making your brand stand out and fostering trust and emotional connections with your audience.
 "
-  heading2: "Proven Track Record"
-  paragraph2: ": Showcasing successful projects across various industries demonstrates our experience and reliability.
-Versatile Solutions: We provide adaptable solutions tailored to specific industry needs, ensuring your signage aligns perfectly with your business goals.
-Inspiration for Your Project: Seeing examples from different sectors can inspire innovative ideas for your own signage needs.
+  heading2: "Proven Expertise Across Industries"
+  paragraph2: "With a rich history of successful projects in various sectors, Sign Makers brings experience and reliability to your signage needs. Their adaptable solutions are tailored to your specific industry, ensuring that your signs not only meet but exceed your business goals, while also inspiring your unique project.
 "
   heading3: "High Visibility"
-  paragraph3: ": Large format prints are easily seen from a distance, making them perfect for attracting attention in busy areas.
-Detailed Graphics: High-resolution printing ensures that even large prints have crisp, clear details, enhancing your brand's image.
-Versatile Applications: Suitable for both indoor and outdoor use, large format prints can be used for various purposes, from advertisements to decorative art.
-"
+  paragraph3: "Sign Makers offers high-resolution, large format prints that catch the eye even from a distance. Their signage is suitable for both indoor and outdoor use, combining aesthetic appeal with durability. Whether it's a 3D sign or a custom interior board, their signs are designed to enhance your brand’s image and attract customers effectively."
   heading4: "Customized Solutions"
   paragraph4: ": Our wide range of sign styles allows us to tailor each sign to your specific brand needs and preferences.
 Aesthetic Appeal: Whether modern or classic, our signs are designed to enhance your business's visual appeal and complement your overall brand aesthetic.

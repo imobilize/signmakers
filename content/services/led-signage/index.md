@@ -3,7 +3,7 @@ title: "LED Displays"
 date: 2020-09-23T15:28:43+06:00
 draft: false
 description: LED Displays are made up of many, smaller light-emitting diodes close together that are used to create and project images. They can feature messages with vivid, high contrast content—from images to video.
-subheading: LED Displays - feature messages with vivid, high contrast content—from images to video.
+subheading: Brighten Your Brand with Custom LED Signs
 author: " "
 featuredImage: "images/4.jpg"
 image: "images/4.jpg"
