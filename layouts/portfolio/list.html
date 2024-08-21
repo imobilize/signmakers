@@ -1,6 +1,6 @@
 {{define "main"}}
 
-<main class="mb-16">
+<main>
 
   <div class="relative bg-white items-center justify-center w-full overflow-x-hidden overflow-hidden pt-20 md:pt-16">
     <div class="relative z-10">
@@ -44,7 +44,7 @@
       </div>
   </section> -->
 
-  <div class="container mx-auto md:mt-12 mt-5">
+  <div class="container mx-auto md:mt-12 mt-5 py-8">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       {{ range $index, $element := (where .Site.RegularPages "Section" "portfolio") }}
       <div class="{{ if mod $index 2 }}bg-gray-100 text-dark{{ else }}bg-gray-50{{ end }} p-6 rounded-lg">
@@ -142,6 +142,8 @@
       </div>
     </div>
   </section> -->
+
+  {{ partial "products-carousel.html" . }}
 
 
   <script type="module">

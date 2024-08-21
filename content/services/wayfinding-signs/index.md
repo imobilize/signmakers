@@ -10,11 +10,22 @@ image: "images/1.jpg"
 images: ["images/1.jpg"]
 image11: "images/2.jpg"
 image12: "images/3.jpg"
-image13: "images/4.jpg"
+image13: "images/7.jpg"
 image14: "images/5.jpg"
 image15: "images/2.jpg"
 image16: "images/3.jpg"
-videolink: "https://drive.google.com/file/d/1qVWBFXcBaJiQUn2DsLPKdipqdCH5SXM6/preview"
+videolink: |
+  <script src="https://fast.wistia.com/embed/medias/tvsvlt456j.jsonp" async></script>
+  <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+  <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+    <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+      <div class="wistia_embed wistia_async_tvsvlt456j seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
+        <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+          <img src="https://fast.wistia.com/embed/medias/tvsvlt456j/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+        </div>
+      </div>
+    </div>
+  </div>
 keywords: "Restaurant, Bars, Flower Shops, Business"
 type: page
 layout: template-2
@@ -70,23 +81,6 @@ Easy to Transport and Install: Lightweight and portable, banners can be easily t
 Wide Reach: Whether used indoors or outdoors, banners can reach a wide audience, increasing brand awareness and engagement.
 "
 ---
----
-title: "Wayfinding Signs"
-date: 2020-09-23T15:28:43+06:00
-draft: false
-description: Sign Makers can assist you in effectively conveying these instructions with personalized wayfinding signs. These signs are particularly valuable in complex office hallways, hospital corridors, and extensive campuses.
-author: " "
-featuredImage: "images/1.jpg"
-image: "images/1.jpg"
-images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
-image1: "images/2.jpg"
-image2: "images/3.jpg"
-image3: "images/4.jpg"
-keywords: "Way finding, Signs"
-
----
-
-## Show Your Guests the Way With Directional Signs
 
 Is your business challenging to navigate? Do you require visitors to follow specific paths through your property? Ensure their confidence in navigating with clear and concise directions.
 

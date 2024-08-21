@@ -200,9 +200,9 @@
 
 <section class="bg-white">
     <div class="px-4 py-12 mx-auto sm:px-6 md:px-12 lg:px-24 lg:py-24">
-        <div class="flex flex-wrap items-center mx-auto">
+        <div class="flex flex-wrap max-w-6xl   items-center  mx-auto">
             <div
-                class="w-full order-2 lg:order-none  md:w-1/2 max-w-md mx-auto items-start mb-16 text-left text-lg lg:flex-grow lg:w-1/2 mt-0  md:mb-0 xl:mt-0">
+                class="w-full order-2 lg:order-none md:w-1/2 max-w-md mx-auto items-start mb-16 text-left text-lg lg:flex-grow lg:w-1/2  md:mb-0 xl:mt-0">
                 <h2 class="mb-8 xs:text-2xl md:text-3xl max-w-xl lg:text-4xl font-medium leading-none text-neutral-600">
                     {{ .Params.heading5 }}
 
@@ -218,9 +218,9 @@
             </div>
             <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
                 <div class="relative w-full max-w-lg">
-                    <div class="relative w-full max-w-lg my-8 md:my-0" >
-                        {{ $image3 := .Params.image3 }}
-                        {{ with .Resources.GetMatch $image3 }}
+                    <div class="relative w-full max-w-lg my-8 md:my-0">
+                        {{ $image4 := .Params.image3 }}
+                        {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
                         <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
                             title="{{ .Params.description }}" />
@@ -302,3 +302,4 @@
 </section>
 
 {{ end }}
+

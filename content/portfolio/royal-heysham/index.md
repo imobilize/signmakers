@@ -10,6 +10,7 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
+image4: "images/4.jpg"
 keywords: "The Royal, Branding, Signage, Sign Design, Design, interior signage, exterior design"
 categories: ["LED signage", "hand crafted"]
 

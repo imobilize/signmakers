@@ -10,12 +10,23 @@ images: ["images/1.jpg"]
 image: "images/2.jpg"
 image11: "images/2.jpg"
 image12: "images/4.jpg"
-image13: "images/5.jpg"
+image13: "images/9.jpg"
 image14: "images/6.jpg"
 image15: "images/7.jpg"
 image16: "images/8.jpg"
 image1alt: "Im under the water"
-videolink: "https://drive.google.com/file/d/1_bTQgv_QlCO0l9PaIWiRpALWA3QG1yzx/preview"
+videolink: |
+  <script src="https://fast.wistia.com/embed/medias/tvsvlt456j.jsonp" async></script>
+  <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+  <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+    <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+      <div class="wistia_embed wistia_async_tvsvlt456j seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
+        <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+          <img src="https://fast.wistia.com/embed/medias/tvsvlt456j/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+        </div>
+      </div>
+    </div>
+  </div>
 keywords: "Restaurant, Bars, Flower Shops, Business"
 type: page 
 layout: template-2
@@ -38,8 +49,8 @@ heading6: "Elevate Your Brand Across Industries"
 paragraph6: "At The Sign Makers, our commitment to excellence transcends industries. Whether you’re in brewing, education, healthcare, local governance, or retail, our team is ready to elevate your brand through innovative and high-quality signage solutions."
 image6: "images/section1.jpg"
 benefits:
-  title: "Why you should Choose Us?"
-  paragraph: "Benefits Paragraph Here"
+  title: "Why choose sign makers?"
+  paragraph: "Sign Makers creates signage that enhances your brand’s recognition, making it easy for customers to identify your business in a competitive market. Their consistent and impactful designs build trust and loyalty. Here are few of the benifits:"
   heading1: "Enhanced Recognition"
   paragraph1: ": A strong brand identity makes your business easily recognizable, helping you stand out in a crowded market.
 Consistent Messaging: Consistent branding across all platforms builds trust and loyalty among your customers.
