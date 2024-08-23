@@ -21,7 +21,7 @@
       
           <!-- Slide 2 -->
           <div class="keen-slider__slide">
-            {{ $missionimage2 := resources.Get "images/sign-makers-team/2.jpg" }}
+            {{ $missionimage2 := resources.Get "images/sign-makers-team/2.JPG" }}
             {{ with $missionimage2 }}
             {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
             <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Custom Signage being designed by Sign Makers" loading="lazy" />
