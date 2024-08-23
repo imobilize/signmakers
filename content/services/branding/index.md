@@ -47,9 +47,7 @@ paragraph7: "For eateries, we go beyond menus – Sign Makers elevates your rest
 color: "bg-gradient-to-br from-cyan-50 via-orange-50 to-violet-50"
 ---
 
-## Sign Makers: Crafting Your Brand Identity, Every Step of the Way
-
-In the vast landscape of business, a compelling brand is the compass that guides customers to your door. At Sign Makers, we understand the pivotal role branding plays in establishing a lasting impression. Our expertise goes beyond mere signage – we're your partners in cultivating a cohesive and memorable brand identity.
+At Sign Makers, we understand the pivotal role branding plays in establishing a lasting impression. Our expertise goes beyond mere signage – we're your partners in cultivating a cohesive and memorable brand identity.
 
 ## Branded Signage: A Visual Symphony
 

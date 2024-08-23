@@ -83,14 +83,7 @@ Wide Reach: Whether used indoors or outdoors, banners can reach a wide audience,
 "
 ---
 
-## Industry Examples: Elevating Brands Across Sectors
-
-Explore the diverse applications of signage across industries, where **Sign Makers** has been a trusted partner in delivering top-notch quality and innovative solutions.
-
-## Brewery Signage: Crafting Brands for Over 60 Years
-
-### Established Relationships
-With over 60 years of experience, **Sign Makers** has cultivated strong relationships with leading breweries in the UK. We understand the paramount importance of getting the brand right in the brewing industry.
+With over 60 years of experience, Sign Makers has cultivated strong relationships with leading breweries in the UK. We understand the paramount importance of getting the brand right in the brewing industry.
 
 ### Comprehensive Offerings
 Our brewery signage solutions include gold leaf finished lettering, amenity boards, chalk boards, flood lighting, full lighting schemes, post-mounted pictorials, A-boards, traditional sign writing, and pictorials. Additionally, we provide parasols, windbreaks, awnings, smoking solutions, menu and poster display cases, and planning applications.
