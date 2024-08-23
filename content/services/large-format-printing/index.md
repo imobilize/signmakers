@@ -49,9 +49,7 @@ color: "bg-gradient-to-br from-indigo-200 via-stone-100 to-red-200"
 color2: "bg-secondary"
 ---
 
-## Sign Makers: Elevating Your Brand with Large Format Printing
-
-At **Sign Makers**, we believe in the power of visuals to captivate and communicate, and our commitment to cutting-edge technology reflects our dedication to delivering unparalleled large format printing services. Transforming your ideas into impactful displays, we pride ourselves on being at the forefront of innovation, constantly investing in new technologies to expand creative possibilities for our clients.
+We believe in the power of visuals to captivate and communicate, and our commitment to cutting-edge technology reflects our dedication to delivering unparalleled large format printing services. Transforming your ideas into impactful displays, we pride ourselves on being at the forefront of innovation, constantly investing in new technologies to expand creative possibilities for our clients.
 
 ## Unleashing Creativity through Large Format Printing
 

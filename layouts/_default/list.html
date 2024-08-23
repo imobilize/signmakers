@@ -39,7 +39,7 @@
   <section class="z-10 relative bg-gray-50">
     <div class="container mx-auto">
       <div class=" flex flex-col md:flex-row  justify-between items-center">
-        <h2 class="h2 my-8 md:my-0">Browse some of our articles</h2>
+        <h2 class="text-2xl md:text-4xl font-medium my-8 md:my-0">Browse some of our articles</h2>
         <div class="w-96 flex flex-col my-4 p-6">
           <form action="{{ `search` | relURL }}" class="flex flex-row lg:flex-row">
             <input type="search" name="q" id="search-query"
@@ -67,13 +67,21 @@
         
             {{ range .Paginator.Pages }}
             <div class="">
-                <a href="{{.RelPermalink}}">
-                    {{ $featured := .Params.featuredImage }}
-                    {{ with .Resources.GetMatch $featured }}
-                    {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                    <img src="{{ $postimage }}" class="w-full h-96 rounded-2xl" alt="{{ .Params.description }}"
-                        title="{{ .Params.description }}" />
-                    {{ end }}
+                <a href="{{.RelPermalink}}"> 
+                  {{ $featured := .Params.featuredImage }}
+                  {{ with .Resources.GetMatch $featured }}
+                  {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                  {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                  {{ $large := (.Resize "900x webp q80").RelPermalink }}
+                  {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                  <img src="{{ $postimage }}" srcset="
+                  {{- with $small -}}, {{.}} 400w{{- end -}}
+                  {{- with $medium -}}, {{.}} 550w{{- end -}}
+                  {{- with $large -}}, {{.}} 768w{{- end -}}
+                  {{- with $postimage -}}, {{.}} 1100w{{- end -}}"
+                      class="object-cover overflow-hidden rounded-lg h-96"
+                      width="100%" alt="{{ .Params.title }}" />
+                  {{ end }}
                     <div class="mt-4">
                         {{ range $elem_index, $elem_val := (.GetTerms "tags") }}
                         <a href="{{.RelPermalink}}" class="uppercase pb-4 pr-4"><span
@@ -83,14 +91,14 @@
                     </div>
                     <div class="py-6 xl:py-8">
                         <a href="{{.RelPermalink}}">
-                            <h4 class="block font-body text-lg font-semibold text-blue-600 hover:text-blue-800">
+                            <h4 class="block font-body text-lg font-semibold text-secondary hover:text-blue-800">
                                 {{.Title}}</h4>
                         </a>
                         
                         <p class="block pt-2 text-body">{{ .Summary | truncate 200 }}</p>
     
                     </div>
-                    <a href="{{ .RelPermalink }}" class="text-blue-600 hover:text-blue-800 font-semibold">Learn more →</a>
+                    <a href="{{ .RelPermalink }}" class="text-secondary hover:text-blue-800 font-semibold">Learn more →</a>
 
                 </a>
             </div>
@@ -107,6 +115,9 @@
     {{ partial "pagination" . }}
 
   </section>
+
+
+  {{ partial "products-carousel.html" . }}
 
 </main>
 {{ end }}

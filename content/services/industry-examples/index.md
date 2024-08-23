@@ -5,17 +5,30 @@ date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
 description: Our expert team handles every kind of sign boards, may it be a 3D sign, interior signboards, or exterior signboards, ensuring top-notch quality.
-featuredImage: "images/1.jpg"
-image: "images/1.jpg"
+featuredImage: "images/2.jpg"
 images: ["images/1.jpg"]
-image1: "images/"
-image2: "images/"
-image3: "images/"
-image4: "images/"
-image5: "images/"
-image6: "images/"
+image: "images/2.jpg"
+image11: "images/2.jpg"
+image12: "images/4.jpg"
+image13: "images/9.jpg"
+image14: "images/6.jpg"
+image15: "images/7.jpg"
+image16: "images/8.jpg"
+image1alt: "Im under the water"
+videolink: |
+  <script src="https://fast.wistia.com/embed/medias/tvsvlt456j.jsonp" async></script>
+  <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+  <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+    <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+      <div class="wistia_embed wistia_async_tvsvlt456j seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
+        <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+          <img src="https://fast.wistia.com/embed/medias/tvsvlt456j/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+        </div>
+      </div>
+    </div>
+  </div>
 keywords: "Restaurant, Bars, Flower Shops, Business"
-type: page
+type: page 
 layout: template-2
 heading1: "Elevating Brands Across Sectors"
 paragraph1: "With over 60 years of experience, The Sign Makers has cultivated strong relationships with leading breweries in the UK. We understand the paramount importance of getting the brand right in the brewing industry. Our brewery signage solutions include gold leaf finished lettering, amenity boards, chalk boards, flood lighting, full lighting schemes, post-mounted pictorials, A-boards, traditional sign writing, and pictorials. Additionally, we provide parasols, windbreaks, awnings, smoking solutions, menu and poster display cases, and planning applications."
@@ -36,8 +49,8 @@ heading6: "Elevate Your Brand Across Industries"
 paragraph6: "At The Sign Makers, our commitment to excellence transcends industries. Whether you’re in brewing, education, healthcare, local governance, or retail, our team is ready to elevate your brand through innovative and high-quality signage solutions."
 image6: "images/section1.jpg"
 benefits:
-  title: "Why you should Choose Us?"
-  paragraph: "Benefits Paragraph Here"
+  title: "Why choose sign makers?"
+  paragraph: "Sign Makers creates signage that enhances your brand’s recognition, making it easy for customers to identify your business in a competitive market. Their consistent and impactful designs build trust and loyalty. Here are few of the benifits:"
   heading1: "Enhanced Recognition"
   paragraph1: ": A strong brand identity makes your business easily recognizable, helping you stand out in a crowded market.
 Consistent Messaging: Consistent branding across all platforms builds trust and loyalty among your customers.
@@ -70,14 +83,7 @@ Wide Reach: Whether used indoors or outdoors, banners can reach a wide audience,
 "
 ---
 
-## Industry Examples: Elevating Brands Across Sectors
-
-Explore the diverse applications of signage across industries, where **Sign Makers** has been a trusted partner in delivering top-notch quality and innovative solutions.
-
-## Brewery Signage: Crafting Brands for Over 60 Years
-
-### Established Relationships
-With over 60 years of experience, **Sign Makers** has cultivated strong relationships with leading breweries in the UK. We understand the paramount importance of getting the brand right in the brewing industry.
+With over 60 years of experience, Sign Makers has cultivated strong relationships with leading breweries in the UK. We understand the paramount importance of getting the brand right in the brewing industry.
 
 ### Comprehensive Offerings
 Our brewery signage solutions include gold leaf finished lettering, amenity boards, chalk boards, flood lighting, full lighting schemes, post-mounted pictorials, A-boards, traditional sign writing, and pictorials. Additionally, we provide parasols, windbreaks, awnings, smoking solutions, menu and poster display cases, and planning applications.

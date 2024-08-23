@@ -4,12 +4,13 @@ date: 2020-09-23T15:28:43+06:00
 draft: false
 description: Effectively conveying your business hours is crucial, and the optimal approach is through signage. However, your signs don't have to conform to the standard templates seen in countless businesses
 author: " "
-featuredImage: "images/1.jpg"
+featuredImage: "images/5.jpg"
 image: "images/1.jpg"
 images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
-image3: "images/4.jpg"
+image3: "images/2.jpg"
+image4: "images/5.jpg"
 keywords: "Business Signs, Business Hours"
 type: page
 layout: template-4
@@ -21,6 +22,7 @@ heading3: "Font Customization"
 paragraph3: "Personalize your signs further by selecting the font size, color, and style. Opt for a font that ensures easy readability, and our team can offer guidance to help you determine the most suitable font for enhanced visibility, noticeability, and legibility."
 heading4: "Fast Turnaround Times: Sign Makers' Promise"
 paragraph4: "True to our name, Sign Makers excels at delivering custom signs promptly while upholding the highest quality standards. The turnaround time for your signs will depend on factors like complexity and material selection. Rest assured, our team will provide you with a precise timeframe once they've gathered all the necessary information."
+color: "bg-gradient-to-br from-stone-50 via-red-100 to-stone-50"
 ---
 
 ## Custom Business Hour Signs: Your Brand, Your Schedule

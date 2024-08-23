@@ -10,6 +10,7 @@ images: ["images/1.jpeg","images/2.jpeg","images/3.jpeg","images/4.jpeg"]
 image1: "images/2.jpeg"
 image2: "images/3.jpeg"
 image3: "images/4.jpeg"
+image4: "images/4.jpg"
 keywords: "The Silverdale Hotel, Branding, Signage, Sign Design, Design, interior signage, exterior design"
 categories: ["Logo Design", "exterior brand design"]
 

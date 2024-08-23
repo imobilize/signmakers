@@ -3,33 +3,35 @@
 <main class="mb-16">
 
     <div class="relative bg-white items-center justify-center w-full overflow-x-hidden overflow-hidden pt-20 md:pt-16">
-    <div class="relative z-10">
-        <div
-            class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
-            <svg class="h-[60rem] w-[100rem] flex-none stroke-secondary opacity-10" aria-hidden="true">
-                <defs>
-                    <pattern id="e9033f3e-f665-41a6-84ef-756f6778e6fe" width="200" height="200" x="50%" y="50%"
-                        patternUnits="userSpaceOnUse" patternTransform="translate(-100 0)">
-                        <path d="M.5 200V.5H200" fill="none"></path>
-                    </pattern>
-                </defs>
-                <svg x="50%" y="50%" class="overflow-visible fill-amber-50">
-                    <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0"></path>
+        <div class="relative z-10">
+            <div
+                class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
+                <svg class="h-[60rem] w-[100rem] flex-none stroke-secondary opacity-10" aria-hidden="true">
+                    <defs>
+                        <pattern id="e9033f3e-f665-41a6-84ef-756f6778e6fe" width="200" height="200" x="50%" y="50%"
+                            patternUnits="userSpaceOnUse" patternTransform="translate(-100 0)">
+                            <path d="M.5 200V.5H200" fill="none"></path>
+                        </pattern>
+                    </defs>
+                    <svg x="50%" y="50%" class="overflow-visible fill-amber-50">
+                        <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0"></path>
+                    </svg>
+                    <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)">
+                    </rect>
                 </svg>
-                <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)">
-                </rect>
-            </svg>
+            </div>
         </div>
-    </div>
-    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 relative z-10">
-        
-            <span class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-neutral font-medium text-secondary">What we offer</span>
-        <h1
-            class="mb-4 text-3xl max-w-4xl mx-auto font-medium tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
-            Our Services</h1>
-        <p class="mb-8 text-xl md:text-2xl font-normal text-gray-500  sm:px-16 xl:px-48 dark:text-gray-400">
-            This is what we love doing for our clients</p>
-    </div>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 relative z-10">
+
+            <span
+                class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-neutral font-medium text-secondary">What
+                we offer</span>
+            <h1
+                class="mb-4 text-3xl max-w-4xl mx-auto font-medium tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
+                Our Services</h1>
+            <p class="mb-8 text-xl md:text-2xl font-normal text-gray-500  sm:px-16 xl:px-48 dark:text-gray-400">
+                This is what we love doing for our clients</p>
+        </div>
     </div>
 
 
@@ -60,19 +62,28 @@
                         <a class="group service-item" href="{{.RelPermalink}}">
                             {{ $featured := .Params.featuredImage }}
                             {{ with .Resources.GetMatch $featured }}
+                            {{ $small := (.Resize "400x webp q80").RelPermalink }}
+                            {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+                            {{ $large := (.Resize "900x webp q80").RelPermalink }}
                             {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                            <img src="{{ $postimage }}" class="w-full rounded-2xl bg-cover" alt="{{ .Params.description }}"
-                                title="{{ .Params.description }}" />
+                            <img src="{{ $postimage }}" srcset="
+                            {{- with $small -}}, {{.}} 400w{{- end -}}
+                            {{- with $medium -}}, {{.}} 550w{{- end -}}
+                            {{- with $large -}}, {{.}} 768w{{- end -}}
+                            {{- with $postimage -}}, {{.}} 1100w{{- end -}}"
+                                class="object-cover overflow-hidden rounded-lg h-64"
+                                width="100%" alt="{{ .Params.title }}" />
                             {{ end }}
                             <div class="py-4 flex flex-col h-full sm:p-6">
                                 <h3
-                                    class="h3 text-blue-600 hover:text-blue-800 dark:text-gray-300 dark:group-hover:text-white">
+                                    class="h3 text-secondary hover:text-blue-800 dark:text-gray-300 dark:group-hover:text-white">
                                     {{ .Title }}
                                 </h3>
                                 <p class="mt-2 text-base">
                                     {{ .Summary | truncate 100 }}
                                 </p>
-                                <a href="{{ .RelPermalink }}" class="text-blue-600 hover:text-blue-800 font-semibold">Learn more →</a>
+                                <a href="{{ .RelPermalink }}"
+                                    class="text-secondary hover:text-blue-800 font-semibold">Learn more →</a>
 
                             </div>
                         </a>
@@ -83,6 +94,7 @@
         </div>
     </section>
 
+    {{ partial "products-carousel.html" . }}
 
 </main>
 <script>

@@ -12,11 +12,11 @@ type: page
 layout: branding
 subheading: "Creating a brand that nobody forgets 💅"
 quotation: "HOW YOU CAN CREATE A STRONG BRAND THAT ATTRACTS MORE CUSTOMERS AND MASSIVELY OUTSELLS YOUR COMPETITION"
-image1: "images/1.jpg"
-image2: "images/2.jpg"
-image3: "images/2.jpg"
-image4: "images/2.jpg"
-image5: "images/2.jpg"
+image1: "images/8.jpg"
+image2: "images/4.jpg"
+image3: "images/5.jpg"
+image16: "images/6.jpg"
+image5: "images/7.jpg"
 image6: "images/2.jpg"
 image7: "images/2.jpg"
 heading1: "Crafting Your Brand Identity, Every Step of the Way"
@@ -47,9 +47,7 @@ paragraph7: "For eateries, we go beyond menus – Sign Makers elevates your rest
 color: "bg-gradient-to-br from-cyan-50 via-orange-50 to-violet-50"
 ---
 
-## Sign Makers: Crafting Your Brand Identity, Every Step of the Way
-
-In the vast landscape of business, a compelling brand is the compass that guides customers to your door. At Sign Makers, we understand the pivotal role branding plays in establishing a lasting impression. Our expertise goes beyond mere signage – we're your partners in cultivating a cohesive and memorable brand identity.
+At Sign Makers, we understand the pivotal role branding plays in establishing a lasting impression. Our expertise goes beyond mere signage – we're your partners in cultivating a cohesive and memorable brand identity.
 
 ## Branded Signage: A Visual Symphony
 

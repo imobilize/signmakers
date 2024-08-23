@@ -14,56 +14,53 @@
         {{- end -}}
       </div>
       <div class="container mx-auto">
-        <div class="flex flex-col md:flex-row -mx-4">
-          <div class="md:flex-1 px-4 w-full">
-            <div x-data="{ image: 1 }" x-cloak>
-              <div class="h-96 rounded-lg bg-gray-100 mb-4">
-                <template x-for="i in 4">
-                  <div x-show="image === i" class="h-full rounded-lg bg-cover bg-no-repeat"
-                    :style="'background-image: url(' + getImageUrl(i) + ');'">
-                  </div>
-                </template>
-              </div>
-              <div class="flex -mx-2 mb-4">
-                <template x-for="i in 4">
-                  <div class="flex-1 px-2">
-                    <button x-on:click="image = i" :class="{ 'ring-2 ring-indigo-300 ring-inset': image === i }"
-                      class="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center image-selector bg-cover bg-no-repeat"
-                      :style="'background-image: url(' + getImageUrl(i) + ');'">
-                    </button>
-                  </div>
-                </template>
-              </div>
+        <div class="flex flex-col md:flex-row gap-2 my-8">
+          <div class="flex flex-1 flex-col">
+            <div class="flex flex-1 flex-col">
+              <!-- img_01 (main image) -->
+              <img class="object-cover h-full w-full rounded-lg" src="{{ .Params.image1 }}" alt="Main Image">
+            </div>
+          </div>
+          <div class="flex flex-1">
+            <div class="grid grid-cols-2 gap-2">
+              <!-- img_02 -->
+              <img class="object-cover h-full w-full rounded-lg" src="{{ .Params.image2 }}" alt="Image 2">
+              <!-- img_03 -->
+              <img class="object-cover h-full w-full rounded-lg" src="{{ .Params.image3 }}" alt="Image 3">
+              <!-- img_04 -->
+              <img class="object-cover h-full w-full rounded-lg" src="{{ .Params.image4 }}" alt="Image 4">
+              <!-- img_05 (duplicate of img_01 or you can use another image) -->
+              <img class="object-cover h-full w-full rounded-lg" src="{{ .Params.image1 }}" alt="Image 5">
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
-      <div class="px-6 lg:px-0 lg:col-span-4 md:col-span-6">
-        <div class="flex flex-col items-center   my-6">
-          <strong>Client </strong>
+      <div class="px-6 lg:px-0 lg:col-span-2 md:col-span-2">
+        <div class="flex flex-col mx-8 my-6">
+          <h6 class="text-center md:text-left"><strong>Client </strong></h6>
           <div class="text-gray-500 my-4"> {{ .Params.client }} </div>
         </div>
-        <div class="flex flex-col items-center  my-6">
-          <div class="text-xl"><strong>Industry </strong></div>
+        <div class="flex flex-col mx-8 my-6">
+          <h6 class="text-center md:text-left"><strong>Industry </strong></h6>
           <div class="text-gray-500 my-4"> {{
             .Params.industry }} </div>
         </div>
-        <div class="flex flex-col items-center  my-6">
-          <div class="text-xl"><strong>Company Size </strong></div>
+        <div class="flex flex-col mx-8 my-6">
+          <h6 class="text-center md:text-left"><strong>Company Size </strong></h6>
           <div class="text-gray-500 my-4"> {{ .Params.company_size }}</div>
         </div>
-        <div class="flex flex-col items-center  my-6">
-          <div class="text-xl"><strong>Headquarters </strong></div>
+        <div class="flex flex-col mx-8 my-6">
+          <h6 class="text-center md:text-left"><strong>Head Quarters</strong></h6>
           <div class="text-gray-500 my-4"> {{ .Params.headquarters }} </div>
         </div>
-        <div class="flex flex-col items-center  my-6">
-          <div class="text-xl"><strong>Project Duration </strong></div>
+        <div class="flex flex-col mx-8 my-6">
+          <h6 class="text-center md:text-left"><strong>Project Duration</strong></h6>
           <div class="text-gray-500 my-4"> {{ .Params.project_duration }} </div>
         </div>
       </div>
-      <div class="lg:col-span-8 md:col-span-6">
+      <div class="lg:col-span-10 md:col-span-6">
         <div class="px-6">
           <article class="prose dark:prose-invert lg:prose-xl mt-6">
             {{ .Content }}
