@@ -8,17 +8,155 @@
       </div>
       <div class="relative max-w-md px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
         <!-- Testimonial card-->
-        <div class="relative overflow-hidden">
-          {{ $missionimage := resources.Get "images/sign_makers_custom_signs.JPG" }}
-          {{ with $missionimage }}
-          {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
-          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full"
-            alt="Our Mission - Sign Makers" loading="lazy" />
-          {{ end }}
-          {{ end }}
+        <div id="keen-slider" class="relative overflow-hidden keen-slider h-80">
+          <!-- Slide 1 -->
+          <div class="keen-slider__slide">
+            {{ $missionimage1 := resources.Get "images/sign-makers-team/1.JPG" }}
+            {{ with $missionimage1 }}
+            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Sign Makers team in action" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
+      
+          <!-- Slide 2 -->
+          <div class="keen-slider__slide">
+            {{ $missionimage2 := resources.Get "images/sign-makers-team/2.jpg" }}
+            {{ with $missionimage2 }}
+            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Custom Signage being designed by Sign Makers" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
+      
+          <!-- Slide 3 -->
+          <div class="keen-slider__slide">
+            {{ $missionimage3 := resources.Get "images/sign-makers-team/3.JPG" }}
+            {{ with $missionimage3 }}
+            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Manufacturing Bespoke Signage for your store fronts" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
+      
+          <!-- Slide 4 -->
+          <div class="keen-slider__slide">
+            {{ $missionimage4 := resources.Get "images/sign-makers-team/4.JPG" }}
+            {{ with $missionimage4 }}
+            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Sign Makers Team crafting bespoke signage" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
 
+          <div class="keen-slider__slide">
+            {{ $missionimage4 := resources.Get "images/sign-makers-team/5.JPG" }}
+            {{ with $missionimage4 }}
+            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="What we do at Sign Makers" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
+
+          <div class="keen-slider__slide">
+            {{ $missionimage4 := resources.Get "images/sign-makers-team/6.JPG" }}
+            {{ with $missionimage4 }}
+            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Sign Makers Teams" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
+
+          <div class="keen-slider__slide">
+            {{ $missionimage4 := resources.Get "images/sign-makers-team/7.JPG" }}
+            {{ with $missionimage4 }}
+            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Bespoke signage - Sign Makers - UK" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
+
+          <div class="keen-slider__slide">
+            {{ $missionimage4 := resources.Get "images/sign-makers-team/8.JPG" }}
+            {{ with $missionimage4 }}
+            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Custom Sign Making with Sign Makers" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
+
+          <div class="keen-slider__slide">
+            {{ $missionimage4 := resources.Get "images/sign-makers-team/9.JPG" }}
+            {{ with $missionimage4 }}
+            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Our Mission - Sign Makers 4" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
+
+          <div class="keen-slider__slide">
+            {{ $missionimage4 := resources.Get "images/sign-makers-team/10.JPG" }}
+            {{ with $missionimage4 }}
+            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Our Mission - Sign Makers 4" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
+
+          <div class="keen-slider__slide">
+            {{ $missionimage4 := resources.Get "images/sign-makers-team/11.JPG" }}
+            {{ with $missionimage4 }}
+            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Our Mission - Sign Makers 4" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
+
+          <div class="keen-slider__slide">
+            {{ $missionimage4 := resources.Get "images/sign-makers-team/12.JPG" }}
+            {{ with $missionimage4 }}
+            {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Our Mission - Sign Makers 4" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
         </div>
       </div>
+      
+      <!-- Keen Slider Initialization -->
+      <script type="module">
+        import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm';
+      
+        document.addEventListener('DOMContentLoaded', function () {
+          const slider = new KeenSlider(
+            '#keen-slider', 
+            {
+              loop: true,
+              duration: 3000, // Set slide transition duration
+              slides: {
+                origin: 'center',
+                perView: 1,
+                spacing: 16,
+              },
+              breakpoints: {
+                '(min-width: 1024px)': {
+                  slides: {
+                    origin: 'auto',
+                    perView: 1,
+                    spacing: 32,
+                  },
+                },
+              },
+            }
+          );
+      
+          // Autoplay function to move to the next slide every 1000ms
+          setInterval(() => {
+            slider.next();
+          }, 3000); // Auto-slide interval set to 1000ms
+        });
+      </script>
+      
     </div>
 
     <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
