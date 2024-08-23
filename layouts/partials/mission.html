@@ -1,4 +1,19 @@
 <!-- Testimonial/stats section -->
+<style>
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: #7c7c7c;
+  }
+</style>
 <div class="relative my-4 bg-gray-50">
   <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-center lg:gap-24 lg:px-8">
     <div class="relative sm:py-8 lg:py-0">
@@ -34,7 +49,7 @@
             {{ $missionimage3 := resources.Get "images/sign-makers-team/3.JPG" }}
             {{ with $missionimage3 }}
             {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
-            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Manufacturing Bespoke Signage for your store fronts" loading="lazy" />
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full -rotate-90 rounded-lg" alt="Manufacturing Bespoke Signage for your store fronts" loading="lazy" />
             {{ end }}
             {{ end }}
           </div>
@@ -121,6 +136,7 @@
             {{ end }}
           </div>
         </div>
+        <div id="dots" class="flex justify-center mt-4"></div>
       </div>
       
       <!-- Keen Slider Initialization -->
@@ -132,7 +148,7 @@
             '#keen-slider', 
             {
               loop: true,
-              duration: 3000, // Set slide transition duration
+              duration: 3000, // Slide transition duration
               slides: {
                 origin: 'center',
                 perView: 1,
@@ -147,13 +163,37 @@
                   },
                 },
               },
+              // Dots Navigation
+              controls: true,
+              created(s) {
+                const dotsContainer = document.getElementById('dots');
+                s.track.details.slides.forEach((_e, idx) => {
+                  const dot = document.createElement('button');
+                  dot.classList.add('dot');
+                  dot.addEventListener('click', () => {
+                    s.moveToIdx(idx);
+                  });
+                  dotsContainer.appendChild(dot);
+                });
+                updateActiveDot(s);
+              },
+              slideChanged(s) {
+                updateActiveDot(s);
+              }
             }
           );
       
           // Autoplay function to move to the next slide every 1000ms
           setInterval(() => {
             slider.next();
-          }, 3000); // Auto-slide interval set to 1000ms
+          }, 1000); // Auto-slide interval set to 1000ms
+      
+          function updateActiveDot(s) {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, idx) => {
+              dot.classList.toggle('active', s.track.details.rel === idx);
+            });
+          }
         });
       </script>
       
