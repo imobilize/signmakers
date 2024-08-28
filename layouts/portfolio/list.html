@@ -31,28 +31,18 @@
             Don't just take the word for it, see and believe it</p>
     </div>
 
-  <!-- {{ $products := getJSON "/data/products.json" }}
-
-  <section class="container pt-12 mb-12 mx-auto">
-      <div class="flex justify-center">
-          <h2 class="font-semibold mt-4 text-4xl leading-snug lg:text-5xl lg:leading-[62px] text-slate-800 mb-12">Outdoor Garden Products</h2>
-      </div>
-      <div class="flex-row md:flex space-y-4 gap-x-6 justify-center">
-              {{ range $products }}
-          {{ partial "product.html" . }}
-          {{ end }}
-      </div>
-  </section> -->
-
-  <div class="container mx-auto md:mt-12 mt-5 py-8">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      {{ range $index, $element := (where .Site.RegularPages "Section" "portfolio") }}
-      <div class="{{ if mod $index 2 }}bg-gray-100 text-dark{{ else }}bg-gray-50{{ end }} p-6 rounded-lg">
-        <a href="{{ .RelPermalink }}" class="group">
+    <div class="container mx-auto md:mt-12 mt-5 py-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Start Pagination -->
+        {{ $index := 0 }} <!-- Initialize index counter -->
+        {{ range .Paginator.Pages }}
+        <!-- Loop through portfolio items -->
+        <div class="{{ if mod $index 2 }}bg-gray-100 text-dark{{ else }}bg-gray-50{{ end }} p-6 rounded-lg">
+          <a href="{{ .RelPermalink }}" class="group">
             <div class="aspect-w-3 aspect-h-2">
               {{ with .Resources.GetMatch .Params.featuredImage }}
                 {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
-                <img class="object-cover shadow-lg rounded-lg group-hover:opacity-75 h-64" src="{{ $postimage }}" alt="{{ .Title }}">
+                <img class="object-cover shadow-lg rounded-lg group-hover:opacity-75 h-64 w-full" src="{{ $postimage }}" alt="{{ .Title }}">
               {{ else }}
                 {{ $im := (.Resources.Get .Params.featuredImage) }}
                 {{ $im }}
@@ -73,7 +63,7 @@
     
             <div class="mt-2">
               <a href="{{ .RelPermalink }}" class="group">
-                <h4 class="text-[22px] leading-[34px]  font-semibold text-secondary  hover:text-blue-800 mt-auto">{{ .Title }}</h4>
+                <h4 class="text-[22px] leading-[34px] font-semibold text-secondary hover:text-blue-800 mt-auto">{{ .Title }}</h4>
               </a>
               <p class="mt-1 text-base font-normal text-skin-base tracking-tight leading-tight">
                 {{ if .Params.summary }}
@@ -83,15 +73,22 @@
                 {{ end }}
               </p>
     
-              <a href="{{.RelPermalink}}"
-                        class="text-secondary  hover:text-blue-800 mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read
-                        more</a>
+              <a href="{{ .RelPermalink }}"
+                 class="text-secondary hover:text-blue-800 mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read more</a>
             </div>
           </div>
         </div>
-      {{ end }}
+        {{ $index = add $index 1 }} <!-- Increment index -->
+        {{ end }} <!-- End Pagination -->
+      </div>
+    
+      <!-- Pagination Controls -->
+      <div class="my-8">
+        {{ partial "pagination" . }}
+      </div>
     </div>
-  </div>
+    
+    
 
   <!-- <section class="relative bg-gray-50 my-8 pt-4 lg:pt-20 z-20">
     <div class="container mx-auto px-2">
