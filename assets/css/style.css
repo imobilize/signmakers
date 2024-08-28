@@ -5471,6 +5471,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:visible{
+    visibility: visible;
+  }
+
   .md\:sticky{
     position: sticky;
   }
@@ -5657,6 +5661,10 @@ video {
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:gap-10{
+    gap: 2.5rem;
   }
 
   .md\:space-x-0 > :not([hidden]) ~ :not([hidden]){
@@ -5890,6 +5898,10 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:visible{
+    visibility: visible;
+  }
+
   .lg\:absolute{
     position: absolute;
   }
