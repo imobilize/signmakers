@@ -49,7 +49,7 @@
             {{ $missionimage3 := resources.Get "images/sign-makers-team/3.JPG" }}
             {{ with $missionimage3 }}
             {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
-            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full -rotate-90 rounded-lg" alt="Manufacturing Bespoke Signage for your store fronts" loading="lazy" />
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full rounded-lg" alt="Manufacturing Bespoke Signage for your store fronts" loading="lazy" />
             {{ end }}
             {{ end }}
           </div>
