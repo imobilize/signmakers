@@ -15,13 +15,9 @@ categories: ["branding", "signage"]
 ---
 
 ## What the Client Wanted
-For the Greenhill Library , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+Harrow Council’s newest library, Greenhill, needed external signage for the entrance canopy, and we were excited to be involved in this project, the third library we've worked on with them.
+
 
 ## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
+ Collaborating with Objectif Graphic Design, we manufactured and installed the signage for the new development in Harrow Square. The result is a visually appealing and fitting addition to the library’s modern entrance.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.

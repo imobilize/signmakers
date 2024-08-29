@@ -15,13 +15,8 @@ categories: ["branding", "signage"]
 ---
 
 ## What the Client Wanted
-For the Horlicks Quarters , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+The Horlicks Quarter in Slough, through MSA Creative, required a variety of signage, including illuminated lettering and a bold graphic, to create a grand entrance.
+
 
 ## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
-
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+We installed illuminated rimless lettering for both the interior and exterior, LED-style faux neon for the entrance, and a striking oversized vertical graphic for the brickwork. Together, these elements create an impressive and cohesive entrance that enhances the building's presence.
