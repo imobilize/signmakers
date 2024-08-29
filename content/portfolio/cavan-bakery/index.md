@@ -15,13 +15,9 @@ categories: ["branding", "signage"]
 ---
 
 ## What the Client Wanted
-For the Cavan Bakery , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+With the opening of their new headquarters, our long-standing client Cavan Bakery wanted fresh signage to mark the occasion.
 
 ## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
+We crafted new signs that matched Cavan Bakery’s welcoming and warm brand, ensuring they were both attractive and reflective of the bakery's rich heritage.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+

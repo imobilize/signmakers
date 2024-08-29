@@ -15,13 +15,8 @@ categories: ["branding", "signage"]
 ---
 
 ## What the Client Wanted
-For the Glass Water Locks , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+MSA Design, on behalf of Berkeley Homes, wanted a striking sign that would look impressive both day and night, featuring a unique lighting effect.
+
 
 ## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
-
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+We crafted a sign using double-layered acrylic, which was edge-lit to create a glowing effect around the lettering. This design element adds depth and visual interest, especially in low light. An evening shot would beautifully showcase the full effect of the illuminated acrylic, highlighting the thoughtful design and craftsmanship.
