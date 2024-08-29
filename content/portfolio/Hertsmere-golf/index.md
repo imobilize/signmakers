@@ -15,13 +15,8 @@ categories: ["branding", "signage"]
 ---
 
 ## What the Client Wanted
-For the Hertsmere Golf , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+Hertsmere Golf needed fresh signage that combined functionality with a sleek design, including both tray signs and monoliths to enhance their facility.
+
 
 ## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
-
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+We designed and installed a mix of tray signs and monoliths, carefully choosing materials and finishes that would withstand outdoor conditions while maintaining a modern look. The installation was done meticulously to ensure the signs were both durable and visually striking, complementing the overall aesthetic of the golf course.

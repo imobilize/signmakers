@@ -15,13 +15,9 @@ categories: ["branding", "signage"]
 ---
 
 ## What the Client Wanted
-For the Berkeley Homes Quarters , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+Berkeley Homes, through our friends at MSA Creative, wanted clean and sleek signage that would add a touch of elegance to their project, featuring monoliths with illuminated details.
+
 
 ## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+ We crafted monoliths with intricate edge-illuminated lettering, giving the text a soft glow. The brushed gold face adds a luxurious touch, enhancing the overall look. The result is a refined and stylish sign that aligns perfectly with Berkeley Homes' sophisticated image.

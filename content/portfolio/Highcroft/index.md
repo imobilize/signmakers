@@ -15,13 +15,8 @@ categories: ["branding", "signage"]
 ---
 
 ## What the Client Wanted
-For the Highcroft , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+Berkeley Homes needed halo-illuminated built-up lettering and a logo for their Highcroft marketing suite in Wallingford, along with face-lit rimless script text.
+
 
 ## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
-
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+We designed and installed the illuminated signage, focusing on creating a bright and inviting display. Although we didn’t capture shots of the signs lit up, the quality and design speak for themselves, adding a touch of sophistication to the marketing suite.

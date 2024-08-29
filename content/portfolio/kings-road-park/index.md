@@ -15,13 +15,8 @@ categories: ["branding", "signage"]
 ---
 
 ## What the Client Wanted
-For the Kings Road Park , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+For the Kings Road Park , our client wanted a blend of signage for the marketing suite at King's Road Park that would reflect the elegance and exclusivity of the development.
 
 ## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+ We carefully crafted a variety of signs, ensuring each piece aligned with the high-end aesthetic of King's Road Park. From design to installation, every step was handled with precision to create a cohesive and visually appealing signage solution that enhances the marketing suite's environment.

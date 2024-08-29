@@ -15,13 +15,8 @@ categories: ["branding", "signage"]
 ---
 
 ## What the Client Wanted
-For the Sparkely Smiles , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+For the Sparkely Smiles , our client  wanted an update to their existing signage to enhance their brand’s visibility and appeal.
+
 
 ## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
-
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+ We created a new sign, and you can swipe to compare it with the old one. The updated design improves clarity and modernizes their look, providing a fresh new appearance for Sparkly Smile.

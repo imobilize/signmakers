@@ -15,13 +15,9 @@ categories: ["branding", "signage"]
 ---
 
 ## What the Client Wanted
-For the Kingsbury Hampton , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+ Kingsbury, our long-standing client, wanted a sharp and modern sign that would stand out, featuring 3D lettering with lighting effects.
+
 
 ## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+We created 3D letters from mirror-polished stainless steel, adding a soft halo illumination to make the letters glow. These were mounted onto a durable, powder-coated aluminium tray sign, giving it a clean and smart appearance. The result is a polished look that perfectly matches Kingsbury’s branding.

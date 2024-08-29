@@ -15,13 +15,8 @@ categories: ["branding", "signage"]
 ---
 
 ## What the Client Wanted
-For the Brood , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+ Brood at Borough Market needed new LED acrylic-style ‘neon’ letters to refresh their signage in time for their reopening.
+
 
 ## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
-
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+We supplied and installed the vibrant LED letters well ahead of their reopening date. The signage adds a lively and inviting touch to the market, helping Brood attract customers as they get ready to serve their delicious food again.
