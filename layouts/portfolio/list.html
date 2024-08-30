@@ -4,31 +4,33 @@
 
   <div class="relative bg-white items-center justify-center w-full overflow-x-hidden overflow-hidden pt-20 md:pt-16">
     <div class="relative z-10">
-        <div
-            class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
-            <svg class="h-[60rem] w-[100rem] flex-none stroke-secondary opacity-10" aria-hidden="true">
-                <defs>
-                    <pattern id="e9033f3e-f665-41a6-84ef-756f6778e6fe" width="200" height="200" x="50%" y="50%"
-                        patternUnits="userSpaceOnUse" patternTransform="translate(-100 0)">
-                        <path d="M.5 200V.5H200" fill="none"></path>
-                    </pattern>
-                </defs>
-                <svg x="50%" y="50%" class="overflow-visible fill-amber-50">
-                    <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0"></path>
-                </svg>
-                <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)">
-                </rect>
-            </svg>
-        </div>
+      <div
+        class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
+        <svg class="h-[60rem] w-[100rem] flex-none stroke-secondary opacity-10" aria-hidden="true">
+          <defs>
+            <pattern id="e9033f3e-f665-41a6-84ef-756f6778e6fe" width="200" height="200" x="50%" y="50%"
+              patternUnits="userSpaceOnUse" patternTransform="translate(-100 0)">
+              <path d="M.5 200V.5H200" fill="none"></path>
+            </pattern>
+          </defs>
+          <svg x="50%" y="50%" class="overflow-visible fill-amber-50">
+            <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0"></path>
+          </svg>
+          <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)">
+          </rect>
+        </svg>
+      </div>
     </div>
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 relative z-10">
-        
-            <span class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-neutral font-medium text-secondary">Building #1 brands all over UK</span>
-        <h1
-            class="mb-4 text-3xl max-w-4xl mx-auto font-medium tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
-            Our Portfolio</h1>
-        <p class="mb-8 text-xl md:text-2xl font-normal text-gray-500  sm:px-16 xl:px-48 dark:text-gray-400">
-            Don't just take the word for it, see and believe it</p>
+
+      <span
+        class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-neutral font-medium text-secondary">Building
+        #1 brands all over UK</span>
+      <h1
+        class="mb-4 text-3xl max-w-4xl mx-auto font-medium tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
+        Our Portfolio</h1>
+      <p class="mb-8 text-xl md:text-2xl font-normal text-gray-500  sm:px-16 xl:px-48 dark:text-gray-400">
+        Don't just take the word for it, see and believe it</p>
     </div>
 
     <div class="container mx-auto md:mt-12 mt-5 py-8">
@@ -41,56 +43,60 @@
           <a href="{{ .RelPermalink }}" class="group">
             <div class="aspect-w-3 aspect-h-2">
               {{ with .Resources.GetMatch .Params.featuredImage }}
-                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
-                <img class="object-cover shadow-lg rounded-lg group-hover:opacity-75 h-64 w-full" src="{{ $postimage }}" alt="{{ .Title }}">
+              {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
+              <img class="object-cover shadow-lg rounded-lg group-hover:opacity-75 h-64 w-full" src="{{ $postimage }}"
+                alt="{{ .Title }}">
               {{ else }}
-                {{ $im := (.Resources.Get .Params.featuredImage) }}
-                {{ $im }}
+              {{ $im := (.Resources.Get .Params.featuredImage) }}
+              {{ $im }}
               {{ end }}
             </div>
           </a>
-    
+
           <div class="mt-4">
             <div class="flex items-center space-x-3">
               <div class="flex items-center space-x-2">
                 {{ range $index, $tag := .Params.categories }}
-                  <span class="inline-flex items-center leading-none px-2.5 py-1.5 text-sm font-medium text-skin-inverted rounded-full border border-skin-input">
-                    {{ $tag }}
-                  </span>
+                <span
+                  class="inline-flex items-center leading-none px-2.5 py-1.5 text-sm font-medium text-skin-inverted rounded-full border border-skin-input">
+                  {{ $tag }}
+                </span>
                 {{ end }}
               </div>
             </div>
-    
+
             <div class="mt-2">
               <a href="{{ .RelPermalink }}" class="group">
-                <h4 class="text-[22px] leading-[34px] font-semibold text-secondary hover:text-blue-800 mt-auto">{{ .Title }}</h4>
+                <h4 class="text-[22px] leading-[34px] font-semibold text-secondary hover:text-blue-800 mt-auto">{{
+                  .Title }}</h4>
               </a>
               <p class="mt-1 text-base font-normal text-skin-base tracking-tight leading-tight">
                 {{ if .Params.summary }}
-                  {{ .Params.summary }}
+                {{ .Params.summary }}
                 {{ else }}
-                  {{ .Params.description }}
+                {{ .Params.description }}
                 {{ end }}
               </p>
-    
+
               <a href="{{ .RelPermalink }}"
-                 class="text-secondary hover:text-blue-800 mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read more</a>
+                class="text-secondary hover:text-blue-800 mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read
+                more</a>
             </div>
           </div>
         </div>
         {{ $index = add $index 1 }} <!-- Increment index -->
         {{ end }} <!-- End Pagination -->
       </div>
-    
+
       <!-- Pagination Controls -->
       <div class="my-8">
         {{ partial "pagination" . }}
       </div>
     </div>
-    
-    
 
-  <!-- <section class="relative bg-gray-50 my-8 pt-4 lg:pt-20 z-20">
+
+
+    <!-- <section class="relative bg-gray-50 my-8 pt-4 lg:pt-20 z-20">
     <div class="container mx-auto px-2">
       <div class="w-full relative py-12 ">
         <div id="keen-slider" class="keen-slider relative overflow-hidden">
@@ -140,54 +146,54 @@
     </div>
   </section> -->
 
-  {{ partial "products-carousel.html" . }}
+    {{ partial "products-carousel.html" . }}
 
 
-  <script type="module">
-    import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+    <script type="module">
+      import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
 
-    const keenSlider = new KeenSlider(
-      '#keen-slider',
-      {
-        loop: true,
-        slides: {
-          origin: 'center',
-          perView: 1,
-          spacing: 16,
-        },
-        breakpoints: {
-          '(min-width: 1024px)': {
-            slides: {
-              origin: 'auto',
-              perView: 3,
-              spacing: 32,
-            },
+      const keenSlider = new KeenSlider(
+        '#keen-slider',
+        {
+          loop: true,
+          slides: {
+            origin: 'center',
+            perView: 1,
+            spacing: 16,
           },
-          '(min-width: 724px)': {
-            slides: {
-              origin: 'auto',
-              perView: 3,
-              spacing: 32,
+          breakpoints: {
+            '(min-width: 1024px)': {
+              slides: {
+                origin: 'auto',
+                perView: 3,
+                spacing: 32,
+              },
             },
+            '(min-width: 724px)': {
+              slides: {
+                origin: 'auto',
+                perView: 3,
+                spacing: 32,
+              },
+            },
+
           },
-          
         },
-      },
-      []
-    )
+        []
+      )
 
-    const keenSliderPrevious = document.getElementById('keen-slider-previous')
-    const keenSliderNext = document.getElementById('keen-slider-next')
+      const keenSliderPrevious = document.getElementById('keen-slider-previous')
+      const keenSliderNext = document.getElementById('keen-slider-next')
 
-    const keenSliderPreviousDesktop = document.getElementById('keen-slider-previous-desktop')
-    const keenSliderNextDesktop = document.getElementById('keen-slider-next-desktop')
+      const keenSliderPreviousDesktop = document.getElementById('keen-slider-previous-desktop')
+      const keenSliderNextDesktop = document.getElementById('keen-slider-next-desktop')
 
-    keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
-    keenSliderNext.addEventListener('click', () => keenSlider.next())
+      keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
+      keenSliderNext.addEventListener('click', () => keenSlider.next())
 
-    keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev())
-    keenSliderNextDesktop.addEventListener('click', () => keenSlider.next())
-  </script>
+      keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev())
+      keenSliderNextDesktop.addEventListener('click', () => keenSlider.next())
+    </script>
 
 
 
