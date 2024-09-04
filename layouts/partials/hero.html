@@ -49,17 +49,7 @@
         </div>
         <div class="flex justify-center">
             <div class="relative  w-full max-w-4xl xl:max-w-6xl lg:w-screen">
-                {{ with resources.Get "images/hero.png" }}
-                {{ $small := (.Resize "900x webp q100").RelPermalink }}
-                {{ $medium := (.Resize "1500x webp q100").RelPermalink }}
-                {{ $large := (.Resize "2000x webp q100").RelPermalink }}
-                {{ $heroimage := (.Resize "2000x webp q100").RelPermalink }}
-                <img srcset="
-                {{- with $small -}}, {{.}} 768w{{- end -}}
-                {{- with $medium -}}, {{.}} 1024w{{- end -}}
-                {{- with $large -}}, {{.}} 1374w{{- end -}}" src="{{ $heroimage }}"
-                    class="w-full h-full rounded-xl" alt="Sign Makers crafting a high quality premium LED signage">
-                {{ end }}
+                <script src="https://fast.wistia.com/embed/medias/a1rzcsfvs8.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:55.94% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_a1rzcsfvs8 seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/a1rzcsfvs8/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
             </div>
         </div>
     </div>
