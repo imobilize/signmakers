@@ -2491,11 +2491,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-rotate-90{
-  --tw-rotate: -90deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .rotate-3{
   --tw-rotate: 3deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2587,10 +2582,6 @@ video {
 
 .gap-0\.5{
   gap: 0.125rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .gap-12{
@@ -5471,10 +5462,6 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:visible{
-    visibility: visible;
-  }
-
   .md\:sticky{
     position: sticky;
   }
@@ -6263,6 +6250,10 @@ video {
 
   .xl\:max-w-6xl{
     max-width: 72rem;
+  }
+
+  .xl\:max-w-3xl{
+    max-width: 48rem;
   }
 
   .xl\:px-48{
