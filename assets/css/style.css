@@ -6252,10 +6252,6 @@ video {
     max-width: 72rem;
   }
 
-  .xl\:max-w-3xl{
-    max-width: 48rem;
-  }
-
   .xl\:px-48{
     padding-left: 12rem;
     padding-right: 12rem;
