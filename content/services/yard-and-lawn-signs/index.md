@@ -22,12 +22,7 @@ paragraph2: "There's no need for your signage to be bland or uninteresting. Depe
 heading3: "Make a Statement with Eye-Catching Yard Sign Graphics"
 paragraph3: "Are you in search of eye-catching yard sign graphics to leave a memorable impression? Look no further than Sign Makers! Our expert team specializes in designing vibrant and attention-grabbing yard sign graphics, ideal for promoting your message or event. Equipped with top-notch technology and creative expertise, our graphics will make your sign and yard stand out from the rest. Whether you require yard signs for a real estate open house or want to advertise your business, our yard sign graphics will undoubtedly grab attention. Trust Sign Makers for high-quality, durable, and visually appealing graphics that will make your message shine."
 heading4: "Eye-Catching Yard Sign Graphics"
-paragraph4: "In addition to yard and lawn signs, we also provide the following options:
-- Feather Flags
-- Custom Banners
-- Vehicle Graphics and Car Wraps
-- Electric and Light-Up Signs
-- Awning Signage. A combination of different sign types and sizes will help you effectively communicate your message. Our team is here to guide you in selecting the most suitable sign types for your specific needs."
+paragraph4: "In addition to yard and lawn signs, we offer a variety of options including feather flags, custom banners, vehicle graphics and car wraps, electric and light-up signs, and awning signage. Using a combination of different sign types and sizes will help you effectively communicate your message. Our team is here to guide you in selecting the most suitable sign types for your specific needs."
 color: "bg-gradient-to-tr from-rose-50 via-orange-50 to-emerald-50"
 ---
 

@@ -23,7 +23,7 @@ Building signs aren't just markers—they're an important part of how you commun
 heading3: "Preserving Your Business Identity"
 paragraph3: "Sign Makers serves as your trusted custom sign shop, helping businesses establish and preserve their unique identity through powerful signage. Our experienced consultants take the time to comprehend your business thoroughly. This allows us to offer the perfect signs, banners, and graphics to complement your property. With building signs, you can effectively extend your brand identity beyond your sales area. Our dedicated team is excited to assist you in realizing the full potential of visual communication, enabling you to achieve more than you ever imagined."
 heading4: "Why Choose Sign Makers For Custom Signs?"
-paragraph4: "Here are a few benefits of our large format printing services:"
+paragraph4: "Here are a few benefits of our Custom Signs services:"
 benefits:
   heading1: "Tailored Solutions for Your Brand"
   paragraph1: "Sign Makers offers personalized signage that perfectly aligns with your brand's unique identity. Whether you need something simple or intricate, their team ensures your signs reflect your business's style and message."

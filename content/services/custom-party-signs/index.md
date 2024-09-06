@@ -21,7 +21,8 @@ image16: "images/2.jpg"
 keywords: "Party Signs, Neon Signs"
 heading1: "Make Every Occasion Unforgettable"
 paragraph2: "Whether you're hosting a birthday bash, anniversary celebration, or a corporate event, conveying the theme, message, or cause is essential. At The Sign Makers, we specialize in transforming your next celebration into an exceptional one with fun, unique, and personalized party signs. Our diverse range of signs comes in various sizes, colors, and shapes, tailored to suit your specific needs."
-paragraph3: "Why you need to choose us"
+heading3: "Why Choose Sign Makers for Custom Party Signs?"
+paragraph3: "Here are a few benefits of our custom party signs"
 benefits:
   heading1: "Tailored Solutions"
   paragraph1: "We understand that one size doesn't fit all. Sign Makers tailors branding solutions to align with your unique identity, ensuring a bespoke representation."
@@ -39,19 +40,9 @@ image4: "images/2.jpg"
 heading5: "Diversify Your Signage"
 paragraph5: "The key to effective communication lies in using a variety of sign styles and sizes, including banners and graphics. Sign Makers offers an extensive array of options, each of which can be customized to your preferences."
 heading6: "Explore additional sign options"
-paragraph6: "- Custom Decals
-- Sticker Signs
-- Electric and Light-Up Signs
-- Custom Feather Flags
-- Yard and Lawn Signs. The possibilities are nearly limitless! The Sign Makers team is passionate about creating customized solutions for businesses and is eager to assist you with all your signage and graphics needs."
+paragraph6: " Our offerings include custom decals, sticker signs, electric and light-up signs, custom feather flags, and yard and lawn signs. The possibilities are nearly limitless! The Sign Makers team is passionate about creating customized solutions for businesses and is eager to assist you with all your signage and graphics needs."
 heading7: "Elevate Your Business Events"
-paragraph7: "Business party signs and displays play a crucial role in corporate events and gatherings. They serve as visual cues for guests, guiding them to the right locations, and promote your business's brand and message. Our signage options include:
-
-- Display Signs
-- Banners
-- Posters
-- Digital Signage. No matter the type of business signage you choose, professionalism is paramount! 
-"
+paragraph7: "Business signs and displays are essential for corporate events and gatherings. They guide guests to the right places and help promote your brand and message. We offer a variety of signage options, including display signs, banners, posters, and digital signage. Whichever type of signage you select, professionalism is always key!"
 color: "bg-gradient-to-br from-cyan-50 via-orange-50 to-violet-50"
 ---
 
