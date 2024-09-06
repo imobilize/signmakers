@@ -49,7 +49,7 @@ paragraph6: "Selecting the right company for your wayfinding signage is vital. W
 image6: "images/section1.jpg"
 benefits:
   title: "Why you should Choose Us?"
-  paragraph: "Benefits Paragraph Here"
+  paragraph: "Benefits of choosing thesignmakers for your wayfinding signs"
   heading1: "Enhanced Recognition"
   paragraph1: ": A strong brand identity makes your business easily recognizable, helping you stand out in a crowded market.
 Consistent Messaging: Consistent branding across all platforms builds trust and loyalty among your customers.

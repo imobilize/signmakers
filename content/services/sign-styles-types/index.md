@@ -27,15 +27,7 @@ heading2: "The Artistry of 3D Signs"
 paragraph2: "While 3D is commonly associated with theatres and photographs, at Sign Makers, we bring this dimension to signage, creating a visual spectacle for your business. Our 3D signs go beyond the ordinary, providing a unique and captivating look that sets your brand apart."
 image2: "images/section2.jpg"
 heading3: "Materials Mastery"
-paragraph3: "Dive into a world of possibilities with our diverse range of materials for crafting 3D signs:
-
-- **Acrylic Fabrication:** Achieve a modern and sleek look.
-- **Aluminium:** Choose from powder-coated or wet spray finishes.
-- **GRP (Glass Reinforced Plastic):** We supply blanks for trade, ensuring versatility.
-- **Timber:** Experience a high-quality finish, available stained or waxed.
-- **Stainless Steel:** Fabricated up to 100mm, with options for internal illumination using LED or Neon.
-- **CNC Routing:** Precision cutting for intricate designs.
-- **Engraving:** Personalize stainless steel, acrylics, and laminates with precision."
+paragraph3: "Dive into a world of possibilities with our diverse range of materials for crafting 3D signs. We offer acrylic fabrication for a modern and sleek look, aluminum with options for powder-coated or wet spray finishes, and GRP (Glass Reinforced Plastic), which we supply as blanks for trade to ensure versatility. Our timber signs provide a high-quality finish, available stained or waxed, while our stainless steel signs can be fabricated up to 100mm and come with options for internal illumination using LED or Neon. We also provide CNC routing for precision cutting of intricate designs and engraving services to personalize stainless steel, acrylics, and laminates with precision."
 image3: "images/section3.jpg"
 heading4: "Give a Better Impression with 3D"
 paragraph4: "Our team can sculpt 3D images to make a fantastic impression, creating 3D lettering in wood, metal, or acrylics. Elevate your brand presence with the depth and visual impact of 3D signs."
