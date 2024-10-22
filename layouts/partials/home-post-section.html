@@ -19,7 +19,7 @@
                         {{ $featured := .Params.featuredImage }}
                         {{ with .Resources.GetMatch $featured }}
                         {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                        <img src="{{ $postimage }}" class="w-full h-64 rounded-2xl" alt="{{ .Params.description }}"
+                        <img src="{{ $postimage }}" class="object-cover h-64 rounded-2xl" alt="{{ .Params.description }}"
                             title="{{ .Params.description }}" />
                         {{ end }}
                         <div class="py-6 xl:py-8">
