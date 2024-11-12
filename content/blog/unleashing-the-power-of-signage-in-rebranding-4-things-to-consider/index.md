@@ -4,8 +4,8 @@ date: 2023-10-24
 draft: false
 author: "Sign Makers"
 description: "In the dynamic landscape of marketing, we’re experiencing a resurgence of rebranding. Rebrands are a strategic marketing maneuver that can redefine or refresh a company or brand’s identity and set it on a trajectory for future success. While there are numerous elements to consider during a rebrand, signs and graphics are pivotal pieces in the rebranding process, acting as powerful ambassadors for brands as well as businesses that need to attract attention to get customer traffic."
-featuredImage: "images/1.jpg"
-images: ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/3.jpg"]
+featuredImage: "images/5.jpg"
+images: ["images/5.jpg", "images/2.jpg", "images/3.jpg", "images/3.jpg"]
 categories: ["Creativity", "Branding"]
 tags: ["Branding", "SignBoards"]
 ---
@@ -26,7 +26,7 @@ Rebrands receive attention and often tap into emotional frameworks and associati
 To be a brand that people choose to engage in business, here are four ways dynamic signage and graphic solutions can play an important role in your rebranding efforts:
 
 ## First Impression
-![Contrast Paint](images/1.jpg)
+![Contrast Paint](images/5.jpg)
 
 Signage is often what makes your brand's first impression. Be it a monolith sign, an exterior sign, a billboard, or a digital sign, it's often the first visual element that people attach to your brand. During a rebrand, updating your signage to reflect your new brand identity is not just important, it's a strategic imperative.
 
