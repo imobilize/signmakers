@@ -4,9 +4,9 @@ date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
 description: Crafting Your Brand Identity, Every Step of the Way.
-featuredImage: "images/1.jpg"
-image: "images/1.jpg"
-images: ["images/1.jpg"]
+featuredImage: "images/8.jpg"
+image: "images/8.jpg"
+images: ["images/8.jpg"]
 keywords: "Branding, Brand Building, Business Brand"
 type: page
 layout: branding
