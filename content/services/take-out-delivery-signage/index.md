@@ -5,13 +5,13 @@ draft: false
 subheading: Offering take-out and delivery is an excellent way to cater to those who may not have the time to dine in.
 description: Offering take-out and delivery is an excellent way to cater to those who may not have the time to dine in. Sign Makers can assist you in conveying these services and more effectively
 author: " "
-featuredImage: "images/1.jpg"
-image: "images/1.jpg"
+featuredImage: "images/10.jpg"
+image: "images/10.jpg"
 images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
-image2: "images/3.jpg"
-image3: "images/4.jpg"
-image4: "images/3.jpg"
+image2: "images/10.jpg"
+image3: "images/10.jpg"
+image4: "images/2.jpg"
 keywords: "Take Out, Resturant Signage, Delivery Signs"
 type: page
 layout: template-4

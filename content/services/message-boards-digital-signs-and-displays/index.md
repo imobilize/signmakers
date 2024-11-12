@@ -4,15 +4,15 @@ date: 2020-09-23T15:28:43+06:00
 draft: false
 description: Digital message boards and interactive signage are some of the best ways to convey your message to the right people at the right time. At Sign Makers, we can design these and other signs and graphics to help you communicate with your customers. Message boards and digital displays are a great way to promote specials, introduce customers to new products and services, celebrate achievements, and so much more.
 author: " "
-featuredImage: "images/1.jpg"
-image: "images/1.jpg"
-images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
+featuredImage: "images/5.jpg"
+image: "images/5.jpg"
+images: ["images/5.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 keywords: "Message Boards, Digital Signs, Displays"
 type: page
 layout: branding
 subheading: "Creating a brand that nobody forgets 💅"
 quotation: "Digital message boards and interactive signage are some of the best ways to convey your message to the right people at the right time."
-image1: "images/1.jpg"
+image1: "images/5.jpg"
 image2: "images/2.jpg"
 image3: "images/3.jpg"
 image4: "images/4.jpg"

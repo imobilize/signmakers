@@ -4,9 +4,9 @@ date: 2020-09-23T15:28:43+06:00
 draft: false
 description: Demonstrating your commitment to safety and inclusivity in the workplace is crucial. This entails implementing safety procedures, ensuring regulatory compliance, and effectively communicating these aspects
 author: " "
-featuredImage: "images/1.jpg"
-image: "images/1.jpg"
-images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
+featuredImage: "images/4.jpg"
+image: "images/4.jpg"
+images: ["images/4.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
