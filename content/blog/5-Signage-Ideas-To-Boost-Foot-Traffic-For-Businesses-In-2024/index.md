@@ -5,7 +5,7 @@ draft: false
 author: "Sign Makers"
 description: "Discover 5 innovative signage ideas to boost foot traffic for businesses in 2024. Learn about interactive digital signage, dynamic LED displays, personalized solutions, eco-friendly options, and neon signs. Transform your business's visual appeal and attract more customers with these creative and engaging signage strategies."
 featuredImage: "images/6.png"
-images: ["images/1.png", "images/2.png", "images/3.png", "images/3.png"]
+images: ["images/1.png", "images/5.jpg", "images/3.png", "images/3.png"]
 categories: ["branding"]
 tags: ["LED Signage", "Neon Signs", "Business Signs"]
 ---
@@ -43,7 +43,7 @@ Some cool examples are scrolling message boards that look like the words are mov
 
 [To see how dynamic LED displays can elevate your brand presence, check out examples on Sign Makers website.](/portfolio/)
 
-![Dynamic LED](images/2.png)
+![Dynamic LED](images/5.jpg)
 
 ## Personalized Signage Solutions
 

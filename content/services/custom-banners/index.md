@@ -4,15 +4,15 @@ date: 2020-09-23T15:28:43+06:00
 draft: false
 language: en
 description: Make your brand or event unforgettable with our custom banners. Designed to stand out, our banners are perfect for any occasion—whether it's a grand opening, trade show, or special event. Durable, eye-catching, and tailored to your needs, these banners are the ultimate attention-grabber.
-featuredImage: "images/4.jpg"
-image: "images/1.jpg"
-images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
+featuredImage: "images/5.jpg"
+image: "images/5.jpg"
+images: ["images/5.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/3.jpg"
-image2: "images/2.jpg"
+image2: "images/5.jpg"
 image3: "images/3.jpg"
-image5: "images/1.jpg"
+image5: "images/6.png"
 image16: "images/4.jpg"
-images: ["images/1.jpg"]
+images: ["images/5.jpg"]
 keywords: "Banners, Custom Banners"
 type: page
 layout: branding
