@@ -4,8 +4,8 @@ date: 2024-09-12
 draft: false
 author: "Sign Makers"
 description: "Discover 5 effective ways to increase foot traffic to your business with impactful signage in 2024. Learn how modern, well-maintained, and interactive signs can attract more customers and boost your brand visibility."
-featuredImage: "images/3d-signage.png"
-images: ["images/3d-signage.png", "images/illuminated-sign.png", "images/led-signage-for-the-park.png", "images/overall-branding-for-foot-trafic.png", "images/promotional-signage.png"]
+featuredImage: "images/1.jpg"
+images: ["images/1.jpg", "images/illuminated-sign.png", "images/led-signage-for-the-park.png", "images/overall-branding-for-foot-trafic.png", "images/promotional-signage.png"]
 categories: ["branding"]
 tags: ["LED Signage", "Food Traffic", "Business Signs"]
 ---
@@ -15,7 +15,7 @@ In 2024, your business signage is more than just a directional tool, it’s one 
 The good news? By optimizing your signage, you can significantly boost foot traffic to your business.
 Let's explore 5 ways to improve your signage and increase foot traffic in 2024.
 
-![3d signage for visibility](images/3d-signage.png)
+![3d signage for visibility](images/1.jpg)
 
 ## 1. Upgrade to Eye-Catching, Modern Signage
 
