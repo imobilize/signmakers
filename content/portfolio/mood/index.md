@@ -2,7 +2,7 @@
 title: "Mood – Gifts & Home"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: The Star reached out to us to help them build top notch sign boards for their business
+description: "Mood in Longton wanted a fresh, classy look for their new homeware and gifts shop. We created bold 3D illuminated lettering and a complete brand overhaul, fitting stylish signage both inside and out to give them the perfect opening look."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

@@ -2,7 +2,7 @@
 title: "Cavan Bakery"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Cavan Bakery reached out to us to help them build top notch sign boards for their business"
+description: "The Sign Makers created warm, inviting signage for Cavan Bakery’s new headquarters, blending modern design with a nod to their rich heritage—perfectly celebrating their next chapter."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

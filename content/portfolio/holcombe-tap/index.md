@@ -2,7 +2,7 @@
 title: "Holcombe Tap"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: Holcombe Tap reached out to us to help them build top notch sign boards for their business
+description: "The Holcombe Tap in Ramsbottom received a stylish makeover with a complete rebrand. We installed bold new signage and standing signs, giving the venue a fresh, modern vibe that perfectly matches its high-end, trendy feel."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

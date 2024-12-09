@@ -2,7 +2,7 @@
 title: "White Bull"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: White Bull reached out to us to help them build top notch sign boards for their business
+description: "The White Bull in Gisburn needed a fresh new look, including a complete signage overhaul and logo redesign. We used traditional sign painting for car park and gable signs, along with a new brand and colour scheme. Trust Sign Makers to enhance your business's visual appeal."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

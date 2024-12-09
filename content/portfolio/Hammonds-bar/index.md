@@ -2,7 +2,7 @@
 title: "Hammond's Bar"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Hammond's Bar reached out to us to help them build top notch sign boards for their business"
+description: "Hammond's Bar required a complete signage overhaul to match their fresh brand image. We handled the rebranding, from new signage to custom oak post pictorial signs. Trust Sign Makers to elevate your business with expert signage solutions."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

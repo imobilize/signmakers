@@ -2,7 +2,7 @@
 title: "Hertsmere Golf"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Hertsmere Golf reached out to us to help them build top notch sign boards for their business"
+description: "The Sign Makers delivered sleek, durable signage for Hertsmere Golf, combining tray signs and monoliths that enhance the facility's modern aesthetic. Designed to withstand the elements, these signs add both functionality and style."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

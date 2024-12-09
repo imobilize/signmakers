@@ -2,7 +2,7 @@
 title: "Greenhill Library"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Greenhill Library reached out to us to help them build top notch sign boards for their business"
+description: "The Sign Makers teamed up with Objectif Graphic Design to create striking entrance canopy signage for Harrow Council’s Greenhill Library. A sleek and modern addition that perfectly complements the library’s new look in Harrow Square."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

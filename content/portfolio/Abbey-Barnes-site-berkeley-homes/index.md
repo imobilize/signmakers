@@ -2,7 +2,7 @@
 title: "Abbey Barnes Site Berkeley Homes"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Abbey Barnes Site Berkeley Homes reached out to us to help them build top notch sign boards for their business"
+description: "See the transformation at Abbey Barnes Site: new building signage, gable sign painting, and a bespoke oak post sign. The Sign Makers turned Berkeley Homes' vision into reality."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

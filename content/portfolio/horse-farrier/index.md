@@ -2,7 +2,7 @@
 title: "Horse & Farrier"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: The Fleece reached out to us to help them build top notch sign boards for their business
+description: "The Sign Makers gave The Horse & Farrier in Lancaster a fresh new look with a complete signage overhaul, including a standout metallic logo, sleek hanging signs, and eye-catching vinyls. A perfect blend of modern design and durability."
 author: " "
 featuredImage: "images/1.jpeg"
 image: "images/1.jpeg"

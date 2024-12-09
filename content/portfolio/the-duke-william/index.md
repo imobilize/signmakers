@@ -2,7 +2,7 @@
 title: "The Duke William"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: The Duke William reached out to us to help them build top notch sign boards for their business
+description: "The Duke William in Starkholmes needed a full signage makeover. We provided rebranding, new signage installation, and external lighting for enhanced visibility. Trust Sign Makers to refresh your pub's image with our expert solutions."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

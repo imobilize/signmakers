@@ -2,7 +2,7 @@
 title: "Pontoon Dock Health Centre"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Pontoon Dock Health Centre reached out to us to help them build top notch sign boards for their business"
+description: "Pontoon Dock Health Centre sought a fresh, polished look. We rebranded and designed new signage, including a large oak post pictorial sign, front-building signage, and custom-painted details, giving their location a modern and welcoming update."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

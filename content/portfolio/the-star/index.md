@@ -2,7 +2,7 @@
 title: "The Star"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: The Star reached out to us to help them build top notch sign boards for their business
+description: "The Star, located in Penkridge and owned by Marstons Brewery, received a full signage overhaul, including a new brand package, post sign, and raised letters for a welcoming yet rustic aesthetic. Trust Sign Makers to transform your pub’s image."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

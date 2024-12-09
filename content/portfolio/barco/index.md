@@ -2,7 +2,7 @@
 title: "Barco."
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Barco. reached out to us to help them build top notch sign boards for their business"
+description: "The Sign Makers transformed Barco’s brand with a sleek signage overhaul—modern designs, eye-catching standing signs, gable painting, and a stunning oak post pictorial sign that captures attention and elevates their image."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

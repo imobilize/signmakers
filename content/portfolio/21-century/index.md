@@ -2,7 +2,7 @@
 title: "21 Century"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The 21 century reached out to us to help them build top notch sign boards for their business"
+description: "See how Century21's brand shines with a custom tray and entrance panel by The Sign Makers. A perfect blend of functionality and aesthetic appeal for their location."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

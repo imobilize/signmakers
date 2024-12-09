@@ -2,7 +2,7 @@
 title: "Berkeley Homes Quarters"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Berkeley Homes Quarters reached out to us to help them build top notch sign boards for their business"
+description: "The Sign Makers designed elegant monoliths for Berkeley Homes, featuring edge-illuminated lettering with a soft glow and a luxurious brushed gold finish. A perfect blend of sophistication and style to elevate their project."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

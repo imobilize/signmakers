@@ -2,7 +2,7 @@
 title: "Glass Water Locks"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Glass Water Locks reached out to us to help them build top notch sign boards for their business"
+description: "The Sign Makers created a striking double-layered acrylic sign for Berkeley Homes, featuring edge-lit lettering that glows beautifully in low light. A stunning design that stands out both day and night, showcasing expert craftsmanship."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
