@@ -2,7 +2,7 @@
 title: "Cock & Bottle"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: Cock & Bottle reached out to us to help them build top notch sign boards for their business
+description: "The Sign Makers revitalized The Cock & Bottle in Tarleton with bespoke oak signage, a burnt-look barrel logo, and fresh hanging signs. A perfect blend of craftsmanship and style to elevate this Thwaites Brewery gem."
 author: " "
 featuredImage: "images/1.png"
 image: "images/1.png"

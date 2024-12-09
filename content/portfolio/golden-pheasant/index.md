@@ -2,7 +2,7 @@
 title: "The Golden Pheasant"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: The Royal reached out to us to help them build top notch sign boards for their business
+description: "We gave The Golden Pheasant in Plumley a stunning facelift with hand-painted artwork, a large oak post sign, and traditional gold leaf lettering. A perfect blend of craftsmanship and elegance for this JW LEES Brewery gem."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

@@ -2,7 +2,7 @@
 title: "RaceTech Media"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The RaceTech Media reached out to us to help them build top notch sign boards for their business"
+description: "RaceTech Media needed a complete signage transformation to match their updated brand image. We rebranded and designed new signage, including a striking oak post pictorial sign, front-building signage, and custom-painted details, giving their business a sleek and modern look."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

@@ -2,7 +2,7 @@
 title: "Sparkely Smiles"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Sparkely Smiles reached out to us to help them build top notch sign boards for their business"
+description: "Sparkely Smiles wanted to update their existing signage to enhance their brand’s visibility and appeal. We designed a fresh new sign that modernized their look while improving clarity. The updated design gives Sparkely Smiles a more vibrant and polished appearance, making it stand out even more."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

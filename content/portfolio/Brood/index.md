@@ -2,7 +2,7 @@
 title: "Brood"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Brood reached out to us to help them build top notch sign boards for their business"
+description: "The Sign Makers brought Brood at Borough Market to life with vibrant LED acrylic-style 'neon' letters. Installed ahead of their reopening, the signage adds a bold, welcoming vibe, perfect for drawing in hungry customers."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

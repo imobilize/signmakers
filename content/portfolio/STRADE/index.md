@@ -2,7 +2,7 @@
 title: "Strade"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Strade reached out to us to help them build top notch sign boards for their business"
+description: "Strade needed a complete signage overhaul to refresh their brand image. We provided rebranding, new signage installation, and custom oak post pictorial signs to elevate their visual identity. Trust Sign Makers for expert signage solutions."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

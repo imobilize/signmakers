@@ -2,7 +2,7 @@
 title: "Kingsbury Hampton"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Kingsbury Hampton reached out to us to help them build top notch sign boards for their business"
+description: "For Kingsbury, we created a bold, modern sign with 3D stainless steel lettering and a glowing halo effect. Mounted on a sleek aluminium tray, the result is a sharp and sophisticated design that truly elevates their brand presence."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

@@ -2,7 +2,7 @@
 title: "Horlicks Quarters"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Horlicks Quarters reached out to us to help them build top notch sign boards for their business"
+description: "The Sign Makers crafted an impressive entrance for The Horlicks Quarter in Slough with illuminated rimless lettering, LED-style faux neon, and a bold oversized graphic. A striking combination that elevates the building's presence inside and out"
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

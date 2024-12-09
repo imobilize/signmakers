@@ -2,7 +2,7 @@
 title: "Kings Road Park"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Kings Road Park reached out to us to help them build top notch sign boards for their business"
+description: "The Sign Makers designed and installed elegant signage for the marketing suite at King's Road Park, reflecting the development's exclusivity. A blend of precision and style, enhancing the suite’s sophisticated atmosphere."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

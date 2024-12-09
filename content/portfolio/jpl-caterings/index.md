@@ -2,7 +2,7 @@
 title: "JPL Caterings"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The JPL Caterings reached out to us to help them build top notch sign boards for their business"
+description: "JPL Caterings sought a complete signage overhaul to reflect a fresh and polished brand image. From rebranding to new signage installation, we delivered a visually stunning transformation. Trust Sign Makers for all your signage needs."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

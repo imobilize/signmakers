@@ -2,7 +2,7 @@
 title: "Anglesey Arms"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Anglesey Arms reached out to us to help them build top notch sign boards for their business"
+description: "See how The Sign Makers gave Anglesey Arms a fresh new look with a complete signage makeover—polished designs, standout standing signs, and a stunning oak post pictorial sign that truly stands out."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

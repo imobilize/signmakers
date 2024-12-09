@@ -2,7 +2,7 @@
 title: "Highcroft"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Highcroft reached out to us to help them build top notch sign boards for their business"
+description: "The Sign Makers created stunning halo-illuminated lettering and a logo for Berkeley Homes' Highcroft marketing suite, along with face-lit rimless script text. A bright, inviting design that adds sophistication and allure to the suite."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

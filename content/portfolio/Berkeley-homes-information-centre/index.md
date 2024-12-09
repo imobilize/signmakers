@@ -2,7 +2,7 @@
 title: "Berkeley Homes Information Centre"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Berkeley Homes Information Centre reached out to us to help them build top notch sign boards for their business"
+description: "The Sign Makers crafted sleek, understated signage for Berkeley Homes' Huntley Wharf Information Centre. Designed with clarity and precision, the signage perfectly complements the brand’s refined aesthetic."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

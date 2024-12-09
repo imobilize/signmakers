@@ -2,7 +2,7 @@
 title: "The Drift Academy"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The The Drift Academy reached out to us to help them build top notch sign boards for their business"
+description: "The Drift Academy sought a complete signage overhaul to modernize their brand image. We provided rebranding, new signage installation, and custom oak post pictorial signs. Trust Sign Makers for expert signage solutions that transform your business identity."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

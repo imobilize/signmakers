@@ -2,7 +2,7 @@
 title: "The Silverdale Hotel"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: The Silverdale Hotel reached out to us to help them build top notch sign boards for their business
+description: "The Silverdale Hotel Inn in Silverdale received a full brand and signage overhaul, including a new logo, metallic-effect signage, and window vinyls. Trust Sign Makers to transform your business with our expert branding and signage solutions."
 author: " "
 featuredImage: "images/1.jpeg"
 image: "images/1.jpeg"

@@ -2,7 +2,7 @@
 title: "Tom Ford"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Tom Ford reached out to us to help them build top notch sign boards for their business"
+description: "Tom Ford required a complete signage overhaul to enhance their brand image. We provided a rebrand, new signage, oak post pictorial signs, and more to reflect their polished look. Trust Sign Makers to transform your business’s visual identity."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
