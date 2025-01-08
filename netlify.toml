@@ -29,7 +29,33 @@ HUGO_VERSION = "0.111.3"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 
+
 [[redirects]]
-from = "/npmjs/*"
-to = "/npmjs/"
-status = 200
+from = "/sign-solutions/bespoke-signs"
+to = "/custom-signs"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-solutions/digital-print"
+to = "/large-format-printing/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-solutions/commercial-signs"
+to = "/exterior-signage/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/get-a-quote"
+to = "/contact"
+status = 301
+force = true
+
+[[redirects]]
+from = "/our-work"
+to = "/portfolio"
+status = 301
+force = true
