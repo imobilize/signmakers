@@ -21,7 +21,7 @@
                 </svg>
             </div>
         </div>
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 relative z-10">
+        <div class="pt-8 px-4 mx-auto max-w-screen-xl text-center lg:pt-16 lg:px-12 relative z-10">
 
             <span
                 class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-neutral font-medium text-secondary">What
@@ -35,14 +35,28 @@
     </div>
 
 
-    <section class="bg-gray-50 relative z-10 
-    ">
+    <section class="bg-gray-50 relative z-10">
         <div class="container mx-auto">
-            <div class="w-full  flex flex-col md:flex-row justify-center md:justify-between items-center my-6">
+            <div class="w-full  flex flex-col md:flex-row justify-center md:justify-between items-center my-6 py-12">
                 <h2 class="text-2xl md:text-4xl font-medium">Browse services</h2>
                 <div class="relative w-full md:max-w-md">
-                    <input id="searchInput" type="text" class="w-full p-2 px-8 border border-gray-300 rounded-md"
-                        placeholder="Search services...">
+                    <form action="{{ `search` | relURL }}" class="flex flex-row lg:flex-row">
+
+                        <input type="search" name="q" id="search-query"
+                            class="w-full p-2 px-8 border-l border-gray-300 rounded-md"
+                            placeholder="Search services...">
+                        <!--Search button-->
+                        <button
+                            class="relative z-[2] flex items-center rounded-r bg-secondary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-500 active:shadow-lg"
+                            type="submit" id="button-search" data-te-ripple-init data-te-ripple-color="light">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                    d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </form>
                     <div class="absolute inset-y-0 start-0 px-2 flex items-center ps-3 pointer-events-none">
                         <svg class="w-4 h-4  text-gray-500 dark:text-gray-400" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -71,8 +85,8 @@
                             {{- with $medium -}}, {{.}} 550w{{- end -}}
                             {{- with $large -}}, {{.}} 768w{{- end -}}
                             {{- with $postimage -}}, {{.}} 1100w{{- end -}}"
-                                class="object-cover overflow-hidden rounded-lg h-64"
-                                width="100%" alt="{{ .Params.title }}" />
+                                class="object-cover overflow-hidden rounded-lg h-64" width="100%"
+                                alt="{{ .Params.title }}" />
                             {{ end }}
                             <div class="py-4 flex flex-col h-full sm:p-6">
                                 <h3

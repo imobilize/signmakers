@@ -3,7 +3,7 @@ title: "Branding"
 date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
-description: Crafting Your Brand Identity, Every Step of the Way.
+description: Crafting Your Brand Identity, Sign Branding, Business Branding, Brand Creation
 featuredImage: "images/8.jpg"
 image: "images/8.jpg"
 images: ["images/8.jpg"]

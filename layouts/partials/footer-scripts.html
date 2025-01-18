@@ -17,7 +17,7 @@
 {{ $fuse := resources.Get "js/fuse.min.js" }}
 <script src="{{ $fuse.RelPermalink }}"></script>
 
-{{ $mark := resources.Get "js/mark.js" }}
+{{ $mark := resources.Get "js/mark.min.js" }}
 <script src="{{ $mark.RelPermalink }}"></script>
 
 {{ $search := resources.Get "js/search.js" }}
@@ -88,40 +88,40 @@
 <script>
   // Function to show the modal
   function showModal(modalId) {
-      const modal = document.getElementById(modalId);
-      if (modal) {
-          modal.classList.remove('hidden');
-      }
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove('hidden');
+    }
   }
 
   // Function to hide the modal
   function hideModal(modalId) {
-      const modal = document.getElementById(modalId);
-      if (modal) {
-          modal.classList.add('hidden');
-      }
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.add('hidden');
+    }
   }
 
   // Check if the URL has a hash and open the modal if it matches
   document.addEventListener('DOMContentLoaded', function () {
-      if (window.location.hash === '#thankyou') {
-          showModal('exampleModal');
-      }
+    if (window.location.hash === '#thankyou') {
+      showModal('exampleModal');
+    }
 
-      // Add event listeners to close buttons
-      document.querySelectorAll('[data-modal-hide="exampleModal"]').forEach(button => {
-          button.addEventListener('click', function () {
-              hideModal('exampleModal');
-          });
+    // Add event listeners to close buttons
+    document.querySelectorAll('[data-modal-hide="exampleModal"]').forEach(button => {
+      button.addEventListener('click', function () {
+        hideModal('exampleModal');
       });
+    });
   });
 
   // Optional: Listen for hash changes
   window.addEventListener('hashchange', function () {
-      if (window.location.hash === '#hello') {
-          showModal('exampleModal');
-      } else {
-          hideModal('exampleModal');
-      }
+    if (window.location.hash === '#hello') {
+      showModal('exampleModal');
+    } else {
+      hideModal('exampleModal');
+    }
   });
 </script>

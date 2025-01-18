@@ -1,4 +1,4 @@
-<title>{{ .Site.Title }} - {{ .Title }} 
+<title>{{if .IsHome}}{{ .Title }}{{else}}{{ .Title }} - {{ .Site.Title }}{{end}}
 </title>
 <meta name="description"
     content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
@@ -8,6 +8,6 @@
 <meta itemprop="name" content="{{ .Title }} - {{ .Site.Title }}" />
 <meta name="application-name" content="{{ .Title }} - {{ .Site.Title }}" />
 
-{{ template "_internal/schema.html" }}
+{{ template "_internal/schema.html" . }}
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}

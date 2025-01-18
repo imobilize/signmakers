@@ -36,12 +36,8 @@
 
 
 {{ $styles := resources.Get "/css/style.css" | postCSS }}
-{{ if .Site.IsServer }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-{{ else }}
 {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
-{{ end }}
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
