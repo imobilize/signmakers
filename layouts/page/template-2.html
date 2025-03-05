@@ -10,8 +10,6 @@
         <p class="mx-auto mt-9 max-w-3xl text-xl md:text-2xl tracking-tight text-gray-800 sm:mt-6">
             <span class="inline-block">{{ .Params.subheading }}</span>
         </p>
-        <a class="bg-primary dark:bg-gray-800 rounded-xl text-white dark:text-gray-300 font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-red-800 dark:hover:bg-gray-600 transition"
-            href="/book-consultation/">Contact Us</a>
     </div>
 </section>
 
@@ -231,15 +229,16 @@
                     title="{{ .Params.description }}" />
                 {{ end }}
             </div>
-        <div class="font-light w-full md:w-1/2 text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400 order-2 lg:order-none">
-            <h2 class="mb-8 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none  text-gray-800">
-                {{ .Params.heading3 }}
-            </h2>
-            <p class="text-base py-6">{{ .Params.paragraph3 }}
-            </p>
+            <div
+                class="font-light w-full md:w-1/2 text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400 order-2 lg:order-none">
+                <h2 class="mb-8 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none  text-gray-800">
+                    {{ .Params.heading3 }}
+                </h2>
+                <p class="text-base py-6">{{ .Params.paragraph3 }}
+                </p>
 
+            </div>
         </div>
-    </div>
     </div>
 </section>
 
@@ -247,7 +246,8 @@
     <div class="container mx-auto">
         <div class="gap-6 items-center px-4 mx-auto flex flex-col md:flex-row lg:px-6 py-12 md:py-20">
             <div class="font-light w-full md:w-1/2 text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
-                <h2 class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-gray-800">
+                <h2
+                    class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-gray-800">
                     {{ .Params.heading4 }}</h2>
                 <p class="mb-8 leading-relaxed text-left">
                     {{ .Params.paragraph4 }}
@@ -262,7 +262,7 @@
                 {{ end }}
             </div>
         </div>
-    
+
         <div class="gap-6 items-center px-4 mx-auto flex flex-col md:flex-row lg:px-6">
             <div class="w-full md:w-1/2 mt-8">
                 {{ $image := .Params.image15 }}
@@ -272,7 +272,8 @@
                     title="{{ .Params.description }}" />
                 {{ end }}
             </div>
-            <div class="font-light w-full md:w-1/2 order-2 md:order-none text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
+            <div
+                class="font-light w-full md:w-1/2 order-2 md:order-none text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
                 {{ .Params.paragraph5 }}
             </div>
         </div>
@@ -283,7 +284,8 @@
 <section>
     <div class="container mx-auto">
         <div class="gap-6 items-center px-4 mx-auto flex flex-col md:flex-row lg:px-6">
-            <div class="font-light w-full md:w-1/2 order-2 lg:order-none text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
+            <div
+                class="font-light w-full md:w-1/2 order-2 lg:order-none text-gray-500 max-w-5xl sm:text-lg dark:text-gray-400">
                 <h2 class="mb-8 xs:text-2xl  md:text-3xl lg:text-3xl font-medium leading-none text-gray-800">
                     {{ .Params.heading6 }}</h2>
                 <p class="mb-8 leading-relaxed text-left">

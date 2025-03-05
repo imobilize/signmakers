@@ -1,7 +1,6 @@
 {{ define "main" }}
 
-<section
-    class="relative overflow-hidden {{ .Params.color }} pb-12 pt-32 sm:pb-16  lg:pb-24 xl:pb-32 xl:pt-40">
+<section class="relative overflow-hidden {{ .Params.color }} pb-12 pt-32 sm:pb-16  lg:pb-24 xl:pb-32 xl:pt-40">
     <div class="relative z-10">
         <div
             class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
@@ -25,16 +24,6 @@
             <h2 class="mt-6 text-lg leading-8 font-medium font-poppins text-gray-600">
                 {{ .Params.subheading }}
             </h2>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a class="isomorphic-link isomorphic-link--internal inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-red-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-                    href="/contact/">Contact Us
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </a>
-            </div>
         </div>
     </div>
 
@@ -72,7 +61,7 @@
 
             <p class="mb-8 leading-relaxed text-left">
                 {{ .Params.paragraph2 }}
-            </p> 
+            </p>
         </div>
     </div>
 
@@ -112,7 +101,8 @@
                         <img src="{{$together}}" class="w-auto" alt="asdasd">
                     </div>
                     {{ end }} -->
-                    <h4 class="text-2xl font-poppins text-center md:text-left font-bold">{{ .Params.benefits.heading1 }}</h4>
+                    <h4 class="text-2xl font-poppins text-center md:text-left font-bold">{{ .Params.benefits.heading1 }}
+                    </h4>
                     <p class="font-medium text-center md:text-left  text-xl py-2">
                         {{ .Params.benefits.paragraph1 }}
                     </p>
@@ -126,8 +116,9 @@
                             title="{{ .Params.description }}" />
                         {{ end }}
                     </div>
-                    
-                    <h4 class="text-2xl font-poppins text-center md:text-left  font-bold">{{ .Params.benefits.heading2 }}</h4>
+
+                    <h4 class="text-2xl font-poppins text-center md:text-left  font-bold">{{ .Params.benefits.heading2
+                        }}</h4>
                     <p class="font-medium  text-center md:text-left text-xl py-2">
                         {{ .Params.benefits.paragraph2 }}
                     </p>
@@ -141,8 +132,9 @@
                             title="{{ .Params.description }}" />
                         {{ end }}
                     </div>
-                    
-                    <h4 class="text-2xl font-poppins  text-center md:text-left font-bold">{{ .Params.benefits.heading3 }}</h4>
+
+                    <h4 class="text-2xl font-poppins  text-center md:text-left font-bold">{{ .Params.benefits.heading3
+                        }}</h4>
                     <p class="font-medium text-center md:text-left  text-xl py-2">
                         {{ .Params.benefits.paragraph3 }}
                     </p>
@@ -187,12 +179,12 @@
                     {{ .Params.paragraph4 }}
                 </p>
                 <a href="/contact/"
-                class="block px-5 py-3 text-xl max-w-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
-                <span class="font-bold">Interested?</span> Contact Now
-            </a>
+                    class="block px-5 py-3 text-xl max-w-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
+                    <span class="font-bold">Interested?</span> Contact Now
+                </a>
             </div>
 
-            
+
         </div>
     </div>
     </div>
@@ -302,4 +294,3 @@
 </section>
 
 {{ end }}
-

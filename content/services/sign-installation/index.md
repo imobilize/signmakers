@@ -1,6 +1,6 @@
 ---
-title: " Exterior Signage"
-date: 2020-09-23T15:28:43+06:00
+title: "Sign Installation"
+date: 2023-10-18T11:10:36+08:00
 draft: false
 description: Whether you simply want to highlight your logo or name or promote a product or special, there is an exterior sign for all of your needs.
 author: " "
@@ -10,7 +10,7 @@ images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/4.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
-keywords: "Exterior, Exterior Signs, Signs"
+keywords: "Sign Installation, Outdoor Signs, Exterior Signs"
 type: page
 layout: template-3
 subheading: "Whether you simply want to highlight your logo or name or promote a product or special, there is an exterior sign for all of your needs."

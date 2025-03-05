@@ -6,7 +6,7 @@
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
             <div class="mt-5 max-w-2xl text-center mx-auto">
                 <h1 class="block font-bold text-gray-800 text-3xl md:text-4xl lg:text-5xl">
-                   <span class="bg-clip-text bg-gray-900 text-transparent">{{ .Title }}</span>
+                    <span class="bg-clip-text bg-gray-900 text-transparent">{{ .Title }}</span>
                 </h1>
             </div>
             <!-- End Title -->
@@ -14,20 +14,6 @@
             <div class="mt-5 max-w-3xl text-center mx-auto">
                 <p class="text-xl text-gray-600">{{ .Params.subheading }}</p>
             </div>
-
-            <!-- Buttons -->
-            <div class="mt-8 gap-3 flex justify-center">
-                <a class="isomorphic-link isomorphic-link--internal inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-red-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-                    href="/book-consultation/">
-                    Book Free Consultation Now
-                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="m9 18 6-6-6-6" />
-                    </svg>
-                </a>
-            </div>
-            <!-- End Buttons -->
         </div>
     </div>
     <!-- End Hero -->
@@ -37,7 +23,8 @@
     <div class="container mx-auto">
         <div class="gap-16 items-center flex flex-col md:flex-row px-4 mx-auto  lg:px-6">
             <div class="font-light  order-2 md:order-none w-full w-1/2  max-w-5xl sm:text-lg dark:text-gray-400">
-                <h2 class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-gray-900">
+                <h2
+                    class="mb-8 mt-2 md:mt-12 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-gray-900">
                     {{ .Params.heading1 }}</h2>
                 <p class="mb-8 leading-relaxed text-left">
                     {{ .Params.paragraph1 }}
@@ -65,7 +52,7 @@
 
             <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
                 <div class="relative w-full max-w-lg">
-                        {{ $image4 := .Params.image1 }}
+                    {{ $image4 := .Params.image1 }}
                     {{ with .Resources.GetMatch $image4 }}
                     {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
                     <img src="{{ $postimage }}" class="w-full  rounded-2xl my-8 md:my-0" alt="{{ .Params.description }}"
@@ -75,7 +62,8 @@
             </div>
             <div
                 class="w-full md:w-1/2 max-w-md mx-auto items-start mb-16 font-light text-left text-lg lg:flex-grow lg:w-1/2  md:mb-0 xl:mt-0">
-                <h2 class="mb-8 xs:text-2xl md:text-3xl max-w-xl lg:text-4xl font-medium  leading-none text-neutral-600">
+                <h2
+                    class="mb-8 xs:text-2xl md:text-3xl max-w-xl lg:text-4xl font-medium  leading-none text-neutral-600">
                     {{ .Params.heading2 }}
 
                 </h2>
@@ -112,12 +100,12 @@
             </div>
             <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
                 <div class="relative w-full max-w-lg">
-                        {{ $image4 := .Params.image2 }}
-                        {{ with .Resources.GetMatch $image4 }}
-                        {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                        <img src="{{ $postimage }}" class="w-full  rounded-2xl my-8 md:my-0" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
-                        {{ end }}
+                    {{ $image4 := .Params.image2 }}
+                    {{ with .Resources.GetMatch $image4 }}
+                    {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
+                    <img src="{{ $postimage }}" class="w-full  rounded-2xl my-8 md:my-0" alt="{{ .Params.description }}"
+                        title="{{ .Params.description }}" />
+                    {{ end }}
                 </div>
             </div>
 

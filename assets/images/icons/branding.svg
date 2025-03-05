@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e71d24;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #034832;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #306bac;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Roundel">
+    <g>
+      <circle class="cls-3" cx="41.5" cy="41.5" r="41.5"/>
+      <circle class="cls-4" cx="41.5" cy="41.5" r="30"/>
+      <circle class="cls-1" cx="41.5" cy="41.5" r="25"/>
+      <circle class="cls-4" cx="41.5" cy="41.5" r="20"/>
+      <circle class="cls-1" cx="41.5" cy="41.5" r="15"/>
+      <circle class="cls-4" cx="41.5" cy="41.5" r="10"/>
+      <circle class="cls-1" cx="41.5" cy="41.5" r="5"/>
+      <polygon class="cls-1" points="81 41.29 91.19 41.29 96 37 86.19 37 81 41.29"/>
+      <polygon class="cls-1" points="81 42.71 91.19 42.71 96 47 86.19 47 81 42.71"/>
+      <line class="cls-2" x1="42" y1="42" x2="93" y2="42"/>
+    </g>
+  </g>
+</svg>
