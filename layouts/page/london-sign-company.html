@@ -1,0 +1,296 @@
+{{ define "main" }}
+
+<div class="max-w-6xl mx-auto px-4 sm:px-6 items-center justify-center w-full pt-20 md:pt-16">
+
+    <div class="mt-12 md:mt-16">
+
+        <!-- Section header -->
+        <div class="text-center pb-6 md:pb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] aos-init aos-animate"
+                data-aos="zoom-y-out" data-aos-delay="150">Are You Looking For <br class="max-lg:hidden">A London Sign
+                Company?</h1>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg text-gray-700 mb-8 aos-init aos-animate" data-aos="zoom-y-out" data-aos-delay="300">
+                    Welcome to The Sign Makers! A sign company that is a leader in the industry, making bespoke signage
+                    solutions in the heart of London.
+                </p>
+                <p class="text-lg text-gray-700 mb-8 aos-init aos-animate" data-aos="zoom-y-out" data-aos-delay="300">
+                    Do you want to capture the attention of London's diverse
+                    communities with business signs that make an impact? Then you've come to the right place. We
+                    design, manufacture and install high quality custom signs for businesses.
+                </p>
+                <p class="text-lg font-medium text-gray-700 mb-8 aos-init aos-animate" data-aos="zoom-y-out"
+                    data-aos-delay="300">
+                    Check out some of the
+                    signs we have made
+                    below.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<section class="px-2 mx-auto pb-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid gap-4">
+            <div>
+                {{ with resources.Get "images/london/airport-signs-london.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Airport Signs London" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+            <div>
+                {{ with resources.Get "images/london/london-business-sign-amadeus.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="London Business Signs" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+            <div>
+                {{ with resources.Get "images/london/bank-signs-london.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Bank Signs London" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+                {{ with resources.Get "images/london/art-work-london.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Art Work London" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+            <div>
+                {{ with resources.Get "images/london/brickwork-sign-london.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Brickwork Sign London" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+            <div>
+                {{ with resources.Get "images/london/building-signs-london.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Building Sign London" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+                {{ with resources.Get "images/london/library-sign-stanmore.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Library Sign London" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+            <div>
+                {{ with resources.Get "images/london/park-sign-sony-3D.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Park Sign London" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+            <div>
+                {{ with resources.Get "images/london/theatre-signs-london.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Theatre Sign London" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+                {{ with resources.Get "images/london/estate-agent-signs-london.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Estate Agent Sign London" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+            <div>
+                {{ with resources.Get "images/london/warehouse-signs-london.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Warehouse Sign London" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+            <div>
+                {{ with resources.Get "images/london/internal-sign-london.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Internal Office Sign London" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "customer-navigation.html" . }}
+
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-sm">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Why Our Clients Prefer
+                Us To Make Their Signs</h2>
+            <p class="mb-4 text-gray-500 sm:text-xl dark:text-gray-400">Our clientele ranges from
+                the likes of Madam Tussauds right the way through to small boutiques on Kings Road in Chelsea.
+            </p>
+            <p class="mb-8 text-gray-500 sm:text-xl dark:text-gray-400">Whether
+                you're looking for a modern sign design for your business in Shoreditch or a traditional look for your
+                business in Battersea we can design, produce and install specific to your business needs and location.
+            </p>
+        </div>
+        <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
+            <figure
+                class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700">
+                <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Smooth Planning And High Quality
+                        Finish</h3>
+                    <p class="my-4">"About Signs have done a fantastic job with re-signing our site. They were very
+                        good value and delivered excellent service.</p>
+                    <p class="my-4">Highly efficient planning made the
+                        two days of fitting proceed very smoothly and the outcomes are high quality.
+                        Exactly what we wanted.</p>
+                    <p class="my-4">Thanks to everyone involved. We’ll be coming back for more."</p>
+                </blockquote>
+                <figcaption class="flex justify-center items-center space-x-3">
+                    {{ with resources.Get "images/clients/tudor-park-education-trust-logo.png" }}
+                    <img class="w-auto h-9" src="{{.RelPermalink}}" alt="Tudor Park Education Trust Sign Manufacturing">
+                    {{ end }}
+                    <div class="space-y-0.5 font-medium dark:text-white text-left">
+                        <div>Victoria Eadie</div>
+                        <div class="text-sm font-light text-gray-500 dark:text-gray-400">CEO at Tudor Park Education
+                            Trust</div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure
+                class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 dark:bg-gray-800 dark:border-gray-700">
+                <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Signs Made On Time And To Budget
+                    </h3>
+                    <p class="my-4">“Kraft have been using the craftsmen at The Sign Makers for nearly a decade now, and
+                        they have successfully completed hundreds of projects for me. The work has ranged from the
+                        smallest vinyl graphics job to massive corner sites with very large fascia
+                        signage and dozens of window displays.</p>
+                    <p class="my-4">They always deliver on time AND always to budget. The
+                        best part though is, from start to finish, everything is handled
+                        professionally and with a smile.</p>
+                    </p>
+                    <p class="my-4">I always feel that we are part of a team and that
+                        everyone at About Signs really cares about my projects, that means a lot to both
+                        me and my clients. I would recommend them to anyone!"</p>
+                </blockquote>
+                <figcaption class="flex justify-center items-center space-x-3">
+                    {{ with resources.Get "images/clients/kraft-logo.png" }}
+                    <img class="w-auto h-9" src="{{.RelPermalink}}" alt="Kraft Sign Manufacturing">
+                    {{ end }}
+                    <div class="space-y-0.5 font-medium dark:text-white text-left">
+                        <div>Jared Saggers</div>
+                        <div class="text-sm font-light text-gray-500 dark:text-gray-400">Director at Kraft Ltd</div>
+                    </div>
+                </figcaption>
+            </figure>
+
+        </div>
+</section>
+
+
+<section class="py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="rounded-2xl text-center relative overflow-hidden shadow-xl before:absolute before:inset-0 before:rounded-2xl before:bg-gray-900 before:pointer-events-none before:-z-10 aos-init aos-animate"
+            data-aos="zoom-y-out">
+            <!-- Glow -->
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 -z-10" aria-hidden="true">
+                <div class="w-[480px] h-56 rounded-full border-[20px] border-blue-500 blur-3xl will-change-[filter]">
+                </div>
+            </div>
+            <!-- Stripes illustration -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 top-0 pointer-events-none -z-10"
+                aria-hidden="true">
+                {{ with resources.Get "images/decoration/stripes-dark.svg" }}
+                <img class="max-w-none" src="{{.RelPermalink}}" width="768" height="432" alt="Stripes">
+                {{ end }}
+            </div>
+            <div class="py-12 md:py-20 px-4 md:px-12">
+                <h2
+                    class="text-3xl md:text-4xl text-gray-200 font-bold mb-6 md:mb-12 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-700/.7),transparent)1]">
+                    Create Your Next Sign With The Sign Makers</h2>
+                <div>
+                    <p class="text-white pb-4">
+                        Are you ready to join the many businesses that have elevated their brand's visibility in London?
+                    </p>
+
+                    <p class="text-white pb-4">Discover how we can create bespoke signage
+                        solutions that make your business stand out.
+                    </p>
+                    <p class="text-white pb-4">
+                        Contact us today for a free consultation
+                    </p>
+                </div>
+                <div class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
+
+                    <a class="btn text-white bg-primary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group" href="/contact">
+                        <span class="relative inline-flex items-center">
+                            Get A Quote<span
+                                class="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform ml-1">-&gt;</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
