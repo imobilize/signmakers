@@ -1,7 +1,3 @@
-<!-- <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
-​​ <div hidden id="snipcart" data-api-key="YmYxZTJjMTMtYTRhYS00MDAxLWFmYTYtZmM2NGI2YjljMmFkNjM4Mjk2NzY0NjQyNzI4MDUy">
-</div> -->
-
 {{ $alpine := resources.Get "js/alpinejs.min.js" }}
 <script src="{{ $alpine.RelPermalink }}"></script>
 
@@ -19,19 +15,6 @@
 
 <script>
 
-  var lightBoxHero = GLightbox({
-    selector: '.glightbox-hero',
-    autoplayVideos: true,
-  });
-
-  lightBoxHero.on('open', (target) => {
-    console.log('lightbox opened');
-  });
-
-  var lightBoxTestimonial = GLightbox({
-    selector: '.glightbox-testimonial'
-  });
-
   AOS.init({
     once: true,
     disable: 'phone',
@@ -39,138 +22,15 @@
     easing: 'ease-out-cubic',
   });
 
-  // Scrollspy
-  document.addEventListener('DOMContentLoaded', function () {
-    const targets = document.querySelectorAll('[data-scrollspy-target]');
-    const links = document.querySelectorAll('[data-scrollspy-link]');
-    if (links.length < 1) return;
-    const addActive = (i) => {
-      const link = links[i] ? links[i] : links[0];
-      link.classList.add('scrollspy-active');
-    }
-    const removeActive = (i) => {
-      links[i].classList.remove('scrollspy-active');
-    }
-    const removeAllActive = () => [...Array(targets.length).keys()].forEach((link) => removeActive(link));
-    const targetMargin = 100;
-    let currentActive = 0;
-    addActive(0);
-    // listen for scroll events
-    window.addEventListener('scroll', () => {
-      const current = targets.length - [...targets].reverse().findIndex((target) => window.scrollY >= target.offsetTop - targetMargin) - 1;
-      if (current !== currentActive) {
-        removeAllActive();
-        currentActive = current;
-        addActive(current);
-      }
-    });
-  }, false);
 
-  // Masonry layout
-  const masonryLayout = (parent) => {
-    const childElements = Array.from(parent.children);
-    const gapSize = parseInt(window.getComputedStyle(parent).getPropertyValue('grid-row-gap'));
-
-    childElements.forEach(el => {
-      let previous = el.previousSibling;
-      while (previous) {
-        if (previous.nodeType === 1) {
-          el.style.marginTop = 0;
-          if (elementLeft(previous) === elementLeft(el)) {
-            el.style.marginTop = -(elementTop(el) - elementBottom(previous) - gapSize) + 'px';
-            break;
-          }
-        }
-        previous = previous.previousSibling;
-      }
-    });
-  }
-
-  const elementLeft = (el) => {
-    return el.getBoundingClientRect().left;
-  }
-
-  const elementTop = (el) => {
-    return el.getBoundingClientRect().top + window.scrollY;
-  }
-
-  const elementBottom = (el) => {
-    return el.getBoundingClientRect().bottom + window.scrollY;
-  }
-
-  const masonryElements = document.querySelectorAll('[data-masonry]');
-
-  masonryElements.forEach(masonryLayout);
-
-  window.addEventListener('load', () => {
-    masonryElements.forEach(masonryLayout);
-  });
-
-  window.addEventListener('resize', () => {
-    masonryElements.forEach(masonryLayout);
-  });
 </script>
-
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
 <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
 
 <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
 <!-- End Sendinblue Form -->
 
-<script> var clearout = window.clearout = window.clearout || [], opts = { app_token: "88be7a97e6445bfa87b2bde2152c22ef:562a5929e339fc481f4deece79321ab7679f029ba55218685c0f23f168ef5454", mode: "ajax", api_url: "https://api.clearout.io" };
-  clearout.push(["initialize", opts]),
-    function () {
-      var t = document, e = t.createElement("script"), a = t.getElementsByTagName("script")[0];
-      e.type = "text/javascript", e.async = !0, e.src = "https://clearout.io/wp-content/co-js-widget/clearout_js_widget.js",
-        a.parentNode.insertBefore(e, a)
-    }();
-</script>
 
 <!-- Flowbite -->
 
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
-
-
-<!-- Thankyou modal javascript -->
-
-<script>
-  // Function to show the modal
-  function showModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-      modal.classList.remove('hidden');
-    }
-  }
-
-  // Function to hide the modal
-  function hideModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-      modal.classList.add('hidden');
-    }
-  }
-
-  // Check if the URL has a hash and open the modal if it matches
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.location.hash === '#thankyou') {
-      showModal('exampleModal');
-    }
-
-    // Add event listeners to close buttons
-    document.querySelectorAll('[data-modal-hide="exampleModal"]').forEach(button => {
-      button.addEventListener('click', function () {
-        hideModal('exampleModal');
-      });
-    });
-  });
-
-  // Optional: Listen for hash changes
-  window.addEventListener('hashchange', function () {
-    if (window.location.hash === '#hello') {
-      showModal('exampleModal');
-    } else {
-      hideModal('exampleModal');
-    }
-  });
-</script>
