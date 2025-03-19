@@ -25,26 +25,26 @@
 
       <span
         class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-neutral font-medium text-secondary">Building
-        #1 brands all over UK</span>
+        #1 brands all over the UK</span>
       <h1
         class="mb-4 text-3xl max-w-4xl mx-auto font-medium tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
-        Our Portfolio</h1>
+        Sign Making Portfolio</h1>
       <p class="mb-8 text-xl md:text-2xl font-normal text-gray-500  sm:px-16 xl:px-48 dark:text-gray-400">
-        Don't just take the word for it, see and believe it</p>
+        Don't just take our word for it, see it for yourself</p>
     </div>
 
     <div class="container mx-auto md:mt-12 mt-5 py-8">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
         <!-- Start Pagination -->
         {{ $index := 0 }} <!-- Initialize index counter -->
         {{ range .Paginator.Pages }}
         <!-- Loop through portfolio items -->
-        <div class="{{ if mod $index 2 }}bg-gray-100 text-dark{{ else }}bg-gray-50{{ end }} p-6 rounded-lg">
+        <div class="{{ if mod $index 2 }}bg-gray-100 text-dark{{ else }}bg-gray-50{{ end }} rounded-lg">
           <a href="{{ .RelPermalink }}" class="group">
             <div class="aspect-w-3 aspect-h-2">
               {{ with .Resources.GetMatch .Params.featuredImage }}
               {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
-              <img class="object-cover shadow-lg rounded-lg group-hover:opacity-75 h-64 w-full" src="{{ $postimage }}"
+              <img class="object-cover rounded-t group-hover:opacity-75 h-64 w-full" src="{{ $postimage }}"
                 alt="{{ .Title }}">
               {{ else }}
               {{ $im := (.Resources.Get .Params.featuredImage) }}
@@ -53,7 +53,7 @@
             </div>
           </a>
 
-          <div class="mt-4">
+          <div class="mt-4 p-6">
             <div class="flex items-center space-x-3">
               <div class="flex items-center space-x-2">
                 {{ range $index, $tag := .Params.categories }}
@@ -79,7 +79,7 @@
               </p>
 
               <a href="{{ .RelPermalink }}"
-                class="text-secondary hover:text-blue-800 mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read
+                class="text-secondary hover:text-blue-800 mt-16 inline-block uppercase font-medium tracking-[0.86px]">View
                 more</a>
             </div>
           </div>
@@ -93,58 +93,6 @@
         {{ partial "pagination" . }}
       </div>
     </div>
-
-
-
-    <!-- <section class="relative bg-gray-50 my-8 pt-4 lg:pt-20 z-20">
-    <div class="container mx-auto px-2">
-      <div class="w-full relative py-12 ">
-        <div id="keen-slider" class="keen-slider relative overflow-hidden">
-          {{ $portfolioPages := where .Site.RegularPages "Section" "portfolio" }}
-          {{ range $portfolioPages }}
-          <div class="keen-slider__slide px-2">
-            <div
-              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <a href="{{ .RelPermalink }}">
-                {{ $featured := .Params.featuredImage }}
-                {{ with .Resources.GetMatch $featured }}
-                {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                <img src="{{ $postimage }}" class="w-full h-64 rounded-2xl" alt="{{ .Params.description }}"
-                  title="{{ .Params.description }}" />
-                {{ end }}
-              </a>
-              <div class="p-5">
-                <a href="{{ .RelPermalink }}">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-secondary hover:text-blue-800">{{ .Title }}</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ .Summary | truncate 100 }}</p>
-                <a href="{{ .RelPermalink }}" class="text-secondary hover:text-blue-800 font-semibold">Learn more →</a>
-              </div>
-            </div>
-          </div>
-          {{ end }}
-        </div>
-        <div class="relative flex justify-center items-center m-auto left-0 right-0 w-fit mt-12">
-          <button id="keen-slider-previous"
-            class="group !p-2 flex justify-center items-center border border-solid border-secondary !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-secondary !-translate-x-16">
-            <svg class="h-5 w-5 text-secondary group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
-          <button id="keen-slider-next"
-            class="group !p-2 flex justify-center items-center border border-solid border-secondary !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-secondary !translate-x-16">
-            <svg class="h-5 w-5 text-secondary group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
     {{ partial "customer-navigation.html" . }}
 
