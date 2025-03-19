@@ -28,17 +28,130 @@
                 we offer</span>
             <h1
                 class="mb-4 text-3xl max-w-4xl mx-auto font-medium tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
-                Our Services</h1>
+                Our Sign Making Services</h1>
             <p class="mb-8 text-xl md:text-2xl font-normal text-gray-500  sm:px-16 xl:px-48 dark:text-gray-400">
                 This is what we love doing for our clients</p>
         </div>
     </div>
 
+    <section class="w-full mx-auto py-10 bg-gray-50 dark:bg-gray-900 dark:text-white">
 
-    <section class="bg-gray-50 relative z-10">
+        <div class="w-full h-full flex flex-col items-center md:py-4 py-10">
+            <!-- Col - 1 -->
+            <div
+                class="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-4 gap-2 justify-center lg:items-stretch md:items-center mt-4">
+
+                {{ with resources.Get "images/services/sign-design.jpg" }}
+                {{ $small := (.Resize "400x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                {{ $featuredimage := (.Resize "900x webp q100").RelPermalink }}
+                <img src="{{ $featuredimage }}" srcset="
+                    {{- with $small -}}, {{.}} 400w{{- end -}}
+                    {{- with $medium -}}, {{.}} 550w{{- end -}}
+                    {{- with $large -}}, {{.}} 768w{{- end -}}
+                    {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
+                    class="md:w-[50%] w-full md:rounded-t-lg rounded-sm" alt="Sign Design">
+                {{ end }}
+
+                <div class="md:w-[50%] w-full bg-gray-100 dark:bg-gray-900 dark:text-gray-400 md:p-4 p-2 rounded-md">
+                    <h2 class="text-2xl md:text-3xl xl:text-4xl font-semibold text-gray-900 dark:text-white">Sign Design
+                    </h2>
+                    <p class="text-md my-4 pb-6">Our expert designers will help to elevate your brand with custom
+                        signage
+                        designs.
+                        Get an eye catching and professional sign design that are tailored to your
+                        needs. Let's make your message stand out.
+                    </p>
+
+                    <a href="/sign-design"
+                        class="btn px-4 py-2 mt-2 text-xl text-white font-medium bg-secondary rounded-lg md:mt-0 md:ml-1 hover:bg-blue-900 hover:text-white shadow">
+                        Learn about our sign design service
+                    </a>
+                </div>
+
+            </div>
+            <!-- Col - 2 -->
+            <div
+                class="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col flex-col-reverse lg:gap-4 gap-2 justify-center lg:items-stretch md:items-center mt-6">
+                <!--  -->
+                <div class="md:w-[50%] w-full bg-gray-100 dark:bg-gray-900 dark:text-gray-400 md:p-4 p-2 rounded-md">
+                    <h2 class="text-2xl md:text-3xl xl:text-4xl font-semibold text-gray-900 dark:text-white">Sign
+                        Manufacturing
+                    </h2>
+
+                    <p class="text-md my-4 pb-6">This is where expertise meets creativity to deliver a diverse range of
+                        sign
+                        styles and types.
+                        Our team of professionals are dedicated to handling every aspect of your sign
+                        manufacturing requirements. We ensure the highest quality in every project.
+                    </p>
+
+                    <a href="/sign-manufacturing"
+                        class="btn px-4 py-2 mt-2 text-xl text-white font-medium bg-secondary rounded-lg md:mt-0 md:ml-1 hover:bg-blue-900 hover:text-white shadow">
+                        Learn about our sign manufacturing service
+                    </a>
+                </div>
+
+
+                {{ with resources.Get "images/services/sign-manufacturing.jpg" }}
+                {{ $small := (.Resize "400x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                {{ $featuredimage := (.Resize "900x webp q100").RelPermalink }}
+                <img src="{{ $featuredimage }}" srcset="
+                                {{- with $small -}}, {{.}} 400w{{- end -}}
+                                {{- with $medium -}}, {{.}} 550w{{- end -}}
+                                {{- with $large -}}, {{.}} 768w{{- end -}}
+                                {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}" alt="Sign Manufacturing"
+                    class="md:w-[50%] w-full md:rounded-t-lg rounded-sm">
+                {{ end }}
+            </div>
+            <!-- Col - 3 -->
+            <div
+                class="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-4 gap-2 justify-center lg:items-stretch md:items-center mt-4">
+
+                {{ with resources.Get "images/services/sign-installation.jpg" }}
+                {{ $small := (.Resize "400x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                {{ $featuredimage := (.Resize "900x webp q100").RelPermalink }}
+                <img src="{{ $featuredimage }}" srcset="
+                                {{- with $small -}}, {{.}} 400w{{- end -}}
+                                {{- with $medium -}}, {{.}} 550w{{- end -}}
+                                {{- with $large -}}, {{.}} 768w{{- end -}}
+                                {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
+                    class="md:w-[50%] w-full md:rounded-t-lg rounded-sm" alt="Sign Installation">
+
+                {{ end }}
+
+                <div class="md:w-[50%] w-full bg-gray-100 dark:bg-gray-900 dark:text-gray-400 md:p-4 p-2 rounded-md">
+                    <h2 class="text-2xl md:text-3xl xl:text-4xl font-semibold text-gray-900 dark:text-white">Sign
+                        Installation
+                    </h2>
+                    <p class="text-md my-4 pb-6">We provide a comprehensive sign installation service with our own 8
+                        metre
+                        scaffold tower. With offices in Blackburn and London we travel across the whole
+                        of the UK.
+                        Our fitters are fully trained for working at height and hold the latest IPAF,
+                        CSCS and PASMA qualifications.
+                    </p>
+
+                    <a href="/sign-installation"
+                        class="btn px-4 py-2 mt-2 text-xl text-white font-medium bg-secondary rounded-lg md:mt-0 md:ml-1 hover:bg-blue-900 hover:text-white shadow">
+                        Learn about our sign installation service
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="relative z-10">
         <div class="container mx-auto">
             <div class="w-full  flex flex-col md:flex-row justify-center md:justify-between items-center my-6 py-12">
-                <h2 class="text-2xl md:text-4xl font-medium">Browse services</h2>
+                <h2 class="text-2xl md:text-4xl font-medium">Browse Our Other Signmaking Services</h2>
                 <div class="relative w-full md:max-w-md">
                     <form action="{{ `search` | relURL }}" class="flex flex-row lg:flex-row">
 
