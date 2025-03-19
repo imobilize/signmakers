@@ -1,10 +1,10 @@
 ---
-title: "Nationwide Sign Design, Install and Manufacturing"
+title: "Nationwide Sign Design, Sign Installation and Sign Manufacturing"
 date: 2023-02-23T15:28:43+06:00
 draft: false
-description: "Your Premier Destination for Exceptional Signage Solutions. We provide design, manufacture, installation, and maintenance for all the nation's signage needs including LED Lights, Store Front Signs, Neon Lights etc."
+description: "Your Destination for exceptional Sign Design, Sign Installation and Sign Manufacturing Solutions. We provide design, manufacture, installation, and maintenance for all the nation's business signs including LED Lights, Store Front Signs, Neon Lights Outdoor Signs and more."
 author: "The Sign Makers"
-keywords: "Sign design, sign printing, sign consultancy, Sign maintenance, Sign repair"
-image: "images/sign-makers-card.png"
-images: ["images/sign-makers-card.png"]
+keywords: ["Sign design", "Sign installation", "Sign Manufacturing", Sign Printing", "Sign Consultancy", "Sign Maintenance", "Sign repair"]
+image: "/images/sign-makers-card.png"
+images: ["/images/sign-makers-card.png"]
 ---
