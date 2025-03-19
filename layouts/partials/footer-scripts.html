@@ -1,9 +1,6 @@
 {{ $alpine := resources.Get "js/alpinejs.min.js" }}
 <script src="{{ $alpine.RelPermalink }}"></script>
 
-{{ $lightbox := resources.Get "js/aos.js" | js.Build }}
-<script src="{{ $lightbox.RelPermalink }}"></script>
-
 {{ $fuse := resources.Get "js/fuse.min.js" }}
 <script src="{{ $fuse.RelPermalink }}"></script>
 
@@ -12,18 +9,6 @@
 
 {{ $search := resources.Get "js/search.js" }}
 <script src="{{ $search.RelPermalink }}"></script>
-
-<script>
-
-  AOS.init({
-    once: true,
-    disable: 'phone',
-    duration: 700,
-    easing: 'ease-out-cubic',
-  });
-
-
-</script>
 
 <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
 
