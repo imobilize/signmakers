@@ -18,7 +18,7 @@ We have designed two eye catching **sample signs** for use by Architects, Design
 
 * * *
 
-{{< figure src="images/fabricut/fabricut-halo-sample-sign-board-min.jpg" height="100" alt="Halo Sample Sign by Fabricut" class="left" >}}
+{{< figure src="/images/fabricut/fabricut-halo-sample-sign-board-min.jpg" height="100" alt="Halo Sample Sign by Fabricut" class="left" >}}
 
 
 Halo Sign Sample Board
@@ -30,7 +30,8 @@ Our **HALO sign sample board** consists of a combination of brushed and polished
 
 * * *
 
-{{< figure src="images/fabricut/fabricut-multipurpose-sign-board-min.jpg" height="100" alt="Multi Purpose Sample Sign by Fabricut" class="left" >}}
+{{< figure src="/images/fabricut/fabricut-multipurpose-sign-board-min.jpg" height="100" alt="Multi Purpose Sample Sign by Fabricut" class="left" >}}
+
 
 
 Multi Purpose Sign Sample Board
