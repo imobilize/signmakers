@@ -25,7 +25,7 @@
             <h1
                 class="mb-4 text-3xl max-w-4xl mx-auto font-medium tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
                 {{ .Title }}</h1>
-            <p class="mb-8 text-xl md:text-2xl font-normal text-gray-500  sm:px-16 xl:px-48 dark:text-gray-400">
+            <p class="mb-8 text-xl md:text-2xl font-normal text-gray-600  sm:px-16 xl:px-48 dark:text-gray-400">
                 {{ .Description }}</p>
         </div>
     </div>
@@ -36,10 +36,10 @@
 
             <!-- Services Grid -->
 
-            <div class="mx-auto py-12">
+            <div class="mx-auto pt-4">
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-6">
                     {{ range .Pages }}
-                    <div class="mb-8">
+                    <div class="">
                         <a class="group service-item" href="{{.RelPermalink}}">
                             {{ $featured := .Params.featuredImage }}
                             {{ with .Resources.GetMatch $featured }}
@@ -52,7 +52,7 @@
                             {{- with $medium -}}, {{.}} 550w{{- end -}}
                             {{- with $large -}}, {{.}} 768w{{- end -}}
                             {{- with $postimage -}}, {{.}} 1100w{{- end -}}"
-                                class="object-cover overflow-hidden rounded-lg h-64" width="100%"
+                                class="object-cover overflow-hidden rounded-lg h-64 w-full shadow"
                                 alt="{{ .Params.title }}" />
                             {{ end }}
                             <div class="py-4 flex flex-col h-full sm:p-6">
@@ -114,7 +114,7 @@
                     <br />
                 </h3>
                 <p class="xs:mt-2 md:mt-0 xs:text-xl md:text-2xl lg:text-3xl font-medium text-blue-600">
-                    (Sold For £29 On Amazon)
+                    (Sold For £24 On Amazon)
                 </p>
 
                 {{ $listicon := resources.Get "images/icons/green-checkmark.svg"}}
@@ -125,33 +125,31 @@
                         <b>Why Some Brands Drive Greater Profits Than Others:</b> Learn
                         exactly what a brand is so you know what to consider when creating your own. Understand how to
                         identify good branding elements in other companies <b>(Page
-                            2)</b>
+                            9)</b>
                     </li>
                     <li class="my-8">
                         <i contenteditable="false" class="fa fa-fw fa-check"></i><b>Motivational Forces That Cause
                             People To Buy:
                         </b>Take a dive into human psychology and learn the forces at play in driving their behaviour.
                         Knowing this allows you to position your brand to take advantage of natural human tendencies.
-                        (<b>Page 22</b>)<br>
+                        (<b>Page 30</b>)<br>
                     </li>
                     <li class="my-8">
                         <i contenteditable="false" class="fa fa-fw fa-check"></i>​<b>Secrets Of A Good Brand:</b> Here
                         we distill the little known strategies that the best brands are using to capture their customers
-                        and keep them returning for years to come. (<b>Page 42</b>)<br>
+                        and keep them returning for years to come. (<b>Page 80</b>)<br>
                     </li>
                     <li class="my-8">
                         <i contenteditable="false" class="fa fa-fw fa-check"></i><b>Techniques For Extraordinary
                             Branding:</b> Here we show some examples of techniques used by amazing brands that had a
                         huge impact on the market place. (Caution, these techniques are powerful and need to be used
-                        with care). (<b>Page
-                            71</b>)<br>
+                        with care). (<b>Page 116</b>)<br>
                     </li>
                     <li class="my-8">
                         <i contenteditable="false" class="fa fa-fw fa-check"></i>​<b>How To Create The Low Cost High
                             Profit Brand:</b> A step by step guide based on all the theory covered. You will get
-                        actionalble steps you need to take to create and market your brand for a successful launch.
-                        (<b>Page
-                            86</b>)<br>
+                        actionable steps you need to take to create and market your brand for a successful launch.
+                        (<b>Page 150</b>)<br>
                     </li>
 
                 </ul>

@@ -1,5 +1,5 @@
 ---
-title: Book Download Confirmation
+title: Free Book Download Confirmation
 date: 2022-12-18T03:10:36.000Z
 draft: false
 sitemapExclude: true
@@ -7,9 +7,11 @@ language: en
 image: "images/sign-makers-card.png"
 images: ["images/sign-makers-card.png"]
 description: Branding For Profit Book Email Sent submitted
+type: page
+layout: book-download-confirmation
 ---
 
-## Confirmation: Check Your Email
+## Check Your Email
 
 Your free Branding For Profit Book has been sent. Please check your email to ensure you have received it. 
 
