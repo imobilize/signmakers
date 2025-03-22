@@ -4,12 +4,10 @@ date: 2023-12-18T11:10:36+08:00
 draft: false
 language: en
 description: Crafting Your Brand Identity, Sign Branding, Business Branding, Brand Creation
-featuredImage: "images/8.jpg"
-image: "images/8.jpg"
-images: ["images/8.jpg"]
-keywords: "Branding, Brand Building, Business Brand"
-type: page
-layout: branding
+featuredImage: "images/branding.jpg"
+image: "images/branding.jpg"
+images: ["images/branding.jpg"]
+keywords: ["Branding", "Brand Building", "Business Brand"]
 subheading: "Creating a brand that nobody forgets 💅"
 quotation: "HOW YOU CAN CREATE A STRONG BRAND THAT ATTRACTS MORE CUSTOMERS AND MASSIVELY OUTSELLS YOUR COMPETITION"
 image1: "images/8.jpg"
@@ -19,8 +17,7 @@ image16: "images/6.jpg"
 image5: "images/7.jpg"
 image6: "images/2.jpg"
 image7: "images/2.jpg"
-heading1: "Crafting Your Brand Identity, Every Step of the Way"
-paragraph2: "In the vast landscape of business, a compelling brand is the compass that guides customers to your door. At Sign Makers, we understand the pivotal role branding plays in establishing a lasting impression. Our expertise goes beyond mere signage – we're your partners in cultivating a cohesive and memorable brand identity."
+
 heading3: "The Sign Maker Advantage 💪"
 paragraph3: "Why you need to choose us"
 benefits:
@@ -47,25 +44,41 @@ paragraph7: "For eateries, we go beyond menus – Sign Makers elevates your rest
 color: "bg-gradient-to-br from-cyan-50 via-orange-50 to-violet-50"
 ---
 
+# Branding
+
+### Crafting Your Brand Identity, Every Step of the Way
+
+In the vast landscape of business, a compelling brand is the compass that guides customers to your door. At Sign Makers, we understand the pivotal role branding plays in establishing a lasting impression. Our expertise goes beyond mere signage – we're your partners in cultivating a cohesive and memorable brand identity.
+
 At Sign Makers, we understand the pivotal role branding plays in establishing a lasting impression. Our expertise goes beyond mere signage – we're your partners in cultivating a cohesive and memorable brand identity.
 
-## Branded Signage: A Visual Symphony
-
-Sign Makers transforms your business facade into a visual symphony that captures attention. Our expertise in designing and crafting branded signage ensures that your storefront becomes a beacon, instantly recognizable amidst the hustle and bustle.
-
-## Logo Design: Your Unique Emblem
+### Logo Design: Your Unique Emblem
 
 Your logo is more than a symbol; it's your brand's signature. Sign Makers collaborates with you to design a logo that encapsulates your essence, making a statement without uttering a word. We believe in creating logos that not only resonate but endure.
 
-## Wall Branding Stickers and Vinyls: Infusing Life into Spaces
+![Logo Design](images/logo-design.jpg)
+
+### Branded Signage: A Visual Symphony
+
+Sign Makers transforms your business facade into a visual symphony that captures attention. Our expertise in designing and crafting branded signage ensures that your storefront becomes a beacon, instantly recognizable amidst the hustle and bustle.
+
+![Branded Signs](images/branded-signs.jpg)
+
+
+
+### Wall Branding Stickers and Vinyls: Infusing Life into Spaces
 
 Walls aren't just boundaries; they're canvases waiting to tell your story. Sign Makers transforms ordinary walls into brand narratives with captivating stickers and vinyls. Whether it's the office lobby or a retail space, we breathe life into your surroundings.
 
-## Business Hours Design: Functionality with Flair
+![Eatery Sign](images/eatery-sign.jpg)
+
+
+### Business Hours Design: Functionality with Flair
 
 Even the practical aspects of your business, like operating hours, can be an opportunity for branding. Sign Makers designs business hours with flair, seamlessly integrating functionality and aesthetics to reinforce your brand identity.
 
-## Restaurant Branding: From Takeaway Boards to Billboards
+### Restaurant Branding: From Takeaway Boards to Billboards
 
 For eateries, we go beyond menus – Sign Makers elevates your restaurant branding game. From eye-catching takeaway boards to shop signs that beckon hungry patrons, we ensure every touchpoint tells a delicious story. Our expertise extends to creating impactful billboards that make your presence impossible to ignore.
 
+![Cafe Sign](images/cafe-sign.jpg)

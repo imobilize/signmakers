@@ -7,6 +7,7 @@ module.exports = {
     './assets/js/**/*.js',
   ],
   darkMode: 'class',
+  safelist: ["list-image-[url('/images/icons/tick-icon.svg')", "bg-[url('/images/icons/arrowhead-alternating.svg')]"],
   theme: {
     extend: {
       fontFamily: {
@@ -33,7 +34,7 @@ module.exports = {
         'xl': '1rem',        // Extra Large
         '1xl': '1rem',       // 1 Extra Large
         '2xl': '1.5rem',     // 2 Extra Large
-        'special' : '1.50rem',
+        'special': '1.50rem',
         '3xl': '1.875rem',   // 3 Extra Large
         '4xl': '2.25rem',    // 4 Extra Large
         '5xl': '3rem',       // 5 Extra Large

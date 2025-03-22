@@ -8,8 +8,6 @@ featuredImage: "images/5.jpg"
 image: "images/5.jpg"
 images: ["images/3.jpg"]
 keywords: "Branding, Brand Building, Business Brand"
-type: page
-layout: branding
 subheading: "Creating a brand that nobody forgets 💅"
 quotation: "Whether you're looking for expert advice on styles, colors, and typefaces or need assistance with design ideas and branding, our team is here to bring your vision to life."
 image1: "images/3.jpg"
