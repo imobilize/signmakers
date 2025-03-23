@@ -1,7 +1,7 @@
 ---
 title: "Industry Examples"
 subheading: "Elevating Brands Across Sectors"
-date: 2021-12-18T11:10:36+08:00
+date: 2024-12-18T11:10:36+08:00
 draft: false
 language: en
 description: Our expert team handles every kind of sign boards, may it be a 3D sign, interior signboards, or exterior signboards, ensuring top-notch quality.

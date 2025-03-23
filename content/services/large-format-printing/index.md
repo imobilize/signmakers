@@ -7,7 +7,7 @@ description: Large format printing opens up many more creative possibilities for
 featuredImage: "images/1.jpg"
 image1: "images/1.jpg"
 images: ["images/1.jpg"]
-keywords: "Printing, Signs, Creative"
+keywords: ["Printing Signs", "Creative"]
 type: page
 layout: template-3
 subheading: "Elevating Your Brand with Large Format Printing"

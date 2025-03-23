@@ -1,6 +1,6 @@
 ---
 title: "Regulatory Signs and Safety Signs"
-date: 2020-09-23T15:28:43+06:00
+date: 2024-09-23T15:28:43+06:00
 draft: false
 description: Demonstrating your commitment to safety and inclusivity in the workplace is crucial. This entails implementing safety procedures, ensuring regulatory compliance, and effectively communicating these aspects
 author: " "
@@ -10,7 +10,7 @@ images: ["images/4.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/4.jpg"
-keywords: "Regulatory Signs, Safety Signs, Custom Accessible Signage"
+keywords: ["Regulatory Signs", "Safety Signs", "Custom Accessible Signage"]
 type: page
 layout: template-3
 subheading: "Enhance the visibility of your business and create a memorable experience for your customers"

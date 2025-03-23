@@ -1,9 +1,9 @@
 ---
 title: "Custom Business Hour Signs"
-date: 2020-09-23T15:28:43+06:00
+date: 2024-09-23T15:28:43+06:00
 draft: false
 description: Effectively conveying your business hours is crucial, and the optimal approach is through signage. However, your signs don't have to conform to the standard templates seen in countless businesses
-author: " "
+author: "The Signmakers"
 featuredImage: "images/5.jpg"
 image: "images/1.jpg"
 images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
@@ -11,7 +11,7 @@ image1: "images/2.jpg"
 image2: "images/3.jpg"
 image3: "images/2.jpg"
 image4: "images/5.jpg"
-keywords: "Business Signs, Business Hours"
+keywords: ["Business Signs", "Business Hours"]
 type: page
 layout: template-4
 heading1: "Your Brand, Your Schedule"

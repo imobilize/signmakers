@@ -1,6 +1,6 @@
 ---
 title: "Custom Banners"
-date: 2020-09-23T15:28:43+06:00
+date: 2024-09-23T15:28:43+06:00
 draft: false
 language: en
 description: Make your brand or event unforgettable with our custom banners. Designed to stand out, our banners are perfect for any occasion—whether it's a grand opening, trade show, or special event. Durable, eye-catching, and tailored to your needs, these banners are the ultimate attention-grabber.
@@ -13,7 +13,7 @@ image3: "images/3.jpg"
 image5: "images/6.png"
 image16: "images/4.jpg"
 images: ["images/5.jpg"]
-keywords: "Banners, Custom Banners"
+keywords: ["Banners", "Custom Banners"]
 type: page
 layout: branding
 subheading: "Tailored Solutions for Your Brand 💅"

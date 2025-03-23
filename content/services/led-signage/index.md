@@ -12,7 +12,7 @@ image1: "images/6.jpg"
 image2: "images/10.jpg"
 image3: "images/6.jpg"
 image4: "images/8.jpg" 
-keywords: "LED, LED Displays Signs"
+keywords: ["LED", "LED Displays Signs", "Illuminated Signs"]
 type: page
 layout: template-4
 heading1: "Convey Your Brand Message with LED Signs, Boards, and Displays"

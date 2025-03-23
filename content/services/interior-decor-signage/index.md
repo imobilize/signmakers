@@ -1,6 +1,6 @@
 ---
 title: "Interior Decor Signs"
-date: 2020-09-23T15:28:43+06:00
+date: 2024-09-23T15:28:43+06:00
 draft: false
 description: The moment customers step inside your business, they immediately have an impression of who you are, what you do – and, most of all, if they want to do business with you.
 author: " "
@@ -12,7 +12,7 @@ image2: "images/sports-custom-interior-signs.png"
 image3: "images/medical-signs.png"
 image16: "images/4.jpg"
 
-keywords: "Interior Signs, Signs"
+keywords: ["Interior Signs", "Indoor Signs"]
 type: page
 layout: branding
 subheading: "Your Destination for High-Quality, Durable Interior Signs with Sign Makers 💅"

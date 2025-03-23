@@ -2,85 +2,13 @@
 
 
 <section class="relative md:pb-24 md:pt-12 pb-16 pt-6">
-    <div class="relative bg-white items-center justify-center w-full overflow-y-hidden pt-20 lg:pt-40">
-        <div class="relative z-10">
-            <div
-                class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
-                <svg class="h-[60rem] w-[100rem] flex-none stroke-secondary opacity-10" aria-hidden="true">
-                    <defs>
-                        <pattern id="e9033f3e-f665-41a6-84ef-756f6778e6fe" width="200" height="200" x="50%" y="50%"
-                            patternUnits="userSpaceOnUse" patternTransform="translate(-100 0)">
-                            <path d="M.5 200V.5H200" fill="none"></path>
-                        </pattern>
-                    </defs>
-                    <svg x="50%" y="50%" class="overflow-visible fill-amber-50">
-                        <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0"></path>
-                    </svg>
-                    <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)">
-                    </rect>
-                </svg>
-            </div>
-        </div>
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-            <span
-                class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-slate-50 font-medium text-secondary">Services</span>
-            <h1
-                class="mb-4 my-8 text-4xl max-w-4xl mx-auto font-medium tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
-                Services : {{
-                .Title }}</h1>
-        </div>
-    </div>
 
-    <div class="lg:container mx-auto z-20">
-        <nav class="pt-[var(--header-height,80px)] flex px-6 mb-6" aria-label="Breadcrumb">
-            <ol class="inline-flex items-center space-x-1 md:space-x-3">
-                {{ range $index, $item := .Ancestors.Reverse }}
-                {{ with $item }}
-                <li class="inline-flex items-center">
-                    <a href="{{ .RelPermalink}}"
-                        class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-amber-600 dark:text-gray-400 dark:hover:text-white">
-                        {{ if lt $index 1}}
-                        <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
-                            </path>
-                        </svg>
-                        {{ else }}
-                        <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        {{ end }}
-                        {{ if lt $index 1}}
-                        Home
-                        {{ else }}
-                        {{ .Title }}
-                        {{ end }}
-                    </a>
-                </li>
-                {{ end }}
-                {{- end }}
-                <li aria-current="page">
-                    <div class="flex items-center">
-                        <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                            {{ .Title }}
-                        </span>
-                    </div>
-                </li>
-            </ol>
-        </nav>
-        <div class="w-full">
-            <div class="w-full">
-                <div class="flex justify-center">
+    <div class="lg:container mx-auto">
+        {{ partial "single-page-nav" . }}
+
+        <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+            <div class="lg:col-span-8 md:col-span-6">
+                <div class="px-6 border-r">
 
                     {{ with .Resources.GetMatch .Params.featuredImage }}
                     {{ $small := (.Resize "400x webp q80").RelPermalink }}
@@ -92,81 +20,21 @@
                   {{- with $medium -}}, {{.}} 550w{{- end -}}
                   {{- with $large -}}, {{.}} 768w{{- end -}}
                   {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-                        class="object-fill w-1/2 overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
-                        alt="{{ .Params.title }}" />
+                        class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
+                        width="100%" alt="{{ .Params.title }}" />
                     {{ end }}
-                </div>
-                <div class="flex justify-center">
-                    <article class="prose dark:prose-invert lg:prose-lg w-full mt-6 container mx-auto px-4">
+
+                    <article class="prose dark:prose-invert lg:prose-xl mt-6">
                         {{.Content}}
                     </article>
                 </div>
+
+
             </div>
+
+            {{ partial "single-page-sidebar" . }}
         </div>
     </div><!--end grid-->
 </section>
-
-<section>
-    <div class="bg-grey-50 max-w-5xl mx-auto">
-        <div class="px-2 sm:container py-16 md:py-20 mx-auto">
-            <div class="flex justify-center">
-                <div class="mb-8">
-                    <span
-                        class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-neutral font-medium text-secondary">Explore
-                        Other Services</span>
-                </div>
-            </div>
-            <div class="flex justify-center">
-                <h2
-                    class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-none text-heading tracking-tighter">
-                    Related Services </h2>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12 w-full">
-                {{ range ( first 3 ( where .Site.RegularPages "Section" "services" ) ) }}
-                <div class="">
-                    <a href="{{.RelPermalink}}">
-                        {{ $featured := .Params.featuredImage }}
-                        {{ with .Resources.GetMatch $featured }}
-                        {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                        <img src="{{ $postimage }}" class="w-full h-64 rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
-                        {{ end }}
-                        <div class="py-6 xl:py-8">
-                            <h4 class="block font-body text-lg font-semibold text-gray-800 hover:text-primary">
-                                {{.Title}}</h4>
-                            <p class="block pt-2 text-body">{{ .Summary | truncate 100 }}</p>
-
-                        </div>
-                        <div class="pt-2 pb-4">
-                            <a href="{{ .RelPermalink }}" class="text-secondary hover:text-blue-800 font-semibold">Learn
-                                more →</a>
-                        </div>
-                    </a>
-                </div>
-                {{ end }}
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const dropdowns = document.querySelectorAll(".dropdown");
-
-        dropdowns.forEach(function (dropdown) {
-            const parentLink = dropdown.querySelector("a");
-            const dropdownMenu = dropdown.querySelector(".dropdown-menu");
-
-            parentLink.addEventListener("click", function (event) {
-                event.preventDefault();
-                dropdownMenu.classList.toggle("hidden");
-                if (!dropdownMenu.classList.contains("hidden")) {
-                    window.location.href = parentLink.href;
-                }
-            });
-        });
-    });
-</script>
 
 {{end}}

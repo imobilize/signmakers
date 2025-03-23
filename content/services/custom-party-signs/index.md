@@ -1,12 +1,12 @@
 ---
 title: "Custom Party Signs"
-date: 2020-09-23T15:28:43+06:00
+date: 2024-09-23T15:28:43+06:00
 draft: false
 description:  Transform your celebration with our custom party signs! Whether it's a birthday, wedding, or corporate event, our signs add a personalized touch that leaves a lasting impression. Vibrant, fun, and designed just for you—your party deserves nothing less.
 featuredImage: "images/4.jpg"
 image: "images/1.jpg"
 images: ["images/1.jpg"]
-keywords: "Branding, Brand Building, Business Brand"
+keywords: ["Branding", "Brand Building", "Business Brand"]
 type: page
 layout: branding
 subheading: "A Party that nobody forgets 💅"
