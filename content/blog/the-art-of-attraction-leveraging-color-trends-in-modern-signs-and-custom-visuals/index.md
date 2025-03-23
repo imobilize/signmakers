@@ -1,6 +1,6 @@
 ---
 title: "The Art of Attraction: Leveraging Color Trends in Modern Signs & Custom Visuals"
-date: 2023-09-08
+date: 2024-04-02T04:14:54-08:00
 draft: false
 author: "Sign Makers"
 description: "In recent years, color trends have gained significant popularity, extending beyond the official Pantone Color of the Year announcement. Behr, a renowned paint company, has unveiled their color of the year, \"Cracked Pepper,\" a soft yet daring black that makes a sophisticated statement."

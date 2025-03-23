@@ -1,6 +1,6 @@
 ---
 title: "Unleashing the Power of Signage in Rebranding: 4 Things to Consider"
-date: 2023-09-08
+date: 2024-02-02T04:14:54-08:00
 draft: false
 author: "Sign Makers"
 description: "In the dynamic landscape of marketing, we’re experiencing a resurgence of rebranding. Rebrands are a strategic marketing maneuver that can redefine or refresh a company or brand’s identity and set it on a trajectory for future success. While there are numerous elements to consider during a rebrand, signs and graphics are pivotal pieces in the rebranding process, acting as powerful ambassadors for brands as well as businesses that need to attract attention to get customer traffic."

@@ -1,6 +1,6 @@
 ---
 title: "5 Signage Ideas To Boost Foot Traffic For Businesses In 2024"
-date: 2024-05-17
+date: 2024-10-02T04:14:54-08:00
 draft: false
 author: "Sign Makers"
 description: "Discover 5 innovative signage ideas to boost foot traffic for businesses in 2024. Learn about interactive digital signage, dynamic LED displays, personalized solutions, eco-friendly options, and neon signs. Transform your business's visual appeal and attract more customers with these creative and engaging signage strategies."

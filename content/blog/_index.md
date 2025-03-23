@@ -1,9 +1,9 @@
 ---
 title: "Blog"
-date: 2020-09-23T15:28:43+06:00
+date: 2021-01-02T04:14:54-08:00
 draft: false
-description: "Explore Sign Makers's Technology..."
-author: ""
+description: "Sign Industry news, Sign Makers's Articles, Tips For Creating The Best Signs, Business Sign Articles"
+author: "The Signmakers"
 featuredImage: "images/pages/blogs-saturn-spraying.png"
-keywords: "Blog, Sign Makers, Sign News"
+keywords: ["Blog", "Sign Makers", "Sign News"]
 ---

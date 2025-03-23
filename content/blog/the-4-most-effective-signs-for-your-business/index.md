@@ -1,6 +1,6 @@
 ---
 title: "The 4 Most Effective Signs for Your Business"
-date: 2024-10-10T12:00:00+00:00
+date: 2024-05-02T04:14:54-08:00
 draft: false
 language: en
 featuredImage: "images/business-signs-effective.jpg"

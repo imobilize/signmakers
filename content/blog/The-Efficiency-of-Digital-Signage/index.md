@@ -1,6 +1,6 @@
 ---
 title: "The Efficiency of Digital Signage"
-date: 2023-09-08
+date: 2024-03-02T04:14:54-08:00
 draft: false
 author: "Sign Makers"
 description: "Signage plays a crucial role in every business, whether it's a retail store, a bustling hospitality venue, or a bustling manufacturing hub. From wayfinding to marketing, good-quality signage is essential."

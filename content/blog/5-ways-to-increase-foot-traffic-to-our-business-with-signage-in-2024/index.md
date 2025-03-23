@@ -1,6 +1,6 @@
 ---
 title: "5 Ways to Increase Foot Traffic to Your Business with Signage in 2024"
-date: 2024-09-12
+date: 2024-10-01T04:14:54-08:00
 draft: false
 author: "Sign Makers"
 description: "Discover 5 effective ways to increase foot traffic to your business with impactful signage in 2024. Learn how modern, well-maintained, and interactive signs can attract more customers and boost your brand visibility."
