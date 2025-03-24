@@ -5539,6 +5539,10 @@ video {
     font-size: 1rem;
   }
 
+  .sm\:text-base{
+    font-size: 1rem;
+  }
+
   .sm\:leading-10{
     line-height: 2.5rem;
   }
@@ -6337,6 +6341,11 @@ video {
     padding-bottom: 6rem;
   }
 
+  .lg\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .lg\:pb-0{
     padding-bottom: 0px;
   }
@@ -6403,6 +6412,10 @@ video {
 
   .lg\:pt-6{
     padding-top: 1.5rem;
+  }
+
+  .lg\:pb-12{
+    padding-bottom: 3rem;
   }
 
   .lg\:text-left{

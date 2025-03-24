@@ -54,7 +54,7 @@
 
   <div class="container px-6 py-6 sm:py-10 md:py-12 lg:py-16 mx-auto">
     <div>
-      <h2 class="xs:mt-2 md:mt-0 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-neutral-600">
+      <h2 class="xs:mt-2 md:mt-0 text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-neutral-600">
         Do You Want A <span class="text-blue-500">Free Book</span> On Branding?</h2>
 
       <p class="mt-4 xs:text-xl md:text-2xl text-slate-600 max-w-3xl">Creating a strong brand is the most effective way
@@ -80,7 +80,7 @@
         {{ end }}
       </div>
 
-      <div class="w-full lg:w-1/2">
+      <div id="free-book-form" class="w-full lg:w-1/2">
         <div class="lg:max-w-lg">
           <h3 class="text-2xl font-bold">FREE Instant Access!</h3>
           <p>
@@ -1035,6 +1035,347 @@
             </div>
             <!-- END - We recommend to place the above code where you want the form in your website html  -->
 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="overflow-hidden bg-slate-200 lg:bg-transparent lg:px-5 border-y">
+  <div
+    class="mx-auto grid max-w-6xl grid-cols-1 grid-rows-[auto_1fr] lg:grid-cols-12 lg:px-3 gap-y-16 pt-16 md:pt-20 lg:gap-y-20 lg:pb-36 lg:pt-12 xl:py-16">
+    <div class="relative flex items-end lg:col-span-5 lg:row-span-2">
+      <div
+        class="absolute -bottom-12 -top-20 left-0 right-1/2 z-10 rounded-br-6xl bg-blue-600 text-white/10 md:bottom-8 lg:-inset-y-32 lg:left-[-100vw] lg:right-full lg:-mr-40">
+        <svg aria-hidden="true" class="absolute inset-0 h-full w-full">
+          <defs>
+            <pattern id=":S2:" width="128" height="128" patternUnits="userSpaceOnUse" x="100%" y="100%"
+              patternTransform="translate(112 64)">
+              <path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#:S2:)"></rect>
+        </svg>
+      </div>
+      {{ with resources.GetMatch "images/branding/branding-for-profit-kindle.png" }}
+      {{ $small := (.Resize "400x webp q90").RelPermalink }}
+      {{ $medium := (.Resize "550x webp q90").RelPermalink }}
+      {{ $large := (.Resize "900x webp q90").RelPermalink }}
+      {{ $featuredimage := (.Resize "1100x webp q90").RelPermalink }}
+      <div class="relative z-10 mx-auto flex w-64 md:w-80 lg:w-auto">
+        <img alt="Branding For Profit Kindle" fetchpriority="high" decoding="async" class="w-full"
+          style="color:transparent" src="{{ $featuredimage }}" srcset="
+                  {{- with $small -}}, {{.}} 400w{{- end -}}
+                  {{- with $medium -}}, {{.}} 550w{{- end -}}
+                  {{- with $large -}}, {{.}} 768w{{- end -}}
+                  {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}">
+      </div>
+      {{ end }}
+    </div>
+    <div class="relative px-4 sm:px-6 lg:col-span-7 lg:pb-14 lg:pl-16 lg:pr-0 xl:pl-20">
+      <h3 class="xs:mt-2 md:mt-0 xs:text-xl md:text-2xl lg:text-3xl font-medium">
+        Here’s Just SOME Of What You’ll Discover Inside
+        The “Branding For Profit” 200+ Page Digital eBook
+        <br />
+      </h3>
+      <p class="xs:mt-2 md:mt-0 xs:text-xl md:text-2xl lg:text-3xl font-medium text-blue-600">
+        (Sold For £24 On Amazon)
+      </p>
+
+      {{ $listicon := resources.Get "images/icons/green-checkmark.svg"}}
+      <ul class="text-xl list-image-[url('{{ $listicon.RelPermalink}}')]"
+        style="list-style-image: url('{{ $listicon.RelPermalink}}');">
+        <li class="my-8">
+
+          <b>Why Some Brands Drive Greater Profits Than Others:</b> Learn
+          exactly what a brand is so you know what to consider when creating your own. Understand how to
+          identify good branding elements in other companies <b>(Page
+            9)</b>
+        </li>
+        <li class="my-8">
+          <i contenteditable="false" class="fa fa-fw fa-check"></i><b>Motivational Forces That Cause
+            People To Buy:
+          </b>Take a dive into human psychology and learn the forces at play in driving their behaviour.
+          Knowing this allows you to position your brand to take advantage of natural human tendencies.
+          (<b>Page 30</b>)<br>
+        </li>
+        <li class="my-8">
+          <i contenteditable="false" class="fa fa-fw fa-check"></i>​<b>Secrets Of A Good Brand:</b> Here
+          we distill the little known strategies that the best brands are using to capture their customers
+          and keep them returning for years to come. (<b>Page 80</b>)<br>
+        </li>
+        <li class="my-8">
+          <i contenteditable="false" class="fa fa-fw fa-check"></i><b>Techniques For Extraordinary
+            Branding:</b> Here we show some examples of techniques used by amazing brands that had a
+          huge impact on the market place. (Caution, these techniques are powerful and need to be used
+          with care). (<b>Page 116</b>)<br>
+        </li>
+        <li class="my-8">
+          <i contenteditable="false" class="fa fa-fw fa-check"></i>​<b>How To Create The Low Cost High
+            Profit Brand:</b> A step by step guide based on all the theory covered. You will get
+          actionable steps you need to take to create and market your brand for a successful launch.
+          (<b>Page 150</b>)<br>
+        </li>
+
+      </ul>
+      <div class="mt-8 flex gap-4">
+
+        <a href="#free-book-form"
+          class="inline-flex justify-center mt-5 px-5 py-3 text-white text-xl font-semibold border border-gray-300 rounded-lg hover:border-red-500 focus:ring focus:ring-gray-50 bg-primary hover:bg-red-600 transition ease-in-out duration-200">
+          Give Me My Free Book</a>
+
+
+      </div>
+    </div>
+    <div class="relative pb-8 px-4 sm:px-6 lg:col-span-7 lg:pl-16 lg:pr-0 xl:pl-20">
+      <div
+        class="hidden lg:absolute lg:-top-32 lg:bottom-0 lg:left-[-100vw] lg:right-[-100vw] lg:block lg:bg-slate-100">
+      </div>
+      <figure class="relative mx-auto max-w-md text-center lg:mx-0 lg:text-left">
+        <div class="flex justify-center text-blue-600 lg:justify-start">
+          <div class="flex gap-1"><svg aria-hidden="true" viewBox="0 0 20 20" class="h-5 w-5 fill-current">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg><svg aria-hidden="true" viewBox="0 0 20 20" class="h-5 w-5 fill-current">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg><svg aria-hidden="true" viewBox="0 0 20 20" class="h-5 w-5 fill-current">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg><svg aria-hidden="true" viewBox="0 0 20 20" class="h-5 w-5 fill-current">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg><svg aria-hidden="true" viewBox="0 0 20 20" class="h-5 w-5 fill-current">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg></div>
+        </div>
+        <blockquote class="mt-2">
+          <p class="font-display text-lg font-medium text-slate-900">“I found this book to be
+            comprehensive
+            and easily digestible. I can honestly say, as a seasoned entrepreneur, that I learned new
+            things
+            from this book and have applied them to my brand with much success. An insightful read.
+            Highly
+            recommend”</p>
+        </blockquote>
+        <figcaption class="mt-2 text-sm text-slate-500"><strong
+            class="font-semibold text-blue-600 before:content-['—_']">Du El</strong>, Entrepreneur, UK
+        </figcaption>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<section class="container mx-auto">
+  <div class="mx-auto max-w-3xl">
+
+    {{ with resources.GetMatch "images/branding/branding-for-profit-book-buyers.png" }}
+    {{ $small := (.Resize "400x webp q100").RelPermalink }}
+    {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+    {{ $large := (.Resize "900x webp q100").RelPermalink }}
+    {{ $featuredimage := (.Resize "1100x webp q100").RelPermalink }}
+
+    <img class="h-auto max-w-full" src="{{ $featuredimage }}" srcset="
+  {{- with $small -}}, {{.}} 400w{{- end -}}
+  {{- with $medium -}}, {{.}} 550w{{- end -}}
+  {{- with $large -}}, {{.}} 768w{{- end -}}
+  {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}" alt="Branding For Profit Book Buyers">
+    {{ end }}
+
+  </div>
+</section>
+
+<section class="container mx-auto">
+  <div class="w-full">
+
+    <div class="lg:flex lg:flex-col pt-20 pb-8">
+      <div class="tex-2xl sm:text-3xl lg:text-4xl">
+        <b>Oh, and if you’re wondering...</b>
+      </div>
+
+      <div class="tex-xl sm:text-2xl lg:text-3xl">
+        <b>THERE IS NO CATCH</b>
+      </div>
+    </div>
+
+    <div class="lg:flex lg:flex-row text-xl">
+
+      <div>
+        <div class="lg:pr-10">
+          <p>
+            We have witnessed so many entrepreneurs fail all because of one simple mistake: <b>They
+              didn't
+              create an effective brand which would allow them to attract customers and make more
+              sales.</b>
+            &nbsp;&nbsp;
+          <p>
+            <br>
+
+          <p>And it's a mistake that's really easy to avoid.&nbsp;</p>
+        </div>
+
+
+        <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-22042" data-de-type="headline"
+          data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade"
+          data-delay="500" style="margin-top: 25px; outline: none; cursor: pointer; display: block;"
+          aria-disabled="false">
+          <div class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_20"
+            style="text-align: left; font-size: 26px;" data-bold="inherit" contenteditable="false">
+            <b>Why Are We Giving You This Book...FOR FREE?!</b>
+          </div>
+        </div>
+        <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-21034" data-de-type="headline"
+          data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade"
+          data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; display: block;"
+          aria-disabled="false">
+          <div class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_16"
+            style="text-align: left; font-size: 20px;" data-bold="inherit" contenteditable="false">A
+            couple reasons, actually…</div>
+        </div>
+      </div>
+      <div>
+        {{ with resources.GetMatch "images/branding/reading-branding-for-profit.png" }}
+        {{ $small := (.Resize "400x webp q90").RelPermalink }}
+        {{ $medium := (.Resize "550x webp q90").RelPermalink }}
+        {{ $large := (.Resize "900x webp q90").RelPermalink }}
+        {{ $featuredimage := (.Resize "1100x webp q90").RelPermalink }}
+        <img alt="Branding For Profit Reading" fetchpriority="high" decoding="async" class="w-full"
+          src="{{ $featuredimage }}" srcset="
+              {{- with $small -}}, {{.}} 400w{{- end -}}
+              {{- with $medium -}}, {{.}} 550w{{- end -}}
+              {{- with $large -}}, {{.}} 768w{{- end -}}
+              {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}">
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="max-w-2xl text-xl pt-8">
+    <div class="flex flex-col">
+      <div>1. Because we want your business. We make money when you make money. And the best way to make you
+        money is to give you the same secret sauce we use for ourselves and give to our most valued clients.
+      </div>
+      <div>&nbsp;</div>
+      <div>2. When working with you on Sign Design, it's always easier when there is a shared understanding of
+        what type of design works best. The creation process is a lot smoother and the outcome is far better
+        &nbsp; &nbsp; &nbsp;
+      </div>
+      <div>&nbsp;</div>
+      <div>3. If we can get this knowledge into your hands, when you see how awesome it
+        is, it should get you excited to work with us in the future. The more
+        money we can make you now, the more likely you are to come back and work with us down the
+        road.&nbsp;&nbsp;</div>
+      <div><br></div>
+      <div>That’s it.</div>
+      <div><br></div>
+      <div><b><i>That’s</i> why we are doing this.</b></div>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-2xl">
+    <div class="pt-12">
+      If this page is still here, then the offer to download and get INSTANT ACCESS to the ‘Branding For
+      Profit’ book is live for the time being...&nbsp;&nbsp;
+      <div>&nbsp;</div>
+      <div>But we reserve the right to pull it down at any time.</div>
+      <div><br></div>
+      <div><i>Sound good?</i></div>
+    </div>
+  </div>
+
+  <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+    id="row-157-147" data-trigger="none" data-animate="fade" data-delay="500" data-title="3 column row - Clone"
+    style="padding-top: 15px; padding-bottom: 15px; margin: 0px; outline: none;" col-array="2,8,2">
+    <div id="col-left-113-188-119" class="innerContent col_left ui-resizable col-md-2" data-col="left"
+      data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
+      <div
+        class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+        style="padding: 0 10px">
+        <div class="de elImageWrapper de-image-block elMargin0 elAlign_right ui-droppable de-editable"
+          id="img-71108-130-145" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false"
+          data-trigger="none" data-animate="fade" data-delay="500"
+          style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false" data-hide-on="desktop">
+          {{ $arrowright := resources.Get "images/icons/arrow-right.png"}}
+          <img src="{{ $arrowright.RelPermalink }}" class="" alt="down facing arrow">
+        </div>
+      </div>
+    </div>
+    <div id="col-center-171-147-174" class="innerContent col_right ui-resizable col-md-8" data-col="center"
+      data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
+
+      <div class="trxt-center text-xl md:text-2xl lg:text-3xl">
+        <b>This Is Truly A Limited Offer, So download your FREE copy of
+          the ‘Branding For Profit’ book now!</b>
+      </div>
+
+    </div>
+    <div>
+      <div
+        class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+        style="padding: 0 10px">
+        <div>
+          {{ $arrowleft := resources.Get "images/icons/arrow-left.png"}}
+          <img src="{{$arrowleft.RelPermalink}}" class="" alt="down facing arrow">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-8 flex flex-col">
+
+    <div>
+      Thanks for taking the time to check us out and we look forward to hearing from you
+      soon!
+    </div>
+    <div class="py-12 mx-auto">
+      <a href="#free-book-form" class="btn bg-primary text-white flex flex-col shadow">
+        <div class="text-xs sm:text-lg md:text-2xl">
+          <i class="fa fa-arrow-right  fa_prepended"></i>
+          Yes! I Want FREE INSTANT ACCESS To
+          This Book!
+          <i class="fa fa_appended"></i>
+        </div>
+
+        <div class="text-xs sm:text-base md:text-xl">Download ‘Branding For Profit’ Now For
+          FREE!
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+{{ $arrowhead := resources.Get "images/icons/arrowhead-alternating.svg" }}
+<section class="bg-[url('{{ $arrowhead.RelPermalink }}')] bg-center bg-repeat">
+  <div class="mx-auto container pt-5 bg-[url('{{ $arrowhead.RelPermalink }}')] bg-center bg-repeat">
+    <div class="mx-auto max-w-4xl">
+      <div class="col-md-12 text-center py-8 lg:py-12">
+        <h2 class="xs:mt-2 md:mt-0 xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-white">
+          Check Out What <span>Gary Vee</span> (One Of The Most Successful
+          Marketers)
+          Had To Say About The Importance Of
+          Branding</h2>
+      </div>
+      <div class="col-12 text-center pb-8 lg:pb-12">
+        <div class="video_section mb25">
+          <div class="relative" style="padding-top: 56.25%">
+            <iframe class="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/dj535gvdynI?controls=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fbrandingforprofitbook.com"
+              title="The Importance of Branding in a Noisy Social World" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen="" data-gtm-yt-inspected-8="true" id="221560603"
+              data-gtm-yt-inspected-172876209_53="true">
+            </iframe>
           </div>
         </div>
       </div>
