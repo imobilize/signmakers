@@ -7,4 +7,7 @@ author: "The Sign Makers"
 image: "images/sign-makers-card.png"
 images: ["images/sign-makers-card.png"]
 keywords: ["Shop Signs", "Outdoor Signs", "Pavement Signs", "Business Signs"]
+sitemap:
+  changefreq: monthly
+  priority: 1.0
 ---

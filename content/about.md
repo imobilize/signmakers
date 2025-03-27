@@ -9,4 +9,7 @@ images: ["images/sign-makers-card.png"]
 keywords: ["Sign design", "sign printing", "sign consultancy", "Sign maintenance", "Sign repair"]
 type: page
 layout: about
+sitemap:
+  changefreq: monthly
+  priority: 1.0
 ---

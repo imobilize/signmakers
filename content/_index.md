@@ -7,4 +7,7 @@ author: "The Sign Makers"
 keywords: ["Sign design", "Sign installation", "Sign Manufacturing", Sign Printing", "Sign Consultancy", "Sign Maintenance", "Sign repair"]
 image: "/images/sign-makers-card.png"
 images: ["/images/sign-makers-card.png"]
+sitemap:
+  changefreq: monthly
+  priority: 1.0
 ---

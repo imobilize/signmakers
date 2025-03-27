@@ -2,11 +2,14 @@
 title: "Sign Installation"
 date: 2020-10-18T11:10:36+08:00
 draft: false
-description: Whether you simply want to highlight your logo or name or promote a product or special, there is an exterior sign for all of your needs.
+description: We install business signs, shop signs, pub, restaurant, exterior and interior signs. Contact us for outdoor sign and indoor sign installation
 author: "The Signmakers"
 featuredImage: "images/outdoor-sign-installation.jpg"
 image: "images/outdoor-sign-installation.jpg"
 images: ["images/outdoor-sign-installation.jpg"]
+sitemap:
+  changefreq: monthly
+  priority: 1.0
 ---
 
 # Sign Installation
