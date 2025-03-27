@@ -2,7 +2,7 @@
 title: "Business Signs"
 date: 2023-07-18T11:10:36+08:00
 draft: true
-description: If you're searching for ways to enhance the visibility of your business and create a memorable experience for your customers, there's no better approach than investing in quality signage. The team at Sign Makers specializes in crafting a diverse range of building signs tailored to your unique requirements.
+description: If you're searching for ways to enhance the visibility of your business and create a memorable experience for your customers, there's no better approach than investing in quality signage. The team at Sign Makers specializes in crafting a diverse range of business signs tailored to your unique requirements.
 author: " "
 featuredImage: "images/6.jpg"
 image: "images/5.jpg"
