@@ -14,6 +14,7 @@ darkmode_js = ["assets/js/darkmode.js"]
 enableInlineShortcodes = true
 timeout = 60000
 
+disableKinds = ["term", "taxonomy", "tags", "categories"]
 
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]
@@ -36,6 +37,7 @@ twitter = ""
 description = "Your Premier Destination for Exceptional Signage Solutions"
 logo = ""
 home = "Home"
+
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
 
