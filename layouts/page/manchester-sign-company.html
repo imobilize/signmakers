@@ -2,9 +2,8 @@
 
 <div class="max-w-6xl mx-auto px-4 sm:px-6 items-center justify-center w-full pt-20 md:pt-16">
 
-    <div class="mt-12 md:mt-16">
+    <div class="mt-6 md:mt-12">
 
-        <!-- Section header -->
         <div class="text-center pb-6 md:pb-12">
             <h1 class="text-4xl md:text-5xl font-bold mb-6 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] aos-init aos-animate"
                 data-aos="zoom-y-out" data-aos-delay="150">Are You Looking For <br class="max-lg:hidden">A Manchester
@@ -12,13 +11,10 @@
                 Company?</h1>
             <div class="max-w-3xl mx-auto">
                 <p class="text-lg text-gray-700 mb-8 aos-init aos-animate" data-aos="zoom-y-out" data-aos-delay="300">
-                    Welcome to The Sign Makers! A sign company that is a leader in the industry, making bespoke signage
-                    solutions close to our clients in Manchester.
-                </p>
-                <p class="text-lg text-gray-700 mb-8 aos-init aos-animate" data-aos="zoom-y-out" data-aos-delay="300">
                     Do you want to capture the attention of Manchester's diverse
-                    communities with business signs that make an impact? Then you've come to the right place. We
-                    design, manufacture and install high quality custom signs for businesses.
+                    communities with business signs that make an impact? Our comprehensive services encompass design,
+                    manufacturing, and installation of various signage types, from vehicle graphics to illuminated
+                    signs, ensuring a one-stop solution for businesses across the UK.
                 </p>
                 <p class="text-lg font-medium text-gray-700 mb-8 aos-init aos-animate" data-aos="zoom-y-out"
                     data-aos-delay="300">
@@ -36,68 +32,33 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="grid gap-4">
             <div>
-                {{ with resources.Get "images/london/airport-signs-london.jpg" }}
+                {{ with resources.Get "images/manchester/huntsman-pub-manchester-outdoor-signs.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Airport Signs London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Manchester Outdoor Pub Sign" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/london/london-business-sign-amadeus.jpg" }}
+                {{ with resources.Get "images/manchester/manchester-dentist-door-sign.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="London Business Signs" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Manchester Dentist Door Sign" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/london/bank-signs-london.jpg" }}
+                {{ with resources.Get "images/manchester/manchester-dentist-sign-artwork.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Bank Signs London" src="{{ $large }}" srcset="
-            {{- with $small -}}, {{.}} 300w{{- end -}}
-            {{- with $medium -}}, {{.}} 550w{{- end -}}
-            {{- with $large -}}, {{.}} 768w{{- end -}}">
-                {{ end }}
-            </div>
-        </div>
-        <div class="grid gap-4">
-            <div>
-                {{ with resources.Get "images/london/art-work-london.jpg" }}
-                {{ $small := (.Resize "300x webp q100").RelPermalink }}
-                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-                {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Art Work London" src="{{ $large }}" srcset="
-            {{- with $small -}}, {{.}} 300w{{- end -}}
-            {{- with $medium -}}, {{.}} 550w{{- end -}}
-            {{- with $large -}}, {{.}} 768w{{- end -}}">
-                {{ end }}
-            </div>
-            <div>
-                {{ with resources.Get "images/london/brickwork-sign-london.jpg" }}
-                {{ $small := (.Resize "300x webp q100").RelPermalink }}
-                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-                {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Brickwork Sign London" src="{{ $large }}" srcset="
-            {{- with $small -}}, {{.}} 300w{{- end -}}
-            {{- with $medium -}}, {{.}} 550w{{- end -}}
-            {{- with $large -}}, {{.}} 768w{{- end -}}">
-                {{ end }}
-            </div>
-            <div>
-                {{ with resources.Get "images/london/building-signs-london.jpg" }}
-                {{ $small := (.Resize "300x webp q100").RelPermalink }}
-                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-                {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Building Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Manchester Artwork Sign" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
@@ -106,33 +67,35 @@
         </div>
         <div class="grid gap-4">
             <div>
-                {{ with resources.Get "images/london/library-sign-stanmore.jpg" }}
+                {{ with resources.Get "images/manchester/manchester-dentist-sign.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Library Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Manchester Dentist Sign" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/london/park-sign-sony-3D.jpg" }}
+                {{ with resources.Get "images/manchester/manchester-dentist-window-sign.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Park Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Manchester Dentist Window Sign" src="{{ $large }}"
+                    srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/london/theatre-signs-london.jpg" }}
+                {{ with resources.Get "images/manchester/manchester-restaurant-window-decoration-sign.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Theatre Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Manchester Restaurant Window Sign Decoration"
+                    src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
@@ -141,33 +104,70 @@
         </div>
         <div class="grid gap-4">
             <div>
-                {{ with resources.Get "images/london/estate-agent-signs-london.jpg" }}
+                {{ with resources.Get "images/manchester/manchester-sign-artwork.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Estate Agent Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Manchester Wall Artwork Sign" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/london/warehouse-signs-london.jpg" }}
+                {{ with resources.Get "images/manchester/huntsman-pub-manchester-sign-decoration.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Warehouse Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Manchester Pub Window Sign Decoration" src="{{ $large }}"
+                    srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/london/internal-sign-london.jpg" }}
+                {{ with resources.Get "images/manchester/huntsman-pub-manchester-sign.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Internal Office Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Manchester Pub Window Sign Decoration" src="{{ $large }}"
+                    srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+                {{ with resources.Get "images/manchester/jwlees-pub-manchester-sign.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="JWLees Pub Manchester Sign" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+            <div>
+                {{ with resources.Get "images/manchester/health-link.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Manchester Health Link Sign" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+            <div>
+                {{ with resources.Get "images/manchester/manchester-door-sign.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Manchester Door Sign" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
@@ -187,11 +187,11 @@
                 Why Clients Prefer
                 Us To Make Their Signs</h2>
             <p class="mb-4 text-gray-500 sm:text-xl dark:text-gray-400">Our clientele range from
-                the likes of Madam Tussauds right the way through to small boutiques on Kings Road in Chelsea.
+                the likes of Wish Dentistry right the way through to large pub chains in the Manchester area.
             </p>
             <p class="mb-8 text-gray-500 sm:text-xl dark:text-gray-400">Whether
-                you're looking for a modern sign design for your business in Shoreditch or a traditional look for your
-                business in Battersea we can design, produce and install specific to your business needs and location.
+                you're looking for a modern sign design for your business in Salford or a traditional look for your
+                business in Trafford we can design, produce and install specific to your business needs and location.
             </p>
         </div>
         <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
@@ -250,14 +250,14 @@
 </section>
 
 <section>
-    <div class="w-full mx-auto pb-8 px-4">
+    <div class="max-w-7xl mx-auto pb-8 px-4">
         <h2
             class="text-center mb-16 text-2xl md:text-3xl lg:text4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Sign Making
             Services
         </h2>
         <div class="grid gap-14 md:grid-cols-3 md:gap-5">
-            <div class="border rounded-xl bg-white p-6 text-center shadow-xl">
+            <div class="border rounded-xl bg-white p-6 text-center">
                 <div
                     class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-teal-400 shadow-lg shadow-teal-500/40">
                     <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83 90.39">
@@ -304,7 +304,7 @@
                     From exterior business signs, interior office signs to event and exhibition displays. We even have
                     professional Sign Writers that specialise in custom hand-painted Lettering.</p>
             </div>
-            <div data-aos-delay="150" class="border rounded-xl bg-white p-6 text-center shadow-xl">
+            <div data-aos-delay="150" class="border rounded-xl bg-white p-6 text-center">
                 <div
                     class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-rose-500 shadow-rose-500/40">
 
@@ -350,9 +350,9 @@
                 <p class=" px-4 text-gray-500">Our craftsmen have over 54 years of expertise between them in creating
                     business signs. They are experts in their field and produce high quality signs in house tailored
                     specifically to the needs of our clients. Whether its a custom led sign or traditional acrylic
-                    business sign our signs are produced to highest quality in our sign shop in London.</p>
+                    business sign our signs are produced to highest quality in our sign shop in Manchester.</p>
             </div>
-            <div data-aos-delay="300" class="border rounded-xl bg-white p-6 text-center shadow-xl">
+            <div data-aos-delay="300" class="border rounded-xl bg-white p-6 text-center">
                 <div
                     class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-sky-500 shadow-sky-500/40">
 
@@ -402,7 +402,7 @@
 
 <section class="py-8">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="rounded-2xl text-center relative overflow-hidden shadow-xl before:absolute before:inset-0 before:rounded-2xl before:bg-gray-900 before:pointer-events-none before:-z-10 aos-init aos-animate"
+        <div class="rounded-2xl text-center relative overflow-hidden before:absolute before:inset-0 before:rounded-2xl before:bg-gray-900 before:pointer-events-none before:-z-10 aos-init aos-animate"
             data-aos="zoom-y-out">
             <!-- Glow -->
             <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 -z-10" aria-hidden="true">
@@ -422,7 +422,8 @@
                     Create Your Next Sign With The Sign Makers</h2>
                 <div>
                     <p class="text-white pb-4">
-                        Are you ready to join the many businesses that have elevated their brand's visibility in London?
+                        Are you ready to join the many businesses that have elevated their brand's visibility in
+                        Manchester?
                     </p>
 
                     <p class="text-white pb-4">Discover how we can create bespoke signage

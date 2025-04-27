@@ -1,7 +1,9 @@
 {{ define "main" }}
 
 <main>
-  <div class="relative bg-white items-center justify-center w-full overflow-x-hidden overflow-hidden pt-20 md:pt-16">
+
+  <section
+    class="relative bg-white items-center justify-center w-full overflow-x-hidden overflow-hidden pt-20 md:pt-16">
     <div class="relative z-10">
       <div
         class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
@@ -20,79 +22,197 @@
         </svg>
       </div>
     </div>
-    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 relative z-10">
-
-      <span
-        class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-neutral font-medium text-secondary">Something
-        about ourselves</span>
-      <h1
-        class="mb-4 text-3xl max-w-4xl mx-auto font-medium tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
-        About Us</h1>
-      <p class="mb-8 text-xl md:text-2xl font-normal text-gray-500  sm:px-16 xl:px-48 dark:text-gray-400">
-        Our Rich History Dates Back to 1946</p>
-    </div>
-  </div>
-
-
-  <!-- Testimonial/stats section -->
-  <section class="bg-gray-50 relative z-10">
     <div class="container mx-auto">
-      <div class="relative my-4">
-        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-center lg:gap-24 lg:px-8">
-          <div class="relative sm:py-8 lg:py-0">
-            <div class="md:py-12 sm:pt-6 lg:py-20">
-              <div class="mb-4">
-                <span
-                  class="inline-flex rounded-xl justify-between items-center py-1 px-4 mb-7 text-sm bg-slate-50 font-medium text-secondary">Our
-                  History</span>
+      <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-center lg:gap-24 lg:px-8">
+        <div class="relative sm:py-8 lg:py-0">
+          <div class="md:py-12 sm:pt-6 lg:py-20">
+            <h1
+              class="mb-4 text-3xl max-w-4xl mx-auto font-medium tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
+              About Us</h1>
+            <p class="text-lg mb-8">At The Sign Makers, we pride ourselves on being experts in sign design
+              and
+              production. With decades of experience and a dedicated team of experts, we blend art and science to
+              create
+              impactful signage. From initial concepts to meticulous craftsmanship, we bring your vision to life with
+              precision and flair.
+              <br><br>
+              Founded in 1946, Sign Makers is a family-owned business with a rich legacy of excellence. Our expertise
+              covers all aspects of signage, including top-tier design, precise manufacturing, seamless installation,
+              and
+              meticulous maintenance. 
+              <br><br>
+              Serving clients across the UK, we handle everything from one-off projects to nationwide installations
+              for
+              national accounts. Our commitment to quality extends beyond installation with maintenance contracts to
+              ensure your signs remain in optimal condition. At Sign Makers, our decades-long experience and
+              dedication
+              guarantee outstanding sign solutions that stand the test of time.
+            </p>
+            <a href="/contact"
+              class="inline-block px-6 py-3 text-white bg-red-600 rounded-lg font-semibold shadow hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+              Contact Us →
+            </a>
+          </div>
+        </div>
+
+
+        <div class="relative px-4 py-6 mx-auto sm:px-6">
+
+          <div class="flex justify-center items-center">
+            <div class="relative">
+              <div
+                class="absolute inset-0 pointer-events-none border-2 border-slate-700 mt-3 ml-3 translate-x-4 translate-y-4"
+                aria-hidden="true"></div>
+              <div class="mx-auto md:max-w-none">
+                <script src="https://fast.wistia.com/player.js" async></script>
+                <script src="https://fast.wistia.com/embed/0mn13f3wqk.js" async type="module"></script>
+                <style>
+                  wistia-player[media-id='0mn13f3wqk']:not(:defined) {
+                    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/0mn13f3wqk/swatch');
+                    display: block;
+                    filter: blur(5px);
+                  }
+                </style> <wistia-player media-id="0mn13f3wqk" aspect="0.5625"
+                  style="height: 640px; z-index: 10;"></wistia-player>
               </div>
-              <h2 class="text-3xl font-bold mb-4">Who we are</h2>
-              <p class="text-gray-600 mb-8">At Sign Makers, we pride ourselves on being experts in signboard design and
-                production. With decades of experience and a dedicated team of experts, we blend art and science to
-                create
-                impactful signage. From initial concepts to meticulous craftsmanship, we bring your vision to life with
-                precision and flair.
-                <br><br>
-                Founded in 1946, Sign Makers is a family-owned business with a rich legacy of excellence. Our expertise
-                covers all aspects of signage, including top-tier design, precise manufacturing, seamless installation,
-                and
-                meticulous maintenance. 
-                <br><br>
-                Serving clients across the UK, we handle everything from one-off projects to nationwide installations
-                for
-                national accounts. Our commitment to quality extends beyond installation with maintenance contracts to
-                ensure your signs remain in optimal condition. At Sign Makers, our decades-long experience and
-                dedication
-                guarantee outstanding sign solutions that stand the test of time.
-              </p>
-              <a href="/contact"
-                class="inline-block px-6 py-3 text-white bg-red-600 rounded-lg font-semibold shadow hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
-                Contact Us →
-              </a>
             </div>
           </div>
+        </div>
 
-          <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
-            <!-- Content area -->
-            <div class="relative max-w-md px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
-              <!-- Testimonial card-->
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="py-12 md:py-20 border-t border-slate-200">
+
+        <!-- Section header -->
+        <div class="max-w-4xl mx-auto text-center pb-8">
+          <h2 class="h2 text-slate-800 pb-4">Locations For Our Sign Company</h2>
+          <p class="text-lg">Having multiple locations offers
+            significant advantages in meeting our clients' diverse needs. </p>
+        </div>
+
+        <div class="relative mx-auto grid gap-16 md:grid-cols-2 lg:gap-y-20 items-start pb:12 md:pb-20"
+          data-aos-id-blocks>
+
+          <!-- 1st item -->
+          <div class="flex flex-row" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
+            <svg class="w-24 h-24 mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g stroke-width="0"></g>
+              <g stroke-linecap="round" stroke-linejoin="round"></g>
+              <g>
+                <g>
+                  <path id="Vector"
+                    d="M13 15L16 12M16 12L13 9M16 12H8M21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z"
+                    stroke="#0732df" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </g>
+            </svg>
+            <p class="ml-3 text-lg">Our local sign branches can quickly respond to urgent requests, provide personalized
+              consultations, and foster better relationships with customers in different regions.</p>
+          </div>
+
+          <!-- 2nd item -->
+          <div class="flex flex-row" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="100">
+            <svg class="w-24 h-24 mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g stroke-width="0"></g>
+              <g stroke-linecap="round" stroke-linejoin="round"></g>
+              <g>
+                <g>
+                  <path id="Vector"
+                    d="M13 15L16 12M16 12L13 9M16 12H8M21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z"
+                    stroke="#0732df" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </g>
+            </svg>
+            <p class="ml-3 text-lg">We provide enhanced accessibility, allowing the sign company to serve a wider
+              geographical area and reduce shipping times and costs for our clients.</p>
+          </div>
+
+        </div>
+
+        <!-- Section content -->
+        <div
+          class="max-w-xl mx-auto md:max-w-none flex flex-col md:flex-row md:items-start md:space-x-8 lg:space-x-16 xl:space-x-18 space-y-8 space-y-reverse md:space-y-0"
+          x-data="{ tab: '1' }">
+
+          <!-- Tabs items (images) -->
+          <div class="md:rtl md:w-5/12 lg:w-1/2 order-1 md:order-none" data-aos="fade-down">
+            <div class="relative flex flex-col">
+              <!-- Item 1 -->
               <div class="relative overflow-hidden">
-                {{ with resources.Get "images/about_sign_makers_custom_signs.jpg" }}
+                {{ with resources.Get "images/from-design-to-sign.png" }}
                 {{ $small := (.Resize "400x webp q80").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q80").RelPermalink }}
                 {{ $large := (.Resize "900x webp q80").RelPermalink }}
                 {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
                 <img src="{{ $featuredimage }}" srcset="
-        {{- with $small -}}, {{.}} 400w{{- end -}}
-        {{- with $medium -}}, {{.}} 550w{{- end -}}
-        {{- with $large -}}, {{.}} 768w{{- end -}}
-        {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
+            {{- with $small -}}, {{.}} 400w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}
+            {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
                   class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
-                  width="100%" alt="{{ .Params.title }}" />
+                  width="100%" alt="From Design To Sign" />
                 {{ end }}
               </div>
             </div>
+          </div>
 
+          <!-- Content -->
+          <div class="md:w-7/12 lg:w-1/2" data-aos="fade-up">
+            <div class="mb-8 text-center md:text-left">
+              <h3 class="h3 text-slate-800 font-playfair-display mb-3">Find out more about each location</h3>
+              <p class="text-lg">Click each location to see what that local sign company provides.
+              </p>
+            </div>
+            <!-- Tabs buttons -->
+            <div class="mb-8 md:mb-0">
+              <a class="border-secondary opacity-100 flex items-start text-left bg-white border-2 px-5 py-3 rounded-sm shadow-md transition duration-300 ease-in-out mb-3"
+                href="/london-sign-company">
+                <svg class="w-8 h-8 fill-current text-primary shrink-0 mt-1 mr-4" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                </svg>
+                <div>
+                  <div class="text-slate-800 font-medium mb-1">London Sign Company</div>
+                  <div class="text-slate-500">Based in the heart of London, we have been serving the diverse needs of
+                    businesses in the city for over 30
+                    years. Specialising in bespoke signage solutions that blend creativity with quality craftsmanship.
+                  </div>
+                </div>
+              </a>
+              <a class="border-secondary opacity-100 flex items-start text-left bg-white border-2 px-5 py-3 rounded-sm shadow-md transition duration-300 ease-in-out mb-3"
+                href="/manchester-sign-company">
+                <svg class="w-8 h-8 fill-current text-primary shrink-0 mt-1 mr-4" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                </svg>
+                <div>
+                  <div class="text-slate-800 font-medium mb-1">Manchester Sign Company</div>
+                  <div class="text-slate-500">Located in Manchester, this sign company delivers innovative and
+                    high-quality signage solutions tailored to elevate brands and enhance visibility for local
+                    businesses.</div>
+                </div>
+              </a>
+              <a class="border-secondary opacity-100 flex items-start text-left bg-white border-2 px-5 py-3 rounded-sm shadow-md transition duration-300 ease-in-out"
+                href="/blackburn-sign-company">
+                <svg class="w-8 h-8 fill-current text-primary shrink-0 mt-1 mr-4" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                </svg>
+                <div>
+                  <div class="text-slate-800 font-medium mb-1">Blackburn Sign Company</div>
+                  <div class="text-slate-500">As Blackburn's 3rd oldest business we have served our town for over 70
+                    years
+                    crafting bespoke signs for the local community.</div>
+                </div>
+              </a>
+            </div>
           </div>
 
         </div>

@@ -3,23 +3,25 @@
 <div class="max-w-6xl mx-auto px-4 sm:px-6 items-center justify-center w-full pt-20 md:pt-16">
 
     <div class="mt-6 md:mt-12">
+
+        <!-- Section header -->
         <div class="text-center pb-6 md:pb-12">
             <h1 class="text-4xl md:text-5xl font-bold mb-6 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] aos-init aos-animate"
-                data-aos="zoom-y-out" data-aos-delay="150">Are You Looking For <br class="max-lg:hidden">A London Sign
+                data-aos="zoom-y-out" data-aos-delay="150">Are You Looking For <br class="max-lg:hidden">A Blackburn
+                Sign
                 Company?</h1>
             <div class="max-w-3xl mx-auto">
                 <p class="text-lg text-gray-700 mb-8 aos-init aos-animate" data-aos="zoom-y-out" data-aos-delay="300">
-                    Do you want to capture the attention of London's diverse
-                    communities with business signs that make an impact?
-
-                    With over 30 years of experience crafting beautiful bespoke signs for businesses all across the
-                    city, we have the skillset in designing, producing, and
-                    installing everything from bold storefront signs to eye-catching vehicle wraps and striking
-                    illuminated displays.
-
-                    <br /><br /> Our commitment to quality and comprehensive aftercare
-                    service has
-                    earned us a reputable standing in London's signage landscape.
+                    Looking to make your brand stand out? Our Blackburn-based sign company is your perfect
+                    partner for high-impact, custom signage solutions.<br /><br />
+                    With over 70 years of experience and a passion for sign
+                    craftsmanship, we specialize in designing, producing, and installing everything from bold storefront
+                    signs to eye-catching pub signs and striking illuminated displays. We combine cutting-edge
+                    technology with traditional skills to deliver signage that not only looks incredible but also drives
+                    real results for your business.<br /><br /> Whether you're a small local shop or a large
+                    corporation, we offer
+                    tailored services to meet your exact needs — with fast turnaround times, competitive pricing, and
+                    unbeatable customer support.
                 </p>
                 <p class="text-lg font-medium text-gray-700 mb-8 aos-init aos-animate" data-aos="zoom-y-out"
                     data-aos-delay="300">
@@ -37,68 +39,33 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="grid gap-4">
             <div>
-                {{ with resources.Get "images/london/airport-signs-london.jpg" }}
+                {{ with resources.Get "images/blackburn/kawowy-raj-cafe-sign-blackburn.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Airport Signs London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Cafe Sign Blackburn" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/london/london-business-sign-amadeus.jpg" }}
+                {{ with resources.Get "images/blackburn/anord-mardix-industrial-sign.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="London Business Signs" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Blackburn Industrial Sign" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/london/bank-signs-london.jpg" }}
+                {{ with resources.Get "images/blackburn/blackburn-college-sign.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Bank Signs London" src="{{ $large }}" srcset="
-            {{- with $small -}}, {{.}} 300w{{- end -}}
-            {{- with $medium -}}, {{.}} 550w{{- end -}}
-            {{- with $large -}}, {{.}} 768w{{- end -}}">
-                {{ end }}
-            </div>
-        </div>
-        <div class="grid gap-4">
-            <div>
-                {{ with resources.Get "images/london/art-work-london.jpg" }}
-                {{ $small := (.Resize "300x webp q100").RelPermalink }}
-                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-                {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Art Work London" src="{{ $large }}" srcset="
-            {{- with $small -}}, {{.}} 300w{{- end -}}
-            {{- with $medium -}}, {{.}} 550w{{- end -}}
-            {{- with $large -}}, {{.}} 768w{{- end -}}">
-                {{ end }}
-            </div>
-            <div>
-                {{ with resources.Get "images/london/brickwork-sign-london.jpg" }}
-                {{ $small := (.Resize "300x webp q100").RelPermalink }}
-                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-                {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Brickwork Sign London" src="{{ $large }}" srcset="
-            {{- with $small -}}, {{.}} 300w{{- end -}}
-            {{- with $medium -}}, {{.}} 550w{{- end -}}
-            {{- with $large -}}, {{.}} 768w{{- end -}}">
-                {{ end }}
-            </div>
-            <div>
-                {{ with resources.Get "images/london/building-signs-london.jpg" }}
-                {{ $small := (.Resize "300x webp q100").RelPermalink }}
-                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-                {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Building Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Blackburn College Sign" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
@@ -107,33 +74,35 @@
         </div>
         <div class="grid gap-4">
             <div>
-                {{ with resources.Get "images/london/library-sign-stanmore.jpg" }}
+                {{ with resources.Get "images/blackburn/brownhill-sign-blackburn.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Library Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Brownhill Pub Sign Blackburn" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/london/park-sign-sony-3D.jpg" }}
+                {{ with resources.Get "images/blackburn/starkey-arms-pub-sign-blackburn.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Park Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Starkey Arms Pub Sign Blackburn" src="{{ $large }}"
+                    srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/london/theatre-signs-london.jpg" }}
+                {{ with resources.Get "images/blackburn/king-street-accounts-blackburn.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Theatre Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="King Street Accountants Sign Blackburn"
+                    src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
@@ -142,33 +111,70 @@
         </div>
         <div class="grid gap-4">
             <div>
-                {{ with resources.Get "images/london/estate-agent-signs-london.jpg" }}
+                {{ with resources.Get "images/blackburn/westholme-school-blackburn-sign.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Estate Agent Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Westholme School Sign Blackburn" src="{{ $large }}"
+                    srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/london/warehouse-signs-london.jpg" }}
+                {{ with resources.Get "images/blackburn/royal-oak-pub-sign-blackburn.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Warehouse Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Blackburn Royal Oak Pub Sign" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/london/internal-sign-london.jpg" }}
+                {{ with resources.Get "images/blackburn/icotherm-blackburn.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Internal Office Sign London" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Icotherm Blackburn Sign" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+                {{ with resources.Get "images/blackburn/refuel-sign-blackburn.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Gym Sign Blackburn" src="{{ $large }}" srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+            <div>
+                {{ with resources.Get "images/blackburn/exemplary-care-outdoor-sign.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Exemplary Care Outdoor Sign Blackburn" src="{{ $large }}"
+                    srcset="
+            {{- with $small -}}, {{.}} 300w{{- end -}}
+            {{- with $medium -}}, {{.}} 550w{{- end -}}
+            {{- with $large -}}, {{.}} 768w{{- end -}}">
+                {{ end }}
+            </div>
+            <div>
+                {{ with resources.Get "images/blackburn/haggate-pub-sign-blackburn.jpg" }}
+                {{ $small := (.Resize "300x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "700x webp q100").RelPermalink }}
+                <img class="h-auto max-w-full rounded-lg" alt="Haggate Pub Sign Blackburn" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
@@ -188,11 +194,13 @@
                 Why Clients Prefer
                 Us To Make Their Signs</h2>
             <p class="mb-4 text-gray-500 sm:text-xl dark:text-gray-400">Our clientele range from
-                the likes of Madam Tussauds right the way through to small boutiques on Kings Road in Chelsea.
+                the likes of JW Lees Pubs right the way through to small businesses, restaurants and cafes in the heart
+                of Blackburn town.
             </p>
             <p class="mb-8 text-gray-500 sm:text-xl dark:text-gray-400">Whether
-                you're looking for a modern sign design for your business in Shoreditch or a traditional look for your
-                business in Battersea we can design, produce and install specific to your business needs and location.
+                you're looking for a modern sign design for your shop store front or a traditional look for your
+                restaurant in Blackburn and surrounding areas we can design, produce and install specific to your
+                business needs and location.
             </p>
         </div>
         <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
@@ -251,7 +259,7 @@
 </section>
 
 <section>
-    <div class="max-w-7xl mx-auto pb-8 px-4">
+    <div class="w-full mx-auto pb-8 px-4">
         <h2
             class="text-center mb-16 text-2xl md:text-3xl lg:text4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Sign Making
@@ -351,7 +359,7 @@
                 <p class=" px-4 text-gray-500">Our craftsmen have over 54 years of expertise between them in creating
                     business signs. They are experts in their field and produce high quality signs in house tailored
                     specifically to the needs of our clients. Whether its a custom led sign or traditional acrylic
-                    business sign our signs are produced to highest quality in our sign shop in London.</p>
+                    business sign our signs are produced to highest quality in our sign shop in Blackburn.</p>
             </div>
             <div data-aos-delay="300" class="border rounded-xl bg-white p-6 text-center">
                 <div
@@ -423,7 +431,8 @@
                     Create Your Next Sign With The Sign Makers</h2>
                 <div>
                     <p class="text-white pb-4">
-                        Are you ready to join the many businesses that have elevated their brand's visibility in London?
+                        Are you ready to join the many businesses that have elevated their brand's visibility in
+                        Blackburn?
                     </p>
 
                     <p class="text-white pb-4">Discover how we can create bespoke signage

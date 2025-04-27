@@ -5,6 +5,6 @@ draft: false
 language: en
 type: page
 layout: london-sign-company
-description: London based sign company specialising in design, manufacturing,and installation of bespoke signs
+description: London based sign company specialising in sign design, sign manufacturing and sign installation
 ---
 
