@@ -14,7 +14,7 @@
                     Some of our articles </h2>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12 w-full">
-                {{ range ( last 3 ( where .Paginator.Pages "Type" "blog" ) ) }}
+                {{ range ( last 3 ( where .Site.Pages "Type" "blog" ).ByDate ) }}
                 <div class="">
                     <a href="{{.RelPermalink}}">
                         {{ $featured := .Params.featuredImage }}
