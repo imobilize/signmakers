@@ -163,11 +163,11 @@
                 {{ end }}
             </div>
             <div>
-                {{ with resources.Get "images/manchester/manchester-door-sign.jpg" }}
+                {{ with resources.Get "images/manchester/snug-van-graphics.jpg" }}
                 {{ $small := (.Resize "300x webp q100").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                 {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                <img class="h-auto max-w-full rounded-lg" alt="Manchester Door Sign" src="{{ $large }}" srcset="
+                <img class="h-auto max-w-full rounded-lg" alt="Van Graphics Manchester" src="{{ $large }}" srcset="
             {{- with $small -}}, {{.}} 300w{{- end -}}
             {{- with $medium -}}, {{.}} 550w{{- end -}}
             {{- with $large -}}, {{.}} 768w{{- end -}}">
