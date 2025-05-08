@@ -36,8 +36,31 @@
 
             <!-- Services Grid -->
 
-            <div class="mx-auto pt-4">
-                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-6">
+            <div class="mx-auto pt-4 lg:grid lg:grid-cols-2">
+
+                <div class="relative px-4 py-6 mx-auto sm:px-6">
+
+                    <div class="flex justify-center items-center">
+                        <div class="relative">
+                            <div class="absolute inset-0 pointer-events-none border-2 border-slate-700 mt-3 ml-3 translate-x-4 translate-y-4"
+                                aria-hidden="true"></div>
+                            <div class="mx-auto md:max-w-none">
+                                <script src="https://fast.wistia.com/player.js" async></script>
+                                <script src="https://fast.wistia.com/embed/2gmqxwrs6m.js" async type="module"></script>
+                                <style>
+                                    wistia-player[media-id='2gmqxwrs6m']:not(:defined) {
+                                        background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/2gmqxwrs6m/swatch');
+                                        display: block;
+                                        filter: blur(5px);
+                                    }
+                                </style> <wistia-player media-id="2gmqxwrs6m" aspect="0.5625"
+                                    style="height: 640px;"></wistia-player>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-1  xl:grid-cols-2 gap-x-6">
                     {{ range .Pages }}
                     <div class="">
                         <a class="group service-item" href="{{.RelPermalink}}">
@@ -69,6 +92,7 @@
                     </div>
                     {{ end }}
                 </div>
+
             </div>
         </div>
     </section>
