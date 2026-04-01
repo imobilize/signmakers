@@ -12,7 +12,6 @@ image2: "images/5.jpg"
 image3: "images/3.jpg"
 image5: "images/6.png"
 image16: "images/4.jpg"
-images: ["images/5.jpg"]
 keywords: ["Banners", "Custom Banners"]
 type: page
 layout: branding

@@ -14,7 +14,7 @@ darkmode_js = ["assets/js/darkmode.js"]
 enableInlineShortcodes = true
 timeout = 60000
 
-disableKinds = ["term", "taxonomy", "tags", "categories"]
+disableKinds = ["term", "taxonomy"]
 
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]

@@ -5,13 +5,10 @@ draft: false
 description:  Transform your celebration with our custom party signs! Whether it's a birthday, wedding, or corporate event, our signs add a personalized touch that leaves a lasting impression. Vibrant, fun, and designed just for you—your party deserves nothing less.
 featuredImage: "images/4.jpg"
 image: "images/1.jpg"
-images: ["images/1.jpg"]
-keywords: ["Branding", "Brand Building", "Business Brand"]
 type: page
 layout: branding
 subheading: "A Party that nobody forgets 💅"
 quotation: "Party signs are not just decorations; they're a way to express appreciation and set the tone for your event. Sign Makers is here to ensure you're the life of the party."
-image: "images/1.jpg"
 images: ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
 image1: "images/2.jpg"
 image2: "images/3.jpg"

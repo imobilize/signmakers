@@ -35,7 +35,7 @@ benefits:
 description3: "In a world where impressions matter, Sign Makers stands as your dedicated ally, shaping a brand identity that resonates with your audience. Let us be the brushstrokes that paint your business narrative across the canvas of consumer consciousness."
 heading4: "Digital Display Boards"
 paragraph4: "Digital display boards have a wide variety of jobs and can help you accomplish an array of challenges. Whether you need to help visitors get where they need to go, inform someone of all that your space has to offer as well as upcoming events, or welcome new prospects with brand recognition, this solution is the perfect tool for the job. In addition, Sign Makers’ platform allows you to easily update and edit your digital directory information, including brand messaging, tenant information, RSS feeds, and more."
-image4: "images/2.jpg"
+
 heading5: "Digital Kiosks"
 paragraph5: "Digital kiosks are self-contained sign options for helping you communicate multiple messages in the same compact space. They can be placed in a lobby, retail area, waiting area, hallway, break room, or any other location. They are an easily changeable option, and you can make immediate changes to the content by adding a media player to the digital kiosk. Scheduling of content can be executed locally or remotely over the internet."
 heading6: "Digital Menu Boards"

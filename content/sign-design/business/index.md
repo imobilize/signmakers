@@ -4,7 +4,6 @@ date: 2023-09-18T11:10:36+08:00
 draft: false
 language: en
 description: Our expert team handles every kind of sign boards, may it be a 3d sign, interior signboards, exterior signboards ensuring the top notch quality
-keywords: "Signs, Custom Signs, 3d Signs"
 featuredImage: "images/business-sign-design.jpg"
 image: "images/business-sign-design.jpg"
 images: ["images/business-sign-design.jpg"]
