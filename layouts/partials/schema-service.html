@@ -1,0 +1,19 @@
+{{ $image := "" }}
+{{ if .Params.featuredImage }}{{ with .Resources.GetMatch .Params.featuredImage }}{{ $image = .Permalink }}{{ end }}{{ else if .Params.image }}{{ $image = .Params.image | absURL }}{{ end }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": {{ .Title | jsonify }},
+  "description": {{ (.Description | default .Site.Params.description) | jsonify }},
+  "url": {{ .Permalink | jsonify }},
+  {{ with $image }}"image": {{ . | jsonify }},{{ end }}
+  "serviceType": {{ .Title | jsonify }},
+  "areaServed": "United Kingdom",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "The Sign Makers",
+    "@id": "https://thesignmakers.com/#organization"
+  }
+}
+</script>

@@ -1,0 +1,30 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ .Site.BaseURL | jsonify }}
+    }
+    {{ with .Parent }}
+    {{ if ne .RelPermalink "/" }}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ .Title | jsonify }},
+      "item": {{ .Permalink | jsonify }}
+    }
+    {{ end }}
+    {{ end }}
+    ,{
+      "@type": "ListItem",
+      "position": {{ if and .Parent (ne .Parent.RelPermalink "/") }}3{{ else }}2{{ end }},
+      "name": {{ .Title | jsonify }},
+      "item": {{ .Permalink | jsonify }}
+    }
+  ]
+}
+</script>

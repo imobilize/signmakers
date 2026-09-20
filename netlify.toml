@@ -65,3 +65,94 @@ from = "/fabricut"
 to = "/sign-manufacturing"
 status = 301
 force = true
+
+# --- Legacy URL cleanup added for SEO recovery (Sep 2026) ---
+# Old flat sign-manufacturing URLs -> current nested structure
+[[redirects]]
+from = "/sign-materials"
+to = "/sign-manufacturing/sign-materials/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-finishes"
+to = "/sign-manufacturing/sign-finishes/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-blanks"
+to = "/sign-manufacturing/sign-blanks/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-extras"
+to = "/sign-manufacturing/sign-extras-and-fixings/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-extras-and-spares"
+to = "/sign-manufacturing/sign-extras-and-fixings/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-trays"
+to = "/sign-manufacturing/sign-trays/"
+status = 301
+force = true
+
+# Old contact/quote paths
+[[redirects]]
+from = "/pages/contact"
+to = "/contact/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/welcome/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/en-us/"
+to = "/"
+status = 301
+force = true
+
+# Old portfolio path structure
+[[redirects]]
+from = "/project/*"
+to = "/portfolio/:splat"
+status = 301
+force = true
+
+# Legacy Shopify store paths (products/collections) -> catalogue / manufacturing hub
+[[redirects]]
+from = "/products/*"
+to = "/sign-manufacturing/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/collections/*"
+to = "/catalogue/"
+status = 301
+force = true
+
+# Legacy Shopify sandbox/web-pixel crawl artifacts -> homepage (not real content, just stop the 404s)
+[[redirects]]
+from = "/web-pixels*"
+to = "/"
+status = 301
+force = true
+
+# Legacy WordPress media paths -> homepage
+[[redirects]]
+from = "/wp-content/*"
+to = "/"
+status = 301
+force = true
