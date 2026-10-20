@@ -2216,6 +2216,10 @@ a:focus-visible, button:focus-visible {
   height: 2.5rem;
 }
 
+.h-11{
+  height: 2.75rem;
+}
+
 .h-12{
   height: 3rem;
 }
@@ -2290,6 +2294,10 @@ a:focus-visible, button:focus-visible {
 
 .h-\[200px\]{
   height: 200px;
+}
+
+.h-\[52px\]{
+  height: 52px;
 }
 
 .h-\[60rem\]{
@@ -2611,6 +2619,10 @@ a:focus-visible, button:focus-visible {
 
 .gap-1{
   gap: 0.25rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
 }
 
 .gap-12{
@@ -3552,6 +3564,10 @@ a:focus-visible, button:focus-visible {
   letter-spacing: 0em !important;
 }
 
+.tracking-\[0\.12em\]{
+  letter-spacing: 0.12em;
+}
+
 .tracking-\[0\.86px\]{
   letter-spacing: 0.86px;
 }
@@ -3708,6 +3724,10 @@ a:focus-visible, button:focus-visible {
   color: rgb(255 255 255 / 0.1);
 }
 
+.text-white\/80{
+  color: rgb(255 255 255 / 0.8);
+}
+
 .text-white\/90{
   color: rgb(255 255 255 / 0.9);
 }
@@ -3849,6 +3869,12 @@ a:focus-visible, button:focus-visible {
 
 .transition-all{
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -4726,6 +4752,49 @@ h3, h4, h5, h6 {
   content: var(--tw-content);
 }
 
+.after\:absolute::after{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:bottom-0::after{
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
+.after\:left-0::after{
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.after\:right-0::after{
+  content: var(--tw-content);
+  right: 0px;
+}
+
+.after\:h-\[3px\]::after{
+  content: var(--tw-content);
+  height: 3px;
+}
+
+.after\:bg-primary::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 79 79 / var(--tw-bg-opacity));
+}
+
+.after\:bg-transparent::after{
+  content: var(--tw-content);
+  background-color: transparent;
+}
+
+.after\:transition-colors::after{
+  content: var(--tw-content);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .hover\:border-primary-500:hover{
   --tw-border-opacity: 1;
   border-color: rgb(240 79 79 / var(--tw-border-opacity));
@@ -4849,6 +4918,12 @@ h3, h4, h5, h6 {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:after\:bg-primary:hover::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 79 79 / var(--tw-bg-opacity));
 }
 
 .focus\:border-primary-400:focus{
@@ -5896,16 +5971,16 @@ h3, h4, h5, h6 {
     display: none;
   }
 
-  .lg\:h-10{
-    height: 2.5rem;
+  .lg\:h-12{
+    height: 3rem;
   }
 
   .lg\:h-14{
     height: 3.5rem;
   }
 
-  .lg\:min-h-\[64px\]{
-    min-height: 64px;
+  .lg\:min-h-\[72px\]{
+    min-height: 72px;
   }
 
   .lg\:w-1\/2{
@@ -6010,16 +6085,14 @@ h3, h4, h5, h6 {
     margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:border-b-0{
+    border-bottom-width: 0px;
   }
 
   .lg\:border-r{
@@ -6222,10 +6295,6 @@ h3, h4, h5, h6 {
     margin-top: 0px;
   }
 
-  .xl\:h-11{
-    height: 2.75rem;
-  }
-
   .xl\:w-\[80\%\]{
     width: 80%;
   }
@@ -6244,12 +6313,6 @@ h3, h4, h5, h6 {
 
   .xl\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .xl\:space-x-7 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.75rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .xl\:px-48{
@@ -6302,9 +6365,5 @@ h3, h4, h5, h6 {
   .xl\:text-9xl{
     font-size: 8rem;
     line-height: 1;
-  }
-
-  .xl\:text-sm{
-    font-size: 0.875rem;
   }
 }
