@@ -1,0 +1,11 @@
+# Home page hero carousel. Each slide uses an image from a portfolio project.
+# page: portfolio page path · image: file inside that project's folder · label: caption shown on the slide
+# focus (optional): which part of the photo to keep when it's cropped, as CSS object-position, e.g. "center 20%" keeps the top
+slides:
+  - { page: "/portfolio/holcombe-tap",    image: "images/1.jpg",  label: "Holcombe Tap" }
+  - { page: "/portfolio/horse-farrier",   image: "images/1.jpeg", label: "Horse & Farrier" }
+  - { page: "/portfolio/mood",            image: "images/1.jpg",  label: "Mood – Gifts & Home", focus: "center 12%" }
+  - { page: "/portfolio/cock-bottle",     image: "images/1.png",  label: "Cock & Bottle" }
+  - { page: "/portfolio/golden-pheasant", image: "images/1.jpg",  label: "The Golden Pheasant" }
+  - { page: "/portfolio/the-fleece",      image: "images/1.jpg",  label: "The Fleece" }
+  - { page: "/portfolio/white-bull",      image: "images/1.jpg",  label: "White Bull", focus: "center 62%" }

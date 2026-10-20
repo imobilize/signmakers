@@ -1,0 +1,99 @@
+{{/* Home hero image carousel — modelled on the Goodwin & Goodwin hero slideshow.
+     Slides come from data/hero.yaml (portfolio page + image). Slides are rendered by Hugo
+     (not by Alpine) so the first image loads immediately and crawlers see real <img> tags. */}}
+{{- $slides := slice -}}
+{{- range site.Data.hero.slides -}}
+  {{- $cfg := . -}}
+  {{- with site.GetPage $cfg.page -}}
+    {{- $p := . -}}
+    {{- with $p.Resources.GetMatch $cfg.image -}}
+      {{- $lg := .Resize (printf "%dx webp q82" (cond (gt .Width 1600) 1600 .Width)) -}}
+      {{- $sm := .Resize "800x webp q78" -}}
+      {{- $slides = $slides | append (dict "lg" $lg "sm" $sm "label" $cfg.label "url" $p.RelPermalink "focus" (default "center" $cfg.focus)) -}}
+    {{- else -}}
+      {{- warnf "hero carousel: image %q not found in %s" $cfg.image $cfg.page -}}
+    {{- end -}}
+  {{- else -}}
+    {{- warnf "hero carousel: page %q not found" $cfg.page -}}
+  {{- end -}}
+{{- end -}}
+{{- $n := len $slides -}}
+{{- if gt $n 0 }}
+<section class="relative w-full overflow-hidden bg-ink" aria-roledescription="carousel" aria-label="Recent sign projects"
+  x-data="{
+    current: 0,
+    total: {{ $n }},
+    timer: null,
+    paused: false,
+    reduce: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+    touchX: null,
+    start() { if (this.reduce || this.total < 2) return; this.stop(); this.timer = setInterval(() => { if (!this.paused) this.next(false) }, 5000); },
+    stop() { if (this.timer) clearInterval(this.timer); this.timer = null; },
+    go(i, user = true) { this.current = (i + this.total) % this.total; if (user) this.start(); },
+    next(user = true) { this.go(this.current + 1, user) },
+    prev() { this.go(this.current - 1) },
+    swipeEnd(e) { if (this.touchX === null) return; const dx = e.changedTouches[0].clientX - this.touchX; if (Math.abs(dx) > 40) { dx < 0 ? this.next() : this.prev() } this.touchX = null; }
+  }"
+  x-init="start()"
+  @mouseenter="paused = true" @mouseleave="paused = false"
+  @focusin="paused = true" @focusout="paused = false"
+  @touchstart.passive="touchX = $event.touches[0].clientX" @touchend="swipeEnd($event)"
+  @keydown.arrow-right="next()" @keydown.arrow-left="prev()">
+
+  <!-- Slides (cross-fade) -->
+  <div class="relative aspect-[4/3] sm:aspect-[16/9] lg:aspect-[16/7] max-h-[640px] w-full">
+    {{- range $i, $s := $slides }}
+    <div class="absolute inset-0 transition-opacity duration-700 ease-in-out {{ if eq $i 0 }}opacity-100 z-10{{ else }}opacity-0 z-0{{ end }}"
+      :class="{ 'opacity-100 z-10': current === {{ $i }}, 'opacity-0 z-0': current !== {{ $i }} }"
+      role="group" aria-roledescription="slide" aria-label="{{ add $i 1 }} of {{ $n }}: {{ $s.label }}"
+      :aria-hidden="(current !== {{ $i }}).toString()">
+      <img src="{{ $s.lg.RelPermalink }}"
+        srcset="{{ $s.sm.RelPermalink }} {{ $s.sm.Width }}w, {{ $s.lg.RelPermalink }} {{ $s.lg.Width }}w"
+        sizes="100vw" width="{{ $s.lg.Width }}" height="{{ $s.lg.Height }}"
+        alt="{{ $s.label }} signage by The Sign Makers"
+        class="w-full h-full object-cover" style="object-position: {{ $s.focus | safeCSS }}"
+        {{ if eq $i 0 }}fetchpriority="high"{{ else }}loading="lazy"{{ end }} decoding="async">
+      <!-- Slide label (top-left), links to the project -->
+      <a href="{{ $s.url }}" tabindex="-1"
+        class="absolute top-3 left-3 sm:top-4 sm:left-4 z-20 bg-ink/60 hover:bg-ink/80 text-white text-xs sm:text-sm font-medium px-3 py-1 rounded transition-colors">{{ $s.label }}</a>
+    </div>
+    {{- end }}
+    <!-- Soft gradient so dots and buttons stay legible on bright photos -->
+    <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/45 to-transparent z-10 pointer-events-none" aria-hidden="true"></div>
+  </div>
+
+  {{- if gt $n 1 }}
+  <!-- Prev / next arrows -->
+  <button type="button" @click="prev()" aria-label="Previous slide"
+    class="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 z-20 bg-ink/40 hover:bg-ink/75 text-white w-9 h-9 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+  </button>
+  <button type="button" @click="next()" aria-label="Next slide"
+    class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 z-20 bg-ink/40 hover:bg-ink/75 text-white w-9 h-9 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+  </button>
+
+  <!-- Dots -->
+  <div class="absolute bottom-[4.25rem] sm:bottom-20 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+    {{- range $i, $s := $slides }}
+    <button type="button" @click="go({{ $i }})" aria-label="Go to slide {{ add $i 1 }}: {{ $s.label }}"
+      class="h-2 rounded-full transition-all duration-300 {{ if eq $i 0 }}w-6 bg-white{{ else }}w-2 bg-white/50{{ end }}"
+      :class="{ 'w-6 bg-white': current === {{ $i }}, 'w-2 bg-white/50 hover:bg-white/80': current !== {{ $i }} }"
+      :aria-current="(current === {{ $i }}).toString()"></button>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  <!-- Call-to-action buttons -->
+  <div class="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-20 flex justify-center gap-2 sm:gap-3 w-max max-w-[94vw]">
+    <a href="/portfolio/"
+      class="inline-flex items-center px-3 py-2.5 sm:px-6 sm:py-3 text-[11px] sm:text-sm cta-label text-white bg-ink rounded-lg hover:bg-primary transition-colors whitespace-nowrap">
+      View Portfolio <span class="ml-1.5 sm:ml-2" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="https://shop.thesignmakers.com" target="_blank" rel="noopener"
+      class="inline-flex items-center px-3 py-2.5 sm:px-6 sm:py-3 text-[11px] sm:text-sm cta-label text-white bg-primary rounded-lg hover:bg-ink transition-colors whitespace-nowrap">
+      Buy Signs Online <span class="ml-1.5 sm:ml-2" aria-hidden="true">&rsaquo;</span>
+    </a>
+  </div>
+</section>
+{{- end }}

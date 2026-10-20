@@ -106,8 +106,7 @@ How Can We Help
 
 We’ve been making signage for the sign trade for over 30 years. If you are looking for a new sign supplier, then see how Fabricut can help.
 
-[Contact Us](/contact)
-
+[Request Quote](/contact)
 * * *
 
 ![Sample Signs by Fabricut](images/sample-signs-min.png)
