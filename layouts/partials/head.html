@@ -37,8 +37,8 @@
 <script defer src="{{ $klaro.RelPermalink }}"></script>
 
 
-{{ $styles := resources.Get "/css/style.css" | postCSS }}
-{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+{{/* style.css is pre-built by Tailwind + autoprefixer (npm run build:css / npm start) */}}
+{{ $styles := resources.Get "/css/style.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
