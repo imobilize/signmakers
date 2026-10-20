@@ -2000,6 +2000,10 @@ a:focus-visible, button:focus-visible {
   margin-bottom: auto;
 }
 
+.-mb-\[64px\]{
+  margin-bottom: -64px;
+}
+
 .-ml-3{
   margin-left: -0.75rem;
 }
@@ -2294,10 +2298,6 @@ a:focus-visible, button:focus-visible {
 
 .h-\[200px\]{
   height: 200px;
-}
-
-.h-\[52px\]{
-  height: 52px;
 }
 
 .h-\[60rem\]{
@@ -3417,6 +3417,10 @@ a:focus-visible, button:focus-visible {
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.pt-\[73px\]{
+  padding-top: 73px;
 }
 
 .pt-\[var\(--header-height\2c 80px\)\]{
@@ -6089,10 +6093,6 @@ h3, h4, h5, h6 {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .lg\:border-b-0{
-    border-bottom-width: 0px;
   }
 
   .lg\:border-r{

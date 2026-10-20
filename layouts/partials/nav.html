@@ -6,7 +6,7 @@
   (dict "name" "Portfolio" "url" "/portfolio/")
 -}}
 <div class="top-0 z-50 w-full text-dark bg-gray-100 md:sticky">
-    <nav class="bg-white dark:bg-gray-900 fixed w-full z-50 top-0 start-0 border-b border-gray-200 lg:border-b-0 dark:border-gray-600"
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-50 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
         x-data="{ isOpen: false }" aria-label="Main">
 
         <!-- Top bar: menu toggle (mobile) · centred logo · Request Quote -->
@@ -36,19 +36,6 @@
             </div>
         </div>
 
-        <!-- Second bar (desktop): centred section links -->
-        <div class="hidden lg:block bg-ink">
-            <ul class="max-w-screen-xl mx-auto px-6 h-11 flex items-center justify-center gap-10">
-                {{- range $links }}
-                {{- $active := and (not .external) (hasPrefix $here .url) }}
-                <li class="h-full">
-                    <a href="{{ .url }}" {{ if .external }}target="_blank" rel="noopener"{{ end }} {{ if $active }}aria-current="page"{{ end }}
-                        class="relative h-full inline-flex items-center text-xs font-bold uppercase tracking-[0.12em] transition-colors duration-150 after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[3px] after:transition-colors {{ if $active }}text-white after:bg-primary{{ else }}text-white/80 hover:text-white after:bg-transparent hover:after:bg-primary{{ end }}">{{ .name }}</a>
-                </li>
-                {{- end }}
-            </ul>
-        </div>
-
         <!-- Mobile menu (unchanged layout) -->
         <div x-show="isOpen" x-cloak @click.outside="isOpen = false" class="lg:hidden border-t border-gray-200"
             id="navbar-sticky">
@@ -60,6 +47,21 @@
             </ul>
         </div>
     </nav>
-    <!-- Desktop spacer: the fixed header is taller here (top bar + link bar), so push content down to match -->
-    <div class="hidden lg:block h-[52px]" aria-hidden="true"></div>
+</div>
+
+<!-- Second bar (desktop only): section links. In normal page flow, so it scrolls away
+     while the top bar above stays fixed. Sits just below the 72px fixed top bar; the
+     negative bottom margin keeps page content where it was (pages already pad for the top bar). -->
+<div class="hidden lg:block relative z-40 pt-[73px] -mb-[64px]">
+        <div class="bg-ink">
+            <ul class="max-w-screen-xl mx-auto px-6 h-11 flex items-center justify-center gap-10">
+                {{- range $links }}
+                {{- $active := and (not .external) (hasPrefix $here .url) }}
+                <li class="h-full">
+                    <a href="{{ .url }}" {{ if .external }}target="_blank" rel="noopener"{{ end }} {{ if $active }}aria-current="page"{{ end }}
+                        class="relative h-full inline-flex items-center text-xs font-bold uppercase tracking-[0.12em] transition-colors duration-150 after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[3px] after:transition-colors {{ if $active }}text-white after:bg-primary{{ else }}text-white/80 hover:text-white after:bg-transparent hover:after:bg-primary{{ end }}">{{ .name }}</a>
+                </li>
+                {{- end }}
+            </ul>
+        </div>
 </div>
