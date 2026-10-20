@@ -2448,11 +2448,6 @@ a:focus-visible, button:focus-visible {
   width: 100%;
 }
 
-.w-max{
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -2479,10 +2474,6 @@ a:focus-visible, button:focus-visible {
 
 .max-w-\[85rem\]{
   max-width: 85rem;
-}
-
-.max-w-\[94vw\]{
-  max-width: 94vw;
 }
 
 .max-w-full{
@@ -3521,10 +3512,6 @@ a:focus-visible, button:focus-visible {
 
 .text-\[10px\]{
   font-size: 10px;
-}
-
-.text-\[11px\]{
-  font-size: 11px;
 }
 
 .text-\[22px\]{
@@ -4970,22 +4957,12 @@ h3, h4, h5, h6 {
   background-color: rgb(238 247 247 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-ink:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 36 36 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-ink\/75:hover{
   background-color: rgb(26 36 36 / 0.75);
 }
 
 .hover\:bg-ink\/80:hover{
   background-color: rgb(26 36 36 / 0.8);
-}
-
-.hover\:bg-primary:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 79 79 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-primary-50:hover{
@@ -5521,10 +5498,6 @@ h3, h4, h5, h6 {
     justify-content: space-between;
   }
 
-  .sm\:gap-3{
-    gap: 0.75rem;
-  }
-
   .sm\:space-x-4 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -5566,6 +5539,11 @@ h3, h4, h5, h6 {
     padding-right: 1.5rem;
   }
 
+  .sm\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .sm\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -5604,11 +5582,6 @@ h3, h4, h5, h6 {
   .sm\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .sm\:px-7{
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
   }
 
   .sm\:pt-0{
@@ -5955,11 +5928,6 @@ h3, h4, h5, h6 {
   .md\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .md\:py-36{
-    padding-top: 9rem;
-    padding-bottom: 9rem;
   }
 
   .md\:py-4{
