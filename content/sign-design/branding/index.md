@@ -3,7 +3,7 @@ title: "Branding"
 date: 2023-12-18T11:10:36+08:00
 draft: false
 language: en
-description: Crafting Your Brand Identity, Sign Branding, Business Branding, Brand Creation
+description: "Brand identity design from The Sign Makers: we create logos, colour schemes and branding, then carry them across your signs, shopfront and interior graphics."
 featuredImage: "images/branding.jpg"
 image: "images/branding.jpg"
 images: ["images/branding.jpg"]

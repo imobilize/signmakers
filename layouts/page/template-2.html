@@ -184,16 +184,16 @@
                 {{ $image := .Params.image12 }}
                 {{ with .Resources.GetMatch $image }}
                 {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
-                    title="{{ .Params.description }}" />
+                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                    title="{{ $.Title }}" />
                 {{ end }}
             </div>
             <div class="relative w-full">
                 {{ $image4 := .Params.image }}
                 {{ with .Resources.GetMatch $image4 }}
                 {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
-                    title="{{ .Params.description }}" />
+                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                    title="{{ $.Title }}" />
                 {{ end }}
             </div>
         </div>
@@ -208,8 +208,8 @@
                 {{ $image := .Params.image13 }}
                 {{ with .Resources.GetMatch $image }}
                 {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                <img src="{{ $postimage }}" class="w-3/4 rounded-2xl my-12 md:my-0" alt="{{ .Params.description }}"
-                    title="{{ .Params.description }}" />
+                <img src="{{ $postimage }}" class="w-3/4 rounded-2xl my-12 md:my-0" alt="{{ $.Title }} by The Sign Makers"
+                    title="{{ $.Title }}" />
                 {{ end }}
             </div>
             <div
@@ -240,8 +240,8 @@
                 {{ $image := .Params.image14 }}
                 {{ with .Resources.GetMatch $image }}
                 {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                <img src="{{ $postimage }}" class="w-3/4  rounded-2xl" alt="{{ .Params.description }}"
-                    title="{{ .Params.description }}" />
+                <img src="{{ $postimage }}" class="w-3/4  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                    title="{{ $.Title }}" />
                 {{ end }}
             </div>
         </div>
@@ -251,8 +251,8 @@
                 {{ $image := .Params.image15 }}
                 {{ with .Resources.GetMatch $image }}
                 {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
-                    title="{{ .Params.description }}" />
+                <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                    title="{{ $.Title }}" />
                 {{ end }}
             </div>
             <div
@@ -280,8 +280,8 @@
                 {{ $image := .Params.image16 }}
                 {{ with .Resources.GetMatch $image }}
                 {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                <img src="{{ $postimage }}" class="w-3/4  rounded-2xl" alt="{{ .Params.image1alt}}"
-                    title="{{ .Params.description }}" />
+                <img src="{{ $postimage }}" class="w-3/4  rounded-2xl" alt="{{ with .Params.image1alt }}{{ . }}{{ else }}{{ $.Title }} by The Sign Makers{{ end }}"
+                    title="{{ $.Title }}" />
                 {{ end }}
             </div>
         </div>
@@ -313,7 +313,7 @@
                         <div class="sm:mx-auto sm:flex sm:max-w-lg">
                             {{ with resources.Get "/images/appointmentsetting/cta.png" }}
                             {{ $together := .RelPermalink }}
-                            <img src="{{$together}}" class="w-full z-40 overflow-vissible" alt="">
+                            <img src="{{$together}}" class="w-full z-40 overflow-vissible" alt="{{ $.Title }} by The Sign Makers">
                             {{ end }}
                         </div>
                     </div>

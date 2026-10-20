@@ -18,7 +18,7 @@
                 {{ $medium := (.Resize "550x webp q80").RelPermalink }}
                 {{ $large := (.Resize "900x webp q80").RelPermalink }}
                 {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-                <img src="{{ $featuredimage }}" srcset="" alt="" class="w-1/2 rounded">
+                <img src="{{ $featuredimage }}" srcset="" alt="{{ $.Title }} by The Sign Makers" class="w-1/2 rounded">
                 {{end}}
             </div>
         </div>
@@ -47,7 +47,7 @@
                 {{ $medium := (.Resize "550x webp q80").RelPermalink }}
                 {{ $large := (.Resize "900x webp q80").RelPermalink }}
                 {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-                <img src="{{ $featuredimage }}" srcset="" alt="" class=" rounded-2xl mt-12 h-3/4">
+                <img src="{{ $featuredimage }}" srcset="" alt="{{ $.Title }} by The Sign Makers" class=" rounded-2xl mt-12 h-3/4">
                 {{end}}
 
             </div>

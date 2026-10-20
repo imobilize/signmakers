@@ -2,7 +2,7 @@
 title: "Interior Decor Signs"
 date: 2024-09-23T15:28:43+06:00
 draft: false
-description: The moment customers step inside your business, they immediately have an impression of who you are, what you do – and, most of all, if they want to do business with you.
+description: "Interior decor signs from The Sign Makers: feature walls, logo signs and graphics that give customers the right first impression inside your business."
 author: " "
 featuredImage: "images/11.jpg"
 image: "images/11.jpg"

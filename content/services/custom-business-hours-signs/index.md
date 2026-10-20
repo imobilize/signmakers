@@ -2,7 +2,7 @@
 title: "Custom Business Hour Signs"
 date: 2024-09-23T15:28:43+06:00
 draft: false
-description: Effectively conveying your business hours is crucial, and the optimal approach is through signage. However, your signs don't have to conform to the standard templates seen in countless businesses
+description: "Custom business hours signs from The Sign Makers: opening-times signs designed to match your brand, made for doors, windows and shopfronts."
 author: "The Signmakers"
 featuredImage: "images/5.jpg"
 image: "images/1.jpg"

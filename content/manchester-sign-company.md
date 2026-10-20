@@ -5,6 +5,7 @@ draft: false
 language: en
 type: page
 layout: manchester-sign-company
-description: Manchester based sign company specialising in sign design, sign manufacturing and sign installation
+description: "Manchester sign makers designing, manufacturing and installing bespoke shopfront, illuminated and commercial signs for businesses across Greater Manchester."
+seoTitle: "Manchester Sign Makers & Sign Company | The Sign Makers"
 ---
 

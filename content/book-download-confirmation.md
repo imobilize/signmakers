@@ -9,6 +9,9 @@ images: ["images/sign-makers-card.png"]
 description: Branding For Profit Book Email Sent submitted
 type: page
 layout: book-download-confirmation
+noindex: true
+sitemap:
+  disable: true
 ---
 
 ## Check Your Email

@@ -3,7 +3,7 @@ title: "Wayfinding Signs"
 subheading: "Elevating Brands Across Sectors"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: Sign Makers can assist you in effectively conveying these instructions with personalized wayfinding signs. These signs are particularly valuable in complex office hallways, hospital corridors, and extensive campuses.
+description: "Wayfinding signs from The Sign Makers that guide visitors through offices, hospitals, campuses and developments, designed, made and installed in-house."
 author: " "
 featuredImage: "images/7.jpg"
 image: "images/7.jpg"

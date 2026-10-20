@@ -72,7 +72,7 @@
             <div class="">
               <a href="{{.RelPermalink}}">
                 {{ $featured := .Params.featuredImage }}
-                {{ with .Resources.GetMatch $featured }}
+                {{ $imgPage := . }}{{ with .Resources.GetMatch $featured }}
                 {{ $small := (.Resize "400x webp q80").RelPermalink }}
                 {{ $medium := (.Resize "550x webp q80").RelPermalink }}
                 {{ $large := (.Resize "900x webp q80").RelPermalink }}
@@ -82,7 +82,7 @@
                   {{- with $medium -}}, {{.}} 550w{{- end -}}
                   {{- with $large -}}, {{.}} 768w{{- end -}}
                   {{- with $postimage -}}, {{.}} 1100w{{- end -}}" class="w-full rounded-lg" width="100%"
-                  alt="{{ .Params.title }}" />
+                  alt="{{ $imgPage.Title }}" />
                 {{ end }}
                 <div class="mt-4">
                   {{ range $elem_index, $elem_val := (.GetTerms "tags") }}

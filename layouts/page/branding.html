@@ -24,8 +24,8 @@
                 {{ $featured := .Params.image1 }}
                 {{ with .Resources.GetMatch $featured }}
                 {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                <img src="{{ $postimage }}" class="w-full bg-cover rounded-2xl" alt="{{ .Params.description }}"
-                    title="{{ .Params.description }}" />
+                <img src="{{ $postimage }}" class="w-full bg-cover rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                    title="{{ $.Title }}" />
                 {{ end }}
             </div>
 
@@ -65,8 +65,8 @@
                         {{ $image4 := .Params.benefits.icon1 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := .RelPermalink }}
-                        <img src="{{ $postimage }}" class="h-32  rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
+                        <img src="{{ $postimage }}" class="h-32  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                            title="{{ $.Title }}" />
                         {{ end }}
                     </div>
                     <!-- {{ with resources.Get "images/telemarketing/icons/leads.png" }}
@@ -86,8 +86,8 @@
                         {{ $image4 := .Params.benefits.icon2 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := .RelPermalink }}
-                        <img src="{{ $postimage }}" class="h-32  rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
+                        <img src="{{ $postimage }}" class="h-32  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                            title="{{ $.Title }}" />
                         {{ end }}
                     </div>
 
@@ -102,8 +102,8 @@
                         {{ $image4 := .Params.benefits.icon3 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := .RelPermalink }}
-                        <img src="{{ $postimage }}" class="h-32  rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
+                        <img src="{{ $postimage }}" class="h-32  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                            title="{{ $.Title }}" />
                         {{ end }}
                     </div>
 
@@ -132,8 +132,8 @@
                     {{ $image4 := .Params.image2 }}
                     {{ with .Resources.GetMatch $image4 }}
                     {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                    <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
-                        title="{{ .Params.description }}" />
+                    <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                        title="{{ $.Title }}" />
                     {{ end }}
                 </div>
             </div>
@@ -174,8 +174,8 @@
                         {{ $image4 := .Params.image3 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
+                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                            title="{{ $.Title }}" />
                         {{ end }}
                     </div>
                 </div>
@@ -194,8 +194,8 @@
                         {{ $image4 := .Params.image16 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
+                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                            title="{{ $.Title }}" />
                         {{ end }}
                     </div>
                 </div>
@@ -236,8 +236,8 @@
                         {{ $image4 := .Params.image5 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
+                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                            title="{{ $.Title }}" />
                         {{ end }}
                     </div>
                 </div>

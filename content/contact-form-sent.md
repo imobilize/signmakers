@@ -7,6 +7,7 @@ language: en
 image: "images/sign-makers-card.png"
 images: ["images/sign-makers-card.png"]
 description: Contact us form submitted
+noindex: true
 sitemap:
   disable: true
 ---

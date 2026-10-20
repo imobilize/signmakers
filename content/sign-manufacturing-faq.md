@@ -3,7 +3,7 @@ title: Sign Manufacturing FAQ
 date: 2025-03-18T03:10:36.000Z
 draft: false
 language: en
-description: "Read the most popular questions we get asked at The Sign Makers by our sign trade clients."
+description: "Sign FAQs from The Sign Makers: planning permission, fading and tarnishing, sign blanks, installing on different surfaces, LED signs and bulk orders."
 image: "images/sign-makers-card.png"
 images: ["images/sign-makers-card.png"]
 keywords: "Sign Makers, FAQ"

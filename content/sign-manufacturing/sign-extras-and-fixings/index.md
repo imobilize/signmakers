@@ -65,7 +65,7 @@ Simply attach the “stand off” stud part to the wall or display unit. Then pu
 
 * * *
 
-![](images/fabricut-sign-fixings.vhb-tape-min.png)
+![VHB tape sign fixings](images/fabricut-sign-fixings.vhb-tape-min.png)
 
 Very High Bonding (VHB) Tape
 ----------------------------

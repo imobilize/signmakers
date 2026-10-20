@@ -3,10 +3,11 @@ title: Book A Call
 date: 2021-12-18T03:10:36.000Z
 draft: false
 language: en
-description: ""
+description: "Book a free call with The Sign Makers to talk through your sign project, from design ideas and materials to manufacture, installation and budget."
 image: "images/sign-makers-card.png"
 images: ["images/sign-makers-card.png"]
 keywords: ""
+seoTitle: "Book a Consultation | The Sign Makers"
 ---
 
 

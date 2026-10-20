@@ -3,12 +3,13 @@ title: Sample Signs
 date: 2025-03-18T03:10:36.000Z
 draft: false
 language: en
-description: "Eye catching sample sign boards for you to display in your showroom from The Sign Makers. Complete our online order form with your enquiry today"
+description: "Order eye-catching sample sign boards from The Sign Makers to display in your showroom, showing finishes such as halo lighting and built-up letters."
 image: "images/sign-makers-card.png"
 images: ["images/sign-makers-card.png"]
 keywords: "Sign Makers, Sample Signs"
 type: page
 layout: faq
+seoTitle: "Sample Sign Boards | The Sign Makers"
 ---
 
 Sample Signs

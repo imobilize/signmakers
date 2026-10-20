@@ -5,7 +5,7 @@ draft: false
 language: en
 image: "images/sign-makers-card.png"
 images: ["images/sign-makers-card.png"]
-description: Privacy policy
+description: "How The Sign Makers collect, use and protect your personal data when you use our website, request a quote or work with us, and what your rights are."
 ---
 
 ### 1. INTRODUCTION  

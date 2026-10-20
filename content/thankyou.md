@@ -10,6 +10,9 @@ images: ["images/sign-makers-card.png"]
 keywords: "Sign Makers"
 type: page
 layout: thankyou
+noindex: true
+sitemap:
+  disable: true
 ---
 
 

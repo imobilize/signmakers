@@ -3,7 +3,7 @@ title: "Terms And Conditions"
 date: 2023-04-10T11:10:36+08:00
 draft: false
 language: en
-description: Terms and conditions
+description: "The terms and conditions that apply when you order sign design, manufacturing and installation services from The Sign Makers or use our website."
 ---
 
 ### BINDING EFFECT

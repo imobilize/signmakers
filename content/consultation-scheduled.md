@@ -8,6 +8,9 @@ description: ""
 image: "images/sign-makers-card.png"
 images: ["images/sign-makers-card.png"]
 keywords: "Sign Makers"
+noindex: true
+sitemap:
+  disable: true
 ---
 
 ## Your free consultation has been scheduled

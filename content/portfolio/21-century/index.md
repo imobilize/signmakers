@@ -2,7 +2,7 @@
 title: "21 Century"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "Compact, high-impact signage for Century 21 Luxe Residential: a dark tray sign with gold lettering and a matching entrance panel that make a small frontage feel premium."
+description: "A compact tray sign and entrance panel for Century 21 Luxe Residential, with gold lettering on a dark finish that makes a narrow frontage feel premium."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"

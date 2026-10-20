@@ -9,4 +9,7 @@ layout: fabricut
 image: "images/sign-makers-card.png"
 images: ["images/sign-makers-card.png"]
 keywords: "Sign Makers, The Sign Makers, Sign Manufacturing"
+noindex: true
+sitemap:
+  disable: true
 ---

@@ -3,7 +3,7 @@ title: "Yard and Lawn Signs"
 date: 2020-09-23T15:28:43+06:00
 draft: false
 subheading: Yard and lawn signs come in various sizes, shapes, and colors and can be personalized to align with your brand.
-description: Are you aiming to attract potential customers to your business? An effective way to do so is by using site signs that introduce your identity. Yard and lawn signs come in various sizes, shapes, and colors and can be personalized to align with your brand. Sign Makers offers these signs to meet your visual communication needs
+description: "Yard and lawn signs from The Sign Makers: personalised outdoor site signs in a range of sizes and shapes to introduce your business and attract customers."
 author: " "
 featuredImage: "images/5.jpg"
 image: "images/5.jpg"

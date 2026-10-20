@@ -2,7 +2,7 @@
 title: "Medical Safety Signs"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: Ensure that everyone in your facility is aware of your unwavering commitment to their safety. Medical safety signs play a vital role in protecting and informing patients about risks, biohazards, and safety procedures.
+description: "Medical safety signs from The Sign Makers that inform patients and staff about risks, biohazards and safety procedures in clinics and healthcare settings."
 author: " "
 featuredImage: "images/4.jpg"
 image: "images/4.jpg"

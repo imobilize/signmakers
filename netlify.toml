@@ -19,12 +19,14 @@ command = "hugo --gc --minify --buildFuture"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.141.0"
+HUGO_NOINDEX = "true"  # keep preview builds out of Google
 
 [context.branch-deploy]
 command = "hugo --gc --minify"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.141.0"
+HUGO_NOINDEX = "true"  # keep preview builds out of Google
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"

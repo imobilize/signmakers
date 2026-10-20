@@ -13,3 +13,9 @@
     <li aria-current="page" class="text-secondary">{{ .LinkTitle }}</li>
   </ol>
 </nav>
+{{- /* Matching BreadcrumbList structured data */ -}}
+{{- $items := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" ("/" | absURL)) -}}
+{{- $pos := 1 -}}
+{{- range .Ancestors.Reverse -}}{{- if not .IsHome -}}{{- $pos = add $pos 1 -}}{{- $items = $items | append (dict "@type" "ListItem" "position" $pos "name" .LinkTitle "item" .Permalink) -}}{{- end -}}{{- end -}}
+{{- $items = $items | append (dict "@type" "ListItem" "position" (add $pos 1) "name" .LinkTitle "item" .Permalink) }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $items | jsonify | safeJS }}</script>

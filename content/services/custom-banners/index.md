@@ -3,7 +3,7 @@ title: "Custom Banners"
 date: 2024-09-23T15:28:43+06:00
 draft: false
 language: en
-description: Make your brand or event unforgettable with our custom banners. Designed to stand out, our banners are perfect for any occasion—whether it's a grand opening, trade show, or special event. Durable, eye-catching, and tailored to your needs, these banners are the ultimate attention-grabber.
+description: "Custom banners designed and printed by The Sign Makers for grand openings, trade shows and events: durable, eye-catching and tailored to your brand."
 featuredImage: "images/5.jpg"
 image: "images/5.jpg"
 images: ["images/5.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
