@@ -2,7 +2,7 @@
 title: "Brood"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Sign Makers brought Brood at Borough Market to life with vibrant LED acrylic-style 'neon' letters. Installed ahead of their reopening, the signage adds a bold, welcoming vibe, perfect for drawing in hungry customers."
+description: "Vibrant LED acrylic 'neon' lettering for Brood at Borough Market, supplied and installed ahead of their reopening."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,9 +14,15 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
- Brood at Borough Market needed new LED acrylic-style ‘neon’ letters to refresh their signage in time for their reopening.
+## The Brief
+Brood at Borough Market needed new LED acrylic-style "neon" letters to refresh their signage in time for their reopening. The unit sits within a railway arch with a striking blue arched frontage, so the lettering needed to stand out against a bold colour and be visible to the crowds moving through the market.
 
+## What We Delivered
+- Illuminated LED acrylic letters spelling out "BROOD" across the arched fascia, sized to fill the space confidently.
+- A second, smaller set of letters on the shutter box at street level, so the name is visible whether the shutters are up or down.
+- Supply and installation well ahead of the reopening date, giving the team time to get everything else ready.
 
-## About the Process:
-We supplied and installed the vibrant LED letters well ahead of their reopening date. The signage adds a lively and inviting touch to the market, helping Brood attract customers as they get ready to serve their delicious food again.
+## The Result
+The crisp white letters pop against the deep blue frontage and give Brood a lively, welcoming look. LED "neon" gives the classic glow of traditional neon with lower running costs and a longer life, making it a practical choice for a busy food business that wants to be seen.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

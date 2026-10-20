@@ -2,7 +2,7 @@
 title: "Kings Road Park"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Sign Makers designed and installed elegant signage for the marketing suite at King's Road Park, reflecting the development's exclusivity. A blend of precision and style, enhancing the suite’s sophisticated atmosphere."
+description: "Elegant marketing-suite signage for King's Road Park, London SW6, by St William: brushed gold lettering, projecting signs and a welcome wall."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,9 +14,17 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
-For the Kings Road Park , our client wanted a blend of signage for the marketing suite at King's Road Park that would reflect the elegance and exclusivity of the development.
+## The Brief
+The client wanted a blend of signage for the marketing suite at King's Road Park in London SW6, a development by St William. The signs needed to reflect the elegance and exclusivity of the development.
 
-## About the Process:
+## What We Delivered
+- A projecting sign at the entrance with the King's Road Park name and emblem in a brushed metallic gold finish.
+- Built-up gold lettering on the entrance canopy.
+- A gold sign panel inside, carrying the King's Road Park name and "London SW6".
+- A welcome wall reading "Welcome to King's Road Park" with the St William logo, framed by butterfly motifs that echo the development's branding.
+- Design, manufacture and installation handled with precision from start to finish.
 
- We carefully crafted a variety of signs, ensuring each piece aligned with the high-end aesthetic of King's Road Park. From design to installation, every step was handled with precision to create a cohesive and visually appealing signage solution that enhances the marketing suite's environment.
+## The Result
+Every piece aligns with the high-end look of King's Road Park. The warm gold finishes work beautifully against the suite's deep teal and grey palette, creating a cohesive scheme that makes visitors feel they've arrived somewhere special.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

@@ -1,41 +1,51 @@
 {{define "main"}}
-{{ partial "schema-breadcrumb.html" . }}
 
 <section class="relative md:pb-24 md:pt-12 pb-16 pt-6">
 
   <div class="container mx-auto pt-12">
     <div class="">
+      <div class="px-2 md:px-5">{{ partial "breadcrumb.html" . }}</div>
       <h1 class="my-3 p-2 md:p-5 text-4xl md:text-5xl xl:text-5xl font-medium tracking-tight mx-auto text-left">{{ .Title
         }}</h1>
       <div class="flex my-4 container lg:my-8">
         {{ range $elem_index, $elem_val := (.GetTerms "categories") }}
         <a href="{{.RelPermalink}}" class="uppercase pb-4 pr-4"><span
-            class="inline-block bg-purple-100 text-purple-800 py-1 px-3 rounded-full text-sm uppercase tracking-wider">{{
+            class="inline-block bg-secondary-100 text-secondary-800 py-1 px-3 rounded-full text-sm uppercase tracking-wider">{{
             .LinkTitle }}</span></a>
         {{- end -}}
       </div>
+      {{/* Gallery: only images that exist in this project's folder, no duplicates.
+           Order: image1-image4 / featuredImage from front matter first, then any other photos.
+           Images under 400px wide (placeholders) are skipped. */}}
+      {{- $page := . -}}
+      {{- $imgs := slice -}}
+      {{- range slice .Params.image1 .Params.image2 .Params.image3 .Params.image4 .Params.featuredImage -}}
+        {{- with . -}}{{- with $page.Resources.GetMatch . -}}{{- if and (ge .Width 400) (not (in $imgs .)) -}}{{- $imgs = $imgs | append . -}}{{- end -}}{{- end -}}{{- end -}}
+      {{- end -}}
+      {{- range $page.Resources.ByType "image" -}}{{- if and (ge .Width 400) (not (in $imgs .)) -}}{{- $imgs = $imgs | append . -}}{{- end -}}{{- end -}}
+      {{- $thumbs := after 1 $imgs | first 4 -}}
+      {{- with index $imgs 0 }}
       <div class="container mx-auto">
         <div class="flex flex-col md:flex-row gap-2 my-8">
           <div class="flex flex-1 flex-col">
-            <div class="flex flex-1 flex-col">
-              <!-- img_01 (main image) -->
-              <img class="object-cover h-full w-full rounded-lg" src="{{ .Params.image1 }}" alt="Main Image">
-            </div>
+            {{- $main := .Resize (printf "%dx webp q82" (cond (gt .Width 1200) 1200 .Width)) }}
+            <img class="object-cover h-full w-full rounded-lg {{ if not $thumbs }}max-h-[640px]{{ end }}" src="{{ $main.RelPermalink }}"
+              width="{{ $main.Width }}" height="{{ $main.Height }}" alt="{{ $page.Title }} signage by The Sign Makers" fetchpriority="high">
           </div>
+          {{- with $thumbs }}
           <div class="flex flex-1">
-            <div class="grid grid-cols-2 gap-2">
-              <!-- img_02 -->
-              <img class="object-cover h-64 w-full rounded-lg" src="{{ .Params.image2 }}" alt="Image 2">
-              <!-- img_03 -->
-              <img class="object-cover h-64 w-full rounded-lg" src="{{ .Params.image3 }}" alt="Image 3">
-              <!-- img_04 -->
-              <img class="object-cover h-64 w-full rounded-lg" src="{{ .Params.image4 }}" alt="Image 4">
-              <!-- img_05 (duplicate of img_01 or you can use another image) -->
-              <img class="object-cover h-64 w-full rounded-lg" src="{{ .Params.image1 }}" alt="Image 5">
+            <div class="grid {{ if gt (len .) 1 }}grid-cols-2{{ else }}grid-cols-1{{ end }} gap-2 w-full">
+              {{- range $i, $t := . }}
+              {{- $th := $t.Resize (printf "%dx webp q80" (cond (gt $t.Width 700) 700 $t.Width)) }}
+              <img class="object-cover {{ if le (len $thumbs) 2 }}h-full min-h-64{{ else }}h-64{{ end }} w-full rounded-lg" src="{{ $th.RelPermalink }}"
+                width="{{ $th.Width }}" height="{{ $th.Height }}" loading="lazy" alt="{{ $page.Title }} signage, photo {{ add $i 2 }}">
+              {{- end }}
             </div>
           </div>
+          {{- end }}
         </div>
       </div>
+      {{- end }}
     </div>
     <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
       <div class="lg:col-span-10 md:col-span-6">
@@ -44,20 +54,6 @@
             {{ .Content }}
           </article>
         </div>
-        <script>
-          function getImageUrl(index) {
-            // Define an array containing the image URLs corresponding to featuredImage, image1, image2, image3
-            const imageUrls = [
-              '{{ .Params.featuredImage }}',
-              '{{ .Params.image1 }}',
-              '{{ .Params.image2 }}',
-              '{{ .Params.image3 }}',
-            ];
-
-            // Return the URL of the image based on the index (1-based)
-            return imageUrls[index - 1];
-          }
-        </script>
       </div>
     </div>
   </div>

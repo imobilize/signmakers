@@ -1,0 +1,12 @@
+{{/* Shared hero for service pages: breadcrumb, H1 and optional subheading.
+     Gives every service page the same heading style regardless of template. */}}
+<section class="relative overflow-hidden bg-ice-light">
+  <div class="absolute inset-0 bg-pattern-jade opacity-60 [mask-image:linear-gradient(to_bottom,white,transparent)]" aria-hidden="true"></div>
+  <div class="relative max-w-screen-xl mx-auto px-4 lg:px-8 pt-20 pb-12 md:pb-16">
+    {{ partial "breadcrumb.html" . }}
+    <div class="mt-8 md:mt-12 max-w-3xl mx-auto text-center">
+      <h1 class="text-ink">{{ .Title }}</h1>
+      {{ with .Params.subheading }}<p class="service-lead mt-4 text-gray-700">{{ . }}</p>{{ end }}
+    </div>
+  </div>
+</section>

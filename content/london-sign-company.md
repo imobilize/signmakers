@@ -5,6 +5,7 @@ draft: false
 language: en
 type: page
 layout: london-sign-company
-description: London based sign company specialising in sign design, sign manufacturing and sign installation
+description: "London sign makers designing, manufacturing and installing bespoke shopfront, illuminated and commercial signs for businesses and developers across London."
+seoTitle: "London Sign Makers & Sign Company | The Sign Makers"
 ---
 

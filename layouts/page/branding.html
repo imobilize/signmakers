@@ -1,41 +1,15 @@
 {{ define "main" }}
+<div class="service-page">
 
-<section class="relative overflow-hidden {{ .Params.color }} pb-12 pt-32 sm:pb-16  lg:pb-24 xl:pb-32 xl:pt-40">
-    <div class="relative z-10">
-        <div
-            class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
-            <svg class="h-[60rem] w-[100rem] flex-none stroke-secondary opacity-20" aria-hidden="true">
-                <defs>
-                    <pattern id="e9033f3e-f665-41a6-84ef-756f6778e6fe" width="200" height="200" x="50%" y="50%"
-                        patternUnits="userSpaceOnUse" patternTransform="translate(-100 0)">
-                        <path d="M.5 200V.5H200" fill="none"></path>
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)">
-                </rect>
-            </svg>
-        </div>
-    </div>
-    <div class="relative z-20 mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                {{ .Title }}
-            </h1>
-            <h2 class="mt-6 text-lg leading-8 font-medium font-poppins text-gray-600">
-                {{ .Params.subheading }}
-            </h2>
-        </div>
-    </div>
-
-</section>
+{{ partial "service-hero.html" . }}
 
 <section class="bg-white">
     <div class="container mx-auto">
         <div class="flex flex-row justify-center">
             <div>
-                <h2 class="py-12 md:py-36 text-2xl md:text-4xl max-w-5xl text-center font-poppins">
+                <p class="service-lead py-12 md:py-20 max-w-3xl mx-auto text-center text-gray-700">
                     {{ .Params.quotation }}
-                </h2>
+                </p>
                 <!-- <p class="text-xl max-w-2xl text-center">Branding projects are larger, more complex and take time. They should start at the very foundation of your business and build from there.
             <br><br>
                 This is not just about the creativity, that’s covered by Logo Design and Corporate Identity.</p> -->
@@ -50,8 +24,8 @@
                 {{ $featured := .Params.image1 }}
                 {{ with .Resources.GetMatch $featured }}
                 {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                <img src="{{ $postimage }}" class="w-full bg-cover rounded-2xl" alt="{{ .Params.description }}"
-                    title="{{ .Params.description }}" />
+                <img src="{{ $postimage }}" class="w-full bg-cover rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                    title="{{ $.Title }}" />
                 {{ end }}
             </div>
 
@@ -91,8 +65,8 @@
                         {{ $image4 := .Params.benefits.icon1 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := .RelPermalink }}
-                        <img src="{{ $postimage }}" class="h-32  rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
+                        <img src="{{ $postimage }}" class="h-32  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                            title="{{ $.Title }}" />
                         {{ end }}
                     </div>
                     <!-- {{ with resources.Get "images/telemarketing/icons/leads.png" }}
@@ -101,7 +75,7 @@
                         <img src="{{$together}}" class="w-auto" alt="asdasd">
                     </div>
                     {{ end }} -->
-                    <h4 class="text-2xl font-poppins text-center md:text-left font-bold">{{ .Params.benefits.heading1 }}
+                    <h4 class="text-2xl  text-center md:text-left font-bold">{{ .Params.benefits.heading1 }}
                     </h4>
                     <p class="font-medium text-center md:text-left  text-xl py-2">
                         {{ .Params.benefits.paragraph1 }}
@@ -112,12 +86,12 @@
                         {{ $image4 := .Params.benefits.icon2 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := .RelPermalink }}
-                        <img src="{{ $postimage }}" class="h-32  rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
+                        <img src="{{ $postimage }}" class="h-32  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                            title="{{ $.Title }}" />
                         {{ end }}
                     </div>
 
-                    <h4 class="text-2xl font-poppins text-center md:text-left  font-bold">{{ .Params.benefits.heading2
+                    <h4 class="text-2xl  text-center md:text-left  font-bold">{{ .Params.benefits.heading2
                         }}</h4>
                     <p class="font-medium  text-center md:text-left text-xl py-2">
                         {{ .Params.benefits.paragraph2 }}
@@ -128,12 +102,12 @@
                         {{ $image4 := .Params.benefits.icon3 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := .RelPermalink }}
-                        <img src="{{ $postimage }}" class="h-32  rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
+                        <img src="{{ $postimage }}" class="h-32  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                            title="{{ $.Title }}" />
                         {{ end }}
                     </div>
 
-                    <h4 class="text-2xl font-poppins  text-center md:text-left font-bold">{{ .Params.benefits.heading3
+                    <h4 class="text-2xl   text-center md:text-left font-bold">{{ .Params.benefits.heading3
                         }}</h4>
                     <p class="font-medium text-center md:text-left  text-xl py-2">
                         {{ .Params.benefits.paragraph3 }}
@@ -145,14 +119,7 @@
             <p class="text-base text-center">{{ .Params.description3 }}</span>.
             </p>
         </div>
-        <div class="flex justify-center">
-            <div class="max-w-7xl mx-auto mt-4">
-                <a href="/contact/"
-                    class="block px-5 py-3 text-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
-                    <span class="font-bold">Interested?</span> Contact Now
-                </a>
-            </div>
-        </div>
+        
     </div>
 </section>
 
@@ -165,8 +132,8 @@
                     {{ $image4 := .Params.image2 }}
                     {{ with .Resources.GetMatch $image4 }}
                     {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                    <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
-                        title="{{ .Params.description }}" />
+                    <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                        title="{{ $.Title }}" />
                     {{ end }}
                 </div>
             </div>
@@ -178,15 +145,11 @@
                 <p class="mb-4 max-w-xl text-base leading-relaxed text-left font-medium">
                     {{ .Params.paragraph4 }}
                 </p>
-                <a href="/contact/"
-                    class="block px-5 py-3 text-xl max-w-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
-                    <span class="font-bold">Interested?</span> Contact Now
-                </a>
+                
             </div>
 
 
         </div>
-    </div>
     </div>
 </section>
 
@@ -203,10 +166,7 @@
                     {{ .Params.paragraph5 }}
 
                 </p>
-                <a href="/contact/"
-                    class="block px-5 py-3 text-xl max-w-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
-                    <span class="font-bold">Interested?</span> Contact Now
-                </a>
+                
             </div>
             <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
                 <div class="relative w-full max-w-lg">
@@ -214,8 +174,8 @@
                         {{ $image4 := .Params.image3 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
+                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                            title="{{ $.Title }}" />
                         {{ end }}
                     </div>
                 </div>
@@ -234,8 +194,8 @@
                         {{ $image4 := .Params.image16 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
+                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                            title="{{ $.Title }}" />
                         {{ end }}
                     </div>
                 </div>
@@ -250,10 +210,7 @@
                     {{ .Params.paragraph6 }}
 
                 </p>
-                <a href="/contact/"
-                    class="block px-5 py-3 text-xl max-w-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
-                    <span class="font-bold">Interested?</span> Contact Now
-                </a>
+                
             </div>
         </div>
     </div>
@@ -271,10 +228,7 @@
                     {{ .Params.paragraph7 }}
 
                 </p>
-                <a href="/contact/"
-                    class="block px-5 py-3 text-xl max-w-xl text-center font-medium text-white bg-primary border border-red-500 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber-500 sm:px-10">
-                    <span class="font-bold">Interested?</span> Contact Now
-                </a>
+                
             </div>
             <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
                 <div class="relative w-full max-w-lg">
@@ -282,8 +236,8 @@
                         {{ $image4 := .Params.image5 }}
                         {{ with .Resources.GetMatch $image4 }}
                         {{ $postimage := (.Resize "600x webp q100").RelPermalink }}
-                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ .Params.description }}"
-                            title="{{ .Params.description }}" />
+                        <img src="{{ $postimage }}" class="w-full  rounded-2xl" alt="{{ $.Title }} by The Sign Makers"
+                            title="{{ $.Title }}" />
                         {{ end }}
                     </div>
                 </div>
@@ -293,4 +247,5 @@
     </div>
 </section>
 
+</div>
 {{ end }}

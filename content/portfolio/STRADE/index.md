@@ -2,7 +2,7 @@
 title: "Strade"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "Strade needed a complete signage overhaul to refresh their brand image. We provided rebranding, new signage installation, and custom oak post pictorial signs to elevate their visual identity. Trust Sign Makers for expert signage solutions."
+description: "Exterior signage for Strade, powered by SR Technics: built-up lettering on the building fascia and a freestanding entrance sign."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,14 +14,16 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
-For the Strade , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+## The Brief
+Strade needed exterior signage for their premises, a modern industrial unit with a full-height glazed entrance. The signage had to carry the Strade brand, including its distinctive orange "E" and the "powered by SR Technics" line, and make the building easy to identify from the road and the car park.
 
-## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
+## What We Delivered
+- Built-up "STRADE" lettering with the signature orange "E", mounted on a white panel above the main glazed entrance together with the "powered by SR Technics" strapline.
+- A matching sign on the corner fascia high up on the building, visible as visitors approach the site.
+- A freestanding post-mounted sign at the entrance to the car park, so visitors know they've arrived.
+- Manufacture and installation across the building and grounds.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+## The Result
+The building now carries the Strade brand consistently from the road to the front door. The dimensional lettering casts crisp shadows on the white panels, the orange accent picks out the brand at a distance, and the scheme gives the premises a clean, professional look that suits a technical business.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

@@ -2,7 +2,7 @@
 title: "Abbey Barnes Site Berkeley Homes"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "See the transformation at Abbey Barnes Site: new building signage, gable sign painting, and a bespoke oak post sign. The Sign Makers turned Berkeley Homes' vision into reality."
+description: "Signage for Berkeley Homes' Abbey Barnes sales and marketing suite: fascia lettering, Berkeley branding and a bold full-height feature panel."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,14 +14,15 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
-For the Abbey Barnes Site Berkeley Homes , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+## The Brief
+Berkeley Homes needed signage for the sales and marketing suite at their Abbey Barnes site. The building is a single-storey brick pavilion, and the signage had to announce the suite clearly to visitors arriving at the development while sitting comfortably within Berkeley's polished brand standards.
 
-## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
+## What We Delivered
+- Fascia signage on the dark band running around the top of the building, carrying "Sales and Marketing Suite" lettering and the Berkeley logo.
+- A full-height feature panel in a vivid yellow, carrying the development's emblem and name, which acts as a landmark visible from across the site.
+- Installation on a live construction site, working from scaffold towers alongside the landscaping and finishing trades so the suite was ready to open on time.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+## The Result
+The finished suite reads clearly from every approach: the dark fascia gives it a crisp outline, the Berkeley branding reassures visitors they're in the right place, and the bright feature panel gives the building a confident focal point. It's signage that does the practical job of guiding buyers in while adding to the sense of quality Berkeley wants every visitor to feel.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

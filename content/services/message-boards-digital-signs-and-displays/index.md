@@ -2,7 +2,7 @@
 title: "Message Boards, Digital Signs, and Displays"
 date: 2024-09-23T15:28:43+06:00
 draft: false
-description: Digital message boards and interactive signage are some of the best ways to convey your message to the right people at the right time. At Sign Makers, we can design these and other signs and graphics to help you communicate with your customers. Message boards and digital displays are a great way to promote specials, introduce customers to new products and services, celebrate achievements, and so much more.
+description: "Message boards, digital signs and displays from The Sign Makers to promote offers, events and updates to the right people at the right time."
 author: " "
 featuredImage: "images/5.jpg"
 image: "images/5.jpg"
@@ -42,7 +42,8 @@ heading6: "Digital Menu Boards"
 paragraph6: "Digital kiosks are self-contained sign options for helping you communicate multiple messages in the same compact space. They can be placed in a lobby, retail area, waiting area, hallway, break room, or any other location. They are an easily changeable option, and you can make immediate changes to the content by adding a media player to the digital kiosk. Scheduling of content can be executed locally or remotely over the internet. At Sign Makers, we offer cost-effective digital signage kiosks to create powerful visual communication. Make your message stand out - request a quote for a customized digital signage solution today!"
 heading7: "Digital Signage"
 paragraph7: "Digital signs combine video, graphics, sound, text, and animation to get your message to the right audience, at the right time. Sign Makers offers three types of digital sign solutions to meet your communication needs: a simple “plug and play” option, a web-based system, and a custom, multifaceted enterprise solution. Eye-catching digital signs attract attention with colorful and captivating content. Digital messaging can introduce new products or services, inform students about campus programs, promote offers and events, recognize staff achievements, and much more. Digital signs can boost sales, offer a high return on investment (ROI), and ultimately lead to greater customer satisfaction. Whether plug and play systems are what you need, or you prefer web-based systems or our multifaceted enterprise solution, Sign Makers truly has you covered in any capacity. We’re more than ready to solve your visual communications challenge with digital signs that help you increase your visibility and get your message out."
-color: "bg-gradient-to-br from-cyan-50 via-orange-50 to-violet-50"
+color: "bg-gradient-to-br from-secondary-50 via-primary-50 to-secondary-50"
+seoTitle: "Message Boards & Digital Signs | The Sign Makers"
 ---
 
 ## Project Your Message in a Variety of Ways

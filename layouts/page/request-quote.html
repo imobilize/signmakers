@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{/* Request a Quote — layout modelled on goodwinandgoodwin.com/request-quote:
+     breadcrumb, centred heading, HubSpot form on the left, phone number on the right. */}}
+<main class="pt-20 md:pt-16 pb-16 lg:pb-24 bg-white">
+  <div class="max-w-screen-xl mx-auto px-4 lg:px-8">
+
+    <!-- Breadcrumb -->
+    <div class="pt-2 lg:pt-4">{{ partial "breadcrumb.html" . }}</div>
+
+    <h1 class="mt-6 lg:mt-8 mb-10 lg:mb-14 text-center text-4xl md:text-5xl text-ink">Request a Quote</h1>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-0">
+
+      <!-- Left: HubSpot quote form -->
+      <section class="lg:pr-12 lg:border-r lg:border-gray-200" aria-labelledby="get-a-quote">
+        <h2 id="get-a-quote" class="text-3xl text-ink mb-6">Get a Quote</h2>
+        <script src="https://js-eu1.hsforms.net/forms/embed/148565206.js" defer></script>
+        <div class="hs-form-frame min-h-[600px]" data-region="eu1" data-form-id="d0601bee-f163-44cd-84de-935a2abf602d"
+          data-portal-id="148565206"></div>
+      </section>
+
+      <!-- Right: phone -->
+      <section class="lg:pl-12" aria-labelledby="give-us-a-call">
+        <h2 id="give-us-a-call" class="text-3xl text-ink mb-4">Give us a Call</h2>
+        <p class="text-gray-600 mb-6 max-w-md">Prefer to talk it through? Give us a call and one of our sign-making
+          experts will be happy to help.</p>
+        <a href="tel:+441254580166" class="inline-block text-3xl md:text-4xl font-bold tracking-wide text-primary hover:text-primary-600">01254 580166</a>
+      </section>
+
+    </div>
+  </div>
+</main>
+{{ end }}

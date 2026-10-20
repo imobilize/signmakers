@@ -1,10 +1,11 @@
 {{define "main"}}
+<div class="service-page">
+{{ partial "service-hero.html" . }}
 
 
-<section class="relative md:pb-24 md:pt-12 pb-16 pt-6">
+<section class="relative md:pb-24 md:pt-12 pb-16 pt-8">
 
     <div class="lg:container mx-auto">
-        {{ partial "single-page-nav" . }}
 
         <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
             <div class="lg:col-span-8 md:col-span-6">
@@ -21,7 +22,7 @@
                   {{- with $large -}}, {{.}} 768w{{- end -}}
                   {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
                         class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
-                        width="100%" alt="{{ .Params.title }}" />
+                        width="100%" alt="{{ $.Title }} by The Sign Makers" />
                     {{ end }}
 
                     <article class="prose dark:prose-invert lg:prose-xl mt-6">
@@ -37,4 +38,5 @@
     </div><!--end grid-->
 </section>
 
+</div>
 {{end}}

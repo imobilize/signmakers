@@ -2,7 +2,7 @@
 title: "JPL Caterings"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "JPL Caterings sought a complete signage overhaul to reflect a fresh and polished brand image. From rebranding to new signage installation, we delivered a visually stunning transformation. Trust Sign Makers for all your signage needs."
+description: "Fleet livery for JPL Catering, a leading provider of school catering services in London: flowing red ribbon graphics across cars and vans."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,14 +14,16 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
-For the JPL Caterings , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+## The Brief
+JPL Catering, a leading provider of school catering services in London, wanted its vehicles to carry a consistent, professional brand. With cars and vans travelling between schools every day, the fleet is one of the company's most visible forms of advertising.
 
-## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
+## What We Delivered
+- Livery for a mix of vehicles, including small electric cars and panel vans, all in the same scheme.
+- A flowing red ribbon graphic that sweeps along each vehicle's side and around the rear, giving the fleet movement and a sense of elegance.
+- The JPL Catering logo, the "Leading providers of school catering services, London" line and contact details on each vehicle.
+- Rear graphics, including service branding on the back doors of the vans.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+## The Result
+The clean white vehicles and bold red ribbon make JPL Catering's fleet instantly recognisable. Every journey now promotes the business, and the consistent livery reinforces the professional, reliable image that schools look for in a catering partner.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

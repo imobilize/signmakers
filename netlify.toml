@@ -19,12 +19,14 @@ command = "hugo --gc --minify --buildFuture"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.141.0"
+HUGO_NOINDEX = "true"  # keep preview builds out of Google
 
 [context.branch-deploy]
 command = "hugo --gc --minify"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.141.0"
+HUGO_NOINDEX = "true"  # keep preview builds out of Google
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
@@ -50,7 +52,7 @@ force = true
 
 [[redirects]]
 from = "/get-a-quote"
-to = "/contact"
+to = "/request-quote/"
 status = 301
 force = true
 
@@ -107,7 +109,7 @@ force = true
 # Old contact/quote paths
 [[redirects]]
 from = "/pages/contact"
-to = "/contact/"
+to = "/request-quote/"
 status = 301
 force = true
 
@@ -153,6 +155,225 @@ force = true
 # Legacy WordPress media paths -> homepage
 [[redirects]]
 from = "/wp-content/*"
+to = "/"
+status = 301
+force = true
+
+# Short sign-manufacturing URLs (old links) -> real pages
+[[redirects]]
+from = "/flat-cut-letters-and-signs"
+to = "/sign-manufacturing/flat-cut-letters-and-signs/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/flat-cut-letters-and-signs/"
+to = "/sign-manufacturing/flat-cut-letters-and-signs/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/built-up-letters-and-signs"
+to = "/sign-manufacturing/built-up-letters-and-signs/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/built-up-letters-and-signs/"
+to = "/sign-manufacturing/built-up-letters-and-signs/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-finishes/"
+to = "/sign-manufacturing/sign-finishes/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-materials/"
+to = "/sign-manufacturing/sign-materials/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-blanks/"
+to = "/sign-manufacturing/sign-blanks/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-trays/"
+to = "/sign-manufacturing/sign-trays/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-extras/"
+to = "/sign-manufacturing/sign-extras-and-fixings/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-extras-and-spares/"
+to = "/sign-manufacturing/sign-extras-and-fixings/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-extras-and-fixings"
+to = "/sign-manufacturing/sign-extras-and-fixings/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sign-extras-and-fixings/"
+to = "/sign-manufacturing/sign-extras-and-fixings/"
+status = 301
+force = true
+
+# Contact page moved to /request-quote (Oct 2026)
+[[redirects]]
+from = "/contact"
+to = "/request-quote/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/contact/"
+to = "/request-quote/"
+status = 301
+force = true
+
+# Blog removed (Oct 2026) — send old blog and article URLs to the home page
+[[redirects]]
+from = "/blog"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/blog/*"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/5-signage-ideas-to-boost-foot-traffic-for-businesses-in-2024"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/5-signage-ideas-to-boost-foot-traffic-for-businesses-in-2024/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/5-ways-to-increase-foot-traffic-to-your-business-with-signage-in-2024"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/5-ways-to-increase-foot-traffic-to-your-business-with-signage-in-2024/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/athelis"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/athelis/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/crafting-an-effective-sign-and-graphics-blueprint-for-your-business"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/crafting-an-effective-sign-and-graphics-blueprint-for-your-business/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/hive-awards-2019"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/hive-awards-2019/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/power-of-signage-in-rebranding-4-things-to-consider"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/power-of-signage-in-rebranding-4-things-to-consider/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/the-4-most-effective-signs-for-your-business"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/the-4-most-effective-signs-for-your-business/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/the-art-of-attraction-leveraging-color-trends-in-modern-signs-custom-visuals"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/the-art-of-attraction-leveraging-color-trends-in-modern-signs-custom-visuals/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/the-efficiency-of-digital-signage"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/the-efficiency-of-digital-signage/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/unleashing-the-power-of-signage-in-rebranding-4-things-to-consider"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/unleashing-the-power-of-signage-in-rebranding-4-things-to-consider/"
 to = "/"
 status = 301
 force = true

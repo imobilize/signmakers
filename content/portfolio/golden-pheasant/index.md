@@ -2,7 +2,7 @@
 title: "The Golden Pheasant"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "We gave The Golden Pheasant in Plumley a stunning facelift with hand-painted artwork, a large oak post sign, and traditional gold leaf lettering. A perfect blend of craftsmanship and elegance for this JW LEES Brewery gem."
+description: "A facelift for The Golden Pheasant in Plumley, owned by JW Lees: hand-painted artwork on the facade, a chunky oak post sign and traditional gold leaf lettering."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -15,15 +15,16 @@ keywords: "The Golden Pheasant, Branding, Signage, Sign Design, Design, interior
 categories: ["branding"]
 
 ---
-## What the Client Wanted
-The Golden Pheasant, located in Plumley, owned by JW LEES Brewery, required a nice face lift. This included the design, manufacture and fitting of signs. Along with an hand sign painted original art piece to the front elevation of the building.
 
-## About the Process:
-- Sign painted artwork to front elevation.
-- Produced a large, chunky, oak post sign.
-- Traditional hand made gold leaf lettering.
+## The Brief
+The Golden Pheasant in Plumley, owned by JW Lees Brewery, needed a facelift. The project covered the design, manufacture and fitting of new signs, along with an original hand-painted art piece on the front of the building.
 
+## What We Delivered
+- Hand-painted signwriting and artwork on the front elevation: "The Golden Pheasant, Plumley" in deep green alongside a colourful painted pheasant.
+- A large, chunky oak post sign carrying the pub's name and pheasant motif beneath a JW Lees crest.
+- Traditional handmade gold leaf lettering on a deep green background.
 
+## The Result
+The cream facade, deep green lettering and vivid pheasant give the pub a classic look with real personality. The gold leaf catches the light and adds a touch of luxury, and the oak post sign anchors the scheme at the roadside. The Golden Pheasant is a great example of how traditional sign crafts can give a pub lasting kerb appeal.
 
-Trust Sign Makers to revitalize your establishment's image with our expert signage solutions. We'll bring a fresh new look to your business, making it stand out in the center of Starkholmes.
-
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

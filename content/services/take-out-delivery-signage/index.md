@@ -3,7 +3,7 @@ title: "Take Out and Delivery Signs"
 date: 2020-09-23T15:28:43+06:00
 draft: false
 subheading: Offering take-out and delivery is an excellent way to cater to those who may not have the time to dine in.
-description: Offering take-out and delivery is an excellent way to cater to those who may not have the time to dine in. Sign Makers can assist you in conveying these services and more effectively
+description: "Take-out and delivery signs from The Sign Makers that promote collection and delivery services, guide customers and keep your branding consistent."
 author: " "
 featuredImage: "images/10.jpg"
 image: "images/10.jpg"
@@ -23,7 +23,7 @@ heading3: "Enhance Your Delivery Services with Sign Makers"
 paragraph3: "Are you a business owner seeking effective ways to enhance your delivery services? Look no further than Sign Makers! Our delivery signage solutions are customized to meet your specific requirements. With our high-quality delivery signs for business, you can create a professional and attention-grabbing image for your company. From custom delivery signs to informative directional signage, we have you covered. Our team of experts collaborates closely with you to design and produce signage that captures attention and enhances your brand visibility. Invest in delivery signage from Sign Makers today and witness the positive impact it can have on your business!"
 heading4: "Go Digital"
 paragraph4: "To make a significant impact with your signs and boost the visibility of the services you offer, digital signage is an excellent choice. This approach is especially effective if you have multiple messages to convey, wish to engage customers while they wait, or need to frequently update your message. Combining digital signage with static signage achieves a balanced approach and provides an effective means to inform and educate your customers. Our team is ready to assist you in finding the perfect blend of styles for your business."
-color: "bg-gradient-to-tr from-rose-50 via-orange-50 to-emerald-50"
+color: "bg-gradient-to-tr from-primary-50 via-primary-50 to-secondary-50"
 ---
 
 ## Clearly Advertise Your Services

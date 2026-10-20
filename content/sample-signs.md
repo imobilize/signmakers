@@ -3,12 +3,13 @@ title: Sample Signs
 date: 2025-03-18T03:10:36.000Z
 draft: false
 language: en
-description: "Eye catching sample sign boards for you to display in your showroom from Fabricut. Complete our online order form with your enquiry today"
+description: "Order eye-catching sample sign boards from The Sign Makers to display in your showroom, showing finishes such as halo lighting and built-up letters."
 image: "images/sign-makers-card.png"
 images: ["images/sign-makers-card.png"]
 keywords: "Sign Makers, Sample Signs"
 type: page
 layout: faq
+seoTitle: "Sample Sign Boards | The Sign Makers"
 ---
 
 Sample Signs
@@ -18,7 +19,7 @@ We have designed two eye catching **sample signs** for use by Architects, Design
 
 * * *
 
-{{< figure src="/images/fabricut/fabricut-halo-sample-sign-board-min.jpg" height="100" alt="Halo Sample Sign by Fabricut" class="left" >}}
+{{< figure src="/images/fabricut/fabricut-halo-sample-sign-board-min.jpg" height="100" alt="Halo Sample Sign by The Sign Makers" class="left" >}}
 
 
 Halo Sign Sample Board
@@ -30,7 +31,7 @@ Our **HALO sign sample board** consists of a combination of brushed and polished
 
 * * *
 
-{{< figure src="/images/fabricut/fabricut-multipurpose-sign-board-min.jpg" height="100" alt="Multi Purpose Sample Sign by Fabricut" class="left" >}}
+{{< figure src="/images/fabricut/fabricut-multipurpose-sign-board-min.jpg" height="100" alt="Multi Purpose Sample Sign by The Sign Makers" class="left" >}}
 
 
 

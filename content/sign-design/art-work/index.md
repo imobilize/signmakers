@@ -3,7 +3,7 @@ title: "Art Work"
 date: 2023-11-18T11:10:36+08:00
 draft: false
 language: en
-description: Our sign design services offer advice on styles, colours and typefaces. We are also happy to help in design and branding ideas.
+description: "Sign artwork and graphic design from The Sign Makers' in-house design team: logos, shopfront signs and interior displays, ready to manufacture and install."
 featuredImage: "images/sign-artwork.jpg"
 image: "images/sign-artwork.jpg"
 images: ["images/sign-artwork.jpg"]

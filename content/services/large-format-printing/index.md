@@ -3,7 +3,7 @@ title: "Large Format Printing"
 date: 2023-08-18T11:10:36+08:00
 draft: false
 language: en
-description: Large format printing opens up many more creative possibilities for clients and is the reason behind our continuing investment in new technology.
+description: "Large format printing from The Sign Makers: banners, posters and wall graphics printed in-house, with the quality control that comes from doing it ourselves."
 featuredImage: "images/1.jpg"
 image1: "images/1.jpg"
 images: ["images/1.jpg"]
@@ -45,7 +45,7 @@ heading6: "Your Heading 6 Here"
 paragraph6: "Your Paragraph 6 Here"
 heading7: "Your Heading 7 Here"
 paragraph7: "Your Paragraph 7 Here"
-color: "bg-gradient-to-br from-indigo-200 via-stone-100 to-red-200"
+color: "bg-gradient-to-br from-secondary-200 via-stone-100 to-primary-200"
 color2: "bg-secondary"
 ---
 

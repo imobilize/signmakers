@@ -4,7 +4,7 @@ subheading: "Elevating Brands Across Sectors"
 date: 2024-12-18T11:10:36+08:00
 draft: false
 language: en
-description: Our expert team handles every kind of sign boards, may it be a 3D sign, interior signboards, or exterior signboards, ensuring top-notch quality.
+description: "Sign examples by industry from The Sign Makers: 3D, interior and exterior signboards for hospitality, retail, property, healthcare and more."
 featuredImage: "images/2.jpg"
 images: ["images/1.jpg"]
 image: "images/2.jpg"

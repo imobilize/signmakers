@@ -1,14 +1,45 @@
-<title>{{if .IsHome}}{{ .Title }}{{else}}{{ .Title }} - {{ .Site.Title }}{{end}}
-</title>
-<meta name="description"
-    content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-<link rel="canonical" href="{{ .Permalink }}" />
-<meta name="description"
-    content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-<meta itemprop="name" content="{{ .Title }} - {{ .Site.Title }}" />
-<meta name="application-name" content="{{ .Title }} - {{ .Site.Title }}" />
-
-{{ with .Params.keywords }}<meta name="keywords" content="{{ delimit . ", " }}" />
-{{ end }}
-{{ template "_internal/opengraph.html" . }}
-{{ template "_internal/twitter_cards.html" . }}
+{{- /* SEO head tags.
+   Title: front matter `seoTitle` if set, else "Page | The Sign Makers" (home uses its own title as-is).
+   Description: front matter `description`, else the site description.
+   Paginated list pages get "Page N" so titles/descriptions stay unique.
+   noindex: front matter `noindex: true`, or any build where HUGO_NOINDEX is set (Netlify previews). */ -}}
+{{- $brand := site.Title -}}
+{{- $pageNum := 1 -}}
+{{- $pag := false -}}
+{{- if and .IsSection (eq .Section "portfolio") -}}{{- $pag = .Paginate .Pages 12 -}}{{- $pageNum = $pag.PageNumber -}}{{- end -}}{{- /* must match layouts/portfolio/list.html */ -}}
+{{- $title := "" -}}
+{{- with .Params.seoTitle -}}{{- $title = . -}}
+{{- else -}}
+  {{- if .IsHome -}}{{- $title = .Title -}}{{- else -}}{{- $title = printf "%s | %s" .Title $brand -}}{{- end -}}
+{{- end -}}
+{{- if gt $pageNum 1 -}}{{- $title = printf "%s – Page %d | %s" .Title $pageNum $brand -}}{{- end -}}
+{{- $desc := or .Description site.Params.description -}}
+{{- if gt $pageNum 1 -}}{{- $desc = printf "%s (page %d)" (strings.TrimSuffix "." $desc) $pageNum -}}{{- end -}}
+{{- $noindex := or .Params.noindex (ne (getenv "HUGO_NOINDEX") "") -}}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc | plainify }}" />
+{{- if $noindex }}
+<meta name="robots" content="noindex, follow" />
+{{- else }}
+<meta name="robots" content="index, follow, max-image-preview:large" />
+{{- end }}
+<link rel="canonical" href="{{ if gt $pageNum 1 }}{{ $pag.URL | absURL }}{{ else }}{{ .Permalink }}{{ end }}" />
+<meta itemprop="name" content="{{ $title }}" />
+<meta name="application-name" content="{{ $brand }}" />
+{{- with .Params.keywords }}
+<meta name="keywords" content="{{ if reflect.IsSlice . }}{{ delimit . ", " }}{{ else }}{{ . }}{{ end }}" />
+{{- end }}
+<meta property="og:site_name" content="{{ $brand }}" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $desc | plainify }}" />
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{- $img := "images/sign-makers-card.png" | absURL -}}
+{{- with .Params.images }}{{ with index . 0 }}{{ $img = . | absURL }}{{ end }}{{ end -}}
+{{- with .Params.featuredImage }}{{ with $.Resources.GetMatch . }}{{ $img = (.Resize "1200x jpg q82").Permalink }}{{ end }}{{ end }}
+<meta property="og:image" content="{{ $img }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $desc | plainify }}" />
+<meta name="twitter:image" content="{{ $img }}" />

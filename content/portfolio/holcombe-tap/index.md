@@ -2,7 +2,7 @@
 title: "Holcombe Tap"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Holcombe Tap in Ramsbottom received a stylish makeover with a complete rebrand. We installed bold new signage and standing signs, giving the venue a fresh, modern vibe that perfectly matches its high-end, trendy feel."
+description: "A complete rebrand and new signage for the Holcombe Tap in Ramsbottom, formerly the Mason Arms, with a high-end, contemporary feel."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -16,11 +16,17 @@ categories: ["branding", "design"]
 
 ---
 
-## What the Client Wanted
-The Holcombe Tap, Ramsbottom, formerly the Mason Arms, needed a total overhaul to bring something new and fresh. With a whole new name change and rebrand with a high class trendy feel.
+## The Brief
+The Holcombe Tap in Ramsbottom, formerly the Mason Arms, needed a total overhaul to bring something new and fresh. Alongside a new name, the pub needed a complete rebrand with a high-class, trendy feel, and signage to match.
 
-## About the Process:
-- A whole new rebrand and design
-- Fitted new signage on the front of the building, manufactured and fitted standing signage
+## What We Delivered
+- A complete new brand and design for the Holcombe Tap.
+- Fascia boards on the stone frontage reading "Holcombe Tap" and "Bar & Kitchen", with lamp lighting over the signs.
+- A hanging sign on a bracket, visible to people walking along the street.
+- An illuminated ampersand on white timber panelling, carrying the brand inside.
+- Standing signage to complete the scheme.
 
-Trust Sign Makers to revitalize your establishment's image with our expert signage solutions. We'll bring a fresh new look to your business, making it stand out in the center of Starkholmes.
+## The Result
+The clean white boards and dark lettering look sharp against the traditional stone, giving the pub a confident, contemporary identity without losing its character. The new name is now front and centre, and the Holcombe Tap has the stylish, welcoming look its owners were after.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

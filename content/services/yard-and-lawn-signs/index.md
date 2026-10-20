@@ -3,7 +3,7 @@ title: "Yard and Lawn Signs"
 date: 2020-09-23T15:28:43+06:00
 draft: false
 subheading: Yard and lawn signs come in various sizes, shapes, and colors and can be personalized to align with your brand.
-description: Are you aiming to attract potential customers to your business? An effective way to do so is by using site signs that introduce your identity. Yard and lawn signs come in various sizes, shapes, and colors and can be personalized to align with your brand. Sign Makers offers these signs to meet your visual communication needs
+description: "Yard and lawn signs from The Sign Makers: personalised outdoor site signs in a range of sizes and shapes to introduce your business and attract customers."
 author: " "
 featuredImage: "images/5.jpg"
 image: "images/5.jpg"
@@ -23,7 +23,7 @@ heading3: "Make a Statement with Eye-Catching Yard Sign Graphics"
 paragraph3: "Are you in search of eye-catching yard sign graphics to leave a memorable impression? Look no further than Sign Makers! Our expert team specializes in designing vibrant and attention-grabbing yard sign graphics, ideal for promoting your message or event. Equipped with top-notch technology and creative expertise, our graphics will make your sign and yard stand out from the rest. Whether you require yard signs for a real estate open house or want to advertise your business, our yard sign graphics will undoubtedly grab attention. Trust Sign Makers for high-quality, durable, and visually appealing graphics that will make your message shine."
 heading4: "Eye-Catching Yard Sign Graphics"
 paragraph4: "In addition to yard and lawn signs, we offer a variety of options including feather flags, custom banners, vehicle graphics and car wraps, electric and light-up signs, and awning signage. Using a combination of different sign types and sizes will help you effectively communicate your message. Our team is here to guide you in selecting the most suitable sign types for your specific needs."
-color: "bg-gradient-to-tr from-rose-50 via-orange-50 to-emerald-50"
+color: "bg-gradient-to-tr from-primary-50 via-primary-50 to-secondary-50"
 ---
 
 ## Maximize Your Real Estate With Custom Yard Signs

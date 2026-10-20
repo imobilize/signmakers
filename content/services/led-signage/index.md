@@ -2,7 +2,7 @@
 title: "LED Displays"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: LED Displays are made up of many, smaller light-emitting diodes close together that are used to create and project images. They can feature messages with vivid, high contrast content—from images to video.
+description: "LED signs and displays from The Sign Makers: bright, high-contrast LED signage that shows messages, images and video to draw customers to your business."
 subheading: Brighten Your Brand with Custom LED Signs
 author: " "
 featuredImage: "images/9.jpg"
@@ -23,7 +23,7 @@ heading3: "High Level of Experience"
 paragraph3: "With a turn-key LED Display rental program, Sign Makers makes it easier than ever to pull off an amazing experience."
 heading4: "Fast Turnaround Times: Sign Makers' Promise"
 paragraph4: "Sign Makers can provide screens in all shapes and sizes, from a simple 4’ x 6’ indoor board for a church event to a 10’ x 20’ outdoor board for a festival in the park. These boards come with all the necessary hardware, including LED board modules, a frame/stand, a video controller, and extra parts for any repairs. Additionally, Sign Makers includes an on-site installation crew that will receive and set up the boards, and then tear them down and ship them back after the event or rental concludes. Applications for using LED displays range from stadiums, where they enable sports fans to get the full experience with celebrity-style signs and graphics, to venues that bring live music center stage for eager fans. They are also perfect for festivals, where they level up a community event with enhanced technology, and conventions, where they enliven corporate events or tradeshows by incorporating a modern look and feel with LED displays. For an unforgettable experience that captivates your audience, consider renting LED displays from Sign Makers. Elevate your event and leave a lasting impression with our state-of-the-art LED technology."
-color: "bg-gradient-to-tr from-rose-50 via-orange-50 to-emerald-50"
+color: "bg-gradient-to-tr from-primary-50 via-primary-50 to-secondary-50"
 ---
 
 

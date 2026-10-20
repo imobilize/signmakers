@@ -3,7 +3,7 @@ title: "Custom Banners"
 date: 2024-09-23T15:28:43+06:00
 draft: false
 language: en
-description: Make your brand or event unforgettable with our custom banners. Designed to stand out, our banners are perfect for any occasion—whether it's a grand opening, trade show, or special event. Durable, eye-catching, and tailored to your needs, these banners are the ultimate attention-grabber.
+description: "Custom banners designed and printed by The Sign Makers for grand openings, trade shows and events: durable, eye-catching and tailored to your brand."
 featuredImage: "images/5.jpg"
 image: "images/5.jpg"
 images: ["images/5.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
@@ -42,7 +42,7 @@ heading6: "How Long Do Banners Last?"
 paragraph6: "The lifespan of custom banners depends on factors such as indoor or outdoor use. Banners exposed to environmental elements may fade over time. At Sign Makers, our consultants can provide insights into the optimal use of banners for your business needs."
 heading7: "Supplement Your Banners with Other Sign Types"
 paragraph7: "Enhance your brand presence with a variety of sign types offered by Sign Makers: Feather Flag Signs,Yard and Lawn Signs, Exterior Building Signs, Monument Signs and Awning Signage "
-color: "bg-gradient-to-br from-pink-50 via-orange-50 to-red-50"
+color: "bg-gradient-to-br from-primary-50 via-primary-50 to-primary-50"
 ---
 
 Make your brand or event unforgettable with our custom banners. Designed to stand out, our banners are perfect for any occasion—whether it's a grand opening, trade show, or special event. Durable, eye-catching, and tailored to your needs, these banners are the ultimate attention-grabber.

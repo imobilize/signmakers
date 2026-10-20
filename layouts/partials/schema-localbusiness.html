@@ -1,37 +1,50 @@
+{{- /* Site-wide structured data: the business (LocalBusiness) and the website.
+       WebSite.name tells Google which site name to show in results. */ -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://thesignmakers.com/#organization",
-  "name": "The Sign Makers",
-  "url": "https://thesignmakers.com/",
-  "image": "https://thesignmakers.com/images/sign-makers-card.png",
-  "logo": "https://thesignmakers.com/images/sign-makers-card.png",
-  "telephone": "+441254580166",
-  "priceRange": "££",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Chapel St",
-    "addressLocality": "Blackburn",
-    "postalCode": "BB2 2EH",
-    "addressCountry": "GB"
-  },
-  "areaServed": [
-    "United Kingdom",
-    "London",
-    "Manchester",
-    "Blackburn"
-  ],
-  "knowsAbout": [
-    "Sign design",
-    "Sign installation",
-    "Sign manufacturing",
-    "Sign printing",
-    "Illuminated signs",
-    "Shopfront signage",
-    "Built-up letters",
-    "Flat cut letters and signs"
-  ],
-  "sameAs": []
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+      "@id": "https://thesignmakers.com/#organization",
+      "name": "The Sign Makers",
+      "alternateName": ["Sign Makers", "The Sign Makers by Design"],
+      "description": {{ site.Params.description | jsonify }},
+      "url": "https://thesignmakers.com/",
+      "logo": "https://thesignmakers.com/favicon/android-chrome-512x512.png",
+      "image": "https://thesignmakers.com/images/sign-makers-card.png",
+      "telephone": "+441254580166",
+      "priceRange": "££",
+      "foundingDate": "1946",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chapel St",
+        "addressLocality": "Blackburn",
+        "postalCode": "BB2 2EH",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "City", "name": "London" },
+        { "@type": "City", "name": "Manchester" },
+        { "@type": "City", "name": "Blackburn" }
+      ],
+      "knowsAbout": ["Sign making", "Sign design", "Sign manufacturing", "Sign installation", "Shopfront signs", "Illuminated signs", "LED signs", "Built-up letters", "Flat cut letters", "Wayfinding signs", "Large format printing"],
+      "sameAs": [
+        "https://www.facebook.com/thesignmakerss",
+        "https://www.instagram.com/thesignmakers_/",
+        "https://shop.thesignmakers.com/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://thesignmakers.com/#website",
+      "name": "The Sign Makers",
+      "alternateName": "Sign Makers",
+      "url": "https://thesignmakers.com/",
+      "inLanguage": "en-GB",
+      "publisher": { "@id": "https://thesignmakers.com/#organization" }
+    }
+  ]
 }
 </script>

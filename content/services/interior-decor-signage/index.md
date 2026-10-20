@@ -2,7 +2,7 @@
 title: "Interior Decor Signs"
 date: 2024-09-23T15:28:43+06:00
 draft: false
-description: The moment customers step inside your business, they immediately have an impression of who you are, what you do – and, most of all, if they want to do business with you.
+description: "Interior decor signs from The Sign Makers: feature walls, logo signs and graphics that give customers the right first impression inside your business."
 author: " "
 featuredImage: "images/11.jpg"
 image: "images/11.jpg"
@@ -47,7 +47,7 @@ paragraph6: "Custom entryway signs make a strong first impression, enhance brand
 heading7: "Restaurants Interior Signs"
 paragraph7: "Custom signs for restaurants are essential in creating an inviting atmosphere, attracting diners, and enhancing the overall dining experience. These signs can capture the attention of passersby, drawing them in with visually appealing designs that reflect the restaurant's unique style and cuisine. By providing clear and attractive signage, restaurants can stand out in a crowded market, making it easier for potential customers to choose their establishment over competitors. For your business, custom restaurant signs can significantly boost brand recognition, promote special offers, and communicate important information such as menu highlights, hours of operation, and safety measures.Additionally, well-placed signs can improve the flow of customers within the restaurant, guiding them to seating areas, restrooms, and exits, thereby enhancing the overall efficiency and ambiance. Investing in custom signs is crucial because they not only help in creating a memorable first impression but also contribute to building a strong brand identity, encouraging repeat visits, and ultimately driving increased revenue."
 image5: "images/resturant-signs-makers.png"
-color: "bg-gradient-to-br from-cyan-200 via-red-100 to-violet-200"
+color: "bg-gradient-to-br from-secondary-200 via-primary-100 to-secondary-200"
 ---
 
 First impressions are everything. The moment customers step inside your business, they immediately form an impression of who you are, what you do – and, most importantly, if they want to do business with you. That’s why the interior décor of your business must sell you. That includes just about everything that is in the line of sight of customers, including the walls, floors, counters, and reception desk. Sign Makers can help you make a great impression with our interior décor signs, graphics, and displays. We offer everything from printed floor mats to murals to fine art prints and can customize each to fit your brand style guidelines.
@@ -82,7 +82,7 @@ Custom canvas signs can be used across an array of industries. What are some com
 - **Restaurants:** Create the perfect dining experience with the right types of custom prints
 - **Conference Rooms:** Design a productive working environment for employees to gather
 
-For further information, please [contact us](/contact/).
+For further information, please [contact us](/request-quote/).
 
 ## Ready to Transform Your Brand?
 

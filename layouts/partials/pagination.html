@@ -20,7 +20,7 @@
                   <!-- Current Page -->
                   <li>
                     <a href="{{ .URL }}" aria-current="page"
-                      class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">{{ .PageNumber }}</a>
+                      class="flex items-center justify-center px-3 h-8 text-secondary-600 border border-gray-300 bg-secondary-50 hover:bg-secondary-100 hover:text-secondary-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">{{ .PageNumber }}</a>
                   </li>
                   {{ else if and (ge .PageNumber (sub $pag.PageNumber 2)) (le .PageNumber (add $pag.PageNumber 2)) }}
                   {{ $.Scratch.Set "dot_rendered" false }}

@@ -2,7 +2,7 @@
 title: "The Silverdale Hotel"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Silverdale Hotel Inn in Silverdale received a full brand and signage overhaul, including a new logo, metallic-effect signage, and window vinyls. Trust Sign Makers to transform your business with our expert branding and signage solutions."
+description: "A full brand and signage package for The Silverdale Hotel: a new logo, gable lettering, hanging sign, menu boards and the planning application."
 author: " "
 featuredImage: "images/1.jpeg"
 image: "images/1.jpeg"
@@ -15,15 +15,19 @@ keywords: "The Silverdale Hotel, Branding, Signage, Sign Design, Design, interio
 categories: ["Logo Design", "exterior brand design"]
 
 ---
-## What the Client Wanted
-The Silverdale Hotel Inn located in Silverdale, , required a full brand and signage package. This included the creation of a new logo, the manufacture and fitting of signs and a full planning permission application.
 
-## About the Process:
-- Designed a full brand package including a new logo
-- We used a unique process to create a metallic look on a long lasting plastic to make the logo stand out
-- Fitted new signage on the front of the building, a hanging sign and vinyls for the back windows
+## The Brief
+The Silverdale Hotel in Silverdale needed a full brand and signage package. This included creating a new logo, manufacturing and fitting the signs, and handling a full planning permission application.
 
+## What We Delivered
+- A complete brand package, including a new logo for The Silverdale Hotel.
+- Large lettering on the gable reading "The Silverdale Hotel" with "Pub · Kitchen · Rooms" beneath.
+- A hanging sign carrying the new logo.
+- Wall-mounted boards in a textured blue finish, promoting the hotel's food offer, including fresh food made with locally sourced produce, daily specials and proper homemade pies.
+- A unique process that creates a metallic look on long-lasting plastic, plus vinyls for the back windows.
+- The full planning permission application.
 
+## The Result
+The new identity gives The Silverdale Hotel a crisp, confident look. The gable lettering can be seen from a distance, the hanging sign and boards add charm at street level, and handling the planning application meant the owners could leave the whole process to us.
 
-Trust Sign Makers to revitalize your establishment's image with our expert signage solutions. We'll bring a fresh new look to your business, making it stand out in the center of Starkholmes.
-
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

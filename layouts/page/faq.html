@@ -10,7 +10,7 @@
                 {{ with $item }}
                 <li class="inline-flex items-center">
                     <a href="{{ .RelPermalink}}"
-                        class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-amber-600 dark:text-gray-400 dark:hover:text-white">
+                        class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary-600 dark:text-gray-400 dark:hover:text-white">
                         {{ if lt $index 1}}
                         <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +76,7 @@
 
                     <div class="text-center mt-8">
                         <a class="btn text-white bg-primary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group"
-                            href="/contact">
+                            href="/request-quote/">
                             <span class="relative inline-flex items-center">
                                 Get A Quote<span
                                     class="tracking-normal text-white group-hover:translate-x-0.5 transition-transform ml-1">-&gt;</span>
@@ -101,7 +101,7 @@
                         </a>
                         {{ end }}
                         <div class="mx-3">
-                            <a href="{{ .RelPermalink }}" class="font-semibold hover:text-amber-600">{{ .Title }}</a>
+                            <a href="{{ .RelPermalink }}" class="font-semibold hover:text-primary-600">{{ .Title }}</a>
                             <p class="text-sm text-slate-600">{{ .Description | truncate 50 }}</p>
                         </div>
                     </div>

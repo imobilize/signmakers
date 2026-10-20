@@ -1,6 +1,6 @@
 /* main.css */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap");
 @import "./glightbox.css";
 
 /* assets */
@@ -11,8 +11,55 @@
 
 /* Custom CSS */
 
+/* ------------------------------------------------------------------
+   The Sign Makers — brand foundations (Brand Guidelines V1, 2026)
+   Coral #F04F4F · Faded Jade #407878 · Jagged Ice #C8E8E8 · Ink #1A2424
+   Headings: Playfair Display 400 · Body/UI: Montserrat 400/500/700
+   ------------------------------------------------------------------ */
+@layer base {
+  :root {
+    --sm-coral: #F04F4F;
+    --sm-jade: #407878;
+    --sm-ice: #C8E8E8;
+    --sm-ink: #1A2424;
+  }
+  html { font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; }
+  body { color: var(--sm-ink); }
+  ::selection { background: var(--sm-ice); color: var(--sm-ink); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--sm-jade); outline-offset: 2px; }
+}
+
+/* Display headings use Playfair Display Regular, as on the Shopify store */
+h1, h2, .display1, .h1, .h2,
+.prose :where(h1, h2):not(:where([class~="not-prose"] *)) {
+  font-family: "Playfair Display", ui-serif, Georgia, serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+h3, h4, h5, h6 { font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; }
+
+.prose { --tw-prose-headings: #1A2424; --tw-prose-links: #407878; --tw-prose-bullets: #407878; --tw-prose-counters: #407878; --tw-prose-quote-borders: #F04F4F; }
+
+/* Brand pattern backgrounds (herringbone) — decorative only, keep behind large text */
+.bg-pattern-coral { background-color: #fff; background-image: url("/images/brand/pattern-coral.svg"); background-size: 56px 56px; }
+.bg-pattern-jade  { background-color: #fff; background-image: url("/images/brand/pattern-jade.svg");  background-size: 56px 56px; }
+.bg-pattern-ice   { background-color: #fff; background-image: url("/images/brand/pattern-ice.svg");   background-size: 56px 56px; }
+.bg-pattern-on-coral { background-color: #F04F4F; background-image: url("/images/brand/pattern-on-coral.svg"); background-size: 56px 56px; }
+.bg-pattern-on-jade  { background-color: #407878; background-image: url("/images/brand/pattern-on-jade.svg");  background-size: 56px 56px; }
+
+/* Cookie consent (Klaro) in brand colours */
+.klaro {
+  --green1: #407878; --green2: #366363; --green3: #C8E8E8;
+  --blue1: #F04F4F; --blue2: #DC3535;
+  --dark1: #1A2424; --dark2: #284545; --dark3: #2F5252;
+  --font-family: Montserrat, ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Brand CTA treatment: Montserrat Bold, uppercase, generous tracking */
+.cta-label { font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+
 .prose :where(h1):not(:where([class~="not-prose"] *)) {
-  color: rgb(0, 0, 0) !important;
+  color: #1A2424 !important;
 }
 
 .product-inner {
@@ -88,13 +135,13 @@
 }
 
 .navheading {
-  @apply text-sm md:text-lg font-semibold text-gray-800;
+  @apply text-sm md:text-lg font-semibold text-ink;
 }
 
 /* Buttons */
 .btn,
 .btn-sm {
-  @apply text-sm font-medium inline-flex items-center justify-center border border-transparent rounded-full whitespace-nowrap transition duration-150 ease-in-out;
+  @apply text-sm font-bold uppercase tracking-wider inline-flex items-center justify-center text-center border border-transparent rounded-lg whitespace-normal md:whitespace-nowrap transition duration-150 ease-in-out;
 }
 
 .btn {
@@ -115,7 +162,7 @@
   position: relative;
 }
 .swiper-pagination-bullet {
-  background: #4f46e5;
+  background: #407878;
 }
 .area {
   width: 100%;
@@ -218,4 +265,32 @@
   height: 150px;
   animation-delay: 0s;
   animation-duration: 11s;
+}
+
+[x-cloak] { display: none !important; }
+
+/* ------------------------------------------------------------------
+   Service pages: one consistent type scale across all templates
+   (branding, template-2/3/4, services/single). Beats per-element utility classes.
+   ------------------------------------------------------------------ */
+.service-page h1 { font-size: 2.25rem; line-height: 1.15; }
+.service-page h2 { font-size: 1.75rem; line-height: 1.25; margin-top: 0; }
+.service-page h3,
+.service-page h4,
+.service-page h5 {
+  font-family: Montserrat, ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600; font-size: 1.25rem; line-height: 1.4; letter-spacing: 0;
+}
+.service-page p:not(nav p),
+.service-page li:not(nav li),
+.service-page td {
+  font-family: Montserrat, ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400; font-size: 1rem; line-height: 1.75; letter-spacing: 0;
+}
+.service-page .service-lead { font-size: 1.125rem; line-height: 1.6; }
+@media (min-width: 768px) {
+  .service-page h1 { font-size: 3rem; }
+  .service-page h2 { font-size: 2.25rem; }
+  .service-page p:not(nav p), .service-page li:not(nav li), .service-page td { font-size: 1.0625rem; }
+  .service-page .service-lead { font-size: 1.25rem; }
 }

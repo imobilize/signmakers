@@ -2,7 +2,7 @@
 title: "Kingsbury Hampton"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "For Kingsbury, we created a bold, modern sign with 3D stainless steel lettering and a glowing halo effect. Mounted on a sleek aluminium tray, the result is a sharp and sophisticated design that truly elevates their brand presence."
+description: "A bold fascia for long-standing client Kingsbury: mirror-polished stainless steel 3D letters with halo illumination on a powder-coated aluminium tray."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,10 +14,16 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
- Kingsbury, our long-standing client, wanted a sharp and modern sign that would stand out, featuring 3D lettering with lighting effects.
+## The Brief
+Kingsbury, a long-standing client, wanted a sharp, modern sign for their Hampton site that would stand out, featuring 3D lettering with lighting effects.
 
+## What We Delivered
+- 3D letters made from mirror-polished stainless steel, spelling "Kingsbury | Hampton", with "Est. 1897" and the company's website and phone number.
+- Soft halo illumination behind the letters, so they glow against the tray after dark.
+- A durable, powder-coated aluminium tray sign as the backing, running the full width above the workshop's roller-shutter entrance.
+- Manufacture and installation.
 
-## About the Process:
+## The Result
+The mirror-polished letters catch the light by day, and the halo effect gives them a warm glow at night. Mounted on the clean aluminium tray, the sign has a smart, confident appearance that matches Kingsbury's branding and its long heritage, and makes the site impossible to miss.
 
-We created 3D letters from mirror-polished stainless steel, adding a soft halo illumination to make the letters glow. These were mounted onto a durable, powder-coated aluminium tray sign, giving it a clean and smart appearance. The result is a polished look that perfectly matches Kingsbury’s branding.
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.
