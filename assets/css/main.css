@@ -268,3 +268,29 @@ h3, h4, h5, h6 { font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; 
 }
 
 [x-cloak] { display: none !important; }
+
+/* ------------------------------------------------------------------
+   Service pages: one consistent type scale across all templates
+   (branding, template-2/3/4, services/single). Beats per-element utility classes.
+   ------------------------------------------------------------------ */
+.service-page h1 { font-size: 2.25rem; line-height: 1.15; }
+.service-page h2 { font-size: 1.75rem; line-height: 1.25; margin-top: 0; }
+.service-page h3,
+.service-page h4,
+.service-page h5 {
+  font-family: Montserrat, ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600; font-size: 1.25rem; line-height: 1.4; letter-spacing: 0;
+}
+.service-page p:not(nav p),
+.service-page li:not(nav li),
+.service-page td {
+  font-family: Montserrat, ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400; font-size: 1rem; line-height: 1.75; letter-spacing: 0;
+}
+.service-page .service-lead { font-size: 1.125rem; line-height: 1.6; }
+@media (min-width: 768px) {
+  .service-page h1 { font-size: 3rem; }
+  .service-page h2 { font-size: 2.25rem; }
+  .service-page p:not(nav p), .service-page li:not(nav li), .service-page td { font-size: 1.0625rem; }
+  .service-page .service-lead { font-size: 1.25rem; }
+}

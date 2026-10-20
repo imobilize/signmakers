@@ -12,8 +12,6 @@ sitemap:
   priority: 1.0
 ---
 
-# Sign Installation
-
 ## Make An Impression
 
 If you want to send a message to prospective customers, the best way to do so is with eye-catching business signage. Though many businesses opt for thorough signage inside their business, exterior signage should also be considered when creating a visual communication strategy. There are a variety of exterior signs that can be used in a variety of ways to communicate your message. Whether you simply want to highlight your logo or name or promote a product or special, there is an exterior sign for all of your needs.
