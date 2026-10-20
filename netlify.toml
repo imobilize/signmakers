@@ -50,7 +50,7 @@ force = true
 
 [[redirects]]
 from = "/get-a-quote"
-to = "/contact"
+to = "/request-quote/"
 status = 301
 force = true
 
@@ -107,7 +107,7 @@ force = true
 # Old contact/quote paths
 [[redirects]]
 from = "/pages/contact"
-to = "/contact/"
+to = "/request-quote/"
 status = 301
 force = true
 
@@ -154,6 +154,19 @@ force = true
 [[redirects]]
 from = "/wp-content/*"
 to = "/"
+status = 301
+force = true
+
+# Contact page moved to /request-quote (Oct 2026)
+[[redirects]]
+from = "/contact"
+to = "/request-quote/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/contact/"
+to = "/request-quote/"
 status = 301
 force = true
 

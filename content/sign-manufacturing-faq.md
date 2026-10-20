@@ -122,7 +122,7 @@ How Can We Help
 
 We’ve been making signage for the sign trade for over 30 years. If you are looking for a new sign supplier, then see how The Sign Makers can help.
 
-[Request Quote](/contact)
+[Request Quote](/request-quote/)
 * * *
 
 Sample Sign Boards

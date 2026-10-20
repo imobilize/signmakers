@@ -82,7 +82,7 @@ Custom canvas signs can be used across an array of industries. What are some com
 - **Restaurants:** Create the perfect dining experience with the right types of custom prints
 - **Conference Rooms:** Design a productive working environment for employees to gather
 
-For further information, please [contact us](/contact/).
+For further information, please [contact us](/request-quote/).
 
 ## Ready to Transform Your Brand?
 

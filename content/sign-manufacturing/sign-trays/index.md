@@ -15,7 +15,7 @@ Sign Trays
 
 At **Fabricut**, we manufacture **sign trays** used for retail fascia signage for **trade clients**, including: architectural practices, design agencies and refurbishment companies. We can also act as **sign tray subcontractors for sign companies** too.
 
-With our **state-of-the-art CNC machinery** we’re able to produce any **sign** quickly and with total accuracy. Our team are here and [ready to help](/contact)!
+With our **state-of-the-art CNC machinery** we’re able to produce any **sign** quickly and with total accuracy. Our team are here and [ready to help](/request-quote/)!
 
 * * *
 
@@ -68,7 +68,7 @@ Fabricut **supply and install sign tray panels** to the highest of standards and
 
 Get in contact with the **Fabricut** team today and see how we can help you find that **ultimate signage solution**.
 
-[Get in touch](/contact)
+[Get in touch](/request-quote/)
 
 
 
@@ -77,7 +77,7 @@ How Can We Help
 
 We’ve been making signage for the sign trade for over 30 years. If you are looking for a new sign supplier, then see how Fabricut can help.
 
-[Request Quote](/contact)
+[Request Quote](/request-quote/)
 * * *
 
 ![Sample Signs by Fabricut](images/sample-signs-min.png)

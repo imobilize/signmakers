@@ -13,7 +13,7 @@ keywords: "Built Up Letters"
 Built Up Letters & Signs
 ========================
 
-At **Fabricut**, we are proud to offer **built up letters** for **sign manufactures** and other **suppliers** in the **sign trade industry**. We know just how very few companies there are that offer this exclusive service, so that’s where [we can help](/contact)!
+At **Fabricut**, we are proud to offer **built up letters** for **sign manufactures** and other **suppliers** in the **sign trade industry**. We know just how very few companies there are that offer this exclusive service, so that’s where [we can help](/request-quote/)!
 
 Built Up Letters Bring Flat Text To Life
 ----------------------------------------
@@ -70,7 +70,7 @@ Fabricut **supply and install built up letters** to the highest of standards and
 
 Get in contact with the **Fabricut** team today and see how we can help you find that **ultimate signage solution**.
 
-[Get in touch](/contact)
+[Get in touch](/request-quote/)
 
 
 How Can We Help
@@ -78,7 +78,7 @@ How Can We Help
 
 We’ve been making signage for the sign trade for over 30 years. If you are looking for a new sign supplier, then see how Fabricut can help.
 
-[Request Quote](/contact)
+[Request Quote](/request-quote/)
 * * *
 
 ![Sample Signs by Fabricut](images/sample-signs-min.png)

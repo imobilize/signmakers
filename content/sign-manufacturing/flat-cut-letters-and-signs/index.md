@@ -15,7 +15,7 @@ Flat Cut Letters & Signs
 
 At **Fabricut**, we produce **flat cut letters**, **flat cut logos** and **flat cut signs** for the **trade**, including: architects, design agencies and fit-out companies. We can also operate as sub contractors for other sign suppliers too.
 
-With our latest in-house **sign cutting** technology we’re able to produce all your **flat cuts** super fast and with great accuracy. We’re here and [ready to help](/contact)!
+With our latest in-house **sign cutting** technology we’re able to produce all your **flat cuts** super fast and with great accuracy. We’re here and [ready to help](/request-quote/)!
 
 * * *
 
@@ -74,14 +74,14 @@ Fabricut **supply and install flat cut letters** to the highest of standards and
 
 Get in contact with the **Fabricut** team today and see how we can help you find that **ultimate signage solution**.
 
-[Get in touch](/contact)
+[Get in touch](/request-quote/)
 
 How Can We Help
 ---------------
 
 We’ve been making signage for the sign trade for over 30 years. If you are looking for a new sign supplier, then see how Fabricut can help.
 
-[Request Quote](/contact)
+[Request Quote](/request-quote/)
 * * *
 
 ![Sample Signs by Fabricut](images/sample-signs-min.png)

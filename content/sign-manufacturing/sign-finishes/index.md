@@ -15,7 +15,7 @@ Sign Finishes
 
 At **Fabricut**, we offer a **complete range of finishes** for our **manufactured signs**, providing the ultimate outsourced sign solution for those in the **sign trade industry**.
 
-We can wet spray, powder coat, flame polish, diamond polish, apply vinyl or printed graphics and more. The Fabricut team are here and [ready to help](/contact)!
+We can wet spray, powder coat, flame polish, diamond polish, apply vinyl or printed graphics and more. The Fabricut team are here and [ready to help](/request-quote/)!
 
 * * *
 
@@ -65,7 +65,7 @@ Similar to flame polishing, **diamond polishing** removes cutting marks along th
 
 All diamond polishing works are completed in-house by talented Fabricut signage production team. We have machined the edges of thousands of acrylic panels over the years using our own specialist diamond polisher.
 
-If you’re unsure about what type of polishing you may need, [get in touch with our experts](/contact).
+If you’re unsure about what type of polishing you may need, [get in touch with our experts](/request-quote/).
 
 * * *
 
@@ -98,7 +98,7 @@ Whatever type of **sign** or **display product** you are ordering from us we hav
 
 All fixings can be supplied or just pre-configured (pilot-holed) for use with your own fixing products. Get in contact with the **Fabricut** team today and see how we can help you find that **ultimate signage solution**.
 
-[Get in touch](/contact)
+[Get in touch](/request-quote/)
 
 
 How Can We Help
@@ -106,7 +106,7 @@ How Can We Help
 
 We’ve been making signage for the sign trade for over 30 years. If you are looking for a new sign supplier, then see how Fabricut can help.
 
-[Request Quote](/contact)
+[Request Quote](/request-quote/)
 * * *
 
 ![Sample Signs by Fabricut](images/sample-signs-min.png)

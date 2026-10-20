@@ -96,6 +96,6 @@ We offer a variety of channel letter types that are part of your overall visual 
 
 Transform the facade of your business and enhance visibility with our premium Exterior Signage solutions. Whether you're looking for striking storefront signs, directional displays, or innovative outdoor branding, **Sign Makers** has you covered.
 
-[Get Your Free Quote Now](/contact/) and let's embark on a journey to elevate your business exterior!
+[Get Your Free Quote Now](/request-quote/) and let's embark on a journey to elevate your business exterior!
 
 ![Pub Sign Installation](images/outdoor-pub-sign-installation.jpg "Pub Sign Installation")
