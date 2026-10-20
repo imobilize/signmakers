@@ -156,3 +156,136 @@ from = "/wp-content/*"
 to = "/"
 status = 301
 force = true
+
+# Blog removed (Oct 2026) — send old blog and article URLs to the home page
+[[redirects]]
+from = "/blog"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/blog/*"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/5-signage-ideas-to-boost-foot-traffic-for-businesses-in-2024"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/5-signage-ideas-to-boost-foot-traffic-for-businesses-in-2024/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/5-ways-to-increase-foot-traffic-to-your-business-with-signage-in-2024"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/5-ways-to-increase-foot-traffic-to-your-business-with-signage-in-2024/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/athelis"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/athelis/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/crafting-an-effective-sign-and-graphics-blueprint-for-your-business"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/crafting-an-effective-sign-and-graphics-blueprint-for-your-business/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/hive-awards-2019"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/hive-awards-2019/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/power-of-signage-in-rebranding-4-things-to-consider"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/power-of-signage-in-rebranding-4-things-to-consider/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/the-4-most-effective-signs-for-your-business"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/the-4-most-effective-signs-for-your-business/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/the-art-of-attraction-leveraging-color-trends-in-modern-signs-custom-visuals"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/the-art-of-attraction-leveraging-color-trends-in-modern-signs-custom-visuals/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/the-efficiency-of-digital-signage"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/the-efficiency-of-digital-signage/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/unleashing-the-power-of-signage-in-rebranding-4-things-to-consider"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/unleashing-the-power-of-signage-in-rebranding-4-things-to-consider/"
+to = "/"
+status = 301
+force = true
