@@ -2,7 +2,7 @@
 title: "Anglesey Arms"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "See how The Sign Makers gave Anglesey Arms a fresh new look with a complete signage makeover—polished designs, standout standing signs, and a stunning oak post pictorial sign that truly stands out."
+description: "A complete exterior signage scheme for the Anglesey Arms pub, dining and rooms: painted gable lettering, an oak post pictorial sign and fresh frontage signage."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -20,14 +20,16 @@ Headquarters: Entertainment
 Project_duration: 2 weeks 
 ---
 
-## What the Client Wanted
-For the Anglesey Arms, our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+## The Brief
+The Anglesey Arms needed a complete signage overhaul to reflect its fresh brand image, moving away from its previous style to something cleaner and more polished. As a pub with dining and rooms, the signage also needed to tell passers-by everything the venue offers.
 
-## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
+## What We Delivered
+- Large painted lettering on the gable end reading "Anglesey Arms, Pub, Dining and Rooms", visible to traffic approaching from the road.
+- A large oak post pictorial sign at the roadside, combining the pub's name with artwork in a classic pub-sign style.
+- New signage on the front of the building above the entrance.
+- Design, manufacture and installation as one coordinated scheme.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+## The Result
+The building's bright white walls make a perfect canvas for the dark gable lettering, which can be read from well down the road. The oak post sign adds traditional warmth at the roadside, and together the pieces give the Anglesey Arms a smart, welcoming look that matches its refreshed brand.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

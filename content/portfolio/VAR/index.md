@@ -2,7 +2,7 @@
 title: "PremierLeague VAR room"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "VAR Headquarters required eye-catching signage to elevate their space. In collaboration with R&B Bespoke Furniture, we crafted a range of stunning, functional signs to make a lasting impression. Trust Sign Makers for impactful signage solutions."
+description: "Illuminated feature signage for the Premier League VAR Operations Hub and Training Suite, delivered with R&B Bespoke Furniture."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,9 +14,16 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
-VAR headquarters needed eye-catching signage to enhance their space, a project we handled in collaboration with R&B Bespoke Furniture.
+## The Brief
+The VAR headquarters needed eye-catching signage to make an impression on everyone who visits. We delivered the project in collaboration with R&B Bespoke Furniture, combining feature signage with their bespoke joinery.
 
-## About the Process:
+## What We Delivered
+- A wall-mounted Premier League lion and VAR logo in dimensional lettering, creating a striking statement in the entrance space.
+- "VAR Operations Hub" branding on the front of the reception desk, with coloured LED lighting along the base of the desk adding to the effect.
+- Halo-illuminated "VAR Training Suite" lettering, glowing softly against the wall.
+- Manufacture and installation, coordinated with R&B Bespoke Furniture so the signage sits perfectly within their joinery.
 
-We produced a range of stunning signs that combined visual appeal with functionality. Each piece was designed to stand out, creating a strong impression at VAR headquarters.
+## The Result
+Each piece combines visual impact with function, giving the headquarters a polished, high-tech feel that suits a modern operations centre. The lighting effects bring the brand to life, and the scheme makes a strong first impression on every visitor and every official who walks through the door.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

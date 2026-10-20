@@ -2,7 +2,7 @@
 title: "Cock & Bottle"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Sign Makers revitalized The Cock & Bottle in Tarleton with bespoke oak signage, a burnt-look barrel logo, and fresh hanging signs. A perfect blend of craftsmanship and style to elevate this Thwaites Brewery gem."
+description: "A fresh exterior look for the Cock & Bottle in Tarleton, owned by Thwaites: bespoke oak posts and frames, built-up lettering and a burnt-effect barrel logo."
 author: " "
 featuredImage: "images/1.png"
 image: "images/1.png"
@@ -14,15 +14,18 @@ image4: "images/4.jpg"
 keywords: "Cock and Bottle, Branding, Signage, Sign Design, Design, interior signage, exterior design"
 categories: ["branding", "exterior signage"]
 ---
-## What the Client Wanted
-The Cock & Bottle located in Tarleton, owned by Thwaites Brewery. We created a fresh new look with the manufacture and fitting of signs.
 
-## About the Process:
-- Built bespoke oak posts and frames for all the main external signage
-- We used a unique process to create a burnt, natural looking logo on the hanging barrel
-- Fitted new signage on the front of the building, a hanging sign and internal vinyls
+## The Brief
+The Cock & Bottle in Tarleton, owned by Thwaites Brewery, needed a fresh new look. We were asked to manufacture and fit a complete set of signs that would modernise the pub while keeping a natural, characterful feel.
 
+## What We Delivered
+- Bespoke oak posts and frames for all the main external signage, including a freestanding oak post sign at the roadside carrying the Thwaites and Cock & Bottle branding.
+- Built-up "Cock & Bottle" lettering across the timber-clad extension.
+- A framed sign on the front of the original building with "Pub & Dining, Tarleton".
+- A unique process to create a burnt, natural-looking logo on a hanging barrel.
+- A hanging sign and internal vinyls to carry the brand inside.
 
+## The Result
+The oak and timber give the scheme a warm, crafted feel that sits beautifully with the pub's planters and outdoor seating. Combined with the crisp lettering and framed signs, the Cock & Bottle now has a frontage that's welcoming, distinctive and unmistakably part of the Thwaites family.
 
-Trust Sign Makers to revitalize your establishment's image with our expert signage solutions. We'll bring a fresh new look to your business, making it stand out in the center of Starkholmes.
-
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

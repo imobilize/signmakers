@@ -2,7 +2,7 @@
 title: "Pontoon Dock Health Centre"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "Pontoon Dock Health Centre sought a fresh, polished look. We rebranded and designed new signage, including a large oak post pictorial sign, front-building signage, and custom-painted details, giving their location a modern and welcoming update."
+description: "Exterior signage and window graphics for the NHS Pontoon Dock Health Centre: a clear fascia, projecting sign and 'coming soon' window displays."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,14 +14,16 @@ image4: "images/4.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
-For the Pontoon Dock Health Centre , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+## The Brief
+The new Pontoon Dock Health Centre needed signage that would help patients find it easily, and window graphics to let the local community know a new NHS health centre was on the way.
 
-## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
+## What We Delivered
+- A black fascia with white "Pontoon Dock Health Centre" lettering running across the frontage.
+- A projecting sign on the corner of the building, so the centre can be seen from along the street.
+- "Main Entrance" signage marking the way in.
+- Large window graphics with NHS branding, photography and "New health centre coming soon" messaging, filling the glazing ahead of opening.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+## The Result
+The high-contrast black and white signage is clear and accessible, which is exactly what patients need when looking for a health centre. The window graphics turned the empty unit into an announcement for the community before the doors opened, and the finished frontage gives the centre a professional, reassuring presence.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

@@ -2,7 +2,7 @@
 title: "The Star"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Star, located in Penkridge and owned by Marstons Brewery, received a full signage overhaul, including a new brand package, post sign, and raised letters for a welcoming yet rustic aesthetic. Trust Sign Makers to transform your pub’s image."
+description: "A complete signage scheme for The Star in Penkridge, owned by Marston's: a new brand package, a post sign and raised letters on the gable."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -15,11 +15,16 @@ keywords: "The Star, Branding, Signage, Sign Design, Design, interior signage, e
 categories: ["business signage", "branding"]
 ---
 
-## What the Client Wanted
-The Star located in the centre of Penkridge, owned by Marstons Brewery. Looking for a complete signage scheme to give the pub a whole new look, to make it fresh, warm & welcoming, but still in keeping with its rustic aesthetic.
+## The Brief
+The Star, in the centre of Penkridge and owned by Marston's Brewery, needed a complete signage scheme to give the pub a whole new look. The aim was to make it fresh, warm and welcoming while keeping its rustic character.
 
-## About the Process:
-- Designed a full brand package
-- Fitted all new signage including post sign, raised letters to the gable
+## What We Delivered
+- A full brand package for The Star, including a star emblem.
+- A post sign at the front of the pub carrying the new branding.
+- Raised letters on the gable reading "The Star, Penkridge".
+- Design, manufacture and installation.
 
-Trust Sign Makers to revitalize your establishment's image with our expert signage solutions. We'll bring a fresh new look to your business, making it stand out in the center of Starkholmes.
+## The Result
+The pale, elegant signage sits beautifully against the red brick and black-and-white timbering, refreshing the pub without losing its rustic charm. The gable lettering makes The Star easy to spot as you approach through Penkridge, and the post sign gives it a classic pub presence at the roadside.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

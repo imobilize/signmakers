@@ -2,7 +2,7 @@
 title: "RaceTech Media"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "RaceTech Media needed a complete signage transformation to match their updated brand image. We rebranded and designed new signage, including a striking oak post pictorial sign, front-building signage, and custom-painted details, giving their business a sleek and modern look."
+description: "Livery for RaceTech's outside broadcast trucks: clean silver vehicles with bold RaceTech Outside Broadcast branding and contact details."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,14 +14,16 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
-For the RaceTech Media , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+## The Brief
+RaceTech needed livery for its outside broadcast trucks. These large vehicles travel to events and sit on site for long periods, so their branding needed to look professional, be readable from a distance and fit a modern broadcast operation.
 
-## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
+## What We Delivered
+- RaceTech Outside Broadcast branding on the sides of the trailers, with the circular swoosh graphic in purple and teal.
+- RaceTech logos on the cab doors and front panels.
+- Contact details, the website and social media icons, including on the rear of the vehicles.
+- Application in our workshop, working around the trailers' panels, vents and access doors.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+## The Result
+The clean, understated livery suits the trucks' silver finish and the professional nature of RaceTech's work. The fleet now carries the brand consistently wherever it goes, turning every broadcast location into an opportunity to promote the business.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

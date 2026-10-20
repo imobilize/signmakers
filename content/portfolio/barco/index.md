@@ -2,7 +2,7 @@
 title: "Barco."
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Sign Makers transformed Barco’s brand with a sleek signage overhaul—modern designs, eye-catching standing signs, gable painting, and a stunning oak post pictorial sign that captures attention and elevates their image."
+description: "Illuminated logo signage and large exterior lettering for Barco, carrying the brand from the reception wall to the building facade."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,14 +14,15 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
-For the Barco. , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+## The Brief
+Barco needed signage that would carry its brand clearly both inside and outside the building. Barco's logo pairs a blue and green "b" symbol with a bold black wordmark, and the signage had to reproduce it accurately at very different scales.
 
-## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
+## What We Delivered
+- An interior logo sign: the blue and green "b" symbol with black "barco" lettering, mounted on a wall panel with illumination that gives the logo a soft glow.
+- Large built-up "barco" lettering in black for the exterior, together with the coloured symbol, fixed to the building's profiled metal cladding above the windows.
+- Manufacture and installation, with fixings planned around the cladding profile so the letters sit straight and secure.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+## The Result
+The brand reads boldly from outside the building and makes a polished first impression in the reception area. The black lettering stands out strongly against the light cladding, and the colour accents of the logo give the scheme a modern, technical feel.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

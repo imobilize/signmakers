@@ -3,7 +3,7 @@ title: "Sign Materials"
 date: 2023-12-18T11:10:36+08:00
 draft: false
 language: en
-description: "Fabricut make signs for the sign trade and stock a range of materials: acrylic, perspex, MDF, aluminium composite, stainless & more."
+description: "The Sign Makers make signs for the sign trade using a wide range of materials: acrylic and Perspex, aluminium composite, stainless steel, MDF and more."
 featuredImage: "images/sign-materials.jpg"
 image: "images/sign-materials.jpg"
 images: ["images/sign-materials.jpg"]
@@ -13,9 +13,9 @@ keywords: "Sign Materials, Acrylic, Perspex, ACS, Steal, Alloys & More"
 Sign Materials 
 ===================
 
-If your company is looking to outsource the production of its signs, then you have come to the right place. At **Fabricut**, we stock and use a wide variety of specialist **signage materials** to produce **signs** specifically for **trade customers**.
+If your company is looking to outsource the production of its signs, then you have come to the right place. We stock and use a wide variety of specialist **signage materials** to produce **signs** specifically for **trade customers**.
 
-Below is a list of the **materials available** for your signs production and we also highly recommend viewing our [sign finishes](/sign-finishes) section, which shows all the latest sign finishing techniques that can be outsourced to us.
+Below is a list of the **materials available** for your signs production and we also highly recommend viewing our [sign finishes](/sign-manufacturing/sign-finishes/) section, which shows all the latest sign finishing techniques that can be outsourced to us.
 
 * * *
 
@@ -24,13 +24,13 @@ Below is a list of the **materials available** for your signs production and we 
 Acrylic
 -------
 
-Acrylic is perfect for signage use, retail point of sale and general **sign fabrication**. At [Fabricut](/), we usually use the well-known **Perspex®** brand for our acrylic sheets as they are the leaders in acrylic produced and distributed within the UK. This makes it more [environmentally friendly](/sustainability) than importing from abroad.
+Acrylic is perfect for signage use, retail point of sale and general **sign fabrication**. We usually use the well-known **Perspex®** brand for our acrylic sheets as they are the leaders in acrylic produced and distributed within the UK. This makes it more environmentally friendly than importing from abroad.
 
-Acrylic comes in a range of colours and finishes and it cuts beautifully on our **CNC machinery**. Clear acrylic can be finished with [diamond polished edges](/sign-finishes) or [flame polished edges](/sign-finishes). We can also offer a bespoke painting service for instances where specific corporate colours are required.
+Acrylic comes in a range of colours and finishes and it cuts beautifully on our **CNC machinery**. Clear acrylic can be finished with [diamond polished edges](/sign-manufacturing/sign-finishes/) or [flame polished edges](/sign-manufacturing/sign-finishes/). We can also offer a bespoke painting service for instances where specific corporate colours are required.
 
 ##### Typical Acrylic Sign Applications
 
-*   Logos & Lettering for [Fascia Trays](/sign-trays)
+*   Logos & Lettering for [Fascia Trays](/sign-manufacturing/sign-trays/)
 *   Feature Walls
 *   Reception Signs
 *   Wayfinding
@@ -43,7 +43,7 @@ Acrylic comes in a range of colours and finishes and it cuts beautifully on our 
 Aluminium Composite Sheet (ACS)
 -------------------------------
 
-At **Fabricut**, we typically use the **AluPanel®** brand of **aluminium composite sheet** (ACS), which is the only ACS manufactured in the UK; producing less environmental impact than importing.
+We typically use the **AluPanel®** brand of **aluminium composite sheet** (ACS), which is the only ACS manufactured in the UK; producing less environmental impact than importing.
 
 **Aluminium composite** is a wonderfully durable and lightweight material, best known for its limited rate of expansion and contraction. Making it highly suitable for both **indoor and outdoor signs**. It is made up of two rigid aluminium sheets with a polyethylene core, securely bonded together during production.
 
@@ -52,8 +52,8 @@ It is particularly suited to high-wear environments, but has a huge range of oth
 ##### Typical Aluminium Composite Applications
 
 *   Shop Fascia’s
-*   [Sign Trays](/sign-trays)
-*   [Flat cut lettering & Logos](/flat-cut-letters-and-signs)
+*   [Sign Trays](/sign-manufacturing/sign-trays/)
+*   [Flat cut lettering & Logos](/sign-manufacturing/flat-cut-letters-and-signs/)
 *   Wayfinding Signs
 *   Monoliths
 *   Hoarding panels
@@ -71,10 +71,10 @@ One **advantage of PVC foam** is that it has an exceptional fire resistance and 
 
 ##### Typical PVC Foam Applications
 
-*   [Flat cut letters, Signs and Logos](/flat-cut-letters-and-signs)
+*   [Flat cut letters, Signs and Logos](/sign-manufacturing/flat-cut-letters-and-signs/)
 *   Hoarding Panels
 *   Exhibition Panels
-*   [Sign Blanks](/sign-blanks)
+*   [Sign Blanks](/sign-manufacturing/sign-blanks/)
 
 * * *
 
@@ -92,11 +92,11 @@ Aluminium is commonly recycled, making it a great choice for **reducing environm
 ##### Typical Aluminium Applications
 
 *   Shop Fascia’s
-*   [Fascia Trays](/sign-trays)
+*   [Fascia Trays](/sign-manufacturing/sign-trays/)
 *   Monoliths
-*   [Sign Panels](/sign-blanks)
-*   [Flat Cut Lettering & Logos](/flat-cut-letters-and-signs)
-*   [Built Up Letters, Signs & Logos](/built-up-letters-and-signs)
+*   [Sign Panels](/sign-manufacturing/sign-blanks/)
+*   [Flat Cut Lettering & Logos](/sign-manufacturing/flat-cut-letters-and-signs/)
+*   [Built Up Letters, Signs & Logos](/sign-manufacturing/built-up-letters-and-signs/)
 
 * * *
 
@@ -107,18 +107,18 @@ Stainless Steel
 
 Stainless steel has many wonderful uses in the signage industry and is typically chosen for when metal work needs to remain untarnished in an all-weather environment. We do recommend **marine graded stainless steel** for coastal areas. However, stainless steel can also be used indoors.
 
-At Fabricut, we precision laser cut stainless steel to shape using our state-of-the-art machinery and can be welded by our professional in-house production and manufacturing team.
+We precision laser cut stainless steel to shape using our state-of-the-art machinery and can be welded by our professional in-house production and manufacturing team.
 
 Items produced in **stainless steel** have a very prestigious look and can be supplied in a **brushed stainless finish** or a “mirror” **polished stainless finish**. Welded nickel locators or threaded studs can be added for fixings, together with any **sign fitting templates** ready for you to install.
 
 ##### Typical Stainless Steel Applications
 
 *   Shop Fascia’s
-*   [Fascia Trays](/sign-trays)
+*   [Fascia Trays](/sign-manufacturing/sign-trays/)
 *   Monoliths
-*   [Sign Panels](/sign-blanks)
-*   [Flat Cut Lettering & Logos](/flat-cut-letters-and-signs)
-*   [Built Up Letters, Signs & Logos](/built-up-letters-and-signs)
+*   [Sign Panels](/sign-manufacturing/sign-blanks/)
+*   [Flat Cut Lettering & Logos](/sign-manufacturing/flat-cut-letters-and-signs/)
+*   [Built Up Letters, Signs & Logos](/sign-manufacturing/built-up-letters-and-signs/)
 
 * * *
 
@@ -129,28 +129,28 @@ MDF – Medium Density Fibre Board
 
 Unfortunately, **MDF is not the most environmentally friendly material** due to the glues used within it. However, the wood particles are sustainably sourced (FSC accredited). MDF is one of the most versatile materials used for interior signs.
 
-At **Fabricut**, we can precisely **cut MDF to size and any shape** with our CNC cutter. It can also be layered for additional thickness by our in-house production team. MDF can be supplied bare or painted to your requirements.
+We can precisely **cut MDF to size and any shape** with our CNC cutter. It can also be layered for additional thickness by our in-house production team. MDF can be supplied bare or painted to your requirements.
 
 ##### Typical MDF Applications
 
 *   Exhibition Panels
 *   Feature Walls
-*   [Flat Cut Lettering & Logos](/flat-cut-letters-and-signs)
+*   [Flat Cut Lettering & Logos](/sign-manufacturing/flat-cut-letters-and-signs/)
 
 
 How Can We Help
 ---------------
 
-We’ve been making signage for the sign trade for over 30 years. If you are looking for a new sign supplier, then see how Fabricut can help.
+We’ve been making signage for the sign trade for over 30 years. If you are looking for a new sign supplier, then see how we can help.
 
 [Request Quote](/request-quote/)
 * * *
 
-![Sample Signs by Fabricut](images/sample-signs-min.png)
+![Sample signs by The Sign Makers](images/sample-signs-min.png)
 
 Sample Sign Boards
 ------------------
 
 Need examples to show your clients? Order your very own **sample boards** to display in your showrooms and consultation rooms today.
 
-[Sample Sign Boards](/sample-signs)
+[Sample Sign Boards](/sample-signs/)

@@ -2,7 +2,7 @@
 title: "Hammond's Bar"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "Hammond's Bar required a complete signage overhaul to match their fresh brand image. We handled the rebranding, from new signage to custom oak post pictorial signs. Trust Sign Makers to elevate your business with expert signage solutions."
+description: "Large-format illustrated wall graphics for Hammond's Bar: a bold, comic-style football mural that gives the lounge real personality."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,14 +14,15 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
-For the Hammond's Bar , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+## The Brief
+Hammond's Bar wanted to give its lounge a strong identity, turning plain walls into a feature that customers would talk about. The idea was a large, illustrated football scene that celebrates the game and gives the room a sense of fun and energy.
 
-## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
+## What We Delivered
+- Large-format wall graphics covering the lounge walls with a bold, comic-style illustration of football action, players and fans in a punchy red, white and black palette.
+- Artwork laid out to wrap around the room and flow above the banquette seating, so the scene reads as one continuous mural rather than separate panels.
+- Production and installation, with careful alignment across joins and around fixtures so the illustration stays seamless.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+## The Result
+The lounge now has a centrepiece that sets the tone the moment you walk in. The illustration brings colour and movement to the room, gives regulars something to look at, and makes the space instantly memorable for match days and nights out alike.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

@@ -2,7 +2,7 @@
 title: "Highcroft"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Sign Makers created stunning halo-illuminated lettering and a logo for Berkeley Homes' Highcroft marketing suite, along with face-lit rimless script text. A bright, inviting design that adds sophistication and allure to the suite."
+description: "Halo-illuminated built-up lettering and logo for Berkeley Homes' Highcroft sales and marketing suite in Wallingford, plus face-lit rimless script text."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,9 +14,17 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
-Berkeley Homes needed halo-illuminated built-up lettering and a logo for their Highcroft marketing suite in Wallingford, along with face-lit rimless script text.
+## The Brief
+Berkeley Homes needed halo-illuminated built-up lettering and a logo for the sales and marketing suite at their Highcroft development in Wallingford, along with face-lit rimless script text.
 
+## What We Delivered
+- Built-up lettering spelling "Highcroft" and "Sales & Marketing Suite", mounted on the brick gable of the suite where it's visible on arrival.
+- The Highcroft emblem as a built-up logo above the lettering, centred under the apex of the gable.
+- Halo illumination behind the letters, so at night they're outlined by a soft glow against the brickwork.
+- Face-lit rimless script text as part of the wider scheme.
+- Design, manufacture and installation.
 
-## About the Process:
-We designed and installed the illuminated signage, focusing on creating a bright and inviting display. Although we didn’t capture shots of the signs lit up, the quality and design speak for themselves, adding a touch of sophistication to the marketing suite.
+## The Result
+The finished gable gives the suite an elegant, unmistakable identity. By day, the lettering's metallic finish stands out cleanly against the red brick; after dark, the halo illumination creates a bright, inviting display. Together they add sophistication and make the suite feel like the welcoming front door to the whole development.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

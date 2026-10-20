@@ -2,7 +2,7 @@
 title: "Tom Ford"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "Tom Ford required a complete signage overhaul to enhance their brand image. We provided a rebrand, new signage, oak post pictorial signs, and more to reflect their polished look. Trust Sign Makers to transform your business’s visual identity."
+description: "Illuminated built-up letters for Tom Ford, fabricated and finished in our workshop: black returns and illuminated outline faces for a sleek luxury look."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,14 +14,15 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
-For the Tom Ford , our client needed a complete signage overhaul to reflect their fresh brand image, shedding their previous style for a cleaner and more polished appearance.
+## The Brief
+Tom Ford needed illuminated lettering that matched the clean, luxurious look of the brand. The letters had to be precise in every detail, as with any luxury fashion brand, and look just as refined lit as unlit.
 
-## About the Process:
-- Complete rebranding and design.
-- Installation of new signage on the front of the building.
-- Manufacturing and installation of standing signage.
-- Sign painting on the gable.
-- Creation and installation of a large oak post pictorial sign.
+## What We Delivered
+- Built-up letters spelling "TOM FORD", fabricated with deep black returns.
+- Illuminated faces that create a crisp glowing outline around each letter when lit.
+- Fabrication, finishing and testing in our workshop, checking every letter's alignment and illumination before it left us.
 
-Choose Sign Makers for all your signage needs, and let us transform your brand's visual identity with our expertise and attention to detail.
+## The Result
+The finished letters have a sleek, architectural quality. Unlit, the black returns and clean edges look sharp and modern; lit, the glowing outlines make the name stand out with understated elegance. They're a showcase of the precision our workshop brings to every illuminated sign.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

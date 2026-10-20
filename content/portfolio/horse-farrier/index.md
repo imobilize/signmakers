@@ -2,7 +2,7 @@
 title: "Horse & Farrier"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Sign Makers gave The Horse & Farrier in Lancaster a fresh new look with a complete signage overhaul, including a standout metallic logo, sleek hanging signs, and eye-catching vinyls. A perfect blend of modern design and durability."
+description: "A complete signage overhaul for The Horse & Farrier in Lancaster, owned by Thwaites: a new logo, metallic-effect lettering, hanging signs and vinyls."
 author: " "
 featuredImage: "images/1.jpeg"
 image: "images/1.jpeg"
@@ -14,15 +14,18 @@ image4: "images/4.jpeg"
 keywords: "Horse & Farrier, Branding, Signage, Sign Design, Design, interior signage, exterior design"
 categories: ["Signage", "logo design"]
 ---
-## What the Client Wanted
-The Horse & Farrier, Lancaster, needed a complete new overhaul, with new signage scheme, fresh colours and new logo.
 
-## About the Process:
-- Fitted new signage on the front of the building, manufactured and fitted standing signage
-- We used a unique process to create a metallic look on a long lasting plastic to make the logo stand out
-- Fitted new signage on the front of the building, a hanging sign and vinyls for the back windows
+## The Brief
+The Horse & Farrier in Lancaster needed a complete overhaul, with a new signage scheme, fresh colours and a new logo.
 
+## What We Delivered
+- A new logo and a fresh colour scheme, carried across the painted shopfront in a soft blue.
+- New signage on the front of the building, including fascia lettering above the windows and wall-mounted plaques.
+- A hanging sign featuring the Thwaites name and the new horseshoe logo, with "Lancaster" beneath.
+- A unique process that creates a metallic look on long-lasting plastic, making the logo stand out while staying durable outdoors.
+- Standing signage and vinyls for the back windows.
 
+## The Result
+The pub now has a crisp, cohesive identity. The soft blue frontage brightens the stone building, the metallic-effect details add a touch of class, and the hanging sign makes the Horse & Farrier easy to spot from along the street.
 
-Trust Sign Makers to revitalize your establishment's image with our expert signage solutions. We'll bring a fresh new look to your business, making it stand out in the center of Starkholmes.
-
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.

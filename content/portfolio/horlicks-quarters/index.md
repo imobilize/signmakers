@@ -2,7 +2,7 @@
 title: "Horlicks Quarters"
 date: 2020-09-23T15:28:43+06:00
 draft: false
-description: "The Sign Makers crafted an impressive entrance for The Horlicks Quarter in Slough with illuminated rimless lettering, LED-style faux neon, and a bold oversized graphic. A striking combination that elevates the building's presence inside and out"
+description: "A grand entrance for The Horlicks Quarter in Slough with MSA Creative: illuminated rimless lettering, LED faux neon and an oversized vertical graphic."
 author: " "
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
@@ -14,9 +14,16 @@ image4: "images/1.jpg"
 categories: ["branding", "signage"]
 ---
 
-## What the Client Wanted
-The Horlicks Quarter in Slough, through MSA Creative, required a variety of signage, including illuminated lettering and a bold graphic, to create a grand entrance.
+## The Brief
+The Horlicks Quarter in Slough, through MSA Creative, needed a range of signage, including illuminated lettering and a bold graphic, to create a grand entrance for the development.
 
+## What We Delivered
+- Illuminated rimless lettering for both the interior and exterior, including the red "Horlicks Quarter" name above the glazed entrance.
+- LED-style faux neon "Welcome" signage inside the entrance, glowing through the full-height glazing.
+- An oversized vertical "HORLICKS" graphic running up the brickwork beside the entrance, installed from scaffolding.
+- Supporting site signage, including a "Horlicks Quarter" fingerpost and "Customer Parking" directional signs.
 
-## About the Process:
-We installed illuminated rimless lettering for both the interior and exterior, LED-style faux neon for the entrance, and a striking oversized vertical graphic for the brickwork. Together, these elements create an impressive and cohesive entrance that enhances the building's presence.
+## The Result
+Together, these elements create an impressive, cohesive entrance. The giant vertical graphic nods to the site's heritage and can be seen from a distance, while the illuminated lettering and faux neon make the entrance glow at dusk. It's a welcome that does justice to one of Slough's best-known names.
+
+Planning something similar? [Request a quote](/request-quote/) or call our Blackburn office on 01254 580166 to talk it through.
