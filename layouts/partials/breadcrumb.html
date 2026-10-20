@@ -1,0 +1,15 @@
+{{/* Visible breadcrumb: Home › parent section(s) › current page.
+     Pairs with schema-breadcrumb.html (structured data for search engines). */}}
+<nav aria-label="Breadcrumb" class="text-xs sm:text-sm text-gray-500">
+  <ol class="flex flex-wrap items-center gap-x-2 gap-y-1">
+    <li><a href="/" class="hover:text-primary">Home</a></li>
+    {{- range .Ancestors.Reverse }}
+    {{- if not .IsHome }}
+    <li aria-hidden="true" class="text-gray-300">›</li>
+    <li><a href="{{ .RelPermalink }}" class="hover:text-primary">{{ .LinkTitle }}</a></li>
+    {{- end }}
+    {{- end }}
+    <li aria-hidden="true" class="text-gray-300">›</li>
+    <li aria-current="page" class="text-secondary">{{ .LinkTitle }}</li>
+  </ol>
+</nav>

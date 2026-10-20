@@ -2730,9 +2730,18 @@ a:focus-visible, button:focus-visible {
   gap: 30px;
 }
 
+.gap-x-2{
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
+}
+
+.gap-y-1{
+  row-gap: 0.25rem;
 }
 
 .gap-y-16{
@@ -5919,6 +5928,11 @@ h3, h4, h5, h6 {
   .md\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .md\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .md\:py-0{

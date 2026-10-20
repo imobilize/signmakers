@@ -5,13 +5,7 @@
   <div class="max-w-screen-xl mx-auto px-4 lg:px-8">
 
     <!-- Breadcrumb -->
-    <nav aria-label="Breadcrumb" class="pt-2 lg:pt-4 text-xs sm:text-sm text-gray-500">
-      <ol class="flex items-center gap-2">
-        <li><a href="/" class="hover:text-primary">Home</a></li>
-        <li aria-hidden="true" class="text-gray-300">›</li>
-        <li aria-current="page" class="text-secondary">Request a Quote</li>
-      </ol>
-    </nav>
+    <div class="pt-2 lg:pt-4">{{ partial "breadcrumb.html" . }}</div>
 
     <h1 class="mt-6 lg:mt-8 mb-10 lg:mb-14 text-center text-4xl md:text-5xl text-ink">Request a Quote</h1>
 
