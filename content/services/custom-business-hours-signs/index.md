@@ -22,7 +22,7 @@ heading3: "Font Customization"
 paragraph3: "Personalize your signs further by selecting the font size, color, and style. Opt for a font that ensures easy readability, and our team can offer guidance to help you determine the most suitable font for enhanced visibility, noticeability, and legibility."
 heading4: "Fast Turnaround Times: Sign Makers' Promise"
 paragraph4: "True to our name, Sign Makers excels at delivering custom signs promptly while upholding the highest quality standards. The turnaround time for your signs will depend on factors like complexity and material selection. Rest assured, our team will provide you with a precise timeframe once they've gathered all the necessary information."
-color: "bg-gradient-to-br from-stone-50 via-red-100 to-stone-50"
+color: "bg-gradient-to-br from-stone-50 via-primary-100 to-stone-50"
 ---
 
 ## Custom Business Hour Signs: Your Brand, Your Schedule

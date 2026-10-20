@@ -13,7 +13,7 @@
                             <path d="M.5 200V.5H200" fill="none"></path>
                         </pattern>
                     </defs>
-                    <svg x="50%" y="50%" class="overflow-visible fill-amber-50">
+                    <svg x="50%" y="50%" class="overflow-visible fill-primary-50">
                         <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0"></path>
                     </svg>
                     <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)">
@@ -66,7 +66,7 @@
                     </p>
 
                     <a href="/sign-design"
-                        class="btn px-4 py-2 mt-2 text-xl text-white font-medium bg-secondary rounded-lg md:mt-0 md:ml-1 hover:bg-blue-900 hover:text-white shadow">
+                        class="btn px-4 py-2 mt-2 text-xl text-white font-medium bg-secondary rounded-lg md:mt-0 md:ml-1 hover:bg-secondary-900 hover:text-white shadow">
                         Learn about our sign design service
                     </a>
                 </div>
@@ -91,7 +91,7 @@
                     </p>
 
                     <a href="/sign-manufacturing"
-                        class="btn px-4 py-2 mt-2 text-xl text-white font-medium bg-secondary rounded-lg md:mt-0 md:ml-1 hover:bg-blue-900 hover:text-white shadow">
+                        class="btn px-4 py-2 mt-2 text-xl text-white font-medium bg-secondary rounded-lg md:mt-0 md:ml-1 hover:bg-secondary-900 hover:text-white shadow">
                         Learn about our sign manufacturing service
                     </a>
                 </div>
@@ -144,7 +144,7 @@
                     </p>
 
                     <a href="/sign-installation"
-                        class="btn px-4 py-2 mt-2 text-xl text-white font-medium bg-secondary rounded-lg md:mt-0 md:ml-1 hover:bg-blue-900 hover:text-white shadow">
+                        class="btn px-4 py-2 mt-2 text-xl text-white font-medium bg-secondary rounded-lg md:mt-0 md:ml-1 hover:bg-secondary-900 hover:text-white shadow">
                         Learn about our sign installation service
                     </a>
                 </div>
@@ -166,7 +166,7 @@
                             placeholder="Search services...">
                         <!--Search button-->
                         <button
-                            class="relative z-[2] flex items-center rounded-r bg-secondary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-500 active:shadow-lg"
+                            class="relative z-[2] flex items-center rounded-r bg-secondary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-500 active:shadow-lg"
                             type="submit" id="button-search" data-te-ripple-init data-te-ripple-color="light">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                 class="h-5 w-5">
@@ -209,14 +209,14 @@
                             {{ end }}
                             <div class="py-4 flex flex-col h-full sm:p-6">
                                 <h3
-                                    class="h3 text-secondary hover:text-blue-800 dark:text-gray-300 dark:group-hover:text-white">
+                                    class="h3 text-secondary hover:text-secondary-800 dark:text-gray-300 dark:group-hover:text-white">
                                     {{ .Title }}
                                 </h3>
                                 <p class="mt-2 text-base">
                                     {{ .Summary | truncate 100 }}
                                 </p>
                                 <a href="{{ .RelPermalink }}"
-                                    class="text-secondary hover:text-blue-800 font-semibold">Learn more →</a>
+                                    class="text-secondary hover:text-secondary-800 font-semibold">Learn more →</a>
 
                             </div>
                         </a>

@@ -45,7 +45,7 @@ heading6: "Your Heading 6 Here"
 paragraph6: "Your Paragraph 6 Here"
 heading7: "Your Heading 7 Here"
 paragraph7: "Your Paragraph 7 Here"
-color: "bg-gradient-to-br from-indigo-200 via-stone-100 to-red-200"
+color: "bg-gradient-to-br from-secondary-200 via-stone-100 to-primary-200"
 color2: "bg-secondary"
 ---
 

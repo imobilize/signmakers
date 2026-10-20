@@ -13,7 +13,7 @@
                             <path d="M.5 200V.5H200" fill="none"></path>
                         </pattern>
                     </defs>
-                    <svg x="50%" y="50%" class="overflow-visible fill-amber-50">
+                    <svg x="50%" y="50%" class="overflow-visible fill-primary-50">
                         <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0"></path>
                     </svg>
                     <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)">
@@ -59,7 +59,7 @@
                             {{ end }}
                             <div class="py-4 flex flex-col h-full sm:p-6">
                                 <h3
-                                    class="h3 text-secondary hover:text-blue-800 dark:text-gray-300 dark:group-hover:text-white">
+                                    class="h3 text-secondary hover:text-secondary-800 dark:text-gray-300 dark:group-hover:text-white">
                                     {{ .Title }}
                                 </h3>
                                 <p class="mt-2 text-base">
@@ -299,27 +299,27 @@
                         assured that we can produce the type of sign you are looking for. From Built Up Letters, Flat
                         Cut Logos, Sign Blanks & Panels to fully complete illuminated Sign Trays.</p>
                     <ul class="list-disc list-inside mb-8">
-                        <li class="flex items-center mb-2"><svg class="w-6 h-6 text-green-500 mr-2" fill="none"
+                        <li class="flex items-center mb-2"><svg class="w-6 h-6 text-secondary-500 mr-2" fill="none"
                                 stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
                             </svg> Custom Sign Design</li>
-                        <li class="flex items-center mb-2"><svg class="w-6 h-6 text-green-500 mr-2" fill="none"
+                        <li class="flex items-center mb-2"><svg class="w-6 h-6 text-secondary-500 mr-2" fill="none"
                                 stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
                             </svg> Sign Fabrication</li>
-                        <li class="flex items-center mb-2"><svg class="w-6 h-6 text-green-500 mr-2" fill="none"
+                        <li class="flex items-center mb-2"><svg class="w-6 h-6 text-secondary-500 mr-2" fill="none"
                                 stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
                             </svg> Installation Services</li>
-                        <li class="flex items-center mb-2"><svg class="w-6 h-6 text-green-500 mr-2" fill="none"
+                        <li class="flex items-center mb-2"><svg class="w-6 h-6 text-secondary-500 mr-2" fill="none"
                                 stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
                             </svg> Maintenance & Repair</li>
-                        <li class="flex items-center mb-2"><svg class="w-6 h-6 text-green-500 mr-2" fill="none"
+                        <li class="flex items-center mb-2"><svg class="w-6 h-6 text-secondary-500 mr-2" fill="none"
                                 stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
@@ -342,7 +342,7 @@
             class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20">
         </div>
         <div
-            class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center">
+            class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-secondary-600/10 ring-1 ring-secondary-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center">
         </div>
         <div class="mx-auto max-w-2xl lg:max-w-4xl">
             <h3 class="text-3xl text-center">Happy Clients</h3>
@@ -391,7 +391,7 @@
                     {{ $small := (.Resize "300x webp q100").RelPermalink }}
                     {{ $medium := (.Resize "550x webp q100").RelPermalink }}
                     {{ $large := (.Resize "700x webp q100").RelPermalink }}
-                    <img class="object-cover bg-sky-600 border" src="{{ $large }}" srcset="
+                    <img class="object-cover bg-secondary-600 border" src="{{ $large }}" srcset="
                         {{- with $small -}}, {{.}} 300w{{- end -}}
                         {{- with $medium -}}, {{.}} 550w{{- end -}}
                         {{- with $large -}}, {{.}} 768w{{- end -}}">

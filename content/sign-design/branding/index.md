@@ -41,7 +41,7 @@ paragraph6: "Walls aren't just boundaries; they're canvases waiting to tell your
 heading7: "Restaurant Branding"
 paragraph7: "For eateries, we go beyond menus – Sign Makers elevates your restaurant branding game. From eye-catching takeaway boards to shop signs that beckon hungry patrons, we ensure every touchpoint tells a delicious story. Our expertise extends to creating impactful billboards that make your presence impossible to ignore.
 "
-color: "bg-gradient-to-br from-cyan-50 via-orange-50 to-violet-50"
+color: "bg-gradient-to-br from-secondary-50 via-primary-50 to-secondary-50"
 ---
 
 # Branding

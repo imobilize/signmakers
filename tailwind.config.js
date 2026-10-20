@@ -11,16 +11,35 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+        display: ['"Playfair Display"', ...defaultTheme.fontFamily.serif],
+        serif: ['"Playfair Display"', ...defaultTheme.fontFamily.serif],
       },
       container: {
         padding: '2rem',
       },
+      // The Sign Makers brand palette (Brand Guidelines V1 — 2026, matches Shopify store)
       colors: {
-        primary: '#DD1C1A',
-        secondary: '#29086A',
-        neutral: '#F8F4FF',
-        lightpurple: '#F8F4FF',
+        // Coral — primary accent, CTAs
+        primary: {
+          DEFAULT: '#F04F4F',
+          50: '#FEF1F1', 100: '#FDE0E0', 200: '#FBC5C5', 300: '#F79E9E', 400: '#F47474',
+          500: '#F04F4F', 600: '#DC3535', 700: '#B92828', 800: '#992424', 900: '#7F2323', 950: '#450D0D',
+        },
+        // Faded Jade — secondary, headings, UI elements
+        secondary: {
+          DEFAULT: '#407878',
+          50: '#F1F8F8', 100: '#DCEFEF', 200: '#C8E8E8', 300: '#9BCDCD', 400: '#6AAAAA',
+          500: '#4F8E8E', 600: '#407878', 700: '#366363', 800: '#2F5252', 900: '#284545', 950: '#1A2424',
+        },
+        coral: '#F04F4F',
+        jade: '#407878',
+        // Jagged Ice — light backgrounds
+        ice: { DEFAULT: '#C8E8E8', light: '#EEF7F7' },
+        // Near-black — headings and body text
+        ink: '#1A2424',
+        neutral: '#EEF7F7',
+        lightpurple: '#EEF7F7', // legacy name, now Jagged Ice tint
       },
       lineHeight: {
         'extra-loose': '2.5',

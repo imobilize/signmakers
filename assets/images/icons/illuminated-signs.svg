@@ -4,7 +4,7 @@
     <style>
       .cls-1 {
         fill: none;
-        stroke: #f5b719;
+        stroke: #C8E8E8;
         stroke-linecap: round;
         stroke-width: 1.22px;
       }
@@ -14,17 +14,17 @@
       }
 
       .cls-2 {
-        fill: #f5b719;
+        fill: #C8E8E8;
         stroke: #fff;
         stroke-width: .5px;
       }
 
       .cls-3 {
-        fill: #306bac;
+        fill: #407878;
       }
 
       .cls-4 {
-        fill: #034832;
+        fill: #1A2424;
       }
     </style>
   </defs>

@@ -10,7 +10,7 @@
       <div class="flex my-4 container lg:my-8">
         {{ range $elem_index, $elem_val := (.GetTerms "categories") }}
         <a href="{{.RelPermalink}}" class="uppercase pb-4 pr-4"><span
-            class="inline-block bg-purple-100 text-purple-800 py-1 px-3 rounded-full text-sm uppercase tracking-wider">{{
+            class="inline-block bg-secondary-100 text-secondary-800 py-1 px-3 rounded-full text-sm uppercase tracking-wider">{{
             .LinkTitle }}</span></a>
         {{- end -}}
       </div>
